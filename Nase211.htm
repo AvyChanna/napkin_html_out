@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Winding numbers and the residue theorem</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 236--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase220.htm" >next</a>] [<a 
+href="Nase210.htm" >prev</a>] [<a 
+href="Nase210.htm#tailNase210.htm" >prev-tail</a>] [<a 
+href="Nase205.htm#tailNase211.htm">tail</a>] [<a 
+href="Nase215.htm#Nase218.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">32.3</span>  <a 
+ id="x305-29000032.3"></a>Winding numbers and the residue theorem</h3>
+<!--l. 237--><p class="noindent" >Recall that for a counterclockwise circle <tspan font-family="cmmi" font-size="10">γ </tspan>and a point <tspan font-family="cmmi" font-size="10">p </tspan>inside it, we had
+</p>
+  <div class="math-display" >
+<img 
+src="Na1765x.png" alt="∮              {
+  (z − p)m dz =  0    m ⁄=  − 1
+ γ               2πi  m =  − 1
+" class="math-display"  /></div>
+<!--l. 245--><p class="indent" >  where <tspan font-family="cmmi" font-size="10">m </tspan>is an integer. One can extend this result to in fact show that <tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">γ</tspan></sub>(<tspan font-family="cmmi" font-size="10">z </tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">p</tspan>)<sup><tspan font-family="cmmi" font-size="8">m</tspan></sup> <tspan font-family="cmmi" font-size="10">dz </tspan>= 0 for
+<tspan font-family="cmti" font-size="10">any </tspan>loop <tspan font-family="cmmi" font-size="10">γ</tspan>, where <tspan font-family="cmmi" font-size="10">m</tspan><tspan font-family="cmmi" font-size="10">≠</tspan> <tspan font-family="cmsy" font-size="10">− </tspan>1. So we associate a special name for the nonzero value at <tspan font-family="cmmi" font-size="10">m </tspan>= <tspan font-family="cmsy" font-size="10">−</tspan>1.
+<a 
+ id="x305-290001r945"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 250--><p class="noindent" ><span class="head">
+<a 
+ id="x305-290002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 32.3.1.</tspan>  </span><a 
+ id="x305-290003"></a>For a point <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>and a loop <tspan font-family="cmmi" font-size="10">γ </tspan>not passing through it, we define
+the <tspan font-family="cmbx" font-size="10">winding number</tspan>, denoted <tspan font-family="cmbx" font-size="10">I</tspan>(<tspan font-family="cmmi" font-size="10">p,γ</tspan>), by
+</p>
+  <div class="math-display" >
+<img 
+src="Na1766x.png" alt="             ∮
+I(γ,p) = -1--  --1-- dz
+         2πi  γz − p
+" class="math-display"  /></div>
+  </div>
+<!--l. 255--><p class="indent" >
+For example, by our previous results we see that if <tspan font-family="cmmi" font-size="10">γ </tspan>is a circle, we have
+</p>
+  <div class="math-display" >
+<img 
+src="Na1767x.png" alt="            {
+              1  p inside the circle
+I(circle,p) =  0  p outside the circle.
+" class="math-display"  /></div>
+<!--l. 265--><p class="indent" >  If you’ve read the chapter on fundamental groups, then this is just the fundamental group
+associated to <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">∖{</tspan><tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmsy" font-size="10">}</tspan>. In particular, the winding number is always an integer (the proof of this
+requires the complex logarithm, so we omit it here). In the simplest case the winding numbers
+are either 0 or 1. <a 
+ id="x305-290004r946"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 271--><p class="noindent" ><span class="head">
+<a 
+ id="x305-290005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 32.3.2.</tspan>  </span><a 
+ id="x305-290006"></a>We say a loop <tspan font-family="cmmi" font-size="10">γ </tspan>is <tspan font-family="cmbx" font-size="10">regular</tspan> if <tspan font-family="cmbx" font-size="10">I</tspan>(<tspan font-family="cmmi" font-size="10">p,γ</tspan>) = 1 for all points <tspan font-family="cmmi" font-size="10">p </tspan>in the
+interior of <tspan font-family="cmmi" font-size="10">γ </tspan>(for example, if <tspan font-family="cmmi" font-size="10">γ </tspan>is a counterclockwise circle).
+</p>
+  </div>
+<!--l. 274--><p class="indent" >
+</p><!--l. 276--><p class="indent" >  With all these ingredients we get a stunning generalization of the Cauchy-Goursat
+theorem:</p>
+<div class="mdframed" id="mdframed-607">
+<a 
+ id="x305-290007r947"></a>
+<div class="newtheorem">
+<!--l. 278--><p class="noindent" ><span class="head">
+<a 
+ id="x305-290008r3"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmssbx" font-size="10">Theorem 32.3.3 </tspan><tspan font-family="cmss" font-size="10">(Cauchy’s residue theorem)</tspan><br 
+class="newline" /> </span><a 
+ id="x305-290009"></a>Let <tspan font-family="cmmi" font-size="10">f </tspan>: Ω <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>be meromorphic, where Ω is
+simply connected. Then for any loop <tspan font-family="cmmi" font-size="10">γ </tspan>not passing through any of its poles, we have
+</p>
+<div class="math-display" >
+<img 
+src="Na1768x.png" alt="    ∮
+-1--  f (z ) dz = ∑  I(γ,p) Res(f;p).
+2πi  γ
+                pole p
+" class="math-display"  /></div>
+<!--l. 285--><p class="noindent" >In particular, if <tspan font-family="cmmi" font-size="10">γ </tspan>is regular then the contour integral is the sum of all the residues, in
+the form
+</p>
+<div class="math-display" >
+<img 
+src="Na1769x.png" alt=" 1 ∮             ∑
+2πi-  f(z) dz =      Res(f;p).
+    γ           pole p
+               inside γ
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 291--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-608">
+<a 
+ id="x305-290010r948"></a>
+<div class="newtheorem">
+<!--l. 293--><p class="noindent" ><span class="head">
+<a 
+ id="x305-290011r4"></a>
+<tspan font-family="cmbx" font-size="10">Question 32.3.4.</tspan>  </span><a 
+ id="x305-290012"></a><tspan font-family="cmr" font-size="10">Verify that this result coincides with what you expect when you integrate</tspan>
+<tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="7">γ</tspan></sub><tspan font-family="cmmi" font-size="10">cz</tspan><tspan font-family="cmsy" font-size="7">−</tspan><tspan font-family="cmr" font-size="7">1</tspan> <tspan font-family="cmmi" font-size="10">dz </tspan><tspan font-family="cmr" font-size="10">for </tspan><tspan font-family="cmmi" font-size="10">γ </tspan><tspan font-family="cmr" font-size="10">a counter-clockwise circle.</tspan>
+</p>
+  </div>
+<!--l. 296--><p class="indent" >  </p></div>
+<!--l. 298--><p class="indent" >  The proof from here is not really too impressive – the “work” was already done in our
+statements about the winding number.
+                                                                                
+                                                                                
+</p><!--l. 300--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 301--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Let the poles with nonzero winding number be <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,p</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> (the others do not affect
+the sum).<span class="footnote-mark"><a 
+href="Na306.htm#fn1x36"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x305-290013f1"></a> 
+Then we can write <tspan font-family="cmmi" font-size="10">f </tspan>in the form
+</p>
+  <div class="math-display" >
+<img 
+src="Na1770x.png" alt="                   (      )
+             ∑k     --1---
+f(z) = g(z )+    Pi  z − pi
+             i=1
+" class="math-display"  /></div>
+<!--l. 311--><p class="indent" >  where <tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><img 
+src="Na1771x.png" alt="( -1-)
+  z− pi"  class="left" align="middle" /> is the principal part of the pole <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>. (For example, if <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>) = <img 
+src="Na1772x.png" alt="z3−z+1
+z(z+1)"  class="frac" align="middle" />
+we would write <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>) = (<tspan font-family="cmmi" font-size="10">z </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1) + <img 
+src="Na1773x.png" alt="1z"  class="frac" align="middle" /> <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1774x.png" alt="11+z"  class="frac" align="middle" />.)
+</p><!--l. 314--><p class="indent" >  The point of doing so is that the function <tspan font-family="cmmi" font-size="10">g </tspan>is holomorphic (we’ve removed all the
+“bad” parts), so
+</p>
+  <div class="math-display" >
+<img 
+src="Na1775x.png" alt="∮
+   g(z) dz = 0
+ γ
+" class="math-display"  /></div>
+<!--l. 316--><p class="indent" >  by Cauchy-Goursat.
+</p><!--l. 318--><p class="indent" >  On the other hand, if <tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">x </tspan>+ <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <img 
+src="Na1776x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">d</tspan></sub><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">d</tspan></sup> then
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 327--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmex" font-size="10">∮</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">γ</tspan></sub><tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><img 
+src="Na1778x.png" alt="(      )
+ ---1--
+ z − pi"  class="left" align="middle" /> <tspan font-family="cmmi" font-size="10">dz</tspan></td><td 
+class="align-even"> = <tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">γ</tspan></sub><tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⋅</tspan><img 
+src="Na1779x.png" alt="(       )
+  --1---
+  z − pi"  class="left" align="middle" /> <tspan font-family="cmmi" font-size="10">dz </tspan>+ <tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">γ</tspan></sub><tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">⋅</tspan><img 
+src="Na1780x.png" alt="(      )
+  --1---
+  z − pi"  class="left" align="middle" /><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmmi" font-size="10">dz </tspan>+ <tspan font-family="cmmi" font-size="10">…</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                  <td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⋅</tspan><tspan font-family="cmbx" font-size="10">I</tspan>(<tspan font-family="cmmi" font-size="10">γ,p</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>) + 0 + 0 + <tspan font-family="cmmi" font-size="10">…</tspan></td>                         <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                  <td 
+class="align-even"> = <tspan font-family="cmbx" font-size="10">I</tspan>(<tspan font-family="cmmi" font-size="10">γ,p</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>)Res(<tspan font-family="cmmi" font-size="10">f</tspan>;<tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>)<tspan font-family="cmmi" font-size="10">.</tspan></td>                             <td 
+class="align-label"></td><td 
+class="align-label">             </td></tr></table>
+</p><!--l. 328--><p class="indent" >  which gives the conclusion.                                                                           □
+</p>
+  </div>
+                                                                                
+                                                                                
+  <!--l. 331--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase220.htm" >next</a>] [<a 
+href="Nase210.htm" >prev</a>] [<a 
+href="Nase210.htm#tailNase210.htm" >prev-tail</a>] [<a 
+href="Nase211.htm" >front</a>] [<a 
+href="Nase215.htm#Nase218.htm" >up</a>] </p></div>
+<!--l. 331--><p class="indent" >  <a 
+ id="tailNase211.htm"></a> </p> 
+</body> 
+</html>

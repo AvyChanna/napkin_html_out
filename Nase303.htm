@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Dedekind domains</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 151--><div class="crosslinks"><p class="noindent">[<a 
+href="Napa14.htm" >next</a>] [<a 
+href="Nase302.htm" >prev</a>] [<a 
+href="Nase302.htm#tailNase302.htm" >prev-tail</a>] [<a 
+href="Nase286.htm#tailNase303.htm">tail</a>] [<a 
+href="Nase320.htm#Nase323.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">48.3</span>  <a 
+ id="x433-41200048.3"></a>Dedekind domains</h3>
+<!--l. 152--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Any </tspan><tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> <tspan font-family="cmti" font-size="10">is a Dedekind domain.</tspan>
+</p><!--l. 153--><p class="indent" >  We now define a Dedekind domain as follows. <a 
+ id="x433-412001r1225"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 155--><p class="noindent" ><span class="head">
+<a 
+ id="x433-412002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 48.3.1.</tspan>  </span><a 
+ id="x433-412003"></a>An integral domain <tspan font-family="cmsy" font-size="10">𝒜 </tspan>is a <tspan font-family="cmbx" font-size="10">Dedekind domain</tspan> if it is Noetherian,
+integrally closed, and <tspan font-family="cmti" font-size="10">every nonzero prime ideal of </tspan><tspan font-family="cmsy" font-size="10">𝒜 </tspan><tspan font-family="cmti" font-size="10">is in fact maximal</tspan>. (The last
+condition is the important one.)
+</p>
+  </div>
+<!--l. 159--><p class="indent" >
+Here there’s one new word I have to define for you, but we won’t make much use of it.
+<a 
+ id="x433-412004r1226"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 162--><p class="noindent" ><span class="head">
+<a 
+ id="x433-412005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 48.3.2.</tspan>  </span><a 
+ id="x433-412006"></a>Let <tspan font-family="cmmi" font-size="10">R </tspan>be an integral domain and let <tspan font-family="cmmi" font-size="10">K </tspan>be its field of fractions.
+We say <tspan font-family="cmmi" font-size="10">R </tspan>is <tspan font-family="cmbx" font-size="10">integrally closed</tspan> if the only elements <tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">K </tspan>which are roots of <tspan font-family="cmti" font-size="10">monic</tspan>
+polynomials in <tspan font-family="cmmi" font-size="10">R </tspan>are the elements of <tspan font-family="cmmi" font-size="10">R </tspan>(which are roots of the trivial <tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">r </tspan>polynomial).
+</p>
+  </div>
+<!--l. 166--><p class="indent" >
+The <tspan font-family="cmti" font-size="10">interesting </tspan>condition in the definition of a Dedekind domain is the last one: prime ideals
+and maximal ideals are the same thing. The other conditions are just technicalities, but
+“primes are maximal” has real substance.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-785">
+<a 
+ id="x433-412007r1227"></a>
+<div class="newtheorem">
+<!--l. 172--><p class="noindent" ><span class="head">
+<a 
+ id="x433-412008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 48.3.3 </tspan>(<tspan font-family="msbm" font-size="10">ℤ </tspan>is a Dedekind domain)<br 
+class="newline" /> </span><a 
+ id="x433-412009"></a>The ring <tspan font-family="msbm" font-size="10">ℤ </tspan>is a Dedekind domain. Note that
+</p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="msbm" font-size="10">ℤ </tspan>is Noetherian (for obvious reasons).
+     </li>
+     <li class="itemize"><tspan font-family="msbm" font-size="10">ℤ </tspan>has field of fractions <tspan font-family="msbm" font-size="10">ℚ</tspan>. If <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>] is monic, then by the rational root theorem
+     any rational roots are integers (this is the same as the proof that <span class="overline"><tspan font-family="msbm" font-size="10">ℤ</tspan></span> <tspan font-family="cmsy" font-size="10">∩ </tspan><tspan font-family="msbm" font-size="10">ℚ </tspan>= <tspan font-family="msbm" font-size="10">ℤ</tspan>).
+     Hence <tspan font-family="msbm" font-size="10">ℤ </tspan>is integrally closed.
+     </li>
+     <li class="itemize">The nonzero prime ideals of <tspan font-family="msbm" font-size="10">ℤ </tspan>are (<tspan font-family="cmmi" font-size="10">p</tspan>), which also happen to be maximal.</li></ul>
+</p>
+  </div>
+<!--l. 185--><p class="indent" >  </p></div>
+<!--l. 187--><p class="indent" >  The case of interest is a ring <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> in which we wish to do factorizing. We’re now going to
+show that for any number field <tspan font-family="cmmi" font-size="10">K</tspan>, the ring <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> is a Dedekind domain. First, the boring
+part.</p>
+<div class="mdframed" id="mdframed-786">
+<a 
+ id="x433-412010r1228"></a>
+<div class="newtheorem">
+<!--l. 190--><p class="noindent" ><span class="head">
+<a 
+ id="x433-412011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 48.3.4 </tspan><tspan font-family="cmss" font-size="10">(</tspan><tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> <tspan font-family="cmss" font-size="10">integrally closed and Noetherian)</tspan><br 
+class="newline" /> </span><a 
+ id="x433-412012"></a>For  any  number  field  <tspan font-family="cmmi" font-size="10">K</tspan>,  the
+ring <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> is integrally closed and Noetherian.
+</p>
+  </div>
+<!--l. 192--><p class="indent" >  </p></div>
+<!--l. 193--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 194--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Boring, but here it is anyways for completeness.
+                                                                                
+                                                                                
+</p><!--l. 196--><p class="indent" >  Since <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub><img 
+src="Na2267x.png" alt="∼="  class="cong"  /><tspan font-family="msbm" font-size="10">ℤ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmmi" font-size="8">n</tspan></sup>, we get that it’s Noetherian.
+</p><!--l. 198--><p class="indent" >  Now we show that <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> is integrally closed. Suppose that <tspan font-family="cmmi" font-size="10">η </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">K </tspan>is the root of some
+polynomial with coefficients in <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>. Thus
+</p>
+  <div class="math-display" >
+<img 
+src="Na2268x.png" alt="ηn = αn−1 ⋅ηn−1 + αn−2 ⋅ ηn−2 + ⋅⋅⋅+ α0
+" class="math-display"  /></div>
+<!--l. 203--><p class="indent" >  where <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">∈𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>. We want to show that <tspan font-family="cmmi" font-size="10">η </tspan><tspan font-family="cmsy" font-size="10">∈𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> as well.
+</p><!--l. 205--><p class="indent" >  Well,  from  the  above,  <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>[<tspan font-family="cmmi" font-size="10">η</tspan>]  is  finitely  generated…thus  <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">η</tspan>]  <tspan font-family="cmsy" font-size="10">⊆ 𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>[<tspan font-family="cmmi" font-size="10">η</tspan>]  is  finitely
+generated. So <tspan font-family="cmmi" font-size="10">η </tspan><tspan font-family="cmsy" font-size="10">∈</tspan><span class="overline"><tspan font-family="msbm" font-size="10">ℤ</tspan></span>, and hence <tspan font-family="cmmi" font-size="10">η </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">K </tspan><tspan font-family="cmsy" font-size="10">∩</tspan><span class="overline"><tspan font-family="msbm" font-size="10">ℤ</tspan></span> = <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>.                                                □
+</p>
+  </div>
+<!--l. 209--><p class="indent" >  Now let’s do the fun part. We’ll prove a stronger result, which will re-appear
+repeatedly.</p>
+<div class="mdframed" id="mdframed-787">
+<a 
+ id="x433-412013r1229"></a>
+<div class="newtheorem">
+<!--l. 211--><p class="noindent" ><span class="head">
+<a 
+ id="x433-412014r5"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 48.3.5 </tspan><tspan font-family="cmss" font-size="10">(Important: prime ideals divide rational primes)</tspan><br 
+class="newline" /> </span><a 
+ id="x433-412015"></a>Let  <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>  be  a  ring  of
+integers and <tspan font-family="eufm" font-size="10">𝔭 </tspan>a nonzero prime ideal inside it. Then <tspan font-family="eufm" font-size="10">𝔭 </tspan>contains a rational prime <tspan font-family="cmmi" font-size="10">p</tspan>.
+Moreover, <tspan font-family="eufm" font-size="10">𝔭 </tspan>is maximal.
+</p>
+  </div>
+<!--l. 216--><p class="indent" >  </p></div>
+<!--l. 217--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 218--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Take  any  <tspan font-family="cmmi" font-size="10">α</tspan><tspan font-family="cmmi" font-size="10">≠</tspan>0  in  <tspan font-family="eufm" font-size="10">𝔭</tspan>.  Its  Galois  conjugates  are  algebraic  integers  so  their
+product N(<tspan font-family="cmmi" font-size="10">α</tspan>)<tspan font-family="cmmi" font-size="10">∕α </tspan>is in <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> (even though each individual conjugate need not be in <tspan font-family="cmmi" font-size="10">K</tspan>).
+Consequently, N(<tspan font-family="cmmi" font-size="10">α</tspan>) <tspan font-family="cmsy" font-size="10">∈</tspan><tspan font-family="eufm" font-size="10">𝔭</tspan>, and we conclude <tspan font-family="eufm" font-size="10">𝔭 </tspan>contains some integer.
+                                                                                
+                                                                                
+</p><!--l. 225--><p class="indent" >  Then take the smallest positive integer in <tspan font-family="eufm" font-size="10">𝔭</tspan>, say <tspan font-family="cmmi" font-size="10">p</tspan>. We must have that <tspan font-family="cmmi" font-size="10">p </tspan>is a rational
+prime, since otherwise <tspan font-family="eufm" font-size="10">𝔭 </tspan><tspan font-family="cmsy" font-size="10">∋ </tspan><tspan font-family="cmmi" font-size="10">p </tspan>= <tspan font-family="cmmi" font-size="10">xy </tspan>implies one of <tspan font-family="cmmi" font-size="10">x,y </tspan><tspan font-family="cmsy" font-size="10">∈</tspan><tspan font-family="eufm" font-size="10">𝔭</tspan>. This shows the first part.
+</p><!--l. 230--><p class="indent" >  We now do something pretty tricky to show <tspan font-family="eufm" font-size="10">𝔭 </tspan>is maximal. Look at <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="eufm" font-size="10">𝔭</tspan>; since <tspan font-family="eufm" font-size="10">𝔭 </tspan>is
+prime it’s supposed to be an integral domain… but we claim that it’s actually finite! To
+do this, we forget that we can multiply on <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>. Recalling that <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub><img 
+src="Na2269x.png" alt="∼
+="  class="cong"  /><tspan font-family="msbm" font-size="10">ℤ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmmi" font-size="8">n</tspan></sup> as an abelian
+group, we obtain a map
+</p>
+  <div class="math-display" >
+<img 
+src="Na2270x.png" alt="𝔽 ⊕n ∼= 𝒪   ∕(p) ↠ 𝒪   ∕𝔭.
+ p       K         K
+" class="math-display"  /></div>
+<!--l. 238--><p class="indent" >  Hence <img 
+src="Na2271x.png" alt="|𝒪  ∕𝔭|
+  K"  class="left" align="middle" /> <tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>  is <tspan font-family="cmti" font-size="10">finite</tspan>. Since finite integral domains are fields (<tspan font-family="cmbx" font-size="10">??</tspan> ) we are
+done.                                                                                                          □
+</p>
+  </div>
+<!--l. 242--><p class="indent" >  Since every nonzero prime <tspan font-family="eufm" font-size="10">𝔭 </tspan>is maximal, we now know that <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> is a Dedekind domain. Note
+that this tricky proof is essentially inspired by the solution to <tspan font-family="cmbx" font-size="10">??</tspan> .
+                                                                                
+                                                                                
+</p>
+  <!--l. 246--><div class="crosslinks"><p class="noindent">[<a 
+href="Napa14.htm" >next</a>] [<a 
+href="Nase302.htm" >prev</a>] [<a 
+href="Nase302.htm#tailNase302.htm" >prev-tail</a>] [<a 
+href="Nase303.htm" >front</a>] [<a 
+href="Nase320.htm#Nase323.htm" >up</a>] </p></div>
+<!--l. 246--><p class="indent" >  <a 
+ id="tailNase303.htm"></a> </p> 
+</body> 
+</html>

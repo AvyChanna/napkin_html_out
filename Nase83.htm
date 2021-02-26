@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>(Digression) Arrays of numbers are evil</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 812--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase84.htm" >next</a>] [<a 
+href="Nase82.htm" >prev</a>] [<a 
+href="Nase82.htm#tailNase82.htm" >prev-tail</a>] [<a 
+href="#tailNase83.htm">tail</a>] [<a 
+href="Nach12.htm#Nase83.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">9.9</span>  <a 
+ id="x128-1150009.9"></a>(Digression) Arrays of numbers are evil</h3>
+<!--l. 814--><p class="noindent" >As I’ll stress repeatedly, a matrix represents a <tspan font-family="cmti" font-size="10">linear map between two vector spaces</tspan>. Writing it
+in the form of an <tspan font-family="cmmi" font-size="10">m </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">n </tspan>matrix is merely a very convenient way to see the map
+concretely. But it obfuscates the fact that this map is, well, a map, not an array of
+numbers.
+</p><!--l. 821--><p class="indent" >  If you took high school precalculus, you’ll see everything done in terms of matrices. To any
+typical high school student, a matrix is an array of numbers. No one is sure what exactly these
+numbers represent, but they’re told how to magically multiply these arrays to get more arrays.
+They’re told that the matrix
+</p>
+  <div class="math-display" >
+<img 
+src="Na380x.png" alt="⌊ 1  0  ... 0⌋
+| 0  1  ... 0|
+|| .  .       .||
+⌈ ..  ..  ...  ..⌉
+  0  0  ... 1
+" class="math-display"  /></div>
+<!--l. 832--><p class="indent" >  is an “identity matrix”, because when you multiply by another matrix it doesn’t change.
+Then they’re told that the determinant is some magical combination of these numbers formed
+by this weird multiplication rule. No one knows what this determinant does, other than the
+fact that det(<tspan font-family="cmmi" font-size="10">AB</tspan>) = det<tspan font-family="cmmi" font-size="10">A</tspan>det<tspan font-family="cmmi" font-size="10">B</tspan>, and something about areas and row operations and Cramer’s
+rule.
+</p><!--l. 840--><p class="indent" >  Then you go into linear algebra in college, and you do more magic with these arrays of
+numbers. You’re told that two matrices <tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> are similar if
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na381x.png" alt="T2 = ST1S− 1
+" class="math-display"  /></div>
+<!--l. 843--><p class="indent" >  for some invertible matrix <tspan font-family="cmmi" font-size="10">S</tspan>. You’re told that the trace of a matrix Tr<tspan font-family="cmmi" font-size="10">T </tspan>is the
+sum of the diagonal entries. Somehow this doesn’t change if you look at a similar
+matrix, but you’re not sure why. Then you define the characteristic polynomial
+as
+</p>
+  <div class="math-display" >
+<img 
+src="Na382x.png" alt="pT (X ) = det(XI − T ).
+" class="math-display"  /></div>
+<!--l. 849--><p class="indent" >  Somehow this also doesn’t change if you take a similar matrix, but now you really don’t
+know why. And then you have the Cayley-Hamilton theorem in all its black magic: <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>(<tspan font-family="cmmi" font-size="10">T</tspan>) is
+the zero map. Out of curiosity you Google the proof, and you find some ad-hoc procedure
+which still leaves you with no idea why it’s true.
+</p><!--l. 856--><p class="indent" >  This is terrible. What’s so special about <tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> = <tspan font-family="cmmi" font-size="10">ST</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">S</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan>? Only if you know that the matrices
+are linear maps does this make sense: <tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> is just <tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> rewritten with a different choice of
+basis.
+</p><!--l. 860--><p class="indent" >  I really want to push the opposite view. Linear algebra is the study of <tspan font-family="cmti" font-size="10">linear maps</tspan>, but it is
+taught as the study of <tspan font-family="cmti" font-size="10">arrays of numbers</tspan>, and no one knows what these numbers mean. And
+for a good reason: the numbers are meaningless. They are a highly convenient way of encoding
+the matrix, but they are not the main objects of study, any more than the dates of events are
+the main objects of study in history.
+</p><!--l. 869--><p class="indent" >  The other huge downside is that people get the impression that the only (real) vector space
+in existence is <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmmi" font-size="8">n</tspan></sup>. As explained in <tspan font-family="cmbx" font-size="10">??</tspan> , while you <tspan font-family="cmti" font-size="10">can </tspan>work this way if you’re a soulless
+robot, it’s very unnatural for humans to do so.
+</p><!--l. 875--><p class="indent" >  When I took Math 55a as a freshman at Harvard, I got the exact opposite treatment: we did
+all of linear algebra without writing down a single matrix. During all this time I was
+quite confused. What’s wrong with a basis? I didn’t appreciate until later that this
+approach was the morally correct way to treat the subject: it made it clear what was
+happening.
+</p><!--l. 883--><p class="indent" >  Throughout the Napkin, I’ve tried to strike a balance between these two approaches, using
+matrices when appropriate to illustrate the maps and to simplify proofs, but ultimately
+writing theorems and definitions in their <tspan font-family="cmti" font-size="10">morally correct </tspan>form. I hope that this has both the
+advantage of giving the “right” definitions while being concrete enough to be digested. But I
+                                                                                
+                                                                                
+would like to say for the record that, if I had to pick between the high school approach and the
+55a approach, I would pick 55a in a heartbeat.
+                                                                                
+                                                                                
+</p>
+  <!--l. 893--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase84.htm" >next</a>] [<a 
+href="Nase82.htm" >prev</a>] [<a 
+href="Nase82.htm#tailNase82.htm" >prev-tail</a>] [<a 
+href="Nase83.htm" >front</a>] [<a 
+href="Nach12.htm#Nase83.htm" >up</a>] </p></div>
+<!--l. 893--><p class="indent" >  <a 
+ id="tailNase83.htm"></a> </p> 
+</body> 
+</html>

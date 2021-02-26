@@ -1,0 +1,294 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Total and partial derivatives</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 174--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase285.htm" >next</a>] [<a 
+href="Nase267.htm" >prev</a>] [<a 
+href="Nase267.htm#tailNase267.htm" >prev-tail</a>] [<a 
+href="Nase254.htm#tailNase268.htm">tail</a>] [<a 
+href="Nase282.htm#Nase284.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">42.3</span>  <a 
+ id="x387-36700042.3"></a>Total and partial derivatives</h3>
+<!--l. 177--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">If </tspan><tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x,y</tspan>) = <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmti" font-size="10">, then </tspan>(<tspan font-family="cmmi" font-size="10">Df</tspan>) : (<tspan font-family="cmmi" font-size="10">x,y</tspan>)<img 
+src="Na1977x.png" alt="↦→"  class="mapsto"  />2<tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmsy" font-size="10">⋅</tspan><tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> + 2<tspan font-family="cmmi" font-size="10">y </tspan><tspan font-family="cmsy" font-size="10">⋅</tspan><tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmti" font-size="10">,</tspan>
+<tspan font-family="cmti" font-size="10">and</tspan> <img 
+src="Na1978x.png" alt="∂f∂x-"  class="frac" align="middle" /> = 2<tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmti" font-size="10">,</tspan> <img 
+src="Na1979x.png" alt="∂∂fy"  class="frac" align="middle" /> = 2<tspan font-family="cmmi" font-size="10">y</tspan><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 178--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>be open and let <tspan font-family="cmmi" font-size="10">V </tspan>have a basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>. Suppose <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>is a function which
+is differentiable everywhere, meaning (<tspan font-family="cmmi" font-size="10">Df</tspan>)<sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> exists for every <tspan font-family="cmmi" font-size="10">p</tspan>. In that case, one can
+consider <tspan font-family="cmmi" font-size="10">Df </tspan>as <tspan font-family="cmti" font-size="10">itself  </tspan>a function:
+</p><table 
+class="align-star"><!--l. 185--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">Df </tspan>: <tspan font-family="cmmi" font-size="10">U</tspan></td><td 
+class="align-even"> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup></td>   <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">p</tspan></td>     <td 
+class="align-even"><img 
+src="Na1981x.png" alt="↦→"  class="mapsto"  />(<tspan font-family="cmmi" font-size="10">Df</tspan>)<sub><tspan font-family="cmmi" font-size="8">p</tspan></sub><tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                                                </td></tr></table>
+</p><!--l. 186--><p class="indent" >  This is a little crazy: to every <tspan font-family="cmti" font-size="10">point </tspan>in <tspan font-family="cmmi" font-size="10">U </tspan>we associate a <tspan font-family="cmti" font-size="10">function </tspan>in <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>. We say <tspan font-family="cmmi" font-size="10">Df </tspan>is the
+<tspan font-family="cmbx" font-size="10">total derivative</tspan> of <tspan font-family="cmmi" font-size="10">f</tspan>, to reflect how much information we’re dealing with. We say (<tspan font-family="cmmi" font-size="10">Df</tspan>)<sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> is
+the total derivative at <tspan font-family="cmmi" font-size="10">p</tspan>.
+</p><!--l. 192--><p class="indent" >  Let’s apply the projection principle now to <tspan font-family="cmmi" font-size="10">Df</tspan>. Since we picked a basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> of <tspan font-family="cmmi" font-size="10">V </tspan>, there
+is a corresponding dual basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>, …, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>. The Projection Principle tells us that <tspan font-family="cmmi" font-size="10">Df </tspan>can
+thus be thought of as just <tspan font-family="cmmi" font-size="10">n </tspan>functions, so we can write
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1982x.png" alt="         ∨           ∨
+Df  = ψ1e1 + ⋅⋅⋅+ ψnen.
+" class="math-display"  /></div>
+<!--l. 198--><p class="indent" >  In fact, we can even describe what the <tspan font-family="cmmi" font-size="10">ψ</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> are. <a 
+ id="x387-367001r1094"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 200--><p class="noindent" ><span class="head">
+<a 
+ id="x387-367002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 42.3.1.</tspan>  </span><a 
+ id="x387-367003"></a>The <tspan font-family="cmmi" font-size="10">i</tspan><sup><tspan font-family="cmbx" font-size="10">th</tspan></sup> <tspan font-family="cmbx" font-size="10">partial derivative</tspan> of <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>, denoted
+</p>
+  <div class="math-display" >
+<img 
+src="Na1983x.png" alt="∂f
+∂e- : U → ℝ
+  i
+" class="math-display"  /></div>
+<!--l. 202--><p class="indent" >  is defined by
+</p>
+  <div class="math-display" >
+<img 
+src="Na1984x.png" alt="-∂f (p) := lim f(p-+-tei)−-f-(p)-.
+∂ei      t→0        t
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+  </div>
+<!--l. 207--><p class="indent" >
+You can think of it as “<tspan font-family="cmmi" font-size="10">f</tspan><tspan font-family="cmsy" font-size="10">′ </tspan>along <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>”.</p>
+<div class="mdframed" id="mdframed-700">
+<a 
+ id="x387-367004r1095"></a>
+<div class="newtheorem">
+<!--l. 210--><p class="noindent" ><span class="head">
+<a 
+ id="x387-367005r2"></a>
+<tspan font-family="cmbx" font-size="10">Question 42.3.2.</tspan>  </span><a 
+ id="x387-367006"></a><tspan font-family="cmr" font-size="10">Check that if </tspan><tspan font-family="cmmi" font-size="10">Df </tspan><tspan font-family="cmr" font-size="10">exists, then</tspan>
+</p>
+<div class="math-display" >
+<img 
+src="Na1985x.png" alt="           ∂f
+(Df )p(ei) = ∂e-(p).
+             i
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 211--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-701">
+<a 
+ id="x387-367007r1096"></a>
+<div class="newtheorem">
+<!--l. 213--><p class="noindent" ><span class="head">
+<a 
+ id="x387-367008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 42.3.3 —  </tspan> </span><a 
+ id="x387-367009"></a>Of course you can write down a definition of <img 
+src="Na1986x.png" alt="∂f
+∂v"  class="frac" align="middle" /> for any <tspan font-family="cmmi" font-size="10">v </tspan>(rather
+than just the <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>).
+</p>
+  </div>
+<!--l. 215--><p class="indent" >  </p></div>
+<!--l. 217--><p class="indent" >  From the above remarks, we can derive that
+</p>
+  <div class="math-display" >
+<img 
+src="Na1987x.png" alt="|----------------------------|
+|     -∂f-  ∨        -∂f-  ∨ |
+Df  = ∂e1 ⋅e1 + ⋅⋅⋅+ ∂en ⋅en.|
+------------------------------
+" class="math-display"  /></div>
+<!--l. 226--><p class="indent" >  and so given a basis of <tspan font-family="cmmi" font-size="10">V </tspan>, we can think of <tspan font-family="cmmi" font-size="10">Df </tspan>as just the <tspan font-family="cmmi" font-size="10">n </tspan>partials.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-702">
+<a 
+ id="x387-367010r1097"></a>
+<div class="newtheorem">
+<!--l. 229--><p class="noindent" ><span class="head">
+<a 
+ id="x387-367011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 42.3.4 —  </tspan> </span><a 
+ id="x387-367012"></a>Keep in mind that each <img 
+src="Na1988x.png" alt="∂f-
+∂ei"  class="frac" align="middle" /> is a function from <tspan font-family="cmmi" font-size="10">U </tspan>to the <tspan font-family="cmti" font-size="10">reals</tspan>. That
+is to say,
+</p>
+<div class="math-display" >
+<img 
+src="Na1989x.png" alt="(Df ) =  ∂f-(p)⋅e∨+  ⋅⋅⋅+  ∂f-(p)⋅e∨ ∈ V∨.
+     p   ∂e1 --  1        ∂en --  n
+         ◟ ◝∈◜ℝ ◞           ◟ ◝∈◜ℝ ◞
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 238--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-703">
+<a 
+ id="x387-367013r1098"></a>
+<div class="newtheorem">
+<!--l. 241--><p class="noindent" ><span class="head">
+<a 
+ id="x387-367014r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 42.3.5 </tspan>(Partial derivatives of <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x,y</tspan>) = <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>)<br 
+class="newline" /> </span><a 
+ id="x387-367015"></a>Let   <tspan font-family="cmmi" font-size="10">f   </tspan>:   <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>    <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ   </tspan>by
+(<tspan font-family="cmmi" font-size="10">x,y</tspan>)<img 
+src="Na1990x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>. Then in our new language,
+</p>
+<div class="math-display" >
+<img 
+src="Na1991x.png" alt="                 ∨        ∨
+Df : (x,y ) ↦→ 2x⋅e1 + 2y ⋅e2.
+" class="math-display"  /></div>
+<!--l. 245--><p class="noindent" >Thus the partials are
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na1992x.png" alt="∂f-                        ∂f-
+∂x : (x, y) ↦→ 2x ∈ ℝ  and   ∂y : (x,y) ↦→ 2y ∈ ℝ
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 251--><p class="indent" >  </p></div>
+<!--l. 253--><p class="indent" >  With all that said, I haven’t really said much about how to find the total derivative itself.
+For example, if I told you
+</p>
+  <div class="math-display" >
+<img 
+src="Na1993x.png" alt="                  2 4
+f(x,y) = x siny + x y
+" class="math-display"  /></div>
+<!--l. 257--><p class="indent" >  you might want to be able to compute <tspan font-family="cmmi" font-size="10">Df </tspan>without going through that horrible limit
+definition I told you about earlier.
+</p><!--l. 260--><p class="indent" >  Fortunately, it turns out you already know how to compute partial derivatives, because you
+had to take AP Calculus at some point in your life. It turns out for most reasonable functions,
+this is all you’ll ever need.</p>
+<div class="mdframed" id="mdframed-704">
+<a 
+ id="x387-367016r1099"></a>
+<div class="newtheorem">
+<!--l. 263--><p class="noindent" ><span class="head">
+<a 
+ id="x387-367017r6"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 42.3.6 </tspan><tspan font-family="cmss" font-size="10">(Continuous partials implies differentiable)</tspan><br 
+class="newline" /> </span><a 
+ id="x387-367018"></a> Let <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>be open and pick
+any basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>. Let <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>and suppose that <img 
+src="Na1994x.png" alt="∂f-
+∂ei"  class="frac" align="middle" /> is defined for each <tspan font-family="cmmi" font-size="10">i </tspan>and moreover
+is <tspan font-family="cmti" font-size="10">continuous</tspan>. Then <tspan font-family="cmmi" font-size="10">f </tspan>is differentiable and <tspan font-family="cmmi" font-size="10">Df </tspan>is given by
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na1995x.png" alt="      ∑n  ∂f
+Df  =     ---⋅e∨i .
+      i=1 ∂ei
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 270--><p class="indent" >  </p></div>
+<!--l. 271--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 272--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Not going to write out the details, but…given <tspan font-family="cmmi" font-size="10">v </tspan>= <tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <img 
+src="Na1996x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>, the idea is to
+just walk from <tspan font-family="cmmi" font-size="10">p </tspan>to <tspan font-family="cmmi" font-size="10">p </tspan>+ <tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">p </tspan>+ <tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, …, up to <tspan font-family="cmmi" font-size="10">p </tspan>+ <tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> + <img 
+src="Na1997x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> = <tspan font-family="cmmi" font-size="10">p </tspan>+ <tspan font-family="cmmi" font-size="10">v</tspan>,
+picking up the partial derivatives on the way. Do some calculation.                         □
+</p>
+  </div><div class="mdframed" id="mdframed-705">
+<a 
+ id="x387-367019r1100"></a>
+<div class="newtheorem">
+<!--l. 281--><p class="noindent" ><span class="head">
+<a 
+ id="x387-367020r7"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 42.3.7 —  </tspan> </span><a 
+ id="x387-367021"></a>The continuous condition cannot be dropped. The function
+</p>
+<div class="math-display" >
+<img 
+src="Na1998x.png" alt="         {
+           -x2y-2  (x,y) ⁄= (0,0)
+f (x,y ) =  x +y
+           0      (x,y) = (0,0).
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 289--><p class="noindent" >is the classic counterexample – the total derivative <tspan font-family="cmmi" font-size="10">Df </tspan>does not exist at zero, even
+though both partials do.</p>
+  </div>
+<!--l. 291--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-706">
+<a 
+ id="x387-367022r1101"></a>
+<div class="newtheorem">
+<!--l. 294--><p class="noindent" ><span class="head">
+<a 
+ id="x387-367023r8"></a>
+<tspan font-family="cmbx" font-size="10">Example 42.3.8 </tspan>(Actually computing a total derivative)<br 
+class="newline" /> </span><a 
+ id="x387-367024"></a>Let <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x,y</tspan>) = <tspan font-family="cmmi" font-size="10">x</tspan>sin<tspan font-family="cmmi" font-size="10">y </tspan>+ <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">4</tspan></sup>.
+Then
+</p><table 
+class="align-star"><!--l. 299--><p class="noindent" >
+<tr><td 
+class="align-odd"><img 
+src="Na2000x.png" alt="∂f
+-∂x"  class="frac" align="middle" />(<tspan font-family="cmmi" font-size="10">x,y</tspan>)</td><td 
+class="align-even"> = sin<tspan font-family="cmmi" font-size="10">y </tspan>+ <tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">4</tspan></sup> <tspan font-family="cmsy" font-size="10">⋅ </tspan>2<tspan font-family="cmmi" font-size="10">x</tspan></td>   <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><img 
+src="Na2001x.png" alt="∂f
+---
+ ∂y"  class="frac" align="middle" />(<tspan font-family="cmmi" font-size="10">x,y</tspan>)</td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">x</tspan>cos<tspan font-family="cmmi" font-size="10">y </tspan>+ <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">⋅ </tspan>4<tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup><tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                                      </td></tr></table>
+</p><!--l. 300--><p class="noindent" >So <tspan font-family="cmbx" font-size="10">??</tspan>  applies, and <tspan font-family="cmmi" font-size="10">Df </tspan>= <img 
+src="Na2002x.png" alt="∂∂fx"  class="frac" align="middle" /><tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> + <img 
+src="Na2003x.png" alt="∂∂fy"  class="frac" align="middle" /><tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>, which I won’t bother to write out.
+</p>
+  </div>
+<!--l. 303--><p class="indent" >  </p></div>
+<!--l. 305--><p class="indent" >  The example <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x,y</tspan>) = <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> is the same thing. That being said, who cares about
+<tspan font-family="cmmi" font-size="10">x</tspan>sin<tspan font-family="cmmi" font-size="10">y </tspan>+ <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">4</tspan></sup> anyways?
+                                                                                
+                                                                                
+</p>
+  <!--l. 308--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase285.htm" >next</a>] [<a 
+href="Nase267.htm" >prev</a>] [<a 
+href="Nase267.htm#tailNase267.htm" >prev-tail</a>] [<a 
+href="Nase268.htm" >front</a>] [<a 
+href="Nase282.htm#Nase284.htm" >up</a>] </p></div>
+<!--l. 308--><p class="indent" >  <a 
+ id="tailNase268.htm"></a> </p> 
+</body> 
+</html>

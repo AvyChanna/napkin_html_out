@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Motivating measure spaces via random variables</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 38--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase232.htm" >next</a>] [<a 
+href="Nali8.htm" >prev</a>] [<a 
+href="Nali8.htm#tailNali8.htm" >prev-tail</a>] [<a 
+href="#tailNase221.htm">tail</a>] [<a 
+href="Nase229.htm#Nase231.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">34.1</span>  <a 
+ id="x322-30400034.1"></a>Motivating measure spaces via random variables</h3>
+<!--l. 39--><p class="noindent" >To motivate <tspan font-family="cmti" font-size="10">why </tspan>we want to construct measure spaces, I want to talk about a (real) <tspan font-family="cmbx" font-size="10">random</tspan>
+<tspan font-family="cmbx" font-size="10">variable</tspan>, which you might think of as </p>
+     <ul class="itemize1">
+     <li class="itemize">the result of a coin flip,
+     </li>
+     <li class="itemize">the high temperature in Boston on Saturday,
+     </li>
+     <li class="itemize">the possibility of rain on your 18.725 date next weekend.</li></ul>
+<!--l. 48--><p class="indent" >  Why does this need a long theory to develop well? For a simple coin flip one intuitively
+just thinks “50% heads, 50% tails” and is done with it. The situation is a little
+trickier with temperature since it is continuous rather than discrete, but if all you care
+about is that one temperature, calculus seems like it might be enough to deal with
+this.
+</p><!--l. 56--><p class="indent" >  But it gets more slippery once the variables start to “talk to” each other: the high
+temperature tells you a little bit about whether it will rain, because e.g. if the temperature is
+very high it’s quite likely to be sunny. Suddenly we find ourselves wishing we could talk about
+conditional probability, but this is a whole can of worms — the relations between these sorts
+of things can get very complicated very quickly.
+</p><!--l. 63--><p class="indent" >  The big idea to getting a formalism for this is that:</p>
+<div class="mdframed" id="mdframed-617">
+<!--l. 65--><p class="noindent" ><tspan font-family="cmbx" font-size="10">Our measure spaces </tspan>Ω <tspan font-family="cmbx" font-size="10">will be thought of as a space of entire worlds, with each</tspan>
+<tspan font-family="cmmi" font-size="10">ω </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan>Ω <tspan font-family="cmbx" font-size="10">representing a world. Random variables are functions from worlds to</tspan>
+<tspan font-family="msbm" font-size="10">ℝ</tspan><tspan font-family="cmbx" font-size="10">.</tspan></p><!--l. 68--><p class="noindent" ></p>
+  </div>
+<!--l. 69--><p class="indent" >  This way, the space of “worlds” takes care of all the messy interdependence.
+</p><!--l. 71--><p class="indent" >  Then, we can assign “measures” to sets of worlds: for example, to be a fair coin means that
+if you are only interested in that one coin flip, the “fraction” of worlds in which that coin
+showed heads should be <img 
+src="Na1820x.png" alt="1
+2"  class="frac" align="middle" />. This is in some ways backwards from what you were told in
+high-school: officially, we start with the space of worlds, rather than starting with the
+probabilities.
+</p><!--l. 79--><p class="indent" >  It will soon be clear that there is no way we can assign a well-defined measure to every
+single one of the 2<sup><tspan font-family="cmr" font-size="8">Ω</tspan></sup> subsets. Fortunately, in practice, we won’t need to, and the
+notion of a <tspan font-family="cmmi" font-size="10">σ</tspan>-algebra will capture the idea of “enough measur-<tspan font-family="cmti" font-size="10">able </tspan>sets for us to get
+by”.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-618">
+<a 
+ id="x322-304001r964"></a>
+<div class="newtheorem">
+<!--l. 86--><p class="noindent" ><span class="head">
+<a 
+ id="x322-304002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 34.1.1 </tspan><tspan font-family="cmss" font-size="10">(Random seeds) </tspan><tspan font-family="cmssbx" font-size="10">—  </tspan> </span><a 
+ id="x322-304003"></a>Another analogy if you do some programming: each
+<tspan font-family="cmmi" font-size="10">ω </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan>Ω is a <tspan font-family="cmti" font-size="10">random seed</tspan>, and everything is determined from there.</p>
+  </div>
+<!--l. 90--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 92--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase232.htm" >next</a>] [<a 
+href="Nali8.htm" >prev</a>] [<a 
+href="Nali8.htm#tailNali8.htm" >prev-tail</a>] [<a 
+href="Nase221.htm" >front</a>] [<a 
+href="Nase229.htm#Nase231.htm" >up</a>] </p></div>
+<!--l. 92--><p class="indent" >  <a 
+ id="tailNase221.htm"></a> </p> 
+</body> 
+</html>

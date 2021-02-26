@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The state space</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 58--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase160.htm" >next</a>] [<a 
+href="Nase158.htm" >prev</a>] [<a 
+href="Nase158.htm#tailNase158.htm" >prev-tail</a>] [<a 
+href="#tailNase159.htm">tail</a>] [<a 
+href="Nach26.htm#Nase159.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">23.2</span>  <a 
+ id="x230-21900023.2"></a>The state space</h3>
+<!--l. 59--><p class="noindent" >If you think that’s weird, well, it gets worse.
+</p><!--l. 61--><p class="indent" >  In classical computation, a bit is either 0 or 1. More generally, we can think of a classical
+space of <tspan font-family="cmmi" font-size="10">n </tspan>possible states 0, …, <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1. Thus in the classical situation, the space of possible
+states is just a discrete set with <tspan font-family="cmmi" font-size="10">n </tspan>elements.
+</p><!--l. 67--><p class="indent" >  In quantum computation, a <tspan font-family="cmbx" font-size="10">qubit</tspan> is instead any <tspan font-family="cmti" font-size="10">complex linear combination </tspan>of 0 and 1. To
+be precise, consider the normed complex vector space
+</p>
+  <div class="math-display" >
+<img 
+src="Na1029x.png" alt="H  = ℂ ⊕2
+" class="math-display"  /></div>
+<!--l. 71--><p class="indent" >  and denote the orthonormal basis elements by <img 
+src="Na1030x.png" alt="|0⟩"  class="left" align="middle" /> and <img 
+src="Na1031x.png" alt="|1⟩"  class="left" align="middle" />. Then a <tspan font-family="cmti" font-size="10">qubit </tspan>is a nonzero
+element <img 
+src="Na1032x.png" alt="|ψ ⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">H</tspan>, so that it can be written in the form
+</p>
+  <div class="math-display" >
+<img 
+src="Na1033x.png" alt="|ψ⟩ = α |0 ⟩+ β |1⟩
+" class="math-display"  /></div>
+<!--l. 75--><p class="indent" >  where <tspan font-family="cmmi" font-size="10">α </tspan>and <tspan font-family="cmmi" font-size="10">β </tspan>are not both zero. Typically, we normalize so that <img 
+src="Na1034x.png" alt="|ψ ⟩"  class="left" align="middle" /> has norm
+1:
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1035x.png" alt="⟨ψ |ψ ⟩ = 1 ⇐ ⇒ |α|2 + |β|2 = 1.
+" class="math-display"  /></div>
+<!--l. 78--><p class="indent" >  In particular, we can recover the “classical” situation with <img 
+src="Na1036x.png" alt="|0⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">H </tspan>and <img 
+src="Na1037x.png" alt="|1⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">H</tspan>, but now
+we have some “intermediate” states, such as
+</p>
+  <div class="math-display" >
+<img 
+src="Na1038x.png" alt="√1-(|0⟩+ |1⟩).
+  2
+" class="math-display"  /></div>
+<!--l. 82--><p class="indent" >  Philosophically, what has happened is that:</p>
+<div class="mdframed" id="mdframed-457">
+<!--l. 84--><p class="noindent" ><tspan font-family="cmbx" font-size="10">Instead of allowing just the states </tspan><img 
+src="Na1039x.png" alt="|0⟩"  class="left" align="middle" /> <tspan font-family="cmbx" font-size="10">and </tspan><img 
+src="Na1040x.png" alt="|1⟩"  class="left" align="middle" /><tspan font-family="cmbx" font-size="10">, we allow any complex linear</tspan>
+<tspan font-family="cmbx" font-size="10">combination of them.</tspan></p><!--l. 86--><p class="noindent" ></p>
+  </div>
+<!--l. 87--><p class="indent" >  More generally, if dim<tspan font-family="cmmi" font-size="10">H </tspan>= <tspan font-family="cmmi" font-size="10">n</tspan>, then the possible states are nonzero elements
+</p>
+  <div class="math-display" >
+<img 
+src="Na1041x.png" alt="c  |0⟩ + c |1⟩+ ⋅⋅⋅+ c    |n − 1⟩
+ 0       1           n−1
+" class="math-display"  /></div>
+<!--l. 90--><p class="indent" >  which we usually normalize so that <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub><tspan font-family="cmsy" font-size="10">|</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmsy" font-size="10">|</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <img 
+src="Na1042x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmsy" font-size="10">|</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> = 1.
+                                                                                
+                                                                                
+</p>
+  <!--l. 93--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase160.htm" >next</a>] [<a 
+href="Nase158.htm" >prev</a>] [<a 
+href="Nase158.htm#tailNase158.htm" >prev-tail</a>] [<a 
+href="Nase159.htm" >front</a>] [<a 
+href="Nach26.htm#Nase159.htm" >up</a>] </p></div>
+<!--l. 93--><p class="indent" >  <a 
+ id="tailNase159.htm"></a> </p> 
+</body> 
+</html>

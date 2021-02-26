@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The Fourier transform of the non-compact case</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 183--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase263.htm" >next</a>] [<a 
+href="Nase247.htm" >prev</a>] [<a 
+href="Nase247.htm#tailNase247.htm" >prev-tail</a>] [<a 
+href="Nach39.htm#tailNase248.htm">tail</a>] [<a 
+href="Nase257.htm#Nase262.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">38.4</span>  <a 
+ id="x360-33500038.4"></a>The Fourier transform of the non-compact case</h3>
+<!--l. 184--><p class="noindent" >If <tspan font-family="cmmi" font-size="10">G </tspan>is LCA but not compact, then Theorem <a 
+href="Nase247.htm#x359-334002r1">38.3.1<!--tex4ht:ref: thm:god --></a> becomes false. On the other hand, it’s still
+possible to define <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">G</tspan></span>. We can then try to write the Fourier coefficients anyways:
+let
+</p>
+  <div class="math-display" >
+<img 
+src="Na1908x.png" alt="       ∫
+ ^          --
+f(ξ) =    f ⋅eξ dμ
+        G
+" class="math-display"  /></div>
+<!--l. 188--><p class="indent" >  for <tspan font-family="cmmi" font-size="10">ξ </tspan><tspan font-family="cmsy" font-size="10">∈</tspan><span class='accentwidehat'><tspan font-family="cmmi" font-size="10">G</tspan></span> and <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>. The results are less fun in this case, but we still have, for
+example:</p>
+<div class="mdframed" id="mdframed-673">
+<a 
+ id="x360-335001r1045"></a>
+<div class="newtheorem">
+<!--l. 191--><p class="noindent" ><span class="head">
+<a 
+ id="x360-335002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 38.4.1 </tspan><tspan font-family="cmss" font-size="10">(Fourier inverison formula in the non-compact case)</tspan><br 
+class="newline" /> </span><a 
+ id="x360-335003"></a>Let  <tspan font-family="cmmi" font-size="10">μ  </tspan>be  a  Haar
+measure  on  <tspan font-family="cmmi" font-size="10">G</tspan>.  Then  there  exists  a  unique  Haar  measure  <tspan font-family="cmmi" font-size="10">ν </tspan>on  <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">G</tspan></span> (called  the  <tspan font-family="cmbx" font-size="10">dual</tspan>
+<tspan font-family="cmbx" font-size="10">measure</tspan>) such that: whenever <tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">L</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>(<tspan font-family="cmmi" font-size="10">G</tspan>) and <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">f</tspan></span> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">L</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>(<span class='accentwidehat'><tspan font-family="cmmi" font-size="10">G</tspan></span>), we have
+</p>
+<div class="math-display" >
+<img 
+src="Na1909x.png" alt="      ∫
+f(x) =   f^(ξ)ξ(x) dν
+        ^G
+" class="math-display"  /></div>
+<!--l. 197--><p class="noindent" >for almost all <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G </tspan>(with respect to <tspan font-family="cmmi" font-size="10">μ</tspan>). If <tspan font-family="cmmi" font-size="10">f </tspan>is continuous, this holds for all <tspan font-family="cmmi" font-size="10">x</tspan>.
+</p>
+  </div>
+<!--l. 199--><p class="indent" >  </p></div>
+<!--l. 200--><p class="indent" >  So while we don’t have the niceness of a full inner product from before, we can still in some
+situations at least write <tspan font-family="cmmi" font-size="10">f </tspan>as integral in sort of the same way as before.
+</p><!--l. 204--><p class="indent" >  In particular, they have special names for a few special <tspan font-family="cmmi" font-size="10">G</tspan>: </p>
+     <ul class="itemize1">
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">G </tspan>= <tspan font-family="msbm" font-size="10">ℝ</tspan>, then <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">G</tspan></span> = <tspan font-family="msbm" font-size="10">ℝ</tspan>, yielding the “<a 
+href="https://en.wikipedia.org/wiki/Fourier_transform" >(continuous) Fourier transform</a>”.
+     </li>
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">G </tspan>= <tspan font-family="msbm" font-size="10">ℤ</tspan>, then <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">G</tspan></span> = <tspan font-family="msbm" font-size="10">𝕋</tspan>, yielding the “<a 
+href="https://en.wikipedia.org/wiki/Discrete-time_Fourier_transform" >discrete time Fourier transform</a>”.</li></ul>
+                                                                                
+                                                                                
+  <!--l. 214--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase263.htm" >next</a>] [<a 
+href="Nase247.htm" >prev</a>] [<a 
+href="Nase247.htm#tailNase247.htm" >prev-tail</a>] [<a 
+href="Nase248.htm" >front</a>] [<a 
+href="Nase257.htm#Nase262.htm" >up</a>] </p></div>
+<!--l. 214--><p class="indent" >  <a 
+ id="tailNase248.htm"></a> </p> 
+</body> 
+</html>

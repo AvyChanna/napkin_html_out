@@ -1,0 +1,343 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Observations</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 93--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase161.htm" >next</a>] [<a 
+href="Nase159.htm" >prev</a>] [<a 
+href="Nase159.htm#tailNase159.htm" >prev-tail</a>] [<a 
+href="#tailNase160.htm">tail</a>] [<a 
+href="Nach26.htm#Nase160.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">23.3</span>  <a 
+ id="x231-22000023.3"></a>Observations</h3>
+<!--l. 96--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> id <tspan font-family="cmti" font-size="10">corresponds to not making a measurement since</tspan>
+<tspan font-family="cmti" font-size="10">all its eigenvalues are equal, but any operator with distinct eigenvalues will cause</tspan>
+<tspan font-family="cmti" font-size="10">collapse.</tspan>
+</p><!--l. 97--><p class="indent" >  If you think that’s weird, well, it gets worse. First, some linear algebra: <a 
+ id="x231-220001r725"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 100--><p class="noindent" ><span class="head">
+<a 
+ id="x231-220002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 23.3.1.</tspan>  </span><a 
+ id="x231-220003"></a>Let <tspan font-family="cmmi" font-size="10">V </tspan>be a finite-dimensional inner product space. For a map <tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>,
+the following conditions are equivalent: </p>
+     <ul class="itemize1">
+     <li class="itemize"><img 
+src="Na1043x.png" alt="⟨Tx,y⟩"  class="left" align="middle" /> = <img 
+src="Na1044x.png" alt="⟨x,T y⟩"  class="left" align="middle" /> for any <tspan font-family="cmmi" font-size="10">x,y </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>.
+     </li>
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">T </tspan>= <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmsy" font-size="8">†</tspan></sup>.</li></ul>
+<!--l. 107--><p class="noindent" >A map <tspan font-family="cmmi" font-size="10">T </tspan>satisfying these conditions is called <tspan font-family="cmbx" font-size="10">Hermitian</tspan>.
+</p>
+  </div>
+<!--l. 108--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-458">
+<a 
+ id="x231-220004r726"></a>
+<div class="newtheorem">
+<!--l. 110--><p class="noindent" ><span class="head">
+<a 
+ id="x231-220005r2"></a>
+<tspan font-family="cmbx" font-size="10">Question 23.3.2.</tspan>  </span><a 
+ id="x231-220006"></a><tspan font-family="cmr" font-size="10">Show that </tspan><tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmr" font-size="10">is normal.</tspan></p>
+  </div>
+<!--l. 111--><p class="indent" >  </p></div>
+<!--l. 112--><p class="indent" >  Thus, we know that <tspan font-family="cmmi" font-size="10">T </tspan>is diagonalizable with respect to the inner form, so for a suitable
+basis we can write it in an orthonormal basis as
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1045x.png" alt="    ⌊                  ⌋
+      λ0  0   ...   0
+    || 0   λ1  ...   0  ||
+T = |  ..   ..  ..    ..  | .
+    ⌈  .   .    .   .  ⌉
+      0   0   ...  λn−1
+" class="math-display"  /></div>
+<!--l. 123--><p class="indent" >  As we’ve said, this is fantastic: not only do we have a basis of eigenvectors, but the
+eigenvectors are pairwise orthogonal, and so they form an orthonormal basis of
+<tspan font-family="cmmi" font-size="10">V </tspan>.</p>
+<div class="mdframed" id="mdframed-459">
+<a 
+ id="x231-220007r727"></a>
+<div class="newtheorem">
+<!--l. 128--><p class="noindent" ><span class="head">
+<a 
+ id="x231-220008r3"></a>
+<tspan font-family="cmbx" font-size="10">Question 23.3.3.</tspan>  </span><a 
+ id="x231-220009"></a><tspan font-family="cmr" font-size="10">Show that all eigenvalues of </tspan><tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmr" font-size="10">are real. (</tspan><tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmr" font-size="10">= </tspan><tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmsy" font-size="7">†</tspan></sup><tspan font-family="cmr" font-size="10">.)</tspan></p>
+  </div>
+<!--l. 130--><p class="indent" >  </p></div>
+<!--l. 132--><p class="indent" >  Back to quantum computation. Suppose we have a state <img 
+src="Na1046x.png" alt="|ψ⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">H</tspan>, where dim<tspan font-family="cmmi" font-size="10">H </tspan>= 2; we
+haven’t distinguished a particular basis yet, so we just have a nonzero vector. Then the way
+observations work (and this is physics, so you’ll have to take my word for it) is as
+follows:</p>
+<div class="mdframed" id="mdframed-460">
+<!--l. 139--><p class="noindent" ><tspan font-family="cmbx" font-size="10">Pick a Hermitian operator </tspan><tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">H </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">H</tspan><tspan font-family="cmbx" font-size="10">; then observations of </tspan><tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmbx" font-size="10">return eigenvalues of</tspan>
+<tspan font-family="cmmi" font-size="10">T</tspan><tspan font-family="cmbx" font-size="10">.</tspan></p><!--l. 141--><p class="noindent" ></p>
+  </div>
+<!--l. 142--><p class="indent" >  To be precise: </p>
+     <ul class="itemize1">
+     <li class="itemize">Pick a Hermitian operator <tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">H </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">H</tspan>, which is called the <tspan font-family="cmbx" font-size="10">observable</tspan>.
+     </li>
+     <li class="itemize">Consider  its  eigenvalues  <tspan font-family="cmmi" font-size="10">λ</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>,  …,  <tspan font-family="cmmi" font-size="10">λ</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub>  and  corresponding  eigenvectors  <img 
+src="Na1047x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>,  …,
+     <img 
+src="Na1048x.png" alt="|n− 1⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>. Tacitly we may assume that <img 
+src="Na1049x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>, …, <img 
+src="Na1050x.png" alt="|n − 1⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub> form an orthonormal
+     basis of <tspan font-family="cmmi" font-size="10">H</tspan>. (The subscript <tspan font-family="cmmi" font-size="10">T </tspan>is here to distinguish the eigenvectors of <tspan font-family="cmmi" font-size="10">T </tspan>from the
+     basis elements of <tspan font-family="cmmi" font-size="10">H</tspan>.)
+     </li>
+     <li class="itemize">Write <img 
+src="Na1051x.png" alt="|ψ ⟩"  class="left" align="middle" /> in the orthonormal basis as
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na1052x.png" alt="c0 |0⟩T + c1 |1⟩T + ⋅⋅⋅+ cn−1 |n − 1⟩T .
+" class="math-display"  /></div>
+     </li>
+     <li class="itemize">Then the probability of observing <tspan font-family="cmmi" font-size="10">λ</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> is
+<div class="math-display" >
+<img 
+src="Na1053x.png" alt="       |c |2
+---2----i-------2.
+|c0| + ⋅⋅⋅+ |cn− 1|
+" class="math-display"  /></div>
+     <!--l. 156--><p class="noindent" >This is called making an <tspan font-family="cmbx" font-size="10">observation along </tspan><tspan font-family="cmmi" font-size="10">T</tspan>.</p></li></ul>
+<!--l. 158--><p class="noindent" >Note that in particular, for any nonzero constant <tspan font-family="cmmi" font-size="10">c</tspan>, <img 
+src="Na1054x.png" alt="|ψ⟩"  class="left" align="middle" /> and <tspan font-family="cmmi" font-size="10">c</tspan><img 
+src="Na1055x.png" alt="|ψ⟩"  class="left" align="middle" /> are indistinguishable, which is
+why we like to normalize <img 
+src="Na1056x.png" alt="|ψ⟩"  class="left" align="middle" />. But the queerest thing of all is what happens to <img 
+src="Na1057x.png" alt="|ψ ⟩"  class="left" align="middle" />: by
+measuring it, we actually destroy information. This behavior is called <tspan font-family="cmbx" font-size="10">quantum collapse</tspan>.
+</p>
+     <ul class="itemize1">
+     <li class="itemize">Suppose for simplicity that we observe <img 
+src="Na1058x.png" alt="|ψ⟩"  class="left" align="middle" /> with <tspan font-family="cmmi" font-size="10">T </tspan>and obtain an eigenvalue <tspan font-family="cmmi" font-size="10">λ</tspan>, and
+     that <img 
+src="Na1059x.png" alt="|i⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub> is the only eigenvector with this eigenvalue. Then, the state <img 
+src="Na1060x.png" alt="|ψ ⟩"  class="left" align="middle" /><tspan font-family="cmti" font-size="10">collapses</tspan>
+     to just the state <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><img 
+src="Na1061x.png" alt="|i⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>: all the other information is destroyed. (In fact, we may as
+     well say it collapses to <img 
+src="Na1062x.png" alt="|i⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>, since again constant factors are not relevant.)
+     </li>
+     <li class="itemize">More generally, if we observe <tspan font-family="cmmi" font-size="10">λ</tspan>, consider the generalized eigenspace <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">λ</tspan></sub> (i.e. the
+     span of eigenvectors with the same eigenvalue). Then the physical state <img 
+src="Na1063x.png" alt="|ψ⟩"  class="left" align="middle" /> has
+     been changed as well: it has now been projected onto the eigenspace <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">λ</tspan></sub>. In still
+     other words, after observation, the state collapses to
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na1064x.png" alt=" ∑
+     ci |i⟩T .
+0λ≤ii≤=nλ
+" class="math-display"  /></div>
+     </li></ul>
+<!--l. 184--><p class="noindent" >In other words,</p>
+<div class="mdframed" id="mdframed-461">
+<!--l. 186--><p class="noindent" ><tspan font-family="cmbx" font-size="10">When we make a measurement, the coefficients from different eigenspaces are</tspan>
+<tspan font-family="cmbx" font-size="10">destroyed.</tspan></p><!--l. 188--><p class="noindent" ></p>
+  </div>
+<!--l. 189--><p class="indent" >  Why does this happen? Beats me…physics (and hence real life) is weird. But anyways, an
+example.</p>
+<div class="mdframed" id="mdframed-462">
+<a 
+ id="x231-220010r728"></a>
+<div class="newtheorem">
+<!--l. 192--><p class="noindent" ><span class="head">
+<a 
+ id="x231-220011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 23.3.4 </tspan>(Quantum measurement of a state <img 
+src="Na1065x.png" alt="|ψ ⟩"  class="left" align="middle" />)<br 
+class="newline" /> </span><a 
+ id="x231-220012"></a>Let    <tspan font-family="cmmi" font-size="10">H     </tspan>=     <tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup>     with
+orthonormal basis <img 
+src="Na1066x.png" alt="|0 ⟩"  class="left" align="middle" /> and <img 
+src="Na1067x.png" alt="|1⟩"  class="left" align="middle" /> and consider the state
+</p>
+<div class="math-display" >
+<img 
+src="Na1068x.png" alt="       i        2       [i∕ √5]
+|ψ⟩ = √--|0⟩+  √--|1⟩ =    √-- ∈ H.
+        5       5        2∕ 5
+" class="math-display"  /></div>
+<!--l. 201--><p class="noindent" >
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">Let
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na1069x.png" alt="    [      ]
+T =   1  0   .
+      0 − 1
+" class="math-display"  /></div>
+    <!--l. 203--><p class="noindent" >This has eigenvectors <img 
+src="Na1070x.png" alt="|0⟩"  class="left" align="middle" /> = <img 
+src="Na1071x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub> and <img 
+src="Na1072x.png" alt="|1⟩"  class="left" align="middle" /> = <img 
+src="Na1073x.png" alt="|1⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>, with eigenvalues +1 and <tspan font-family="cmsy" font-size="10">−</tspan>1. So
+    if we measure <img 
+src="Na1074x.png" alt="|ψ⟩"  class="left" align="middle" /> to <tspan font-family="cmmi" font-size="10">T</tspan>, we get +1 with probability 1<tspan font-family="cmmi" font-size="10">∕</tspan>5 and <tspan font-family="cmsy" font-size="10">−</tspan>1 with probability
+    4<tspan font-family="cmmi" font-size="10">∕</tspan>5. After this measurement, the original state collapses to <img 
+src="Na1075x.png" alt="|0⟩"  class="left" align="middle" /> if we measured +1,
+    and <img 
+src="Na1076x.png" alt="|1⟩"  class="left" align="middle" /> if we measured <tspan font-family="cmsy" font-size="10">−</tspan>1. So we never learn the original probabilities.
+    </p></dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">Now consider <tspan font-family="cmmi" font-size="10">T </tspan>= id, and arbitrarily pick two orthonormal eigenvectors <img 
+src="Na1077x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>, <img 
+src="Na1078x.png" alt="|1⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>;
+    thus <tspan font-family="cmmi" font-size="10">ψ </tspan>= <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub><img 
+src="Na1079x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub> + <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><img 
+src="Na1080x.png" alt="|1⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>. Since all eigenvalues of <tspan font-family="cmmi" font-size="10">T </tspan>are +1, our measurement will
+    always be +1 no matter what we do. But there is also no collapsing, because none
+    of the coefficients get destroyed.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">Now consider
+<div class="math-display" >
+<img 
+src="Na1081x.png" alt="    [    ]
+T =  0  7  .
+     7  0
+" class="math-display"  /></div>
+    <!--l. 220--><p class="noindent" >The two normalized eigenvectors are
+    </p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na1082x.png" alt="          [ ]               [   ]
+       -1- 1             -1-  1
+|0⟩T = √2--1      |1⟩T = √2-- − 1
+" class="math-display"  /></div>
+    <!--l. 223--><p class="noindent" >with eigenvalues +7 and <tspan font-family="cmsy" font-size="10">−</tspan>7 respectively. In this basis, we have
+    </p>
+<div class="math-display" >
+<img 
+src="Na1083x.png" alt="      2 + i       − 2 + i
+|ψ⟩ = √----|0⟩T + -√---- |1⟩T .
+        10           10
+" class="math-display"  /></div>
+    <!--l. 227--><p class="noindent" >So  we  get  +7  with  probability  <img 
+src="Na1084x.png" alt="12"  class="frac" align="middle" />  and  <tspan font-family="cmsy" font-size="10">−</tspan>7  with  probability  <img 
+src="Na1085x.png" alt="12"  class="frac" align="middle" />,  and  after  the
+    measurement, <img 
+src="Na1086x.png" alt="|ψ ⟩"  class="left" align="middle" /> collapses to one of <img 
+src="Na1087x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub> and <img 
+src="Na1088x.png" alt="|1⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>.</p></dd></dl>
+</p>
+  </div>
+<!--l. 231--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-463">
+<a 
+ id="x231-220016r729"></a>
+<div class="newtheorem">
+<!--l. 233--><p class="noindent" ><span class="head">
+<a 
+ id="x231-220017r5"></a>
+<tspan font-family="cmbx" font-size="10">Question 23.3.5.</tspan>  </span><a 
+ id="x231-220018"></a><tspan font-family="cmr" font-size="10">Suppose we measure </tspan><img 
+src="Na1089x.png" alt="|ψ⟩"  class="left" align="middle" /> <tspan font-family="cmr" font-size="10">with </tspan><tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmr" font-size="10">and get </tspan><tspan font-family="cmmi" font-size="10">λ</tspan><tspan font-family="cmr" font-size="10">. What happens if we measure</tspan>
+<tspan font-family="cmr" font-size="10">with </tspan><tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmr" font-size="10">again?</tspan></p>
+  </div>
+<!--l. 235--><p class="indent" >  </p></div>
+<!--l. 237--><p class="indent" >  For <tspan font-family="cmmi" font-size="10">H </tspan>= <tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup> we can come up with more classes of examples using the so-called <tspan font-family="cmbx" font-size="10">Pauli</tspan>
+<tspan font-family="cmbx" font-size="10">matrices</tspan>. These are the three Hermitian matrices
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na1090x.png" alt="    [      ]          [    ]         [      ]
+      1  0             0  1           0  − i
+σz =  0 − 1      σx =  1  0     σy =   i  0  .
+" class="math-display"  /></div>
+<!--l. 247--><p class="indent" >  These matrices are important because:</p>
+<div class="mdframed" id="mdframed-464">
+<a 
+ id="x231-220019r730"></a>
+<div class="newtheorem">
+<!--l. 249--><p class="noindent" ><span class="head">
+<a 
+ id="x231-220020r6"></a>
+<tspan font-family="cmbx" font-size="10">Question 23.3.6.</tspan>  </span><a 
+ id="x231-220021"></a><tspan font-family="cmr" font-size="10">Show that these three matrices, plus the identity matrix, form a basis for the</tspan>
+<tspan font-family="cmr" font-size="10">set of Hermitian 2 </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmr" font-size="10">2 matrices.</tspan></p>
+  </div>
+<!--l. 251--><p class="indent" >  </p></div>
+<!--l. 252--><p class="indent" >  So the Pauli matrices are a natural choice of basis.
+</p><!--l. 254--><p class="indent" >  Their normalized eigenvectors are
+</p>
+  <div class="math-display" >
+<img 
+src="Na1091x.png" alt="          [ ]                [ ]
+|↑⟩ = |0⟩ = 1      |↓⟩ = |1⟩ =  0
+           0                  1
+" class="math-display"  /></div>
+<!--l. 256--><p class="indent" >
+</p>
+  <div class="math-display" >
+<img 
+src="Na1092x.png" alt="         [ ]               [   ]
+|→ ⟩ = √1--1      |← ⟩ = √1-- 1
+        2 1               2 − 1
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 258--><p class="indent" >
+</p>
+  <div class="math-display" >
+<img 
+src="Na1093x.png" alt="       1  [1]           1  [ 1]
+|⊗⟩ = √---        |⊙ ⟩ = √--
+        2  i             2  − i
+" class="math-display"  /></div>
+<!--l. 260--><p class="indent" >  which we call “<tspan font-family="cmmi" font-size="10">z</tspan>-up”, “<tspan font-family="cmmi" font-size="10">z</tspan>-down”, “<tspan font-family="cmmi" font-size="10">x</tspan>-up”, “<tspan font-family="cmmi" font-size="10">x</tspan>-down”, “<tspan font-family="cmmi" font-size="10">y</tspan>-up”, “<tspan font-family="cmmi" font-size="10">y</tspan>-down”. (The eigenvalues
+are +1 for “up” and <tspan font-family="cmsy" font-size="10">−</tspan>1 for “down”.) So, given a state <img 
+src="Na1094x.png" alt="|ψ ⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup> we can make a
+measurement with respect to any of these three bases by using the corresponding Pauli
+matrix.
+</p><!--l. 267--><p class="indent" >  In light of this, the previous examples were (a) measuring along <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">z</tspan></sub>, (b) measuring along id,
+and (c) measuring along 7<tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">x</tspan></sub>.
+</p><!--l. 272--><p class="indent" >  Notice that if we are given a state <img 
+src="Na1095x.png" alt="|ψ⟩"  class="left" align="middle" />, and are told in advance that it is either <img 
+src="Na1096x.png" alt="|→ ⟩"  class="left" align="middle" /> or <img 
+src="Na1097x.png" alt="|← ⟩"  class="left" align="middle" />
+(or any other orthogonal states) then we are in what is more or less a classical situation.
+Specifically, if we make a measurement along <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">x</tspan></sub>, then we find out which state that <img 
+src="Na1098x.png" alt="|ψ ⟩"  class="left" align="middle" /> was in
+(with 100% certainty), and the state does not undergo any collapse. Thus, orthogonal states
+are reliably distinguishable.
+                                                                                
+                                                                                
+</p>
+  <!--l. 281--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase161.htm" >next</a>] [<a 
+href="Nase159.htm" >prev</a>] [<a 
+href="Nase159.htm#tailNase159.htm" >prev-tail</a>] [<a 
+href="Nase160.htm" >front</a>] [<a 
+href="Nach26.htm#Nase160.htm" >up</a>] </p></div>
+<!--l. 281--><p class="indent" >  <a 
+ id="tailNase160.htm"></a> </p> 
+</body> 
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Motivation</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 4--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase322.htm" >next</a>] [<a 
+href="Nase284.htm#tailNase301.htm">tail</a>] [<a 
+href="Nase320.htm#Nase321.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">48.1</span>  <a 
+ id="x431-41000048.1"></a>Motivation</h3>
+<!--l. 5--><p class="noindent" >Suppose we’re interested in solutions to the Diophantine equation <tspan font-family="cmmi" font-size="10">n </tspan>= <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + 5<tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> for a given <tspan font-family="cmmi" font-size="10">n</tspan>.
+The idea is to try and “factor” <tspan font-family="cmmi" font-size="10">n </tspan>in <tspan font-family="msbm" font-size="10">ℤ</tspan>[<img 
+src="Na2245x.png" alt="√ ---
+  − 5"  class="sqrt"  />], for example
+</p>
+  <div class="math-display" >
+<img 
+src="Na2246x.png" alt="        √ ---     √---
+6 = (1 +   − 5)(1 − − 5).
+" class="math-display"  /></div>
+<!--l. 9--><p class="indent" >  Unfortunately, this is not so simple, because as I’ve said before we don’t have unique
+factorization of elements:
+</p>
+  <div class="math-display" >
+<img 
+src="Na2247x.png" alt="          (    √ --)(    √ --)
+6 = 2⋅3 =  1 +   − 5 1 −   − 5 .
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 12--><p class="indent" >  One reason this doesn’t work is that we don’t have a notion of a <tspan font-family="cmti" font-size="10">greatest common divisor</tspan>.
+We can write (35<tspan font-family="cmmi" font-size="10">,</tspan>77) = 7, but what do we make of (3<tspan font-family="cmmi" font-size="10">,</tspan>1 + <img 
+src="Na2248x.png" alt="√ ---
+  − 5"  class="sqrt"  />)?
+</p><!--l. 16--><p class="indent" >  The trick is to use ideals as a “generalized GCD”. Recall that by (<tspan font-family="cmmi" font-size="10">a,b</tspan>) I mean the ideal
+<tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">ax </tspan>+ <tspan font-family="cmmi" font-size="10">by</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">x,y </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>[<img 
+src="Na2249x.png" alt="√ −-5"  class="sqrt"  />]<tspan font-family="cmsy" font-size="10">}</tspan>. You can see that (35<tspan font-family="cmmi" font-size="10">,</tspan>77) = (7), but (3<tspan font-family="cmmi" font-size="10">,</tspan>1 + <img 
+src="Na2250x.png" alt="√ −-5"  class="sqrt"  />) will be left
+“unsimplified” because it doesn’t represent an actual value in the ring. Using these <tspan font-family="cmti" font-size="10">sets</tspan>
+(ideals) as elements, it turns out that we can develop a full theory of prime factorization, and
+we do so in this chapter.
+</p><!--l. 25--><p class="indent" >  In other words, we use the ideal (<tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,a</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub>) to interpret a “generalized GCD” of <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub>.
+In particular, if we have a number <tspan font-family="cmmi" font-size="10">x </tspan>we want to represent, we encode it as just
+(<tspan font-family="cmmi" font-size="10">x</tspan>).
+</p><!--l. 30--><p class="indent" >  Going back to our example of 6,
+</p>
+  <div class="math-display" >
+<img 
+src="Na2251x.png" alt="(6) = (2) ⋅(3) = (1 + √−-5)⋅(1 − √ − 5) .
+" class="math-display"  /></div>
+<!--l. 33--><p class="indent" >  Please take my word for it that in fact, the complete prime factorization of (6) into prime
+ideals is
+</p>
+  <div class="math-display" >
+<img 
+src="Na2252x.png" alt="           √ --- 2      √ ---      √ ---    2
+(6) = (2,1−   − 5)(3,1 +   − 5)(3,1−  − 5) = 𝔭 𝔮1𝔮2.
+" class="math-display"  /></div>
+<!--l. 39--><p class="indent" >  In fact, (2) = <tspan font-family="eufm" font-size="10">𝔭</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, (3) = <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, (1 + <img 
+src="Na2253x.png" alt="√ ---
+  − 5"  class="sqrt"  />) = <tspan font-family="eufm" font-size="10">𝔭𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, (1 <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na2254x.png" alt="√ ---
+  − 5"  class="sqrt"  />) = <tspan font-family="eufm" font-size="10">𝔭𝔮</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. So 6 indeed factorizes
+uniquely into ideals, even though it doesn’t factor into elements.
+</p><!--l. 44--><p class="indent" >  As one can see above, ideal factorization is more refined than element factorization. Once
+you have the factorization into <tspan font-family="cmti" font-size="10">ideals</tspan>, you can from there recover all the factorizations into
+<tspan font-family="cmti" font-size="10">elements</tspan>. The upshot of this is that if we want to write <tspan font-family="cmmi" font-size="10">n </tspan>as <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + 5<tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, we just have to factor <tspan font-family="cmmi" font-size="10">n</tspan>
+into ideals, and from there we can recover all factorizations into elements, and finally all ways
+to write <tspan font-family="cmmi" font-size="10">n </tspan>as <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + 5<tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>. Since we can already break <tspan font-family="cmmi" font-size="10">n </tspan>into rational prime factors (for example
+6 = 2 <tspan font-family="cmsy" font-size="10">⋅ </tspan>3 above) we just have to figure out how each rational prime <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">n </tspan>breaks down. There’s
+                                                                                
+                                                                                
+a recipe for this, <tspan font-family="cmbx" font-size="10">??</tspan> ! In fact, I’ll even tell you what is says in this special case:
+</p>
+     <ul class="itemize1">
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">t</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + 5 factors as (<tspan font-family="cmmi" font-size="10">t </tspan>+ <tspan font-family="cmmi" font-size="10">c</tspan>)(<tspan font-family="cmmi" font-size="10">t </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">c</tspan>) (mod <tspan font-family="cmmi" font-size="10">p</tspan>), then (<tspan font-family="cmmi" font-size="10">p</tspan>) = (<tspan font-family="cmmi" font-size="10">p,c </tspan>+ <img 
+src="Na2255x.png" alt="√---
+ − 5"  class="sqrt"  />)(<tspan font-family="cmmi" font-size="10">p,c </tspan><tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na2256x.png" alt="√ ---
+  − 5"  class="sqrt"  />).
+     </li>
+     <li class="itemize">Otherwise, (<tspan font-family="cmmi" font-size="10">p</tspan>) is a prime ideal.</li></ul>
+<!--l. 62--><p class="noindent" >In this chapter we’ll develop this theory of unique factorization in full generality.</p>
+<div class="mdframed" id="mdframed-781">
+<a 
+ id="x431-410001r1219"></a>
+<div class="newtheorem">
+<!--l. 81--><p class="noindent" ><span class="head">
+<a 
+ id="x431-410002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 48.1.1 —  </tspan> </span><a 
+ id="x431-410003"></a>In this chapter, I’ll be using the letters <tspan font-family="eufm" font-size="10">𝔞</tspan>, <tspan font-family="eufm" font-size="10">𝔟</tspan>, <tspan font-family="eufm" font-size="10">𝔭</tspan>, <tspan font-family="eufm" font-size="10">𝔮 </tspan>for ideals of <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>.
+When fractional ideals arise, I’ll use <tspan font-family="cmmi" font-size="10">I </tspan>and <tspan font-family="cmmi" font-size="10">J </tspan>for them.</p>
+  </div>
+<!--l. 84--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 86--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase322.htm" >next</a>] [<a 
+href="Nase301.htm" >front</a>] [<a 
+href="Nase320.htm#Nase321.htm" >up</a>] </p></div>
+<!--l. 86--><p class="indent" >  <a 
+ id="tailNase301.htm"></a> </p> 
+</body> 
+</html>

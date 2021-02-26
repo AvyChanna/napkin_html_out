@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Equalizers</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 11--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach71.htm" >next</a>] [<a 
+href="#tailNase392.htm">tail</a>] [<a 
+href="Nase419.htm#Nase420.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">62.1</span>  <a 
+ id="x550-52600062.1"></a>Equalizers</h3>
+<!--l. 12--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">The equalizer of </tspan><tspan font-family="cmmi" font-size="10">f,g </tspan>: <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">Y </tspan><tspan font-family="cmti" font-size="10">is the set of points with</tspan>
+<tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmmi" font-size="10">g</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>)<tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 13--><p class="indent" >  Given two sets <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>, and maps <tspan font-family="cmmi" font-size="10">X</tspan><img 
+src="Na3058x.png" alt=" f,g
+−−→"  class=""  /><tspan font-family="cmmi" font-size="10">Y </tspan>, we define their <tspan font-family="cmbx" font-size="10">equalizer</tspan> to be
+</p>
+  <div class="math-display" >
+<img 
+src="Na3059x.png" alt="{x ∈ X | f(x) = g(x)} .
+" class="math-display"  /></div>
+<!--l. 15--><p class="indent" >  We would like a categorical way of defining this, too.
+</p><!--l. 17--><p class="indent" >  Consider two objects <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>with two maps <tspan font-family="cmmi" font-size="10">f </tspan>and <tspan font-family="cmmi" font-size="10">g </tspan>between them. Stealing a page from
+<span class="cite">[<tspan font-family="cmbx" font-size="10">?</tspan>]</span>, we call this a <tspan font-family="cmbx" font-size="10">fork</tspan>: <img 
+src="Na3060x.png" alt="X  ----f---- Y
+       g
+"  />
+A cone over this fork is an object <tspan font-family="cmmi" font-size="10">A </tspan>and arrows over <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>which make the diagram
+commute, like so. <img 
+src="Na3061x.png" alt="   - --f∘q=g∘q- --
+ A
+ |
+q|
+ |
+ |     f
+ X ----------Y
+       g
+"  />
+Effectively, the arrow over <tspan font-family="cmmi" font-size="10">Y </tspan>is just forcing <tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmsy" font-size="10">∘</tspan><tspan font-family="cmmi" font-size="10">q </tspan>= <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∘</tspan><tspan font-family="cmmi" font-size="10">q</tspan>. In any case, the <tspan font-family="cmbx" font-size="10">equalizer</tspan> of <tspan font-family="cmmi" font-size="10">f </tspan>and <tspan font-family="cmmi" font-size="10">g</tspan>
+is a “universal cone” over this fork: it is an object <tspan font-family="cmmi" font-size="10">E </tspan>and a map <tspan font-family="cmmi" font-size="10">E</tspan><img 
+src="Na3062x.png" alt="e
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">X </tspan>such that for each
+<tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3063x.png" alt="q
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">X </tspan>the diagram <img 
+src="Na3064x.png" alt="      A| --- ----- ---- -
+       |
+
+      !∃h
+       |
+      E  --- -
+
+     e f   q
+X  ----------Y------
+       g
+"  />
+commutes for a unique <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3065x.png" alt="−→h"  class=""  /><tspan font-family="cmmi" font-size="10">E</tspan>. In other words, any map <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3066x.png" alt="q−→"  class=""  /><tspan font-family="cmmi" font-size="10">X </tspan>as above must factor uniquely
+through <tspan font-family="cmmi" font-size="10">E</tspan>. Again, the dotted arrows can be omitted, and as before equalizers may not exist.
+But when they do exist:</p>
+<div class="mdframed" id="mdframed-1057">
+<a 
+ id="x550-526001r1598"></a>
+<div class="newtheorem">
+<!--l. 45--><p class="noindent" ><span class="head">
+<a 
+ id="x550-526002r1"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 62.1.1.</tspan>  </span><a 
+ id="x550-526003"></a><tspan font-family="cmr" font-size="10">If </tspan><tspan font-family="cmmi" font-size="10">E</tspan><img 
+src="Na3067x.png" alt=" e
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmr" font-size="10">and </tspan><tspan font-family="cmmi" font-size="10">E</tspan><tspan font-family="cmsy" font-size="10">′</tspan><img 
+src="Na3068x.png" alt=" e′
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmr" font-size="10">are equalizers, show that </tspan><tspan font-family="cmmi" font-size="10">E</tspan><img 
+src="Na3069x.png" alt="∼="  class="cong"  /><tspan font-family="cmmi" font-size="10">E</tspan><tspan font-family="cmsy" font-size="10">′</tspan><tspan font-family="cmr" font-size="10">.</tspan></p>
+  </div>
+<!--l. 47--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-1058">
+<a 
+ id="x550-526004r1599"></a>
+<div class="newtheorem">
+<!--l. 50--><p class="noindent" ><span class="head">
+<a 
+ id="x550-526005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 62.1.2 </tspan>(Examples of equalizers)<br 
+class="newline" /> </span><a 
+ id="x550-526006"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">In <tspan font-family="cmss" font-size="10">Set</tspan>, given <tspan font-family="cmmi" font-size="10">X</tspan><img 
+src="Na3070x.png" alt=" f,g
+−−→"  class=""  /><tspan font-family="cmmi" font-size="10">Y </tspan>the equalizer <tspan font-family="cmmi" font-size="10">E </tspan>can be realized as <tspan font-family="cmmi" font-size="10">E </tspan>= <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmmi" font-size="10">g</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>)<tspan font-family="cmsy" font-size="10">}</tspan>, with
+    the inclusion <tspan font-family="cmmi" font-size="10">e </tspan>: <tspan font-family="cmmi" font-size="10">E</tspan><img 
+src="Na3071x.png" alt="`→"  class="hookrightarrow"  /><tspan font-family="cmmi" font-size="10">X </tspan>as the morphism. As usual, by abuse we’ll often just refer
+                                                                                
+                                                                                
+    to <tspan font-family="cmmi" font-size="10">E </tspan>as the equalizer.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">Ditto in <tspan font-family="cmss" font-size="10">Top</tspan>, <tspan font-family="cmss" font-size="10">Grp</tspan>. One has to check that the appropriate structures are preserved
+    (e.g. one should check that <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">g</tspan>) = <tspan font-family="cmmi" font-size="10">ψ</tspan>(<tspan font-family="cmmi" font-size="10">g</tspan>)<tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G</tspan><tspan font-family="cmsy" font-size="10">} </tspan>is a group).
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">In particular, given a homomorphism <tspan font-family="cmmi" font-size="10">ϕ </tspan>: <tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">H</tspan>, the inclusion ker<tspan font-family="cmmi" font-size="10">ϕ</tspan><img 
+src="Na3072x.png" alt="`→"  class="hookrightarrow"  /><tspan font-family="cmmi" font-size="10">G </tspan>is an
+    equalizer for the fork <tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">H </tspan>by <tspan font-family="cmmi" font-size="10">ϕ </tspan>and the trivial homomorphism.</dd></dl>
+</p>
+  </div>
+<!--l. 66--><p class="indent" >  </p></div>
+<!--l. 68--><p class="indent" >  According to (c) equalizers let us get at the concept of a kernel if there is a distinguished
+“trivial map”, like the trivial homomorphism in <tspan font-family="cmss" font-size="10">Grp</tspan>. We’ll flesh this idea out in the chapter on
+abelian categories.
+                                                                                
+                                                                                
+</p>
+  <!--l. 73--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach71.htm" >next</a>] [<a 
+href="Nase392.htm" >front</a>] [<a 
+href="Nase419.htm#Nase420.htm" >up</a>] </p></div>
+<!--l. 73--><p class="indent" >  <a 
+ id="tailNase392.htm"></a> </p> 
+</body> 
+</html>

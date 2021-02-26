@@ -1,0 +1,194 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Contour integrals</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 179--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase211.htm" >next</a>] [<a 
+href="Nase203.htm" >prev</a>] [<a 
+href="Nase203.htm#tailNase203.htm" >prev-tail</a>] [<a 
+href="#tailNase204.htm">tail</a>] [<a 
+href="Nase206.htm#Nase209.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">31.3</span>  <a 
+ id="x295-28200031.3"></a>Contour integrals</h3>
+<!--l. 180--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">γ</tspan></sub><tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmmi" font-size="8">m</tspan></sup> <tspan font-family="cmmi" font-size="10">dz </tspan><tspan font-family="cmti" font-size="10">around the unit circle.</tspan>
+</p><!--l. 181--><p class="indent" >  In the real line we knew how to integrate a function across a line segment [<tspan font-family="cmmi" font-size="10">a,b</tspan>]: essentially,
+we’d “follow along” the line segment adding up the values of <tspan font-family="cmmi" font-size="10">f </tspan>we see to get some area. Unlike
+in the real line, in the complex plane we have the power to integrate over arbitrary paths: for
+example, we might compute an integral around a unit circle. A contour integral lets us
+formalize this.
+</p><!--l. 188--><p class="indent" >  First of all, if <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>and <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">t</tspan>) = <tspan font-family="cmmi" font-size="10">u</tspan>(<tspan font-family="cmmi" font-size="10">t</tspan>) + <tspan font-family="cmmi" font-size="10">iv</tspan>(<tspan font-family="cmmi" font-size="10">t</tspan>) for <tspan font-family="cmmi" font-size="10">u,v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>, we can define an integral <tspan font-family="cmex" font-size="10">∫</tspan>
+ <sub><tspan font-family="cmmi" font-size="8">a</tspan></sub><sup><tspan font-family="cmmi" font-size="8">b</tspan></sup>
+by just adding the real and imaginary parts:
+</p>
+  <div class="math-display" >
+<img 
+src="Na1664x.png" alt="∫ b         ( ∫ b      )    ( ∫ b      )
+   f (t) dt =     u(t) dt + i     v(t) dt  .
+ a             a               a
+" class="math-display"  /></div>
+<!--l. 193--><p class="indent" >  Now let <tspan font-family="cmmi" font-size="10">α </tspan>: [<tspan font-family="cmmi" font-size="10">a,b</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>be a path, thought of as a complex
+differentiable<span class="footnote-mark"><a 
+href="Na296.htm#fn2x35"><sup class="textsuperscript">2</sup></a></span><a 
+ id="x295-282001f2"></a> 
+function. Such a path is called a <tspan font-family="cmbx" font-size="10">contour</tspan>, and we define its <tspan font-family="cmbx" font-size="10">contour integral</tspan>
+by
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1665x.png" alt="∮           ∫  b
+   f(z) dz =    f(α(t)) ⋅α′(t) dt.
+  α           a
+" class="math-display"  /></div>
+<!--l. 205--><p class="indent" >  You can almost think of this as a <tspan font-family="cmmi" font-size="10">u</tspan>-substitution (which is where the <tspan font-family="cmmi" font-size="10">α</tspan><tspan font-family="cmsy" font-size="10">′ </tspan>comes from). In
+particular, it turns out this integral does not depend on how <tspan font-family="cmmi" font-size="10">α </tspan>is “parametrized”: a circle
+given by
+</p>
+  <div class="math-display" >
+<img 
+src="Na1666x.png" alt="[0,2π] → ℂ : t ↦→ eit
+" class="math-display"  /></div>
+<!--l. 208--><p class="indent" >  and another circle given by
+</p>
+  <div class="math-display" >
+<img 
+src="Na1667x.png" alt="[0,1] → ℂ : t ↦→ e2πit
+" class="math-display"  /></div>
+<!--l. 209--><p class="indent" >  and yet another circle given by
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na1668x.png" alt="[0,1 ] → ℂ : t ↦→ e2πit5
+" class="math-display"  /></div>
+<!--l. 210--><p class="indent" >  will all give the same contour integral, because the paths they represent have the same
+geometric description: “run around the unit circle once”.
+</p><!--l. 213--><p class="indent" >  In what follows I try to use <tspan font-family="cmmi" font-size="10">α </tspan>for general contours and <tspan font-family="cmmi" font-size="10">γ </tspan>in the special case of
+loops.
+</p><!--l. 215--><p class="indent" >  Let’s see an example of a contour integral.</p>
+<div class="mdframed" id="mdframed-591">
+<a 
+ id="x295-282002r920"></a>
+<div class="newtheorem">
+<!--l. 217--><p class="noindent" ><span class="head">
+<a 
+ id="x295-282003r1"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 31.3.1</tspan><br 
+class="newline" /> </span><a 
+ id="x295-282004"></a> Take <tspan font-family="cmmi" font-size="10">γ </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>2<tspan font-family="cmmi" font-size="10">π</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>to be the unit circle specified by
+</p>
+<div class="math-display" >
+<img 
+src="Na1669x.png" alt="     it
+t ↦→ e .
+" class="math-display"  /></div>
+<!--l. 220--><p class="noindent" >Then for any integer <tspan font-family="cmmi" font-size="10">m</tspan>, we have
+</p>
+<div class="math-display" >
+<img 
+src="Na1670x.png" alt="          {
+∮           2πi  m =  − 1
+  zm dz =
+ γ          0    otherwise
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 228--><p class="indent" >  </p></div>
+<!--l. 229--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 230--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>The derivative of <tspan font-family="cmmi" font-size="10">e</tspan><sup><tspan font-family="cmmi" font-size="8">it</tspan></sup> is <tspan font-family="cmmi" font-size="10">ie</tspan><sup><tspan font-family="cmmi" font-size="8">it</tspan></sup>. So, by definition the answer is the value of
+</p><table 
+class="align-star"><!--l. 237--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmex" font-size="10">∫</tspan>
+  <sub><tspan font-family="cmr" font-size="8">0</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan><tspan font-family="cmmi" font-size="8">π</tspan></sup>(<tspan font-family="cmmi" font-size="10">e</tspan><sup><tspan font-family="cmmi" font-size="8">it</tspan></sup>)<sup><tspan font-family="cmmi" font-size="8">m</tspan></sup> <tspan font-family="cmsy" font-size="10">⋅ </tspan>(<tspan font-family="cmmi" font-size="10">ie</tspan><sup><tspan font-family="cmmi" font-size="8">it</tspan></sup>) <tspan font-family="cmmi" font-size="10">dt</tspan></td><td 
+class="align-even"> = <tspan font-family="cmex" font-size="10">∫</tspan>
+  <sub><tspan font-family="cmr" font-size="8">0</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan><tspan font-family="cmmi" font-size="8">π</tspan></sup><tspan font-family="cmmi" font-size="10">i</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sup><tspan font-family="cmmi" font-size="8">it</tspan></sup>)<sup><tspan font-family="cmr" font-size="8">1+</tspan><tspan font-family="cmmi" font-size="8">m</tspan></sup> <tspan font-family="cmmi" font-size="10">dt</tspan></td>                              <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                   <td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">i</tspan><tspan font-family="cmex" font-size="10">∫</tspan>
+  <sub><tspan font-family="cmr" font-size="8">0</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan><tspan font-family="cmmi" font-size="8">π</tspan></sup> cos[(1 + <tspan font-family="cmmi" font-size="10">m</tspan>)<tspan font-family="cmmi" font-size="10">t</tspan>] + <tspan font-family="cmmi" font-size="10">i</tspan>sin[(1 + <tspan font-family="cmmi" font-size="10">m</tspan>)<tspan font-family="cmmi" font-size="10">t</tspan>] <tspan font-family="cmmi" font-size="10">dt</tspan></td>         <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                   <td 
+class="align-even"> = <tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmex" font-size="10">∫</tspan>
+  <sub><tspan font-family="cmr" font-size="8">0</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan><tspan font-family="cmmi" font-size="8">π</tspan></sup> sin[(1 + <tspan font-family="cmmi" font-size="10">m</tspan>)<tspan font-family="cmmi" font-size="10">t</tspan>] <tspan font-family="cmmi" font-size="10">dt </tspan>+ <tspan font-family="cmmi" font-size="10">i</tspan><tspan font-family="cmex" font-size="10">∫</tspan> 
+<sub><tspan font-family="cmr" font-size="8">0</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan><tspan font-family="cmmi" font-size="8">π</tspan></sup> cos[(1 + <tspan font-family="cmmi" font-size="10">m</tspan>)<tspan font-family="cmmi" font-size="10">t</tspan>] <tspan font-family="cmmi" font-size="10">dt.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">            </td></tr></table>
+</p><!--l. 238--><p class="indent" >  This is now an elementary calculus question. One can see that this equals 2<tspan font-family="cmmi" font-size="10">πi </tspan>if <tspan font-family="cmmi" font-size="10">m </tspan>= <tspan font-family="cmsy" font-size="10">−</tspan>1 and
+otherwise the integrals vanish.                                                                         □
+</p>
+  </div>
+<!--l. 242--><p class="indent" >  Let me try to explain why this intuitively ought to be true for <tspan font-family="cmmi" font-size="10">m </tspan>= 0. In that case we have
+<tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">γ</tspan></sub>1 <tspan font-family="cmmi" font-size="10">dz</tspan>. So as the integral walks around the unit circle, it “sums up” all the tangent vectors at
+every point (that’s the direction it’s walking in), multiplied by 1. And given the
+nice symmetry of the circle, it should come as no surprise that everything cancels
+out. The theorem says that even if we multiply by <tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmmi" font-size="8">m</tspan></sup> for <tspan font-family="cmmi" font-size="10">m</tspan><tspan font-family="cmmi" font-size="10">≠</tspan> <tspan font-family="cmsy" font-size="10">− </tspan>1, we get the same
+cancellation.
+</p>
+                                                                                
+                                                                                
+<div class="center" 
+>
+<!--l. 249--><p class="noindent" >
+</p>
+</div>
+<a 
+ id="x295-282005r921"></a>
+  <div class="newtheorem">
+<!--l. 268--><p class="noindent" ><span class="head">
+<a 
+ id="x295-282006r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 31.3.2.</tspan>  </span><a 
+ id="x295-282007"></a>Given <tspan font-family="cmmi" font-size="10">α </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>, we denote by <span class="overline"><tspan font-family="cmmi" font-size="10">α</tspan></span> the “backwards” contour
+<span class="overline"><tspan font-family="cmmi" font-size="10">α</tspan></span>(<tspan font-family="cmmi" font-size="10">t</tspan>) = <tspan font-family="cmmi" font-size="10">α</tspan>(1 <tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">t</tspan>).
+</p>
+  </div>
+<!--l. 271--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-592">
+<a 
+ id="x295-282008r922"></a>
+<div class="newtheorem">
+<!--l. 274--><p class="noindent" ><span class="head">
+<a 
+ id="x295-282009r3"></a>
+<tspan font-family="cmbx" font-size="10">Question 31.3.3.</tspan>  </span><a 
+ id="x295-282010"></a><tspan font-family="cmr" font-size="10">What’s the relation between</tspan> <tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="7">α</tspan></sub><tspan font-family="cmmi" font-size="10">f dz </tspan><tspan font-family="cmr" font-size="10">and</tspan> <tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><span class="overline"><tspan font-family="cmmi" font-size="10">α</tspan></span></sub><tspan font-family="cmmi" font-size="10">f dz</tspan><tspan font-family="cmr" font-size="10">? Prove it.</tspan>
+</p>
+  </div>
+<!--l. 276--><p class="indent" >  </p></div>
+<!--l. 278--><p class="indent" >  This might seem a little boring. Things will get really cool really soon, I promise.
+                                                                                
+                                                                                
+</p>
+  <!--l. 281--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase211.htm" >next</a>] [<a 
+href="Nase203.htm" >prev</a>] [<a 
+href="Nase203.htm#tailNase203.htm" >prev-tail</a>] [<a 
+href="Nase204.htm" >front</a>] [<a 
+href="Nase206.htm#Nase209.htm" >up</a>] </p></div>
+<!--l. 281--><p class="indent" >  <a 
+ id="tailNase204.htm"></a> </p> 
+</body> 
+</html>

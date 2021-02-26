@@ -1,0 +1,282 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Tensor product</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+                                                                                
+                                                                                
+  <!--l. 43--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase96.htm" >next</a>] [<a 
+href="#tailNase95.htm">tail</a>] [<a 
+href="Nach14.htm#Nase95.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">11.1</span>  <a 
+ id="x143-12900011.1"></a>Tensor product</h3>
+<!--l. 44--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="msbm" font-size="10">ℝ</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>] <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>[<tspan font-family="cmmi" font-size="10">y</tspan>] = <tspan font-family="msbm" font-size="10">ℝ</tspan>[<tspan font-family="cmmi" font-size="10">x,y</tspan>]<tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 45--><p class="indent" >  We know that dim(<tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>) = dim<tspan font-family="cmmi" font-size="10">V </tspan>+ dim<tspan font-family="cmmi" font-size="10">W</tspan>, even though as sets <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>looks
+like <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">W</tspan>. What if we wanted a real “product” of spaces, with multiplication of
+dimensions?
+</p><!--l. 50--><p class="indent" >  For example, let’s pull out my favorite example of a real vector space, namely
+</p>
+  <div class="math-display" >
+<img 
+src="Na435x.png" alt="    {   2                  }
+V =   ax + bx + c | a,b,c ∈ ℝ .
+" class="math-display"  /></div>
+<!--l. 53--><p class="indent" >  Here’s another space, a little smaller:
+</p>
+  <div class="math-display" >
+<img 
+src="Na436x.png" alt="W  = {dy + e | d,e ∈ ℝ }.
+" class="math-display"  /></div>
+<!--l. 55--><p class="indent" >  If we take the direct sum, then we would get some rather unnatural vector space of
+dimension five (whose elements can be thought of as pairs (<tspan font-family="cmmi" font-size="10">ax</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">bx </tspan>+ <tspan font-family="cmmi" font-size="10">c,dy </tspan>+ <tspan font-family="cmmi" font-size="10">e</tspan>)). But suppose
+we want a vector space whose elements are <tspan font-family="cmti" font-size="10">products </tspan>of polynomials in <tspan font-family="cmmi" font-size="10">V </tspan>and <tspan font-family="cmmi" font-size="10">W</tspan>;
+it would contain elements like 4<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">y </tspan>+ 5<tspan font-family="cmmi" font-size="10">xy </tspan>+ <tspan font-family="cmmi" font-size="10">y </tspan>+ 3. In particular, the basis would
+be
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na437x.png" alt="{x2y,x2,xy,x,y,1}
+" class="math-display"  /></div>
+<!--l. 63--><p class="indent" >  and thus have dimension six.
+</p><!--l. 65--><p class="indent" >  For this we resort to the <tspan font-family="cmti" font-size="10">tensor product</tspan>. It does exactly this, except that the “multiplication” is done
+by a scary<span class="footnote-mark"><a 
+href="Na144.htm#fn1x15"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x143-129001f1"></a> 
+symbol <tspan font-family="cmsy" font-size="10">⊗</tspan>: think of it as a “wall” that separates the elements between the two vector spaces.
+For example, the above example might be written as
+</p>
+  <div class="math-display" >
+<img 
+src="Na438x.png" alt="  2
+4x ⊗ y + 5x ⊗ y + 1 ⊗ y + 3⊗ 1.
+" class="math-display"  /></div>
+<!--l. 75--><p class="indent" >  (This should be read as (4<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">y</tspan>) + (5<tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">y</tspan>) + <tspan font-family="cmmi" font-size="10">…</tspan>; addition comes after <tspan font-family="cmsy" font-size="10">⊗</tspan>.) Of course there
+should be no distinction between writing 4<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">y </tspan>and <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">⊗ </tspan>4<tspan font-family="cmmi" font-size="10">y </tspan>or even 2<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">⊗ </tspan>2<tspan font-family="cmmi" font-size="10">y</tspan>.
+While we want to keep the <tspan font-family="cmmi" font-size="10">x </tspan>and <tspan font-family="cmmi" font-size="10">y </tspan>separate, the scalars should be free to float
+around.
+</p><!--l. 83--><p class="indent" >  Of course, there’s no need to do everything in terms of just the monomials. We are free to
+write
+</p>
+  <div class="math-display" >
+<img 
+src="Na439x.png" alt="(x+ 1) ⊗ (y + 1).
+" class="math-display"  /></div>
+<!--l. 87--><p class="indent" >  If you like, you can expand this as
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na440x.png" alt="x ⊗ y + 1 ⊗ y + x⊗ 1 + 1 ⊗ 1.
+" class="math-display"  /></div>
+<!--l. 89--><p class="indent" >  Same thing. The point is that we can take any two of our polynomials and artificially
+“tensor” them together.
+</p><!--l. 93--><p class="indent" >  The definition of the tensor product does exactly this, and nothing
+else.<span class="footnote-mark"><a 
+href="Na145.htm#fn2x15"><sup class="textsuperscript">2</sup></a></span><a 
+ id="x143-129002f2"></a> 
+<a 
+ id="x143-129003r439"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 98--><p class="noindent" ><span class="head">
+<a 
+ id="x143-129004r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 11.1.1.</tspan>  </span><a 
+ id="x143-129005"></a>Let <tspan font-family="cmmi" font-size="10">V </tspan>and <tspan font-family="cmmi" font-size="10">W </tspan>be vector spaces over the same field <tspan font-family="cmmi" font-size="10">k</tspan>. The <tspan font-family="cmbx" font-size="10">tensor</tspan>
+<tspan font-family="cmbx" font-size="10">product</tspan> <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⊗</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">W </tspan>is the abelian group generated by elements of the form <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">w</tspan>, subject to
+relations
+</p><table 
+class="align-star"><!--l. 105--><p class="indent" >
+<tr><td 
+class="align-odd">(<tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">w</tspan></td> <td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">w </tspan>+ <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">w</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan>(<tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>)</td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd">(<tspan font-family="cmmi" font-size="10">c </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">v</tspan>) <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">w</tspan></td>   <td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan>(<tspan font-family="cmmi" font-size="10">c </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">w</tspan>)<tspan font-family="cmmi" font-size="10">.</tspan></td>     <td 
+class="align-label"></td><td 
+class="align-label">                                                 </td></tr></table>
+                                                                                
+                                                                                
+</p><!--l. 106--><p class="indent" >  As a vector space, its action is given by <tspan font-family="cmmi" font-size="10">c </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan>(<tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">w</tspan>) = (<tspan font-family="cmmi" font-size="10">c </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">v</tspan>) <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">w </tspan>= <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan>(<tspan font-family="cmmi" font-size="10">c </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">w</tspan>).
+</p>
+  </div>
+<!--l. 109--><p class="indent" >
+Here’s another way to phrase the same idea. We define a <tspan font-family="cmbx" font-size="10">pure tensor</tspan> as an element of the
+form <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">w </tspan>for <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>and <tspan font-family="cmmi" font-size="10">w </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>. But we let the <tspan font-family="cmsy" font-size="10">⊗ </tspan>wall be “permeable” in the sense
+that
+</p>
+  <div class="math-display" >
+<img 
+src="Na442x.png" alt="(c⋅v) ⊗ w = v ⊗ (c⋅w) = c⋅(v ⊗ w)
+" class="math-display"  /></div>
+<!--l. 115--><p class="indent" >  and we let multiplication and addition distribute as we expect. Then <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>consists of
+sums of pure tensors.</p>
+<div class="mdframed" id="mdframed-278">
+<a 
+ id="x143-129006r440"></a>
+<div class="newtheorem">
+<!--l. 119--><p class="noindent" ><span class="head">
+<a 
+ id="x143-129007r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 11.1.2 </tspan>(Infinite-dimensional example of tensor product: two-variable polynomials)<br 
+class="newline" />
+</span><a 
+ id="x143-129008"></a>Although it’s not relevant to this chapter, this definition works equally well with infinite-dimensional
+vector spaces. The best example might be
+</p>
+<div class="math-display" >
+<img 
+src="Na443x.png" alt="ℝ [x ]⊗ℝ ℝ[y] = ℝ[x,y].
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 125--><p class="noindent" >That is, the tensor product of polynomials in <tspan font-family="cmmi" font-size="10">x </tspan>with real polynomials in <tspan font-family="cmmi" font-size="10">y </tspan>turns out to
+just be two-variable polynomials <tspan font-family="msbm" font-size="10">ℝ</tspan>[<tspan font-family="cmmi" font-size="10">x,y</tspan>].
+</p>
+  </div>
+<!--l. 128--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-279">
+<a 
+ id="x143-129009r441"></a>
+<div class="newtheorem">
+<!--l. 131--><p class="noindent" ><span class="head">
+<a 
+ id="x143-129010r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 11.1.3 </tspan><tspan font-family="cmss" font-size="10">(Warning on sums of pure tensors) </tspan><tspan font-family="cmssbx" font-size="10">—  </tspan> </span><a 
+ id="x143-129011"></a>Remember the elements of <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⊗</tspan>
+<sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">W </tspan>really are <tspan font-family="cmti" font-size="10">sums </tspan>of these pure tensors! If you liked the previous example, this fact
+has a nice interpretation — not every polynomial in <tspan font-family="msbm" font-size="10">ℝ</tspan>[<tspan font-family="cmmi" font-size="10">x,y</tspan>] = <tspan font-family="msbm" font-size="10">ℝ</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>] <tspan font-family="cmsy" font-size="10">⊗</tspan><sub><tspan font-family="msbm" font-size="10">ℝ</tspan></sub><tspan font-family="msbm" font-size="10">ℝ</tspan>[<tspan font-family="cmmi" font-size="10">y</tspan>] factors as a
+polynomial in <tspan font-family="cmmi" font-size="10">x </tspan>times a polynomial in <tspan font-family="cmmi" font-size="10">y </tspan>(i.e. as pure tensors <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">g</tspan>(<tspan font-family="cmmi" font-size="10">y</tspan>)). But they all
+can be written as sums of pure tensors <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">a</tspan></sup> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmmi" font-size="8">b</tspan></sup>.</p>
+  </div>
+<!--l. 140--><p class="indent" >  </p></div>
+<!--l. 143--><p class="indent" >  As the example we gave suggested, the basis of <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⊗</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">W </tspan>is literally the “product” of the bases of
+<tspan font-family="cmmi" font-size="10">V </tspan>and <tspan font-family="cmmi" font-size="10">W</tspan>. In particular, this fulfills our desire that dim(<tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⊗</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">W</tspan>) = dim<tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⋅</tspan> dim<tspan font-family="cmmi" font-size="10">W</tspan>.</p>
+<div class="mdframed" id="mdframed-280">
+<a 
+ id="x143-129012r442"></a>
+<div class="newtheorem">
+<!--l. 148--><p class="noindent" ><span class="head">
+<a 
+ id="x143-129013r4"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 11.1.4 </tspan><tspan font-family="cmss" font-size="10">(Basis of </tspan><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">W</tspan><tspan font-family="cmss" font-size="10">)</tspan><br 
+class="newline" /> </span><a 
+ id="x143-129014"></a>Let <tspan font-family="cmmi" font-size="10">V </tspan>and <tspan font-family="cmmi" font-size="10">W </tspan>be finite-dimensional <tspan font-family="cmmi" font-size="10">k</tspan>-vector spaces.
+If <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,e</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub> is a basis of <tspan font-family="cmmi" font-size="10">V  </tspan>and <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,f</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> is a basis of <tspan font-family="cmmi" font-size="10">W</tspan>, then the basis of <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⊗</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">W </tspan>is
+precisely <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">j</tspan></sub>, where <tspan font-family="cmmi" font-size="10">i </tspan>= 1<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,m </tspan>and <tspan font-family="cmmi" font-size="10">j </tspan>= 1<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,n</tspan>.
+</p>
+  </div>
+<!--l. 153--><p class="indent" >  </p></div>
+<!--l. 154--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 155--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Omitted; it’s easy at least to see that this basis is spanning.                         □
+</p>
+  </div><div class="mdframed" id="mdframed-281">
+<a 
+ id="x143-129015r443"></a>
+<div class="newtheorem">
+<!--l. 158--><p class="noindent" ><span class="head">
+<a 
+ id="x143-129016r5"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Example 11.1.5 </tspan>(Explicit computation)<br 
+class="newline" /> </span><a 
+ id="x143-129017"></a>Let <tspan font-family="cmmi" font-size="10">V </tspan>have basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> and <tspan font-family="cmmi" font-size="10">W </tspan>have basis <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,f</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>.
+Let <tspan font-family="cmmi" font-size="10">v </tspan>= 3<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + 4<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>and <tspan font-family="cmmi" font-size="10">w </tspan>= 5<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + 6<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>. Let’s write <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">w </tspan>in this basis for
+<tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⊗</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">W</tspan>:
+</p><table 
+class="align-star"><!--l. 168--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">w</tspan></td><td 
+class="align-even"> = (3<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + 4<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) <tspan font-family="cmsy" font-size="10">⊗ </tspan>(5<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + 6<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>)</td>                                <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>     <td 
+class="align-even"> = (3<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) <tspan font-family="cmsy" font-size="10">⊗ </tspan>(5<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) + (4<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) <tspan font-family="cmsy" font-size="10">⊗ </tspan>(5<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) + (3<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) <tspan font-family="cmsy" font-size="10">⊗ </tspan>(6<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) + (4<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) <tspan font-family="cmsy" font-size="10">⊗ </tspan>(6<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>)</td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>     <td 
+class="align-even"> = 15(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) + 20(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) + 18(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) + 24(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>)<tspan font-family="cmmi" font-size="10">.</tspan></td>      <td 
+class="align-label"></td><td 
+class="align-label">                </td></tr></table>
+</p><!--l. 169--><p class="noindent" >So you can see why tensor products are a nice “product” to consider if we’re really interested
+in <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">W </tspan>in a way that’s more intimate than just a direct sum.
+</p>
+  </div>
+<!--l. 172--><p class="indent" >  </p></div>
+<a 
+ id="x143-129018r444"></a>
+  <div class="newtheorem">
+<!--l. 175--><p class="noindent" ><span class="head">
+<a 
+ id="x143-129019r6"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 11.1.6.</tspan>  </span><a 
+ id="x143-129020"></a>Moving forward, we’ll almost always abbreviate <tspan font-family="cmsy" font-size="10">⊗</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> to just
+<tspan font-family="cmsy" font-size="10">⊗</tspan>, since <tspan font-family="cmmi" font-size="10">k </tspan>is usually clear.
+</p>
+  </div>
+<!--l. 177--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-282">
+<a 
+ id="x143-129021r445"></a>
+<div class="newtheorem">
+<!--l. 179--><p class="noindent" ><span class="head">
+<a 
+ id="x143-129022r7"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 11.1.7 —  </tspan> </span><a 
+ id="x143-129023"></a>Observe that to define a linear map <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">W </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X</tspan>, I only have to say
+what happens to each pure tensor <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">w</tspan>, since the pure tensors <tspan font-family="cmti" font-size="10">generate </tspan><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>. But
+again, keep in mind that <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>consists of <tspan font-family="cmti" font-size="10">sums </tspan>of these pure tensors! In other words,
+<tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>is generated by pure tensors.</p>
+  </div>
+<!--l. 185--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-283">
+<a 
+ id="x143-129024r446"></a>
+<div class="newtheorem">
+<!--l. 188--><p class="noindent" ><span class="head">
+<a 
+ id="x143-129025r8"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 11.1.8 —  </tspan> </span><a 
+ id="x143-129026"></a>Much  like  the  Cartesian  product  <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">B </tspan>of  sets,  you  can  tensor
+together any two vector spaces <tspan font-family="cmmi" font-size="10">V </tspan>and <tspan font-family="cmmi" font-size="10">W </tspan>over the same field <tspan font-family="cmmi" font-size="10">k</tspan>; the relationship between
+<tspan font-family="cmmi" font-size="10">V </tspan>and <tspan font-family="cmmi" font-size="10">W </tspan>is completely irrelevant. One can think of the <tspan font-family="cmsy" font-size="10">⊗ </tspan>as a “wall” through which one
+can pass scalars in <tspan font-family="cmmi" font-size="10">k</tspan>, but otherwise keeps the elements of <tspan font-family="cmmi" font-size="10">V </tspan>and <tspan font-family="cmmi" font-size="10">W </tspan>separated. Thus, <tspan font-family="cmsy" font-size="10">⊗</tspan>
+is <tspan font-family="cmbx" font-size="10">content-agnostic</tspan>.
+</p><!--l. 195--><p class="noindent" >This also means that even if <tspan font-family="cmmi" font-size="10">V  </tspan>and <tspan font-family="cmmi" font-size="10">W </tspan>have some relation to each other, the tensor
+product doesn’t remember this. So for example <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">⊗ </tspan>1<tspan font-family="cmmi" font-size="10">≠</tspan>1 <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">v</tspan>, just like (<tspan font-family="cmmi" font-size="10">g,</tspan>1<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub>)<tspan font-family="cmmi" font-size="10">≠</tspan>(1<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub><tspan font-family="cmmi" font-size="10">,g</tspan>) in
+the group <tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">G</tspan>.</p>
+  </div>
+<!--l. 199--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 202--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase96.htm" >next</a>] [<a 
+href="Nase95.htm" >front</a>] [<a 
+href="Nach14.htm#Nase95.htm" >up</a>] </p></div>
+<!--l. 202--><p class="indent" >  <a 
+ id="tailNase95.htm"></a> </p> 
+</body> 
+</html>

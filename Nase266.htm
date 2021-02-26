@@ -1,0 +1,224 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The total derivative</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+                                                                                
+                                                                                
+  <!--l. 16--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach48.htm" >next</a>] [<a 
+href="Nase252.htm#tailNase266.htm">tail</a>] [<a 
+href="Nase282.htm#Nase283.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">42.1</span>  <a 
+ id="x385-36500042.1"></a>The total derivative</h3>
+<!--l. 17--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">If </tspan><tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x,y</tspan>) = <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmti" font-size="10">, then </tspan>(<tspan font-family="cmmi" font-size="10">Df</tspan>)<sub><tspan font-family="cmr" font-size="8">(</tspan><tspan font-family="cmmi" font-size="8">x,y</tspan><tspan font-family="cmr" font-size="8">)</tspan></sub> = 2<tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> + 2<tspan font-family="cmmi" font-size="10">y</tspan><tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 18--><p class="indent" >  First, let <tspan font-family="cmmi" font-size="10">f </tspan>: [<tspan font-family="cmmi" font-size="10">a,b</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>. You might recall from high school calculus that for every point
+<tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>, we defined <tspan font-family="cmmi" font-size="10">f</tspan><tspan font-family="cmsy" font-size="10">′</tspan>(<tspan font-family="cmmi" font-size="10">p</tspan>) as the derivative at the point <tspan font-family="cmmi" font-size="10">p </tspan>(if it existed), which we interpreted as
+the <tspan font-family="cmti" font-size="10">slope </tspan>of the “tangent line”.
+</p>
+<div class="center" 
+>
+<!--l. 23--><p class="noindent" >
+</p>
+</div>
+<!--l. 44--><p class="indent" >  That’s fine, but I claim that the “better” way to interpret the derivative at that point is as
+a <tspan font-family="cmti" font-size="10">linear map</tspan>, that is, as a <tspan font-family="cmti" font-size="10">function</tspan>. If <tspan font-family="cmmi" font-size="10">f</tspan><tspan font-family="cmsy" font-size="10">′</tspan>(<tspan font-family="cmmi" font-size="10">p</tspan>) = 1<tspan font-family="cmmi" font-size="10">.</tspan>5, then the derivative tells me that if
+I move <tspan font-family="cmmi" font-size="10">𝜀 </tspan>away from <tspan font-family="cmmi" font-size="10">p </tspan>then I should expect <tspan font-family="cmmi" font-size="10">f </tspan>to change by about 1<tspan font-family="cmmi" font-size="10">.</tspan>5<tspan font-family="cmmi" font-size="10">𝜀</tspan>. In other
+words,</p>
+<div class="mdframed" id="mdframed-692">
+<!--l. 52--><p class="noindent" ><tspan font-family="cmbx" font-size="10">The derivative of </tspan><tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmbx" font-size="10">at </tspan><tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmbx" font-size="10">approximates </tspan><tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmbx" font-size="10">near </tspan><tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmbx" font-size="10">by a </tspan><tspan font-family="cmbxti" font-size="10">linear function</tspan><tspan font-family="cmbx" font-size="10">.</tspan></p><!--l. 53--><p class="noindent" ></p>
+  </div>
+<!--l. 55--><p class="indent" >  What about more generally? Suppose I have a function like <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>, say
+</p>
+  <div class="math-display" >
+<img 
+src="Na1958x.png" alt="f(x,y) = x2 + y2
+" class="math-display"  /></div>
+<!--l. 58--><p class="indent" >  for concreteness or something. For a point <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, the “derivative” of <tspan font-family="cmmi" font-size="10">f </tspan>at <tspan font-family="cmmi" font-size="10">p </tspan>ought to
+represent a linear map that approximates <tspan font-family="cmmi" font-size="10">f </tspan>at that point <tspan font-family="cmmi" font-size="10">p</tspan>. That means I want a linear map
+<tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>such that
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na1959x.png" alt="f(p + v) ≈ f (p)+ T(v)
+" class="math-display"  /></div>
+<!--l. 63--><p class="indent" >  for small displacements <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>.
+</p><!--l. 65--><p class="indent" >  Even more generally, if <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>with <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>open (in the <img 
+src="Na1960x.png" alt="∥∙∥"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">V</tspan> </sub> metric as usual), then
+the derivative at <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U </tspan>ought to be so that
+</p>
+  <div class="math-display" >
+<img 
+src="Na1961x.png" alt="f(p+ v) ≈ f(p)+ T (v) ∈ W.
+" class="math-display"  /></div>
+<!--l. 69--><p class="indent" >  (We need <tspan font-family="cmmi" font-size="10">U </tspan>open so that for small enough <tspan font-family="cmmi" font-size="10">v</tspan>, <tspan font-family="cmmi" font-size="10">p </tspan>+ <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U </tspan>as well.) In fact this is exactly what
+we were doing earlier with <tspan font-family="cmmi" font-size="10">f</tspan><tspan font-family="cmsy" font-size="10">′</tspan>(<tspan font-family="cmmi" font-size="10">p</tspan>) in high school.
+</p>
+<div class="center" 
+>
+<!--l. 72--><p class="noindent" >
+</p><!--l. 73--><p class="noindent" > <img 
+src="media/tangent-.png" alt="PIC"  
+ /><br />
+<tspan font-family="cmr" font-size="8">Image derived from </tspan><span class="cite"><tspan font-family="cmr" font-size="8">[</tspan><tspan font-family="cmbx" font-size="8">?</tspan><tspan font-family="cmr" font-size="8">]</tspan></span></p></div>
+<!--l. 77--><p class="indent" >  The only difference is that, by an unfortunate coincidence, a linear map <tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>can be
+represented by just its slope. And in the unending quest to make everything a number so that
+it can be AP tested, we immediately forgot all about what we were trying to do
+in the first place and just defined the derivative of <tspan font-family="cmmi" font-size="10">f </tspan>to be a <tspan font-family="cmti" font-size="10">number </tspan>instead of a
+<tspan font-family="cmti" font-size="10">function</tspan>.</p>
+<div class="mdframed" id="mdframed-693">
+<!--l. 84--><p class="noindent" ><tspan font-family="cmbx" font-size="10">The fundamental idea of Calculus is the local approximation of functions by linear</tspan>
+<tspan font-family="cmbx" font-size="10">functions. The derivative does exactly this.</tspan></p><!--l. 86--><p class="noindent" ></p>
+  </div>
+<!--l. 87--><p class="indent" >  Jean Dieudonné as quoted in <span class="cite">[<tspan font-family="cmbx" font-size="10">?</tspan>]</span> continues:
+     </p><blockquote class="quote">
+     <!--l. 89--><p class="noindent" >In  the  classical  teaching  of  Calculus,  this  idea  is  immediately  obscured
+     by the accidental fact that, on a one-dimensional vector space, there is a
+     one-to-one correspondence between linear forms and numbers, and therefore
+                                                                                
+                                                                                
+     the derivative at a point is defined as a number instead of a linear form. This
+     <tspan font-family="cmbx" font-size="10">slavish subservience to the shibboleth of numerical interpretation</tspan>
+     <tspan font-family="cmbx" font-size="10">at any cost </tspan>becomes much worse . . .</p></blockquote>
+<!--l. 97--><p class="indent" >  So let’s do this right. The only thing that we have to do is say what “<tspan font-family="cmsy" font-size="10">≈</tspan>” means, and for this
+we use the norm of the vector space. <a 
+ id="x385-365001r1088"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 101--><p class="noindent" ><span class="head">
+<a 
+ id="x385-365002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 42.1.1.</tspan>  </span><a 
+ id="x385-365003"></a>Let <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>be open. Let <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>be a continuous function, and
+<tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U</tspan>. Suppose there exists a linear map <tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>such that
+</p>
+  <div class="math-display" >
+<img 
+src="Na1962x.png" alt="      ∥f-(p-+-v)−-f-(p)−-T(v)∥W-
+∥vl∥im→0           ∥v ∥            = 0.
+  V                 V
+" class="math-display"  /></div>
+<!--l. 108--><p class="indent" >  Then <tspan font-family="cmmi" font-size="10">T </tspan>is the <tspan font-family="cmbx" font-size="10">total derivative</tspan> of <tspan font-family="cmmi" font-size="10">f </tspan>at <tspan font-family="cmmi" font-size="10">p</tspan>. We denote this by (<tspan font-family="cmmi" font-size="10">Df</tspan>)<sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>, and say <tspan font-family="cmmi" font-size="10">f </tspan>is
+<tspan font-family="cmbx" font-size="10">differentiable at </tspan><tspan font-family="cmmi" font-size="10">p</tspan>.
+</p><!--l. 111--><p class="indent" >  If (<tspan font-family="cmmi" font-size="10">Df</tspan>)<sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> exists at every point, we say <tspan font-family="cmmi" font-size="10">f </tspan>is <tspan font-family="cmbx" font-size="10">differentiable</tspan>.
+</p>
+  </div>
+<!--l. 112--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-694">
+<a 
+ id="x385-365004r1089"></a>
+<div class="newtheorem">
+<!--l. 115--><p class="noindent" ><span class="head">
+<a 
+ id="x385-365005r2"></a>
+<tspan font-family="cmbx" font-size="10">Question 42.1.2.</tspan>  </span><a 
+ id="x385-365006"></a><tspan font-family="cmr" font-size="10">Check if that </tspan><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmr" font-size="10">= </tspan><tspan font-family="cmmi" font-size="10">W </tspan><tspan font-family="cmr" font-size="10">= </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><tspan font-family="cmr" font-size="10">, this is equivalent to the single-variable definition.</tspan>
+<tspan font-family="cmr" font-size="10">(What are the linear maps from </tspan><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmr" font-size="10">to </tspan><tspan font-family="cmmi" font-size="10">W</tspan><tspan font-family="cmr" font-size="10">?)</tspan></p>
+  </div>
+<!--l. 117--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<div class="mdframed" id="mdframed-695">
+<a 
+ id="x385-365007r1090"></a>
+<div class="newtheorem">
+<!--l. 118--><p class="noindent" ><span class="head">
+<a 
+ id="x385-365008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 42.1.3 </tspan>(Total derivative of <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x,y</tspan>) = <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>)<br 
+class="newline" /> </span><a 
+ id="x385-365009"></a>Let  <tspan font-family="cmmi" font-size="10">V   </tspan>=  <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>   with  standard
+basis <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> and let <tspan font-family="cmmi" font-size="10">W </tspan>= <tspan font-family="msbm" font-size="10">ℝ</tspan>, and let <tspan font-family="cmmi" font-size="10">f</tspan><img 
+src="Na1963x.png" alt="(xe1 + ye2)"  class="left" align="middle" /> = <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>. Let <tspan font-family="cmmi" font-size="10">p </tspan>= <tspan font-family="cmmi" font-size="10">a</tspan><tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">b</tspan><tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. Then,
+we claim that
+</p>
+<div class="math-display" >
+<img 
+src="Na1964x.png" alt="(Df )p : ℝ2 → ℝ  by  v ↦→ 2a ⋅e∨1(v)+ 2b ⋅e∨2(v).
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 123--><p class="indent" >  </p></div>
+<!--l. 124--><p class="indent" >  Here, the notation <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> and <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> makes sense, because by definition (<tspan font-family="cmmi" font-size="10">Df</tspan>)<sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>: these are
+functions from <tspan font-family="cmmi" font-size="10">V </tspan>to <tspan font-family="msbm" font-size="10">ℝ</tspan>!
+</p><!--l. 127--><p class="indent" >  Let’s check this manually with the limit definition. Set <tspan font-family="cmmi" font-size="10">v </tspan>= <tspan font-family="cmmi" font-size="10">xe</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">ye</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, and note that the
+norm on <tspan font-family="cmmi" font-size="10">V </tspan>is <img 
+src="Na1965x.png" alt="∥ (x,y )∥"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">V</tspan> </sub> = <img 
+src="Na1966x.png" alt="∘ -------
+  x2 + y2"  class="sqrt"  /> while the norm on <tspan font-family="cmmi" font-size="10">W </tspan>is just the absolute value
+<img 
+src="Na1967x.png" alt="∥c∥"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">W</tspan> </sub> = <img 
+src="Na1968x.png" alt="|c|"  class="left" align="middle" />. Then we compute
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 136--><p class="indent" >
+<tr><td 
+class="align-odd"><img 
+src="Na1970x.png" alt="∥f (p+ v) − f(p)− T (v)∥
+-----------------------W-
+           ∥v∥V"  class="frac" align="middle" /></td><td 
+class="align-even"> = <img 
+src="Na1971x.png" alt="||(a + x)2 + (b+ y)2 − (a2 + b2)− (2ax + 2by)||
+-----------------∘--2----2-----------------
+                   x  + y"  class="frac" align="middle" /></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                         <td 
+class="align-even"> = <img 
+src="Na1972x.png" alt="-x2-+-y2-
+∘x2--+-y2-"  class="frac" align="middle" /> = <img 
+src="Na1973x.png" alt="∘ -2----2
+  x  + y"  class="sqrt"  /></td>                      <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                         <td 
+class="align-even"> <tspan font-family="cmsy" font-size="10">→ </tspan>0</td>                                         <td 
+class="align-label"></td><td 
+class="align-label">         </td></tr></table>
+</p><!--l. 137--><p class="indent" >  as <img 
+src="Na1974x.png" alt="∥v∥"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">→ </tspan>0. Thus, for <tspan font-family="cmmi" font-size="10">p </tspan>= <tspan font-family="cmmi" font-size="10">ae</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">be</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> we indeed have (<tspan font-family="cmmi" font-size="10">Df</tspan>)<sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> = 2<tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> + 2<tspan font-family="cmmi" font-size="10">b </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>.</p>
+<div class="mdframed" id="mdframed-696">
+<a 
+ id="x385-365010r1091"></a>
+<div class="newtheorem">
+<!--l. 141--><p class="noindent" ><span class="head">
+<a 
+ id="x385-365011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 42.1.4 —  </tspan> </span><a 
+ id="x385-365012"></a>As usual, differentiability implies continuity.</p>
+  </div>
+<!--l. 142--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-697">
+<a 
+ id="x385-365013r1092"></a>
+<div class="newtheorem">
+<!--l. 144--><p class="noindent" ><span class="head">
+<a 
+ id="x385-365014r5"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 42.1.5 —  </tspan> </span><a 
+ id="x385-365015"></a>Although <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>, it might be helpful to think of vectors from <tspan font-family="cmmi" font-size="10">U</tspan>
+and <tspan font-family="cmmi" font-size="10">V  </tspan>as different types of objects (in particular, note that it’s possible for 0<sub><tspan font-family="cmmi" font-size="8">V</tspan> </sub><img 
+src="Na1975x.png" alt="∈∕"  class="notin"  /><tspan font-family="cmmi" font-size="10">U</tspan>).
+The vectors in <tspan font-family="cmmi" font-size="10">U </tspan>are “inputs” on our space while the vectors coming from <tspan font-family="cmmi" font-size="10">V </tspan>are “small
+displacements”. For this reason, I deliberately try to use <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U </tspan>and <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>when possible.</p>
+  </div>
+<!--l. 149--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 151--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach48.htm" >next</a>] [<a 
+href="Nase266.htm" >front</a>] [<a 
+href="Nase282.htm#Nase283.htm" >up</a>] </p></div>
+<!--l. 151--><p class="indent" >  <a 
+ id="tailNase266.htm"></a> </p> 
+</body> 
+</html>

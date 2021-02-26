@@ -1,0 +1,174 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Completeness</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 105--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase57.htm" >next</a>] [<a 
+href="Nase55.htm" >prev</a>] [<a 
+href="Nase55.htm#tailNase55.htm" >prev-tail</a>] [<a 
+href="#tailNase56.htm">tail</a>] [<a 
+href="Nach9.htm#Nase56.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">6.2</span>  <a 
+ id="x90-810006.2"></a>Completeness</h3>
+<!--l. 106--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmti" font-size="10">is complete, but </tspan><tspan font-family="msbm" font-size="10">ℚ </tspan><tspan font-family="cmti" font-size="10">and </tspan>(0<tspan font-family="cmmi" font-size="10">,</tspan>1) <tspan font-family="cmti" font-size="10">are not.</tspan>
+</p><!--l. 108--><p class="indent" >  So far we can only talk about sequences converging if they have a limit. But consider the
+sequence
+</p>
+  <div class="math-display" >
+<img 
+src="Na251x.png" alt="x1 = 1, x2 = 1.4, x3 = 1.41, x4 = 1.414, ....
+" class="math-display"  /></div>
+<!--l. 111--><p class="indent" >  It converges to <img 
+src="Na252x.png" alt="√--
+ 2"  class="sqrt"  /> in <tspan font-family="msbm" font-size="10">ℝ</tspan>, of course. But it fails to converge in <tspan font-family="msbm" font-size="10">ℚ</tspan>; there is no <tspan font-family="cmti" font-size="10">rational</tspan>
+number this sequence converges to. And so somehow, if we didn’t know about the
+existence of <tspan font-family="msbm" font-size="10">ℝ</tspan>, we would have <tspan font-family="cmti" font-size="10">no idea </tspan>that the sequence (<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>) is “approaching”
+something.
+</p><!--l. 117--><p class="indent" >  That seems to be a shame. Let’s set up a new definition to describe these sequences whose
+terms <tspan font-family="cmbx" font-size="10">get close to each other</tspan>, even if they don’t approach any particular point in the space.
+Thus, we only want to mention the given points in the definition.
+<a 
+ id="x90-81001r253"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 124--><p class="noindent" ><span class="head">
+<a 
+ id="x90-81002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 6.2.1.</tspan>  </span><a 
+ id="x90-81003"></a>Let  <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan>  be  a  sequence  which  lives  in  a  metric  space  <tspan font-family="cmmi" font-size="10">M  </tspan>=
+(<tspan font-family="cmmi" font-size="10">M,d</tspan><sub><tspan font-family="cmmi" font-size="8">M</tspan></sub>). We say the sequence is <tspan font-family="cmbx" font-size="10">Cauchy</tspan> if for any <tspan font-family="cmmi" font-size="10">𝜀 &#x003E; </tspan>0, we have
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na253x.png" alt="dM(xm, xn) &#x003C; 𝜀
+" class="math-display"  /></div>
+<!--l. 127--><p class="indent" >  for all sufficiently large <tspan font-family="cmmi" font-size="10">m </tspan>and <tspan font-family="cmmi" font-size="10">n</tspan>.
+</p>
+  </div>
+<!--l. 128--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-169">
+<a 
+ id="x90-81004r254"></a>
+<div class="newtheorem">
+<!--l. 131--><p class="noindent" ><span class="head">
+<a 
+ id="x90-81005r2"></a>
+<tspan font-family="cmbx" font-size="10">Question 6.2.2.</tspan>  </span><a 
+ id="x90-81006"></a><tspan font-family="cmr" font-size="10">Show  that  a  sequence  which  converges  is  automatically  Cauchy.  (Draw  a</tspan>
+<tspan font-family="cmr" font-size="10">picture.)</tspan></p>
+  </div>
+<!--l. 133--><p class="indent" >  </p></div>
+<!--l. 135--><p class="indent" >  Now we can define: <a 
+ id="x90-81007r255"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 137--><p class="noindent" ><span class="head">
+<a 
+ id="x90-81008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 6.2.3.</tspan>  </span><a 
+ id="x90-81009"></a>A metric space <tspan font-family="cmmi" font-size="10">M </tspan>is <tspan font-family="cmbx" font-size="10">complete</tspan> if every Cauchy sequence converges.
+</p>
+  </div>
+<!--l. 139--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-170">
+<a 
+ id="x90-81010r256"></a>
+<div class="newtheorem">
+<!--l. 142--><p class="noindent" ><span class="head">
+<a 
+ id="x90-81011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 6.2.4 </tspan>(Examples of complete spaces)<br 
+class="newline" /> </span><a 
+ id="x90-81012"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate"><tspan font-family="msbm" font-size="10">ℝ </tspan>is complete. (Depending on your definition of <tspan font-family="msbm" font-size="10">ℝ</tspan>, this either follows by definition,
+    or requires some work. We won’t go through this here.)
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The discrete space is complete, as the only Cauchy sequences are eventually constant.
+                                                                                
+                                                                                
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The closed interval [0<tspan font-family="cmmi" font-size="10">,</tspan>1] is complete.
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate"><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> is complete as well. (You’re welcome to prove this by induction on <tspan font-family="cmmi" font-size="10">n</tspan>.)</dd></dl>
+</p>
+  </div>
+<!--l. 155--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-171">
+<a 
+ id="x90-81017r257"></a>
+<div class="newtheorem">
+<!--l. 158--><p class="noindent" ><span class="head">
+<a 
+ id="x90-81018r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 6.2.5 </tspan>(Non-examples of complete spaces)<br 
+class="newline" /> </span><a 
+ id="x90-81019"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The rationals <tspan font-family="msbm" font-size="10">ℚ </tspan>are not complete.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The open interval (0<tspan font-family="cmmi" font-size="10">,</tspan>1) is not complete, as the sequence 0<tspan font-family="cmmi" font-size="10">.</tspan>9, 0<tspan font-family="cmmi" font-size="10">.</tspan>99, 0<tspan font-family="cmmi" font-size="10">.</tspan>999, 0<tspan font-family="cmmi" font-size="10">.</tspan>9999, …is
+    Cauchy but does not converge.</dd></dl>
+</p>
+  </div>
+<!--l. 166--><p class="indent" >  </p></div>
+<!--l. 168--><p class="indent" >  So, metric spaces need not be complete, like <tspan font-family="msbm" font-size="10">ℚ</tspan>. But we certainly would like them to be
+complete, and in light of the following theorem this is not unreasonable.</p>
+<div class="mdframed" id="mdframed-172">
+<a 
+ id="x90-81022r258"></a>
+<div class="newtheorem">
+<!--l. 172--><p class="noindent" ><span class="head">
+<a 
+ id="x90-81023r6"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 6.2.6 </tspan><tspan font-family="cmss" font-size="10">(Completion)</tspan><br 
+class="newline" /> </span><a 
+ id="x90-81024"></a>Every metric space can be “completed”, i.e. made into a
+complete space by adding in some points.
+</p>
+  </div>
+<!--l. 175--><p class="indent" >  </p></div>
+<!--l. 176--><p class="indent" >  We won’t need this construction at all, so it’s left as <tspan font-family="cmbx" font-size="10">??</tspan> .</p>
+<div class="mdframed" id="mdframed-173">
+<a 
+ id="x90-81025r259"></a>
+<div class="newtheorem">
+<!--l. 179--><p class="noindent" ><span class="head">
+<a 
+ id="x90-81026r7"></a>
+<tspan font-family="cmbx" font-size="10">Example 6.2.7 </tspan>(<tspan font-family="msbm" font-size="10">ℚ </tspan>completes to <tspan font-family="msbm" font-size="10">ℝ</tspan>)<br 
+class="newline" /> </span><a 
+ id="x90-81027"></a>The completion of <tspan font-family="msbm" font-size="10">ℚ </tspan>is <tspan font-family="msbm" font-size="10">ℝ</tspan>.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 181--><p class="indent" >  </p></div>
+<!--l. 182--><p class="indent" >  (In fact, by using a modified definition of completion not depending on the real numbers,
+other authors often use this as the definition of <tspan font-family="msbm" font-size="10">ℝ</tspan>.)
+                                                                                
+                                                                                
+</p>
+  <!--l. 186--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase57.htm" >next</a>] [<a 
+href="Nase55.htm" >prev</a>] [<a 
+href="Nase55.htm#tailNase55.htm" >prev-tail</a>] [<a 
+href="Nase56.htm" >front</a>] [<a 
+href="Nach9.htm#Nase56.htm" >up</a>] </p></div>
+<!--l. 186--><p class="indent" >  <a 
+ id="tailNase56.htm"></a> </p> 
+</body> 
+</html>

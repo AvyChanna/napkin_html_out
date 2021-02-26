@@ -1,0 +1,292 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Covariant functors</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 49--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase414.htm" >next</a>] [<a 
+href="Nase385.htm" >prev</a>] [<a 
+href="Nase385.htm#tailNase385.htm" >prev-tail</a>] [<a 
+href="Nase363.htm#tailNase386.htm">tail</a>] [<a 
+href="Nach69.htm#Nase412.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">61.2</span>  <a 
+ id="x541-51900061.2"></a>Covariant functors</h3>
+<!--l. 50--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Forgetful/free functors, </tspan><tspan font-family="cmti" font-size="10">…</tspan>
+</p><!--l. 51--><p class="indent" >  Category theorists are always asking “what are the maps?”, and so we can now think about
+maps between categories.
+<a 
+ id="x541-519001r1575"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 55--><p class="noindent" ><span class="head">
+<a 
+ id="x541-519002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 61.2.1.</tspan>  </span><a 
+ id="x541-519003"></a>Let <tspan font-family="cmsy" font-size="10">𝒜 </tspan>and <tspan font-family="cmsy" font-size="10">ℬ </tspan>be categories. Of course, a <tspan font-family="cmbx" font-size="10">functor</tspan> <tspan font-family="cmmi" font-size="10">F </tspan>takes every object of
+<tspan font-family="cmsy" font-size="10">𝒜 </tspan>to an object of <tspan font-family="cmsy" font-size="10">ℬ</tspan>. In addition, though, it must take every arrow <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><img 
+src="Na3002x.png" alt=" f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> to an arrow
+<tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>)<img 
+src="Na3003x.png" alt="F−−(f−)→"  class=""  /><tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>). You can picture this as follows. <img 
+src="Na3004x.png" alt="       A           B   = F (A  )
+        1           |1       1
+        |     F     |
+𝒜 ∋   f |........................|F(f)      ∈ ℬ
+        |           |
+        |           |
+       A2          B2  = F (A2 )
+"  />
+(I’ll try to use dotted arrows for functors, which cross different categories, for emphasis.) It
+needs to satisfy the “naturality” requirements: </p>
+     <ul class="itemize1">
+     <li class="itemize">Identity arrows get sent to identity arrows: for each identity arrow id<sub><tspan font-family="cmmi" font-size="8">A</tspan></sub>, we have
+     <tspan font-family="cmmi" font-size="10">F</tspan>(id<sub><tspan font-family="cmmi" font-size="8">A</tspan></sub>) = id<sub><tspan font-family="cmmi" font-size="8">F</tspan><tspan font-family="cmr" font-size="8">(</tspan><tspan font-family="cmmi" font-size="8">A</tspan><tspan font-family="cmr" font-size="8">)</tspan></sub>.
+     </li>
+     <li class="itemize">The functor respects composition: if <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><img 
+src="Na3005x.png" alt=" f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><img 
+src="Na3006x.png" alt="g
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> are arrows in <tspan font-family="cmsy" font-size="10">𝒜</tspan>, then <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">g</tspan><tspan font-family="cmsy" font-size="10">∘</tspan><tspan font-family="cmmi" font-size="10">f</tspan>) =
+     <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">g</tspan>) <tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">f</tspan>).</li></ul>
+  </div>
+<!--l. 74--><p class="indent" >
+</p><!--l. 76--><p class="indent" >  So the idea is:
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-1042">
+<!--l. 78--><p class="noindent" ><tspan font-family="cmbx" font-size="10">Whenever we naturally make an object </tspan><tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">∈𝒜 </tspan><tspan font-family="cmbx" font-size="10">into an object of </tspan><tspan font-family="cmmi" font-size="10">B </tspan><tspan font-family="cmsy" font-size="10">∈ℬ</tspan><tspan font-family="cmbx" font-size="10">, there</tspan>
+<tspan font-family="cmbx" font-size="10">should usually be a natural way to transform a map </tspan><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>  <tspan font-family="cmbx" font-size="10">into a map</tspan>
+<tspan font-family="cmmi" font-size="10">B</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmbx" font-size="10">.</tspan></p><!--l. 80--><p class="noindent" ></p>
+  </div>
+<!--l. 81--><p class="indent" >  Let’s see some examples of this.</p>
+<div class="mdframed" id="mdframed-1043">
+<a 
+ id="x541-519004r1576"></a>
+<div class="newtheorem">
+<!--l. 84--><p class="noindent" ><span class="head">
+<a 
+ id="x541-519005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 61.2.2 </tspan>(Free and forgetful functors)<br 
+class="newline" /> </span><a 
+ id="x541-519006"></a>Note that these are both informal terms, and
+don’t have a rigid definition.
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">We talked about a <tspan font-family="cmbx" font-size="10">forgetful functor</tspan> earlier, which takes the underlying set of a
+    category like <tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>. Let’s call it <tspan font-family="cmmi" font-size="10">U </tspan>: <tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> <tspan font-family="cmsy" font-size="10">→</tspan><tspan font-family="cmss" font-size="10">Set</tspan>.
+    <!--l. 92--><p class="noindent" >Now, given a map <tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">2</tspan></sub> in <tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>, there is an obvious <tspan font-family="cmmi" font-size="10">U</tspan>(<tspan font-family="cmmi" font-size="10">T</tspan>) : <tspan font-family="cmmi" font-size="10">U</tspan>(<tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">U</tspan>(<tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">2</tspan></sub>)
+    which is just the set-theoretic map corresponding to <tspan font-family="cmmi" font-size="10">T</tspan>.
+    </p><!--l. 96--><p class="noindent" >Similarly there are forgetful functors from <tspan font-family="cmss" font-size="10">Grp</tspan>, <tspan font-family="cmss" font-size="10">CRing</tspan>, etc., to <tspan font-family="cmss" font-size="10">Set</tspan>. There is even
+    a forgetful functor <tspan font-family="cmss" font-size="10">CRing</tspan> <tspan font-family="cmsy" font-size="10">→</tspan> <tspan font-family="cmss" font-size="10">Grp</tspan>: send a ring <tspan font-family="cmmi" font-size="10">R </tspan>to the abelian group (<tspan font-family="cmmi" font-size="10">R,</tspan>+). The
+    common theme is that we are “forgetting” structure from the original category.
+    </p></dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">We also talked about a <tspan font-family="cmbx" font-size="10">free functor</tspan> in the example. A free functor <tspan font-family="cmmi" font-size="10">F </tspan>: <tspan font-family="cmss" font-size="10">Set</tspan> <tspan font-family="cmsy" font-size="10">→</tspan><tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>
+    can be taken by considering <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">S</tspan>) to be the vector space with basis <tspan font-family="cmmi" font-size="10">S</tspan>. Now, given
+    a map <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">T</tspan>, what is the obvious map <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">S</tspan>) <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">T</tspan>)? Simple: take each basis
+    element <tspan font-family="cmmi" font-size="10">s </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">S </tspan>to the basis element <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">s</tspan>) <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">T</tspan>.
+    <!--l. 109--><p class="noindent" >Similarly, we can define <tspan font-family="cmmi" font-size="10">F </tspan>: <tspan font-family="cmss" font-size="10">Set</tspan> <tspan font-family="cmsy" font-size="10">→</tspan><tspan font-family="cmss" font-size="10">Grp</tspan> by taking the free group generated by a set
+    <tspan font-family="cmmi" font-size="10">S</tspan>.</p></dd></dl>
+</p>
+  </div>
+<!--l. 112--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-1044">
+<a 
+ id="x541-519009r1577"></a>
+<div class="newtheorem">
+<!--l. 115--><p class="noindent" ><span class="head">
+<a 
+ id="x541-519010r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 61.2.3 —  </tspan> </span><a 
+ id="x541-519011"></a>There is also a notion of “injective” and “surjective” for functors
+(on arrows) as follows. A functor <tspan font-family="cmmi" font-size="10">F</tspan> : <tspan font-family="cmsy" font-size="10">𝒜→ℬ </tspan>is <tspan font-family="cmbx" font-size="10">faithful</tspan> (resp. <tspan font-family="cmbx" font-size="10">full</tspan>) if for any <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>,
+                                                                                
+                                                                                
+<tspan font-family="cmmi" font-size="10">F</tspan> : Hom<sub><tspan font-family="cmsy" font-size="8">𝒜</tspan></sub>(<tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) <tspan font-family="cmsy" font-size="10">→</tspan> Hom<sub><tspan font-family="cmsy" font-size="8">ℬ</tspan></sub>(<tspan font-family="cmmi" font-size="10">FA</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,FA</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) is injective (resp. surjective).<span class="footnote-mark"><a 
+href="Na542.htm#fn1x70"><sup class="textsuperscript">a</sup></a></span><a 
+ id="x541-519012f0"></a> 
+</p><!--l. 125--><p class="noindent" >We can use this to give an exact definition of concrete category: it’s a category with a
+faithful (forgetful) functor <tspan font-family="cmmi" font-size="10">U</tspan> : <tspan font-family="cmsy" font-size="10">𝒜→</tspan><tspan font-family="cmss" font-size="10">Set</tspan>.
+</p>
+  </div>
+<!--l. 128--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-1045">
+<a 
+ id="x541-519013r1578"></a>
+<div class="newtheorem">
+<!--l. 131--><p class="noindent" ><span class="head">
+<a 
+ id="x541-519014r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 61.2.4 </tspan>(Functors from <tspan font-family="cmsy" font-size="10">𝒢</tspan>)<br 
+class="newline" /> </span><a 
+ id="x541-519015"></a>Let <tspan font-family="cmmi" font-size="10">G </tspan>be a group and <tspan font-family="cmsy" font-size="10">𝒢 </tspan>= <tspan font-family="cmsy" font-size="10">{∗} </tspan>be the associated
+one-object category.
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">Consider a functor <tspan font-family="cmmi" font-size="10">F </tspan>: <tspan font-family="cmsy" font-size="10">𝒢→</tspan><tspan font-family="cmss" font-size="10">Set</tspan>, and let <tspan font-family="cmmi" font-size="10">S </tspan>= <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmsy" font-size="10">∗</tspan>). Then the data of <tspan font-family="cmmi" font-size="10">F </tspan>corresponds
+    to putting a <tspan font-family="cmti" font-size="10">group action </tspan>of <tspan font-family="cmmi" font-size="10">G </tspan>on <tspan font-family="cmmi" font-size="10">S</tspan>.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">Consider a functor <tspan font-family="cmmi" font-size="10">F </tspan>: <tspan font-family="cmsy" font-size="10">𝒢→</tspan><tspan font-family="cmss" font-size="10">FDVect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>, and let <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmsy" font-size="10">∗</tspan>) have dimension <tspan font-family="cmmi" font-size="10">n</tspan>. Then the
+    data of <tspan font-family="cmmi" font-size="10">F </tspan>corresponds to embedding <tspan font-family="cmmi" font-size="10">G </tspan>as a subgroup of the <tspan font-family="cmmi" font-size="10">n</tspan><tspan font-family="cmsy" font-size="10">×</tspan><tspan font-family="cmmi" font-size="10">n </tspan>matrices (i.e. the
+    linear maps <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>). This is one way groups historically arose; the theory of viewing
+    groups as matrices forms the field of representation theory.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">Let <tspan font-family="cmmi" font-size="10">H </tspan>be a group and construct <tspan font-family="cmsy" font-size="10">ℋ </tspan>the same way. Then functors <tspan font-family="cmsy" font-size="10">𝒢→ℋ </tspan>correspond
+    to homomorphisms <tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">H</tspan>.</dd></dl>
+</p>
+  </div>
+<!--l. 144--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-1046">
+<a 
+ id="x541-519019r1579"></a>
+<div class="newtheorem">
+<!--l. 146--><p class="noindent" ><span class="head">
+<a 
+ id="x541-519020r5"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 61.2.5.</tspan>  </span><a 
+ id="x541-519021"></a><tspan font-family="cmr" font-size="10">Check the above group-based functors work as advertised.</tspan></p>
+  </div>
+<!--l. 147--><p class="indent" >  </p></div>
+<!--l. 149--><p class="indent" >  Here’s a more involved example. If you find it confusing, skip it and come back after reading
+about its contravariant version.</p>
+<div class="mdframed" id="mdframed-1047">
+<a 
+ id="x541-519022r1580"></a>
+<div class="newtheorem">
+<!--l. 153--><p class="noindent" ><span class="head">
+                                                                                
+                                                                                
+<a 
+ id="x541-519023r6"></a>
+<tspan font-family="cmbx" font-size="10">Example 61.2.6 </tspan>(Covariant Yoneda functor)<br 
+class="newline" /> </span><a 
+ id="x541-519024"></a> Fix an <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">∈𝒜</tspan>. For a category <tspan font-family="cmsy" font-size="10">𝒜</tspan>, define
+the <tspan font-family="cmbx" font-size="10">covariant Yoneda functor</tspan> <tspan font-family="cmmi" font-size="10">H</tspan><sup><tspan font-family="cmmi" font-size="8">A</tspan></sup>: <tspan font-family="cmsy" font-size="10">𝒜→</tspan><tspan font-family="cmss" font-size="10">Set</tspan> by defining
+</p>
+<div class="math-display" >
+<img 
+src="Na3007x.png" alt="  A
+H  (A1 ) := Hom 𝒜 (A, A1) ∈ Set.
+" class="math-display"  /></div>
+<!--l. 159--><p class="noindent" >Hence each <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> is sent to the <tspan font-family="cmti" font-size="10">arrows from </tspan><tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmti" font-size="10">to </tspan><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>; so <tspan font-family="cmmi" font-size="10">H</tspan><sup><tspan font-family="cmmi" font-size="8">A</tspan></sup> <tspan font-family="cmbx" font-size="10">describes how </tspan><tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmbx" font-size="10">sees the</tspan>
+<tspan font-family="cmbx" font-size="10">world</tspan>.
+</p><!--l. 162--><p class="noindent" >Now we want to specify how <tspan font-family="cmmi" font-size="10">H</tspan><sup><tspan font-family="cmmi" font-size="8">A</tspan></sup> behaves on arrows. For each arrow <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><img 
+src="Na3008x.png" alt="f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, we need
+to specify <tspan font-family="cmss" font-size="10">Set</tspan>-map Hom<sub><tspan font-family="cmsy" font-size="8">𝒜</tspan></sub>(<tspan font-family="cmmi" font-size="10">A,A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) <tspan font-family="cmsy" font-size="10">→</tspan> Hom(<tspan font-family="cmmi" font-size="10">A,A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>); in other words, we need to send an
+arrow <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3009x.png" alt="p
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> to an arrow <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. There’s only one reasonable way to do this: take the
+composition
+</p>
+<div class="math-display" >
+<img 
+src="Na3010x.png" alt="  p     f
+A −→  A1 −→ A2.
+" class="math-display"  /></div>
+<!--l. 168--><p class="noindent" >In other words, <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub>(<tspan font-family="cmmi" font-size="10">f</tspan>) is <tspan font-family="cmmi" font-size="10">p</tspan><img 
+src="Na3011x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">p</tspan>. In still other words, <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub>(<tspan font-family="cmmi" font-size="10">f</tspan>) = <tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmsy" font-size="10">∘−</tspan>; the <tspan font-family="cmsy" font-size="10">− </tspan>is a slot
+for the input to go into.
+</p>
+  </div>
+<!--l. 171--><p class="indent" >  </p></div>
+<!--l. 173--><p class="indent" >  As another example:</p>
+<div class="mdframed" id="mdframed-1048">
+<a 
+ id="x541-519025r1581"></a>
+<div class="newtheorem">
+<!--l. 175--><p class="noindent" ><span class="head">
+<a 
+ id="x541-519026r7"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Question 61.2.7.</tspan>  </span><a 
+ id="x541-519027"></a><tspan font-family="cmr" font-size="10">If </tspan><tspan font-family="cmsy" font-size="10">𝒫 </tspan><tspan font-family="cmr" font-size="10">and </tspan><tspan font-family="cmsy" font-size="10">𝒬 </tspan><tspan font-family="cmr" font-size="10">are posets interpreted as categories, what does a functor from </tspan><tspan font-family="cmsy" font-size="10">𝒫</tspan>
+<tspan font-family="cmr" font-size="10">to </tspan><tspan font-family="cmsy" font-size="10">𝒬 </tspan><tspan font-family="cmr" font-size="10">represent?</tspan></p>
+  </div>
+<!--l. 177--><p class="indent" >  </p></div>
+<!--l. 179--><p class="indent" >  Now, let me explain why we might care. Consider the following “obvious” fact: if <tspan font-family="cmmi" font-size="10">G </tspan>and <tspan font-family="cmmi" font-size="10">H</tspan>
+are isomorphic groups, then they have the same size. We can formalize it by saying: if
+<tspan font-family="cmmi" font-size="10">G</tspan><img 
+src="Na3012x.png" alt="∼="  class="cong"  /><tspan font-family="cmmi" font-size="10">H </tspan>in <tspan font-family="cmss" font-size="10">Grp</tspan> and <tspan font-family="cmmi" font-size="10">U</tspan> : <tspan font-family="cmss" font-size="10">Grp</tspan> <tspan font-family="cmsy" font-size="10">→</tspan><tspan font-family="cmss" font-size="10">Set</tspan> is the forgetful functor (mapping each group to its
+underlying set), then <tspan font-family="cmmi" font-size="10">U</tspan>(<tspan font-family="cmmi" font-size="10">G</tspan>)<img 
+src="Na3013x.png" alt="∼="  class="cong"  /><tspan font-family="cmmi" font-size="10">U</tspan>(<tspan font-family="cmmi" font-size="10">H</tspan>). The beauty of category theory shows itself: this in
+fact works <tspan font-family="cmti" font-size="10">for any functors and categories</tspan>, and the proof is done solely through
+arrows:</p>
+<div class="mdframed" id="mdframed-1049">
+<a 
+ id="x541-519028r1582"></a>
+<div class="newtheorem">
+<!--l. 190--><p class="noindent" ><span class="head">
+<a 
+ id="x541-519029r8"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 61.2.8 </tspan><tspan font-family="cmss" font-size="10">(Functors preserve isomorphism)</tspan><br 
+class="newline" /> </span><a 
+ id="x541-519030"></a> If <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><img 
+src="Na3014x.png" alt="∼
+="  class="cong"  /><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> are isomorphic objects in <tspan font-family="cmsy" font-size="10">𝒜</tspan>
+and <tspan font-family="cmmi" font-size="10">F </tspan>: <tspan font-family="cmsy" font-size="10">𝒜→ℬ </tspan>is a functor then <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>)<img 
+src="Na3015x.png" alt="∼
+="  class="cong"  /><tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>).
+</p>
+  </div>
+<!--l. 195--><p class="indent" >  </p></div>
+<!--l. 196--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 197--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Try it yourself! The picture is: <img 
+src="Na3016x.png" alt="       A           B     = F (A  )
+       |1|          |1|        1
+       | |  F       | |
+𝒜 ∋  f | |g......  F(f) | F(g)       ∈ ℬ
+       | |          | |
+       | |          | |
+       A2          B2    = F (A2 )
+"  />
+You’ll need to use both key properties of functors: they preserve composition and the identity
+map.                                                                                                           □
+</p>
+  </div>
+<!--l. 207--><p class="indent" >  This will give us a great intuition in the future, because
+     </p><dl class="enumerate"><dt class="enumerate">
+  (i) </dt><dd 
+class="enumerate">Almost every operation we do in our lifetime will be a functor, and
+     </dd><dt class="enumerate">
+                                                                                
+                                                                                
+ (ii) </dt><dd 
+class="enumerate">We now know that functors take isomorphic objects to isomorphic objects.</dd></dl>
+<!--l. 212--><p class="noindent" >Thus, we now automatically know that basically any “reasonable” operation we do will preserve
+isomorphism (where “reasonable” means that it’s a functor). This is super convenient in
+algebraic topology, for example; see <tspan font-family="cmbx" font-size="10">??</tspan> , where we get for free that homotopic spaces have
+isomorphic fundamental groups.</p>
+<div class="mdframed" id="mdframed-1050">
+<a 
+ id="x541-519033r1583"></a>
+<div class="newtheorem">
+<!--l. 219--><p class="noindent" ><span class="head">
+<a 
+ id="x541-519034r9"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 61.2.9 —  </tspan> </span><a 
+ id="x541-519035"></a>This lets us construct a category <tspan font-family="cmss" font-size="10">Cat</tspan> whose objects are categories
+and arrows are functors.</p>
+  </div>
+<!--l. 221--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 228--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase414.htm" >next</a>] [<a 
+href="Nase385.htm" >prev</a>] [<a 
+href="Nase385.htm#tailNase385.htm" >prev-tail</a>] [<a 
+href="Nase386.htm" >front</a>] [<a 
+href="Nach69.htm#Nase412.htm" >up</a>] </p></div>
+<!--l. 228--><p class="indent" >  <a 
+ id="tailNase386.htm"></a> </p> 
+</body> 
+</html>

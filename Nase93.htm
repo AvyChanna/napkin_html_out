@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Algebraic and geometric multiplicity</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 482--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase94.htm" >next</a>] [<a 
+href="Nase92.htm" >prev</a>] [<a 
+href="Nase92.htm#tailNase92.htm" >prev-tail</a>] [<a 
+href="#tailNase93.htm">tail</a>] [<a 
+href="Nach13.htm#Nase93.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">10.8</span>  <a 
+ id="x140-12600010.8"></a>Algebraic and geometric multiplicity</h3>
+<!--l. 483--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">The matrix </tspan><tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmti" font-size="10">below.</tspan>
+</p><!--l. 484--><p class="indent" >  This is some convenient notation: let’s consider the matrix in Jordan form
+</p>
+  <div class="math-display" >
+<img 
+src="Na429x.png" alt="    ⌊                ⌋
+     7  1
+    ||0  7            ||
+    ||      9         ||
+T = ||         7  1  0|| .
+    ⌈         0  7  1⌉
+              0  0  7
+" class="math-display"  /></div>
+<!--l. 497--><p class="indent" >  We focus on the eigenvalue 7, which appears multiple times, so it is certainly
+“repeated”. However, there a two different senses in which you could say it is repeated.
+</p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmti" font-size="10">Algebraic</tspan>: You could say it is repeated five times, because it appears five times on
+     the diagonal.
+     </li>
+     <li class="itemize"><tspan font-family="cmti" font-size="10">Geometric</tspan>: You could say it really only appears two times: because there are only
+     two eigen<tspan font-family="cmti" font-size="10">vectors </tspan>with eigenvalue 7, namely <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">4</tspan></sub>.
+     <!--l. 507--><p class="noindent" >Indeed, the vector <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>  for example has <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>)  =  7<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> + <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, so it’s not really an
+     eigenvector! If you apply <tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmsy" font-size="10">− </tspan>7id to <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> twice though, you do get zero.</p></li></ul>
+<div class="mdframed" id="mdframed-274">
+<a 
+ id="x140-126001r428"></a>
+<div class="newtheorem">
+<!--l. 513--><p class="noindent" ><span class="head">
+<a 
+ id="x140-126002r1"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Question 10.8.1.</tspan>  </span><a 
+ id="x140-126003"></a><tspan font-family="cmr" font-size="10">In this example, how many times do you need to apply </tspan><tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmr" font-size="10">7</tspan><tspan font-family="cmr" font-size="10">id</tspan> <tspan font-family="cmr" font-size="10">to </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="7">6</tspan></sub> <tspan font-family="cmr" font-size="10">to get</tspan>
+<tspan font-family="cmr" font-size="10">zero?</tspan></p>
+</div>
+<!--l. 515--><p class="indent" >  </p></div>
+<!--l. 516--><p class="noindent" >Both these notions are valid, so we will name both. To preserve generality, we first state the
+“intrinsic” definition. <a 
+ id="x140-126004r429"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 521--><p class="noindent" ><span class="head">
+<a 
+ id="x140-126005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 10.8.2.</tspan>  </span><a 
+ id="x140-126006"></a>Let <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>be a linear map and <tspan font-family="cmmi" font-size="10">λ </tspan>a scalar. </p>
+     <ul class="itemize1">
+     <li class="itemize">The <tspan font-family="cmbx" font-size="10">geometric multiplicity</tspan> of <tspan font-family="cmmi" font-size="10">λ </tspan>is the dimension dim<tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">λ</tspan></sub> of the <tspan font-family="cmmi" font-size="10">λ</tspan>-eigenspace.
+     </li>
+     <li class="itemize">Define  the  <tspan font-family="cmbx" font-size="10">generalized  eigenspace</tspan> <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmmi" font-size="8">λ</tspan></sup>  to  be  the  subspace  of  <tspan font-family="cmmi" font-size="10">V  </tspan>for  which
+     (<tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">λ</tspan>id)<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>(<tspan font-family="cmmi" font-size="10">v</tspan>)  =  0 for some <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan>1. The <tspan font-family="cmbx" font-size="10">algebraic multiplicity</tspan> of <tspan font-family="cmmi" font-size="10">λ </tspan>is the
+     dimension dim<tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmmi" font-size="8">λ</tspan></sup>.</li></ul>
+<!--l. 533--><p class="noindent" >(Silly edge case: we allow “multiplicity zero” if <tspan font-family="cmmi" font-size="10">λ </tspan>is not an eigenvalue at all.)
+</p>
+  </div>
+<!--l. 535--><p class="indent" >
+However in practice you should just count the Jordan blocks.</p>
+<div class="mdframed" id="mdframed-275">
+<a 
+ id="x140-126007r430"></a>
+<div class="newtheorem">
+<!--l. 538--><p class="noindent" ><span class="head">
+<a 
+ id="x140-126008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 10.8.3 </tspan>(An example of eigenspaces via Jordan form)<br 
+class="newline" /> </span><a 
+ id="x140-126009"></a>Retain the matrix <tspan font-family="cmmi" font-size="10">T</tspan>
+mentioned earlier and let <tspan font-family="cmmi" font-size="10">λ </tspan>= 7. </p>
+     <ul class="itemize1">
+     <li class="itemize">The eigenspace <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">λ</tspan></sub> has basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">4</tspan></sub>, so the geometric multiplicity is 2.
+     </li>
+     <li class="itemize">The  generalized  eigenspace  <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmmi" font-size="8">λ</tspan></sup>  has  basis  <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>,  <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>,  <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">4</tspan></sub>,  <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">5</tspan></sub>,  <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">6</tspan></sub>  so  the  algebraic
+     multiplicity is 5.</li></ul>
+</p>
+  </div>
+<!--l. 546--><p class="indent" >  </p></div>
+<!--l. 548--><p class="indent" >  To be completely explicit, here is how you think of these in practice:
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-276">
+<a 
+ id="x140-126010r431"></a>
+<div class="newtheorem">
+<!--l. 550--><p class="noindent" ><span class="head">
+<a 
+ id="x140-126011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 10.8.4 </tspan><tspan font-family="cmss" font-size="10">(Geometric and algebraic multiplicity vs Jordan blocks)</tspan><br 
+class="newline" /> </span><a 
+ id="x140-126012"></a>Assume <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>is
+a linear map of finite-dimensional vector spaces, written in Jordan form. Let <tspan font-family="cmmi" font-size="10">λ </tspan>be a scalar.
+Then </p>
+     <ul class="itemize1">
+     <li class="itemize">The geometric multiplicity of <tspan font-family="cmmi" font-size="10">λ </tspan>is the number of Jordan blocks with eigenvalue <tspan font-family="cmmi" font-size="10">λ</tspan>;
+     the eigenspace has one basis element per Jordan block.
+     </li>
+     <li class="itemize">The algebraic multiplicity of <tspan font-family="cmmi" font-size="10">λ </tspan>is the sum of the dimensions of the Jordan blocks
+     with eigenvalue <tspan font-family="cmmi" font-size="10">λ</tspan>; the eigenspace is the direct sum of the subspaces corresponding
+     to those blocks.</li></ul>
+</p>
+  </div>
+<!--l. 567--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-277">
+<a 
+ id="x140-126013r432"></a>
+<div class="newtheorem">
+<!--l. 570--><p class="noindent" ><span class="head">
+<a 
+ id="x140-126014r5"></a>
+<tspan font-family="cmbx" font-size="10">Question 10.8.5.</tspan>  </span><a 
+ id="x140-126015"></a><tspan font-family="cmr" font-size="10">Show  that  the  geometric  multiplicity  is  always  less  than  or  equal  to  the</tspan>
+<tspan font-family="cmr" font-size="10">algebraic multiplicity.</tspan></p>
+  </div>
+<!--l. 572--><p class="indent" >  </p></div>
+<!--l. 574--><p class="indent" >  This actually gives us a tentative definition: </p>
+     <ul class="itemize1">
+     <li class="itemize">The trace is the sum of the eigenvalues, counted with algebraic multiplicity.
+     </li>
+     <li class="itemize">The  determinant  is  the  product  of  the  eigenvalues,  counted  with  algebraic
+     multiplicity.</li></ul>
+<!--l. 581--><p class="noindent" >This definition is okay, but it has the disadvantage of requiring the ground field to be
+algebraically closed. It is also not the definition that is easiest to work with computationally.
+The next two chapters will give us a better definition.
+                                                                                
+                                                                                
+</p>
+  <!--l. 588--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase94.htm" >next</a>] [<a 
+href="Nase92.htm" >prev</a>] [<a 
+href="Nase92.htm#tailNase92.htm" >prev-tail</a>] [<a 
+href="Nase93.htm" >front</a>] [<a 
+href="Nach13.htm#Nase93.htm" >up</a>] </p></div>
+<!--l. 588--><p class="indent" >  <a 
+ id="tailNase93.htm"></a> </p> 
+</body> 
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Classical logic gates</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 7--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase164.htm" >next</a>] [<a 
+href="#tailNase163.htm">tail</a>] [<a 
+href="Nach27.htm#Nase163.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">24.1</span>  <a 
+ id="x235-22400024.1"></a>Classical logic gates</h3>
+<!--l. 8--><p class="noindent" >In classical logic, we build circuits which take in some bits for input, and output some more
+bits for input. These circuits are built out of individual logic gates. For example, the <tspan font-family="cmbx" font-size="10">AND</tspan>
+<tspan font-family="cmbx" font-size="10">gate</tspan> can be pictured as follows.
+</p>
+  <div class="math-display" >
+<img 
+src="Na1157x.png" alt="0             0     0             0     1             0      1             1
+0     and           1     and           0      and           1     and
+" class="math-display"  /></div>
+<!--l. 33--><p class="indent" >  One can also represent the AND gate using the “truth table”:
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1158x.png" alt="|------|---------|
+|A---B-|A-and--B-|
+|0   0 |    0    |
+|0   1 |    0    |
+|      |         |
+|1   0 |    0    |
+-1---1------1----|
+" class="math-display"  /></div>
+<!--l. 45--><p class="indent" >  Similarly, we have the <tspan font-family="cmbx" font-size="10">OR gate</tspan> and the <tspan font-family="cmbx" font-size="10">NOT gate</tspan>:
+</p>
+  <div class="math-display" >
+<img 
+src="Na1159x.png" alt="|-------|-------|
+|A---B--|A-or B-|   |---|------|
+| 0  0  |  0    |   |A--|not A-|
+| 0  1  |  1    |   |0  |  1   |
+| 1  0  |  1    |   |1  |  0   |
+| 1  1  |  1    |   -----------|
+|----------------
+" class="math-display"  /></div>
+<!--l. 65--><p class="indent" >  We also have a so-called <tspan font-family="cmbx" font-size="10">COPY gate</tspan>, which duplicates a bit.
+</p>
+  <div class="math-display" >
+<img 
+src="Na1160x.png" alt="0     copy     0      1     copy     1
+               0                     1
+" class="math-display"  /></div>
+<!--l. 77--><p class="indent" >  Of course, the first theorem you learn about these gates is that:
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-470">
+<a 
+ id="x235-224001r738"></a>
+<div class="newtheorem">
+<!--l. 79--><p class="noindent" ><span class="head">
+<a 
+ id="x235-224002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 24.1.1 </tspan><tspan font-family="cmss" font-size="10">(AND, OR, NOT, COPY are universal)</tspan><br 
+class="newline" /> </span><a 
+ id="x235-224003"></a>The set of four gates AND, OR,
+NOT, COPY is universal in the sense that any boolean function <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmsy" font-size="10">{</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> <tspan font-family="cmsy" font-size="10">→{</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmsy" font-size="10">} </tspan>can
+be implemented as a circuit using only these gates.
+</p>
+  </div>
+<!--l. 83--><p class="indent" >  </p></div>
+<!--l. 84--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 85--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Somewhat silly: we essentially write down a circuit that OR’s across all input
+strings in <tspan font-family="cmmi" font-size="10">f</tspan>pre(1). For example, suppose we have <tspan font-family="cmmi" font-size="10">n </tspan>= 3 and want to simulate the function
+<tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">abc</tspan>) with <tspan font-family="cmmi" font-size="10">f</tspan>(011) = <tspan font-family="cmmi" font-size="10">f</tspan>(110) = 1 and 0 otherwise. Then the corresponding Boolean
+expression for <tspan font-family="cmmi" font-size="10">f </tspan>is simply
+</p>
+  <div class="math-display" >
+<img 
+src="Na1161x.png" alt="f(abc) = [(not a) and b and c] or [a and b and (not c)].
+" class="math-display"  /></div>
+<!--l. 96--><p class="indent" >  Clearly, one can do the same for any other <tspan font-family="cmmi" font-size="10">f</tspan>, and implement this logic into a circuit.   □
+</p>
+  </div><div class="mdframed" id="mdframed-471">
+<a 
+ id="x235-224004r739"></a>
+<div class="newtheorem">
+<!--l. 100--><p class="noindent" ><span class="head">
+<a 
+ id="x235-224005r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmssbx" font-size="10">Remark 24.1.2 —  </tspan> </span><a 
+ id="x235-224006"></a>Since <tspan font-family="cmmi" font-size="10">x</tspan> and <tspan font-family="cmmi" font-size="10">y </tspan>= not ((not <tspan font-family="cmmi" font-size="10">x</tspan>) or (not <tspan font-family="cmmi" font-size="10">y</tspan>)), it follows that in fact, we
+can dispense with the AND gate.</p>
+  </div>
+<!--l. 103--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 105--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase164.htm" >next</a>] [<a 
+href="Nase163.htm" >front</a>] [<a 
+href="Nach27.htm#Nase163.htm" >up</a>] </p></div>
+<!--l. 105--><p class="indent" >  <a 
+ id="tailNase163.htm"></a> </p> 
+</body> 
+</html>

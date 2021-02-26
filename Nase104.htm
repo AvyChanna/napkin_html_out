@@ -1,0 +1,326 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The inner product</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 38--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase105.htm" >next</a>] [<a 
+href="#tailNase104.htm">tail</a>] [<a 
+href="Nach16.htm#Nase104.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">13.1</span>  <a 
+ id="x157-14000013.1"></a>The inner product</h3>
+<!--l. 39--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Dot product in </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup><tspan font-family="cmti" font-size="10">.</tspan>
+                                                                                
+                                                                                
+</p><!--l. 40--><p class="noindent" >
+</p>
+  <h4 class="subsectionHead"><span class="titlemark">13.1.i</span>  <a 
+ id="x157-14100013.1.i"></a>For real numbers: bilinear forms</h4>
+<!--l. 42--><p class="noindent" >First, let’s define the inner form for real spaces. Rather than the notation <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">w </tspan>it is most
+customary to use <img 
+src="Na524x.png" alt="⟨v,w⟩"  class="left" align="middle" /> for general vector spaces. <a 
+ id="x157-141001r481"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 46--><p class="noindent" ><span class="head">
+<a 
+ id="x157-141002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 13.1.1.</tspan>  </span><a 
+ id="x157-141003"></a>Let <tspan font-family="cmmi" font-size="10">V </tspan>be a real vector space. A <tspan font-family="cmbx" font-size="10">real inner form</tspan><span class="footnote-mark"><a 
+href="Na158.htm#fn1x17"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x157-141004f1"></a> 
+is a function
+</p>
+  <div class="math-display" >
+<img 
+src="Na525x.png" alt="⟨∙,∙⟩ : V × V → ℝ
+" class="math-display"  /></div>
+<!--l. 52--><p class="indent" >  which satisfies the following properties: </p>
+     <ul class="itemize1">
+     <li class="itemize">The form is <tspan font-family="cmbx" font-size="10">symmetric</tspan>: for any <tspan font-family="cmmi" font-size="10">v,w </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>we have
+<div class="math-display" >
+<img 
+src="Na526x.png" alt="⟨v,w ⟩ = ⟨w, v⟩.
+" class="math-display"  /></div>
+     <!--l. 56--><p class="noindent" >Of course, one would expect this property from a product.
+                                                                                
+                                                                                
+     </p></li>
+     <li class="itemize">The form is <tspan font-family="cmbx" font-size="10">bilinear</tspan>, or <tspan font-family="cmbx" font-size="10">linear in both arguments</tspan>, meaning that <img 
+src="Na527x.png" alt="⟨− ,v⟩"  class="left" align="middle" />
+     and <img 
+src="Na528x.png" alt="⟨v,− ⟩"  class="left" align="middle" /> are linear functions for any fixed <tspan font-family="cmmi" font-size="10">v</tspan>. Spelled explicitly this means
+     that
+     <table 
+class="align-star"><!--l. 65--><p class="noindent" >
+<tr><td 
+class="align-odd"><img 
+src="Na530x.png" alt="⟨cx,v⟩"  class="left" align="middle" /></td>  <td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">c</tspan><img 
+src="Na531x.png" alt="⟨x,v⟩"  class="left" align="middle" /></td>     <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><img 
+src="Na532x.png" alt="⟨x+ y,v⟩"  class="left" align="middle" /></td><td 
+class="align-even"> = <img 
+src="Na533x.png" alt="⟨x,v⟩"  class="left" align="middle" /> + <img 
+src="Na534x.png" alt="⟨y,v⟩"  class="left" align="middle" /><tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                                                  </td></tr></table>
+     </p><!--l. 66--><p class="noindent" >and similarly if <tspan font-family="cmmi" font-size="10">v </tspan>was on the left. This is often summarized by the single equation
+     <img 
+src="Na535x.png" alt="⟨cx+ y,z⟩"  class="left" align="middle" /> = <tspan font-family="cmmi" font-size="10">c</tspan><img 
+src="Na536x.png" alt="⟨x,z⟩"  class="left" align="middle" /> + <img 
+src="Na537x.png" alt="⟨y,z⟩"  class="left" align="middle" />.
+     </p></li>
+     <li class="itemize">The form is <tspan font-family="cmbx" font-size="10">positive definite</tspan>, meaning <img 
+src="Na538x.png" alt="⟨v,v⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">≥ </tspan>0 is a nonnegative real number, and
+     equality takes place only if <tspan font-family="cmmi" font-size="10">v </tspan>= 0<sub><tspan font-family="cmmi" font-size="8">V</tspan> </sub>.</li></ul>
+  </div>
+<!--l. 73--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-303">
+<a 
+ id="x157-141005r482"></a>
+<div class="newtheorem">
+<!--l. 75--><p class="noindent" ><span class="head">
+<a 
+ id="x157-141006r2"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 13.1.2.</tspan>  </span><a 
+ id="x157-141007"></a><tspan font-family="cmr" font-size="10">Show that linearity in the first argument plus symmetry already gives you</tspan>
+<tspan font-family="cmr" font-size="10">linearity in the second argument, so we could edit the above definition by only requiring </tspan><img 
+src="Na539x.png" alt="⟨− ,v⟩"  class="left" align="middle" />
+<tspan font-family="cmr" font-size="10">to be linear.</tspan></p>
+  </div>
+<!--l. 79--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<div class="mdframed" id="mdframed-304">
+<a 
+ id="x157-141008r483"></a>
+<div class="newtheorem">
+<!--l. 82--><p class="noindent" ><span class="head">
+<a 
+ id="x157-141009r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 13.1.3 </tspan>(<tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>)<br 
+class="newline" /> </span><a 
+ id="x157-141010"></a>As we already know, one can define the inner form on <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>  as
+follows. Let <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> = (1<tspan font-family="cmmi" font-size="10">,</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,</tspan>0), <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> = (0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,</tspan>0), …, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> = (0<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1) be the usual basis. Then
+we let
+</p>
+<div class="math-display" >
+<img 
+src="Na540x.png" alt="⟨a1e1 + ⋅⋅⋅+  anen,b1e1 + ⋅⋅⋅+ bnen⟩ := a1b1 + ⋅⋅⋅+ anbn.
+" class="math-display"  /></div>
+<!--l. 91--><p class="noindent" >It’s easy to see this is bilinear (symmetric and linear in both arguments). To see it is
+positive definite, note that if <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> then the dot product is <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <img 
+src="Na541x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, which is
+zero exactly when all <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> are zero.
+</p>
+  </div>
+<!--l. 97--><p class="indent" >  </p></div>
+  <h4 class="subsectionHead"><span class="titlemark">13.1.ii</span>  <a 
+ id="x157-14200013.1.ii"></a>For complex numbers: sesquilinear forms</h4>
+<!--l. 100--><p class="noindent" >The definition for a complex product space is similar, but has one difference: rather than
+symmetry we instead have <tspan font-family="cmti" font-size="10">conjugate symmetry </tspan>meaning <img 
+src="Na542x.png" alt="⟨v,w ⟩"  class="left" align="middle" /> =<span class="overline"> <img 
+src="Na543x.png" alt="⟨w,v⟩"  class="left" align="middle" /></span>. Thus, while we still
+have linearity in the first argument, we actually have a different linearity for the second
+argument. To be explicit: <a 
+ id="x157-142001r484"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 107--><p class="noindent" ><span class="head">
+<a 
+ id="x157-142002r4"></a>
+<tspan font-family="cmbx" font-size="10">Definition 13.1.4.</tspan>  </span><a 
+ id="x157-142003"></a>Let <tspan font-family="cmmi" font-size="10">V </tspan>be a complex vector space. A <tspan font-family="cmbx" font-size="10">complex inner product</tspan> is a
+function
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na544x.png" alt="⟨∙,∙⟩ : V × V → ℂ
+" class="math-display"  /></div>
+<!--l. 110--><p class="indent" >  which satisfies the following properties: </p>
+     <ul class="itemize1">
+     <li class="itemize">The form has <tspan font-family="cmbx" font-size="10">conjugate symmetry</tspan>, which means that for any <tspan font-family="cmmi" font-size="10">v,w </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>we have
+<div class="math-display" >
+<img 
+src="Na545x.png" alt="        ------
+⟨v,w⟩ = ⟨w,v⟩.
+" class="math-display"  /></div>
+     </li>
+     <li class="itemize">The form is <tspan font-family="cmbx" font-size="10">sesquilinear</tspan> (the name means “one-and-a-half linear”). This means
+     that:
+          <ul class="itemize2">
+          <li class="itemize">The form is <tspan font-family="cmbx" font-size="10">linear in the first argument</tspan>, so again we have
+                                                                                
+                                                                                
+          <table 
+class="align-star"><!--l. 124--><p class="noindent" >
+<tr><td 
+class="align-odd"><img 
+src="Na547x.png" alt="⟨x + y,v⟩"  class="left" align="middle" /></td><td 
+class="align-even"> = <img 
+src="Na548x.png" alt="⟨x,v⟩"  class="left" align="middle" /> + <img 
+src="Na549x.png" alt="⟨y,v⟩"  class="left" align="middle" /></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><img 
+src="Na550x.png" alt="⟨cx,v⟩"  class="left" align="middle" /></td>  <td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">c</tspan><img 
+src="Na551x.png" alt="⟨x,v⟩"  class="left" align="middle" /><tspan font-family="cmmi" font-size="10">.</tspan></td>       <td 
+class="align-label"></td><td 
+class="align-label">                                                                   </td></tr></table>
+          </p><!--l. 125--><p class="noindent" >Again this is often abbreviated to the single line <img 
+src="Na552x.png" alt="⟨cx+ y,v⟩"  class="left" align="middle" /> = <tspan font-family="cmmi" font-size="10">c</tspan><img 
+src="Na553x.png" alt="⟨x,v⟩"  class="left" align="middle" /> + <img 
+src="Na554x.png" alt="⟨y,v⟩"  class="left" align="middle" /> in the
+          literature.
+          </p></li>
+          <li class="itemize">However, it is now <tspan font-family="cmbx" font-size="10">anti-linear</tspan> <tspan font-family="cmbx" font-size="10">in the second argument</tspan>: for any complex
+          number <tspan font-family="cmmi" font-size="10">c </tspan>and vectors <tspan font-family="cmmi" font-size="10">x </tspan>and <tspan font-family="cmmi" font-size="10">y </tspan>we have
+          <table 
+class="align-star"><!--l. 135--><p class="noindent" >
+<tr><td 
+class="align-odd"><img 
+src="Na556x.png" alt="⟨v,x + y⟩"  class="left" align="middle" /></td><td 
+class="align-even"> = <img 
+src="Na557x.png" alt="⟨v,x⟩"  class="left" align="middle" /> + <img 
+src="Na558x.png" alt="⟨v,y⟩"  class="left" align="middle" /></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><img 
+src="Na559x.png" alt="⟨v,cx⟩"  class="left" align="middle" /></td>  <td 
+class="align-even"> =<span class="overline"> <tspan font-family="cmmi" font-size="10">c</tspan></span><img 
+src="Na560x.png" alt="⟨v,x⟩"  class="left" align="middle" /><tspan font-family="cmmi" font-size="10">.</tspan></td>       <td 
+class="align-label"></td><td 
+class="align-label">                                                                   </td></tr></table>
+          </p><!--l. 136--><p class="noindent" >Note the appearance of the complex conjugate <span class="overline"><tspan font-family="cmmi" font-size="10">c</tspan></span>, which is new! Again, we can
+          abbreviate this to just <img 
+src="Na561x.png" alt="⟨v,cx + y⟩"  class="left" align="middle" /> =<span class="overline"> <tspan font-family="cmmi" font-size="10">c</tspan></span><img 
+src="Na562x.png" alt="⟨v,x⟩"  class="left" align="middle" /> + <img 
+src="Na563x.png" alt="⟨v,y⟩"  class="left" align="middle" /> if we only want to write one
+          equation.</p></li></ul>
+     </li>
+     <li class="itemize">The form is <tspan font-family="cmbx" font-size="10">positive definite</tspan>, meaning <img 
+src="Na564x.png" alt="⟨v,v⟩"  class="left" align="middle" /> is a nonnegative real number, and equals
+     zero exactly when <tspan font-family="cmmi" font-size="10">v </tspan>= 0<sub><tspan font-family="cmmi" font-size="8">V</tspan> </sub>.</li></ul>
+                                                                                
+                                                                                
+  </div>
+<!--l. 147--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-305">
+<a 
+ id="x157-142004r485"></a>
+<div class="newtheorem">
+<!--l. 149--><p class="noindent" ><span class="head">
+<a 
+ id="x157-142005r5"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 13.1.5.</tspan>  </span><a 
+ id="x157-142006"></a><tspan font-family="cmr" font-size="10">Show that anti-linearity follows from conjugate symmetry plus linearity in the</tspan>
+<tspan font-family="cmr" font-size="10">first argument.</tspan></p>
+  </div>
+<!--l. 151--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-306">
+<a 
+ id="x157-142007r486"></a>
+<div class="newtheorem">
+<!--l. 154--><p class="noindent" ><span class="head">
+<a 
+ id="x157-142008r6"></a>
+<tspan font-family="cmbx" font-size="10">Example 13.1.6 </tspan>(<tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>)<br 
+class="newline" /> </span><a 
+ id="x157-142009"></a>The dot product in <tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> is defined as follows: let <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, …, <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> be
+the standard basis. For complex numbers <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>, <tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> we set
+</p>
+<div class="math-display" >
+<img 
+src="Na565x.png" alt="                                         --          ---
+⟨w1e1 + ⋅⋅⋅+ wnen, z1e1 + ⋅⋅⋅+ znen⟩ := w1 z1 + ⋅⋅⋅+ wn zn.
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 162--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-307">
+<a 
+ id="x157-142010r487"></a>
+<div class="newtheorem">
+<!--l. 164--><p class="noindent" ><span class="head">
+<a 
+ id="x157-142011r7"></a>
+<tspan font-family="cmbx" font-size="10">Question 13.1.7.</tspan>  </span><a 
+ id="x157-142012"></a><tspan font-family="cmr" font-size="10">Check that the above is in fact a complex inner form.</tspan></p>
+  </div>
+<!--l. 165--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <h4 class="subsectionHead"><span class="titlemark">13.1.iii</span>  <a 
+ id="x157-14300013.1.iii"></a>Inner product space</h4>
+<!--l. 168--><p class="noindent" >It’ll be useful to treat both types of spaces simultaneously: <a 
+ id="x157-143001r488"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 170--><p class="noindent" ><span class="head">
+<a 
+ id="x157-143002r8"></a>
+<tspan font-family="cmbx" font-size="10">Definition 13.1.8.</tspan>  </span><a 
+ id="x157-143003"></a>An <tspan font-family="cmbx" font-size="10">inner product space</tspan> is either a real vector space equipped
+with a real inner form, or a complex vector space equipped with a complex inner form.
+</p><!--l. 174--><p class="indent" >  A linear map between inner product spaces is a map between the underlying vector
+spaces (we do <tspan font-family="cmti" font-size="10">not </tspan>require any compatibility with the inner form).
+</p>
+  </div>
+<!--l. 177--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-308">
+<a 
+ id="x157-143004r489"></a>
+<div class="newtheorem">
+<!--l. 180--><p class="noindent" ><span class="head">
+<a 
+ id="x157-143005r9"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 13.1.9 </tspan><tspan font-family="cmss" font-size="10">(Why sesquilinear?) </tspan><tspan font-family="cmssbx" font-size="10">—  </tspan> </span><a 
+ id="x157-143006"></a>The above example explains one reason why we
+want to satisfy conjugate symmetry rather than just symmetry. If we had tried to define
+the dot product as <tspan font-family="cmex" font-size="10">∑</tspan>
+  <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>, then we would have lost the condition of being positive
+definite, because there is no guarantee that <img 
+src="Na566x.png" alt="⟨v,v⟩"  class="left" align="middle" /> = <tspan font-family="cmex" font-size="10">∑</tspan>
+  <tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> will even be a real number
+at all. On the other hand, with conjugate symmetry we actually enforce <img 
+src="Na567x.png" alt="⟨v,v⟩"  class="left" align="middle" /> =<span class="overline"> <img 
+src="Na568x.png" alt="⟨v,v ⟩"  class="left" align="middle" /></span>,
+i.e. <img 
+src="Na569x.png" alt="⟨v,v⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>for every <tspan font-family="cmmi" font-size="10">v</tspan>.
+</p><!--l. 191--><p class="noindent" >Let’s make this point a bit more forcefully. Suppose we tried to put a bilinear form
+<img 
+src="Na570x.png" alt="⟨− ,− ⟩"  class="left" align="middle" />, on a <tspan font-family="cmti" font-size="10">complex </tspan>vector space <tspan font-family="cmmi" font-size="10">V </tspan>. Let <tspan font-family="cmmi" font-size="10">e </tspan>be any vector with <img 
+src="Na571x.png" alt="⟨e,e⟩"  class="left" align="middle" /> = 1 (a unit vector).
+Then we would instead get <img 
+src="Na572x.png" alt="⟨ie,ie⟩"  class="left" align="middle" /> = <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na573x.png" alt="⟨e,e⟩"  class="left" align="middle" /> = <tspan font-family="cmsy" font-size="10">−</tspan>1; this is a vector with length <tspan font-family="cmsy" font-size="10">−</tspan>1, which
+is not okay! That’s why it is important that, when we have a complex inner product
+space, our form is sesquilinear, not bilinear.</p>
+  </div>
+<!--l. 201--><p class="indent" >  </p></div>
+<!--l. 203--><p class="indent" >  Now that we have a dot product, we can talk both about the norm and orthogonality.
+                                                                                
+                                                                                
+</p>
+  <!--l. 206--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase105.htm" >next</a>] [<a 
+href="Nase104.htm" >front</a>] [<a 
+href="Nach16.htm#Nase104.htm" >up</a>] </p></div>
+<!--l. 206--><p class="indent" >  <a 
+ id="tailNase104.htm"></a>  </p> 
+</body> 
+</html>

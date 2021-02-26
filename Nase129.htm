@@ -1,0 +1,177 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>(Optional) Simple groups and Jordan-Holder</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 205--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase130.htm" >next</a>] [<a 
+href="Nase128.htm" >prev</a>] [<a 
+href="Nase128.htm#tailNase128.htm" >prev-tail</a>] [<a 
+href="#tailNase129.htm">tail</a>] [<a 
+href="Nach20.htm#Nase129.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">17.3</span>  <a 
+ id="x190-18100017.3"></a>(Optional) Simple groups and Jordan-Hölder</h3>
+<!--l. 206--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Decomposition of </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>12<tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmti" font-size="10">is </tspan>1 <tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>4<tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>12<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 208--><p class="indent" >  Just like every integer breaks down as the product of primes, we can try to break every
+group down as a product of “basic” groups. Armed with our idea of quotient groups, the right
+notion is this.
+<a 
+ id="x190-181001r586"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 213--><p class="noindent" ><span class="head">
+<a 
+ id="x190-181002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 17.3.1.</tspan>  </span><a 
+ id="x190-181003"></a>A <tspan font-family="cmbx" font-size="10">simple group</tspan> is a group with no normal subgroups other than
+itself and the trivial group.
+</p>
+  </div>
+<!--l. 215--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-371">
+<a 
+ id="x190-181004r587"></a>
+<div class="newtheorem">
+<!--l. 217--><p class="noindent" ><span class="head">
+<a 
+ id="x190-181005r2"></a>
+<tspan font-family="cmbx" font-size="10">Question 17.3.2.</tspan>  </span><a 
+ id="x190-181006"></a><tspan font-family="cmr" font-size="10">For which </tspan><tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmr" font-size="10">is </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕n</tspan><tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmr" font-size="10">simple? (Hint: remember that </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕n</tspan><tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmr" font-size="10">is abelian.)</tspan></p>
+  </div>
+<!--l. 218--><p class="indent" >  </p></div>
+<!--l. 220--><p class="indent" >  Then we can try to define what it means to “break down a group”. <a 
+ id="x190-181007r588"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 222--><p class="noindent" ><span class="head">
+<a 
+ id="x190-181008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 17.3.3.</tspan>  </span><a 
+ id="x190-181009"></a>A <tspan font-family="cmbx" font-size="10">composition series</tspan> of a group <tspan font-family="cmmi" font-size="10">G </tspan>is a sequence of subgroups
+<tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>, <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> such that
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na842x.png" alt="{1} = H0 ⊴  H1 ⊴ H2 ⊴  ... ⊴ Hn = G
+" class="math-display"  /></div>
+<!--l. 226--><p class="indent" >  of maximal length (i.e. <tspan font-family="cmmi" font-size="10">n </tspan>is as large as possible, but all <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> are of course distinct). The
+<tspan font-family="cmbx" font-size="10">composition factors</tspan> are the groups <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">∕H</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>, <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">∕H</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">∕H</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub>.
+</p>
+  </div>
+<!--l. 230--><p class="indent" >
+You can show that the “maximality” condition implies that the composition factors are all
+simple groups.
+</p><!--l. 233--><p class="indent" >  Let’s say two composition series are equivalent if they have the same composition factors
+(up to permutation); in particular they have the same length. Then it turns out that the
+following theorem <tspan font-family="cmti" font-size="10">is </tspan>true.</p>
+<div class="mdframed" id="mdframed-372">
+<a 
+ id="x190-181010r589"></a>
+<div class="newtheorem">
+<!--l. 236--><p class="noindent" ><span class="head">
+<a 
+ id="x190-181011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 17.3.4 </tspan><tspan font-family="cmss" font-size="10">(Jordan-H</tspan><tspan font-family="cmss" font-size="10">ö</tspan><tspan font-family="cmss" font-size="10">lder)</tspan><br 
+class="newline" /> </span><a 
+ id="x190-181012"></a>Every  finite  group  <tspan font-family="cmmi" font-size="10">G </tspan>admits  a  unique  composition
+series up to equivalence.
+</p>
+  </div>
+<!--l. 238--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-373">
+<a 
+ id="x190-181013r590"></a>
+<div class="newtheorem">
+<!--l. 241--><p class="noindent" ><span class="head">
+<a 
+ id="x190-181014r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 17.3.5 </tspan>(Fundamental theorem of arithmetic when <tspan font-family="cmmi" font-size="10">n </tspan>= 12)<br 
+class="newline" /> </span><a 
+ id="x190-181015"></a>Let’s consider the group
+<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>12<tspan font-family="msbm" font-size="10">ℤ</tspan>. It’s not hard to check that the possible composition series are
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 251--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmsy" font-size="10">{</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>4<tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>12<tspan font-family="msbm" font-size="10">ℤ</tspan></td><td 
+class="align-even"> with factors <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ</tspan>, <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ</tspan>, <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>3<tspan font-family="msbm" font-size="10">ℤ</tspan></td> <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmsy" font-size="10">{</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>6<tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>12<tspan font-family="msbm" font-size="10">ℤ</tspan></td><td 
+class="align-even"> with factors <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ</tspan>, <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>3<tspan font-family="msbm" font-size="10">ℤ</tspan>, <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ</tspan></td> <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmsy" font-size="10">{</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>3<tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>6<tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>12<tspan font-family="msbm" font-size="10">ℤ</tspan></td><td 
+class="align-even"> with factors <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>3<tspan font-family="msbm" font-size="10">ℤ</tspan>, <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ</tspan>, <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                       </td></tr></table>
+</p><!--l. 252--><p class="noindent" >These correspond to the factorization 12 = 2<sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">⋅ </tspan>3.
+</p>
+  </div>
+<!--l. 253--><p class="indent" >  </p></div>
+<!--l. 255--><p class="indent" >  This suggests that classifying all finite simple groups would be great progress, since every
+finite group is somehow a “product” of simple groups; the only issue is that there are multiple
+ways of building a group from constituents.
+</p><!--l. 258--><p class="indent" >  Amazingly, we actually <tspan font-family="cmti" font-size="10">have </tspan>a full list of simple groups, but the list is really bizarre. Every
+finite simple group falls in one of the following categories: </p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕p</tspan><tspan font-family="msbm" font-size="10">ℤ </tspan>for <tspan font-family="cmmi" font-size="10">p </tspan>a prime,
+     </li>
+     <li class="itemize">For <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan>5, the subgroup of <tspan font-family="cmmi" font-size="10">S</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> consisting of “even” permutations.
+     </li>
+     <li class="itemize">A simple group of Lie type (which I won’t explain), and
+     </li>
+     <li class="itemize">Twenty-six “sporadic” groups which do not fit into any nice family.</li></ul>
+<!--l. 267--><p class="noindent" >The two largest of the sporadic groups have cute names. The <tspan font-family="cmbx" font-size="10">baby monster group</tspan> has
+order
+</p>
+  <div class="math-display" >
+<img 
+src="Na844x.png" alt="241 ⋅313 ⋅56 ⋅72 ⋅11 ⋅13⋅17 ⋅19⋅23 ⋅31 ⋅47 ≈ 4 ⋅1033
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 271--><p class="indent" >  and the <tspan font-family="cmbx" font-size="10">monster group</tspan> (also “<tspan font-family="cmbx" font-size="10">friendly giant</tspan>”) has order
+</p>
+  <div class="math-display" >
+<img 
+src="Na845x.png" alt=" 46  20   9  6    2   3                                        53
+2  ⋅3   ⋅5 ⋅7  ⋅11 ⋅13  ⋅17⋅19 ⋅23⋅29 ⋅31 ⋅41⋅47 ⋅59⋅71 ≈ 8 ⋅10  .
+" class="math-display"  /></div>
+<!--l. 276--><p class="indent" >  It contains twenty of the sporadic groups as subquotients (including itself), and these
+twenty groups are called the “<tspan font-family="cmbx" font-size="10">happy family</tspan>”.
+</p><!--l. 279--><p class="indent" >  Math is weird.</p>
+<div class="mdframed" id="mdframed-374">
+<a 
+ id="x190-181016r591"></a>
+<div class="newtheorem">
+<!--l. 282--><p class="noindent" ><span class="head">
+<a 
+ id="x190-181017r6"></a>
+<tspan font-family="cmbx" font-size="10">Question 17.3.6.</tspan>  </span><a 
+ id="x190-181018"></a><tspan font-family="cmr" font-size="10">Show that “finite simple group of order 2” is redundant in the sense that any</tspan>
+<tspan font-family="cmr" font-size="10">group of order 2 is both finite and simple.</tspan></p>
+  </div>
+<!--l. 284--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 286--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase130.htm" >next</a>] [<a 
+href="Nase128.htm" >prev</a>] [<a 
+href="Nase128.htm#tailNase128.htm" >prev-tail</a>] [<a 
+href="Nase129.htm" >front</a>] [<a 
+href="Nach20.htm#Nase129.htm" >up</a>] </p></div>
+<!--l. 286--><p class="indent" >  <a 
+ id="tailNase129.htm"></a> </p> 
+</body> 
+</html>

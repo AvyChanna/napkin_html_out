@@ -1,0 +1,216 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>(Optional) Proving Sylow’s theorem</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 88--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase129.htm" >next</a>] [<a 
+href="Nase127.htm" >prev</a>] [<a 
+href="Nase127.htm#tailNase127.htm" >prev-tail</a>] [<a 
+href="#tailNase128.htm">tail</a>] [<a 
+href="Nach20.htm#Nase128.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">17.2</span>  <a 
+ id="x189-17500017.2"></a>(Optional) Proving Sylow’s theorem</h3>
+<!--l. 89--><p class="noindent" >The proof of Sylow’s theorem is somewhat involved, and in fact many proofs exist. I’ll present
+one below here. It makes extensive use of group actions, so I want to recall a few facts first. If
+<tspan font-family="cmmi" font-size="10">G </tspan>acts on <tspan font-family="cmmi" font-size="10">X</tspan>, then </p>
+     <ul class="itemize1">
+     <li class="itemize">The orbits of the action form a partition of <tspan font-family="cmmi" font-size="10">X</tspan>.
+     </li>
+     <li class="itemize">if <tspan font-family="cmsy" font-size="10">𝒪 </tspan>is any orbit, then the orbit-Stabilizer theorem says that
+<div class="math-display" >
+<img 
+src="Na824x.png" alt="|𝒪 | = |G |∕|StabG(x)|
+" class="math-display"  /></div>
+     <!--l. 98--><p class="noindent" >for any <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈𝒪</tspan>.
+     </p></li>
+     <li class="itemize">In particular: suppose in the above that <tspan font-family="cmmi" font-size="10">G </tspan>is a <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmbx" font-size="10">-group</tspan>, meaning <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">G</tspan><tspan font-family="cmsy" font-size="10">| </tspan>= <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">t</tspan></sup> for some
+     <tspan font-family="cmmi" font-size="10">t</tspan>. Then either <img 
+src="Na825x.png" alt="|𝒪 |"  class="left" align="middle" /> = 1 or <tspan font-family="cmmi" font-size="10">p </tspan>divides <img 
+src="Na826x.png" alt="|𝒪 |"  class="left" align="middle" />. In the case <tspan font-family="cmsy" font-size="10">𝒪 </tspan>= <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmsy" font-size="10">}</tspan>, then by definition,
+     <tspan font-family="cmmi" font-size="10">x </tspan>is a <tspan font-family="cmbx" font-size="10">fixed point</tspan> of every element of <tspan font-family="cmmi" font-size="10">G</tspan>: we have <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">x </tspan>= <tspan font-family="cmmi" font-size="10">x </tspan>for every <tspan font-family="cmmi" font-size="10">x</tspan>.</li></ul>
+<!--l. 104--><p class="noindent" >Note that when I say <tspan font-family="cmmi" font-size="10">x </tspan>is a fixed point, I mean it is fixed by <tspan font-family="cmbx" font-size="10">every </tspan>element of the group, i.e. the
+orbit really has size one. Hence that’s a really strong condition.
+</p><!--l. 106--><p class="noindent" >
+</p>
+  <h4 class="subsectionHead"><span class="titlemark">17.2.i</span>  <a 
+ id="x189-17600017.2.i"></a>Definitions</h4>
+<!--l. 107--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Conjugacy in </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmti" font-size="10">.</tspan>
+                                                                                
+                                                                                
+</p><!--l. 108--><p class="indent" >  I’ve defined conjugacy of elements previously, but I now need to define it for groups:
+<a 
+ id="x189-176001r582"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 111--><p class="noindent" ><span class="head">
+<a 
+ id="x189-176002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 17.2.1.</tspan>  </span><a 
+ id="x189-176003"></a>Let <tspan font-family="cmmi" font-size="10">G </tspan>be a group, and let <tspan font-family="cmmi" font-size="10">X </tspan>denote the set of subgroups of <tspan font-family="cmmi" font-size="10">G</tspan>. Then
+<tspan font-family="cmbx" font-size="10">conjugation</tspan> is the action of <tspan font-family="cmmi" font-size="10">G </tspan>on <tspan font-family="cmmi" font-size="10">X </tspan>that sends
+</p>
+  <div class="math-display" >
+<img 
+src="Na827x.png" alt="               {             }
+H  ↦→  gHg −1 =  ghg−1 | h ∈ H .
+" class="math-display"  /></div>
+<!--l. 114--><p class="indent" >  If <tspan font-family="cmmi" font-size="10">H </tspan>and <tspan font-family="cmmi" font-size="10">K </tspan>are subgroups of <tspan font-family="cmmi" font-size="10">G </tspan>such that <tspan font-family="cmmi" font-size="10">H </tspan>= <tspan font-family="cmmi" font-size="10">gKg</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan>  for some <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G </tspan>(in other
+words, they are in the same orbit under this action), then we say they are <tspan font-family="cmbx" font-size="10">conjugate</tspan>
+subgroups.
+</p>
+  </div>
+<!--l. 117--><p class="indent" >
+</p><!--l. 119--><p class="indent" >  Because we somehow don’t think of conjugate elements as “that different” (for example, in
+permutation groups), the following shouldn’t be surprising:</p>
+<div class="mdframed" id="mdframed-369">
+<a 
+ id="x189-176004r583"></a>
+<div class="newtheorem">
+<!--l. 123--><p class="noindent" ><span class="head">
+<a 
+ id="x189-176005r2"></a>
+<tspan font-family="cmbx" font-size="10">Question 17.2.2.</tspan>  </span><a 
+ id="x189-176006"></a><tspan font-family="cmr" font-size="10">Show that for any subgroup </tspan><tspan font-family="cmmi" font-size="10">H </tspan><tspan font-family="cmr" font-size="10">of a group </tspan><tspan font-family="cmmi" font-size="10">G</tspan><tspan font-family="cmr" font-size="10">, the map </tspan><tspan font-family="cmmi" font-size="10">H  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">gHg</tspan><tspan font-family="cmsy" font-size="7">−</tspan><tspan font-family="cmr" font-size="7">1</tspan>  <tspan font-family="cmr" font-size="10">by</tspan>
+<tspan font-family="cmmi" font-size="10">h</tspan><img 
+src="Na828x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">ghg</tspan><tspan font-family="cmsy" font-size="7">−</tspan><tspan font-family="cmr" font-size="7">1</tspan>  <tspan font-family="cmr" font-size="10">is  in  fact  an  isomorphism.  This  implies  that  any  two  conjugate  subgroups  are</tspan>
+<tspan font-family="cmr" font-size="10">isomorphic.</tspan></p>
+  </div>
+<!--l. 126--><p class="indent" >  </p></div>
+<a 
+ id="x189-176007r584"></a>
+  <div class="newtheorem">
+                                                                                
+                                                                                
+<!--l. 129--><p class="noindent" ><span class="head">
+<a 
+ id="x189-176008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 17.2.3.</tspan>  </span><a 
+ id="x189-176009"></a>For any subgroup <tspan font-family="cmmi" font-size="10">H </tspan>of <tspan font-family="cmmi" font-size="10">G </tspan>the <tspan font-family="cmbx" font-size="10">normalizer</tspan> of <tspan font-family="cmmi" font-size="10">H </tspan>is defined as
+</p>
+  <div class="math-display" >
+<img 
+src="Na829x.png" alt="          {           −1     }
+NG (H ) := g ∈ G | gHg   = H   .
+" class="math-display"  /></div>
+<!--l. 131--><p class="indent" >  In other words, it is the stabilizer of <tspan font-family="cmmi" font-size="10">H </tspan>under the conjugation action.
+</p>
+  </div>
+<!--l. 132--><p class="indent" >
+</p><!--l. 134--><p class="indent" >  We are now ready to present the proof.
+</p><!--l. 136--><p class="noindent" >
+</p>
+  <h4 class="subsectionHead"><span class="titlemark">17.2.ii</span>  <a 
+ id="x189-17700017.2.ii"></a>Step 1: Prove that a Sylow <tspan font-family="cmmi" font-size="10">p</tspan>-subgroup exists</h4>
+<!--l. 137--><p class="noindent" >What follows is something like the probabilistic method. By considering the set <tspan font-family="cmmi" font-size="10">X </tspan>of
+ALL subsets of size <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> at once, we can exploit the “deep number theoretic fact”
+that
+</p>
+  <div class="math-display" >
+<img 
+src="Na830x.png" alt="      (  n  )
+|X | =  p m   ⁄≡ 0  (mod  p).
+         pn
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 140--><p class="indent" >  (It’s not actually deep: use Lucas’ theorem.)
+</p><!--l. 142--><p class="indent" >  Here is the proof. </p>
+     <ul class="itemize1">
+     <li class="itemize">Let <tspan font-family="cmmi" font-size="10">G </tspan>act on <tspan font-family="cmmi" font-size="10">X </tspan>by <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">X</tspan> : = <img 
+src="Na831x.png" alt="{gx | x ∈ X }"  class="left" align="middle" />.
+     </li>
+     <li class="itemize">Take an orbit <tspan font-family="cmsy" font-size="10">𝒪 </tspan>with size not divisible by <tspan font-family="cmmi" font-size="10">p</tspan>. (This is possible because of our deep
+     number theoretic fact. Since <img 
+src="Na832x.png" alt="|X |"  class="left" align="middle" /> is nonzero mod <tspan font-family="cmmi" font-size="10">p </tspan>and the orbits partition <tspan font-family="cmmi" font-size="10">X</tspan>, the
+     claimed orbit must exist.)
+     </li>
+     <li class="itemize">Let <tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmsy" font-size="10">∈𝒪</tspan>, <tspan font-family="cmmi" font-size="10">H </tspan>= Stab<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub>(<tspan font-family="cmmi" font-size="10">S</tspan>). Then <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> divides <img 
+src="Na833x.png" alt="|H |"  class="left" align="middle" />, by the orbit-Stabilizer theorem.
+     </li>
+     <li class="itemize">Consider a second action: let <tspan font-family="cmmi" font-size="10">H </tspan>act on <tspan font-family="cmmi" font-size="10">S </tspan>by <tspan font-family="cmmi" font-size="10">h </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">s</tspan> : = <tspan font-family="cmmi" font-size="10">hs </tspan>(we know <tspan font-family="cmmi" font-size="10">hs </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">S </tspan>since
+     <tspan font-family="cmmi" font-size="10">H </tspan>= Stab<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub>(<tspan font-family="cmmi" font-size="10">S</tspan>)).
+     </li>
+     <li class="itemize">Observe that Stab<sub><tspan font-family="cmmi" font-size="8">H</tspan></sub>(<tspan font-family="cmmi" font-size="10">s</tspan>) = <tspan font-family="cmsy" font-size="10">{</tspan>1<sub><tspan font-family="cmmi" font-size="8">H</tspan></sub><tspan font-family="cmsy" font-size="10">}</tspan>. Then all orbits of the second action must have
+     size <img 
+src="Na834x.png" alt="|H |"  class="left" align="middle" />. Thus <img 
+src="Na835x.png" alt="|H |"  class="left" align="middle" /> divides <img 
+src="Na836x.png" alt="|S |"  class="left" align="middle" /> = <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>.
+     </li>
+     <li class="itemize">This implies <img 
+src="Na837x.png" alt="|H |"  class="left" align="middle" /> = <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>, and we’re done.</li></ul>
+<!--l. 160--><p class="noindent" >
+</p>
+  <h4 class="subsectionHead"><span class="titlemark">17.2.iii</span>  <a 
+ id="x189-17800017.2.iii"></a>Step 2: Any two Sylow <tspan font-family="cmmi" font-size="10">p</tspan>-subgroups are conjugate</h4>
+<!--l. 161--><p class="noindent" >Let <tspan font-family="cmmi" font-size="10">P </tspan>be a Sylow <tspan font-family="cmmi" font-size="10">p</tspan>-subgroup (which exists by the previous step). We now prove that
+for any <tspan font-family="cmmi" font-size="10">p</tspan>-group <tspan font-family="cmmi" font-size="10">Q</tspan>, <tspan font-family="cmmi" font-size="10">Q </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">gPg</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan>. Note that if <tspan font-family="cmmi" font-size="10">Q </tspan>is also a Sylow <tspan font-family="cmmi" font-size="10">p</tspan>-subgroup, then
+<tspan font-family="cmmi" font-size="10">Q </tspan>= <tspan font-family="cmmi" font-size="10">gPg</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan>  for size reasons; this implies that any two Sylow subgroups are indeed
+conjugate.
+</p><!--l. 166--><p class="indent" >  <tspan font-family="cmbx" font-size="10">Let </tspan><tspan font-family="cmmi" font-size="10">Q </tspan><tspan font-family="cmbx" font-size="10">act on the set of left cosets of </tspan><tspan font-family="cmmi" font-size="10">P </tspan><tspan font-family="cmbx" font-size="10">by left multiplication. </tspan>Note that
+</p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">Q </tspan>is a <tspan font-family="cmmi" font-size="10">p</tspan>-group, so any orbit has size divisible by <tspan font-family="cmmi" font-size="10">p </tspan>unless it’s 1.
+     </li>
+     <li class="itemize">But the number of left cosets is <tspan font-family="cmmi" font-size="10">m</tspan>, which isn’t divisible by <tspan font-family="cmmi" font-size="10">p</tspan>.</li></ul>
+<!--l. 172--><p class="noindent" ><tspan font-family="cmbx" font-size="10">Hence some coset </tspan><tspan font-family="cmmi" font-size="10">gP </tspan><tspan font-family="cmbx" font-size="10">is a fixed point for every </tspan><tspan font-family="cmmi" font-size="10">q</tspan>, meaning <tspan font-family="cmmi" font-size="10">qgP </tspan>= <tspan font-family="cmmi" font-size="10">gP </tspan>for all <tspan font-family="cmmi" font-size="10">q</tspan>.
+Equivalently, <tspan font-family="cmmi" font-size="10">qg </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">gP </tspan>for all <tspan font-family="cmmi" font-size="10">q </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">Q</tspan>, so <tspan font-family="cmmi" font-size="10">Q </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">gPg</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan> as desired.
+                                                                                
+                                                                                
+</p><!--l. 177--><p class="noindent" >
+</p>
+  <h4 class="subsectionHead"><span class="titlemark">17.2.iv</span>  <a 
+ id="x189-17900017.2.iv"></a>Step 3: Showing <tspan font-family="cmmi" font-size="10">n</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmsy" font-size="10">≡ </tspan>1 (mod <tspan font-family="cmmi" font-size="10">p</tspan>)</h4>
+<!--l. 178--><p class="noindent" >Let <tspan font-family="cmsy" font-size="10">𝒮 </tspan>denote the set of all the Sylow <tspan font-family="cmmi" font-size="10">p</tspan>-subgroups. Let <tspan font-family="cmmi" font-size="10">P </tspan><tspan font-family="cmsy" font-size="10">∈𝒮 </tspan>be arbitrary.</p>
+<div class="mdframed" id="mdframed-370">
+<a 
+ id="x189-179001r585"></a>
+<div class="newtheorem">
+<!--l. 181--><p class="noindent" ><span class="head">
+<a 
+ id="x189-179002r4"></a>
+<tspan font-family="cmbx" font-size="10">Question 17.2.4.</tspan>  </span><a 
+ id="x189-179003"></a><tspan font-family="cmr" font-size="10">Why does </tspan><img 
+src="Na838x.png" alt="|𝒮|"  class="left" align="middle" /> <tspan font-family="cmr" font-size="10">equal </tspan><tspan font-family="cmmi" font-size="10">n</tspan><sub><tspan font-family="cmmi" font-size="7">p</tspan></sub><tspan font-family="cmr" font-size="10">? (In other words, are you awake?)</tspan></p>
+  </div>
+<!--l. 183--><p class="indent" >  </p></div>
+<!--l. 184--><p class="indent" >  Now we can proceed with the proof. Let <tspan font-family="cmmi" font-size="10">P </tspan>act on <tspan font-family="cmsy" font-size="10">𝒮 </tspan>by conjugation. Then: </p>
+     <ul class="itemize1">
+     <li class="itemize">Because <tspan font-family="cmmi" font-size="10">P </tspan>is a <tspan font-family="cmmi" font-size="10">p</tspan>-group, <tspan font-family="cmmi" font-size="10">n</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> (mod <tspan font-family="cmmi" font-size="10">p</tspan>) is the number of fixed points of this action.
+     Now we claim <tspan font-family="cmmi" font-size="10">P </tspan>is the only fixed point of this action.
+     </li>
+     <li class="itemize">Let <tspan font-family="cmmi" font-size="10">Q </tspan>be any other fixed point, meaning <tspan font-family="cmmi" font-size="10">xQx</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan> = <tspan font-family="cmmi" font-size="10">Q </tspan>for any <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">P</tspan>.
+     </li>
+     <li class="itemize">Define the normalizer <tspan font-family="cmmi" font-size="10">N</tspan><sub><tspan font-family="cmmi" font-size="8">G</tspan></sub>(<tspan font-family="cmmi" font-size="10">Q</tspan>) = <img 
+src="Na839x.png" alt="{           − 1    }
+  g ∈ G | gQg  = Q"  class="left" align="middle" />. It contains both <tspan font-family="cmmi" font-size="10">P </tspan>and <tspan font-family="cmmi" font-size="10">Q</tspan>.
+     </li>
+     <li class="itemize">Now  for  the  crazy  part:  apply  Step  2  to  <tspan font-family="cmmi" font-size="10">N</tspan><sub><tspan font-family="cmmi" font-size="8">G</tspan></sub>(<tspan font-family="cmmi" font-size="10">Q</tspan>).  Since  <tspan font-family="cmmi" font-size="10">P  </tspan>and  <tspan font-family="cmmi" font-size="10">Q </tspan>are  Sylow
+     <tspan font-family="cmmi" font-size="10">p</tspan>-subgroups of it, they must be conjugate.
+     </li>
+     <li class="itemize">Hence <tspan font-family="cmmi" font-size="10">P </tspan>= <tspan font-family="cmmi" font-size="10">Q</tspan>, as desired.</li></ul>
+  <h4 class="subsectionHead"><span class="titlemark">17.2.v</span>  <a 
+ id="x189-18000017.2.v"></a>Step 4: <tspan font-family="cmmi" font-size="10">n</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> divides <tspan font-family="cmmi" font-size="10">m</tspan></h4>
+<!--l. 199--><p class="noindent" >Since <tspan font-family="cmmi" font-size="10">n</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmsy" font-size="10">≡ </tspan>1 (mod <tspan font-family="cmmi" font-size="10">p</tspan>), it suffices to show <tspan font-family="cmmi" font-size="10">n</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> divides <img 
+src="Na840x.png" alt="|G|"  class="left" align="middle" />. Let <tspan font-family="cmmi" font-size="10">G </tspan>act on the set of all Sylow
+<tspan font-family="cmmi" font-size="10">p</tspan>-groups by conjugation. Step 2 says this action has only one orbit, so the Orbit-Stabilizer
+theorem implies <tspan font-family="cmmi" font-size="10">n</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> divides <img 
+src="Na841x.png" alt="|G |"  class="left" align="middle" />.
+                                                                                
+                                                                                
+</p>
+  <!--l. 205--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase129.htm" >next</a>] [<a 
+href="Nase127.htm" >prev</a>] [<a 
+href="Nase127.htm#tailNase127.htm" >prev-tail</a>] [<a 
+href="Nase128.htm" >front</a>] [<a 
+href="Nach20.htm#Nase128.htm" >up</a>] </p></div>
+<!--l. 205--><p class="indent" >  <a 
+ id="tailNase128.htm"></a>  </p> 
+</body> 
+</html>

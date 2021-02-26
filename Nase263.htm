@@ -1,0 +1,222 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Optional stopping</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 370--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase279.htm" >next</a>] [<a 
+href="Nase262.htm" >prev</a>] [<a 
+href="Nase262.htm#tailNase262.htm" >prev-tail</a>] [<a 
+href="Nase249.htm#tailNase263.htm">tail</a>] [<a 
+href="Nase273.htm#Nase278.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">41.5</span>  <a 
+ id="x380-35700041.5"></a>Optional stopping</h3>
+<!--l. 371--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Las Vegas.</tspan>
+</p><!--l. 373--><p class="indent" >  In the first section we described how to make money almost surely. The key advantage the
+gambler had was the ability to quit whenever he wanted (equivalently, an ability to control the
+size of the bets; betting <tspan font-family="tcrm" font-size="1095">$</tspan>0 forever is the same as quitting.) Let’s formalize a notion of
+stopping time.
+</p><!--l. 379--><p class="indent" >  The idea is we want to define a function <tspan font-family="cmmi" font-size="10">τ</tspan> : Ω <tspan font-family="cmsy" font-size="10">→{</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">∞} </tspan>such that </p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">τ</tspan>(<tspan font-family="cmmi" font-size="10">ω</tspan>) specifies the index after which we <tspan font-family="cmti" font-size="10">stop </tspan>the martingale. Note that the decisions
+     to stop after time <tspan font-family="cmmi" font-size="10">n </tspan>must be made with only the information available at that time
+     — i.e., with respect to <tspan font-family="rsfs" font-size="10">ℱ</tspan> <sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> of the filtration.
+     </li>
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">τ</tspan><tspan font-family="cmsy" font-size="8">∧</tspan><tspan font-family="cmmi" font-size="8">n</tspan></sub>  is  the  random  value  representing  the  value  at  time  <tspan font-family="cmmi" font-size="10">n  </tspan>of  the  stopped
+     martingale, where if <tspan font-family="cmmi" font-size="10">n </tspan>is <tspan font-family="cmti" font-size="10">after </tspan>the stopping time, we just take it to be the our
+     currently value after we leave.
+     <!--l. 393--><p class="noindent" >So for example in a world <tspan font-family="cmmi" font-size="10">ω </tspan>where we stopped at time 3, then <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">τ</tspan><tspan font-family="cmsy" font-size="8">∧</tspan><tspan font-family="cmr" font-size="8">0</tspan></sub>(<tspan font-family="cmmi" font-size="10">ω</tspan>) = <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>(<tspan font-family="cmmi" font-size="10">ω</tspan>),
+     <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">τ</tspan><tspan font-family="cmsy" font-size="8">∧</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">ω</tspan>) = <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">ω</tspan>), <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">τ</tspan><tspan font-family="cmsy" font-size="8">∧</tspan><tspan font-family="cmr" font-size="8">2</tspan></sub>(<tspan font-family="cmmi" font-size="10">ω</tspan>) = <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>(<tspan font-family="cmmi" font-size="10">ω</tspan>), <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">τ</tspan><tspan font-family="cmsy" font-size="8">∧</tspan><tspan font-family="cmr" font-size="8">3</tspan></sub>(<tspan font-family="cmmi" font-size="10">ω</tspan>) = <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>(<tspan font-family="cmmi" font-size="10">ω</tspan>), but then
+     </p>
+<div class="math-display" >
+<img 
+src="Na1937x.png" alt="X3(ω) = X τ∧4(ω ) = X τ∧5(ω) = X τ∧6(ω ) = ...
+" class="math-display"  /></div>
+     <!--l. 404--><p class="noindent" >since we have stopped — the value stops changing.
+     </p></li>
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">τ</tspan></sub> denotes the eventual value after we stop (or the limit <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmsy" font-size="8">∞</tspan></sub> if we never stop).</li></ul>
+                                                                                
+                                                                                
+<!--l. 410--><p class="indent" >  Here’s the compiled machine code. <a 
+ id="x380-357001r1077"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 412--><p class="noindent" ><span class="head">
+<a 
+ id="x380-357002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 41.5.1.</tspan>  </span><a 
+ id="x380-357003"></a>Let <tspan font-family="rsfs" font-size="10">ℱ</tspan> <sub><tspan font-family="cmr" font-size="8">0</tspan></sub> <tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="rsfs" font-size="10">ℱ</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊆</tspan><img 
+src="Na1938x.png" alt="⋅⋅⋅"  class="@cdots"  /> be a filtration on a probability space Ω.
+</p>
+     <ul class="itemize1">
+     <li class="itemize">A <tspan font-family="cmbx" font-size="10">stopping time</tspan> is a function
+<div class="math-display" >
+<img 
+src="Na1939x.png" alt="τ : Ω → {0,1,2,...} ∪ {∞ }
+" class="math-display"  /></div>
+     <!--l. 417--><p class="noindent" >with the property that for each integer <tspan font-family="cmmi" font-size="10">n</tspan>, the set
+     </p>
+<div class="math-display" >
+<img 
+src="Na1940x.png" alt="{ω ∈ Ω | τ(ω) = n}
+" class="math-display"  /></div>
+     <!--l. 419--><p class="noindent" >is <tspan font-family="rsfs" font-size="10">ℱ</tspan> <sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>-measurable (i.e., is in <tspan font-family="rsfs" font-size="10">ℱ</tspan> <sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>).
+     </p></li>
+     <li class="itemize">For each <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan>0 we define <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">τ</tspan><tspan font-family="cmsy" font-size="8">∧</tspan><tspan font-family="cmmi" font-size="8">n</tspan></sub>: Ω <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>by
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na1941x.png" alt="X τ∧n(ω) = Xmin{τ(ω),n}(ω)
+" class="math-display"  /></div>
+     </li>
+     <li class="itemize">Finally, we let the eventual outcome be denoted by
+<div class="math-display" >
+<img 
+src="Na1942x.png" alt="        (| X    (ω)       τ (ω ) ⁄= ∞
+        {   τ(ω)
+Xτ(ω ) = | limn → ∞ Xn(ω ) τ (ω ) = ∞ and limn→ ∞ Xn (ω) exists
+        ( undefined       otherwise.
+" class="math-display"  /></div>
+     <!--l. 435--><p class="noindent" >We require that the “undefined” case occurs only for a set of measure zero (for
+     example, if <tspan font-family="cmbx" font-size="10">??</tspan>  applies). Otherwise we don’t allow <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">τ</tspan></sub> to be defined.</p></li></ul>
+  </div>
+<!--l. 440--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-688">
+<a 
+ id="x380-357004r1078"></a>
+<div class="newtheorem">
+<!--l. 444--><p class="noindent" ><span class="head">
+<a 
+ id="x380-357005r2"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 41.5.2 </tspan><tspan font-family="cmss" font-size="10">(Stopped supermartingales are still supermartingales)</tspan><br 
+class="newline" /> </span><a 
+ id="x380-357006"></a>Let <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>, <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …be
+a supermartingale. Then the sequence
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na1943x.png" alt="X τ∧0, X τ∧1, ...
+" class="math-display"  /></div>
+<!--l. 448--><p class="noindent" >is itself a supermartingale.
+</p>
+  </div>
+<!--l. 449--><p class="indent" >  </p></div>
+<!--l. 450--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 451--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>We have almost everywhere the inequalities
+</p><table 
+class="align-star"><!--l. 460--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="msbm" font-size="10">𝔼</tspan><img 
+src="Na1945x.png" alt="(X τ∧n | ℱn −1)"  class="left" align="middle" /></td><td 
+class="align-even"> = <tspan font-family="msbm" font-size="10">𝔼</tspan><img 
+src="Na1946x.png" alt="(                                  )
+ Xn− 1 + 1τ(ω)=n −1(Xn − Xn −1) | ℱn − 1"  class="left" align="middle" /></td>            <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>               <td 
+class="align-even"> = <tspan font-family="msbm" font-size="10">𝔼</tspan><img 
+src="Na1947x.png" alt="(Xn −1 | ℱn −1)"  class="left" align="middle" /> + <tspan font-family="msbm" font-size="10">𝔼</tspan><img 
+src="Na1948x.png" alt="(                             )
+ 1τ(ω)=n−1 ⋅(Xn − Xn− 1) | ℱn −1"  class="left" align="middle" /></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>               <td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmbx" font-size="10">1</tspan><sub><tspan font-family="cmmi" font-size="8">τ</tspan><tspan font-family="cmr" font-size="8">(</tspan><tspan font-family="cmmi" font-size="8">ω</tspan><tspan font-family="cmr" font-size="8">)=</tspan><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="msbm" font-size="10">𝔼</tspan><img 
+src="Na1949x.png" alt="(Xn  − Xn− 1 | ℱn −1)"  class="left" align="middle" /> <tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub></td>    <td 
+class="align-label"></td><td 
+class="align-label">            </td></tr></table>
+</p><!--l. 461--><p class="indent" >  as functions from Ω <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>.                                                                            □
+</p>
+  </div>
+                                                                                
+                                                                                
+<div class="mdframed" id="mdframed-689">
+<a 
+ id="x380-357007r1079"></a>
+<div class="newtheorem">
+<!--l. 465--><p class="noindent" ><span class="head">
+<a 
+ id="x380-357008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 41.5.3 </tspan><tspan font-family="cmss" font-size="10">(Doob’s optional stopping theorem)</tspan><br 
+class="newline" /> </span><a 
+ id="x380-357009"></a>Let <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>, <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …be a supermartingale on a
+probability space Ω, with respect to a filtration <tspan font-family="rsfs" font-size="10">ℱ</tspan> <sub><tspan font-family="cmr" font-size="8">0</tspan></sub> <tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="rsfs" font-size="10">ℱ</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊆</tspan><img 
+src="Na1950x.png" alt="⋅⋅⋅"  class="@cdots"  />. Let <tspan font-family="cmmi" font-size="10">τ </tspan>be a stopping time
+with respect to this filtration. Suppose that <tspan font-family="cmti" font-size="10">any </tspan>of the following hypotheses are true, for some
+constant <tspan font-family="cmmi" font-size="10">C</tspan>:
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate"><tspan font-family="cmbx" font-size="10">Finite time</tspan>: <tspan font-family="cmmi" font-size="10">τ</tspan>(<tspan font-family="cmmi" font-size="10">ω</tspan>) <tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">C </tspan>for almost all <tspan font-family="cmmi" font-size="10">ω</tspan>.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate"><tspan font-family="cmbx" font-size="10">Finite money</tspan>: for each <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan>1, <img 
+src="Na1951x.png" alt="|X τ∧n(ω)|"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">C </tspan>for almost all <tspan font-family="cmmi" font-size="10">ω</tspan>.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate"><tspan font-family="cmbx" font-size="10">Finite bets</tspan>: we have <tspan font-family="msbm" font-size="10">𝔼</tspan>[<tspan font-family="cmmi" font-size="10">τ</tspan>] <tspan font-family="cmmi" font-size="10">&#x003C; </tspan><tspan font-family="cmsy" font-size="10">∞</tspan>, and for each <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan>1, the conditional expectation
+<div class="math-display" >
+<img 
+src="Na1952x.png" alt="𝔼 (|Xn − Xn −1| | ℱn )
+" class="math-display"  /></div>
+    <!--l. 480--><p class="noindent" >takes on values at most <tspan font-family="cmmi" font-size="10">C </tspan>for almost all <tspan font-family="cmmi" font-size="10">ω </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan>Ω satisfying <tspan font-family="cmmi" font-size="10">τ</tspan>(<tspan font-family="cmmi" font-size="10">ω</tspan>) <tspan font-family="cmsy" font-size="10">≥ </tspan><tspan font-family="cmmi" font-size="10">n</tspan>.</p></dd></dl>
+<!--l. 483--><p class="noindent" >Then <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">τ</tspan></sub> is well-defined almost everywhere, and more importantly,
+</p>
+<div class="math-display" >
+<img 
+src="Na1953x.png" alt="𝔼[Xτ] ≤ 𝔼[X0].
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 485--><p class="indent" >  </p></div>
+<!--l. 486--><p class="indent" >  The last equation can be cheekily expressed as “the only winning move is not to
+play”.
+</p><!--l. 489--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 490--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span><a 
+ id="likesection.12"></a><a 
+ id="x380-357013"></a><object data="Napkin-31.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<span class="reversemarginpar"><object data="Napkin-32.svg" width="80.00075 " height="33.87247 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="Napkin-33.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+</span>                                                                               □
+  </div><div class="mdframed" id="mdframed-690">
+<a 
+ id="x380-357014r1080"></a>
+<div class="newtheorem">
+<!--l. 494--><p class="noindent" ><span class="head">
+<a 
+ id="x380-357015r4"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 41.5.4.</tspan>  </span><a 
+ id="x380-357016"></a><tspan font-family="cmr" font-size="10">Conclude that going to Las Vegas with the strategy described in the first</tspan>
+<tspan font-family="cmr" font-size="10">section is a really bad idea. What goes wrong?</tspan></p>
+  </div>
+<!--l. 497--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 499--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase279.htm" >next</a>] [<a 
+href="Nase262.htm" >prev</a>] [<a 
+href="Nase262.htm#tailNase262.htm" >prev-tail</a>] [<a 
+href="Nase263.htm" >front</a>] [<a 
+href="Nase273.htm#Nase278.htm" >up</a>] </p></div>
+<!--l. 499--><p class="indent" >  <a 
+ id="tailNase263.htm"></a> </p> 
+</body> 
+</html>

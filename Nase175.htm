@@ -1,0 +1,182 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Series addition is not commutative: a horror story</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 508--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase176.htm" >next</a>] [<a 
+href="Nase174.htm" >prev</a>] [<a 
+href="Nase174.htm#tailNase174.htm" >prev-tail</a>] [<a 
+href="#tailNase175.htm">tail</a>] [<a 
+href="Nach29.htm#Nase175.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">26.5</span>  <a 
+ id="x252-23900026.5"></a>Series addition is not commutative: a horror story</h3>
+<!--l. 509--><p class="noindent" >One unfortunate property of the above definition is that it actually depends on the order of
+the elements. In fact, it turns out that there is an explicit way to describe when rearrangement
+is okay.
+<a 
+ id="x252-239001r787"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 515--><p class="noindent" ><span class="head">
+<a 
+ id="x252-239002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 26.5.1.</tspan>  </span><a 
+ id="x252-239003"></a>A series <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> of real numbers is said to <tspan font-family="cmbx" font-size="10">converge absolutely</tspan> if
+</p>
+  <div class="math-display" >
+<img 
+src="Na1408x.png" alt="∑
+   |ak| &#x003C; ∞
+ k
+" class="math-display"  /></div>
+<!--l. 518--><p class="indent" >  i.e. the series of absolute values converges to some limit. If the series converges, but
+not absolutely, we say it <tspan font-family="cmbx" font-size="10">converges conditionally</tspan>.
+</p>
+  </div>
+<!--l. 521--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-505">
+<a 
+ id="x252-239004r788"></a>
+<div class="newtheorem">
+<!--l. 524--><p class="noindent" ><span class="head">
+<a 
+ id="x252-239005r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmssbx" font-size="10">Proposition 26.5.2 </tspan><tspan font-family="cmss" font-size="10">(Absolute convergence</tspan>  <img 
+src="Na1409x.png" alt="=⇒"  class="Longrightarrow"  /> <tspan font-family="cmss" font-size="10">convergence)</tspan><br 
+class="newline" /> </span><a 
+ id="x252-239006"></a>If  a  series  <tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>  of  real
+numbers converges absolutely, then it converges in the usual sense.
+</p>
+  </div>
+<!--l. 527--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-506">
+<a 
+ id="x252-239007r789"></a>
+<div class="newtheorem">
+<!--l. 529--><p class="noindent" ><span class="head">
+<a 
+ id="x252-239008r3"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 26.5.3 </tspan><tspan font-family="cmr" font-size="10">(Great exercise)</tspan><tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x252-239009"></a><tspan font-family="cmr" font-size="10">Prove this by using the Cauchy criteria: show that if the</tspan>
+<tspan font-family="cmr" font-size="10">partial sums of</tspan> <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="7">k</tspan></sub><tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="7">k</tspan></sub><tspan font-family="cmsy" font-size="10">| </tspan><tspan font-family="cmr" font-size="10">are Cauchy, then so are the partial sums of</tspan> <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="7">k</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="7">k</tspan></sub><tspan font-family="cmr" font-size="10">.</tspan></p>
+  </div>
+<!--l. 533--><p class="indent" >  </p></div>
+<!--l. 535--><p class="indent" >  Then, rearrangement works great.</p>
+<div class="mdframed" id="mdframed-507">
+<a 
+ id="x252-239010r790"></a>
+<div class="newtheorem">
+<!--l. 537--><p class="noindent" ><span class="head">
+<a 
+ id="x252-239011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 26.5.4 </tspan><tspan font-family="cmss" font-size="10">(Permutation of terms okay for absolute convergence)</tspan><br 
+class="newline" /> </span><a 
+ id="x252-239012"></a>Consider  a  series
+<tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> which is absolutely convergent and has limit <tspan font-family="cmmi" font-size="10">L</tspan>. Then any permutation of the
+terms will also converge to <tspan font-family="cmmi" font-size="10">L</tspan>.
+</p>
+  </div>
+<!--l. 541--><p class="indent" >  </p></div>
+<!--l. 542--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 543--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Suppose <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> converges to <tspan font-family="cmmi" font-size="10">L</tspan>, and <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> is a rearrangement. Let <tspan font-family="cmmi" font-size="10">𝜀 &#x003E; </tspan>0. We will
+show that the partial sums of <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> are eventually within <tspan font-family="cmmi" font-size="10">𝜀 </tspan>of <tspan font-family="cmmi" font-size="10">L</tspan>.
+</p><!--l. 549--><p class="indent" >  The hypothesis means that there is a large <tspan font-family="cmmi" font-size="10">N </tspan>in terms of <tspan font-family="cmmi" font-size="10">𝜀 </tspan>such that
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na1410x.png" alt="|          |
+||∑N        ||  1           ∑n         1
+|    ak − L |&#x003C;--𝜀  and        |ak| &#x003C; -𝜀
+|k=1       |  2         k=N+1        2
+" class="math-display"  /></div>
+<!--l. 555--><p class="indent" >  for every <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan><tspan font-family="cmmi" font-size="10">N </tspan>(the former from vanilla convergence of <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> and the latter from the
+fact that <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> converges absolutely, hence its partial sums are Cauchy).
+</p><!--l. 559--><p class="indent" >  Now suppose <tspan font-family="cmmi" font-size="10">M </tspan>is large enough that <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">N</tspan></sub> are contained within the terms <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,b</tspan><sub><tspan font-family="cmmi" font-size="8">M</tspan></sub><tspan font-family="cmsy" font-size="10">}</tspan>.
+Then
+</p><table 
+class="align-star"><!--l. 567--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <img 
+src="Na1412x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmmi" font-size="8">M</tspan></sub></td><td 
+class="align-even"> = (<tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <img 
+src="Na1413x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">N</tspan></sub>)</td>                                    <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>            <td 
+class="align-even"> + <img 
+src="Na1414x.png" alt="ai + ai + ⋅⋅⋅+ ai
+◟1----2--◝◜-----M-−N◞"  /><sub><tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">N </tspan>terms with indices <tspan font-family="cmsy" font-size="10">≥ </tspan><tspan font-family="cmmi" font-size="10">N</tspan></sub></td><td 
+class="align-label"></td><td 
+class="align-label">              </td></tr></table>
+</p><!--l. 568--><p class="indent" >  The terms in the first line sum up to within <img 
+src="Na1415x.png" alt="12"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">𝜀 </tspan>of <tspan font-family="cmmi" font-size="10">L</tspan>, and the terms in the second line have
+sum at most <img 
+src="Na1416x.png" alt="12"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">𝜀 </tspan>in absolute value, so the total <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <img 
+src="Na1417x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmmi" font-size="8">M</tspan></sub> is within <img 
+src="Na1418x.png" alt="12"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">𝜀 </tspan>+ <img 
+src="Na1419x.png" alt="12"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">𝜀 </tspan>= <tspan font-family="cmmi" font-size="10">𝜀 </tspan>of
+<tspan font-family="cmmi" font-size="10">L</tspan>.                                                                                                              □
+</p>
+  </div>
+<!--l. 573--><p class="indent" >  In particular, when you have nonnegative terms, the world is great:</p>
+<div class="mdframed" id="mdframed-508">
+<!--l. 575--><p class="noindent" ><tspan font-family="cmbx" font-size="10">Nonnegative series can be rearranged at will.</tspan></p><!--l. 576--><p class="noindent" ></p>
+  </div>
+<!--l. 577--><p class="indent" >  And the good news is that actually, in practice, most of your sums will be nonnegative.
+</p><!--l. 580--><p class="indent" >  The converse is not true, and in fact, it is almost the worst possible converse you can
+imagine.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-509">
+<a 
+ id="x252-239013r791"></a>
+<div class="newtheorem">
+<!--l. 583--><p class="noindent" ><span class="head">
+<a 
+ id="x252-239014r5"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 26.5.5 </tspan><tspan font-family="cmss" font-size="10">(Permutation of terms meaningless for conditional convergence)</tspan><br 
+class="newline" />
+</span><a 
+ id="x252-239015"></a>Consider a series <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> which converges <tspan font-family="cmti" font-size="10">conditionally </tspan>to some real number. Then, there
+exists a permutation of the series which converges conditionally to 1337.
+</p><!--l. 589--><p class="noindent" >(Or any constant. You can also get it to diverge, too.)
+</p>
+  </div>
+<!--l. 590--><p class="indent" >  </p></div>
+<!--l. 591--><p class="indent" >  So, permutation is as bad as possible for conditionally convergent series, and hence don’t
+even bother to try.
+                                                                                
+                                                                                
+</p>
+  <!--l. 594--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase176.htm" >next</a>] [<a 
+href="Nase174.htm" >prev</a>] [<a 
+href="Nase174.htm#tailNase174.htm" >prev-tail</a>] [<a 
+href="Nase175.htm" >front</a>] [<a 
+href="Nach29.htm#Nase175.htm" >up</a>] </p></div>
+<!--l. 594--><p class="indent" >  <a 
+ id="tailNase175.htm"></a> </p> 
+</body> 
+</html>

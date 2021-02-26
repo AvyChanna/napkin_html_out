@@ -1,0 +1,233 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The quantum Fourier transform</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 71--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase170.htm" >next</a>] [<a 
+href="Nase168.htm" >prev</a>] [<a 
+href="Nase168.htm#tailNase168.htm" >prev-tail</a>] [<a 
+href="#tailNase169.htm">tail</a>] [<a 
+href="Nach28.htm#Nase169.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">25.2</span>  <a 
+ id="x243-23100025.2"></a>The quantum Fourier transform</h3>
+<!--l. 72--><p class="noindent" >Note that to compute a Fourier transform, we need to multiply an <tspan font-family="cmmi" font-size="10">N </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">N </tspan>matrix with an
+<tspan font-family="cmmi" font-size="10">N</tspan>-vector, so this takes <tspan font-family="cmmi" font-size="10">O</tspan>(<tspan font-family="cmmi" font-size="10">N</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>) multiplications. However, we are about to show that with a
+quantum computer, one can do this using <tspan font-family="cmmi" font-size="10">O</tspan>((log <tspan font-family="cmmi" font-size="10">N</tspan>)<sup><tspan font-family="cmr" font-size="8">2</tspan></sup>) quantum gates when <tspan font-family="cmmi" font-size="10">N </tspan>= 2<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>, on a
+system with <tspan font-family="cmmi" font-size="10">n </tspan>qubits.
+</p><!--l. 78--><p class="indent" >  First, some more notation: <a 
+ id="x243-231001r757"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 80--><p class="noindent" ><span class="head">
+<a 
+ id="x243-231002r1"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 25.2.1.</tspan>  </span><a 
+ id="x243-231003"></a>In what follows, <img 
+src="Na1278x.png" alt="|x⟩"  class="left" align="middle" /> will refer to <img 
+src="Na1279x.png" alt="|xn ⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1280x.png" alt="|xn −1⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1281x.png" alt="⋅⋅⋅"  class="@cdots"  /><tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1282x.png" alt="|x1⟩"  class="left" align="middle" />
+where  <tspan font-family="cmmi" font-size="10">x  </tspan>=  <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>  in  binary.  For  example,  if  <tspan font-family="cmmi" font-size="10">n  </tspan>=  3  then  <img 
+src="Na1283x.png" alt="|6⟩"  class="left" align="middle" /> really  means
+<img 
+src="Na1284x.png" alt="|1⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1285x.png" alt="|1⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1286x.png" alt="|0⟩"  class="left" align="middle" />.
+</p>
+  </div>
+<!--l. 85--><p class="indent" >
+Observe that the <tspan font-family="cmmi" font-size="10">n</tspan>-qubit space now has an orthonormal basis <img 
+src="Na1287x.png" alt="|0⟩"  class="left" align="middle" />, <img 
+src="Na1288x.png" alt="|1⟩"  class="left" align="middle" />, …, <img 
+src="Na1289x.png" alt="|N − 1⟩"  class="left" align="middle" />
+<a 
+ id="x243-231004r758"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 90--><p class="noindent" ><span class="head">
+<a 
+ id="x243-231005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 25.2.2.</tspan>  </span><a 
+ id="x243-231006"></a>Consider an <tspan font-family="cmmi" font-size="10">n</tspan>-qubit state
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na1290x.png" alt="      N∑−1
+|ψ⟩ =    xk |k⟩.
+      k=0
+" class="math-display"  /></div>
+<!--l. 92--><p class="indent" >  The <tspan font-family="cmbx" font-size="10">quantum Fourier transform</tspan> is defined by
+</p>
+  <div class="math-display" >
+<img 
+src="Na1291x.png" alt="                 N∑ −1(N∑−1    )
+UQFT (|ψ⟩) = √1--         ωjkN   |j⟩ .
+               N j=0   k=0
+" class="math-display"  /></div>
+<!--l. 97--><p class="indent" >  In other words, using the basis <img 
+src="Na1292x.png" alt="|0⟩"  class="left" align="middle" />, …, <img 
+src="Na1293x.png" alt="|N − 1⟩"  class="left" align="middle" />, <tspan font-family="cmmi" font-size="10">U</tspan><tspan font-family="cmr" font-size="8">QFT</tspan> is given by the matrix
+</p>
+  <div class="math-display" >
+<img 
+src="Na1294x.png" alt="            ⌊                               ⌋
+            | 1   1       12    ...    N1−1 |
+            | 1   ωN     ω N    ...   ωN    |
+U    =  √1--|| 1   ω2N     ω4N    ...  ω2N(N− 1)||
+ QFT      N || ..    ..       ..     ..      ..   ||
+            ⌈ .    .       .      .     .  2⌉
+              1 ωNN− 1 ω2N(N −1) ...  ω(NN− 1)
+" class="math-display"  /></div>
+  </div>
+<!--l. 109--><p class="indent" >
+This is the exactly the same definition as before, except we have a <img 
+src="Na1295x.png" alt="√N--"  class="sqrt"  /> factor added so that
+<tspan font-family="cmmi" font-size="10">U</tspan><tspan font-family="cmr" font-size="8">QFT</tspan>  is unitary. But the trick is that in the quantum setup, the matrix can be
+rewritten:
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-482">
+<a 
+ id="x243-231007r759"></a>
+<div class="newtheorem">
+<!--l. 114--><p class="noindent" ><span class="head">
+<a 
+ id="x243-231008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 25.2.3 </tspan><tspan font-family="cmss" font-size="10">(Tensor representation)</tspan><br 
+class="newline" /> </span><a 
+ id="x243-231009"></a>Let <img 
+src="Na1296x.png" alt="|x⟩"  class="left" align="middle" /> = <img 
+src="Na1297x.png" alt="|xnxn−1 ...x1⟩"  class="left" align="middle" />. Then
+</p><table 
+class="align-star"><!--l. 124--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">U</tspan><tspan font-family="cmr" font-size="8">QFT</tspan>(<img 
+src="Na1299x.png" alt="|x x    ...x ⟩
+ n  n−1    1"  class="left" align="middle" />) = <img 
+src="Na1300x.png" alt="√1--
+ N"  class="frac" align="middle" /></td><td 
+class="align-even"><img 
+src="Na1301x.png" alt="(|0⟩+ exp(2πi⋅0.x ) |1⟩)
+                 1"  class="left" align="middle" /></td>        <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                           <td 
+class="align-even"> <tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1302x.png" alt="(|0⟩+ exp (2 πi⋅0.x2x1) |1⟩)"  class="left" align="middle" /></td>   <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                           <td 
+class="align-even"> <tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">…</tspan></td>                           <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                           <td 
+class="align-even"> <tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1303x.png" alt="(|0⟩+ exp (2 πi⋅0.xn...x1) |1⟩)"  class="left" align="middle" /></td><td 
+class="align-label"></td><td 
+class="align-label">                     </td></tr></table>
+</p>
+  </div>
+<!--l. 125--><p class="indent" >  </p></div>
+<!--l. 126--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 127--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Direct (and quite annoying) computation. In short, expand everything.          □
+</p>
+  </div>
+                                                                                
+                                                                                
+<!--l. 131--><p class="indent" >  So by using mixed states, we can deal with the quantum Fourier transform using this
+“multiplication by tensor product” trick that isn’t possible classically.
+</p><!--l. 134--><p class="indent" >  Now, without further ado, here’s the circuit. Define the rotation matrices
+</p>
+  <div class="math-display" >
+<img 
+src="Na1304x.png" alt="     [              ]
+R  =  1       0      .
+ k    0  exp(2πi∕2k)
+" class="math-display"  /></div>
+<!--l. 137--><p class="indent" >  Then, for <tspan font-family="cmmi" font-size="10">n </tspan>= 3 the circuit is given by by using controlled <tspan font-family="cmmi" font-size="10">R</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>’s as follows:
+</p>
+  <div class="math-display" >
+<img 
+src="Na1305x.png" alt="|x3⟩    H    R2         R3                |y1⟩
+
+|x2⟩          ∙    H          R2          |y2⟩
+
+|x1⟩                     ∙     ∙    H     |y3⟩
+" class="math-display"  /></div><div class="mdframed" id="mdframed-483">
+<a 
+ id="x243-231010r760"></a>
+<div class="newtheorem">
+<!--l. 146--><p class="noindent" ><span class="head">
+<a 
+ id="x243-231011r4"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 25.2.4.</tspan>  </span><a 
+ id="x243-231012"></a><tspan font-family="cmr" font-size="10">Show that in this circuit, the image of of </tspan><img 
+src="Na1306x.png" alt="|x3x2x1⟩"  class="left" align="middle" /> <tspan font-family="cmr" font-size="10">(for binary </tspan><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="7">i</tspan></sub><tspan font-family="cmr" font-size="10">) is</tspan>
+</p>
+<div class="math-display" >
+<img 
+src="Na1307x.png" alt="(                    )  (                       )  (                        )
+ |0⟩+ exp(2πi⋅0.x1) |1⟩ ⊗  |0⟩+ exp(2πi ⋅0.x2x1) |1⟩ ⊗  |0⟩ +exp(2πi⋅0.x3x2x1) |1⟩
+" class="math-display"  /></div>
+<!--l. 153--><p class="noindent" ><tspan font-family="cmr" font-size="10">as claimed.</tspan></p>
+  </div>
+<!--l. 154--><p class="indent" >  </p></div>
+<!--l. 156--><p class="indent" >  For general <tspan font-family="cmmi" font-size="10">n</tspan>, we can write this as inductively as
+</p>
+  <div class="math-display" >
+<img 
+src="Na1308x.png" alt="  |xn⟩                Rn            ⋅⋅⋅         ⋅⋅⋅              |y1⟩
+
+|xn−1⟩                      Rn−1    ⋅⋅⋅         ⋅⋅⋅              |y2⟩
+    .                                                              .
+    ..     QFTn  −1                                                 ..
+   |xi⟩                              ⋅⋅⋅   Ri    ⋅⋅⋅              |yn−i+1⟩
+
+    ...                                                              ...
+
+   |x2⟩                              ⋅⋅⋅         ⋅⋅⋅   R2         |yn−1⟩
+   |x ⟩                ∙      ∙      ⋅⋅⋅    ∙    ⋅⋅⋅   ∙          |y ⟩
+    1                                                       H      n
+" class="math-display"  /></div><div class="mdframed" id="mdframed-484">
+<a 
+ id="x243-231013r761"></a>
+<div class="newtheorem">
+<!--l. 169--><p class="noindent" ><span class="head">
+<a 
+ id="x243-231014r5"></a>
+<tspan font-family="cmbx" font-size="10">Question 25.2.5.</tspan>  </span><a 
+ id="x243-231015"></a><tspan font-family="cmr" font-size="10">Convince yourself that when </tspan><tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmr" font-size="10">= 3 the two circuits displayed are equivalent.</tspan></p>
+  </div>
+<!--l. 170--><p class="indent" >  </p></div>
+<!--l. 172--><p class="indent" >  Thus, the quantum Fourier transform is achievable with <tspan font-family="cmmi" font-size="10">O</tspan>(<tspan font-family="cmmi" font-size="10">n</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>) gates, which is enormously
+better than the <tspan font-family="cmmi" font-size="10">O</tspan>(<tspan font-family="cmmi" font-size="10">N</tspan> log <tspan font-family="cmmi" font-size="10">N</tspan>) operations achieved by the classical fast Fourier transform (where
+<tspan font-family="cmmi" font-size="10">N </tspan>= 2<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>).
+                                                                                
+                                                                                
+</p>
+  <!--l. 176--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase170.htm" >next</a>] [<a 
+href="Nase168.htm" >prev</a>] [<a 
+href="Nase168.htm#tailNase168.htm" >prev-tail</a>] [<a 
+href="Nase169.htm" >front</a>] [<a 
+href="Nach28.htm#Nase169.htm" >up</a>] </p></div>
+<!--l. 176--><p class="indent" >  <a 
+ id="tailNase169.htm"></a> </p> 
+</body> 
+</html>

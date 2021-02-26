@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Prime ideals</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 94--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase51.htm" >next</a>] [<a 
+href="Nase49.htm" >prev</a>] [<a 
+href="Nase49.htm#tailNase49.htm" >prev-tail</a>] [<a 
+href="#tailNase50.htm">tail</a>] [<a 
+href="Nach8.htm#Nase50.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">5.3</span>  <a 
+ id="x81-730005.3"></a>Prime ideals</h3>
+<!--l. 95--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> (5) <tspan font-family="cmti" font-size="10">is a prime ideal of </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 97--><p class="indent" >  We know that every integer can be factored (up to sign) as a unique product of primes; for
+example 15 = 3 <tspan font-family="cmsy" font-size="10">⋅ </tspan>5 and <tspan font-family="cmsy" font-size="10">−</tspan>10 = <tspan font-family="cmsy" font-size="10">−</tspan>2 <tspan font-family="cmsy" font-size="10">⋅ </tspan>5. You might remember the proof involves the so-called
+Bézout’s lemma, which essentially says that (<tspan font-family="cmmi" font-size="10">a,b</tspan>) = (gcd(<tspan font-family="cmmi" font-size="10">a,b</tspan>)); in other words we’ve
+carefully used the fact that <tspan font-family="msbm" font-size="10">ℤ </tspan>is a PID.
+</p><!--l. 104--><p class="indent" >  It turns out that for general rings, the situation is not as nice as factoring elements
+because most rings are not PID’s. The classic example of something going wrong
+is
+</p>
+  <div class="math-display" >
+<img 
+src="Na230x.png" alt="6 = 2 ⋅3 = (1− √ −-5)(1+ √ −-5)
+" class="math-display"  /></div>
+<!--l. 108--><p class="indent" >  in <tspan font-family="msbm" font-size="10">ℤ</tspan>[<img 
+src="Na231x.png" alt="√---
+ − 5"  class="sqrt"  />]. Nonetheless, we can sidestep the issue and talk about factoring <tspan font-family="cmti" font-size="10">ideals</tspan>: somehow
+the example 10 = 2 <tspan font-family="cmsy" font-size="10">⋅ </tspan>5 should be (10) = (2) <tspan font-family="cmsy" font-size="10">⋅ </tspan>(5), which says “every multiple of 10 is the
+product of a multiple of 2 and a multiple of 5”. I’d have to tell you then how to multiply two
+ideals, which I do in the chapter on unique factorization.
+</p><!--l. 117--><p class="indent" >  Let’s at least figure out what primes are. In <tspan font-family="msbm" font-size="10">ℤ</tspan>, we have that <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmmi" font-size="10">≠</tspan>1 is prime if whenever <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">xy</tspan>,
+either <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">x </tspan>or <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">y</tspan>. We port over this definition to our world of ideals. <a 
+ id="x81-73001r220"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 122--><p class="noindent" ><span class="head">
+<a 
+ id="x81-73002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 5.3.1.</tspan>  </span><a 
+ id="x81-73003"></a> A <tspan font-family="cmti" font-size="10">proper </tspan>ideal <tspan font-family="cmmi" font-size="10">I </tspan><tspan font-family="msbm" font-size="10">⊊ </tspan><tspan font-family="cmmi" font-size="10">R </tspan>is a <tspan font-family="cmbx" font-size="10">prime ideal</tspan> if whenever <tspan font-family="cmmi" font-size="10">xy </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">I</tspan>, either
+<tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">I </tspan>or <tspan font-family="cmmi" font-size="10">y </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">I</tspan>.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 125--><p class="indent" >
+The condition that <tspan font-family="cmmi" font-size="10">I </tspan>is proper is analogous to the fact that we don’t consider 1 to be a prime
+number.</p>
+<div class="mdframed" id="mdframed-150">
+<a 
+ id="x81-73004r221"></a>
+<div class="newtheorem">
+<!--l. 129--><p class="noindent" ><span class="head">
+<a 
+ id="x81-73005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 5.3.2 </tspan>(Examples and non-examples of prime ideals)<br 
+class="newline" /> </span><a 
+ id="x81-73006"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The ideal (7) of <tspan font-family="msbm" font-size="10">ℤ </tspan>is prime.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The ideal (8) of <tspan font-family="msbm" font-size="10">ℤ </tspan>is not prime, since 2 <tspan font-family="cmsy" font-size="10">⋅ </tspan>4 = 8.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The ideal (<tspan font-family="cmmi" font-size="10">x</tspan>) of <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>] is prime.
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate">The ideal (<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>) of <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>] is not prime, since <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">x </tspan>= <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>.
+    </dd><dt class="enumerate">
+(e) </dt><dd 
+class="enumerate">The ideal (3<tspan font-family="cmmi" font-size="10">,x</tspan>) of <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>] is prime. This is actually easiest to see using <tspan font-family="cmbx" font-size="10">??</tspan>  below.
+    </dd><dt class="enumerate">
+(f) </dt><dd 
+class="enumerate">The ideal (5) = 5<tspan font-family="msbm" font-size="10">ℤ </tspan>+5<tspan font-family="cmmi" font-size="10">i</tspan><tspan font-family="msbm" font-size="10">ℤ </tspan>of <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">i</tspan>] is not prime, since the elements 3+<tspan font-family="cmmi" font-size="10">i </tspan>and 3<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">i </tspan>have
+    product 10 <tspan font-family="cmsy" font-size="10">∈ </tspan>(5), yet neither is itself in (5).</dd></dl>
+</p>
+  </div>
+<!--l. 149--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-151">
+<a 
+ id="x81-73013r222"></a>
+<div class="newtheorem">
+<!--l. 151--><p class="noindent" ><span class="head">
+<a 
+ id="x81-73014r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 5.3.3 —  </tspan> </span><a 
+ id="x81-73015"></a> Ideals have the nice property that they get rid of “sign issues”.
+For example, in <tspan font-family="msbm" font-size="10">ℤ</tspan>, do we consider <tspan font-family="cmsy" font-size="10">−</tspan>3 to be a prime? When phrased with ideals, this
+annoyance goes away: (<tspan font-family="cmsy" font-size="10">−</tspan>3) = (3). More generally, for a ring <tspan font-family="cmmi" font-size="10">R</tspan>, talking about ideals lets
+us ignore multiplication by a unit. (Note that <tspan font-family="cmsy" font-size="10">−</tspan>1 is a unit in <tspan font-family="msbm" font-size="10">ℤ</tspan>.)
+</p>
+  </div>
+<!--l. 158--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<div class="mdframed" id="mdframed-152">
+<a 
+ id="x81-73016r223"></a>
+<div class="newtheorem">
+<!--l. 161--><p class="noindent" ><span class="head">
+<a 
+ id="x81-73017r4"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 5.3.4.</tspan>  </span><a 
+ id="x81-73018"></a><tspan font-family="cmr" font-size="10">What do you call a ring </tspan><tspan font-family="cmmi" font-size="10">R </tspan><tspan font-family="cmr" font-size="10">for which the zero ideal (0) is prime?</tspan></p>
+  </div>
+<!--l. 162--><p class="indent" >  </p></div>
+<!--l. 164--><p class="indent" >  We also have:</p>
+<div class="mdframed" id="mdframed-153">
+<a 
+ id="x81-73019r224"></a>
+<div class="newtheorem">
+<!--l. 165--><p class="noindent" ><span class="head">
+<a 
+ id="x81-73020r5"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 5.3.5 </tspan><tspan font-family="cmss" font-size="10">(Prime ideal</tspan>  <tspan font-family="cmmi" font-size="10">⇔</tspan>  <tspan font-family="cmss" font-size="10">quotient is integral domain)</tspan><br 
+class="newline" /> </span><a 
+ id="x81-73021"></a> An ideal <tspan font-family="cmmi" font-size="10">I </tspan>is prime if and
+only if <tspan font-family="cmmi" font-size="10">R∕I </tspan>is an integral domain.
+</p>
+  </div>
+<!--l. 168--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-154">
+<a 
+ id="x81-73022r225"></a>
+<div class="newtheorem">
+<!--l. 170--><p class="noindent" ><span class="head">
+<a 
+ id="x81-73023r6"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 5.3.6 </tspan><tspan font-family="cmr" font-size="10">(Mandatory)</tspan><tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x81-73024"></a><tspan font-family="cmr" font-size="10">Convince yourself the theorem is true; it is just definition chasing.</tspan>
+<tspan font-family="cmr" font-size="10">(A possible start is to consider </tspan><tspan font-family="cmmi" font-size="10">R </tspan><tspan font-family="cmr" font-size="10">= </tspan><tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmr" font-size="10">and </tspan><tspan font-family="cmmi" font-size="10">I </tspan><tspan font-family="cmr" font-size="10">= (15).)</tspan></p>
+  </div>
+<!--l. 174--><p class="indent" >  </p></div>
+<!--l. 176--><p class="indent" >  I now must regrettably inform you that unique factorization is still not true even with the
+notion of a “prime” ideal (though again I haven’t told you how to multiply two ideals yet).
+But it will become true with some additional assumptions that will arise in algebraic number
+theory (relevant buzzword: Dedekind domain).
+                                                                                
+                                                                                
+</p>
+  <!--l. 183--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase51.htm" >next</a>] [<a 
+href="Nase49.htm" >prev</a>] [<a 
+href="Nase49.htm#tailNase49.htm" >prev-tail</a>] [<a 
+href="Nase50.htm" >front</a>] [<a 
+href="Nach8.htm#Nase50.htm" >up</a>] </p></div>
+<!--l. 183--><p class="indent" >  <a 
+ id="tailNase50.htm"></a> </p> 
+</body> 
+</html>

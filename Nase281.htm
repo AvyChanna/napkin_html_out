@@ -1,0 +1,193 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Boundaries</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 297--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase299.htm" >next</a>] [<a 
+href="Nase280.htm" >prev</a>] [<a 
+href="Nase280.htm#tailNase280.htm" >prev-tail</a>] [<a 
+href="Napa12.htm#tailNase281.htm">tail</a>] [<a 
+href="Nase294.htm#Nase298.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">44.4</span>  <a 
+ id="x404-38200044.4"></a>Boundaries</h3>
+<!--l. 298--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">The boundary of </tspan>[<tspan font-family="cmmi" font-size="10">a,b</tspan>] <tspan font-family="cmti" font-size="10">is </tspan><tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">b</tspan><tspan font-family="cmsy" font-size="10">}−{</tspan><tspan font-family="cmmi" font-size="10">a</tspan><tspan font-family="cmsy" font-size="10">}</tspan><tspan font-family="cmti" font-size="10">. The boundary of a</tspan>
+<tspan font-family="cmti" font-size="10">square goes around its edge counterclockwise.</tspan>
+</p><!--l. 299--><p class="indent" >  First, I introduce a technical term that lets us consider multiple cells at once.
+<a 
+ id="x404-382001r1133"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 301--><p class="noindent" ><span class="head">
+<a 
+ id="x404-382002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 44.4.1.</tspan>  </span><a 
+ id="x404-382003"></a>A <tspan font-family="cmmi" font-size="10">k</tspan><tspan font-family="cmbx" font-size="10">-chain</tspan> <tspan font-family="cmmi" font-size="10">U </tspan>is a formal linear combination of <tspan font-family="cmmi" font-size="10">k</tspan>-cells over <tspan font-family="cmmi" font-size="10">U</tspan>, i.e. a
+sum of the form
+</p>
+  <div class="math-display" >
+<img 
+src="Na2074x.png" alt="c = a1c1 + ⋅⋅⋅+ amcm
+" class="math-display"  /></div>
+<!--l. 305--><p class="indent" >  where each <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>and <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> is a <tspan font-family="cmmi" font-size="10">k</tspan>-cell. We define <tspan font-family="cmex" font-size="10">∫</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">c</tspan></sub><tspan font-family="cmmi" font-size="10">α </tspan>= <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmex" font-size="10">∫</tspan>
+  <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>.
+</p>
+  </div>
+<!--l. 307--><p class="indent" >
+In particular, a 0-chain consists of several points, each with a given weight.
+</p><!--l. 310--><p class="indent" >  Now, how do we define the boundary? For a 1-cell [<tspan font-family="cmmi" font-size="10">a,b</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">U</tspan>, as I hinted earlier we
+want the answer to be the 0-chain <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">c</tspan>(<tspan font-family="cmmi" font-size="10">b</tspan>)<tspan font-family="cmsy" font-size="10">}−{</tspan><tspan font-family="cmmi" font-size="10">c</tspan>(<tspan font-family="cmmi" font-size="10">a</tspan>)<tspan font-family="cmsy" font-size="10">}</tspan>. Here’s how we do it in general.
+<a 
+ id="x404-382004r1134"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 314--><p class="noindent" ><span class="head">
+<a 
+ id="x404-382005r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Definition 44.4.2.</tspan>  </span><a 
+ id="x404-382006"></a>Suppose <tspan font-family="cmmi" font-size="10">c </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1]<sup><tspan font-family="cmmi" font-size="8">k</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">U </tspan>is a <tspan font-family="cmmi" font-size="10">k</tspan>-cell. Then the <tspan font-family="cmbx" font-size="10">boundary</tspan> of <tspan font-family="cmmi" font-size="10">c</tspan>,
+denoted <tspan font-family="cmmi" font-size="10">∂c </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1]<sup><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">U</tspan>, is the (<tspan font-family="cmmi" font-size="10">k </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1)-chain defined as follows. For each <tspan font-family="cmmi" font-size="10">i </tspan>= 1<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,k</tspan>
+define
+</p><table 
+class="align-star"><!--l. 323--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><sup>start</sup>(<tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,t</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub>)</td><td 
+class="align-even"> = (<tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,t</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan>0<tspan font-family="cmmi" font-size="10">,t</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,t</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>)</td> <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><sup>stop</sup>(<tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,t</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub>)</td> <td 
+class="align-even"> = (<tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,t</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmmi" font-size="10">,t</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,t</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>)<tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                         </td></tr></table>
+</p><!--l. 324--><p class="indent" >  Then
+</p>
+  <div class="math-display" >
+<img 
+src="Na2076x.png" alt="     ∑k        (           )
+∂c :=   (− 1 )i+1 cstop− csitart .
+     i=1          i
+" class="math-display"  /></div>
+<!--l. 327--><p class="indent" >  Finally, the boundary of a chain is the sum of the boundaries of each cell (with the
+appropriate weights). That is, <tspan font-family="cmmi" font-size="10">∂</tspan>(<tspan font-family="cmex" font-size="10">∑</tspan>
+  <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>) = <tspan font-family="cmex" font-size="10">∑</tspan>
+  <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmmi" font-size="10">∂c</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>.
+</p>
+  </div>
+<!--l. 329--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-729">
+<a 
+ id="x404-382007r1135"></a>
+<div class="newtheorem">
+<!--l. 331--><p class="noindent" ><span class="head">
+<a 
+ id="x404-382008r3"></a>
+<tspan font-family="cmbx" font-size="10">Question 44.4.3.</tspan>  </span><a 
+ id="x404-382009"></a><tspan font-family="cmr" font-size="10">Satisfy yourself that one can extend this definition to a </tspan><tspan font-family="cmmi" font-size="10">k</tspan><tspan font-family="cmr" font-size="10">-cell </tspan><tspan font-family="cmmi" font-size="10">c </tspan><tspan font-family="cmr" font-size="10">defined on</tspan>
+<tspan font-family="cmmi" font-size="10">c </tspan><tspan font-family="cmr" font-size="10">: [</tspan><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="7">1</tspan></sub><tspan font-family="cmmi" font-size="10">,b</tspan><sub><tspan font-family="cmr" font-size="7">1</tspan></sub><tspan font-family="cmr" font-size="10">] </tspan><tspan font-family="cmsy" font-size="10">×</tspan><img 
+src="Na2077x.png" alt="⋅⋅⋅"  class="@cdots"  /><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmr" font-size="10">[</tspan><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="7">k</tspan></sub><tspan font-family="cmmi" font-size="10">,b</tspan><sub><tspan font-family="cmmi" font-size="7">k</tspan></sub><tspan font-family="cmr" font-size="10">] </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmr" font-size="10">(rather than from [0</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmr" font-size="10">1]</tspan><sup><tspan font-family="cmmi" font-size="7">k</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmr" font-size="10">).</tspan></p>
+  </div>
+<!--l. 334--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-730">
+<a 
+ id="x404-382010r1136"></a>
+<div class="newtheorem">
+<!--l. 337--><p class="noindent" ><span class="head">
+<a 
+ id="x404-382011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 44.4.4 </tspan>(Examples of boundaries)<br 
+class="newline" /> </span><a 
+ id="x404-382012"></a>Consider the 2-cell <tspan font-family="cmmi" font-size="10">c </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1]<sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> shown below.
+</p>
+<div class="center" 
+>
+<!--l. 339--><p class="noindent" >
+</p>
+</div>
+<!--l. 369--><p class="noindent" >Here <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>, <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmr" font-size="8">4</tspan></sub> are the images of (0<tspan font-family="cmmi" font-size="10">,</tspan>0), (0<tspan font-family="cmmi" font-size="10">,</tspan>1), (1<tspan font-family="cmmi" font-size="10">,</tspan>0), (1<tspan font-family="cmmi" font-size="10">,</tspan>1), respectively. Then we can think
+of <tspan font-family="cmmi" font-size="10">∂c </tspan>as
+</p>
+<div class="math-display" >
+<img 
+src="Na2078x.png" alt="∂c = [p1,p2]+ [p2,p3]+ [p3,p4]+ [p4,p1]
+" class="math-display"  /></div>
+<!--l. 372--><p class="noindent" >where each “interval” represents the 1-cell shown by the reddish arrows on the right. We can
+take the boundary of this as well, and obtain an empty chain as
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na2079x.png" alt="       ∑ 4              ∑4
+∂(∂c) =    ∂([pi,pi+1]) =    {pi+1}− {pi} = 0.
+        i=1              i=1
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 375--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-731">
+<a 
+ id="x404-382013r1137"></a>
+<div class="newtheorem">
+<!--l. 378--><p class="noindent" ><span class="head">
+<a 
+ id="x404-382014r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 44.4.5 </tspan>(Boundary of a unit disk)<br 
+class="newline" /> </span><a 
+ id="x404-382015"></a>Consider the unit disk given by
+</p>
+<div class="math-display" >
+<img 
+src="Na2080x.png" alt="c : [0,1]× [0,2π] → ℝ2   by  (r,𝜃) ↦→ scos(2πt)e1 + ssin(2πt)e2.
+" class="math-display"  /></div>
+<!--l. 382--><p class="noindent" >The four parts of the boundary are shown in the picture below: </p>
+<div class="center" 
+>
+<!--l. 383--><p class="noindent" >
+</p>
+</div>
+<!--l. 411--><p class="noindent" >Note that two of the arrows more or less cancel each other out when they are integrated.
+Moreover, we interestingly have a <tspan font-family="cmti" font-size="10">degenerate </tspan>1-cell at the center of the circle; it is a constant
+function [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> which always gives the origin.
+</p>
+  </div>
+<!--l. 414--><p class="indent" >  </p></div>
+<!--l. 416--><p class="indent" >  Obligatory theorem, analogous to <tspan font-family="cmmi" font-size="10">d</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> = 0 and left as a problem.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-732">
+<a 
+ id="x404-382016r1138"></a>
+<div class="newtheorem">
+<!--l. 417--><p class="noindent" ><span class="head">
+<a 
+ id="x404-382017r6"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 44.4.6 </tspan><tspan font-family="cmss" font-size="10">(The boundary of the boundary is empty)</tspan><br 
+class="newline" /> </span><a 
+ id="x404-382018"></a><tspan font-family="cmmi" font-size="10">∂</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>  = 0, in the sense that for
+any <tspan font-family="cmmi" font-size="10">k</tspan>-chain <tspan font-family="cmmi" font-size="10">c </tspan>we have <tspan font-family="cmmi" font-size="10">∂</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>(<tspan font-family="cmmi" font-size="10">c</tspan>) = 0.
+</p>
+  </div>
+<!--l. 419--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 421--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase299.htm" >next</a>] [<a 
+href="Nase280.htm" >prev</a>] [<a 
+href="Nase280.htm#tailNase280.htm" >prev-tail</a>] [<a 
+href="Nase281.htm" >front</a>] [<a 
+href="Nase294.htm#Nase298.htm" >up</a>] </p></div>
+<!--l. 421--><p class="indent" >  <a 
+ id="tailNase281.htm"></a> </p> 
+</body> 
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Unique factorization domains (UFD’s)</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 313--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase54.htm" >next</a>] [<a 
+href="Nase52.htm" >prev</a>] [<a 
+href="Nase52.htm#tailNase52.htm" >prev-tail</a>] [<a 
+href="#tailNase53.htm">tail</a>] [<a 
+href="Nach8.htm#Nase53.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">5.6</span>  <a 
+ id="x84-760005.6"></a>Unique factorization domains (UFD’s)</h3>
+<!--l. 314--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmti" font-size="10">and polynomial rings in general.</tspan>
+</p><!--l. 316--><p class="indent" >  Here is one stray definition that will be important for those with a number-theoretic
+inclination. Over the positive integers, we have a fundamental theorem of arithmetic, stating
+that every integer is uniquely the product of prime numbers.
+</p><!--l. 321--><p class="indent" >  We can even make an analogous statement in <tspan font-family="msbm" font-size="10">ℤ </tspan>or <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">i</tspan>], if we allow representations like
+6 = (<tspan font-family="cmsy" font-size="10">−</tspan>2)(<tspan font-family="cmsy" font-size="10">−</tspan>3) and so on. The trick is that we only consider everything <tspan font-family="cmti" font-size="10">up to units</tspan>; so
+6 = (<tspan font-family="cmsy" font-size="10">−</tspan>2)(<tspan font-family="cmsy" font-size="10">−</tspan>3) = 2 <tspan font-family="cmsy" font-size="10">⋅ </tspan>3 are considered the same.
+</p><!--l. 326--><p class="indent" >  The general definition goes as follows. <a 
+ id="x84-76001r236"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 328--><p class="noindent" ><span class="head">
+<a 
+ id="x84-76002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 5.6.1.</tspan>  </span><a 
+ id="x84-76003"></a>A nonzero non-unit of an integral domain <tspan font-family="cmmi" font-size="10">R </tspan>is <tspan font-family="cmbx" font-size="10">irreducible</tspan> if it
+cannot be written as the product of two non-units.
+</p><!--l. 331--><p class="indent" >  An integral domain <tspan font-family="cmmi" font-size="10">R </tspan>is a <tspan font-family="cmbx" font-size="10">unique factorization domain</tspan> if every nonzero non-unit
+of  <tspan font-family="cmmi" font-size="10">R </tspan>can  be  written  as  the  product  of  irreducible  elements,  which  is  unique  up  to
+multiplication by units.
+</p>
+  </div>
+<!--l. 335--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-162">
+<a 
+ id="x84-76004r237"></a>
+<div class="newtheorem">
+<!--l. 337--><p class="noindent" ><span class="head">
+<a 
+ id="x84-76005r2"></a>
+<tspan font-family="cmbx" font-size="10">Question 5.6.2.</tspan>  </span><a 
+ id="x84-76006"></a><tspan font-family="cmr" font-size="10">Verify that </tspan><tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmr" font-size="10">is a UFD.</tspan></p>
+  </div>
+<!--l. 338--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-163">
+<a 
+ id="x84-76007r238"></a>
+<div class="newtheorem">
+<!--l. 341--><p class="noindent" ><span class="head">
+<a 
+ id="x84-76008r3"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Example 5.6.3 </tspan>(Examples of UFD’s)<br 
+class="newline" /> </span><a 
+ id="x84-76009"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">Fields are a “degenerate” example of UFD’s: every nonzero element is a unit, so
+    there is nothing to check.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate"><tspan font-family="msbm" font-size="10">ℤ </tspan>is a UFD. The irreducible elements are <tspan font-family="cmmi" font-size="10">p </tspan>and <tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">p</tspan>, for example 5 or <tspan font-family="cmsy" font-size="10">−</tspan>17.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate"><tspan font-family="msbm" font-size="10">ℚ</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>] is a UFD: polynomials with rational coefficients can be uniquely factored, up
+    to scaling by constants (as the units of <tspan font-family="msbm" font-size="10">ℚ</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>] are just the rational numbers).
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate"><tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>] is a UFD.
+    </dd><dt class="enumerate">
+(e) </dt><dd 
+class="enumerate">The Gaussian integers <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">i</tspan>] turns out to be a UFD too (and this will be proved in
+    the chapters on algebraic number theory).
+    </dd><dt class="enumerate">
+(f) </dt><dd 
+class="enumerate"><tspan font-family="msbm" font-size="10">ℤ</tspan>[<img 
+src="Na246x.png" alt="√ ---
+  − 5"  class="sqrt"  />] is the classic non-example of a UFD: one may write
+<div class="math-display" >
+<img 
+src="Na247x.png" alt="           (   √ ---)(   √ ---)
+6 = 2 ⋅3 =  1−   − 5  1+   − 5
+" class="math-display"  /></div>
+    <!--l. 366--><p class="noindent" >but each of 2, 3, 1 <tspan font-family="cmsy" font-size="10">±</tspan><img 
+src="Na248x.png" alt="  ---
+√ − 5"  class="sqrt"  /> is irreducible. (It turns out the right way to fix this is by
+    considering prime <tspan font-family="cmti" font-size="10">ideals </tspan>instead, and this is one big motivation for <tspan font-family="cmbx" font-size="10">??</tspan> .)
+    </p></dd><dt class="enumerate">
+(g) </dt><dd 
+class="enumerate">Theorem we won’t prove: every PID is a UFD.
+    </dd><dt class="enumerate">
+(h) </dt><dd 
+class="enumerate">Theorem we won’t prove: if <tspan font-family="cmmi" font-size="10">R </tspan>is a UFD, so is <tspan font-family="cmmi" font-size="10">R</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>] (and hence by induction so is
+    <tspan font-family="cmmi" font-size="10">R</tspan>[<tspan font-family="cmmi" font-size="10">x,y</tspan>], <tspan font-family="cmmi" font-size="10">R</tspan>[<tspan font-family="cmmi" font-size="10">x,y,z</tspan>], …).</dd></dl>
+</p>
+  </div>
+<!--l. 376--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 380--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase54.htm" >next</a>] [<a 
+href="Nase52.htm" >prev</a>] [<a 
+href="Nase52.htm#tailNase52.htm" >prev-tail</a>] [<a 
+href="Nase53.htm" >front</a>] [<a 
+href="Nach8.htm#Nase53.htm" >up</a>] </p></div>
+<!--l. 380--><p class="indent" >  <a 
+ id="tailNase53.htm"></a> </p> 
+</body> 
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Irreducible and indecomposable representations</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 310--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase141.htm" >next</a>] [<a 
+href="Nase139.htm" >prev</a>] [<a 
+href="Nase139.htm#tailNase139.htm" >prev-tail</a>] [<a 
+href="#tailNase140.htm">tail</a>] [<a 
+href="Nach22.htm#Nase140.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">19.4</span>  <a 
+ id="x205-19500019.4"></a>Irreducible and indecomposable representations</h3>
+<!--l. 311--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmmi" font-size="10">k</tspan>[<tspan font-family="cmmi" font-size="10">S</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>] <tspan font-family="cmti" font-size="10">decomposes as the sum of two spaces.</tspan>
+</p><!--l. 313--><p class="indent" >  One of the goals of representation theory will be to classify all possible representations of an
+algebra <tspan font-family="cmmi" font-size="10">A</tspan>. If we want to have a hope of doing this, then we want to discard “silly”
+representations such as
+</p>
+  <div class="math-display" >
+<img 
+src="Na898x.png" alt="            ⌊ a  b  0  0⌋
+   [a  b]   | c  d  0  0|
+ρ : c  d  ↦→ |⌈ 0  0  a  b|⌉
+
+              0  0  c  d
+" class="math-display"  /></div>
+<!--l. 324--><p class="indent" >  and focus our attention instead on “irreducible” representations. This motivates:
+<a 
+ id="x205-195001r646"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 327--><p class="noindent" ><span class="head">
+<a 
+ id="x205-195002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 19.4.1.</tspan>  </span><a 
+ id="x205-195003"></a>Let <tspan font-family="cmmi" font-size="10">V </tspan>be a representation of <tspan font-family="cmmi" font-size="10">A</tspan>. A <tspan font-family="cmbx" font-size="10">subrepresentation</tspan> <tspan font-family="cmmi" font-size="10">W </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>is
+a subspace <tspan font-family="cmmi" font-size="10">W </tspan>with the property that for any <tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">A </tspan>and <tspan font-family="cmmi" font-size="10">w </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>, <tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">w </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>. In other
+words, this subspace is invariant under actions by <tspan font-family="cmmi" font-size="10">A</tspan>.
+</p>
+  </div>
+<!--l. 332--><p class="indent" >
+Thus for example if <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> for representations <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> then <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> are
+subrepresentations of <tspan font-family="cmmi" font-size="10">V </tspan>.
+<a 
+ id="x205-195004r647"></a>
+                                                                                
+                                                                                
+</p>
+  <div class="newtheorem">
+<!--l. 337--><p class="noindent" ><span class="head">
+<a 
+ id="x205-195005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 19.4.2.</tspan>  </span><a 
+ id="x205-195006"></a>If  <tspan font-family="cmmi" font-size="10">V   </tspan>has  no  proper  nonzero  subrepresentations  then  it  is
+<tspan font-family="cmbx" font-size="10">irreducible</tspan>.  If  there  is  no  pair  of  proper  subrepresentations  <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>,  <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>  such  that
+<tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, then we say <tspan font-family="cmmi" font-size="10">V </tspan>is <tspan font-family="cmbx" font-size="10">indecomposable</tspan>.
+</p>
+  </div>
+<!--l. 340--><p class="indent" >
+<a 
+ id="x205-195007r648"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 342--><p class="noindent" ><span class="head">
+<a 
+ id="x205-195008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 19.4.3.</tspan>  </span><a 
+ id="x205-195009"></a>For brevity, an <tspan font-family="cmbx" font-size="10">irrep</tspan> of an algebra/group is a <tspan font-family="cmti" font-size="10">finite-dimensional</tspan>
+irreducible representation.
+</p>
+  </div>
+<!--l. 344--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-408">
+<a 
+ id="x205-195010r649"></a>
+<div class="newtheorem">
+<!--l. 346--><p class="noindent" ><span class="head">
+<a 
+ id="x205-195011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 19.4.4 </tspan>(Representation of <tspan font-family="cmmi" font-size="10">S</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> decomposes)<br 
+class="newline" /> </span><a 
+ id="x205-195012"></a>Let <tspan font-family="cmmi" font-size="10">A </tspan>= <tspan font-family="msbm" font-size="10">ℝ</tspan>[<tspan font-family="cmmi" font-size="10">S</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>] again, acting via
+permutation of coordinates on
+</p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na899x.png" alt="V = ℝ ⊕3 = {(x,y,z) | x, y,z ∈ ℝ }.
+" class="math-display"  /></div>
+<!--l. 349--><p class="noindent" >Consider again the two subspaces
+</p><table 
+class="align-star"><!--l. 353--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub></td><td 
+class="align-even"> = <img 
+src="Na901x.png" alt="{(t,t,t) | t ∈ ℝ }"  class="left" align="middle" /></td>         <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub></td><td 
+class="align-even"> = <img 
+src="Na902x.png" alt="{(x, y,z) | x + y + z = 0}"  class="left" align="middle" /><tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                                  </td></tr></table>
+</p><!--l. 354--><p class="noindent" >As we’ve seen, <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊕</tspan><tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, and thus <tspan font-family="cmmi" font-size="10">V </tspan>is not irreducible. But one can show that <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and
+<tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> are irreducible (and hence indecomposable) as follows. </p>
+     <ul class="itemize1">
+     <li class="itemize">For <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> it’s obvious, since <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> is one-dimensional.
+     </li>
+     <li class="itemize">For <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, consider any vector <tspan font-family="cmmi" font-size="10">w </tspan>= (<tspan font-family="cmmi" font-size="10">a,b,c</tspan>) with <tspan font-family="cmmi" font-size="10">a </tspan>+ <tspan font-family="cmmi" font-size="10">b </tspan>+ <tspan font-family="cmmi" font-size="10">c </tspan>= 0 and not all zero. Then
+     WLOG we can assume <tspan font-family="cmmi" font-size="10">a</tspan><tspan font-family="cmmi" font-size="10">≠</tspan><tspan font-family="cmmi" font-size="10">b </tspan>(since not all three coordinates are equal). In that case,
+     (1 2) sends <tspan font-family="cmmi" font-size="10">w </tspan>to <tspan font-family="cmmi" font-size="10">w</tspan><tspan font-family="cmsy" font-size="10">′ </tspan>= (<tspan font-family="cmmi" font-size="10">b,a,c</tspan>). Then <tspan font-family="cmmi" font-size="10">w </tspan>and <tspan font-family="cmmi" font-size="10">w</tspan><tspan font-family="cmsy" font-size="10">′ </tspan>span <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>.</li></ul>
+<!--l. 365--><p class="noindent" >Thus <tspan font-family="cmmi" font-size="10">V </tspan>breaks down completely into irreps.
+</p>
+  </div>
+<!--l. 366--><p class="indent" >  </p></div>
+<!--l. 368--><p class="indent" >  Unfortunately, if <tspan font-family="cmmi" font-size="10">W </tspan>is a subrepresentation of <tspan font-family="cmmi" font-size="10">V </tspan>, then it is not necessarily the case that we
+can find a supplementary vector space <tspan font-family="cmmi" font-size="10">W</tspan><tspan font-family="cmsy" font-size="10">′ </tspan>such that <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="cmmi" font-size="10">W </tspan><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">W</tspan><tspan font-family="cmsy" font-size="10">′</tspan>. Put another way, if <tspan font-family="cmmi" font-size="10">V </tspan>is
+reducible, we know that it has a subrepresentation, but a decomposition requires <tspan font-family="cmti" font-size="10">two</tspan>
+subrepresentations. Here is a standard counterexample:
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-409">
+<a 
+ id="x205-195013r650"></a>
+<div class="newtheorem">
+<!--l. 375--><p class="noindent" ><span class="head">
+<a 
+ id="x205-195014r5"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 19.4.5.</tspan>  </span><a 
+ id="x205-195015"></a> <tspan font-family="cmr" font-size="10">Let </tspan><tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmr" font-size="10">= </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><tspan font-family="cmr" font-size="10">[</tspan><tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmr" font-size="10">], and </tspan><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmr" font-size="10">= </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmsy" font-size="7">⊕</tspan><tspan font-family="cmr" font-size="7">2</tspan></sup> <tspan font-family="cmr" font-size="10">be the representation with action</tspan>
+</p>
+<div class="math-display" >
+<img 
+src="Na903x.png" alt="      [1  1]
+ρ(x) = 0  1 .
+" class="math-display"  /></div>
+<!--l. 378--><p class="noindent" ><tspan font-family="cmr" font-size="10">Show that the only subrepresentation is </tspan><tspan font-family="cmmi" font-size="10">W </tspan><tspan font-family="cmr" font-size="10">= </tspan><tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">t,</tspan><tspan font-family="cmr" font-size="10">0)</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">t </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><tspan font-family="cmsy" font-size="10">}</tspan><tspan font-family="cmr" font-size="10">. So </tspan><tspan font-family="cmmi" font-size="10">V  </tspan><tspan font-family="cmr" font-size="10">is not irreducible, but it is</tspan>
+<tspan font-family="cmr" font-size="10">indecomposable.</tspan></p>
+  </div>
+<!--l. 380--><p class="indent" >  </p></div>
+<!--l. 382--><p class="indent" >  Here is a slightly more optimistic example, and the “prototypical example” that you should
+keep in mind.</p>
+<div class="mdframed" id="mdframed-410">
+<a 
+ id="x205-195016r651"></a>
+<div class="newtheorem">
+<!--l. 386--><p class="noindent" ><span class="head">
+<a 
+ id="x205-195017r6"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 19.4.6.</tspan>  </span><a 
+ id="x205-195018"></a><tspan font-family="cmr" font-size="10">Let </tspan><tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmr" font-size="10">=</tspan> <tspan font-family="cmr" font-size="10">Mat</tspan><sub><tspan font-family="cmmi" font-size="7">d</tspan></sub><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">k</tspan><tspan font-family="cmr" font-size="10">) and consider the obvious representation </tspan><tspan font-family="cmmi" font-size="10">k</tspan><sup><tspan font-family="cmsy" font-size="7">⊕</tspan><tspan font-family="cmmi" font-size="7">d</tspan></sup> <tspan font-family="cmr" font-size="10">of </tspan><tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmr" font-size="10">that we</tspan>
+<tspan font-family="cmr" font-size="10">described earlier. Show that it is irreducible. (This is obvious if you understand the definitions</tspan>
+<tspan font-family="cmr" font-size="10">well enough.)</tspan></p>
+  </div>
+<!--l. 389--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 391--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase141.htm" >next</a>] [<a 
+href="Nase139.htm" >prev</a>] [<a 
+href="Nase139.htm#tailNase139.htm" >prev-tail</a>] [<a 
+href="Nase140.htm" >front</a>] [<a 
+href="Nach22.htm#Nase140.htm" >up</a>] </p></div>
+<!--l. 391--><p class="indent" >  <a 
+ id="tailNase140.htm"></a> </p> 
+</body> 
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Dual space</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 202--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase97.htm" >next</a>] [<a 
+href="Nase95.htm" >prev</a>] [<a 
+href="Nase95.htm#tailNase95.htm" >prev-tail</a>] [<a 
+href="#tailNase96.htm">tail</a>] [<a 
+href="Nach14.htm#Nase96.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">11.2</span>  <a 
+ id="x146-13000011.2"></a>Dual space</h3>
+<!--l. 203--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Rotate a column matrix by </tspan>90 <tspan font-family="cmti" font-size="10">degrees.</tspan>
+</p><!--l. 205--><p class="indent" >  Consider the following vector space:</p>
+<div class="mdframed" id="mdframed-284">
+<a 
+ id="x146-130001r447"></a>
+<div class="newtheorem">
+<!--l. 207--><p class="noindent" ><span class="head">
+<a 
+ id="x146-130002r1"></a>
+<tspan font-family="cmbx" font-size="10">Example 11.2.1 </tspan>(Functions from <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>)<br 
+class="newline" /> </span><a 
+ id="x146-130003"></a>The  set  of  real  functions  <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x,y,z</tspan>)  is  an
+infinite-dimensional real vector space. Indeed, we can add two functions to get <tspan font-family="cmmi" font-size="10">f </tspan>+ <tspan font-family="cmmi" font-size="10">g</tspan>,
+and we can think of functions like 2<tspan font-family="cmmi" font-size="10">f</tspan>.
+</p>
+  </div>
+<!--l. 212--><p class="indent" >  </p></div>
+<!--l. 213--><p class="indent" >  This is a terrifyingly large vector space, but you can do some reasonable reductions.
+For example, you can restrict your attention to just the <tspan font-family="cmti" font-size="10">linear maps </tspan>from <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> to
+<tspan font-family="msbm" font-size="10">ℝ</tspan>.
+</p><!--l. 218--><p class="indent" >  That’s exactly what we’re about to do. This definition might seem strange at first, but bear
+with me.
+<a 
+ id="x146-130004r448"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 222--><p class="noindent" ><span class="head">
+<a 
+ id="x146-130005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 11.2.2.</tspan>  </span><a 
+ id="x146-130006"></a>Let <tspan font-family="cmmi" font-size="10">V </tspan>be a <tspan font-family="cmmi" font-size="10">k</tspan>-vector space. Then <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>, the <tspan font-family="cmbx" font-size="10">dual space</tspan> of <tspan font-family="cmmi" font-size="10">V </tspan>, is defined
+as the vector space whose elements are <tspan font-family="cmti" font-size="10">linear maps from </tspan><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmti" font-size="10">to </tspan><tspan font-family="cmmi" font-size="10">k</tspan>.
+</p>
+  </div>
+<!--l. 225--><p class="indent" >
+The addition and multiplication are pointwise: it’s the same notation we use when
+we write <tspan font-family="cmmi" font-size="10">cf </tspan>+ <tspan font-family="cmmi" font-size="10">g </tspan>to mean <tspan font-family="cmmi" font-size="10">c </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) + <tspan font-family="cmmi" font-size="10">g</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>). The dual space itself is less easy to think
+about.
+</p><!--l. 230--><p class="indent" >  Let’s try to find a basis for <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>. First, here is a very concrete interpretation of the vector
+space. Suppose for example <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup>. We can think of elements of <tspan font-family="cmmi" font-size="10">V </tspan>as column matrices,
+                                                                                
+                                                                                
+like
+</p>
+  <div class="math-display" >
+<img 
+src="Na445x.png" alt="   ⌊  ⌋
+     2
+v = ⌈ 5⌉ ∈ V.
+     9
+" class="math-display"  /></div>
+<!--l. 238--><p class="indent" >  Then a linear map <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">k </tspan>can be interpreted as a <tspan font-family="cmti" font-size="10">row matrix</tspan>:
+</p>
+  <div class="math-display" >
+<img 
+src="Na446x.png" alt="    [       ]
+f =  3  4  5  ∈ V∨.
+" class="math-display"  /></div>
+<!--l. 244--><p class="indent" >  Then
+</p>
+  <div class="math-display" >
+<img 
+src="Na447x.png" alt="                ⌊ ⌋
+       [       ] 2
+f(v) =  3  4  5 ⌈5⌉ =  71.
+                 9
+" class="math-display"  /></div>
+<!--l. 254--><p class="indent" >  More precisely: <tspan font-family="cmbx" font-size="10">to specify a linear map </tspan><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">k</tspan><tspan font-family="cmbx" font-size="10">, I only have to tell you where each</tspan>
+<tspan font-family="cmbx" font-size="10">basis element of </tspan><tspan font-family="cmmi" font-size="10">V  </tspan><tspan font-family="cmbx" font-size="10">goes</tspan>. In the above example, <tspan font-family="cmmi" font-size="10">f </tspan>sends <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> to 3, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> to 4, and <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> to 5. So <tspan font-family="cmmi" font-size="10">f</tspan>
+sends
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na448x.png" alt="2e1 + 5e2 + 9e3 ↦→ 2⋅3 + 5⋅4 + 9⋅5 = 71.
+" class="math-display"  /></div>
+<!--l. 259--><p class="indent" >  Let’s make all this precise.</p>
+<div class="mdframed" id="mdframed-285">
+<a 
+ id="x146-130007r449"></a>
+<div class="newtheorem">
+<!--l. 260--><p class="noindent" ><span class="head">
+<a 
+ id="x146-130008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 11.2.3 </tspan><tspan font-family="cmss" font-size="10">(The dual basis for </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmss" font-size="10">)</tspan><br 
+class="newline" /> </span><a 
+ id="x146-130009"></a>Let <tspan font-family="cmmi" font-size="10">V  </tspan>be a finite-dimensional vector space
+with basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>. For each <tspan font-family="cmmi" font-size="10">i </tspan>consider the function <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>: <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">k </tspan>defined by
+</p>
+<div class="math-display" >
+<img 
+src="Na449x.png" alt="         {
+e∨ (e ) =   1  i = j
+ i  j      0  i ⁄= j.
+" class="math-display"  /></div>
+<!--l. 271--><p class="noindent" >In more humane terms, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>(<tspan font-family="cmmi" font-size="10">v</tspan>) gives the coefficient of <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> in <tspan font-family="cmmi" font-size="10">v</tspan>.
+</p><!--l. 274--><p class="noindent" >Then <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>, …, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> is a basis of <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>.
+</p>
+  </div>
+<!--l. 275--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-286">
+<a 
+ id="x146-130010r450"></a>
+<div class="newtheorem">
+<!--l. 277--><p class="noindent" ><span class="head">
+<a 
+ id="x146-130011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 11.2.4 </tspan>(Explicit example of element in <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>)<br 
+class="newline" /> </span><a 
+ id="x146-130012"></a>In this notation, <tspan font-family="cmmi" font-size="10">f </tspan>= 3<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> + 4<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> + 5<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>.
+Do you see why the “sum” notation works as expected here? Indeed
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 285--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>)</td><td 
+class="align-even"> = (3<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> + 4<tspan font-family="cmmi" font-size="10">e</tspan><sub>
+<tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> + 5<tspan font-family="cmmi" font-size="10">e</tspan><sub>
+<tspan font-family="cmr" font-size="8">3</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>)(<tspan font-family="cmmi" font-size="10">e</tspan><sub>
+<tspan font-family="cmr" font-size="8">1</tspan></sub>)</td>     <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>     <td 
+class="align-even"> = 3<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>(<tspan font-family="cmmi" font-size="10">e</tspan><sub>
+<tspan font-family="cmr" font-size="8">1</tspan></sub>) + 4<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>(<tspan font-family="cmmi" font-size="10">e</tspan><sub>
+<tspan font-family="cmr" font-size="8">1</tspan></sub>) + 5<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>(<tspan font-family="cmmi" font-size="10">e</tspan><sub>
+<tspan font-family="cmr" font-size="8">1</tspan></sub>)</td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>     <td 
+class="align-even"> = 3 <tspan font-family="cmsy" font-size="10">⋅ </tspan>1 + 4 <tspan font-family="cmsy" font-size="10">⋅ </tspan>0 + 5 <tspan font-family="cmsy" font-size="10">⋅ </tspan>0 = 3<tspan font-family="cmmi" font-size="10">.</tspan></td>        <td 
+class="align-label"></td><td 
+class="align-label">                                            </td></tr></table>
+</p><!--l. 286--><p class="noindent" >That’s exactly what we wanted.
+</p>
+  </div>
+<!--l. 287--><p class="indent" >  </p></div>
+<!--l. 289--><p class="indent" >  You might be inclined to point out that <tspan font-family="cmmi" font-size="10">V</tspan> <img 
+src="Na451x.png" alt="∼="  class="cong"  /><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> at this point, since there’s an obvious
+isomorphism <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><img 
+src="Na452x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>. You might call it “rotating the column matrix by 90<tspan font-family="cmsy" font-size="8">∘</tspan>”. The issue is that
+this isomorphism depends very much on which basis you choose: if I pick a different basis, then
+the isomorphism will be intrinsically different.
+</p><!--l. 297--><p class="indent" >  It <tspan font-family="cmti" font-size="10">is </tspan>true that <tspan font-family="cmmi" font-size="10">V </tspan>and <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> are isomorphic for finite-dimensional <tspan font-family="cmmi" font-size="10">V </tspan>, but you should already
+know that <tspan font-family="cmti" font-size="10">any </tspan>two <tspan font-family="cmmi" font-size="10">k</tspan>-vector spaces of the same dimension are isomorphic. In light of this, the
+fact that <tspan font-family="cmmi" font-size="10">V</tspan> <img 
+src="Na453x.png" alt="∼="  class="cong"  /><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> is not especially impressive.
+                                                                                
+                                                                                
+</p>
+  <!--l. 303--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase97.htm" >next</a>] [<a 
+href="Nase95.htm" >prev</a>] [<a 
+href="Nase95.htm#tailNase95.htm" >prev-tail</a>] [<a 
+href="Nase96.htm" >front</a>] [<a 
+href="Nach14.htm#Nase96.htm" >up</a>] </p></div>
+<!--l. 303--><p class="indent" >  <a 
+ id="tailNase96.htm"></a> </p> 
+</body> 
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Power series</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 62--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase196.htm" >next</a>] [<a 
+href="Nase190.htm" >prev</a>] [<a 
+href="Nase190.htm#tailNase190.htm" >prev-tail</a>] [<a 
+href="Nase188.htm#tailNase191.htm">tail</a>] [<a 
+href="Nase193.htm#Nase195.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">29.2</span>  <a 
+ id="x277-26600029.2"></a>Power series</h3>
+<!--l. 63--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <img 
+src="Na1587x.png" alt="-1-
+1−z"  class="frac" align="middle" /> = 1 + <tspan font-family="cmmi" font-size="10">z </tspan>+ <tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmti" font-size="10">, which converges on</tspan>
+(<tspan font-family="cmsy" font-size="10">−</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan>1)<tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 64--><p class="indent" >  Of course this is not rigorous, since we haven’t described what the right-hand side is, much
+less show that it can be differentiated term by term. So we define the main character
+now.
+<a 
+ id="x277-266001r873"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 70--><p class="noindent" ><span class="head">
+<a 
+ id="x277-266002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 29.2.1.</tspan>  </span><a 
+ id="x277-266003"></a>A <tspan font-family="cmbx" font-size="10">power series</tspan> is a sum of the form
+</p>
+  <div class="math-display" >
+<img 
+src="Na1588x.png" alt="∑∞
+   anzn = a0 + a1z + a2z2 + ...
+n=0
+" class="math-display"  /></div>
+<!--l. 73--><p class="indent" >  where <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>, <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, … are real numbers, and <tspan font-family="cmmi" font-size="10">z </tspan>is a variable.
+</p>
+  </div>
+<!--l. 75--><p class="indent" >
+<a 
+ id="x277-266004r874"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 77--><p class="noindent" ><span class="head">
+<a 
+ id="x277-266005r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 29.2.2 </tspan>(0<sup><tspan font-family="cmr" font-size="8">0</tspan></sup> = 1)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x277-266006"></a>If you are very careful, you might notice that
+when <tspan font-family="cmmi" font-size="10">z </tspan>= 0 and <tspan font-family="cmmi" font-size="10">n </tspan>= 0 we find 0<sup><tspan font-family="cmr" font-size="8">0</tspan></sup> terms appearing. For this chapter the convention is
+that they are all equal to one.
+</p>
+  </div>
+<!--l. 82--><p class="indent" >
+</p><!--l. 84--><p class="indent" >  Now, if I plug in a <tspan font-family="cmti" font-size="10">particular </tspan>real number <tspan font-family="cmmi" font-size="10">h</tspan>, then I get a series of real numbers
+<tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmr" font-size="8">=0</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∞</tspan></sup><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">h</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>. So I can ask, when does this series converge? It terms out there is a precise
+answer for this.
+<a 
+ id="x277-266007r875"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 90--><p class="noindent" ><span class="head">
+<a 
+ id="x277-266008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 29.2.3.</tspan>  </span><a 
+ id="x277-266009"></a>Given a power series <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmr" font-size="8">=0</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∞</tspan></sup><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>, the <tspan font-family="cmbx" font-size="10">radius of convergence</tspan> <tspan font-family="cmmi" font-size="10">R</tspan>
+is defined by the formula
+</p>
+  <div class="math-display" >
+<img 
+src="Na1589x.png" alt="1
+--= lim sup |an|1∕n.
+R    n→ ∞
+" class="math-display"  /></div>
+<!--l. 94--><p class="indent" >  with the convention that <tspan font-family="cmmi" font-size="10">R </tspan>=  0 if the right-hand side is <tspan font-family="cmsy" font-size="10">∞</tspan>, and <tspan font-family="cmmi" font-size="10">R </tspan>=  <tspan font-family="cmsy" font-size="10">∞ </tspan>if the
+right-hand side is zero.
+</p>
+  </div>
+<!--l. 96--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-566">
+<a 
+ id="x277-266010r876"></a>
+<div class="newtheorem">
+<!--l. 98--><p class="noindent" ><span class="head">
+<a 
+ id="x277-266011r4"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmssbx" font-size="10">Theorem 29.2.4 </tspan><tspan font-family="cmss" font-size="10">(Cauchy-Hadamard theorem)</tspan><br 
+class="newline" /> </span><a 
+ id="x277-266012"></a>Let <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmr" font-size="8">=0</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∞</tspan></sup><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>  be a power series with
+radius of convergence <tspan font-family="cmmi" font-size="10">R</tspan>. Let <tspan font-family="cmmi" font-size="10">h </tspan>be a real number, and consider the infinite series
+</p>
+<div class="math-display" >
+<img 
+src="Na1590x.png" alt="∞∑
+   anhn
+n=0
+" class="math-display"  /></div>
+<!--l. 103--><p class="noindent" >of real numbers. Then: </p>
+     <ul class="itemize1">
+     <li class="itemize">The series converges absolutely if <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">h</tspan><tspan font-family="cmsy" font-size="10">| </tspan><tspan font-family="cmmi" font-size="10">&#x003C; R</tspan>.
+     </li>
+     <li class="itemize">The series diverges if <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">h</tspan><tspan font-family="cmsy" font-size="10">| </tspan><tspan font-family="cmmi" font-size="10">&#x003E; R</tspan>.</li></ul>
+</p>
+  </div>
+<!--l. 109--><p class="indent" >  </p></div>
+<!--l. 110--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 111--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>This is not actually hard, but it won’t be essential, so not included.               □
+</p>
+  </div><div class="mdframed" id="mdframed-567">
+<a 
+ id="x277-266013r877"></a>
+<div class="newtheorem">
+<!--l. 115--><p class="noindent" ><span class="head">
+<a 
+ id="x277-266014r5"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 29.2.5 —  </tspan> </span><a 
+ id="x277-266015"></a>In the case <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">h</tspan><tspan font-family="cmsy" font-size="10">| </tspan>= <tspan font-family="cmmi" font-size="10">R</tspan>, it could go either way.
+</p>
+  </div>
+<!--l. 116--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<div class="mdframed" id="mdframed-568">
+<a 
+ id="x277-266016r878"></a>
+<div class="newtheorem">
+<!--l. 118--><p class="noindent" ><span class="head">
+<a 
+ id="x277-266017r6"></a>
+<tspan font-family="cmbx" font-size="10">Example 29.2.6 </tspan>(<tspan font-family="cmex" font-size="10">∑</tspan>
+  <tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> has radius 1)<br 
+class="newline" /> </span><a 
+ id="x277-266018"></a>Consider the geometric series <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>  = 1 + <tspan font-family="cmmi" font-size="10">z </tspan>+
+<tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">…</tspan>. Since <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> = 1 for every <tspan font-family="cmmi" font-size="10">n</tspan>, we get <tspan font-family="cmmi" font-size="10">R </tspan>= 1, which is what we expected.
+</p>
+  </div>
+<!--l. 122--><p class="indent" >  </p></div>
+<!--l. 124--><p class="indent" >  Therefore, if <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> is a power series with a nonzero radius <tspan font-family="cmmi" font-size="10">R &#x003E; </tspan>0 of convergence, then it
+can <tspan font-family="cmti" font-size="10">also </tspan>be thought of as a function
+</p>
+  <div class="math-display" >
+<img 
+src="Na1591x.png" alt="                         ∑     n
+(− R,R ) → ℝ   by   h ↦→     anh .
+                         n≥0
+" class="math-display"  /></div>
+<!--l. 130--><p class="indent" >  This is great. Note also that if <tspan font-family="cmmi" font-size="10">R </tspan>= <tspan font-family="cmsy" font-size="10">∞</tspan>, this means we get a function <tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>.
+<a 
+ id="x277-266019r879"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 135--><p class="noindent" ><span class="head">
+<a 
+ id="x277-266020r7"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 29.2.7 </tspan>(Power series vs. functions)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x277-266021"></a>There is some subtly going
+on with “types” of objects again. Analogies with polynomials can help.
+</p><!--l. 139--><p class="indent" >  Consider <tspan font-family="cmmi" font-size="10">P</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> + 7<tspan font-family="cmmi" font-size="10">x </tspan>+ 9, a polynomial. You <tspan font-family="cmti" font-size="10">can</tspan>, for any real number <tspan font-family="cmmi" font-size="10">h</tspan>, plug in
+<tspan font-family="cmmi" font-size="10">P</tspan>(<tspan font-family="cmmi" font-size="10">h</tspan>) to get a real number. However, in the polynomial <tspan font-family="cmti" font-size="10">itself</tspan>, the symbol <tspan font-family="cmmi" font-size="10">x </tspan>is supposed
+to be a <tspan font-family="cmti" font-size="10">variable </tspan>— which sometimes we will plug in a real number for, but that happens
+only after the polynomial is defined.
+</p><!--l. 147--><p class="indent" >  Despite this, “the polynomial <tspan font-family="cmmi" font-size="10">p</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> + 7<tspan font-family="cmmi" font-size="10">x </tspan>+ 9” (which can be thought of as the
+coefficients) and “the real-valued function <tspan font-family="cmmi" font-size="10">x</tspan><img 
+src="Na1592x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup>+7<tspan font-family="cmmi" font-size="10">x</tspan>+9” are often used interchangeably.
+The same is about to happen with power series: while they were initially thought of
+as a sequence of coefficients, the Cauchy-Hadamard theorem lets us think of them as
+functions too, and thus we blur the distinction between them.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 166--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+  <!--l. 168--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase196.htm" >next</a>] [<a 
+href="Nase190.htm" >prev</a>] [<a 
+href="Nase190.htm#tailNase190.htm" >prev-tail</a>] [<a 
+href="Nase191.htm" >front</a>] [<a 
+href="Nase193.htm#Nase195.htm" >up</a>] </p></div>
+<!--l. 168--><p class="indent" >  <a 
+ id="tailNase191.htm"></a> </p> 
+</body> 
+</html>

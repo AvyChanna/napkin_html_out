@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The classical (inverse) Fourier transform</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 5--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase169.htm" >next</a>] [<a 
+href="#tailNase168.htm">tail</a>] [<a 
+href="Nach28.htm#Nase168.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">25.1</span>  <a 
+ id="x242-23000025.1"></a>The classical (inverse) Fourier transform</h3>
+<!--l. 6--><p class="noindent" >The “crux move” in Shor’s algorithm is the so-called quantum Fourier transform. The Fourier
+transform is used to extract <tspan font-family="cmti" font-size="10">periodicity </tspan>in data, and it turns out the quantum analogue is a lot
+faster than the classical one.
+</p><!--l. 11--><p class="indent" >  Let me throw the definition at you first. Let <tspan font-family="cmmi" font-size="10">N </tspan>be a positive integer, and let <tspan font-family="cmmi" font-size="10">ω</tspan><sub><tspan font-family="cmmi" font-size="8">N</tspan></sub> = exp<img 
+src="Na1257x.png" alt="(2πi)
+ N"  class="left" align="middle" />.
+<a 
+ id="x242-230001r754"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 14--><p class="noindent" ><span class="head">
+<a 
+ id="x242-230002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 25.1.1.</tspan>  </span><a 
+ id="x242-230003"></a>Given a tuple of complex numbers
+</p>
+  <div class="math-display" >
+<img 
+src="Na1258x.png" alt="(x0,x1,...,xN −1)
+" class="math-display"  /></div>
+<!--l. 16--><p class="indent" >  its <tspan font-family="cmbx" font-size="10">discrete inverse Fourier transform</tspan> is the sequence (<tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub><tspan font-family="cmmi" font-size="10">,y</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,y</tspan><sub><tspan font-family="cmmi" font-size="8">N</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub>) defined by
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1259x.png" alt="        N−1
+y  = -1 ∑  ωjk x .
+ k   N       N  j
+        j=0
+" class="math-display"  /></div>
+<!--l. 19--><p class="indent" >  Equivalently, one is applying the matrix
+</p>
+  <div class="math-display" >
+<img 
+src="Na1260x.png" alt="   ⌊1    1       1     ...     1   ⌋
+   |              2           N −1 |⌊  x0  ⌋   ⌊  y0 ⌋
+   ||1   ωN      ωN     ...   ωN    |||  x   |   |  y  |
+-1 |1   ω2N     ω4N     ...  ω2N(N−1)|||   1.  || = ||  .1 || .
+N  ||..    ..       ..     ..      ..   ||⌈   ..  ⌉   ⌈  ..  ⌉
+   ⌈.    .     2(.N− 1)    .   (N.−1)2⌉  xN −1     yN −1
+    1  ωNN −1  ωN       ...  ωN
+" class="math-display"  /></div>
+  </div>
+<!--l. 33--><p class="indent" >
+The reason this operation is important is because it lets us detect if the <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> are
+periodic:</p>
+<div class="mdframed" id="mdframed-480">
+<a 
+ id="x242-230004r755"></a>
+<div class="newtheorem">
+<!--l. 37--><p class="noindent" ><span class="head">
+<a 
+ id="x242-230005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 25.1.2 </tspan>(Example of discrete inverse Fourier transform)<br 
+class="newline" /> </span><a 
+ id="x242-230006"></a>Let <tspan font-family="cmmi" font-size="10">N </tspan>= 6, <tspan font-family="cmmi" font-size="10">ω </tspan>= <tspan font-family="cmmi" font-size="10">ω</tspan><sub><tspan font-family="cmr" font-size="8">6</tspan></sub> = exp(<img 
+src="Na1261x.png" alt="2πi-
+6"  class="frac" align="middle" />)
+and suppose (<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmr" font-size="8">4</tspan></sub><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmr" font-size="8">5</tspan></sub>) = (0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1) (hence <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> is periodic modulo 2).
+Thus,
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 49--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub></td><td 
+class="align-even"> = <img 
+src="Na1263x.png" alt="1
+6"  /><img 
+src="Na1264x.png" alt="(ω0 + ω0 + ω0 )"  class="left" align="middle" /> = 1<tspan font-family="cmmi" font-size="10">∕</tspan>2</td>  <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub></td><td 
+class="align-even"> = <img 
+src="Na1265x.png" alt="1
+6"  /><img 
+src="Na1266x.png" alt="( 1    3    5)
+ ω + ω  + ω"  class="left" align="middle" /> = 0</td>     <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub></td><td 
+class="align-even"> = <img 
+src="Na1267x.png" alt="16"  /><img 
+src="Na1268x.png" alt="(            )
+ ω2 + ω6 + ω10"  class="left" align="middle" /> = 0</td>    <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub></td><td 
+class="align-even"> = <img 
+src="Na1269x.png" alt="1
+6"  /><img 
+src="Na1270x.png" alt="( 3    9    15)
+ ω + ω  + ω"  class="left" align="middle" /> = <tspan font-family="cmsy" font-size="10">−</tspan>1<tspan font-family="cmmi" font-size="10">∕</tspan>2</td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmr" font-size="8">4</tspan></sub></td><td 
+class="align-even"> = <img 
+src="Na1271x.png" alt="16"  /><img 
+src="Na1272x.png" alt="(             )
+ ω4 + ω12 + ω20"  class="left" align="middle" /> = 0</td>   <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmr" font-size="8">5</tspan></sub></td><td 
+class="align-even"> = <img 
+src="Na1273x.png" alt="1
+6"  /><img 
+src="Na1274x.png" alt="(ω5 + ω15 + ω25)"  class="left" align="middle" /> = 0<tspan font-family="cmmi" font-size="10">.</tspan></td>  <td 
+class="align-label"></td><td 
+class="align-label">                                                   </td></tr></table>
+</p><!--l. 50--><p class="noindent" >Thus, in the inverse transformation the “amplitudes” are all concentrated at multiples of 3;
+thus this reveals the periodicity of the original sequence by <img 
+src="Na1275x.png" alt="N-
+3"  class="frac" align="middle" /> = 2.</p>
+  </div>
+<!--l. 54--><p class="indent" >  </p></div>
+<!--l. 55--><p class="indent" >  More generally, given a sequence of 1’s appearing with period <tspan font-family="cmmi" font-size="10">r</tspan>, the amplitudes will peak at
+inputs which are divisible by <img 
+src="Na1276x.png" alt="---N---
+gcd(N,r)"  class="frac" align="middle" />.</p>
+<div class="mdframed" id="mdframed-481">
+<a 
+ id="x242-230007r756"></a>
+<div class="newtheorem">
+<!--l. 58--><p class="noindent" ><span class="head">
+<a 
+ id="x242-230008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 25.1.3 —  </tspan> </span><a 
+ id="x242-230009"></a>The  fact  that  this  operation  is  called  the  “inverse”  Fourier
+transform is mostly a historical accident (as my understanding goes). Confusingly, the
+corresponding quantum operation is the (not-inverted) Fourier transform.
+</p>
+  </div>
+<!--l. 63--><p class="indent" >  </p></div>
+<!--l. 64--><p class="indent" >  If we apply the definition as written, computing the transform takes <tspan font-family="cmmi" font-size="10">O</tspan>(<tspan font-family="cmmi" font-size="10">N</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>) time. It turns
+out that by an algorithm called the <tspan font-family="cmbx" font-size="10">fast Fourier transform</tspan> (whose details we won’t discuss),
+one can reduce this to <tspan font-family="cmmi" font-size="10">O</tspan>(<tspan font-family="cmmi" font-size="10">N</tspan> log <tspan font-family="cmmi" font-size="10">N</tspan>) time. However, for Shor’s algorithm this is also insufficient;
+                                                                                
+                                                                                
+we need something like <tspan font-family="cmmi" font-size="10">O</tspan><img 
+src="Na1277x.png" alt="(       )
+ (log N )2"  class="left" align="middle" /> instead. This is where the quantum Fourier transform
+comes in.
+                                                                                
+                                                                                
+</p>
+  <!--l. 71--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase169.htm" >next</a>] [<a 
+href="Nase168.htm" >front</a>] [<a 
+href="Nach28.htm#Nase168.htm" >up</a>] </p></div>
+<!--l. 71--><p class="indent" >  <a 
+ id="tailNase168.htm"></a> </p> 
+</body> 
+</html>

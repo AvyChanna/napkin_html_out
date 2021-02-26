@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Conditional expectation</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 164--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach47.htm" >next</a>] [<a 
+href="Nase260.htm" >prev</a>] [<a 
+href="Nase260.htm#tailNase260.htm" >prev-tail</a>] [<a 
+href="Nase247.htm#tailNase261.htm">tail</a>] [<a 
+href="Nase273.htm#Nase277.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">41.3</span>  <a 
+ id="x378-35500041.3"></a>Conditional expectation</h3>
+<!--l. 165--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="msbm" font-size="10">𝔼</tspan>(<tspan font-family="cmmi" font-size="10">X</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">X </tspan>+ <tspan font-family="cmmi" font-size="10">Y </tspan>) <tspan font-family="cmti" font-size="10">for </tspan><tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmti" font-size="10">and </tspan><tspan font-family="cmmi" font-size="10">Y  </tspan><tspan font-family="cmti" font-size="10">distributed over</tspan>
+[0<tspan font-family="cmmi" font-size="10">,</tspan>1]<tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 167--><p class="indent" >  We’ll need the definition of conditional probability to define a martingale, but this turns
+out to be surprisingly tricky. Let’s consider the following simple example to see
+why.</p>
+<div class="mdframed" id="mdframed-682">
+<a 
+ id="x378-355001r1067"></a>
+<div class="newtheorem">
+<!--l. 171--><p class="noindent" ><span class="head">
+<a 
+ id="x378-355002r1"></a>
+<tspan font-family="cmbx" font-size="10">Example 41.3.1 </tspan>(Why high-school methods aren’t enough here)<br 
+class="newline" /> </span><a 
+ id="x378-355003"></a>Suppose we have two
+independent random variables <tspan font-family="cmmi" font-size="10">X</tspan>, <tspan font-family="cmmi" font-size="10">Y </tspan>distributed uniformly over [0<tspan font-family="cmmi" font-size="10">,</tspan>1] (so we may as well take
+Ω = [0<tspan font-family="cmmi" font-size="10">,</tspan>1]<sup><tspan font-family="cmr" font-size="8">2</tspan></sup>). We might try to ask the question:
+     </p><blockquote class="quote">
+     <!--l. 177--><p class="noindent" ><tspan font-family="cmti" font-size="10">“what is the expected value of </tspan><tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmti" font-size="10">given that </tspan><tspan font-family="cmmi" font-size="10">X </tspan>+ <tspan font-family="cmmi" font-size="10">Y </tspan>= 0<tspan font-family="cmmi" font-size="10">.</tspan>6<tspan font-family="cmti" font-size="10">”?</tspan></p></blockquote>
+<!--l. 180--><p class="noindent" >Intuitively, we know the answer has to be 0<tspan font-family="cmmi" font-size="10">.</tspan>3. However, if we try to write down a definition,
+we quickly run into trouble. Ideally we want to say something like
+</p>
+<div class="math-display" >
+<img 
+src="Na1928x.png" alt="                          ∫
+                           S X
+𝔼 [X  given X + Y = 0.6] = ∫--1-where S = {ω ∈ Ω | X (ω) + Y(ω ) = 0.6}.
+                           S
+" class="math-display"  /></div>
+<!--l. 187--><p class="noindent" >The problem is that <tspan font-family="cmmi" font-size="10">S </tspan>is a set of measure zero, so we quickly run into <img 
+src="Na1929x.png" alt="0
+0"  class="frac" align="middle" />, meaning a definition
+of this shape will not work out.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 190--><p class="indent" >  </p></div>
+<!--l. 192--><p class="indent" >  The way that this is typically handled in measure theory is to use the notion of
+sub-<tspan font-family="cmmi" font-size="10">σ</tspan>-algebra that we defined. Let <tspan font-family="rsfs" font-size="10">ℱ   </tspan>be a sub-<tspan font-family="cmmi" font-size="10">σ</tspan>-algebra which captures the information This
+means we create a function assigning the “conditional expectation” to <tspan font-family="cmti" font-size="10">every </tspan>point <tspan font-family="cmmi" font-size="10">ω </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan>Ω,
+which is measurable with respect to <tspan font-family="rsfs" font-size="10">ℱ </tspan>. <a 
+ id="likesection.10"></a><a 
+ id="x378-355004"></a><object data="Napkin-25.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<span class="reversemarginpar"><object data="Napkin-26.svg" width="80.00075 " height="33.87247 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="Napkin-27.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+</span><div class="mdframed" id="mdframed-683">
+<a 
+ id="x378-355005r1068"></a>
+<div class="newtheorem">
+<!--l. 201--><p class="noindent" ><span class="head">
+<a 
+ id="x378-355006r2"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 41.3.2 </tspan><tspan font-family="cmss" font-size="10">(Conditional expectation definition)</tspan><br 
+class="newline" /> </span><a 
+ id="x378-355007"></a> Let <tspan font-family="cmmi" font-size="10">X</tspan> : Ω <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>be an <tspan font-family="cmti" font-size="10">absolutely</tspan>
+<tspan font-family="cmti" font-size="10">integrable </tspan>random variable (meaning <tspan font-family="msbm" font-size="10">𝔼</tspan>[<tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">X</tspan><tspan font-family="cmsy" font-size="10">|</tspan>] <tspan font-family="cmmi" font-size="10">&#x003C; </tspan><tspan font-family="cmsy" font-size="10">∞</tspan>) over a probability space Ω, and let <tspan font-family="rsfs" font-size="10">ℱ</tspan>
+be a sub-<tspan font-family="cmmi" font-size="10">σ</tspan>-algebra on it.
+</p><!--l. 208--><p class="noindent" >Then there exists a function <tspan font-family="cmmi" font-size="10">η</tspan>: Ω <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>satisfying the following two properties: </p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">η </tspan>is <tspan font-family="rsfs" font-size="10">ℱ </tspan>-measurable (that is, measurable as a function (Ω<tspan font-family="cmmi" font-size="10">, </tspan><tspan font-family="rsfs" font-size="10">ℱ </tspan><tspan font-family="cmmi" font-size="10">,μ</tspan>) <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>); and
+     </li>
+     <li class="itemize">for any set <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="rsfs" font-size="10">ℱ   </tspan>we have <tspan font-family="msbm" font-size="10">𝔼</tspan>[<tspan font-family="cmmi" font-size="10">η </tspan><tspan font-family="cmsy" font-size="10">⋅</tspan><tspan font-family="cmbx" font-size="10">1</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub>] = <tspan font-family="msbm" font-size="10">𝔼</tspan>[<tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">⋅</tspan><tspan font-family="cmbx" font-size="10">1</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub>].</li></ul>
+<!--l. 216--><p class="noindent" >Moreover, this random variable is unique up to almost sureness.
+</p>
+  </div>
+<!--l. 217--><p class="indent" >  </p></div>
+<!--l. 218--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 219--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Omitted, but relevant buzzword used is “Radon-Nikodym derivative”.            □
+</p>
+  </div>
+<a 
+ id="x378-355008r1069"></a>
+  <div class="newtheorem">
+<!--l. 223--><p class="noindent" ><span class="head">
+<a 
+ id="x378-355009r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 41.3.3.</tspan>  </span><a 
+ id="x378-355010"></a>Let <tspan font-family="cmmi" font-size="10">η </tspan>be as in the previous proposition. </p>
+                                                                                
+                                                                                
+     <ul class="itemize1">
+     <li class="itemize">We denote <tspan font-family="cmmi" font-size="10">η </tspan>by <tspan font-family="msbm" font-size="10">𝔼</tspan>(<tspan font-family="cmmi" font-size="10">X</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="rsfs" font-size="10">ℱ </tspan>) and call it the <tspan font-family="cmbx" font-size="10">conditional expectation</tspan> of <tspan font-family="cmmi" font-size="10">X </tspan>with
+     respect to <tspan font-family="rsfs" font-size="10">ℱ </tspan>.
+     </li>
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">Y  </tspan>is a random variable then <tspan font-family="msbm" font-size="10">𝔼</tspan>(<tspan font-family="cmmi" font-size="10">X</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">Y </tspan>) denotes <tspan font-family="msbm" font-size="10">𝔼</tspan>(<tspan font-family="cmmi" font-size="10">X</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">σ</tspan>(<tspan font-family="cmmi" font-size="10">Y </tspan>)), i.e. the conditional
+     expectation of <tspan font-family="cmmi" font-size="10">X </tspan>with respect to the <tspan font-family="cmmi" font-size="10">σ</tspan>-algebra generated by <tspan font-family="cmmi" font-size="10">Y </tspan>.</li></ul>
+  </div>
+<!--l. 232--><p class="indent" >
+</p><!--l. 234--><p class="indent" >  More fine print:</p>
+<div class="mdframed" id="mdframed-684">
+<a 
+ id="x378-355011r1070"></a>
+<div class="newtheorem">
+<!--l. 236--><p class="noindent" ><span class="head">
+<a 
+ id="x378-355012r4"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 41.3.4 </tspan><tspan font-family="cmss" font-size="10">(This notation is terrible) </tspan><tspan font-family="cmssbx" font-size="10">—  </tspan> </span><a 
+ id="x378-355013"></a>The   notation   <tspan font-family="msbm" font-size="10">𝔼</tspan>(<tspan font-family="cmmi" font-size="10">X</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="rsfs" font-size="10">ℱ </tspan>)   is   admittedly
+confusing, since it is actually an entire function Ω <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>, rather than just a real number
+like <tspan font-family="msbm" font-size="10">𝔼</tspan>[<tspan font-family="cmmi" font-size="10">X</tspan>]. For this reason I try to be careful to remember to use parentheses rather than
+square brackets for conditional expectations; not everyone does this.</p>
+  </div>
+<!--l. 243--><p class="indent" >  </p></div>
+<a 
+ id="x378-355014r1071"></a>
+  <div class="newtheorem">
+<!--l. 246--><p class="noindent" ><span class="head">
+<a 
+ id="x378-355015r5"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 41.3.5.</tspan>  </span><a 
+ id="x378-355016"></a>In addition, when we write <tspan font-family="cmmi" font-size="10">Y </tspan>= <tspan font-family="msbm" font-size="10">𝔼</tspan>(<tspan font-family="cmmi" font-size="10">X</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="rsfs" font-size="10">ℱ </tspan>), there is some
+abuse of notation happening here since <tspan font-family="msbm" font-size="10">𝔼</tspan>(<tspan font-family="cmmi" font-size="10">X</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="rsfs" font-size="10">ℱ </tspan>) is defined only up to some reasonable
+uniqueness (i.e. up to measure zero changes). So this really means that “<tspan font-family="cmmi" font-size="10">Y </tspan>satisfies the
+hypothesis of <tspan font-family="cmbx" font-size="10">??</tspan> ”, but this is so pedantic that no one bothers.
+</p>
+  </div>
+<!--l. 253--><p class="indent" >
+</p><!--l. 255--><p class="indent" >  <a 
+ id="likesection.11"></a><a 
+ id="x378-355017"></a><object data="Napkin-28.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<span class="reversemarginpar"><object data="Napkin-29.svg" width="80.00075 " height="20.95186 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="Napkin-30.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+</span>
+                                                                                
+                                                                                
+  <!--l. 257--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach47.htm" >next</a>] [<a 
+href="Nase260.htm" >prev</a>] [<a 
+href="Nase260.htm#tailNase260.htm" >prev-tail</a>] [<a 
+href="Nase261.htm" >front</a>] [<a 
+href="Nase273.htm#Nase277.htm" >up</a>] </p></div>
+<!--l. 257--><p class="indent" >  <a 
+ id="tailNase261.htm"></a> </p> 
+</body> 
+</html>

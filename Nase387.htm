@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Contravariant functors</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 228--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase415.htm" >next</a>] [<a 
+href="Nase386.htm" >prev</a>] [<a 
+href="Nase386.htm#tailNase386.htm" >prev-tail</a>] [<a 
+href="Nase364.htm#tailNase387.htm">tail</a>] [<a 
+href="Nach69.htm#Nase414.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">61.3</span>  <a 
+ id="x543-52000061.3"></a>Contravariant functors</h3>
+<!--l. 229--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Dual spaces, contravariant Yoneda functor,</tspan>
+<tspan font-family="cmti" font-size="10">etc.</tspan>
+</p><!--l. 231--><p class="indent" >  Now I have to explain what the opposite categories were doing earlier. In all the previous
+examples, we took an arrow <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, and it became an arrow <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>). Sometimes,
+however, the arrow in fact goes the other way: we get an arrow <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) instead. In
+other words, instead of just getting a functor <tspan font-family="cmsy" font-size="10">𝒜→ℬ </tspan>we ended up with a functor
+<tspan font-family="cmsy" font-size="10">𝒜</tspan><tspan font-family="cmr" font-size="8">op</tspan> <tspan font-family="cmsy" font-size="10">→ℬ</tspan>.
+</p><!--l. 239--><p class="indent" >  These functors have a name: <a 
+ id="x543-520001r1584"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 241--><p class="noindent" ><span class="head">
+<a 
+ id="x543-520002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 61.3.1.</tspan>  </span><a 
+ id="x543-520003"></a>A <tspan font-family="cmbx" font-size="10">contravariant functor</tspan> from <tspan font-family="cmsy" font-size="10">𝒜 </tspan>to <tspan font-family="cmsy" font-size="10">ℬ </tspan>is a functor <tspan font-family="cmmi" font-size="10">F </tspan>: <tspan font-family="cmsy" font-size="10">𝒜</tspan><tspan font-family="cmr" font-size="8">op</tspan> <tspan font-family="cmsy" font-size="10">→ℬ</tspan>.
+(Note that we do <tspan font-family="cmti" font-size="10">not </tspan>write “contravariant functor <tspan font-family="cmmi" font-size="10">F </tspan>: <tspan font-family="cmsy" font-size="10">𝒜 → ℬ</tspan>”, since that would be
+confusing; the function notation will always use the correct domain and codomain.)
+</p>
+  </div>
+<!--l. 246--><p class="indent" >
+Pictorially: <img 
+src="Na3017x.png" alt="       A           B   = F (A  )
+        1           |1       1
+        |     F     |
+𝒜 ∋   f |........................|F(f)      ∈ ℬ
+        |           |
+        |           |
+       A2          B2  = F (A2 )
+"  />
+For emphasis, a usual functor is often called a <tspan font-family="cmbx" font-size="10">covariant functor</tspan>. (The word “functor” with
+no adjective always refers to covariant.)
+</p><!--l. 256--><p class="indent" >  Let’s see why this might happen.</p>
+<div class="mdframed" id="mdframed-1051">
+<a 
+ id="x543-520004r1585"></a>
+<div class="newtheorem">
+<!--l. 257--><p class="noindent" ><span class="head">
+<a 
+ id="x543-520005r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Example 61.3.2 </tspan>(<tspan font-family="cmmi" font-size="10">V</tspan> <img 
+src="Na3018x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> is contravariant)<br 
+class="newline" /> </span><a 
+ id="x543-520006"></a>Consider  the  functor  <tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>  <tspan font-family="cmsy" font-size="10">→</tspan> <tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>  by
+<tspan font-family="cmmi" font-size="10">V</tspan> <img 
+src="Na3019x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>.
+</p><!--l. 260--><p class="noindent" >If we were trying to specify a covariant functor, we would need, for every linear map
+<tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, a linear map <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> : <tspan font-family="cmmi" font-size="10">V </tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>. But recall that <tspan font-family="cmmi" font-size="10">V </tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> = Hom(<tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,k</tspan>) and
+<tspan font-family="cmmi" font-size="10">V </tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> = Hom(<tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,k</tspan>): there’s no easy way to get an obvious map from left to right.
+</p><!--l. 266--><p class="noindent" >However, there <tspan font-family="cmti" font-size="10">is </tspan>an obvious map from right to left: given <tspan font-family="cmmi" font-size="10">ξ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> : <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">k</tspan>, we can easily give a
+map from <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">k</tspan>: just compose with <tspan font-family="cmmi" font-size="10">T</tspan>! In other words, there is a very natural map
+<tspan font-family="cmmi" font-size="10">V </tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> according to the composition <img 
+src="Na3020x.png" alt="V1 ----T----V2 ----ξ2--- k
+"  />
+In summary, a map <tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">2</tspan></sub> induces naturally a map <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> : <tspan font-family="cmmi" font-size="10">V </tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> in the opposite
+direction. So the contravariant functor looks like: <img 
+src="Na3021x.png" alt="               ∨
+ V1          V1
+  |    −∨     |
+T |........................|T∨
+  |           |
+  |
+ V2          V2∨ "  />
+</p>
+  </div>
+<!--l. 282--><p class="indent" >  </p></div>
+<!--l. 295--><p class="indent" >  We can generalize the example above in any category by replacing the field <tspan font-family="cmmi" font-size="10">k </tspan>with any
+chosen object <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">∈𝒜</tspan>.</p>
+<div class="mdframed" id="mdframed-1052">
+<a 
+ id="x543-520007r1586"></a>
+<div class="newtheorem">
+<!--l. 298--><p class="noindent" ><span class="head">
+<a 
+ id="x543-520008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 61.3.3 </tspan>(Contravariant Yoneda functor)<br 
+class="newline" /> </span><a 
+ id="x543-520009"></a>The                        <tspan font-family="cmbx" font-size="10">contravariant</tspan>
+<tspan font-family="cmbx" font-size="10">Yoneda functor</tspan> on <tspan font-family="cmsy" font-size="10">𝒜</tspan>, denoted <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> : <tspan font-family="cmsy" font-size="10">𝒜</tspan><tspan font-family="cmr" font-size="8">op</tspan> <tspan font-family="cmsy" font-size="10">→</tspan><tspan font-family="cmss" font-size="10">Set</tspan>, is used to describe how objects of <tspan font-family="cmsy" font-size="10">𝒜</tspan>
+see <tspan font-family="cmmi" font-size="10">A</tspan>. For each <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">∈𝒜 </tspan>it puts
+</p>
+<div class="math-display" >
+<img 
+src="Na3022x.png" alt="HA (X ) := Hom 𝒜(X, A ) ∈ Set.
+" class="math-display"  /></div>
+<!--l. 303--><p class="noindent" >For <tspan font-family="cmmi" font-size="10">X</tspan><img 
+src="Na3023x.png" alt="f−→"  class=""  /><tspan font-family="cmmi" font-size="10">Y </tspan>in <tspan font-family="cmsy" font-size="10">𝒜</tspan>, the map <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub>(<tspan font-family="cmmi" font-size="10">f</tspan>) sends each arrow <tspan font-family="cmmi" font-size="10">Y </tspan><img 
+src="Na3024x.png" alt="p−→"  class=""  /><tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">∈</tspan> Hom<sub><tspan font-family="cmsy" font-size="8">𝒜</tspan></sub>(<tspan font-family="cmmi" font-size="10">Y,A</tspan>) to
+</p>
+<div class="math-display" >
+<img 
+src="Na3025x.png" alt="X −→f Y −→p A   ∈ Hom   (X,A )
+                    𝒜
+" class="math-display"  /></div>
+<!--l. 306--><p class="noindent" >as we did above. Thus <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub>(<tspan font-family="cmmi" font-size="10">f</tspan>) is an arrow from Hom<sub><tspan font-family="cmsy" font-size="8">𝒜</tspan></sub>(<tspan font-family="cmmi" font-size="10">Y,A</tspan>) <tspan font-family="cmsy" font-size="10">→</tspan> Hom<sub><tspan font-family="cmsy" font-size="8">𝒜</tspan></sub>(<tspan font-family="cmmi" font-size="10">X,A</tspan>). (Note the
+flipping!)
+</p>
+  </div>
+<!--l. 309--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-1053">
+<a 
+ id="x543-520010r1587"></a>
+<div class="newtheorem">
+<!--l. 312--><p class="noindent" ><span class="head">
+<a 
+ id="x543-520011r4"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 61.3.4.</tspan>  </span><a 
+ id="x543-520012"></a><tspan font-family="cmr" font-size="10">Check now the claim that </tspan><tspan font-family="cmsy" font-size="10">𝒜</tspan><tspan font-family="cmr" font-size="7">op</tspan> <tspan font-family="cmsy" font-size="10">×𝒜→</tspan><tspan font-family="cmss" font-size="10">Set</tspan> <tspan font-family="cmr" font-size="10">by (</tspan><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="7">1</tspan></sub><tspan font-family="cmmi" font-size="10">,A</tspan><sub><tspan font-family="cmr" font-size="7">2</tspan></sub><tspan font-family="cmr" font-size="10">)</tspan><img 
+src="Na3026x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmr" font-size="10">Hom</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="7">1</tspan></sub><tspan font-family="cmmi" font-size="10">,A</tspan><sub><tspan font-family="cmr" font-size="7">2</tspan></sub><tspan font-family="cmr" font-size="10">) is in</tspan>
+<tspan font-family="cmr" font-size="10">fact a functor.</tspan></p>
+  </div>
+<!--l. 314--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 316--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase415.htm" >next</a>] [<a 
+href="Nase386.htm" >prev</a>] [<a 
+href="Nase386.htm#tailNase386.htm" >prev-tail</a>] [<a 
+href="Nase387.htm" >front</a>] [<a 
+href="Nach69.htm#Nase414.htm" >up</a>] </p></div>
+<!--l. 316--><p class="indent" >  <a 
+ id="tailNase387.htm"></a> </p> 
+</body> 
+</html>

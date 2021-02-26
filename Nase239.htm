@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Motivating limit interchange</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 2--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase253.htm" >next</a>] [<a 
+href="Nase229.htm#tailNase239.htm">tail</a>] [<a 
+href="Nase251.htm#Nase252.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">37.1</span>  <a 
+ id="x348-32500037.1"></a>Motivating limit interchange</h3>
+<!--l. 3--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmbx" font-size="10">1</tspan><sub><tspan font-family="msbm" font-size="10">ℚ</tspan></sub>  <tspan font-family="cmti" font-size="10">is good!</tspan>
+</p><!--l. 5--><p class="indent" >  One of the issues with the Riemann integral is that it behaves badly with respect to
+convergence of functions, and the Lebesgue integral deals with this. This is therefore often
+given as a poster child or why the Lebesgue integral has better behaviors than the Riemann
+one.
+</p><!--l. 11--><p class="indent" >  We technically have already seen this: consider the indicator function <tspan font-family="cmbx" font-size="10">1</tspan><sub><tspan font-family="msbm" font-size="10">ℚ</tspan></sub>, which is not
+Riemann integrable by <tspan font-family="cmbx" font-size="10">??</tspan> . But we can readily compute its Lebesgue integral over [0<tspan font-family="cmmi" font-size="10">,</tspan>1],
+as
+</p>
+  <div class="math-display" >
+<img 
+src="Na1865x.png" alt="∫
+
+ [0,1]1ℚ dμ = μ ([0,1] ∩ℚ ) = 0
+" class="math-display"  /></div>
+<!--l. 17--><p class="indent" >  since it is countable.
+</p><!--l. 19--><p class="indent" >  This <tspan font-family="cmti" font-size="10">could </tspan>be thought of as a failure of convergence for the Riemann integral.</p>
+<div class="mdframed" id="mdframed-655">
+<a 
+ id="x348-325001r1023"></a>
+<div class="newtheorem">
+<!--l. 22--><p class="noindent" ><span class="head">
+<a 
+ id="x348-325002r1"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Example 37.1.1 </tspan>(<tspan font-family="cmbx" font-size="10">1</tspan><sub><tspan font-family="msbm" font-size="10">ℚ</tspan></sub>  is a limit of finitely supported functions)<br 
+class="newline" /> </span><a 
+ id="x348-325003"></a>   We   can   define   the
+sequence of functions <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, … by
+</p>
+<div class="math-display" >
+<img 
+src="Na1866x.png" alt="        {
+gn(x) =  1   (n!)x is an integer
+         0   else.
+" class="math-display"  /></div>
+<!--l. 29--><p class="noindent" >Then each <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>  is piecewise continuous and hence Riemann integrable on [0<tspan font-family="cmmi" font-size="10">,</tspan>1] (with
+integral zero), but lim<sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">→∞</tspan></sub><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> = <tspan font-family="cmbx" font-size="10">1</tspan><sub><tspan font-family="msbm" font-size="10">ℚ</tspan></sub>  is not.
+</p>
+  </div>
+<!--l. 32--><p class="indent" >  </p></div>
+<!--l. 34--><p class="indent" >  The limit here is defined in the following sense: <a 
+ id="x348-325004r1024"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 36--><p class="noindent" ><span class="head">
+<a 
+ id="x348-325005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 37.1.2.</tspan>  </span><a 
+ id="x348-325006"></a>Let <tspan font-family="cmmi" font-size="10">f </tspan>and <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,f</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan>: Ω <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>be a sequence of functions. Suppose
+that for each <tspan font-family="cmmi" font-size="10">ω </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan>Ω, the sequence
+</p>
+  <div class="math-display" >
+<img 
+src="Na1867x.png" alt="f1(ω), f2(ω), f3(ω), ,...
+" class="math-display"  /></div>
+<!--l. 39--><p class="indent" >  converges to <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">ω</tspan>). Then we say (<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>)<sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> <tspan font-family="cmbx" font-size="10">converges pointwise</tspan> to the limit <tspan font-family="cmmi" font-size="10">f</tspan>, written
+lim<sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">→∞</tspan></sub><tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> = <tspan font-family="cmmi" font-size="10">f</tspan>.
+</p><!--l. 43--><p class="indent" >  We can define liminf <sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">→∞</tspan></sub><tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> and limsup<sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">→∞</tspan></sub><tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> similarly.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 45--><p class="indent" >
+This is actually a fairly weak notion of convergence, for example:</p>
+<div class="mdframed" id="mdframed-656">
+<a 
+ id="x348-325007r1025"></a>
+<div class="newtheorem">
+<!--l. 48--><p class="noindent" ><span class="head">
+<a 
+ id="x348-325008r3"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 37.1.3 </tspan><tspan font-family="cmr" font-size="10">(Witch’s hat)</tspan><tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x348-325009"></a><tspan font-family="cmr" font-size="10">Find a sequence of continuous function on [</tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmr" font-size="10">1</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmr" font-size="10">1] </tspan><tspan font-family="cmsy" font-size="10">→</tspan><tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmr" font-size="10">which</tspan>
+<tspan font-family="cmr" font-size="10">converges pointwise to the function </tspan><tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmr" font-size="10">given by</tspan>
+</p>
+<div class="math-display" >
+<img 
+src="Na1868x.png" alt="      {
+        1  x = 0
+f(x) =  0  otherwise.
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 55--><p class="indent" >  </p></div>
+<!--l. 56--><p class="indent" >  This is why when thinking about the Riemann integral it is commonplace to work with
+stronger conditions like “uniformly convergent” and the like. However, with the Lebesgue
+integral, we can mostly not think about these!
+                                                                                
+                                                                                
+</p>
+  <!--l. 61--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase253.htm" >next</a>] [<a 
+href="Nase239.htm" >front</a>] [<a 
+href="Nase251.htm#Nase252.htm" >up</a>] </p></div>
+<!--l. 61--><p class="indent" >  <a 
+ id="tailNase239.htm"></a> </p> 
+</body> 
+</html>

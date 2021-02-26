@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Cauchy-Goursat theorem</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 281--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase212.htm" >next</a>] [<a 
+href="Nase204.htm" >prev</a>] [<a 
+href="Nase204.htm#tailNase204.htm" >prev-tail</a>] [<a 
+href="Napa9.htm#tailNase205.htm">tail</a>] [<a 
+href="Nase206.htm#Nase211.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">31.4</span>  <a 
+ id="x297-28300031.4"></a>Cauchy-Goursat theorem</h3>
+<!--l. 282--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">γ</tspan></sub><tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmmi" font-size="8">m</tspan></sup> <tspan font-family="cmmi" font-size="10">dz </tspan>= 0 <tspan font-family="cmti" font-size="10">for </tspan><tspan font-family="cmmi" font-size="10">m </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan>0<tspan font-family="cmti" font-size="10">. But if </tspan><tspan font-family="cmmi" font-size="10">m &#x003C; </tspan>0<tspan font-family="cmti" font-size="10">, Cauchy’s theorem</tspan>
+<tspan font-family="cmti" font-size="10">does not apply.</tspan>
+</p><!--l. 283--><p class="indent" >  Let Ω <tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>be simply connected (for example, Ω = <tspan font-family="msbm" font-size="10">ℂ</tspan>), and consider two paths <tspan font-family="cmmi" font-size="10">α</tspan>, <tspan font-family="cmmi" font-size="10">β </tspan>with the
+same start and end points.
+</p>
+<div class="center" 
+>
+<!--l. 286--><p class="noindent" >
+</p>
+</div>
+<!--l. 297--><p class="indent" >  What’s the relation between <tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">α</tspan></sub><tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>) <tspan font-family="cmmi" font-size="10">dz </tspan>and <tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">β</tspan></sub><tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>) <tspan font-family="cmmi" font-size="10">dz</tspan>? You might expect there to be some
+relation between them, considering that the space Ω is simply connected. But you probably
+wouldn’t expect there to be <tspan font-family="cmti" font-size="10">much </tspan>of a relation.
+</p><!--l. 301--><p class="indent" >  As a concrete example, let Ψ : <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>be the function <tspan font-family="cmmi" font-size="10">z</tspan><img 
+src="Na1672x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">z </tspan><tspan font-family="cmsy" font-size="10">−</tspan> Re[<tspan font-family="cmmi" font-size="10">z</tspan>] (for example,
+Ψ(2015 + 3<tspan font-family="cmmi" font-size="10">i</tspan>) = 3<tspan font-family="cmmi" font-size="10">i</tspan>). Let’s consider two paths from <tspan font-family="cmsy" font-size="10">−</tspan>1 to 1. Thus <tspan font-family="cmmi" font-size="10">β </tspan>is walking along the real
+axis, and <tspan font-family="cmmi" font-size="10">α </tspan>which follows an upper semicircle.
+</p>
+<div class="center" 
+>
+<!--l. 305--><p class="noindent" >
+</p>
+</div>
+<!--l. 316--><p class="indent" >  Obviously <tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">β</tspan></sub>Ψ(<tspan font-family="cmmi" font-size="10">z</tspan>) <tspan font-family="cmmi" font-size="10">dz </tspan>= 0. But heaven knows what <tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">α</tspan></sub>Ψ(<tspan font-family="cmmi" font-size="10">z</tspan>) <tspan font-family="cmmi" font-size="10">dz </tspan>is supposed to equal.
+We can compute it now just out of non-laziness. If you like, you are welcome to
+compute it yourself (it’s a little annoying but not hard). If I myself didn’t mess up, it
+is
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1673x.png" alt="∮              ∮             ∫ π                  1
+   Ψ (z) dz = −  -Ψ (z) dz = −   (isin(t))⋅ieit dt =-πi
+ α              α             0                   2
+" class="math-display"  /></div>
+<!--l. 323--><p class="indent" >  which in particular is not zero.
+</p><!--l. 325--><p class="indent" >  But somehow Ψ is not a really natural function. It’s not respecting any of the nice,
+multiplicative structure of <tspan font-family="msbm" font-size="10">ℂ </tspan>since it just rudely lops off the real part of its inputs. More
+precisely,</p>
+<div class="mdframed" id="mdframed-593">
+<a 
+ id="x297-283001r923"></a>
+<div class="newtheorem">
+<!--l. 330--><p class="noindent" ><span class="head">
+<a 
+ id="x297-283002r1"></a>
+<tspan font-family="cmbx" font-size="10">Question 31.4.1.</tspan>  </span><a 
+ id="x297-283003"></a><tspan font-family="cmr" font-size="10">Show that Ψ(</tspan><tspan font-family="cmmi" font-size="10">z</tspan><tspan font-family="cmr" font-size="10">) = </tspan><tspan font-family="cmmi" font-size="10">z</tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmr" font-size="10">Re</tspan><tspan font-family="cmr" font-size="10">[</tspan><tspan font-family="cmmi" font-size="10">z</tspan><tspan font-family="cmr" font-size="10">] is not holomorphic. (Hint: </tspan><span class="overline"><tspan font-family="cmmi" font-size="10">z</tspan></span> <tspan font-family="cmr" font-size="10">is not holomorphic.)</tspan></p>
+  </div>
+<!--l. 332--><p class="indent" >  </p></div>
+<!--l. 334--><p class="indent" >  Now here’s a miracle: for holomorphic functions, the two integrals are <tspan font-family="cmti" font-size="10">always equal</tspan>.
+Equivalently, (by considering <tspan font-family="cmmi" font-size="10">α </tspan>followed by <span class="overline"><tspan font-family="cmmi" font-size="10">β</tspan></span>) contour integrals of loops are always zero. This
+is the celebrated Cauchy-Goursat theorem (also called the Cauchy integral theorem, but later
+we’ll have a “Cauchy Integral Formula” so blah).</p>
+<div class="mdframed" id="mdframed-594">
+<a 
+ id="x297-283004r924"></a>
+<div class="newtheorem">
+<!--l. 341--><p class="noindent" ><span class="head">
+<a 
+ id="x297-283005r2"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 31.4.2 </tspan><tspan font-family="cmss" font-size="10">(Cauchy-Goursat theorem)</tspan><br 
+class="newline" /> </span><a 
+ id="x297-283006"></a>Let <tspan font-family="cmmi" font-size="10">γ </tspan>be a loop, and <tspan font-family="cmmi" font-size="10">f </tspan>: Ω <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>a holomorphic
+function where Ω is open in <tspan font-family="msbm" font-size="10">ℂ </tspan>and simply connected. Then
+</p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na1674x.png" alt="∮
+
+ γ f (z ) dz = 0.
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 346--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-595">
+<a 
+ id="x297-283007r925"></a>
+<div class="newtheorem">
+<!--l. 347--><p class="noindent" ><span class="head">
+<a 
+ id="x297-283008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 31.4.3 </tspan><tspan font-family="cmss" font-size="10">(Sanity check) </tspan><tspan font-family="cmssbx" font-size="10">—  </tspan> </span><a 
+ id="x297-283009"></a>This might look surprising considering that we saw
+<tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">γ</tspan></sub><tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup> <tspan font-family="cmmi" font-size="10">dz </tspan>= 2<tspan font-family="cmmi" font-size="10">πi </tspan>earlier. The subtlety is that <tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup> is not even defined at <tspan font-family="cmmi" font-size="10">z </tspan>= 0. On the
+other hand, the function <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">∖{</tspan>0<tspan font-family="cmsy" font-size="10">}→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>by <tspan font-family="cmmi" font-size="10">z</tspan><img 
+src="Na1675x.png" alt="↦→"  class="mapsto"  /><img 
+src="Na1676x.png" alt="1
+z"  class="frac" align="middle" /> <tspan font-family="cmti" font-size="10">is </tspan>holomorphic! The defect now is that
+Ω = <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">∖{</tspan>0<tspan font-family="cmsy" font-size="10">} </tspan>is not simply connected. So the theorem passes our sanity checks, albeit
+barely.</p>
+  </div>
+<!--l. 353--><p class="indent" >  </p></div>
+<!--l. 355--><p class="indent" >  The typical proof of Cauchy’s Theorem assumes additionally that the partial derivatives of
+<tspan font-family="cmmi" font-size="10">f </tspan>are continuous and then applies the so-called Green’s theorem. But it was Goursat who
+successfully proved the fully general theorem we’ve stated above, which assumed only
+that <tspan font-family="cmmi" font-size="10">f </tspan>was holomorphic. I’ll only outline the proof, and very briefly. You can show
+that if <tspan font-family="cmmi" font-size="10">f </tspan>: Ω <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>has an antiderivative <tspan font-family="cmmi" font-size="10">F </tspan>: Ω <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>which is also holomorphic, and
+moreover Ω is simply connected, then you get a “fundamental theorem of calculus”, a
+la
+</p>
+  <div class="math-display" >
+<img 
+src="Na1677x.png" alt="∮
+
+ α f(z) dz = F (α(b))− F (α (a ))
+" class="math-display"  /></div>
+<!--l. 364--><p class="indent" >  where <tspan font-family="cmmi" font-size="10">α </tspan>: [<tspan font-family="cmmi" font-size="10">a,b</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>is some path. So to prove Cauchy-Goursat, you only have
+to show this antiderivative <tspan font-family="cmmi" font-size="10">F </tspan>exists. Goursat works very hard to prove the result
+in the special case that <tspan font-family="cmmi" font-size="10">γ </tspan>is a triangle, and hence by induction for any polygon.
+Once he has the result for a rectangle, he uses this special case to construct the
+                                                                                
+                                                                                
+function <tspan font-family="cmmi" font-size="10">F </tspan>explicitly. Goursat then shows that <tspan font-family="cmmi" font-size="10">F </tspan>is holomorphic, completing the
+proof.
+</p><!--l. 371--><p class="indent" >  Anyways, the theorem implies that <tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">γ</tspan></sub><tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmmi" font-size="8">m</tspan></sup> <tspan font-family="cmmi" font-size="10">dz </tspan>= 0 when <tspan font-family="cmmi" font-size="10">m </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan>0. So much for all our hard
+work earlier. But so far we’ve only played with circles. This theorem holds for <tspan font-family="cmti" font-size="10">any </tspan>contour
+which is a loop. So what else can we do?
+                                                                                
+                                                                                
+</p>
+  <!--l. 377--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase212.htm" >next</a>] [<a 
+href="Nase204.htm" >prev</a>] [<a 
+href="Nase204.htm#tailNase204.htm" >prev-tail</a>] [<a 
+href="Nase205.htm" >front</a>] [<a 
+href="Nase206.htm#Nase211.htm" >up</a>] </p></div>
+<!--l. 377--><p class="indent" >  <a 
+ id="tailNase205.htm"></a> </p> 
+</body> 
+</html>

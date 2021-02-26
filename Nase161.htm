@@ -1,0 +1,293 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Entanglement</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 281--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase162.htm" >next</a>] [<a 
+href="Nase160.htm" >prev</a>] [<a 
+href="Nase160.htm#tailNase160.htm" >prev-tail</a>] [<a 
+href="#tailNase161.htm">tail</a>] [<a 
+href="Nach26.htm#Nase161.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">23.4</span>  <a 
+ id="x232-22100023.4"></a>Entanglement</h3>
+<!--l. 282--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Singlet state: spooky action at a distance.</tspan>
+</p><!--l. 283--><p class="indent" >  If you think that’s weird, well, it gets worse.
+</p><!--l. 285--><p class="indent" >  Qubits don’t just act independently: they can talk to each other by means of a <tspan font-family="cmti" font-size="10">tensor</tspan>
+<tspan font-family="cmti" font-size="10">product</tspan>. Explicitly, consider
+</p>
+  <div class="math-display" >
+<img 
+src="Na1099x.png" alt="       ⊕2    ⊕2
+H  = ℂ   ⊗ ℂ
+" class="math-display"  /></div>
+<!--l. 288--><p class="indent" >  endowed with the norm described in <tspan font-family="cmbx" font-size="10">??</tspan> . One should think of this as a qubit <tspan font-family="cmmi" font-size="10">A </tspan>in a space
+<tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> along with a second qubit <tspan font-family="cmmi" font-size="10">B </tspan>in a different space <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub>, which have been allowed to
+interact in some way, and <tspan font-family="cmmi" font-size="10">H </tspan>= <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub> is the set of possible states of <tspan font-family="cmti" font-size="10">both </tspan>qubits.
+Thus
+</p>
+  <div class="math-display" >
+<img 
+src="Na1100x.png" alt="|0⟩A ⊗ |0⟩B ,  |0⟩A ⊗ |1⟩B ,  |1⟩A ⊗ |0⟩B ,  |1⟩A ⊗ |1⟩B
+" class="math-display"  /></div>
+<!--l. 300--><p class="indent" >  is an orthonormal basis of <tspan font-family="cmmi" font-size="10">H</tspan>; here <img 
+src="Na1101x.png" alt="|i⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> is the basis of the first <tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup> while <img 
+src="Na1102x.png" alt="|i⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub> is the basis
+of the second <tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup>, so these vectors should be thought of as “unrelated” just as with any tensor
+product. The pure tensors mean exactly what you want: for example <img 
+src="Na1103x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1104x.png" alt="|1⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub> means “0
+for qubit <tspan font-family="cmmi" font-size="10">A </tspan>and 1 for qubit <tspan font-family="cmmi" font-size="10">B</tspan>”.
+                                                                                
+                                                                                
+</p><!--l. 309--><p class="indent" >  As before, a measurement of a state in <tspan font-family="cmmi" font-size="10">H </tspan>requires a Hermitian map <tspan font-family="cmmi" font-size="10">H </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">H</tspan>.
+In particular, if we only want to measure the qubit <tspan font-family="cmmi" font-size="10">B </tspan>along <tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub>, we can use the
+operator
+</p>
+  <div class="math-display" >
+<img 
+src="Na1105x.png" alt="idA ⊗ MB.
+" class="math-display"  /></div>
+<!--l. 313--><p class="indent" >  The eigenvalues of this operator coincide with the ones for <tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub>, and the eigenspace
+for <tspan font-family="cmmi" font-size="10">λ </tspan>will be the <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗ </tspan>(<tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub>)<sub><tspan font-family="cmmi" font-size="8">λ</tspan></sub>, so when we take the projection the <tspan font-family="cmmi" font-size="10">A </tspan>qubit will be
+unaffected.
+</p><!--l. 317--><p class="indent" >  This does what you would hope for pure tensors in <tspan font-family="cmmi" font-size="10">H</tspan>:</p>
+<div class="mdframed" id="mdframed-465">
+<a 
+ id="x232-221001r731"></a>
+<div class="newtheorem">
+<!--l. 318--><p class="noindent" ><span class="head">
+<a 
+ id="x232-221002r1"></a>
+<tspan font-family="cmbx" font-size="10">Example 23.4.1 </tspan>(Two non-entangled qubits)<br 
+class="newline" /> </span><a 
+ id="x232-221003"></a>Suppose  we  have  qubit  <tspan font-family="cmmi" font-size="10">A </tspan>in  the  state
+<img 
+src="Na1106x.png" alt="√i-
+  5"  class="frac" align="middle" /><img 
+src="Na1107x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> + <img 
+src="Na1108x.png" alt="√2-
+  5"  class="frac" align="middle" /><img 
+src="Na1109x.png" alt="|1⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> and qubit <tspan font-family="cmmi" font-size="10">B </tspan>in the state <img 
+src="Na1110x.png" alt="√1-
+ 2"  class="frac" align="middle" /><img 
+src="Na1111x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub> + <img 
+src="Na1112x.png" alt="√1-
+ 2"  class="frac" align="middle" /><img 
+src="Na1113x.png" alt="|1⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub>. So, the two qubits in
+tandem are represented by the pure tensor
+</p>
+<div class="math-display" >
+<img 
+src="Na1114x.png" alt="      (  i         2     )   (  1         1      )
+|ψ⟩ =   √--|0⟩A + √--|1⟩A  ⊗   √---|0⟩B + √---|1⟩B   .
+          5         5            2         2
+" class="math-display"  /></div>
+<!--l. 331--><p class="noindent" >Suppose we measure <img 
+src="Na1115x.png" alt="|ψ⟩"  class="left" align="middle" /> along
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na1116x.png" alt="            B
+M  = idA ⊗ σ z .
+" class="math-display"  /></div>
+<!--l. 333--><p class="noindent" >The eigenspace decomposition is </p>
+     <ul class="itemize1">
+     <li class="itemize">+1 for the span of <img 
+src="Na1117x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1118x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub> and <img 
+src="Na1119x.png" alt="|1⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1120x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub>, and
+     </li>
+     <li class="itemize"><tspan font-family="cmsy" font-size="10">−</tspan>1 for the span of <img 
+src="Na1121x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1122x.png" alt="|1⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub> and <img 
+src="Na1123x.png" alt="|1⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1124x.png" alt="|1⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub>.</li></ul>
+<!--l. 340--><p class="noindent" >(We could have used other bases, like <img 
+src="Na1125x.png" alt="|→  ⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1126x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub> and <img 
+src="Na1127x.png" alt="|← ⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1128x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub> for the first
+eigenspace, but it doesn’t matter.) Expanding <img 
+src="Na1129x.png" alt="|ψ⟩"  class="left" align="middle" /> in the four-element basis, we find that we’ll
+get the first eigenspace with probability
+</p>
+<div class="math-display" >
+<img 
+src="Na1130x.png" alt="||    ||2   ||   ||2
+||√-i-|| +  ||√-2-||  = 1.
+   10       10     2
+" class="math-display"  /></div>
+<!--l. 346--><p class="noindent" >and the second eigenspace with probability <img 
+src="Na1131x.png" alt="1
+2"  class="frac" align="middle" /> as well. (Note how the coefficients for <tspan font-family="cmmi" font-size="10">A </tspan>don’t do
+anything!) After the measurement, we destroy the coefficients of the other eigenspace; thus
+(after re-normalization) we obtain the collapsed state
+</p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na1132x.png" alt="(                  )                  (                  )
+  -i-       -2-                         -i-       -2-
+  √5-|0⟩A + √5-|1⟩A  ⊗ |0⟩B     or      √5-|0⟩A + √5--|1⟩A  ⊗  |1⟩B
+" class="math-display"  /></div>
+<!--l. 356--><p class="noindent" >again with 50% probability each.
+</p>
+  </div>
+<!--l. 357--><p class="indent" >  </p></div>
+<!--l. 358--><p class="indent" >  So this model lets us more or less work with the two qubits independently: when we make
+the measurement, we just make sure to not touch the other qubit (which corresponds to the
+identity operator).</p>
+<div class="mdframed" id="mdframed-466">
+<a 
+ id="x232-221004r732"></a>
+<div class="newtheorem">
+<!--l. 363--><p class="noindent" ><span class="head">
+<a 
+ id="x232-221005r2"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 23.4.2.</tspan>  </span><a 
+ id="x232-221006"></a><tspan font-family="cmr" font-size="10">Show that if</tspan> <tspan font-family="cmr" font-size="10">id</tspan><sub><tspan font-family="cmmi" font-size="7">A</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="7">x</tspan></sub><sup><tspan font-family="cmmi" font-size="7">B</tspan></sup> <tspan font-family="cmr" font-size="10">is applied to the </tspan><img 
+src="Na1133x.png" alt="|ψ ⟩"  class="left" align="middle" /> <tspan font-family="cmr" font-size="10">in this example, there is no</tspan>
+<tspan font-family="cmr" font-size="10">collapse at all. What’s the result of this measurement?</tspan></p>
+  </div>
+<!--l. 366--><p class="indent" >  </p></div>
+<!--l. 368--><p class="indent" >  Since the <tspan font-family="cmsy" font-size="10">⊗ </tspan>is getting cumbersome to write, we say: <a 
+ id="x232-221007r733"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 370--><p class="noindent" ><span class="head">
+<a 
+ id="x232-221008r3"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 23.4.3.</tspan>  </span><a 
+ id="x232-221009"></a>From now on <img 
+src="Na1134x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1135x.png" alt="|0⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub> will be abbreviated to just
+<img 
+src="Na1136x.png" alt="|00⟩"  class="left" align="middle" />, and similarly for <img 
+src="Na1137x.png" alt="|01⟩"  class="left" align="middle" />, <img 
+src="Na1138x.png" alt="|10⟩"  class="left" align="middle" />, <img 
+src="Na1139x.png" alt="|11⟩"  class="left" align="middle" />.
+</p>
+  </div>
+<!--l. 372--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-467">
+<a 
+ id="x232-221010r734"></a>
+<div class="newtheorem">
+<!--l. 375--><p class="noindent" ><span class="head">
+<a 
+ id="x232-221011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 23.4.4 </tspan>(Simultaneously measuring a general 2-Qubit state)<br 
+class="newline" /> </span><a 
+ id="x232-221012"></a>     Consider     a
+normalized state <img 
+src="Na1140x.png" alt="|ψ ⟩"  class="left" align="middle" /> in <tspan font-family="cmmi" font-size="10">H </tspan>= <tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup>, say
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na1141x.png" alt="|ψ⟩ = α |00⟩ + β |01⟩ + γ |10⟩+ δ |11⟩.
+" class="math-display"  /></div>
+<!--l. 381--><p class="noindent" >We can make a measurement along the diagonal matrix <tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">H </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">H </tspan>with
+</p>
+<div class="math-display" >
+<img 
+src="Na1142x.png" alt="T(|00⟩) = 0 |00⟩, T(|01⟩) = 1 |01⟩, T(|10⟩) = 2 |10⟩, T( |11⟩) = 3 |11⟩.
+" class="math-display"  /></div>
+<!--l. 387--><p class="noindent" >Thus we get each of the eigenvalues 0, 1, 2, 3 with probability <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">α</tspan><tspan font-family="cmsy" font-size="10">|</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">β</tspan><tspan font-family="cmsy" font-size="10">|</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">γ</tspan><tspan font-family="cmsy" font-size="10">|</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">δ</tspan><tspan font-family="cmsy" font-size="10">|</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>. So if
+we like we can make “simultaneous” measurements on two qubits in the same way that
+we make measurements on one qubit.
+</p>
+  </div>
+<!--l. 391--><p class="indent" >  </p></div>
+<!--l. 393--><p class="indent" >  However, some states behave very weirdly.</p>
+<div class="mdframed" id="mdframed-468">
+<a 
+ id="x232-221013r735"></a>
+<div class="newtheorem">
+<!--l. 394--><p class="noindent" ><span class="head">
+<a 
+ id="x232-221014r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 23.4.5 </tspan>(The singlet state)<br 
+class="newline" /> </span><a 
+ id="x232-221015"></a>Consider the state
+</p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na1143x.png" alt="|Ψ  ⟩ = √1--|01⟩ − √1-|10⟩
+  −      2         2
+" class="math-display"  /></div>
+<!--l. 402--><p class="noindent" >which is called the <tspan font-family="cmbx" font-size="10">singlet state</tspan>. One can see that <img 
+src="Na1144x.png" alt="|Ψ − ⟩"  class="left" align="middle" /> is not a simple tensor, which
+means that it doesn’t just consist of two qubits side by side: the qubits in <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> and <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub>
+have become <tspan font-family="cmti" font-size="10">entangled</tspan>.
+</p><!--l. 407--><p class="noindent" >Now, what happens if we measure just the qubit <tspan font-family="cmmi" font-size="10">A</tspan>? This corresponds to making the
+measurement
+</p>
+<div class="math-display" >
+<img 
+src="Na1145x.png" alt="T = σA ⊗  id  .
+      z    B
+" class="math-display"  /></div>
+<!--l. 410--><p class="noindent" >The eigenspace decomposition of <tspan font-family="cmmi" font-size="10">T </tspan>can be described as: </p>
+     <ul class="itemize1">
+     <li class="itemize">The span of <img 
+src="Na1146x.png" alt="|00⟩"  class="left" align="middle" /> and <img 
+src="Na1147x.png" alt="|01⟩"  class="left" align="middle" />, with eigenvalue +1.
+     </li>
+     <li class="itemize">The span of <img 
+src="Na1148x.png" alt="|10⟩"  class="left" align="middle" /> and <img 
+src="Na1149x.png" alt="|11⟩"  class="left" align="middle" />, with eigenvalue <tspan font-family="cmsy" font-size="10">−</tspan>1.</li></ul>
+<!--l. 415--><p class="noindent" >So one of two things will happen: </p>
+     <ul class="itemize1">
+     <li class="itemize">With probability <img 
+src="Na1150x.png" alt="12"  class="frac" align="middle" />, we measure +1 and the collapsed state is <img 
+src="Na1151x.png" alt="|01⟩"  class="left" align="middle" />.
+     </li>
+     <li class="itemize">With probability <img 
+src="Na1152x.png" alt="1
+2"  class="frac" align="middle" />, we measure <tspan font-family="cmsy" font-size="10">−</tspan>1 and the collapsed state is <img 
+src="Na1153x.png" alt="|10⟩"  class="left" align="middle" />.</li></ul>
+<!--l. 422--><p class="noindent" >But now we see that measurement along <tspan font-family="cmmi" font-size="10">A </tspan>has told us what the state of the bit <tspan font-family="cmmi" font-size="10">B </tspan>is
+completely!
+</p>
+  </div>
+<!--l. 424--><p class="indent" >  </p></div>
+<!--l. 425--><p class="indent" >  By solely looking at measurements on <tspan font-family="cmmi" font-size="10">A</tspan>, we learn <tspan font-family="cmmi" font-size="10">B</tspan>; this paradox is called <tspan font-family="cmti" font-size="10">spooky action at</tspan>
+<tspan font-family="cmti" font-size="10">a distance</tspan>, or in Einstein’s tongue, <tspan font-family="cmbx" font-size="10">spukhafte Fernwirkung</tspan>. Thus,
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-469">
+<!--l. 430--><p class="noindent" ><tspan font-family="cmbx" font-size="10">In tensor products of Hilbert spaces, states which are not pure tensors correspond</tspan>
+<tspan font-family="cmbx" font-size="10">to “entangled” states.</tspan></p><!--l. 433--><p class="noindent" ></p>
+  </div>
+<!--l. 435--><p class="indent" >  What this really means is that the qubits cannot be described independently; the state of
+the system must be given as a whole. That’s what entangled states mean: the qubits somehow
+depend on each other.
+                                                                                
+                                                                                
+</p>
+  <!--l. 439--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase162.htm" >next</a>] [<a 
+href="Nase160.htm" >prev</a>] [<a 
+href="Nase160.htm#tailNase160.htm" >prev-tail</a>] [<a 
+href="Nase161.htm" >front</a>] [<a 
+href="Nach26.htm#Nase161.htm" >up</a>] </p></div>
+<!--l. 439--><p class="indent" >  <a 
+ id="tailNase161.htm"></a> </p> 
+</body> 
+</html>

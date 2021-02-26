@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Subspaces and picking convenient bases</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 629--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase82.htm" >next</a>] [<a 
+href="Nase80.htm" >prev</a>] [<a 
+href="Nase80.htm#tailNase80.htm" >prev-tail</a>] [<a 
+href="#tailNase81.htm">tail</a>] [<a 
+href="Nach12.htm#Nase81.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">9.7</span>  <a 
+ id="x125-1130009.7"></a>Subspaces and picking convenient bases</h3>
+<!--l. 630--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Any two linearly independent vectors in </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup><tspan font-family="cmti" font-size="10">.</tspan>
+<a 
+ id="x125-113001r383"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 633--><p class="noindent" ><span class="head">
+<a 
+ id="x125-113002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 9.7.1.</tspan>  </span><a 
+ id="x125-113003"></a>Let <tspan font-family="cmmi" font-size="10">M </tspan>be a left <tspan font-family="cmmi" font-size="10">R</tspan>-module. A <tspan font-family="cmbx" font-size="10">submodule</tspan> <tspan font-family="cmmi" font-size="10">N </tspan>of <tspan font-family="cmmi" font-size="10">M </tspan>is a module <tspan font-family="cmmi" font-size="10">N</tspan>
+such that every element of <tspan font-family="cmmi" font-size="10">N </tspan>is also an element of <tspan font-family="cmmi" font-size="10">M</tspan>. If <tspan font-family="cmmi" font-size="10">M </tspan>is a vector space then <tspan font-family="cmmi" font-size="10">N </tspan>is
+called a <tspan font-family="cmbx" font-size="10">subspace</tspan>.
+</p>
+  </div>
+<!--l. 637--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-246">
+<a 
+ id="x125-113004r384"></a>
+<div class="newtheorem">
+<!--l. 639--><p class="noindent" ><span class="head">
+<a 
+ id="x125-113005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 9.7.2 </tspan>(Kernels)<br 
+class="newline" /> </span><a 
+ id="x125-113006"></a>The <tspan font-family="cmbx" font-size="10">kernel</tspan> of a map <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>(written ker<tspan font-family="cmmi" font-size="10">T</tspan>) is the set of
+<tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>such that <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">v</tspan>) = 0<sub><tspan font-family="cmmi" font-size="8">W</tspan> </sub>. It is a subspace of <tspan font-family="cmmi" font-size="10">V </tspan>, since it’s closed under addition and
+scaling (why?).
+</p>
+  </div>
+<!--l. 643--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-247">
+<a 
+ id="x125-113007r385"></a>
+<div class="newtheorem">
+<!--l. 644--><p class="noindent" ><span class="head">
+<a 
+ id="x125-113008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 9.7.3 </tspan>(Spans)<br 
+class="newline" /> </span><a 
+ id="x125-113009"></a>Let <tspan font-family="cmmi" font-size="10">V </tspan>be a vector space and <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,v</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub> be any vectors of <tspan font-family="cmmi" font-size="10">V </tspan>. The
+<tspan font-family="cmbx" font-size="10">span</tspan> of these vectors is defined as the set
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na374x.png" alt="{a1v1 + ⋅⋅⋅+ amvm  | a1,...,am ∈ k}.
+" class="math-display"  /></div>
+<!--l. 648--><p class="noindent" >Note that it is a subspace of <tspan font-family="cmmi" font-size="10">V </tspan>as well!
+</p>
+  </div>
+<!--l. 649--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-248">
+<a 
+ id="x125-113010r386"></a>
+<div class="newtheorem">
+<!--l. 651--><p class="noindent" ><span class="head">
+<a 
+ id="x125-113011r4"></a>
+<tspan font-family="cmbx" font-size="10">Question 9.7.4.</tspan>  </span><a 
+ id="x125-113012"></a><tspan font-family="cmr" font-size="10">Why is 0</tspan><sub><tspan font-family="cmmi" font-size="7">V</tspan> </sub> <tspan font-family="cmr" font-size="10">an element of each of the above examples? In general, why must</tspan>
+<tspan font-family="cmr" font-size="10">any subspace contain 0</tspan><sub><tspan font-family="cmmi" font-size="7">V</tspan> </sub><tspan font-family="cmr" font-size="10">?</tspan></p>
+  </div>
+<!--l. 653--><p class="indent" >  </p></div>
+<!--l. 655--><p class="indent" >  Subspaces behave nicely with respect to bases.</p>
+<div class="mdframed" id="mdframed-249">
+<a 
+ id="x125-113013r387"></a>
+<div class="newtheorem">
+<!--l. 656--><p class="noindent" ><span class="head">
+<a 
+ id="x125-113014r5"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 9.7.5 </tspan><tspan font-family="cmss" font-size="10">(Basis completion)</tspan><br 
+class="newline" /> </span><a 
+ id="x125-113015"></a> Let <tspan font-family="cmmi" font-size="10">V </tspan>be an <tspan font-family="cmmi" font-size="10">n</tspan>-dimensional space, and <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">′ </tspan>a subspace of <tspan font-family="cmmi" font-size="10">V </tspan>.
+Then
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate"><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">′ </tspan>is also finite-dimensional.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">If <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,e</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub> is a basis of <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">′</tspan>, then there exist <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan><tspan font-family="cmr" font-size="8">+1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> in <tspan font-family="cmmi" font-size="10">V </tspan>such that <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> is a
+    basis of <tspan font-family="cmmi" font-size="10">V </tspan>.</dd></dl>
+</p>
+  </div>
+<!--l. 666--><p class="indent" >  </p></div>
+<!--l. 667--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 668--><p class="indent" >  <span class="head">
+                                                                                
+                                                                                
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Omitted, since it is intuitive and the proof is not that enlightening. (However,
+we will use this result repeatedly later on, so do take the time to internalize it now.)   □
+</p>
+  </div>
+<!--l. 673--><p class="indent" >  A very common use case is picking a convenient basis for a map <tspan font-family="cmmi" font-size="10">T</tspan>.</p>
+<div class="mdframed" id="mdframed-250">
+<a 
+ id="x125-113018r388"></a>
+<div class="newtheorem">
+<!--l. 674--><p class="noindent" ><span class="head">
+<a 
+ id="x125-113019r6"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 9.7.6 </tspan><tspan font-family="cmss" font-size="10">(Picking a basis for linear maps)</tspan><br 
+class="newline" /> </span><a 
+ id="x125-113020"></a>   Let   <tspan font-family="cmmi" font-size="10">T</tspan> :  <tspan font-family="cmmi" font-size="10">V   </tspan><tspan font-family="cmsy" font-size="10">→  </tspan><tspan font-family="cmmi" font-size="10">W   </tspan>be   a   map   of
+finite-dimensional vector spaces, with <tspan font-family="cmmi" font-size="10">n </tspan>= dim<tspan font-family="cmmi" font-size="10">V </tspan>, <tspan font-family="cmmi" font-size="10">m </tspan>= dim<tspan font-family="cmmi" font-size="10">W</tspan>. Then there exists a basis
+<tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,v</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> of <tspan font-family="cmmi" font-size="10">V </tspan>and a basis <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,w</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub> of <tspan font-family="cmmi" font-size="10">W</tspan>, as well as a nonnegative integer <tspan font-family="cmmi" font-size="10">k</tspan>, such that
+</p>
+<div class="math-display" >
+<img 
+src="Na375x.png" alt="       {
+         wi   if i ≤ k
+T(vi) =  0W   if i &#x003E; k.
+" class="math-display"  /></div>
+<!--l. 688--><p class="noindent" >Moreover dimker<tspan font-family="cmmi" font-size="10">T </tspan>= <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">k </tspan>and dim<tspan font-family="cmmi" font-size="10">T</tspan>img(<tspan font-family="cmmi" font-size="10">V </tspan>) = <tspan font-family="cmmi" font-size="10">k</tspan>.
+</p>
+  </div>
+<!--l. 689--><p class="indent" >  </p></div>
+<!--l. 690--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 690--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Sketch of Proof.</tspan> </span> You might like to try this one yourself before reading on: it’s a repeated
+application of <tspan font-family="cmbx" font-size="10">??</tspan> .
+</p><!--l. 694--><p class="indent" >  Let ker<tspan font-family="cmmi" font-size="10">T </tspan>have dimension <tspan font-family="cmmi" font-size="10">n</tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">k</tspan>. We can pick <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">+1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,v</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> a basis of ker<tspan font-family="cmmi" font-size="10">T</tspan>. Then extend
+it to a basis <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,v</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> of <tspan font-family="cmmi" font-size="10">V </tspan>. The map <tspan font-family="cmmi" font-size="10">T </tspan>is injective over the span of <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,v</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> (since only
+0<sub><tspan font-family="cmmi" font-size="8">V</tspan> </sub> is in the kernel) so its images in <tspan font-family="cmmi" font-size="10">W </tspan>are linearly independent. Setting <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>) for
+                                                                                
+                                                                                
+each <tspan font-family="cmmi" font-size="10">i</tspan>, we get some linearly independent set in <tspan font-family="cmmi" font-size="10">W</tspan>. Then extend it again to a basis of
+<tspan font-family="cmmi" font-size="10">W</tspan>.                                                                                                             □
+</p>
+  </div>
+<!--l. 704--><p class="indent" >  This theorem is super important, not only because of applications but also because it will
+give you the right picture in your head of how a linear map is supposed to look. I’ll even draw
+a cartoon of it to make sure you remember:
+</p>
+<div class="center" 
+>
+<!--l. 710--><p class="noindent" >
+</p>
+</div>
+<!--l. 757--><p class="indent" >  In particular, for <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>, one can write <tspan font-family="cmmi" font-size="10">V </tspan>= ker<tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmsy" font-size="10">⊕</tspan><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">′</tspan>, so that <tspan font-family="cmmi" font-size="10">T </tspan>annihilates its kernel
+while sending <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">′ </tspan>to an isomorphic copy in <tspan font-family="cmmi" font-size="10">W</tspan>.
+</p><!--l. 762--><p class="indent" >  A corollary of this (which you should have expected anyways) is the so called rank-nullity
+theorem, which is the analog of the first isomorphism theorem.</p>
+<div class="mdframed" id="mdframed-251">
+<a 
+ id="x125-113021r389"></a>
+<div class="newtheorem">
+<!--l. 766--><p class="noindent" ><span class="head">
+<a 
+ id="x125-113022r7"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 9.7.7 </tspan><tspan font-family="cmss" font-size="10">(Rank-nullity theorem)</tspan><br 
+class="newline" /> </span><a 
+ id="x125-113023"></a> Let <tspan font-family="cmmi" font-size="10">V </tspan>and <tspan font-family="cmmi" font-size="10">W </tspan>be finite-dimensional vector spaces.
+If <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>, then
+</p>
+<div class="math-display" >
+<img 
+src="Na376x.png" alt="dim V = dim kerT + dim im  T.
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 771--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-252">
+<a 
+ id="x125-113024r390"></a>
+<div class="newtheorem">
+<!--l. 773--><p class="noindent" ><span class="head">
+                                                                                
+                                                                                
+<a 
+ id="x125-113025r8"></a>
+<tspan font-family="cmbx" font-size="10">Question 9.7.8.</tspan>  </span><a 
+ id="x125-113026"></a><tspan font-family="cmr" font-size="10">Conclude the rank-nullity theorem from</tspan> <tspan font-family="cmbx" font-size="10">??</tspan><tspan font-family="cmr" font-size="10"> .</tspan></p>
+  </div>
+<!--l. 774--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 776--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase82.htm" >next</a>] [<a 
+href="Nase80.htm" >prev</a>] [<a 
+href="Nase80.htm#tailNase80.htm" >prev-tail</a>] [<a 
+href="Nase81.htm" >front</a>] [<a 
+href="Nach12.htm#Nase81.htm" >up</a>] </p></div>
+<!--l. 776--><p class="indent" >  <a 
+ id="tailNase81.htm"></a> </p> 
+</body> 
+</html>

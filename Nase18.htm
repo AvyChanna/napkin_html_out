@@ -1,0 +1,169 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Orders of groups, and Lagrange’s theorem</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 462--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase19.htm" >next</a>] [<a 
+href="Nase17.htm" >prev</a>] [<a 
+href="Nase17.htm#tailNase17.htm" >prev-tail</a>] [<a 
+href="#tailNase18.htm">tail</a>] [<a 
+href="Nach4.htm#Nase18.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">1.4</span>  <a 
+ id="x36-360001.4"></a>Orders of groups, and Lagrange’s theorem</h3>
+<!--l. 463--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> (<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕p</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>)<tspan font-family="cmsy" font-size="8">×</tspan><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 465--><p class="indent" >  As is typical in math, we use the word “order” for way too many things. In groups, there are
+two notions of order. <a 
+ id="x36-36001r32"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 468--><p class="noindent" ><span class="head">
+<a 
+ id="x36-36002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 1.4.1.</tspan>  </span><a 
+ id="x36-36003"></a>The <tspan font-family="cmbx" font-size="10">order of a group</tspan> <tspan font-family="cmmi" font-size="10">G </tspan>is the number of elements of <tspan font-family="cmmi" font-size="10">G</tspan>. We denote
+this by <img 
+src="Na68x.png" alt="|G |"  class="left" align="middle" />. Note that the order may not be finite, as in <tspan font-family="msbm" font-size="10">ℤ</tspan>. We say <tspan font-family="cmmi" font-size="10">G </tspan>is a <tspan font-family="cmbx" font-size="10">finite group</tspan>
+just to mean that <img 
+src="Na69x.png" alt="|G |"  class="left" align="middle" /> is finite.
+</p>
+  </div>
+<!--l. 472--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-28">
+<a 
+ id="x36-36004r33"></a>
+<div class="newtheorem">
+<!--l. 473--><p class="noindent" ><span class="head">
+<a 
+ id="x36-36005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.4.2 </tspan>(Orders of groups)<br 
+class="newline" /> </span><a 
+ id="x36-36006"></a>For a prime <tspan font-family="cmmi" font-size="10">p</tspan>, <img 
+src="Na70x.png" alt="|(ℤ∕pℤ )× |"  class="left" align="middle" /> = <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1. In other words,
+the order of (<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕p</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>)<tspan font-family="cmsy" font-size="8">×</tspan> is <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmsy" font-size="10">−</tspan>1. As another example, the order of the symmetric group <tspan font-family="cmmi" font-size="10">S</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>
+is <img 
+src="Na71x.png" alt="|Sn |"  class="left" align="middle" /> = <tspan font-family="cmmi" font-size="10">n</tspan>! and the order of the dihedral group <tspan font-family="cmmi" font-size="10">D</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan><tspan font-family="cmmi" font-size="8">n</tspan></sub> is 2<tspan font-family="cmmi" font-size="10">n</tspan>.
+</p>
+  </div>
+<!--l. 479--><p class="indent" >  </p></div>
+<a 
+ id="x36-36007r34"></a>
+  <div class="newtheorem">
+<!--l. 482--><p class="noindent" ><span class="head">
+<a 
+ id="x36-36008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 1.4.3.</tspan>  </span><a 
+ id="x36-36009"></a>The <tspan font-family="cmbx" font-size="10">order of an element</tspan> <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G </tspan>is the smallest positive integer <tspan font-family="cmmi" font-size="10">n</tspan>
+such that <tspan font-family="cmmi" font-size="10">g</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> = 1<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub>, or <tspan font-family="cmsy" font-size="10">∞ </tspan>if no such <tspan font-family="cmmi" font-size="10">n </tspan>exists. We denote this by ord<tspan font-family="cmmi" font-size="10">g</tspan>.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 485--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-29">
+<a 
+ id="x36-36010r35"></a>
+<div class="newtheorem">
+<!--l. 486--><p class="noindent" ><span class="head">
+<a 
+ id="x36-36011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.4.4 </tspan>(Examples of orders)<br 
+class="newline" /> </span><a 
+ id="x36-36012"></a>The order of <tspan font-family="cmsy" font-size="10">−</tspan>1 in <tspan font-family="msbm" font-size="10">ℚ</tspan><sup><tspan font-family="cmsy" font-size="8">×</tspan></sup> is 2, while the order of 1
+in <tspan font-family="msbm" font-size="10">ℤ </tspan>is infinite.</p>
+  </div>
+<!--l. 489--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-30">
+<a 
+ id="x36-36013r36"></a>
+<div class="newtheorem">
+<!--l. 491--><p class="noindent" ><span class="head">
+<a 
+ id="x36-36014r5"></a>
+<tspan font-family="cmbx" font-size="10">Question 1.4.5.</tspan>  </span><a 
+ id="x36-36015"></a><tspan font-family="cmr" font-size="10">Find the order of each of the six elements of </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="cmr" font-size="10">6</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmr" font-size="10">, the cyclic group on six</tspan>
+<tspan font-family="cmr" font-size="10">elements. (See</tspan> <tspan font-family="cmbx" font-size="10">??</tspan><tspan font-family="cmr" font-size="10">  if you’ve forgotten what </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="cmr" font-size="10">6</tspan><tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmr" font-size="10">means.)</tspan></p>
+  </div>
+<!--l. 494--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-31">
+<a 
+ id="x36-36016r37"></a>
+<div class="newtheorem">
+<!--l. 495--><p class="noindent" ><span class="head">
+<a 
+ id="x36-36017r6"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.4.6 </tspan>(Primitive roots)<br 
+class="newline" /> </span><a 
+ id="x36-36018"></a>If you know olympiad number theory, this coincides
+with the definition of an order of a residue mod <tspan font-family="cmmi" font-size="10">p</tspan>. That’s why we use the term “order”
+there as well. In particular, a primitive root is precisely an element <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan>(<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕p</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>)<tspan font-family="cmsy" font-size="8">×</tspan> such
+that ord<tspan font-family="cmmi" font-size="10">g </tspan>= <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1.
+</p>
+  </div>
+<!--l. 500--><p class="indent" >  </p></div>
+<!--l. 501--><p class="indent" >  You might also know that if <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> <tspan font-family="cmsy" font-size="10">≡ </tspan>1 (mod <tspan font-family="cmmi" font-size="10">p</tspan>), then the order of <tspan font-family="cmmi" font-size="10">x </tspan>(mod <tspan font-family="cmmi" font-size="10">p</tspan>) must divide <tspan font-family="cmmi" font-size="10">n</tspan>.
+The same is true in a general group for exactly the same reason. <a 
+ id="x36-36019r38"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 505--><p class="noindent" ><span class="head">
+<a 
+ id="x36-36020r7"></a>
+<tspan font-family="cmbx" font-size="10">Fact 1.4.7.</tspan>  </span><a 
+ id="x36-36021"></a>If <tspan font-family="cmmi" font-size="10">g</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> = 1<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub> then ord<tspan font-family="cmmi" font-size="10">g </tspan>divides <tspan font-family="cmmi" font-size="10">n</tspan>.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 506--><p class="indent" >
+Also, you can show that any element of a finite group has a finite order. The proof is just an
+olympiad-style pigeonhole argument. Consider the infinite sequence 1<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub><tspan font-family="cmmi" font-size="10">,g,g</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan>, and find two
+elements that are the same. <a 
+ id="x36-36022r39"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 513--><p class="noindent" ><span class="head">
+<a 
+ id="x36-36023r8"></a>
+<tspan font-family="cmbx" font-size="10">Fact 1.4.8.</tspan>  </span><a 
+ id="x36-36024"></a>Let <tspan font-family="cmmi" font-size="10">G </tspan>be a finite group. For any <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G</tspan>, ord<tspan font-family="cmmi" font-size="10">g </tspan>is finite.
+</p>
+  </div>
+<!--l. 515--><p class="indent" >
+</p><!--l. 517--><p class="indent" >  What’s the last property of (<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕p</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>)<tspan font-family="cmsy" font-size="8">×</tspan> that you know from olympiad math? We have Fermat’s
+little theorem: for any <tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan>(<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕p</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>)<tspan font-family="cmsy" font-size="8">×</tspan>, we have <tspan font-family="cmmi" font-size="10">a</tspan><sup><tspan font-family="cmmi" font-size="8">p</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup> <tspan font-family="cmsy" font-size="10">≡ </tspan>1 (mod <tspan font-family="cmmi" font-size="10">p</tspan>). This is no coincidence: exactly
+the same thing is true in a more general setting.</p>
+<div class="mdframed" id="mdframed-32">
+<a 
+ id="x36-36025r40"></a>
+<div class="newtheorem">
+<!--l. 524--><p class="noindent" ><span class="head">
+<a 
+ id="x36-36026r9"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 1.4.9 </tspan><tspan font-family="cmss" font-size="10">(Lagrange’s theorem for orders)</tspan><br 
+class="newline" /> </span><a 
+ id="x36-36027"></a>Let <tspan font-family="cmmi" font-size="10">G </tspan>be any finite group. Then <tspan font-family="cmmi" font-size="10">x</tspan><sup><img 
+src="Na72x.png" alt="|G|"  class="left" align="middle" /></sup> = 1<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub>
+for any <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G</tspan>.
+</p>
+  </div>
+<!--l. 527--><p class="indent" >  </p></div>
+<!--l. 528--><p class="indent" >  Keep this result in mind! We’ll prove it later in the generality of <tspan font-family="cmbx" font-size="10">??</tspan> .
+                                                                                
+                                                                                
+</p>
+  <!--l. 531--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase19.htm" >next</a>] [<a 
+href="Nase17.htm" >prev</a>] [<a 
+href="Nase17.htm#tailNase17.htm" >prev-tail</a>] [<a 
+href="Nase18.htm" >front</a>] [<a 
+href="Nach4.htm#Nase18.htm" >up</a>] </p></div>
+<!--l. 531--><p class="indent" >  <a 
+ id="tailNase18.htm"></a> </p> 
+</body> 
+</html>

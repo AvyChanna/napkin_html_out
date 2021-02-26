@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Real and complex analysis</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 145--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase11.htm" >next</a>] [<a 
+href="Nase9.htm" >prev</a>] [<a 
+href="Nase9.htm#tailNase9.htm" >prev-tail</a>] [<a 
+href="#tailNase10.htm">tail</a>] [<a 
+href="Nach3.htm#Nase10.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">0.3</span>  <a 
+ id="x27-270000.3"></a>Real and complex analysis</h3>
+     <ul class="itemize1">
+     <li class="itemize"><a 
+href="Napa8.htm#x245-233000VIII"><tspan font-family="cmssbx" font-size="10">Calculus 101</tspan><!--tex4ht:ref: part:calc --></a><tspan font-family="cmssbx" font-size="10">.</tspan><br 
+class="newline" /> In this part, we’ll use our built-up knowledge of metric and topological spaces to
+     give short, rigorous definitions and theorems typical of high school calculus. That
+     is, we’ll really define and prove most everything you’ve seen about <tspan font-family="cmbx" font-size="10">limits</tspan>, <tspan font-family="cmbx" font-size="10">series</tspan>,
+     <tspan font-family="cmbx" font-size="10">derivatives</tspan>, and <tspan font-family="cmbx" font-size="10">integrals</tspan>.
+     <!--l. 154--><p class="noindent" >Although this might seem intimidating, it turns out that actually, by the time
+     we start this chapter, <tspan font-family="cmti" font-size="10">the hard work has already been done</tspan>: the notion of limits,
+     open sets, and compactness will make short work of what was swept under the rug
+     in AP calculus. Most of the proofs will thus actually be quite short. We sit back
+     and watch all the pieces slowly come together as a reward for our careful study of
+     topology beforehand.
+     </p><!--l. 163--><p class="noindent" >That said, if you are willing to suspend belief, you can actually read most of the
+     other parts without knowing the exact details of all the calculus here, so in some
+     sense this part is “optional”.
+     </p></li>
+     <li class="itemize"><a 
+href="Napa9.htm#x290-278000IX"><tspan font-family="cmssbx" font-size="10">Complex Analysis</tspan><!--tex4ht:ref: part:cmplxana --></a><tspan font-family="cmssbx" font-size="10">.</tspan><br 
+class="newline" /> It turns out that <tspan font-family="cmbx" font-size="10">holomorphic functions</tspan> (complex-differentiable functions) are close
+     to the nicest things ever: they turn out to be given by a Taylor series (i.e. are basically
+     polynomials). This means we’ll be able to prove unreasonably nice results about
+     holomorphic functions <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>, like
+          <ul class="itemize2">
+          <li class="itemize">they are determined by just a few inputs,
+          </li>
+          <li class="itemize">their contour integrals are all zero,
+          </li>
+          <li class="itemize">they can’t be bounded unless they are constant,
+          </li>
+          <li class="itemize">….</li></ul>
+                                                                                
+                                                                                
+     <!--l. 182--><p class="noindent" >We then introduce <tspan font-family="cmbx" font-size="10">meromorphic functions</tspan>, which are like quotients of holomorphic
+     functions, and find that we can detect their zeros by simply drawing loops in the plane
+     and integrating over them: the famous <tspan font-family="cmbx" font-size="10">residue theorem</tspan> appears. (In the practice
+     problems, you will see this even gives us a way to evaluate real integrals that can’t be
+     evaluated otherwise.)
+     </p></li>
+     <li class="itemize"><a 
+href="Napa10.htm#x319-301000X"><tspan font-family="cmssbx" font-size="10">Measure Theory</tspan><!--tex4ht:ref: part:measure --></a><tspan font-family="cmssbx" font-size="10">.</tspan><br 
+class="newline" /> Measure theory is the upgraded version of integration. The Riemann integration is
+     for a lot of purposes not really sufficient; for example, if <tspan font-family="cmmi" font-size="10">f </tspan>is the function
+     equals 1 at rational numbers but 0 at irrational numbers, we would hope that
+     <tspan font-family="cmex" font-size="10">∫</tspan>
+       <sub><tspan font-family="cmr" font-size="8">0</tspan></sub><sup><tspan font-family="cmr" font-size="8">1</tspan></sup><tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) <tspan font-family="cmmi" font-size="10">dx </tspan>= 0, but the Riemann integral is not capable of handling this function
+     <tspan font-family="cmmi" font-size="10">f</tspan>.
+     <!--l. 198--><p class="noindent" >The <tspan font-family="cmbx" font-size="10">Lebesgue integral</tspan> will handle these mistakes by assigning a <tspan font-family="cmti" font-size="10">measure </tspan>to a generic
+     space Ω, making it into a <tspan font-family="cmbx" font-size="10">measure space</tspan>. This will let us develop a richer theory of
+     integration where the above integral <tspan font-family="cmti" font-size="10">does </tspan>work out to zero because the “rational
+     numbers have measure zero”. Even the development of the measure will be an
+     achievement, because it means we’ve developed a rigorous, complete way of talking
+     about what notions like area and volume mean — on any space, not just <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>! So for
+     example the Lebesgue integral will let us integrate functions over any <tspan font-family="cmbx" font-size="10">measure</tspan>
+     <tspan font-family="cmbx" font-size="10">space</tspan>.
+     </p></li>
+     <li class="itemize"><a 
+href="Napa11.htm#x363-338000XI"><tspan font-family="cmssbx" font-size="10">Probability (TO DO)</tspan><!--tex4ht:ref: part:prob --></a><tspan font-family="cmssbx" font-size="10">.</tspan><br 
+class="newline" /> Using the tools of measure theory, we’ll be able to start giving rigorous definitions of
+     <tspan font-family="cmbx" font-size="10">probability</tspan>, too. We’ll see that a <tspan font-family="cmbx" font-size="10">random variable</tspan> is actually a function from a
+     measure space of worlds to <tspan font-family="msbm" font-size="10">ℝ</tspan>, giving us a rigorous way to talk about its probabilities. We
+     can then start actually stating results like the <tspan font-family="cmbx" font-size="10">law of large numbers</tspan> and <tspan font-family="cmbx" font-size="10">central</tspan>
+     <tspan font-family="cmbx" font-size="10">limit theorem</tspan> in ways that make them both easy to state and straightforward to
+     prove.
+     </li>
+     <li class="itemize"><a 
+href="Napa12.htm#x383-363000XII"><tspan font-family="cmssbx" font-size="10">Differential Geometry</tspan><!--tex4ht:ref: part:diffgeo --></a><tspan font-family="cmssbx" font-size="10">.</tspan><br 
+class="newline" /> Multivariable calculus is often confusing because of all the partial derivatives.
+     But we’ll find out that, armed with our good understanding of linear algebra,
+     that we’re really looking at a <tspan font-family="cmbx" font-size="10">total derivative</tspan>: at every point of a function
+     <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>we can associate a <tspan font-family="cmti" font-size="10">linear map </tspan><tspan font-family="cmmi" font-size="10">Df </tspan>which captures in one object
+     the notion of partial derivatives. Set up this way, we’ll get to see versions of
+     <tspan font-family="cmbx" font-size="10">differential forms</tspan> and <tspan font-family="cmbx" font-size="10">Stokes’ theorem</tspan>, and we finally will know what the
+     notation <tspan font-family="cmmi" font-size="10">dx </tspan>really means. In the end, we’ll say a little bit about manifolds in
+     general.</li></ul>
+                                                                                
+                                                                                
+  <!--l. 235--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase11.htm" >next</a>] [<a 
+href="Nase9.htm" >prev</a>] [<a 
+href="Nase9.htm#tailNase9.htm" >prev-tail</a>] [<a 
+href="Nase10.htm" >front</a>] [<a 
+href="Nach3.htm#Nase10.htm" >up</a>] </p></div>
+<!--l. 235--><p class="indent" >  <a 
+ id="tailNase10.htm"></a> </p> 
+</body> 
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>(Optional) The tangent and contangent space</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 409--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach52.htm" >next</a>] [<a 
+href="Nase289.htm" >prev</a>] [<a 
+href="Nase289.htm#tailNase289.htm" >prev-tail</a>] [<a 
+href="Nase273.htm#tailNase290.htm">tail</a>] [<a 
+href="Nach51.htm#Nase307.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">45.7</span>  <a 
+ id="x414-39200045.7"></a>(Optional) The tangent and contangent space</h3>
+<!--l. 410--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Draw a line tangent to a circle, or a plane tangent to a</tspan>
+<tspan font-family="cmti" font-size="10">sphere.</tspan>
+</p><!--l. 412--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">M </tspan>be a smooth manifold and <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">M </tspan>a point. I omitted the definition of <tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">M</tspan>) earlier,
+but want to actually define it now.
+</p><!--l. 416--><p class="indent" >  As I said, geometrically we know what this <tspan font-family="cmti" font-size="10">should </tspan>look like for our usual examples. For
+example, if <tspan font-family="cmmi" font-size="10">M </tspan>= <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> is a circle embedded in <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, then the tangent vector at a point <tspan font-family="cmmi" font-size="10">p </tspan>should
+just look like a vector running off tangent to the circle. Similarly, given a sphere <tspan font-family="cmmi" font-size="10">M </tspan>= <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, the
+tangent space at a point <tspan font-family="cmmi" font-size="10">p </tspan>along the sphere would look like plane tangent to <tspan font-family="cmmi" font-size="10">M </tspan>at
+<tspan font-family="cmmi" font-size="10">p</tspan>.
+</p>
+<div class="center" 
+>
+<!--l. 425--><p class="noindent" >
+</p>
+</div>
+<!--l. 439--><p class="indent" >  However, one of the points of all this manifold stuff is that we really want to see
+the manifold as an <tspan font-family="cmti" font-size="10">intrinsic object</tspan>, in its own right, rather than as embedded in
+<tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>.<span class="footnote-mark"><a 
+href="Na415.htm#fn1x50"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x414-392001f1"></a> 
+So, we would like our notion of a tangent vector to not refer to an ambient space, but only to
+intrinsic properties of the manifold <tspan font-family="cmmi" font-size="10">M </tspan>in question.
+</p>
+  <h4 class="subsectionHead"><span class="titlemark">45.7.i</span>  <a 
+ id="x414-39300045.7.i"></a>Tangent space</h4>
+                                                                                
+                                                                                
+<!--l. 459--><p class="noindent" >To motivate this construction, let us start with an embedded case for which we know the
+answer already: a sphere.
+</p><!--l. 463--><p class="indent" >  Suppose <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>is a function on a sphere, and take a point <tspan font-family="cmmi" font-size="10">p</tspan>. Near the point
+<tspan font-family="cmmi" font-size="10">p</tspan>, <tspan font-family="cmmi" font-size="10">f </tspan>looks like a function on some open neighborhood of the origin. Thus we can
+think of taking a <tspan font-family="cmti" font-size="10">directional derivative </tspan>along a vector <span class='accentvec'><tspan font-family="cmmi" font-size="10">v</tspan></span> in the imagined tangent
+plane (i.e. some partial derivative). For a fixed <span class='accentvec'><tspan font-family="cmmi" font-size="10">v</tspan></span> this partial derivative is a linear
+map
+</p>
+  <div class="math-display" >
+<img 
+src="Na2103x.png" alt="      ∞
+D ⃗v: C  (M ) → ℝ.
+" class="math-display"  /></div>
+<!--l. 473--><p class="indent" >  It turns out this goes the other way: if you know what <tspan font-family="cmmi" font-size="10">D</tspan><sub><span class='accentvec'><tspan font-family="cmmi" font-size="8">v</tspan></span></sub> does to every smooth function,
+then you can recover <tspan font-family="cmmi" font-size="10">v</tspan>. This is the trick we use in order to create the tangent space. Rather
+than trying to specify a vector <span class='accentvec'><tspan font-family="cmmi" font-size="10">v</tspan></span> directly (which we can’t do because we don’t have an ambient
+space),</p>
+<div class="mdframed" id="mdframed-747">
+<!--l. 480--><p class="noindent" ><tspan font-family="cmbx" font-size="10">The vectors </tspan><tspan font-family="cmbxti" font-size="10">are </tspan><tspan font-family="cmbx" font-size="10">partial-derivative-like maps.</tspan></p><!--l. 481--><p class="noindent" ></p>
+  </div>
+<!--l. 482--><p class="indent" >  More formally, we have the following. <a 
+ id="x414-393001r1164"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 484--><p class="noindent" ><span class="head">
+<a 
+ id="x414-393002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 45.7.1.</tspan>  </span><a 
+ id="x414-393003"></a>A  <tspan font-family="cmbx" font-size="10">derivation</tspan>  <tspan font-family="cmmi" font-size="10">D  </tspan>at  <tspan font-family="cmmi" font-size="10">p  </tspan>is  a  linear  map  <tspan font-family="cmmi" font-size="10">D</tspan>: <tspan font-family="cmmi" font-size="10">C</tspan><sup><tspan font-family="cmsy" font-size="8">∞</tspan></sup>(<tspan font-family="cmmi" font-size="10">M</tspan>)   <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>
+(i.e. assigning a real number to every smooth <tspan font-family="cmmi" font-size="10">f</tspan>) satisfying the following Leibniz rule:
+for any <tspan font-family="cmmi" font-size="10">f</tspan>, <tspan font-family="cmmi" font-size="10">g </tspan>we have the equality
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na2104x.png" alt="D (fg) = f (p )⋅D (g )+ g(p)⋅D (f) ∈ ℝ.
+" class="math-display"  /></div>
+  </div>
+<!--l. 490--><p class="indent" >
+This is just a “product rule”. Then the tangent space is easy to define: <a 
+ id="x414-393004r1165"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 494--><p class="noindent" ><span class="head">
+<a 
+ id="x414-393005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 45.7.2.</tspan>  </span><a 
+ id="x414-393006"></a>A <tspan font-family="cmbx" font-size="10">tangent vector</tspan> is just a derivation at <tspan font-family="cmmi" font-size="10">p</tspan>, and the <tspan font-family="cmbx" font-size="10">tangent space</tspan>
+<tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">M</tspan>) is simply the set of all these tangent vectors.
+</p>
+  </div>
+<!--l. 497--><p class="indent" >
+In this way we have constructed the tangent space.
+</p><!--l. 500--><p class="noindent" >
+</p>
+  <h4 class="subsectionHead"><span class="titlemark">45.7.ii</span>  <a 
+ id="x414-39400045.7.ii"></a>The cotangent space</h4>
+<!--l. 501--><p class="noindent" >In fact, one can show that the product rule for <tspan font-family="cmmi" font-size="10">D </tspan>is equivalent to the following three
+conditions:
+     </p><dl class="enumerate"><dt class="enumerate">
+   1. </dt><dd 
+class="enumerate"><tspan font-family="cmmi" font-size="10">D </tspan>is linear, meaning <tspan font-family="cmmi" font-size="10">D</tspan>(<tspan font-family="cmmi" font-size="10">af </tspan>+ <tspan font-family="cmmi" font-size="10">bg</tspan>) = <tspan font-family="cmmi" font-size="10">aD</tspan>(<tspan font-family="cmmi" font-size="10">f</tspan>) + <tspan font-family="cmmi" font-size="10">bD</tspan>(<tspan font-family="cmmi" font-size="10">g</tspan>).
+     </dd><dt class="enumerate">
+   2. </dt><dd 
+class="enumerate"><tspan font-family="cmmi" font-size="10">D</tspan>(1<sub><tspan font-family="cmmi" font-size="8">M</tspan></sub>) = 0, where 1<sub><tspan font-family="cmmi" font-size="8">M</tspan></sub> is the constant function on <tspan font-family="cmmi" font-size="10">M</tspan>.
+     </dd><dt class="enumerate">
+   3. </dt><dd 
+class="enumerate"><tspan font-family="cmmi" font-size="10">D</tspan>(<tspan font-family="cmmi" font-size="10">fg</tspan>) = 0 whenever <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">p</tspan>) = <tspan font-family="cmmi" font-size="10">g</tspan>(<tspan font-family="cmmi" font-size="10">p</tspan>) = 0. Intuitively, this means that if a function
+     <tspan font-family="cmmi" font-size="10">h </tspan>= <tspan font-family="cmmi" font-size="10">fg </tspan>vanishes to second order at <tspan font-family="cmmi" font-size="10">p</tspan>, then its derivative along <tspan font-family="cmmi" font-size="10">D </tspan>should be zero.</dd></dl>
+<!--l. 512--><p class="indent" >  This suggests a third equivalent definition: suppose we define
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na2105x.png" alt="𝔪p := {f ∈ C ∞M  | f(p) = 0}
+" class="math-display"  /></div>
+<!--l. 515--><p class="indent" >  to be the set of functions which vanish at <tspan font-family="cmmi" font-size="10">p </tspan>(this is called the <tspan font-family="cmti" font-size="10">maximal ideal </tspan>at <tspan font-family="cmmi" font-size="10">p</tspan>). In that
+case,
+</p>
+  <div class="math-display" >
+<img 
+src="Na2106x.png" alt="     {                          }
+       ∑
+𝔪2p =      fi ⋅gi | fi(p) = gi(p) = 0
+        i
+" class="math-display"  /></div>
+<!--l. 520--><p class="indent" >  is the set of functions vanishing to second order at <tspan font-family="cmmi" font-size="10">p</tspan>. Thus, a tangent vector is really just a
+linear map
+</p>
+  <div class="math-display" >
+<img 
+src="Na2107x.png" alt="𝔪p∕ 𝔪2p → ℝ.
+" class="math-display"  /></div>
+<!--l. 523--><p class="indent" >  In other words, the tangent space is actually the dual space of <tspan font-family="eufm" font-size="10">𝔪</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="eufm" font-size="10">𝔪</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>; for this reason, the
+space <tspan font-family="eufm" font-size="10">𝔪</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="eufm" font-size="10">𝔪</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> is defined as the <tspan font-family="cmbx" font-size="10">cotangent space</tspan> (the dual of the tangent space). This
+definition is even more abstract than the one with derivations above, but has some nice
+properties: </p>
+     <ul class="itemize1">
+     <li class="itemize">it is coordinate-free, and
+                                                                                
+                                                                                
+     </li>
+     <li class="itemize">it’s defined only in terms of the smooth functions <tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>, which will be really
+     helpful later on in algebraic geometry when we have varieties or schemes and can
+     repeat this definition.</li></ul>
+<!--l. 536--><p class="noindent" >
+</p>
+  <h4 class="subsectionHead"><span class="titlemark">45.7.iii</span>  <a 
+ id="x414-39500045.7.iii"></a>Sanity check</h4>
+<!--l. 537--><p class="noindent" >With all these equivalent definitions, the last thing I should do is check that this definition of
+tangent space actually gives a vector space of dimension <tspan font-family="cmmi" font-size="10">n</tspan>. To do this it suffices to show verify
+this for open subsets of <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>, which will imply the result for general manifolds <tspan font-family="cmmi" font-size="10">M </tspan>(which are
+locally open subsets of <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>). Using some real analysis, one can prove the following
+result:</p>
+<div class="mdframed" id="mdframed-748">
+<a 
+ id="x414-395001r1166"></a>
+<div class="newtheorem">
+<!--l. 544--><p class="noindent" ><span class="head">
+<a 
+ id="x414-395002r3"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 45.7.3</tspan><br 
+class="newline" /> </span><a 
+ id="x414-395003"></a>Suppose <tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmsy" font-size="10">⊂ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> is open and 0 <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">M</tspan>. Then
+</p>
+<div class="math-display" >
+<img 
+src="Na2108x.png" alt="𝔪0 = {smooth  functions f : f(0) = 0}
+𝔪2 = {smooth  functions f : f(0) = 0,(∇f )0 = 0}.
+  0
+" class="math-display"  /></div>
+<!--l. 552--><p class="noindent" >In other words <tspan font-family="eufm" font-size="10">𝔪</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>  is the set of functions which vanish at 0 and such that all first
+derivatives of <tspan font-family="cmmi" font-size="10">f </tspan>vanish at zero.
+</p>
+  </div>
+<!--l. 554--><p class="indent" >  </p></div>
+<!--l. 555--><p class="indent" >  Thus, it follows that there is an isomorphism
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na2109x.png" alt="                      [                  ]
+𝔪 ∕𝔪2 ∼= ℝn   by  f ↦→   -∂f-(0),...,-∂f-(0)
+ 0   0                 ∂x1        ∂xn
+" class="math-display"  /></div>
+<!--l. 561--><p class="indent" >  and so the cotangent space, hence tangent space, indeed has dimension <tspan font-family="cmmi" font-size="10">n</tspan>.
+                                                                                
+                                                                                
+</p>
+  <!--l. 567--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach52.htm" >next</a>] [<a 
+href="Nase289.htm" >prev</a>] [<a 
+href="Nase289.htm#tailNase289.htm" >prev-tail</a>] [<a 
+href="Nase290.htm" >front</a>] [<a 
+href="Nach51.htm#Nase307.htm" >up</a>] </p></div>
+<!--l. 567--><p class="indent" >  <a 
+ id="tailNase290.htm"></a>  </p> 
+</body> 
+</html>

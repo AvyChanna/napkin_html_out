@@ -1,0 +1,230 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Analytic functions</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 210--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase197.htm" >next</a>] [<a 
+href="Nase192.htm" >prev</a>] [<a 
+href="Nase192.htm#tailNase192.htm" >prev-tail</a>] [<a 
+href="Nach32.htm#tailNase193.htm">tail</a>] [<a 
+href="Nase193.htm#Nach33.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">29.4</span>  <a 
+ id="x279-26800029.4"></a>Analytic functions</h3>
+<!--l. 212--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">The piecewise </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sup><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan><tspan font-family="cmmi" font-size="8">∕x</tspan></sup> <tspan font-family="cmti" font-size="10">or </tspan>0 <tspan font-family="cmti" font-size="10">function is not analytic, but is</tspan>
+<tspan font-family="cmti" font-size="10">smooth.</tspan>
+</p><!--l. 213--><p class="indent" >  With all these nice results about power series, we now have a way to do this process
+the other way: suppose that <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>is a function. Can we express it as a power
+series?
+</p><!--l. 218--><p class="indent" >  Functions for which this <tspan font-family="cmti" font-size="10">is </tspan>true are called analytic. <a 
+ id="x279-268001r882"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 221--><p class="noindent" ><span class="head">
+<a 
+ id="x279-268002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 29.4.1.</tspan>  </span><a 
+ id="x279-268003"></a>A function <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>is <tspan font-family="cmbx" font-size="10">analytic</tspan> at the point <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U </tspan>if there exists
+an open neighborhood <tspan font-family="cmmi" font-size="10">V </tspan>of <tspan font-family="cmmi" font-size="10">p </tspan>(inside <tspan font-family="cmmi" font-size="10">U</tspan>) and a power series <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> such that
+</p>
+  <div class="math-display" >
+<img 
+src="Na1597x.png" alt="       ∑
+f(x) =    an(x − p)n
+       n≥0
+" class="math-display"  /></div>
+<!--l. 226--><p class="indent" >  for any <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>. As usual, the whole function is analytic if it is analytic at each point.
+</p>
+  </div>
+<!--l. 229--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-571">
+<a 
+ id="x279-268004r883"></a>
+<div class="newtheorem">
+<!--l. 231--><p class="noindent" ><span class="head">
+<a 
+ id="x279-268005r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Question 29.4.2.</tspan>  </span><a 
+ id="x279-268006"></a><tspan font-family="cmr" font-size="10">Show that if </tspan><tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmr" font-size="10">is analytic, then it’s smooth.</tspan></p>
+  </div>
+<!--l. 232--><p class="indent" >  </p></div>
+<!--l. 233--><p class="indent" >  Moreover, if <tspan font-family="cmmi" font-size="10">f </tspan>is analytic, then by the corollary above its coefficients are actually described
+exactly by
+</p>
+  <div class="math-display" >
+<img 
+src="Na1598x.png" alt="       ∑   f(n)(p)
+f(x) =     ------(x − p)n.
+       n≥0   n!
+" class="math-display"  /></div>
+<!--l. 237--><p class="indent" >  Even if <tspan font-family="cmmi" font-size="10">f </tspan>is smooth but not analytic, we can at least write down the power series; we give
+this a name. <a 
+ id="x279-268007r884"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 241--><p class="noindent" ><span class="head">
+<a 
+ id="x279-268008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 29.4.3.</tspan>  </span><a 
+ id="x279-268009"></a>For smooth <tspan font-family="cmmi" font-size="10">f</tspan>, the power series <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">≥</tspan><tspan font-family="cmr" font-size="8">0</tspan></sub><img 
+src="Na1599x.png" alt="f(n)(p)-
+  n!"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> is called the <tspan font-family="cmbx" font-size="10">Taylor</tspan>
+<tspan font-family="cmbx" font-size="10">series</tspan> of <tspan font-family="cmmi" font-size="10">f </tspan>at <tspan font-family="cmmi" font-size="10">p</tspan>.
+</p>
+  </div>
+<!--l. 244--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-572">
+<a 
+ id="x279-268010r885"></a>
+<div class="newtheorem">
+<!--l. 247--><p class="noindent" ><span class="head">
+<a 
+ id="x279-268011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 29.4.4 </tspan>(Examples of analytic functions)<br 
+class="newline" /> </span><a 
+ id="x279-268012"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">Polynomials, sin, cos, <tspan font-family="cmmi" font-size="10">e</tspan><sup><tspan font-family="cmmi" font-size="8">x</tspan></sup>, log all turn out to be analytic.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The smooth function from before defined by
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na1600x.png" alt="       {
+f(x) =  exp (− 1∕x)  x &#x003E; 0
+        0           x ≤ 0
+" class="math-display"  /></div>
+    <!--l. 260--><p class="noindent" >is <tspan font-family="cmti" font-size="10">not </tspan>analytic. Indeed, suppose for contradiction it was. As all the derivatives are
+    zero, its Taylor series would be 0 + 0<tspan font-family="cmmi" font-size="10">x </tspan>+ 0<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">…</tspan>. This Taylor series does <tspan font-family="cmti" font-size="10">converge</tspan>,
+    but not to the right value — as <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">𝜀</tspan>) <tspan font-family="cmmi" font-size="10">&#x003E; </tspan>0 for any <tspan font-family="cmmi" font-size="10">𝜀 &#x003E; </tspan>0, contradiction.</p></dd></dl>
+</p>
+  </div>
+<!--l. 267--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-573">
+<a 
+ id="x279-268015r886"></a>
+<div class="newtheorem">
+<!--l. 270--><p class="noindent" ><span class="head">
+<a 
+ id="x279-268016r5"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 29.4.5 </tspan><tspan font-family="cmss" font-size="10">(Analytic iff Taylor series has positive radius)</tspan><br 
+class="newline" /> </span><a 
+ id="x279-268017"></a>Let <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>be a smooth
+function. Then <tspan font-family="cmmi" font-size="10">f </tspan>is analytic if and only if for any point <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U</tspan>, its Taylor series at <tspan font-family="cmmi" font-size="10">p </tspan>has
+positive radius of convergence.
+</p>
+  </div>
+<!--l. 274--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-574">
+<a 
+ id="x279-268018r887"></a>
+<div class="newtheorem">
+<!--l. 277--><p class="noindent" ><span class="head">
+<a 
+ id="x279-268019r6"></a>
+<tspan font-family="cmbx" font-size="10">Example 29.4.6</tspan><br 
+class="newline" /> </span><a 
+ id="x279-268020"></a>It now follows that <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = sin(<tspan font-family="cmmi" font-size="10">x</tspan>) is analytic. To see that, we can
+compute
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 288--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">f</tspan>(0)</td>  <td 
+class="align-even"> = sin0 = 0</td>    <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">f</tspan><tspan font-family="cmsy" font-size="10">′</tspan>(0)</td>  <td 
+class="align-even"> = cos0 = 1</td>    <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">f</tspan><tspan font-family="cmsy" font-size="10">′′</tspan>(0)</td> <td 
+class="align-even"> = <tspan font-family="cmsy" font-size="10">−</tspan>sin0 = 0</td>  <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">f</tspan><sup><tspan font-family="cmr" font-size="8">(3)</tspan></sup>(0)</td><td 
+class="align-even"> = <tspan font-family="cmsy" font-size="10">−</tspan>cos0 = <tspan font-family="cmsy" font-size="10">−</tspan>1</td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">f</tspan><sup><tspan font-family="cmr" font-size="8">(4)</tspan></sup>(0)</td><td 
+class="align-even"> = sin0 = 0</td>    <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">f</tspan><sup><tspan font-family="cmr" font-size="8">(5)</tspan></sup>(0)</td><td 
+class="align-even"> = cos0 = 1</td>    <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">f</tspan><sup><tspan font-family="cmr" font-size="8">(6)</tspan></sup>(0)</td><td 
+class="align-even"> = <tspan font-family="cmsy" font-size="10">−</tspan>sin0 = 0</td>  <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>      <td 
+class="align-even"><img 
+src="Na1602x.png" alt="..
+."  class="mathpalette"  /></td>            <td 
+class="align-label"></td><td 
+class="align-label">                                                           </td></tr></table>
+</p><!--l. 289--><p class="noindent" >and so by continuing the pattern (which repeats every four) we find the Taylor series
+is
+</p>
+<div class="math-display" >
+<img 
+src="Na1603x.png" alt="    z3   z5   z7
+z − 3! + 5! − 7! + ...
+" class="math-display"  /></div>
+<!--l. 292--><p class="noindent" >which is seen to have radius of convergence <tspan font-family="cmmi" font-size="10">R </tspan>= <tspan font-family="cmsy" font-size="10">∞</tspan>.
+</p>
+  </div>
+<!--l. 293--><p class="indent" >  </p></div>
+<!--l. 295--><p class="indent" >  Like with differentiable functions:</p>
+<div class="mdframed" id="mdframed-575">
+<a 
+ id="x279-268021r888"></a>
+<div class="newtheorem">
+<!--l. 297--><p class="noindent" ><span class="head">
+<a 
+ id="x279-268022r7"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmssbx" font-size="10">Proposition 29.4.7 </tspan><tspan font-family="cmss" font-size="10">(All your usual closure properties for analytic functions)</tspan><br 
+class="newline" /> </span><a 
+ id="x279-268023"></a>The      sums,
+products, compositions, nonzero quotients of analytic functions are analytic.
+</p>
+  </div>
+<!--l. 300--><p class="indent" >  </p></div>
+<!--l. 301--><p class="indent" >  The upshot of this is is that most of your usual functions that occur in nature, or even
+artificial ones like <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmmi" font-size="10">e</tspan><sup><tspan font-family="cmmi" font-size="8">x</tspan></sup> + <tspan font-family="cmmi" font-size="10">x</tspan>sin(<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>), will be analytic, hence describable locally by Taylor
+series.
+                                                                                
+                                                                                
+</p>
+  <!--l. 306--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase197.htm" >next</a>] [<a 
+href="Nase192.htm" >prev</a>] [<a 
+href="Nase192.htm#tailNase192.htm" >prev-tail</a>] [<a 
+href="Nase193.htm" >front</a>] [<a 
+href="Nase193.htm#Nach33.htm" >up</a>] </p></div>
+<!--l. 306--><p class="indent" >  <a 
+ id="tailNase193.htm"></a> </p> 
+</body> 
+</html>

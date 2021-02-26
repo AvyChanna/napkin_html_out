@@ -1,0 +1,191 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Additive and abelian categories</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 84--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase426.htm" >next</a>] [<a 
+href="Nase396.htm" >prev</a>] [<a 
+href="Nase396.htm#tailNase396.htm" >prev-tail</a>] [<a 
+href="Nach62.htm#tailNase397.htm">tail</a>] [<a 
+href="Nase423.htm#Nase425.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">63.2</span>  <a 
+ id="x556-53200063.2"></a>Additive and abelian categories</h3>
+<!--l. 85--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmss" font-size="10">Ab</tspan><tspan font-family="cmti" font-size="10">,</tspan> <tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmti" font-size="10">, or more generally</tspan> <tspan font-family="cmss" font-size="10">Mod</tspan><sub><tspan font-family="cmmi" font-size="8">R</tspan></sub><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 86--><p class="indent" >  We can now define the notion of an additive and abelian category, which are the types of
+categories where this notion is most useful.
+<a 
+ id="x556-532001r1607"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 90--><p class="noindent" ><span class="head">
+<a 
+ id="x556-532002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 63.2.1.</tspan>  </span><a 
+ id="x556-532003"></a>An <tspan font-family="cmbx" font-size="10">additive category</tspan> <tspan font-family="cmsy" font-size="10">𝒜 </tspan>is one such that: </p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmsy" font-size="10">𝒜 </tspan>has a zero object, and any two objects have a product.
+     </li>
+     <li class="itemize">More importantly: every Hom<sub><tspan font-family="cmsy" font-size="8">𝒜</tspan></sub>(<tspan font-family="cmmi" font-size="10">A,B</tspan>) forms an <tspan font-family="cmti" font-size="10">abelian group </tspan>(written additively)
+     such that composition distributes over addition:
+<div class="math-display" >
+<img 
+src="Na3089x.png" alt="(g + h )∘f = g ∘f + h ∘f  and  f ∘(g + h) = f ∘ g + f ∘ h.
+" class="math-display"  /></div>
+     <!--l. 98--><p class="noindent" >The zero map serves as the identity element for each group.</p></li></ul>
+  </div>
+<!--l. 100--><p class="indent" >
+<a 
+ id="x556-532004r1608"></a>
+</p>
+                                                                                
+                                                                                
+  <div class="newtheorem">
+<!--l. 102--><p class="noindent" ><span class="head">
+<a 
+ id="x556-532005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 63.2.2.</tspan>  </span><a 
+ id="x556-532006"></a>An <tspan font-family="cmbx" font-size="10">abelian category</tspan> <tspan font-family="cmsy" font-size="10">𝒜 </tspan>is one with the additional properties that for
+any morphism <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3090x.png" alt="f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">B</tspan>, </p>
+     <ul class="itemize1">
+     <li class="itemize">The kernel and cokernel exist, and
+     </li>
+     <li class="itemize">The morphism factors through the image so that im(<tspan font-family="cmmi" font-size="10">f</tspan>) is epic.</li></ul>
+<!--l. 108--><p class="noindent" >So, this yields a diagram <img 
+src="Na3091x.png" alt="Ker(f) ⊂-ker(f)- A --im-(f)-  Im(f) ⊂-------B  coker(f) Coker(f).  "  />
+</p>
+  </div>
+<!--l. 112--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-1062">
+<a 
+ id="x556-532007r1609"></a>
+<div class="newtheorem">
+<!--l. 114--><p class="noindent" ><span class="head">
+<a 
+ id="x556-532008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 63.2.3 </tspan>(Examples of abelian categories)<br 
+class="newline" /> </span><a 
+ id="x556-532009"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate"><tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>, <tspan font-family="cmss" font-size="10">Ab</tspan> are abelian categories, where <tspan font-family="cmmi" font-size="10">f </tspan>+ <tspan font-family="cmmi" font-size="10">g </tspan>takes its usual meaning.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">Generalizing this, the category <tspan font-family="cmss" font-size="10">Mod</tspan><sub><tspan font-family="cmmi" font-size="8">R</tspan></sub> of <tspan font-family="cmmi" font-size="10">R</tspan>-modules is abelian.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate"><tspan font-family="cmss" font-size="10">Grp</tspan> is not even additive, because there is no way to assign a commutative addition
+    to pairs of morphisms.</dd></dl>
+</p>
+  </div>
+<!--l. 123--><p class="indent" >  </p></div>
+<!--l. 125--><p class="indent" >  In general, once you assume a category is abelian, all the properties you would want of these
+kernels, cokernels, … that you would guess hold true. For example,
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-1063">
+<a 
+ id="x556-532013r1610"></a>
+<div class="newtheorem">
+<!--l. 128--><p class="noindent" ><span class="head">
+<a 
+ id="x556-532014r4"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 63.2.4 </tspan><tspan font-family="cmss" font-size="10">(Monic</tspan>  <tspan font-family="cmmi" font-size="10">⇔</tspan>  <tspan font-family="cmss" font-size="10">trival kernel)</tspan><br 
+class="newline" /> </span><a 
+ id="x556-532015"></a>A map <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3092x.png" alt="f−→"  class=""  /><tspan font-family="cmmi" font-size="10">B </tspan>is monic if and only if its kernel
+is 0 <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">A</tspan>. Dually, <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3093x.png" alt=" f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">B </tspan>is epic if and only if its cokernel is <tspan font-family="cmmi" font-size="10">B </tspan><tspan font-family="cmsy" font-size="10">→ </tspan>0.
+</p>
+  </div>
+<!--l. 131--><p class="indent" >  </p></div>
+<!--l. 132--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 133--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>The easy direction is:</p>
+<div class="mdframed" id="mdframed-1064">
+<a 
+ id="x556-532016r1611"></a>
+<div class="newtheorem">
+<!--l. 135--><p class="noindent" ><span class="head">
+<a 
+ id="x556-532017r5"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 63.2.5.</tspan>  </span><a 
+ id="x556-532018"></a><tspan font-family="cmr" font-size="10">Show that if </tspan><tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3094x.png" alt="f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">B </tspan><tspan font-family="cmr" font-size="10">is monic, then 0 </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmr" font-size="10">is a kernel. (This holds even in</tspan>
+<tspan font-family="cmr" font-size="10">non-abelian categories.)</tspan></p>
+  </div>
+<!--l. 137--><p class="indent" >  </p></div>
+<!--l. 138--><p class="indent" >  Of course, since kernels are unique up to isomorphism, monic  <img 
+src="Na3095x.png" alt="=⇒"  class="Longrightarrow"  /> 0 kernel. On
+the other hand, assume that 0 <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">A </tspan>is a kernel of <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3096x.png" alt="f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">B</tspan>. For this we can exploit
+the group structure of the underlying homomorphisms now. Assume the diagram
+<img 
+src="Na3097x.png" alt="  -----g----       f
+Z ----------A  --------- B
+      h
+"  />
+commutes. Then (<tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">h</tspan>) <tspan font-family="cmsy" font-size="10">∘</tspan><tspan font-family="cmmi" font-size="10">f </tspan>= <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∘</tspan><tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">h</tspan><tspan font-family="cmsy" font-size="10">∘</tspan><tspan font-family="cmmi" font-size="10">f </tspan>= 0, and we’ve arrived at a commutative diagram.
+<img 
+src="Na3098x.png" alt="            0
+   Z|................................
+    |
+    |
+g−h |
+    |
+   A --------- B
+          f
+                                                                                
+                                                                                
+"  />
+But since 0 <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">A </tspan>is a kernel it follows that <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">h </tspan>factors through 0, so <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">h </tspan>= 0 <img 
+src="Na3099x.png" alt="=⇒"  class="Longrightarrow"  /> <tspan font-family="cmmi" font-size="10">g </tspan>= <tspan font-family="cmmi" font-size="10">h</tspan>,
+which is to say that <tspan font-family="cmmi" font-size="10">f </tspan>is monic.                                                                        □
+</p>
+  </div><div class="mdframed" id="mdframed-1065">
+<a 
+ id="x556-532019r1612"></a>
+<div class="newtheorem">
+<!--l. 155--><p class="noindent" ><span class="head">
+<a 
+ id="x556-532020r6"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 63.2.6 </tspan><tspan font-family="cmss" font-size="10">(Isomorphism</tspan>  <tspan font-family="cmmi" font-size="10">⇔</tspan>  <tspan font-family="cmss" font-size="10">monic and epic)</tspan><br 
+class="newline" /> </span><a 
+ id="x556-532021"></a>In an abelian category, a map is an
+isomorphism if and only if it is monic and epic.
+</p>
+  </div>
+<!--l. 158--><p class="indent" >  </p></div>
+<!--l. 159--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 160--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Omitted. (The Mitchell embedding theorem presented later implies this anyways
+for most situations we care about, by looking at a small sub-category.)                    □
+</p>
+  </div>
+                                                                                
+                                                                                
+  <!--l. 166--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase426.htm" >next</a>] [<a 
+href="Nase396.htm" >prev</a>] [<a 
+href="Nase396.htm#tailNase396.htm" >prev-tail</a>] [<a 
+href="Nase397.htm" >front</a>] [<a 
+href="Nase423.htm#Nase425.htm" >up</a>] </p></div>
+<!--l. 166--><p class="indent" >  <a 
+ id="tailNase397.htm"></a> </p> 
+</body> 
+</html>

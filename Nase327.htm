@@ -1,0 +1,201 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Everyone hates characteristic 2: separable vs irreducible</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 224--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase351.htm" >next</a>] [<a 
+href="Nase326.htm" >prev</a>] [<a 
+href="Nase326.htm#tailNase326.htm" >prev-tail</a>] [<a 
+href="Nase308.htm#tailNase327.htm">tail</a>] [<a 
+href="Nase346.htm#Nase350.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">52.4</span>  <a 
+ id="x465-44100052.4"></a>Everyone hates characteristic 2: separable vs irreducible</h3>
+<!--l. 225--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="msbm" font-size="10">ℚ </tspan><tspan font-family="cmti" font-size="10">has characteristic zero, hence irreducible polynomials</tspan>
+<tspan font-family="cmti" font-size="10">are separable.</tspan>
+</p><!--l. 226--><p class="indent" >  Now, we want a version of the above theorem for any field <tspan font-family="cmmi" font-size="10">F</tspan>. If you read the proof, you’ll
+see that the only thing that ever uses anything about the field <tspan font-family="msbm" font-size="10">ℚ </tspan>is <tspan font-family="cmbx" font-size="10">??</tspan> , where we use the fact
+that
+     </p><blockquote class="quote">
+     <!--l. 230--><p class="noindent" ><tspan font-family="cmti" font-size="10">Irreducible polynomials over </tspan><tspan font-family="cmmi" font-size="10">F </tspan><tspan font-family="cmti" font-size="10">have no double roots.</tspan></p></blockquote>
+<!--l. 233--><p class="indent" >  Let’s call a polynomial with no double roots <tspan font-family="cmbx" font-size="10">separable</tspan>; thus we want irreducible
+polynomials to be separable. We did this for <tspan font-family="msbm" font-size="10">ℚ </tspan>in the last chapter by taking derivatives.
+Should work for any field, right?
+</p><!--l. 238--><p class="indent" >  Nope. Suppose we took the derivative of some polynomial like 2<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> + 24<tspan font-family="cmmi" font-size="10">x </tspan>+ 9, namely
+6<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + 24. In <tspan font-family="msbm" font-size="10">ℂ </tspan>it’s obvious that the derivative of a nonconstant polynomial <tspan font-family="cmmi" font-size="10">f</tspan><tspan font-family="cmsy" font-size="10">′ </tspan>isn’t zero. But
+suppose we considered the above as a polynomial in <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>, i.e. modulo 3. Then the derivative is
+zero. Oh, no!
+</p><!--l. 246--><p class="indent" >  We have to impose a condition that prevents something like this from happening.
+<a 
+ id="x465-441001r1324"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 248--><p class="noindent" ><span class="head">
+<a 
+ id="x465-441002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 52.4.1.</tspan>  </span><a 
+ id="x465-441003"></a>For  a  field  <tspan font-family="cmmi" font-size="10">F</tspan>,  the  <tspan font-family="cmbx" font-size="10">characteristic</tspan> of  <tspan font-family="cmmi" font-size="10">F  </tspan>is  the  smallest  positive
+integer <tspan font-family="cmmi" font-size="10">p </tspan>such that,
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na2596x.png" alt="1F + ⋅⋅⋅+  1F=  0
+◟----◝◜----◞
+   p times
+" class="math-display"  /></div>
+<!--l. 251--><p class="indent" >  or zero if no such integer <tspan font-family="cmmi" font-size="10">p </tspan>exists.
+</p>
+  </div>
+<!--l. 252--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-855">
+<a 
+ id="x465-441004r1325"></a>
+<div class="newtheorem">
+<!--l. 253--><p class="noindent" ><span class="head">
+<a 
+ id="x465-441005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 52.4.2 </tspan>(Field characteristics)<br 
+class="newline" /> </span><a 
+ id="x465-441006"></a>Old friends <tspan font-family="msbm" font-size="10">ℝ</tspan>, <tspan font-family="msbm" font-size="10">ℚ</tspan>, <tspan font-family="msbm" font-size="10">ℂ </tspan>all have characteristic zero.
+But <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>, the integers modulo <tspan font-family="cmmi" font-size="10">p</tspan>, is a field of characteristic <tspan font-family="cmmi" font-size="10">p</tspan>.
+</p>
+  </div>
+<!--l. 256--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-856">
+<a 
+ id="x465-441007r1326"></a>
+<div class="newtheorem">
+<!--l. 258--><p class="noindent" ><span class="head">
+<a 
+ id="x465-441008r3"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 52.4.3.</tspan>  </span><a 
+ id="x465-441009"></a><tspan font-family="cmr" font-size="10">Let </tspan><tspan font-family="cmmi" font-size="10">F </tspan><tspan font-family="cmr" font-size="10">be a field of characteristic </tspan><tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmr" font-size="10">. Show that if </tspan><tspan font-family="cmmi" font-size="10">p &#x003E; </tspan><tspan font-family="cmr" font-size="10">0 then </tspan><tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmr" font-size="10">is a prime</tspan>
+<tspan font-family="cmr" font-size="10">number. (A proof is given next chapter.)</tspan></p>
+  </div>
+<!--l. 261--><p class="indent" >  </p></div>
+<!--l. 262--><p class="indent" >  With the assumption of characteristic zero, our earlier proof works.</p>
+<div class="mdframed" id="mdframed-857">
+<a 
+ id="x465-441010r1327"></a>
+<div class="newtheorem">
+<!--l. 263--><p class="noindent" ><span class="head">
+<a 
+ id="x465-441011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Lemma 52.4.4 </tspan><tspan font-family="cmss" font-size="10">(Separability in characteristic zero)</tspan><br 
+class="newline" /> </span><a 
+ id="x465-441012"></a>Any   irreducible   polynomial   in   a
+characteristic zero field is separable.
+</p>
+  </div>
+<!--l. 265--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<!--l. 266--><p class="indent" >  Unfortunately, this lemma is false if the “characteristic zero” condition is dropped.</p>
+<div class="mdframed" id="mdframed-858">
+<a 
+ id="x465-441013r1328"></a>
+<div class="newtheorem">
+<!--l. 269--><p class="noindent" ><span class="head">
+<a 
+ id="x465-441014r5"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 52.4.5 —  </tspan> </span><a 
+ id="x465-441015"></a>The reason it’s called <tspan font-family="cmti" font-size="10">separable </tspan>is (I think) this picture: I have a
+polynomial and I want to break it into irreducible parts. Normally, if I have a double
+root in a polynomial, that means it’s not irreducible. But in characteristic <tspan font-family="cmmi" font-size="10">p &#x003E; </tspan>0 this
+fails. So inseparable polynomials are strange when you think about them: somehow you
+have double roots that can’t be separated from each other.</p>
+  </div>
+<!--l. 275--><p class="indent" >  </p></div>
+<!--l. 277--><p class="indent" >  We can get this to work for any field extension in which separability is not an issue.
+<a 
+ id="x465-441016r1329"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 279--><p class="noindent" ><span class="head">
+<a 
+ id="x465-441017r6"></a>
+<tspan font-family="cmbx" font-size="10">Definition 52.4.6.</tspan>  </span><a 
+ id="x465-441018"></a>A <tspan font-family="cmbx" font-size="10">separable extension</tspan> <tspan font-family="cmmi" font-size="10">K∕F  </tspan>is one in which every irreducible
+polynomial in <tspan font-family="cmmi" font-size="10">F </tspan>is separable (for example, if <tspan font-family="cmmi" font-size="10">F </tspan>has characteristic zero). A field <tspan font-family="cmmi" font-size="10">F </tspan>is
+<tspan font-family="cmbx" font-size="10">perfect</tspan> if any finite field extension <tspan font-family="cmmi" font-size="10">K∕F </tspan>is separable.
+</p>
+  </div>
+<!--l. 282--><p class="indent" >
+In fact, as we see in the next chapter:</p>
+<div class="mdframed" id="mdframed-859">
+<a 
+ id="x465-441019r1330"></a>
+<div class="newtheorem">
+<!--l. 285--><p class="noindent" ><span class="head">
+<a 
+ id="x465-441020r7"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 52.4.7 </tspan><tspan font-family="cmss" font-size="10">(Finite fields are perfect)</tspan><br 
+class="newline" /> </span><a 
+ id="x465-441021"></a>Suppose  <tspan font-family="cmmi" font-size="10">F  </tspan>is  a  field  with  finitely  many
+elements. Then it is perfect.
+</p>
+  </div>
+<!--l. 287--><p class="indent" >  </p></div>
+<!--l. 288--><p class="indent" >  Thus, we will almost never have to worry about separability since every field we see in the
+Napkin is either finite or characteristic 0. So the inclusion of the word “separable” is mostly a
+formality.
+                                                                                
+                                                                                
+</p><!--l. 292--><p class="indent" >  Proceeding onwards, we obtain</p>
+<div class="mdframed" id="mdframed-860">
+<a 
+ id="x465-441022r1331"></a>
+<div class="newtheorem">
+<!--l. 293--><p class="noindent" ><span class="head">
+<a 
+ id="x465-441023r8"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 52.4.8 </tspan><tspan font-family="cmss" font-size="10">(The </tspan><tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmss" font-size="10">embeddings of any separable extension)</tspan><br 
+class="newline" /> </span><a 
+ id="x465-441024"></a>Let <tspan font-family="cmmi" font-size="10">K∕F </tspan>be a separable
+extension of degree <tspan font-family="cmmi" font-size="10">n </tspan>and let <span class="overline"><tspan font-family="cmmi" font-size="10">F</tspan></span> be an algebraic closure of <tspan font-family="cmmi" font-size="10">F</tspan>. Then there are exactly <tspan font-family="cmmi" font-size="10">n</tspan>
+field homomorphisms <tspan font-family="cmmi" font-size="10">K</tspan><img 
+src="Na2597x.png" alt="`→"  class="hookrightarrow"  /><span class="overline"><tspan font-family="cmmi" font-size="10">F</tspan></span>, say <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,σ</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>, which fix <tspan font-family="cmmi" font-size="10">F</tspan>.
+</p>
+  </div>
+<!--l. 297--><p class="indent" >  </p></div>
+<!--l. 299--><p class="indent" >  In any case, this lets us define the trace for <tspan font-family="cmti" font-size="10">any </tspan>separable normal extension. <a 
+ id="x465-441025r1332"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 301--><p class="noindent" ><span class="head">
+<a 
+ id="x465-441026r9"></a>
+<tspan font-family="cmbx" font-size="10">Definition 52.4.9.</tspan>  </span><a 
+ id="x465-441027"></a>Let <tspan font-family="cmmi" font-size="10">K∕F </tspan>be a separable extension of degree <tspan font-family="cmmi" font-size="10">n</tspan>, and let <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> be
+the <tspan font-family="cmmi" font-size="10">n </tspan>embeddings into an algebraic closure of <tspan font-family="cmmi" font-size="10">F</tspan>. Then we define
+</p>
+  <div class="math-display" >
+<img 
+src="Na2598x.png" alt="            ∑n                         n∏
+TrK ∕F(α) =    σi(α)  and   NK ∕F(α) =    σi(α ).
+            i=1                         i=1
+" class="math-display"  /></div>
+<!--l. 308--><p class="indent" >  When <tspan font-family="cmmi" font-size="10">F </tspan>= <tspan font-family="msbm" font-size="10">ℚ </tspan>and the algebraic closure is <tspan font-family="msbm" font-size="10">ℂ</tspan>, this coincides with our earlier definition!
+</p>
+  </div>
+<!--l. 309--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+  <!--l. 312--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase351.htm" >next</a>] [<a 
+href="Nase326.htm" >prev</a>] [<a 
+href="Nase326.htm#tailNase326.htm" >prev-tail</a>] [<a 
+href="Nase327.htm" >front</a>] [<a 
+href="Nase346.htm#Nase350.htm" >up</a>] </p></div>
+<!--l. 312--><p class="indent" >  <a 
+ id="tailNase327.htm"></a> </p> 
+</body> 
+</html>

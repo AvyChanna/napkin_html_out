@@ -1,0 +1,177 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Meshes</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 315--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase203.htm" >next</a>] [<a 
+href="Nase199.htm" >prev</a>] [<a 
+href="Nase199.htm#tailNase199.htm" >prev-tail</a>] [<a 
+href="Nach33.htm#tailNase200.htm">tail</a>] [<a 
+href="Nase200.htm#Nase202.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">30.4</span>  <a 
+ id="x287-27600030.4"></a>Meshes</h3>
+<!--l. 316--><p class="noindent" >The above definition might seem fantastical, overcomplicated, hilarious, or terrible, depending
+on your taste. But if you unravel it, it’s really the picture you are used to. What we have done
+is taking every continuous function <tspan font-family="cmmi" font-size="10">f</tspan> : [<tspan font-family="cmmi" font-size="10">a,b</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>and showed that it can be approximated by a
+rectangle function (which we phrased as a dense inclusion). Then we added the area of the
+rectangles. Nonetheless, we will give a definition that’s more like what you’re used to seeing in
+other places. <a 
+ id="x287-276001r909"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 326--><p class="noindent" ><span class="head">
+<a 
+ id="x287-276002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 30.4.1.</tspan>  </span><a 
+ id="x287-276003"></a>A <tspan font-family="cmti" font-size="10">tagged partition </tspan><tspan font-family="cmmi" font-size="10">P </tspan>of [<tspan font-family="cmmi" font-size="10">a,b</tspan>] consists of a partition of [<tspan font-family="cmmi" font-size="10">a,b</tspan>] into <tspan font-family="cmmi" font-size="10">n</tspan>
+intervals, with a point <tspan font-family="cmmi" font-size="10">ξ</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> in the <tspan font-family="cmmi" font-size="10">n</tspan>th interval, denoted
+</p>
+  <div class="math-display" >
+<img 
+src="Na1640x.png" alt="a = t0 &#x003C; t1 &#x003C; t2 &#x003C; ⋅⋅⋅ &#x003C; tn = b   and    ξi ∈ [ti− 1,ti]  ∀ 1 ≤ i ≤ n.
+" class="math-display"  /></div>
+<!--l. 332--><p class="indent" >  The <tspan font-family="cmti" font-size="10">mesh </tspan>of <tspan font-family="cmmi" font-size="10">P </tspan>is the width of the longest interval, i.e. max<sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>(<tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub>).
+</p>
+  </div>
+<!--l. 334--><p class="indent" >
+</p><!--l. 336--><p class="indent" >  Of course the point of this definition is that we add the rectangles, but the <tspan font-family="cmmi" font-size="10">ξ</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> are the sample
+points.
+</p>
+                                                                                
+                                                                                
+<div class="center" 
+>
+<!--l. 340--><p class="noindent" >
+</p>
+</div>
+<div class="mdframed" id="mdframed-586">
+<a 
+ id="x287-276004r910"></a>
+<div class="newtheorem">
+<!--l. 362--><p class="noindent" ><span class="head">
+<a 
+ id="x287-276005r2"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 30.4.2 </tspan><tspan font-family="cmss" font-size="10">(Riemann integral)</tspan><br 
+class="newline" /> </span><a 
+ id="x287-276006"></a>Let <tspan font-family="cmmi" font-size="10">f</tspan> : [<tspan font-family="cmmi" font-size="10">a,b</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>be continuous. Then
+</p>
+<div class="math-display" >
+<img 
+src="Na1641x.png" alt="∫ b                       ( ∑n               )
+   f(x) dx =      lim           f (ξi)(ti − ti−1)  .
+ a           P tagged partition  i=1
+                mesh P→0
+" class="math-display"  /></div>
+<!--l. 369--><p class="noindent" >Here the limit means that we can take any sequence of partitions whose mesh approaches
+zero.</p>
+  </div>
+<!--l. 371--><p class="indent" >  </p></div>
+<!--l. 372--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 373--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>The right-hand side corresponds to the areas of some rectangle functions <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>,
+<tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, …with increasingly narrow rectangles. As in the proof <tspan font-family="cmbx" font-size="10">??</tspan> , as the meshes of those
+rectangles approaches zero, by uniform continuity, we have <tspan font-family="cmmi" font-size="10">d</tspan>(<tspan font-family="cmmi" font-size="10">f,g</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>) <tspan font-family="cmsy" font-size="10">→ </tspan>0 as well. Thus
+by continuity in the diagram of <tspan font-family="cmbx" font-size="10">??</tspan> , we get lim<sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>Σ(<tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>) = <tspan font-family="cmex" font-size="10">∫</tspan>
+ (<tspan font-family="cmmi" font-size="10">f</tspan>) as needed.                □
+</p>
+  </div>
+<!--l. 383--><p class="indent" >  Combined with the mean value theorem, this can be used to give a short proof of the
+fundamental theorem of calculus for functions <tspan font-family="cmmi" font-size="10">f </tspan>with a continuous derivative. The
+                                                                                
+                                                                                
+idea is that for any choice of partition <tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> <tspan font-family="cmmi" font-size="10">&#x003C; t</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmmi" font-size="10">&#x003C; t</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmmi" font-size="10">&#x003C;</tspan> <img 
+src="Na1642x.png" alt="⋅⋅⋅"  class="@cdots"  /> <tspan font-family="cmmi" font-size="10">&#x003C; t</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> <tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">b</tspan>, using the
+Mean Value Theorem it should be possible to pick <tspan font-family="cmmi" font-size="10">ξ</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> in each interval to match with
+the slope of the secant: at which point the areas sum to the total change in <tspan font-family="cmmi" font-size="10">f</tspan>. We
+illustrate this situation with three points, and invite the reader to fill in the details as
+<tspan font-family="cmbx" font-size="10">??</tspan> .
+</p>
+<div class="center" 
+>
+<!--l. 397--><p class="noindent" >
+</p>
+</div>
+<!--l. 441--><p class="indent" >  One quick note is that although I’ve only defined the Riemann integral for continuous
+functions, there ought to be other functions for which it exists (including “piecewise
+continuous functions” for example, or functions “continuous almost everywhere”). The
+relevant definition is: <a 
+ id="x287-276007r911"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 448--><p class="noindent" ><span class="head">
+<a 
+ id="x287-276008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 30.4.3.</tspan>  </span><a 
+ id="x287-276009"></a>If <tspan font-family="cmmi" font-size="10">f</tspan> : [<tspan font-family="cmmi" font-size="10">a,b</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>is a function which is not necessarily continuous,
+but for which the limit
+</p>
+  <div class="math-display" >
+<img 
+src="Na1643x.png" alt="              (                 )
+                ∑n
+      lim           f(ξi)(ti − ti− 1) .
+P tamggeesdh pPa→r0tition i=1
+" class="math-display"  /></div>
+<!--l. 454--><p class="indent" >  exists anyways, then we say <tspan font-family="cmmi" font-size="10">f </tspan>is <tspan font-family="cmbx" font-size="10">Riemann integrable</tspan> on [<tspan font-family="cmmi" font-size="10">a,b</tspan>] and define its value
+to be that limit <tspan font-family="cmex" font-size="10">∫</tspan>
+ <sub><tspan font-family="cmmi" font-size="8">a</tspan></sub><sup><tspan font-family="cmmi" font-size="8">b</tspan></sup><tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) <tspan font-family="cmmi" font-size="10">dx</tspan>.
+</p>
+  </div>
+<!--l. 457--><p class="indent" >
+We won’t really use this definition much, because we will see that every Riemann integrable
+function is Lebesgue integrable, and the Lebesgue integral is better.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-587">
+<a 
+ id="x287-276010r912"></a>
+<div class="newtheorem">
+<!--l. 463--><p class="noindent" ><span class="head">
+<a 
+ id="x287-276011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 30.4.4 </tspan>(Your AP calculus returns)<br 
+class="newline" /> </span><a 
+ id="x287-276012"></a>We had better mention that <tspan font-family="cmbx" font-size="10">??</tspan>  implies
+that we can compute Riemann integrals in practice, although most of you may already
+know this from high-school calculus For example, on the interval (1<tspan font-family="cmmi" font-size="10">,</tspan>4), the derivative
+of the function <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>)  =  <img 
+src="Na1644x.png" alt="13"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup>  is <tspan font-family="cmmi" font-size="10">F</tspan><tspan font-family="cmsy" font-size="10">′</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>)  =  <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>. As <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>)  =  <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>  is a continuous function
+<tspan font-family="cmmi" font-size="10">f</tspan> : [1<tspan font-family="cmmi" font-size="10">,</tspan>4] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>, we get
+</p>
+<div class="math-display" >
+<img 
+src="Na1645x.png" alt="∫ 4
+   x2 dx = F (4)− F (1) = 64-− 1-= 21.
+ 1                        3   3
+" class="math-display"  /></div>
+<!--l. 473--><p class="noindent" >Note that we could also have picked <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <img 
+src="Na1646x.png" alt="1
+3"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> + 2019; the function <tspan font-family="cmmi" font-size="10">F </tspan>is unique up
+to shifting, and this constant cancels out when we subtract. This is why it’s common in
+high school to (really) abuse notation and write <tspan font-family="cmex" font-size="10">∫</tspan>
+  <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmmi" font-size="10">dx </tspan>= <img 
+src="Na1647x.png" alt="13"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> + <tspan font-family="cmmi" font-size="10">C</tspan>.
+</p>
+  </div>
+<!--l. 478--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 480--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase203.htm" >next</a>] [<a 
+href="Nase199.htm" >prev</a>] [<a 
+href="Nase199.htm#tailNase199.htm" >prev-tail</a>] [<a 
+href="Nase200.htm" >front</a>] [<a 
+href="Nase200.htm#Nase202.htm" >up</a>] </p></div>
+<!--l. 480--><p class="indent" >  <a 
+ id="tailNase200.htm"></a> </p> 
+</body> 
+</html>

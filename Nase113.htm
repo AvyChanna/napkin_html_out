@@ -1,0 +1,158 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Parseval and friends</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 345--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase114.htm" >next</a>] [<a 
+href="Nase112.htm" >prev</a>] [<a 
+href="Nase112.htm#tailNase112.htm" >prev-tail</a>] [<a 
+href="#tailNase113.htm">tail</a>] [<a 
+href="Nach17.htm#Nase113.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">14.5</span>  <a 
+ id="x169-15600014.5"></a>Parseval and friends</h3>
+<!--l. 346--><p class="noindent" >Here is a fun section in which you get to learn a lot of big names quickly. Basically, we can
+take each of the three results from Proposition <a 
+href="Nase110.htm#x165-150002r1">14.2.1<!--tex4ht:ref: prop:orthonormal --></a>, translate it into the context of our
+Fourier analysis (for which we have an orthonormal basis of the Hilbert space), and get a
+big-name result.</p>
+<div class="mdframed" id="mdframed-333">
+<a 
+ id="x169-156001r526"></a>
+<div class="newtheorem">
+<!--l. 354--><p class="noindent" ><span class="head">
+<a 
+ id="x169-156002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Corollary 14.5.1 </tspan><tspan font-family="cmss" font-size="10">(Parseval theorem)</tspan><br 
+class="newline" /> </span><a 
+ id="x169-156003"></a>Let <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="cmmi" font-size="10">Z </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>, where <tspan font-family="cmmi" font-size="10">Z </tspan>is a finite abelian group.
+Then
+</p>
+<div class="math-display" >
+<img 
+src="Na695x.png" alt="∑            1 ∑
+   |^f(ξ)|2 = ---    |f (x)|2.
+ ξ          |Z|x∈Z
+" class="math-display"  /></div>
+<!--l. 357--><p class="noindent" >Similarly, if <tspan font-family="cmmi" font-size="10">f</tspan> : [<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">π,π</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>is square-integrable then its Fourier series satisfies
+</p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na696x.png" alt="                ∫
+∑   ^    2   1--           2
+   |f(n)| =  2π  [−π,π]|f (x )| dx.
+ n
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 360--><p class="indent" >  </p></div>
+<!--l. 361--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 362--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Recall that <img 
+src="Na697x.png" alt="⟨f,f⟩"  class="left" align="middle" /> is equal to the square sum of the coefficients.                    □
+</p>
+  </div><div class="mdframed" id="mdframed-334">
+<a 
+ id="x169-156004r527"></a>
+<div class="newtheorem">
+<!--l. 367--><p class="noindent" ><span class="head">
+<a 
+ id="x169-156005r2"></a>
+<tspan font-family="cmssbx" font-size="10">Corollary 14.5.2 </tspan><tspan font-family="cmss" font-size="10">(Fourier inversion formula)</tspan><br 
+class="newline" /> </span><a 
+ id="x169-156006"></a>Let <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">Z </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>, where <tspan font-family="cmmi" font-size="10">Z </tspan>is a finite abelian
+group. Then
+</p>
+<div class="math-display" >
+<img 
+src="Na698x.png" alt="          ∑       -----
+f^(ξ) = -1-    f(x)eξ(x).
+       |Z|x∈Z
+" class="math-display"  /></div>
+<!--l. 370--><p class="noindent" >Similarly, if <tspan font-family="cmmi" font-size="10">f </tspan>: [<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">π,π</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>is square-integrable then its Fourier series is given by
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na699x.png" alt="          ∫
+^      -1-
+f(n) = 2π  [− π,π]f(x)exp (− inx) dx.
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 373--><p class="indent" >  </p></div>
+<!--l. 374--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 375--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Recall that in an orthonormal basis (<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">ξ</tspan></sub>)<sub><tspan font-family="cmmi" font-size="8">ξ</tspan></sub>, the coefficient of <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">ξ</tspan></sub> in <tspan font-family="cmmi" font-size="10">f </tspan>is <img 
+src="Na700x.png" alt="⟨f, eξ⟩"  class="left" align="middle" />.   □
+</p>
+  </div><div class="mdframed" id="mdframed-335">
+<a 
+ id="x169-156007r528"></a>
+<div class="newtheorem">
+<!--l. 379--><p class="noindent" ><span class="head">
+<a 
+ id="x169-156008r3"></a>
+<tspan font-family="cmbx" font-size="10">Question 14.5.3.</tspan>  </span><a 
+ id="x169-156009"></a><tspan font-family="cmr" font-size="10">What happens when </tspan><tspan font-family="cmmi" font-size="10">ξ </tspan><tspan font-family="cmr" font-size="10">= 0 above?</tspan></p>
+  </div>
+<!--l. 380--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-336">
+<a 
+ id="x169-156010r529"></a>
+<div class="newtheorem">
+<!--l. 383--><p class="noindent" ><span class="head">
+<a 
+ id="x169-156011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Corollary 14.5.4 </tspan><tspan font-family="cmss" font-size="10">(Plancherel theorem)</tspan><br 
+class="newline" /> </span><a 
+ id="x169-156012"></a>Let <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">Z </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>, where <tspan font-family="cmmi" font-size="10">Z </tspan>is a finite abelian group.
+Then
+</p>
+<div class="math-display" >
+<img 
+src="Na701x.png" alt="        ∑      ----
+⟨f,g⟩ =    ^f(ξ)^g(ξ).
+        ξ∈Z
+" class="math-display"  /></div>
+<!--l. 386--><p class="noindent" >Similarly, if <tspan font-family="cmmi" font-size="10">f </tspan>: [<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">π,π</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>is square-integrable then
+</p>
+<div class="math-display" >
+<img 
+src="Na702x.png" alt="       ∑       ----
+⟨f,g⟩ =    ^f(n)^g(n).
+        n
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 388--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-337">
+<a 
+ id="x169-156013r530"></a>
+<div class="newtheorem">
+<!--l. 390--><p class="noindent" ><span class="head">
+<a 
+ id="x169-156014r5"></a>
+<tspan font-family="cmbx" font-size="10">Question 14.5.5.</tspan>  </span><a 
+ id="x169-156015"></a><tspan font-family="cmr" font-size="10">Prove this one in one line (like before).</tspan></p>
+  </div>
+<!--l. 391--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 393--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase114.htm" >next</a>] [<a 
+href="Nase112.htm" >prev</a>] [<a 
+href="Nase112.htm#tailNase112.htm" >prev-tail</a>] [<a 
+href="Nase113.htm" >front</a>] [<a 
+href="Nach17.htm#Nase113.htm" >up</a>] </p></div>
+<!--l. 393--><p class="indent" >  <a 
+ id="tailNase113.htm"></a> </p> 
+</body> 
+</html>

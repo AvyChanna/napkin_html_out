@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Bra-ket notation</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 12--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase159.htm" >next</a>] [<a 
+href="#tailNase158.htm">tail</a>] [<a 
+href="Nach26.htm#Nase158.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">23.1</span>  <a 
+ id="x229-21800023.1"></a>Bra-ket notation</h3>
+<!--l. 13--><p class="noindent" >Physicists have their own notation for vectors: whereas I previously used something like <tspan font-family="cmmi" font-size="10">v</tspan>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>,
+and so on, in this chapter you’ll see the infamous <tspan font-family="cmbx" font-size="10">bra-ket</tspan> notation: a vector will be denoted
+by <img 
+src="Na1013x.png" alt="|∙⟩"  class="left" align="middle" />, where <tspan font-family="cmsy" font-size="10">∙ </tspan>is some variable name: unlike in math or Python, this can include
+numbers, symbols, Unicode characters, whatever you like. This is called a “ket”.
+To pay a homage to physicists everywhere, we’ll use this notation for this chapter
+too.
+<a 
+ id="x229-218001r724"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 24--><p class="noindent" ><span class="head">
+<a 
+ id="x229-218002r1"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 23.1.1 </tspan>(For this part, dim<tspan font-family="cmmi" font-size="10">H &#x003C; </tspan><tspan font-family="cmsy" font-size="10">∞</tspan>)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x229-218003"></a>In  this  part  on  quantum
+computation, we’ll use the word “Hilbert space” as defined earlier, but in fact all our
+Hilbert spaces will be finite-dimensional.
+</p>
+  </div>
+<!--l. 28--><p class="indent" >
+</p><!--l. 30--><p class="indent" >  If dim<tspan font-family="cmmi" font-size="10">H </tspan>= <tspan font-family="cmmi" font-size="10">n</tspan>, then its orthonormal basis elements are often denoted
+</p>
+  <div class="math-display" >
+<img 
+src="Na1014x.png" alt="|0⟩ , |1⟩ ,..., |n − 1⟩
+" class="math-display"  /></div>
+<!--l. 32--><p class="indent" >  (instead of <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>) and a generic element of <tspan font-family="cmmi" font-size="10">H </tspan>denoted by
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1015x.png" alt="|ψ⟩ , |ϕ ⟩,...
+" class="math-display"  /></div>
+<!--l. 35--><p class="indent" >  and various other Greek letters.
+</p><!--l. 37--><p class="indent" >  Now for any <img 
+src="Na1016x.png" alt="|ψ ⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">H</tspan>, we can consider the canonical dual element in <tspan font-family="cmmi" font-size="10">H</tspan><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> (since <tspan font-family="cmmi" font-size="10">H </tspan>has an
+inner form), which we denote by <tspan font-family="cmsy" font-size="10">⟨</tspan><tspan font-family="cmmi" font-size="10">ψ</tspan><tspan font-family="cmsy" font-size="10">|</tspan> (a “bra”). For example, if dim<tspan font-family="cmmi" font-size="10">H </tspan>= 2 then we can
+write
+</p>
+  <div class="math-display" >
+<img 
+src="Na1017x.png" alt="      [ ]
+|ψ⟩ =  α
+       β
+" class="math-display"  /></div>
+<!--l. 42--><p class="indent" >  in an orthonormal basis, in which case
+</p>
+  <div class="math-display" >
+<img 
+src="Na1018x.png" alt="⟨ψ | = [- -].
+       α  β
+" class="math-display"  /></div>
+<!--l. 44--><p class="indent" >  We even can write dot products succinctly in this notation: if <img 
+src="Na1019x.png" alt="|ϕ⟩"  class="left" align="middle" /> = <img 
+src="Na1020x.png" alt="[ γ]
+
+  δ"  class="left" align="middle" />, then the dot
+product of <img 
+src="Na1021x.png" alt="|ϕ⟩"  class="left" align="middle" /> and <img 
+src="Na1022x.png" alt="|ψ⟩"  class="left" align="middle" /> is given by
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1023x.png" alt="              [ ]
+⟨ψ |ϕ ⟩ = [α β-] γ  = αγ + βδ.
+               δ
+" class="math-display"  /></div>
+<!--l. 52--><p class="indent" >  So we will use the notation <img 
+src="Na1024x.png" alt="⟨ψ|ϕ⟩"  class="left" align="middle" /> instead of the more mathematical <img 
+src="Na1025x.png" alt="⟨|ψ ⟩, |ϕ⟩⟩"  class="left" align="middle" />. In
+particular, the squared norm of <img 
+src="Na1026x.png" alt="|ψ⟩"  class="left" align="middle" /> is just <img 
+src="Na1027x.png" alt="⟨ψ |ψ ⟩"  class="left" align="middle" />. Concretely, for dim<tspan font-family="cmmi" font-size="10">H </tspan>= 2 we have
+<img 
+src="Na1028x.png" alt="⟨ψ |ψ ⟩"  class="left" align="middle" /> = <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">α</tspan><tspan font-family="cmsy" font-size="10">|</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">β</tspan><tspan font-family="cmsy" font-size="10">|</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>.
+                                                                                
+                                                                                
+</p>
+  <!--l. 58--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase159.htm" >next</a>] [<a 
+href="Nase158.htm" >front</a>] [<a 
+href="Nach26.htm#Nase158.htm" >up</a>] </p></div>
+<!--l. 58--><p class="indent" >  <a 
+ id="tailNase158.htm"></a> </p> 
+</body> 
+</html>

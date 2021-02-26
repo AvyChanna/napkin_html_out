@@ -1,0 +1,403 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The ring of integers</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 212--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach54.htm" >next</a>] [<a 
+href="Nase297.htm" >prev</a>] [<a 
+href="Nase297.htm#tailNase297.htm" >prev-tail</a>] [<a 
+href="Nase281.htm#tailNase298.htm">tail</a>] [<a 
+href="Nase317.htm#Nase318.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">47.2</span>  <a 
+ id="x427-40600047.2"></a>The ring of integers</h3>
+<!--l. 214--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">If </tspan><tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2200x.png" alt="√2--"  class="sqrt"  />)<tspan font-family="cmti" font-size="10">, then </tspan><tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> = <tspan font-family="msbm" font-size="10">ℤ</tspan>[<img 
+src="Na2201x.png" alt="√2-"  class="sqrt"  />]<tspan font-family="cmti" font-size="10">. But if </tspan><tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2202x.png" alt="√5-"  class="sqrt"  />)<tspan font-family="cmti" font-size="10">,</tspan>
+<tspan font-family="cmti" font-size="10">then </tspan><tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> = <tspan font-family="msbm" font-size="10">ℤ</tspan>[<img 
+src="Na2203x.png" alt="1+√5-
+  2"  class="frac" align="middle" />]<tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 216--><p class="indent" >  <tspan font-family="msbm" font-size="10">ℤ </tspan>makes for better number theory than <tspan font-family="msbm" font-size="10">ℚ</tspan>. In the same way, focusing on the <tspan font-family="cmti" font-size="10">algebraic</tspan>
+<tspan font-family="cmti" font-size="10">integers </tspan>of <tspan font-family="cmmi" font-size="10">K </tspan>gives us some really nice structure, and we’ll do that here.
+<a 
+ id="x427-406001r1202"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 221--><p class="noindent" ><span class="head">
+<a 
+ id="x427-406002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 47.2.1.</tspan>  </span><a 
+ id="x427-406003"></a>Given a number field <tspan font-family="cmmi" font-size="10">K</tspan>, we define
+</p>
+  <div class="math-display" >
+<img 
+src="Na2204x.png" alt="𝒪  := K ∩ ℤ-
+ K
+" class="math-display"  /></div>
+<!--l. 223--><p class="indent" >  to be the <tspan font-family="cmbx" font-size="10">ring of integers</tspan> of <tspan font-family="cmmi" font-size="10">K</tspan>; in other words <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> consists of the algebraic integers
+of <tspan font-family="cmmi" font-size="10">K</tspan>.
+</p>
+  </div>
+<!--l. 225--><p class="indent" >
+</p><!--l. 227--><p class="indent" >  We do the classical example of a quadratic field now. Before proceeding, I need to write a
+silly number theory fact.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-770">
+<a 
+ id="x427-406004r1203"></a>
+<div class="newtheorem">
+<!--l. 230--><p class="noindent" ><span class="head">
+<a 
+ id="x427-406005r2"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 47.2.2 </tspan><tspan font-family="cmr" font-size="10">(Annoying but straightforward)</tspan><tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x427-406006"></a><tspan font-family="cmr" font-size="10">Let </tspan><tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmr" font-size="10">and </tspan><tspan font-family="cmmi" font-size="10">b </tspan><tspan font-family="cmr" font-size="10">be rational numbers, and </tspan><tspan font-family="cmmi" font-size="10">d </tspan><tspan font-family="cmr" font-size="10">a squarefree</tspan>
+<tspan font-family="cmr" font-size="10">positive integer.</tspan> </p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmr" font-size="10">If </tspan><tspan font-family="cmmi" font-size="10">d </tspan><tspan font-family="cmsy" font-size="10">≡ </tspan><tspan font-family="cmr" font-size="10">2</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmr" font-size="10">3 (</tspan><tspan font-family="cmr" font-size="10">mod</tspan> <tspan font-family="cmr" font-size="10">4), prove that 2</tspan><tspan font-family="cmmi" font-size="10">a,a</tspan><sup><tspan font-family="cmr" font-size="7">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">db</tspan><sup><tspan font-family="cmr" font-size="7">2</tspan></sup> <tspan font-family="cmsy" font-size="10">∈</tspan><tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmr" font-size="10">if and only if </tspan><tspan font-family="cmmi" font-size="10">a,b </tspan><tspan font-family="cmsy" font-size="10">∈</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmr" font-size="10">.</tspan>
+     </li>
+     <li class="itemize"><tspan font-family="cmr" font-size="10">For </tspan><tspan font-family="cmmi" font-size="10">d </tspan><tspan font-family="cmsy" font-size="10">≡ </tspan><tspan font-family="cmr" font-size="10">1 (</tspan><tspan font-family="cmr" font-size="10">mod</tspan> <tspan font-family="cmr" font-size="10">4), prove that 2</tspan><tspan font-family="cmmi" font-size="10">a,a</tspan><sup><tspan font-family="cmr" font-size="7">2</tspan></sup><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">db</tspan><sup><tspan font-family="cmr" font-size="7">2</tspan></sup> <tspan font-family="cmsy" font-size="10">∈</tspan><tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmr" font-size="10">if and only if </tspan><tspan font-family="cmmi" font-size="10">a,b </tspan><tspan font-family="cmsy" font-size="10">∈</tspan><tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmr" font-size="10">OR if </tspan><tspan font-family="cmmi" font-size="10">a</tspan><tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na2205x.png" alt="12"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">,b</tspan><tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na2206x.png" alt="12"  class="frac" align="middle" /> <tspan font-family="cmsy" font-size="10">∈</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmr" font-size="10">.</tspan></li></ul>
+<!--l. 239--><p class="noindent" ><tspan font-family="cmr" font-size="10">You’ll need to take mod 4.</tspan></p>
+  </div>
+<!--l. 240--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-771">
+<a 
+ id="x427-406007r1204"></a>
+<div class="newtheorem">
+<!--l. 243--><p class="noindent" ><span class="head">
+<a 
+ id="x427-406008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 47.2.3 </tspan>(Ring of integers of <tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2207x.png" alt="√ --
+  3"  class="sqrt"  />))<br 
+class="newline" /> </span><a 
+ id="x427-406009"></a>Let <tspan font-family="cmmi" font-size="10">K </tspan>be as above. We claim that
+</p>
+<div class="math-display" >
+<img 
+src="Na2208x.png" alt="        √--   {      √ --        }
+𝒪K  = ℤ[ 3] =  m  + n  3 | m, n ∈ ℤ .
+" class="math-display"  /></div>
+<!--l. 246--><p class="noindent" >We set <tspan font-family="cmmi" font-size="10">α </tspan>= <tspan font-family="cmmi" font-size="10">a</tspan>+<tspan font-family="cmmi" font-size="10">b</tspan><img 
+src="Na2209x.png" alt="√ --
+  3"  class="sqrt"  />. Then <tspan font-family="cmmi" font-size="10">α </tspan><tspan font-family="cmsy" font-size="10">∈𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> when the minimal polynomial has integer coefficients.
+</p><!--l. 249--><p class="noindent" >If <tspan font-family="cmmi" font-size="10">b </tspan>= 0, then the minimal polynomial is <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">α </tspan>= <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">a</tspan>, and thus <tspan font-family="cmmi" font-size="10">α </tspan>works if and only if
+it’s an integer. If <tspan font-family="cmmi" font-size="10">b</tspan><tspan font-family="cmmi" font-size="10">≠</tspan>0, then the minimal polynomial is
+</p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na2210x.png" alt="(x − a)2 − 3b2 = x2 − 2a ⋅x + (a2 − 3b2).
+" class="math-display"  /></div>
+<!--l. 253--><p class="noindent" >From the exercise, this occurs exactly for <tspan font-family="cmmi" font-size="10">a,b </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>.
+</p>
+  </div>
+<!--l. 254--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-772">
+<a 
+ id="x427-406010r1205"></a>
+<div class="newtheorem">
+<!--l. 256--><p class="noindent" ><span class="head">
+<a 
+ id="x427-406011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 47.2.4 </tspan>(Ring of integers of <tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2211x.png" alt="√5--"  class="sqrt"  />))<br 
+class="newline" /> </span><a 
+ id="x427-406012"></a>We claim that in this case
+</p>
+<div class="math-display" >
+<img 
+src="Na2212x.png" alt="        [    √--]   {           √ --         }
+         1+---5-             1+---5-
+𝒪K  = ℤ     2    =   m  + n⋅   2    | m, n ∈ ℤ .
+" class="math-display"  /></div>
+<!--l. 260--><p class="noindent" >The proof is exactly the same, except the exercise tells us instead that for <tspan font-family="cmmi" font-size="10">b</tspan><tspan font-family="cmmi" font-size="10">≠</tspan>0, we have
+both the possibility that <tspan font-family="cmmi" font-size="10">a,b </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ </tspan>or that <tspan font-family="cmmi" font-size="10">a,b </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na2213x.png" alt="12"  class="frac" align="middle" />. This reflects the fact that <img 
+src="Na2214x.png" alt="  √ -
+1+2-5"  class="frac" align="middle" /> is
+the root of <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1 = 0; no such thing is possible with <img 
+src="Na2215x.png" alt="√ --
+  3"  class="sqrt"  />.
+</p>
+  </div>
+<!--l. 265--><p class="indent" >  </p></div>
+<!--l. 266--><p class="indent" >  In general, the ring of integers of <tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2216x.png" alt="√ --
+  d"  class="sqrt"  />) is
+</p>
+  <div class="math-display" >
+<img 
+src="Na2217x.png" alt="      (   √ --
+      |{ ℤ[  d]     d ≡ 2,3  (mod  4)
+𝒪K  =     [  √-]
+      |( ℤ  1+-d-   d ≡ 1  (mod  4).
+             2
+" class="math-display"  /></div>
+<!--l. 274--><p class="indent" >  What we’re going to show is that <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> behaves in <tspan font-family="cmmi" font-size="10">K </tspan>a lot like the integers do in
+<tspan font-family="msbm" font-size="10">ℚ</tspan>. First we show <tspan font-family="cmmi" font-size="10">K </tspan>consists of quotients of numbers in <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>. In fact, we can do
+better:</p>
+<div class="mdframed" id="mdframed-773">
+<a 
+ id="x427-406013r1206"></a>
+<div class="newtheorem">
+<!--l. 278--><p class="noindent" ><span class="head">
+<a 
+ id="x427-406014r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 47.2.5 </tspan>(Rationalizing the denominator)<br 
+class="newline" /> </span><a 
+ id="x427-406015"></a>For example, consider <tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2218x.png" alt="√3-"  class="sqrt"  />).
+The number <tspan font-family="cmmi" font-size="10">x </tspan>= <img 
+src="Na2219x.png" alt="-1√--
+4+ 3"  class="frac" align="middle" /> is an element of <tspan font-family="cmmi" font-size="10">K</tspan>, but by “rationalizing the denominator” we
+can write
+</p>
+<div class="math-display" >
+<img 
+src="Na2220x.png" alt="              √--
+---1√---= 4−---3-.
+4 +   3     13
+" class="math-display"  /></div>
+<!--l. 283--><p class="noindent" >So we see that in fact, <tspan font-family="cmmi" font-size="10">x </tspan>is <img 
+src="Na2221x.png" alt=" 1
+13"  class="frac" align="middle" /> of an integer in <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>.</p>
+  </div>
+<!--l. 284--><p class="indent" >  </p></div>
+<!--l. 286--><p class="indent" >  The theorem holds true more generally.</p>
+<div class="mdframed" id="mdframed-774">
+<a 
+ id="x427-406016r1207"></a>
+<div class="newtheorem">
+<!--l. 287--><p class="noindent" ><span class="head">
+<a 
+ id="x427-406017r6"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 47.2.6 </tspan><tspan font-family="cmss" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ </tspan><tspan font-family="cmsy" font-size="10">⋅𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub><tspan font-family="cmss" font-size="10">)</tspan><br 
+class="newline" /> </span><a 
+ id="x427-406018"></a>Let <tspan font-family="cmmi" font-size="10">K </tspan>be a number field, and let <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">K </tspan>be any element.
+Then there exists an integer <tspan font-family="cmmi" font-size="10">n </tspan>such that <tspan font-family="cmmi" font-size="10">nx </tspan><tspan font-family="cmsy" font-size="10">∈𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>; in other words,
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na2222x.png" alt="    1
+x = n-α
+" class="math-display"  /></div>
+<!--l. 290--><p class="noindent" >for some <tspan font-family="cmmi" font-size="10">α </tspan><tspan font-family="cmsy" font-size="10">∈𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>.
+</p>
+  </div>
+<!--l. 291--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-775">
+<a 
+ id="x427-406019r1208"></a>
+<div class="newtheorem">
+<!--l. 293--><p class="noindent" ><span class="head">
+<a 
+ id="x427-406020r7"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 47.2.7.</tspan>  </span><a 
+ id="x427-406021"></a><tspan font-family="cmr" font-size="10">Prove this yourself. (Start by using the fact that </tspan><tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmr" font-size="10">has a minimal polynomial</tspan>
+<tspan font-family="cmr" font-size="10">with rational coefficients. Alternatively, take the norm.)</tspan></p>
+  </div>
+<!--l. 297--><p class="indent" >  </p></div>
+<!--l. 299--><p class="indent" >  Now we are going to show <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> is a ring; we’ll check it is closed under addition and
+multiplication. To do so, the easiest route is:</p>
+<div class="mdframed" id="mdframed-776">
+<a 
+ id="x427-406022r1209"></a>
+<div class="newtheorem">
+<!--l. 302--><p class="noindent" ><span class="head">
+<a 
+ id="x427-406023r8"></a>
+<tspan font-family="cmssbx" font-size="10">Lemma 47.2.8 </tspan><tspan font-family="cmss" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">α </tspan><tspan font-family="cmsy" font-size="10">∈</tspan><span class="overline"><tspan font-family="msbm" font-size="10">ℤ</tspan></span>  <tspan font-family="cmmi" font-size="10">⇔</tspan>  <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">α</tspan>] <tspan font-family="cmss" font-size="10">finitely generated)</tspan><br 
+class="newline" /> </span><a 
+ id="x427-406024"></a>Let  <tspan font-family="cmmi" font-size="10">α  </tspan><tspan font-family="cmsy" font-size="10">∈</tspan><span class="overline"> <tspan font-family="msbm" font-size="10">ℚ</tspan></span>.  Then  <tspan font-family="cmmi" font-size="10">α </tspan>is  an  algebraic
+integer if and only if the abelian group <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">α</tspan>] is finitely generated.
+</p>
+  </div>
+<!--l. 306--><p class="indent" >  </p></div>
+<!--l. 307--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 308--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Note that <tspan font-family="cmmi" font-size="10">α </tspan>is an algebraic integer if and only if it’s the root of some nonzero,
+monic polynomial with integer coefficients. Suppose first that
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na2223x.png" alt="αN  = cN−1αN −1 + cN−2αN −2 + ⋅⋅⋅+ c0.
+" class="math-display"  /></div>
+<!--l. 312--><p class="indent" >  Then the set 1<tspan font-family="cmmi" font-size="10">,α,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,α</tspan><sup><tspan font-family="cmmi" font-size="8">N</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup> generates <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">α</tspan>], since we can repeatedly replace <tspan font-family="cmmi" font-size="10">α</tspan><sup><tspan font-family="cmmi" font-size="8">N</tspan></sup> until all
+powers of <tspan font-family="cmmi" font-size="10">α </tspan>are less than <tspan font-family="cmmi" font-size="10">N</tspan>.
+</p><!--l. 316--><p class="indent" >  Conversely, suppose that <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">α</tspan>] is finitely generated by some <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,b</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub>. Viewing the <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> as
+polynomials in <tspan font-family="cmmi" font-size="10">α</tspan>, we can select a large integer <tspan font-family="cmmi" font-size="10">N </tspan>(say <tspan font-family="cmmi" font-size="10">N </tspan>= deg <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> +<img 
+src="Na2224x.png" alt="⋅⋅⋅"  class="@cdots"  />+deg <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub> +2015)
+and express <tspan font-family="cmmi" font-size="10">α</tspan><sup><tspan font-family="cmmi" font-size="8">N</tspan></sup> in the <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>’s to get
+</p>
+  <div class="math-display" >
+<img 
+src="Na2225x.png" alt=" N
+α  = c1b1(α)+ ⋅⋅⋅+ cmbm (α).
+" class="math-display"  /></div>
+<!--l. 322--><p class="indent" >  The above gives us a monic polynomial in <tspan font-family="cmmi" font-size="10">α</tspan>, and the choice of <tspan font-family="cmmi" font-size="10">N </tspan>guarantees it is not
+zero. So <tspan font-family="cmmi" font-size="10">α </tspan>is an algebraic integer.                                                                     □
+</p>
+  </div><div class="mdframed" id="mdframed-777">
+<a 
+ id="x427-406025r1210"></a>
+<div class="newtheorem">
+<!--l. 326--><p class="noindent" ><span class="head">
+<a 
+ id="x427-406026r9"></a>
+<tspan font-family="cmbx" font-size="10">Example 47.2.9 </tspan>(<img 
+src="Na2226x.png" alt="12"  class="frac" align="middle" /> isn’t an algebraic integer)<br 
+class="newline" /> </span><a 
+ id="x427-406027"></a>We  already  know  <img 
+src="Na2227x.png" alt="12"  class="frac" align="middle" />  isn’t  an  algebraic
+integer. So we expect
+</p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na2228x.png" alt=" [  ]
+   1-   { a--                   }
+ℤ  2  =   2m | a,m ∈ ℤ and m ≥ 0
+" class="math-display"  /></div>
+<!--l. 331--><p class="noindent" >to not be finitely generated, and this is the case.
+</p>
+  </div>
+<!--l. 332--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-778">
+<a 
+ id="x427-406028r1211"></a>
+<div class="newtheorem">
+<!--l. 334--><p class="noindent" ><span class="head">
+<a 
+ id="x427-406029r10"></a>
+<tspan font-family="cmbx" font-size="10">Question 47.2.10.</tspan>  </span><a 
+ id="x427-406030"></a><tspan font-family="cmr" font-size="10">To make the last example concrete: name all the elements of </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmr" font-size="10">[</tspan><img 
+src="Na2229x.png" alt="1
+2"  class="frac" align="middle" /><tspan font-family="cmr" font-size="10">] that cannot</tspan>
+<tspan font-family="cmr" font-size="10">be written as an integer combination of</tspan>
+</p>
+<div class="math-display" >
+<img 
+src="Na2230x.png" alt="{ 1 7 13  2015- ---1---}
+  2,8,64 ,4096 ,1048576
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 339--><p class="indent" >  </p></div>
+<!--l. 341--><p class="indent" >  Now we can state the theorem.</p>
+<div class="mdframed" id="mdframed-779">
+<a 
+ id="x427-406031r1212"></a>
+<div class="newtheorem">
+<!--l. 342--><p class="noindent" ><span class="head">
+<a 
+ id="x427-406032r11"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 47.2.11 </tspan><tspan font-family="cmss" font-size="10">(Algebraic integers are closed under </tspan>+ <tspan font-family="cmss" font-size="10">and </tspan><tspan font-family="cmsy" font-size="10">×</tspan><tspan font-family="cmss" font-size="10">)</tspan><br 
+class="newline" /> </span><a 
+ id="x427-406033"></a>The set <span class="overline"><tspan font-family="msbm" font-size="10">ℤ</tspan></span> is closed under
+addition and multiplication; i.e. it is a ring. In particular, <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> is also a ring for any
+number field <tspan font-family="cmmi" font-size="10">K</tspan>.</p>
+  </div>
+<!--l. 346--><p class="indent" >  </p></div>
+<!--l. 347--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 348--><p class="indent" >  <span class="head">
+                                                                                
+                                                                                
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Let <tspan font-family="cmmi" font-size="10">α,β </tspan><tspan font-family="cmsy" font-size="10">∈</tspan><span class="overline"> <tspan font-family="msbm" font-size="10">ℤ</tspan></span>. Then <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">α</tspan>] and <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">β</tspan>] are finitely generated. Hence so is <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">α,β</tspan>].
+(Details: if <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">α</tspan>] has <tspan font-family="msbm" font-size="10">ℤ</tspan>-basis <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,a</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub> and <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">β</tspan>] has <tspan font-family="msbm" font-size="10">ℤ</tspan>-basis <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,b</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>, then take the <tspan font-family="cmmi" font-size="10">mn</tspan>
+elements <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmmi" font-size="8">j</tspan></sub>.)
+</p><!--l. 355--><p class="indent" >  Now <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">α</tspan><tspan font-family="cmsy" font-size="10">±</tspan><tspan font-family="cmmi" font-size="10">β</tspan>] and <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">αβ</tspan>] are subsets of <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">α,β</tspan>] and so they are also finitely generated.
+Hence <tspan font-family="cmmi" font-size="10">α </tspan><tspan font-family="cmsy" font-size="10">± </tspan><tspan font-family="cmmi" font-size="10">β </tspan>and <tspan font-family="cmmi" font-size="10">αβ </tspan>are algebraic integers.                                                        □
+</p>
+  </div>
+<!--l. 359--><p class="indent" >  In fact, something even better is true. As you saw, for <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2231x.png" alt="√--
+ 3"  class="sqrt"  />) we had <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> = <tspan font-family="msbm" font-size="10">ℤ</tspan>[<img 
+src="Na2232x.png" alt="√ --
+  3"  class="sqrt"  />]; in other
+words, <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> was generated by 1 and <img 
+src="Na2233x.png" alt="√ --
+  3"  class="sqrt"  />. Something similar was true for <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2234x.png" alt="√ --
+  5"  class="sqrt"  />). We claim that
+in fact, the general picture looks exactly like this.</p>
+<div class="mdframed" id="mdframed-780">
+<a 
+ id="x427-406034r1213"></a>
+<div class="newtheorem">
+<!--l. 365--><p class="noindent" ><span class="head">
+<a 
+ id="x427-406035r12"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 47.2.12 </tspan><tspan font-family="cmss" font-size="10">(</tspan><tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> <tspan font-family="cmss" font-size="10">is a free </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmss" font-size="10">-module of rank </tspan><tspan font-family="cmmi" font-size="10">n</tspan><tspan font-family="cmss" font-size="10">)</tspan><br 
+class="newline" /> </span><a 
+ id="x427-406036"></a>Let <tspan font-family="cmmi" font-size="10">K </tspan>be a number field of degree
+<tspan font-family="cmmi" font-size="10">n</tspan>. Then <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> is a free <tspan font-family="msbm" font-size="10">ℤ</tspan>-module of rank <tspan font-family="cmmi" font-size="10">n</tspan>, i.e. <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub><img 
+src="Na2235x.png" alt="∼="  class="cong"  /><tspan font-family="msbm" font-size="10">ℤ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmmi" font-size="8">n</tspan></sup> as an abelian group. In other
+words, <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> has a <tspan font-family="msbm" font-size="10">ℤ</tspan>-basis of <tspan font-family="cmmi" font-size="10">n </tspan>elements as
+</p>
+<div class="math-display" >
+<img 
+src="Na2236x.png" alt="𝒪K  = {c1α1 + ⋅⋅⋅+ cn−1αn− 1 + cnαn | ci ∈ ℤ }
+" class="math-display"  /></div>
+<!--l. 372--><p class="noindent" >where <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> are algebraic integers in <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>.
+</p>
+  </div>
+<!--l. 374--><p class="indent" >  </p></div>
+<!--l. 376--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 377--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>TODO: add this in. (Originally, there was an incorrect proof; the mistake was
+pointed out 2020-02-12 on <a 
+href="https://math.stackexchange.com/q/3543641/229197" class="url" ><tspan font-family="cmtt" font-size="10">https://math.stackexchange.com/q/3543641/229197</tspan></a> and
+I hope to supply a correct one soon.)                                                                □
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 406--><p class="indent" >  This last theorem shows that in many ways <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> is a “lattice” in <tspan font-family="cmmi" font-size="10">K</tspan>. That is, for a number
+field <tspan font-family="cmmi" font-size="10">K </tspan>we can find <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> in <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> such that
+</p><table 
+class="align-star"><!--l. 412--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub></td><td 
+class="align-even"><img 
+src="Na2238x.png" alt="∼="  class="cong"  /><tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmsy" font-size="10">⊕</tspan><img 
+src="Na2239x.png" alt="⋅⋅⋅"  class="@cdots"  /><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="msbm" font-size="10">ℤ</tspan></td> <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">K</tspan></td> <td 
+class="align-even"><img 
+src="Na2240x.png" alt="∼="  class="cong"  /><tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="msbm" font-size="10">ℚ </tspan><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="msbm" font-size="10">ℚ </tspan><tspan font-family="cmsy" font-size="10">⊕</tspan><img 
+src="Na2241x.png" alt="⋅⋅⋅"  class="@cdots"  /><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="msbm" font-size="10">ℚ</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                                    </td></tr></table>
+</p><!--l. 413--><p class="indent" >  as abelian groups.
+                                                                                
+                                                                                
+</p>
+  <!--l. 415--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach54.htm" >next</a>] [<a 
+href="Nase297.htm" >prev</a>] [<a 
+href="Nase297.htm#tailNase297.htm" >prev-tail</a>] [<a 
+href="Nase298.htm" >front</a>] [<a 
+href="Nase317.htm#Nase318.htm" >up</a>] </p></div>
+<!--l. 415--><p class="indent" >  <a 
+ id="tailNase298.htm"></a> </p> 
+</body> 
+</html>

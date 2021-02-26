@@ -1,0 +1,304 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The discriminant of a number field</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 42--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach56.htm" >next</a>] [<a 
+href="Nase309.htm" >prev</a>] [<a 
+href="Nase309.htm#tailNase309.htm" >prev-tail</a>] [<a 
+href="Nach49.htm#tailNase310.htm">tail</a>] [<a 
+href="Nase328.htm#Nase330.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">49.2</span>  <a 
+ id="x442-42000049.2"></a>The discriminant of a number field</h3>
+<!--l. 43--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Quadratic fields.</tspan>
+</p><!--l. 44--><p class="indent" >  Let’s say I have <tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2338x.png" alt="√ --
+  2"  class="sqrt"  />). As we’ve seen before, this means <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> = <tspan font-family="msbm" font-size="10">ℤ</tspan>[<img 
+src="Na2339x.png" alt="√ --
+  2"  class="sqrt"  />], meaning
+</p>
+  <div class="math-display" >
+<img 
+src="Na2340x.png" alt="      {     √ --       }
+𝒪K  =  a + b  2 | a,b ∈ ℤ .
+" class="math-display"  /></div>
+<!--l. 47--><p class="indent" >  The key insight now is that you might think of this as a <tspan font-family="cmti" font-size="10">lattice</tspan>: geometrically, we want to
+think about this the same way we think about <tspan font-family="msbm" font-size="10">ℤ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>.
+</p><!--l. 50--><p class="indent" >  Perversely, we might try to embed this into <tspan font-family="msbm" font-size="10">ℚ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> by sending <tspan font-family="cmmi" font-size="10">a </tspan>+ <tspan font-family="cmmi" font-size="10">b</tspan><img 
+src="Na2341x.png" alt="√--
+ 2"  class="sqrt"  /> to (<tspan font-family="cmmi" font-size="10">a,b</tspan>). But this is a
+little stupid, since we’re rudely making <tspan font-family="cmmi" font-size="10">K</tspan>, which somehow lives inside <tspan font-family="msbm" font-size="10">ℝ </tspan>and is
+“one-dimensional” in that sense, into a two-dimensional space. It also depends on a
+choice of basis, which we don’t like. A better way is to think about the fact that
+there are two embeddings <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> : <tspan font-family="cmmi" font-size="10">K </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>and <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> : <tspan font-family="cmmi" font-size="10">K </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>, namely the identity, and
+conjugation:
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 60--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">a </tspan>+ <tspan font-family="cmmi" font-size="10">b</tspan><img 
+src="Na2343x.png" alt="√ --
+  2"  class="sqrt"  />)</td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">a </tspan>+ <tspan font-family="cmmi" font-size="10">b</tspan><img 
+src="Na2344x.png" alt="√--
+ 2"  class="sqrt"  /></td> <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>(<tspan font-family="cmmi" font-size="10">a </tspan>+ <tspan font-family="cmmi" font-size="10">b</tspan><img 
+src="Na2345x.png" alt="√ --
+  2"  class="sqrt"  />)</td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">b</tspan><img 
+src="Na2346x.png" alt="√--
+ 2"  class="sqrt"  /><tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                                          </td></tr></table>
+</p><!--l. 61--><p class="indent" >  Fortunately for us, these embeddings both have real image. This leads us to consider the set
+of points
+</p>
+  <div class="math-display" >
+<img 
+src="Na2347x.png" alt="(σ1(α ),σ2 (α )) ∈ ℝ2 as  α ∈ K.
+" class="math-display"  /></div>
+<!--l. 65--><p class="indent" >  This lets us visualize what <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> looks like in <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>. The points of <tspan font-family="cmmi" font-size="10">K </tspan>are dense in <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, but the
+points of <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> cut out a lattice.
+</p>
+<div class="center" 
+>
+<!--l. 68--><p class="noindent" >
+</p>
+</div>
+<!--l. 95--><p class="indent" >  To see how big the lattice is, we look at how <tspan font-family="cmsy" font-size="10">{</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na2348x.png" alt="√--
+ 2"  class="sqrt"  /><tspan font-family="cmsy" font-size="10">}</tspan>, the generators of <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>, behave. The
+point corresponding to <tspan font-family="cmmi" font-size="10">a </tspan>+ <tspan font-family="cmmi" font-size="10">b</tspan><img 
+src="Na2349x.png" alt="√ --
+  2"  class="sqrt"  /> in the lattice is
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na2350x.png" alt="a ⋅(1,1)+ b ⋅(√2,-− √2-).
+" class="math-display"  /></div>
+<!--l. 99--><p class="indent" >  The <tspan font-family="cmbx" font-size="10">mesh</tspan> of the lattice<span class="footnote-mark"><a 
+href="Na443.htm#fn1x54"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x442-420001f1"></a> 
+is defined as the hypervolume of the “fundamental parallelepiped” I’ve colored blue above. For
+this particular case, it ought to be equal to the area of that parallelogram, which
+is
+</p>
+  <div class="math-display" >
+<img 
+src="Na2351x.png" alt="   [     √-]
+det 1  −√ 2- = 2√2.-
+    1     2
+" class="math-display"  /></div>
+<!--l. 114--><p class="indent" >  The definition of the discriminant is precisely this, except with an extra square factor (since
+permutation of rows could lead to changes in sign in the matrix above). <tspan font-family="cmbx" font-size="10">??</tspan>  shows that the
+squaring makes Δ<sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> an integer.
+</p><!--l. 118--><p class="indent" >  To make the next definition, we invoke:</p>
+<div class="mdframed" id="mdframed-805">
+<a 
+ id="x442-420002r1253"></a>
+<div class="newtheorem">
+<!--l. 119--><p class="noindent" ><span class="head">
+<a 
+ id="x442-420003r1"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 49.2.1 </tspan><tspan font-family="cmss" font-size="10">(The </tspan><tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmss" font-size="10">embeddings of a number field)</tspan><br 
+class="newline" /> </span><a 
+ id="x442-420004"></a>Let <tspan font-family="cmmi" font-size="10">K </tspan>be a number field of degree
+<tspan font-family="cmmi" font-size="10">n</tspan>. Then there are exactly <tspan font-family="cmmi" font-size="10">n </tspan>field homomorphisms <tspan font-family="cmmi" font-size="10">K</tspan><img 
+src="Na2352x.png" alt="`→"  class="hookrightarrow"  /><tspan font-family="msbm" font-size="10">ℂ</tspan>, say <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,σ</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>, which fix <tspan font-family="msbm" font-size="10">ℚ</tspan>.
+</p>
+  </div>
+<!--l. 123--><p class="indent" >  </p></div>
+<!--l. 124--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 125--><p class="indent" >  <span class="head">
+                                                                                
+                                                                                
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Deferred to <tspan font-family="cmbx" font-size="10">??</tspan> , once we have the tools of Galois theory.                             □
+</p>
+  </div>
+<!--l. 127--><p class="indent" >  In fact, in <tspan font-family="cmbx" font-size="10">??</tspan>  we see that for <tspan font-family="cmmi" font-size="10">α </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">K</tspan>, we have that <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>(<tspan font-family="cmmi" font-size="10">α</tspan>) runs over the conjugates of <tspan font-family="cmmi" font-size="10">α </tspan>as
+<tspan font-family="cmmi" font-size="10">i </tspan>= 1<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,n</tspan>. It follows that
+</p>
+  <div class="math-display" >
+<img 
+src="Na2353x.png" alt="             n                         n
+Tr    (α) = ∑  σ (α)  and   N    (α) = ∏  σ(α ).
+   K∕ℚ      i=1  i            K ∕ℚ      i=1  i
+" class="math-display"  /></div>
+<!--l. 137--><p class="indent" >  This allows us to define: <a 
+ id="x442-420005r1254"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 139--><p class="noindent" ><span class="head">
+<a 
+ id="x442-420006r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 49.2.2.</tspan>  </span><a 
+ id="x442-420007"></a>Suppose <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,α</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>  is a <tspan font-family="msbm" font-size="10">ℤ</tspan>-basis of <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>. The <tspan font-family="cmbx" font-size="10">discriminant</tspan> of the
+number field <tspan font-family="cmmi" font-size="10">K </tspan>is defined by
+</p>
+  <div class="math-display" >
+<img 
+src="Na2354x.png" alt="          ⌊                   ⌋ 2
+           σ1(α1)  ...  σn(α1)
+ΔK  := det |⌈   ..    ...     ..  |⌉  .
+              .            .
+           σ1(αn)  ...  σn(αn)
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+  </div>
+<!--l. 149--><p class="indent" >
+This does not depend on the choice of the <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmsy" font-size="10">}</tspan>; we will not prove this here.</p>
+<div class="mdframed" id="mdframed-806">
+<a 
+ id="x442-420008r1255"></a>
+<div class="newtheorem">
+<!--l. 152--><p class="noindent" ><span class="head">
+<a 
+ id="x442-420009r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 49.2.3 </tspan>(Discriminant of <tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2355x.png" alt="√ --
+  2"  class="sqrt"  />))<br 
+class="newline" /> </span><a 
+ id="x442-420010"></a>We have <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> = <tspan font-family="msbm" font-size="10">ℤ</tspan>[<img 
+src="Na2356x.png" alt="√ --
+  2"  class="sqrt"  />] and as discussed
+above the discriminant is
+</p>
+<div class="math-display" >
+<img 
+src="Na2357x.png" alt="          √ --
+ΔK  =  (− 2  2)2 = 8.
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 159--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-807">
+<a 
+ id="x442-420011r1256"></a>
+<div class="newtheorem">
+<!--l. 160--><p class="noindent" ><span class="head">
+<a 
+ id="x442-420012r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 49.2.4 </tspan>(Discriminant of <tspan font-family="msbm" font-size="10">ℚ</tspan>(<tspan font-family="cmmi" font-size="10">i</tspan>))<br 
+class="newline" /> </span><a 
+ id="x442-420013"></a>Let <tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<tspan font-family="cmmi" font-size="10">i</tspan>). We have <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> = <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">i</tspan>] = <tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">i</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>.
+The embeddings are the identity and complex conjugation which take 1 to (1<tspan font-family="cmmi" font-size="10">,</tspan>1) and <tspan font-family="cmmi" font-size="10">i</tspan>
+to (<tspan font-family="cmmi" font-size="10">i,</tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">i</tspan>). So
+</p>
+<div class="math-display" >
+<img 
+src="Na2358x.png" alt="          [     ]2
+           1  1           2
+ΔK  =  det i  − i  = (− 2i) = − 4.
+" class="math-display"  /></div>
+<!--l. 176--><p class="noindent" >This example illustrates that the discriminant need not be positive for number fields
+which wander into the complex plane (the lattice picture is a less perfect analogy). But
+again, as we’ll prove in the problems the discriminant is always an integer.
+</p>
+  </div>
+<!--l. 181--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-808">
+<a 
+ id="x442-420014r1257"></a>
+<div class="newtheorem">
+<!--l. 183--><p class="noindent" ><span class="head">
+<a 
+ id="x442-420015r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 49.2.5 </tspan>(Discriminant of <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2359x.png" alt="√ --
+  5"  class="sqrt"  />))<br 
+class="newline" /> </span><a 
+ id="x442-420016"></a>Let  <tspan font-family="cmmi" font-size="10">K  </tspan>=  <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2360x.png" alt="√ --
+  5"  class="sqrt"  />).  This  time,  <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>  =  <tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmsy" font-size="10">⊕</tspan>
+<img 
+src="Na2361x.png" alt="1+ √5
+--2--"  class="frac" align="middle" /><tspan font-family="msbm" font-size="10">ℤ</tspan>, and so the discriminant is going to look a little bit different. The embeddings
+are still <tspan font-family="cmmi" font-size="10">a </tspan>+ <tspan font-family="cmmi" font-size="10">b</tspan><img 
+src="Na2362x.png" alt="√ --
+  5"  class="sqrt"  /><img 
+src="Na2363x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">a </tspan>+ <tspan font-family="cmmi" font-size="10">b</tspan><img 
+src="Na2364x.png" alt="√ --
+  5"  class="sqrt"  /><tspan font-family="cmmi" font-size="10">,a </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">b</tspan><img 
+src="Na2365x.png" alt="√--
+ 5"  class="sqrt"  />.
+</p><!--l. 189--><p class="noindent" >Applying this to the <tspan font-family="msbm" font-size="10">ℤ</tspan>-basis <img 
+src="Na2366x.png" alt="{     √-}
+ 1, 1+--5-
+     2"  class="left" align="middle" />, we get
+</p>
+<div class="math-display" >
+<img 
+src="Na2367x.png" alt="         [           ]2
+            1√ -    1√-        √ -2
+ΔK  = det 1+--5  1−-5-  = (−   5) = 5.
+            2      2
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 200--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-809">
+<a 
+ id="x442-420017r1258"></a>
+<div class="newtheorem">
+<!--l. 202--><p class="noindent" ><span class="head">
+<a 
+ id="x442-420018r6"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 49.2.6.</tspan>  </span><a 
+ id="x442-420019"></a><tspan font-family="cmr" font-size="10">Extend all this to show that if </tspan><tspan font-family="cmmi" font-size="10">K </tspan><tspan font-family="cmr" font-size="10">= </tspan><tspan font-family="msbm" font-size="10">ℚ</tspan><tspan font-family="cmr" font-size="10">(</tspan><img 
+src="Na2368x.png" alt="√ -
+  d"  class="sqrt"  /><tspan font-family="cmr" font-size="10">) for </tspan><tspan font-family="cmmi" font-size="10">d</tspan><tspan font-family="cmmi" font-size="10">≠</tspan><tspan font-family="cmr" font-size="10">1 squarefree, we have</tspan>
+</p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na2369x.png" alt="      {
+Δ   =   d  if d ≡ 1 (mod  4)
+  K     4d if d ≡ 2,3 (mod 4).
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 211--><p class="indent" >  </p></div>
+<!--l. 213--><p class="indent" >  Actually, let me point out something curious: recall that the polynomial discriminant of
+<tspan font-family="cmmi" font-size="10">Ax</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">Bx </tspan>+ <tspan font-family="cmmi" font-size="10">C </tspan>is <tspan font-family="cmmi" font-size="10">B</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>4<tspan font-family="cmmi" font-size="10">AC</tspan>. Then: </p>
+     <ul class="itemize1">
+     <li class="itemize">In the <tspan font-family="cmmi" font-size="10">d </tspan><tspan font-family="cmsy" font-size="10">≡ </tspan>1 (mod 4) case, Δ<sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> is the discriminant of <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na2370x.png" alt="d−41"  class="frac" align="middle" />, which is the
+     minimal polynomial of <img 
+src="Na2371x.png" alt="1
+2"  class="frac" align="middle" />(1 + <img 
+src="Na2372x.png" alt="√ --
+  d"  class="sqrt"  />). Of course, <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> = <tspan font-family="msbm" font-size="10">ℤ</tspan>[<img 
+src="Na2373x.png" alt="1
+2"  class="frac" align="middle" />(1 + <img 
+src="Na2374x.png" alt="√ --
+  d"  class="sqrt"  />)].
+     </li>
+     <li class="itemize">In the <tspan font-family="cmmi" font-size="10">d </tspan><tspan font-family="cmsy" font-size="10">≡ </tspan>2<tspan font-family="cmmi" font-size="10">,</tspan>3 (mod 4) case, Δ<sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> is the discriminant of <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">d </tspan>which is the minimal
+     polynomial of <img 
+src="Na2375x.png" alt="√d-"  class="sqrt"  />. Once again, <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> = <tspan font-family="msbm" font-size="10">ℤ</tspan>[<img 
+src="Na2376x.png" alt="√d--"  class="sqrt"  />].</li></ul>
+<!--l. 223--><p class="noindent" >This is not a coincidence! <tspan font-family="cmbx" font-size="10">??</tspan>  asserts that this is true in general; hence the name
+“discriminant”.
+                                                                                
+                                                                                
+</p>
+  <!--l. 226--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach56.htm" >next</a>] [<a 
+href="Nase309.htm" >prev</a>] [<a 
+href="Nase309.htm#tailNase309.htm" >prev-tail</a>] [<a 
+href="Nase310.htm" >front</a>] [<a 
+href="Nase328.htm#Nase330.htm" >up</a>] </p></div>
+<!--l. 226--><p class="indent" >  <a 
+ id="tailNase310.htm"></a> </p> 
+</body> 
+</html>

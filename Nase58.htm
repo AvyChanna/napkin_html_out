@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Subspaces, and (inb4) a confusing linguistic point</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 227--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase59.htm" >next</a>] [<a 
+href="Nase57.htm" >prev</a>] [<a 
+href="Nase57.htm#tailNase57.htm" >prev-tail</a>] [<a 
+href="#tailNase58.htm">tail</a>] [<a 
+href="Nach9.htm#Nase58.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">6.4</span>  <a 
+ id="x92-830006.4"></a>Subspaces, and (inb4) a confusing linguistic point</h3>
+<!--l. 228--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">A circle is obtained as a subspace of </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 230--><p class="indent" >  As we’ve already been doing implicitly in examples, we’ll now say: <a 
+ id="x92-83001r261"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 232--><p class="noindent" ><span class="head">
+<a 
+ id="x92-83002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 6.4.1.</tspan>  </span><a 
+ id="x92-83003"></a>Every subset <tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">M </tspan>is a metric space in its own right, by re-using
+the distance function on <tspan font-family="cmmi" font-size="10">M</tspan>. We say that <tspan font-family="cmmi" font-size="10">S </tspan>is a <tspan font-family="cmbx" font-size="10">subspace</tspan> of <tspan font-family="cmmi" font-size="10">M</tspan>.
+</p>
+  </div>
+<!--l. 235--><p class="indent" >
+For example, we saw that the circle <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> is just a subspace of <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>.
+</p><!--l. 239--><p class="indent" >  It thus becomes important to distinguish between
+     </p><dl class="enumerate"><dt class="enumerate">
+  (i) </dt><dd 
+class="enumerate"><tspan font-family="cmbx" font-size="10">“absolute” adjectives </tspan>like “complete” or “bounded”, which can be applied to
+     both spaces, and hence even to subsets of spaces (by taking a subspace), and
+     </dd><dt class="enumerate">
+ (ii) </dt><dd 
+class="enumerate"><tspan font-family="cmbx" font-size="10">“relative” adjectives </tspan>like “open (in <tspan font-family="cmmi" font-size="10">M</tspan>)” and “closed (in <tspan font-family="cmmi" font-size="10">M</tspan>)”, which make sense
+     only relative to a space, even though people are often sloppy and omit them.</dd></dl>
+<!--l. 250--><p class="noindent" >So “[0<tspan font-family="cmmi" font-size="10">,</tspan>1] is complete” makes sense, as does “[0<tspan font-family="cmmi" font-size="10">,</tspan>1] is a complete subset of <tspan font-family="msbm" font-size="10">ℝ</tspan>”, which we take to
+mean “[0<tspan font-family="cmmi" font-size="10">,</tspan>1] is a complete as a subspace of <tspan font-family="msbm" font-size="10">ℝ</tspan>”. This is since “complete” is an absolute
+adjective.
+</p><!--l. 255--><p class="indent" >  But here are some examples of ways in which relative adjectives require a little more care:
+</p>
+     <ul class="itemize1">
+     <li class="itemize">Consider the sequence 1, 1<tspan font-family="cmmi" font-size="10">.</tspan>4, 1<tspan font-family="cmmi" font-size="10">.</tspan>41, 1<tspan font-family="cmmi" font-size="10">.</tspan>414, …. Viewed as a sequence in <tspan font-family="msbm" font-size="10">ℝ</tspan>, it converges
+     to <img 
+src="Na254x.png" alt="√ --
+  2"  class="sqrt"  />. But if viewed as a sequence in <tspan font-family="msbm" font-size="10">ℚ</tspan>, this sequence does <tspan font-family="cmti" font-size="10">not </tspan>converge! Similarly,
+     the sequence 0<tspan font-family="cmmi" font-size="10">.</tspan>9, 0<tspan font-family="cmmi" font-size="10">.</tspan>99, 0<tspan font-family="cmmi" font-size="10">.</tspan>999, 0<tspan font-family="cmmi" font-size="10">.</tspan>9999 does not converge in the space (0<tspan font-family="cmmi" font-size="10">,</tspan>1), although
+     it does converge in [0<tspan font-family="cmmi" font-size="10">,</tspan>1].
+     <!--l. 266--><p class="noindent" >The fact that these sequences fail to converge even though they “ought to” is weird
+     and bad, and was why we defined complete spaces to begin with.
+                                                                                
+                                                                                
+     </p></li>
+     <li class="itemize">In general, it makes no sense to ask a question like “is [0<tspan font-family="cmmi" font-size="10">,</tspan>1] open?”. The questions
+     “is [0<tspan font-family="cmmi" font-size="10">,</tspan>1] open in <tspan font-family="msbm" font-size="10">ℝ</tspan>?” and “is [0<tspan font-family="cmmi" font-size="10">,</tspan>1] open in [0<tspan font-family="cmmi" font-size="10">,</tspan>1]?” do make sense, however. The
+     answer to the first question is “no” but the answer to the second question is “yes”;
+     indeed, every space is open in itself. Similarly, [0<tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na255x.png" alt="1
+2"  class="frac" align="middle" />) is an open set in the space
+     <tspan font-family="cmmi" font-size="10">M </tspan>= [0<tspan font-family="cmmi" font-size="10">,</tspan>1] because it is the ball <tspan font-family="cmti" font-size="10">in </tspan><tspan font-family="cmmi" font-size="10">M </tspan>of radius <img 
+src="Na256x.png" alt="1
+2"  class="frac" align="middle" /> centered at 0.
+     </li>
+     <li class="itemize">Dually, it doesn’t make sense to ask “is [0<tspan font-family="cmmi" font-size="10">,</tspan>1] closed”? It is closed <tspan font-family="cmti" font-size="10">in </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>and <tspan font-family="cmti" font-size="10">in itself</tspan>
+     (but every space is closed in itself, anyways).</li></ul>
+<!--l. 298--><p class="indent" >  To make sure you understand the above, here are two exercises to help you practice relative
+adjectives.</p>
+<div class="mdframed" id="mdframed-175">
+<a 
+ id="x92-83006r262"></a>
+<div class="newtheorem">
+<!--l. 302--><p class="noindent" ><span class="head">
+<a 
+ id="x92-83007r2"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 6.4.2.</tspan>  </span><a 
+ id="x92-83008"></a><tspan font-family="cmr" font-size="10">Let </tspan><tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmr" font-size="10">be a complete metric space and let </tspan><tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">M</tspan><tspan font-family="cmr" font-size="10">. Prove that </tspan><tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmr" font-size="10">is complete if</tspan>
+<tspan font-family="cmr" font-size="10">and only if it is closed in </tspan><tspan font-family="cmmi" font-size="10">M</tspan><tspan font-family="cmr" font-size="10">. In particular, [0</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmr" font-size="10">1] is complete.</tspan></p>
+  </div>
+<!--l. 306--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-176">
+<a 
+ id="x92-83009r263"></a>
+<div class="newtheorem">
+<!--l. 308--><p class="noindent" ><span class="head">
+<a 
+ id="x92-83010r3"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 6.4.3.</tspan>  </span><a 
+ id="x92-83011"></a><tspan font-family="cmr" font-size="10">Let </tspan><tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmr" font-size="10">= [0</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmr" font-size="10">1] </tspan><tspan font-family="cmsy" font-size="10">∪ </tspan><tspan font-family="cmr" font-size="10">(2</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmr" font-size="10">3). Show that [0</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmr" font-size="10">1] and (2</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmr" font-size="10">3) are both open and closed in</tspan>
+<tspan font-family="cmmi" font-size="10">M</tspan><tspan font-family="cmr" font-size="10">.</tspan></p>
+  </div>
+<!--l. 310--><p class="indent" >  </p></div>
+<!--l. 312--><p class="indent" >  This illustrates a third point: a nontrivial set can be both open and
+closed<span class="footnote-mark"><a 
+href="Na93.htm#fn1x10"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x92-83012f1"></a> 
+As we’ll see in <tspan font-family="cmbx" font-size="10">??</tspan> , this implies the space is disconnected; i.e. the only examples look quite
+like the one we’ve given above.
+                                                                                
+                                                                                
+</p>
+  <!--l. 318--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase59.htm" >next</a>] [<a 
+href="Nase57.htm" >prev</a>] [<a 
+href="Nase57.htm#tailNase57.htm" >prev-tail</a>] [<a 
+href="Nase58.htm" >front</a>] [<a 
+href="Nach9.htm#Nase58.htm" >up</a>] </p></div>
+<!--l. 318--><p class="indent" >  <a 
+ id="tailNase58.htm"></a> </p> 
+</body> 
+</html>

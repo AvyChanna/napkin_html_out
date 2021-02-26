@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Homotopy and simply connected spaces</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 431--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase67.htm" >next</a>] [<a 
+href="Nase65.htm" >prev</a>] [<a 
+href="Nase65.htm#tailNase65.htm" >prev-tail</a>] [<a 
+href="#tailNase66.htm">tail</a>] [<a 
+href="Nach10.htm#Nase66.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">7.7</span>  <a 
+ id="x104-950007.7"></a>Homotopy and simply connected spaces</h3>
+<!--l. 432--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmti" font-size="10">and </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">∖{</tspan>0<tspan font-family="cmsy" font-size="10">}</tspan><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 435--><p class="indent" >  Now let’s motivate the idea of homotopy. Consider the example of the complex plane <tspan font-family="msbm" font-size="10">ℂ</tspan>
+(which you can think of just as <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>) with two points <tspan font-family="cmmi" font-size="10">p </tspan>and <tspan font-family="cmmi" font-size="10">q</tspan>. There’s a whole bunch of paths
+from <tspan font-family="cmmi" font-size="10">p </tspan>to <tspan font-family="cmmi" font-size="10">q </tspan>but somehow they’re not very different from one another. If I told you “walk from
+<tspan font-family="cmmi" font-size="10">p </tspan>to <tspan font-family="cmmi" font-size="10">q</tspan>” you wouldn’t have too many questions.
+</p>
+<div class="center" 
+>
+<!--l. 442--><p class="noindent" >
+</p>
+</div>
+<!--l. 455--><p class="indent" >  So we’re living happily in <tspan font-family="msbm" font-size="10">ℂ </tspan>until a meteor strikes the origin, blowing it out of existence.
+Then suddenly to get from <tspan font-family="cmmi" font-size="10">p </tspan>to <tspan font-family="cmmi" font-size="10">q</tspan>, people might tell you two different things: “go left around
+the meteor” or “go right around the meteor”.
+</p>
+<div class="center" 
+>
+<!--l. 460--><p class="noindent" >
+</p>
+</div>
+<!--l. 472--><p class="indent" >  So what’s happening? In the first picture, the red, green, and blue paths somehow all looked
+the same: if you imagine them as pieces of elastic string pinned down at <tspan font-family="cmmi" font-size="10">p </tspan>and <tspan font-family="cmmi" font-size="10">q</tspan>, you can
+stretch each one to any other one.
+</p><!--l. 477--><p class="indent" >  But in the second picture, you can’t move the red string to match
+with the blue string: there’s a meteor in the way. The paths are actually
+different.<span class="footnote-mark"><a 
+href="Na105.htm#fn3x11"><sup class="textsuperscript">3</sup></a></span><a 
+ id="x104-95001f3"></a> 
+                                                                                
+                                                                                
+</p><!--l. 484--><p class="indent" >  The formal notion we’ll use to capture this is <tspan font-family="cmti" font-size="10">homotopy equivalence</tspan>. We want to write a
+definition such that in the first picture, the three paths are all <tspan font-family="cmti" font-size="10">homotopic</tspan>, but the two paths in
+the second picture are somehow not homotopic. And the idea is just continuous
+deformation.
+<a 
+ id="x104-95002r293"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 491--><p class="noindent" ><span class="head">
+<a 
+ id="x104-95003r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 7.7.1.</tspan>  </span><a 
+ id="x104-95004"></a>Let  <tspan font-family="cmmi" font-size="10">α </tspan>and  <tspan font-family="cmmi" font-size="10">β </tspan>be  paths  in  <tspan font-family="cmmi" font-size="10">X </tspan>whose  endpoints  coincide.  A  (path)
+<tspan font-family="cmbx" font-size="10">homotopy</tspan> from <tspan font-family="cmmi" font-size="10">α </tspan>to <tspan font-family="cmmi" font-size="10">β </tspan>is a continuous function <tspan font-family="cmmi" font-size="10">F </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1]<sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X</tspan>, which we’ll write <tspan font-family="cmmi" font-size="10">F</tspan><sub><tspan font-family="cmmi" font-size="8">s</tspan></sub>(<tspan font-family="cmmi" font-size="10">t</tspan>)
+for <tspan font-family="cmmi" font-size="10">s,t </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan>[0<tspan font-family="cmmi" font-size="10">,</tspan>1], such that
+</p>
+  <div class="math-display" >
+<img 
+src="Na268x.png" alt="F (t) = α (t) and F (t) = β (t) for all t ∈ [0,1]
+ 0               1
+" class="math-display"  /></div>
+<!--l. 497--><p class="indent" >  and moreover
+</p>
+  <div class="math-display" >
+<img 
+src="Na269x.png" alt="α (0) = β(0) = Fs(0) and α(1) = β (1) = Fs(1) for all s ∈ [0,1].
+" class="math-display"  /></div>
+<!--l. 502--><p class="indent" >  If a path homotopy exists, we say <tspan font-family="cmmi" font-size="10">α </tspan>and <tspan font-family="cmmi" font-size="10">β </tspan>are path <tspan font-family="cmbx" font-size="10">homotopic</tspan> and write <tspan font-family="cmmi" font-size="10">α </tspan><tspan font-family="cmsy" font-size="10">≃ </tspan><tspan font-family="cmmi" font-size="10">β</tspan>.
+</p>
+  </div>
+<!--l. 504--><p class="indent" >
+<a 
+ id="x104-95005r294"></a>
+</p>
+                                                                                
+                                                                                
+  <div class="newtheorem">
+<!--l. 506--><p class="noindent" ><span class="head">
+<a 
+ id="x104-95006r2"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 7.7.2.</tspan>  </span><a 
+ id="x104-95007"></a>While I strictly should say “path homotopy” to describe
+this relation between two paths, I will shorten this to just “homotopy” instead. Similarly
+I will shorten “path homotopic” to “homotopic”.
+</p>
+  </div>
+<!--l. 509--><p class="indent" >
+Animated picture: <a 
+href="https://commons.wikimedia.org/wiki/File:HomotopySmall.gif" class="url" ><tspan font-family="cmtt" font-size="10">https://commons.wikimedia.org/wiki/File:HomotopySmall.gif</tspan></a>.
+Needless to say, <tspan font-family="cmsy" font-size="10">≃ </tspan>is an equivalence relation.
+</p><!--l. 513--><p class="indent" >  What this definition is doing is taking <tspan font-family="cmmi" font-size="10">α </tspan>and “continuously deforming” it to <tspan font-family="cmmi" font-size="10">β</tspan>, while
+keeping the endpoints fixed. Note that for each particular <tspan font-family="cmmi" font-size="10">s</tspan>, <tspan font-family="cmmi" font-size="10">F</tspan><sub><tspan font-family="cmmi" font-size="8">s</tspan></sub> is itself a function. So <tspan font-family="cmmi" font-size="10">s</tspan>
+represents time as we deform <tspan font-family="cmmi" font-size="10">α </tspan>to <tspan font-family="cmmi" font-size="10">β</tspan>: it goes from 0 to 1, starting at <tspan font-family="cmmi" font-size="10">α </tspan>and ending at
+<tspan font-family="cmmi" font-size="10">β</tspan>.
+</p>
+<div class="center" 
+>
+<!--l. 518--><p class="noindent" >
+</p>
+</div>
+<div class="mdframed" id="mdframed-189">
+<a 
+ id="x104-95008r295"></a>
+<div class="newtheorem">
+<!--l. 534--><p class="noindent" ><span class="head">
+<a 
+ id="x104-95009r3"></a>
+<tspan font-family="cmbx" font-size="10">Question 7.7.3.</tspan>  </span><a 
+ id="x104-95010"></a><tspan font-family="cmr" font-size="10">Convince yourself the above definition is right. What goes wrong when the</tspan>
+<tspan font-family="cmr" font-size="10">meteor strikes?</tspan></p>
+  </div>
+<!--l. 536--><p class="indent" >  </p></div>
+<!--l. 538--><p class="indent" >  So now I can tell you what makes <tspan font-family="msbm" font-size="10">ℂ </tspan>special: <a 
+ id="x104-95011r296"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 540--><p class="noindent" ><span class="head">
+<a 
+ id="x104-95012r4"></a>
+<tspan font-family="cmbx" font-size="10">Definition 7.7.4.</tspan>  </span><a 
+ id="x104-95013"></a>A space <tspan font-family="cmmi" font-size="10">X </tspan>is <tspan font-family="cmbx" font-size="10">simply connected</tspan> if it’s path-connected and for any
+points <tspan font-family="cmmi" font-size="10">p </tspan>and <tspan font-family="cmmi" font-size="10">q</tspan>, all paths from <tspan font-family="cmmi" font-size="10">p </tspan>to <tspan font-family="cmmi" font-size="10">q </tspan>are homotopic.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 542--><p class="indent" >
+That’s why you don’t ask questions when walking from <tspan font-family="cmmi" font-size="10">p </tspan>to <tspan font-family="cmmi" font-size="10">q </tspan>in <tspan font-family="msbm" font-size="10">ℂ</tspan>: there’s really only one way
+to walk. Hence the term “simply” connected.</p>
+<div class="mdframed" id="mdframed-190">
+<a 
+ id="x104-95014r297"></a>
+<div class="newtheorem">
+<!--l. 547--><p class="noindent" ><span class="head">
+<a 
+ id="x104-95015r5"></a>
+<tspan font-family="cmbx" font-size="10">Question 7.7.5.</tspan>  </span><a 
+ id="x104-95016"></a><tspan font-family="cmr" font-size="10">Convince yourself that </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="7">n</tspan></sup> <tspan font-family="cmr" font-size="10">is simply connected for all </tspan><tspan font-family="cmmi" font-size="10">n</tspan><tspan font-family="cmr" font-size="10">.</tspan></p>
+  </div>
+<!--l. 548--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 550--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase67.htm" >next</a>] [<a 
+href="Nase65.htm" >prev</a>] [<a 
+href="Nase65.htm#tailNase65.htm" >prev-tail</a>] [<a 
+href="Nase66.htm" >front</a>] [<a 
+href="Nach10.htm#Nase66.htm" >up</a>] </p></div>
+<!--l. 550--><p class="indent" >  <a 
+ id="tailNase66.htm"></a> </p> 
+</body> 
+</html>

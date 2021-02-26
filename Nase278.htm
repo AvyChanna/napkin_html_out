@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Motivation: line integrals</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 6--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach50.htm" >next</a>] [<a 
+href="Nase263.htm#tailNase278.htm">tail</a>] [<a 
+href="Nase294.htm#Nase295.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">44.1</span>  <a 
+ id="x400-37900044.1"></a>Motivation: line integrals</h3>
+<!--l. 7--><p class="noindent" >Given a function <tspan font-family="cmmi" font-size="10">g </tspan>: [<tspan font-family="cmmi" font-size="10">a,b</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>, we know by the fundamental theorem of calculus
+that
+</p>
+  <div class="math-display" >
+<img 
+src="Na2045x.png" alt="∫
+    g (t) dt = f(b)− f (a )
+ [a,b]
+" class="math-display"  /></div>
+<!--l. 12--><p class="indent" >  where <tspan font-family="cmmi" font-size="10">f </tspan>is a function such that <tspan font-family="cmmi" font-size="10">g </tspan>= <tspan font-family="cmmi" font-size="10">df∕dt</tspan>. Equivalently, for <tspan font-family="cmmi" font-size="10">f </tspan>: [<tspan font-family="cmmi" font-size="10">a,b</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>,
+</p>
+  <div class="math-display" >
+<img 
+src="Na2046x.png" alt="∫         ∫
+    g dt =     df = f(b) − f(a)
+ [a,b]       [a,b]
+" class="math-display"  /></div>
+<!--l. 17--><p class="indent" >  where <tspan font-family="cmmi" font-size="10">df </tspan>is the exterior derivative we defined earlier.
+</p><!--l. 19--><p class="indent" >  Cool, so we can integrate over [<tspan font-family="cmmi" font-size="10">a,b</tspan>]. Now suppose more generally, we have <tspan font-family="cmmi" font-size="10">U </tspan>an open subset
+of our real vector space <tspan font-family="cmmi" font-size="10">V </tspan>and a 1-form <tspan font-family="cmmi" font-size="10">α </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>. We consider a <tspan font-family="cmbx" font-size="10">parametrized curve</tspan>,
+which is a smooth function <tspan font-family="cmmi" font-size="10">c </tspan>: [<tspan font-family="cmmi" font-size="10">a,b</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">U</tspan>. Picture: </p>
+<div class="center" 
+>
+<!--l. 24--><p class="noindent" >
+</p>
+</div>
+<!--l. 56--><p class="indent" >  We want to define an <tspan font-family="cmex" font-size="10">∫</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">c</tspan></sub><tspan font-family="cmmi" font-size="10">α </tspan>such that:
+</p>
+<div class="mdframed" id="mdframed-722">
+<!--l. 58--><p class="noindent" ><tspan font-family="cmbx" font-size="10">The integral</tspan> <tspan font-family="cmex" font-size="10">∫</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">c</tspan></sub><tspan font-family="cmmi" font-size="10">α </tspan><tspan font-family="cmbx" font-size="10">should add up all the </tspan><tspan font-family="cmmi" font-size="10">α </tspan><tspan font-family="cmbx" font-size="10">along the curve </tspan><tspan font-family="cmmi" font-size="10">c</tspan><tspan font-family="cmbx" font-size="10">.</tspan>
+</p><!--l. 59--><p class="noindent" ></p>
+  </div>
+<!--l. 60--><p class="indent" >  Our differential form <tspan font-family="cmmi" font-size="10">α </tspan>first takes in a point <tspan font-family="cmmi" font-size="10">p </tspan>to get <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>. Then, it eats a
+tangent vector <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>to the curve <tspan font-family="cmmi" font-size="10">c </tspan>to finally give a real number <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">v</tspan>) <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>. We
+would like to “add all these numbers up”, using only the notion of an integral over
+[<tspan font-family="cmmi" font-size="10">a,b</tspan>].</p>
+<div class="mdframed" id="mdframed-723">
+<a 
+ id="x400-379001r1125"></a>
+<div class="newtheorem">
+<!--l. 66--><p class="noindent" ><span class="head">
+<a 
+ id="x400-379002r1"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 44.1.1.</tspan>  </span><a 
+ id="x400-379003"></a><tspan font-family="cmr" font-size="10">Try to guess what the definition of the integral should be. (By type-checking,</tspan>
+<tspan font-family="cmr" font-size="10">there’s only one reasonable answer.)</tspan></p>
+  </div>
+<!--l. 68--><p class="indent" >  </p></div>
+<!--l. 70--><p class="indent" >  So, the definition we give is
+</p>
+  <div class="math-display" >
+<img 
+src="Na2047x.png" alt="∫      ∫
+   α :=      αc(t)(c′(t)) dt.
+ c      [a,b]
+" class="math-display"  /></div>
+<!--l. 73--><p class="indent" >  Here, <tspan font-family="cmmi" font-size="10">c</tspan><tspan font-family="cmsy" font-size="10">′</tspan>(<tspan font-family="cmmi" font-size="10">t</tspan>) is shorthand for (<tspan font-family="cmmi" font-size="10">Dc</tspan>)<sub><tspan font-family="cmmi" font-size="8">c</tspan><tspan font-family="cmr" font-size="8">(</tspan><tspan font-family="cmmi" font-size="8">t</tspan><tspan font-family="cmr" font-size="8">)</tspan></sub>(1). It represents the <tspan font-family="cmti" font-size="10">tangent vector </tspan>to the curve <tspan font-family="cmmi" font-size="10">c </tspan>at the
+point <tspan font-family="cmmi" font-size="10">p </tspan>= <tspan font-family="cmmi" font-size="10">c</tspan>(<tspan font-family="cmmi" font-size="10">t</tspan>), at time <tspan font-family="cmmi" font-size="10">t</tspan>. (Here we are taking advantage of the fact that [<tspan font-family="cmmi" font-size="10">a,b</tspan>] is
+one-dimensional.)
+</p><!--l. 78--><p class="indent" >  Now that definition was a pain to write, so we will define a differential 1-form
+<tspan font-family="cmmi" font-size="10">c</tspan><sup><tspan font-family="cmsy" font-size="8">∗</tspan></sup><tspan font-family="cmmi" font-size="10">α </tspan>on [<tspan font-family="cmmi" font-size="10">a,b</tspan>] to swallow that entire thing: specifically, in this case we define <tspan font-family="cmmi" font-size="10">c</tspan><sup><tspan font-family="cmsy" font-size="8">∗</tspan></sup><tspan font-family="cmmi" font-size="10">α </tspan>to
+be
+</p>
+  <div class="math-display" >
+<img 
+src="Na2048x.png" alt="(c∗α )(𝜀) = α   ⋅(Dc )(𝜀)
+    t       c(t)      t
+" class="math-display"  /></div>
+<!--l. 82--><p class="indent" >  (here <tspan font-family="cmmi" font-size="10">𝜀 </tspan>is some displacement in time). Thus, we can more succinctly write
+</p>
+  <div class="math-display" >
+<img 
+src="Na2049x.png" alt="∫      ∫
+            ∗
+ cα :=  [a,b]c α.
+" class="math-display"  /></div>
+<!--l. 85--><p class="indent" >  This is a special case of a <tspan font-family="cmti" font-size="10">pullback</tspan>: roughly, if <tspan font-family="cmmi" font-size="10">ϕ </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">U</tspan><tspan font-family="cmsy" font-size="10">′ </tspan>(where <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>, <tspan font-family="cmmi" font-size="10">U</tspan><tspan font-family="cmsy" font-size="10">′⊆ </tspan><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">′</tspan>),
+we can change any differential <tspan font-family="cmmi" font-size="10">k</tspan>-form <tspan font-family="cmmi" font-size="10">α </tspan>on <tspan font-family="cmmi" font-size="10">U</tspan><tspan font-family="cmsy" font-size="10">′ </tspan>to a <tspan font-family="cmmi" font-size="10">k</tspan>-form on <tspan font-family="cmmi" font-size="10">U</tspan>. In particular, if
+<tspan font-family="cmmi" font-size="10">U </tspan>= [<tspan font-family="cmmi" font-size="10">a,b</tspan>],<span class="footnote-mark"><a 
+href="Na401.htm#fn1x49"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x400-379004f1"></a> 
+we can resort to our old definition of an integral. Let’s now do this in full generality.
+                                                                                
+                                                                                
+</p>
+  <!--l. 95--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach50.htm" >next</a>] [<a 
+href="Nase278.htm" >front</a>] [<a 
+href="Nase294.htm#Nase295.htm" >up</a>] </p></div>
+<!--l. 95--><p class="indent" >  <a 
+ id="tailNase278.htm"></a> </p> 
+</body> 
+</html>

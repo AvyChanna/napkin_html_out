@@ -1,0 +1,352 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The factoring algorithm</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 321--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase325.htm" >next</a>] [<a 
+href="Nase304.htm" >prev</a>] [<a 
+href="Nase304.htm#tailNase304.htm" >prev-tail</a>] [<a 
+href="Nase288.htm#tailNase305.htm">tail</a>] [<a 
+href="Nase320.htm#Nase324.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">48.5</span>  <a 
+ id="x436-41400048.5"></a>The factoring algorithm</h3>
+<!--l. 322--><p class="noindent" >Let’s look at some examples from quadratic fields. Recall that if <tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2275x.png" alt="√--
+ d"  class="sqrt"  />), then
+</p>
+  <div class="math-display" >
+<img 
+src="Na2276x.png" alt="      {   √ --
+        ℤ[[ d]√-]  d ≡ 2,3  (mod  4)
+𝒪K  =   ℤ  1+-d-  d ≡ 1  (mod  4).
+             2
+" class="math-display"  /></div>
+<!--l. 331--><p class="indent" >  Also, recall that the norm of <tspan font-family="cmmi" font-size="10">a </tspan>+ <tspan font-family="cmmi" font-size="10">b</tspan><img 
+src="Na2277x.png" alt="√---
+ − d"  class="sqrt"  /> is given by <tspan font-family="cmmi" font-size="10">a</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">db</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>.</p>
+<div class="mdframed" id="mdframed-790">
+<a 
+ id="x436-414001r1231"></a>
+<div class="newtheorem">
+<!--l. 337--><p class="noindent" ><span class="head">
+<a 
+ id="x436-414002r1"></a>
+<tspan font-family="cmbx" font-size="10">Example 48.5.1 </tspan>(Factoring 6 in the integers of <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2278x.png" alt="√ −-5"  class="sqrt"  />))<br 
+class="newline" /> </span><a 
+ id="x436-414003"></a>Let <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> = <tspan font-family="msbm" font-size="10">ℤ</tspan>[<img 
+src="Na2279x.png" alt="√ −-5"  class="sqrt"  />] arise from
+<tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2280x.png" alt="√ ---
+  − 5"  class="sqrt"  />). We’ve already seen that
+</p>
+<div class="math-display" >
+<img 
+src="Na2281x.png" alt="               (    √---)(    √ --)
+(6) = (2) ⋅(3 ) = 1 + − 5  1 −   − 5
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 341--><p class="noindent" >and you can’t get any further with these principal ideals. But let
+</p>
+<div class="math-display" >
+<img 
+src="Na2282x.png" alt="    (    √---  )   (   √ ---  )                 √---             √ ---
+𝔭 =  1+   − 5,2 =   1−   − 5,2   and  𝔮1 = (1+   − 5,3), 𝔮2 = (1−  − 5,3).
+" class="math-display"  /></div>
+<!--l. 346--><p class="noindent" >Then it turns out (6) = <tspan font-family="eufm" font-size="10">𝔭</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. More specifically, (2) = <tspan font-family="eufm" font-size="10">𝔭</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, (3) = <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, and (1+<img 
+src="Na2283x.png" alt=" ---
+√− 5"  class="sqrt"  />) =
+<tspan font-family="eufm" font-size="10">𝔭𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and (1 <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na2284x.png" alt="√ −-5"  class="sqrt"  />) = <tspan font-family="eufm" font-size="10">𝔭𝔮</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. (Proof in just a moment.)
+</p>
+  </div>
+<!--l. 350--><p class="indent" >  </p></div>
+<!--l. 351--><p class="indent" >  I want to stress that all our ideals are computed relative to <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>. So for example,
+</p>
+  <div class="math-display" >
+<img 
+src="Na2285x.png" alt="(2) = {2x | x ∈ 𝒪K } .
+" class="math-display"  /></div>
+<!--l. 354--><p class="indent" >  How do we know in this example that <tspan font-family="eufm" font-size="10">𝔭 </tspan>is prime/maximal? (Again, these are the same since
+we’re in a Dedekind domain.) Answer: look at <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="eufm" font-size="10">𝔭 </tspan>and see if it’s a field. There is a trick to
+this: we can express
+</p>
+  <div class="math-display" >
+<img 
+src="Na2286x.png" alt="𝒪K  = ℤ [√ −-5] ∼= ℤ [x]∕(x2 + 5).
+                                                                                
+                                                                                
+" class="math-display"  /></div>
+<!--l. 364--><p class="indent" >  So when we take <tspan font-family="cmti" font-size="10">that </tspan>mod <tspan font-family="eufm" font-size="10">𝔭</tspan>, we get that
+</p>
+  <div class="math-display" >
+<img 
+src="Na2287x.png" alt="𝒪K ∕𝔭 = ℤ [x]∕(x2 + 5,2,1 + x) ∼= 𝔽2[x ]∕(x2 + 5,x+ 1)
+" class="math-display"  /></div>
+<!--l. 366--><p class="indent" >  as rings.</p>
+<div class="mdframed" id="mdframed-791">
+<a 
+ id="x436-414004r1232"></a>
+<div class="newtheorem">
+<!--l. 368--><p class="noindent" ><span class="head">
+<a 
+ id="x436-414005r2"></a>
+<tspan font-family="cmbx" font-size="10">Question 48.5.2.</tspan>  </span><a 
+ id="x436-414006"></a><tspan font-family="cmr" font-size="10">Conclude  that  </tspan><tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="7">K</tspan></sub><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="eufm" font-size="10">𝔭</tspan><img 
+src="Na2288x.png" alt="∼="  class="cong"  /><tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmr" font-size="7">2</tspan></sub><tspan font-family="cmr" font-size="10">,  and  satisfy  yourself  that  </tspan><tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="7">1</tspan></sub>  <tspan font-family="cmr" font-size="10">and  </tspan><tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="7">2</tspan></sub>  <tspan font-family="cmr" font-size="10">are  also</tspan>
+<tspan font-family="cmr" font-size="10">maximal.</tspan></p>
+  </div>
+<!--l. 370--><p class="indent" >  </p></div>
+<!--l. 371--><p class="indent" >  I should give an explicit example of an ideal multiplication: let’s compute
+</p><table 
+class="align-star"><!--l. 377--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub></td><td 
+class="align-even"> = <img 
+src="Na2290x.png" alt="(     √---     √ ---       √ ---      √ ---   )
+ (1 +  − 5)(1−   − 5),3(1 +   − 5),3(1−  − 5),9"  class="left" align="middle" /></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>    <td 
+class="align-even"> = <img 
+src="Na2291x.png" alt="(       √ ---     √---  )
+ 6,3 + 3  − 5,3 − 3 − 5,9"  class="left" align="middle" /></td>                     <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>    <td 
+class="align-even"> = <img 
+src="Na2292x.png" alt="(       √ ---     √---  )
+ 6,3 + 3  − 5,3 − 3 − 5,3"  class="left" align="middle" /></td>                     <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>    <td 
+class="align-even"> = (3)</td>                                            <td 
+class="align-label"></td><td 
+class="align-label">                          </td></tr></table>
+                                                                                
+                                                                                
+</p><!--l. 378--><p class="indent" >  where we first did 9 <tspan font-family="cmsy" font-size="10">− </tspan>6 = 3 (think Euclidean algorithm!), then noted that all the other
+generators don’t contribute anything we don’t already have with the 3 (again these are
+ideals computed in <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>). You can do the computation for <tspan font-family="eufm" font-size="10">𝔭</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, <tspan font-family="eufm" font-size="10">𝔭𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="eufm" font-size="10">𝔭𝔮</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> in the same
+way.
+</p><!--l. 384--><p class="indent" >  Finally, it’s worth pointing out that we should quickly verify that <tspan font-family="eufm" font-size="10">𝔭</tspan><tspan font-family="cmmi" font-size="10">≠</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) for some <tspan font-family="cmmi" font-size="10">x</tspan>; in other
+words, that <tspan font-family="eufm" font-size="10">𝔭 </tspan>is not principal. Assume for contradiction that it is. Then <tspan font-family="cmmi" font-size="10">x </tspan>divides both
+1 + <img 
+src="Na2293x.png" alt="√ ---
+  − 5"  class="sqrt"  /> and 2, in the sense that 1 + <img 
+src="Na2294x.png" alt="√ ---
+  − 5"  class="sqrt"  /> = <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">x </tspan>and 2 = <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">x </tspan>for some <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,α</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∈𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>.
+(Principal ideals are exactly the “multiples” of <tspan font-family="cmmi" font-size="10">x</tspan>, so (<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>.) Taking the norms, we find
+that N<sub><tspan font-family="cmmi" font-size="8">K∕</tspan><tspan font-family="msbm" font-size="10">ℚ</tspan></sub>(<tspan font-family="cmmi" font-size="10">x</tspan>) divides both
+</p>
+  <div class="math-display" >
+<img 
+src="Na2295x.png" alt="          √ ---
+NK ∕ℚ(1 +   − 5) = 6 and   NK ∕ℚ(2) = 4.
+" class="math-display"  /></div>
+<!--l. 394--><p class="indent" >  Since <tspan font-family="eufm" font-size="10">𝔭</tspan><tspan font-family="cmmi" font-size="10">≠</tspan>(1), <tspan font-family="cmmi" font-size="10">x </tspan>cannot be a unit, so its norm must be 2. But there are no elements of norm
+2 = <tspan font-family="cmmi" font-size="10">a</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + 5<tspan font-family="cmmi" font-size="10">b</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> in <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>.</p>
+<div class="mdframed" id="mdframed-792">
+<a 
+ id="x436-414007r1233"></a>
+<div class="newtheorem">
+<!--l. 397--><p class="noindent" ><span class="head">
+<a 
+ id="x436-414008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 48.5.3 </tspan>(Factoring 3 in the integers of <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2296x.png" alt="√ ----
+  − 17"  class="sqrt"  />))<br 
+class="newline" /> </span><a 
+ id="x436-414009"></a>Let  <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>  =  <tspan font-family="msbm" font-size="10">ℤ</tspan>[<img 
+src="Na2297x.png" alt="√----
+ − 17"  class="sqrt"  />]  arise
+from <tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2298x.png" alt="√ ----
+  − 17"  class="sqrt"  />). We know <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub><img 
+src="Na2299x.png" alt="∼="  class="cong"  /><tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>]<tspan font-family="cmmi" font-size="10">∕</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + 17). Now
+</p>
+<div class="math-display" >
+<img 
+src="Na2300x.png" alt="                    2                2
+𝒪K  ∕3𝒪K ∼=  ℤ[x]∕(3,x  + 17) ∼= 𝔽3[x]∕(x −  1).
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 405--><p class="noindent" >This already shows that (3) cannot be a prime (i.e. maximal) ideal, since otherwise our
+result should be a field. Anyways, we have a projection
+</p>
+<div class="math-display" >
+<img 
+src="Na2301x.png" alt="𝒪K  ↠ 𝔽3[x]∕((x−  1)(x + 1)).
+" class="math-display"  /></div>
+<!--l. 409--><p class="noindent" >Let <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> be the pre-image of (<tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1) in the image, that is,
+</p>
+<div class="math-display" >
+<img 
+src="Na2302x.png" alt="       √ ----
+𝔮1 = (3, − 17− 1).
+" class="math-display"  /></div>
+<!--l. 411--><p class="noindent" >Similarly,
+</p>
+<div class="math-display" >
+<img 
+src="Na2303x.png" alt="       √ ----
+𝔮2 = (3, − 17+ 1).
+" class="math-display"  /></div>
+<!--l. 412--><p class="noindent" >We have <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><img 
+src="Na2304x.png" alt="∼
+="  class="cong"  /><tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>, so <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> is maximal (prime). Similarly <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> is prime. Magically, you can
+check explicitly that
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na2305x.png" alt="𝔮1𝔮2 = (3).
+" class="math-display"  /></div>
+<!--l. 416--><p class="noindent" >Hence this is the factorization of (3) into prime ideals.
+</p>
+  </div>
+<!--l. 417--><p class="indent" >  </p></div>
+<!--l. 419--><p class="indent" >  The fact that <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> = (3) looks magical, but it’s really true:
+</p><table 
+class="align-star"><!--l. 427--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub></td><td 
+class="align-even"> = (3<tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na2307x.png" alt="√−-17"  class="sqrt"  /> <tspan font-family="cmsy" font-size="10">− </tspan>1)(3<tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na2308x.png" alt="√ −-17"  class="sqrt"  /> + 1)</td>  <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>    <td 
+class="align-even"> = (9<tspan font-family="cmmi" font-size="10">,</tspan>3<img 
+src="Na2309x.png" alt="√----
+ − 17"  class="sqrt"  /> + 3<tspan font-family="cmmi" font-size="10">,</tspan>3<img 
+src="Na2310x.png" alt="√----
+ − 17"  class="sqrt"  /> <tspan font-family="cmsy" font-size="10">− </tspan>3<tspan font-family="cmmi" font-size="10">,</tspan>18)</td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>    <td 
+class="align-even"> = (9<tspan font-family="cmmi" font-size="10">,</tspan>3<img 
+src="Na2311x.png" alt="√----
+ − 17"  class="sqrt"  /> + 3<tspan font-family="cmmi" font-size="10">,</tspan>6)</td>            <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>    <td 
+class="align-even"> = (3<tspan font-family="cmmi" font-size="10">,</tspan>3<img 
+src="Na2312x.png" alt="√−-17"  class="sqrt"  /> + 3<tspan font-family="cmmi" font-size="10">,</tspan>6)</td>            <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>    <td 
+class="align-even"> = (3)<tspan font-family="cmmi" font-size="10">.</tspan></td>                        <td 
+class="align-label"></td><td 
+class="align-label">                                             </td></tr></table>
+</p><!--l. 428--><p class="indent" >  In fact, it turns out this always works in general: given a rational prime <tspan font-family="cmmi" font-size="10">p</tspan>, there is an
+algorithm to factor <tspan font-family="cmmi" font-size="10">p </tspan>in any <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> of the form <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">𝜃</tspan>].</p>
+<div class="mdframed" id="mdframed-793">
+<a 
+ id="x436-414010r1234"></a>
+<div class="newtheorem">
+<!--l. 432--><p class="noindent" ><span class="head">
+<a 
+ id="x436-414011r4"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmssbx" font-size="10">Theorem 48.5.4 </tspan><tspan font-family="cmss" font-size="10">(Factoring algorithm / Dedekind-Kummer theorem)</tspan><br 
+class="newline" /> </span><a 
+ id="x436-414012"></a> Let <tspan font-family="cmmi" font-size="10">K </tspan>be a number field.
+Let <tspan font-family="cmmi" font-size="10">𝜃 </tspan><tspan font-family="cmsy" font-size="10">∈𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> with [<tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> : <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">𝜃</tspan>]] = <tspan font-family="cmmi" font-size="10">j &#x003C; </tspan><tspan font-family="cmsy" font-size="10">∞</tspan>, and let <tspan font-family="cmmi" font-size="10">p </tspan>be a prime not dividing <tspan font-family="cmmi" font-size="10">j</tspan>. Then (<tspan font-family="cmmi" font-size="10">p</tspan>) = <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> is
+factored as follows:
+     </p><blockquote class="quote">
+     <!--l. 439--><p class="noindent" >Let <tspan font-family="cmmi" font-size="10">f </tspan>be the minimal polynomial of <tspan font-family="cmmi" font-size="10">𝜃 </tspan>and factor <span class="overline"><tspan font-family="cmmi" font-size="10">f</tspan></span> mod <tspan font-family="cmmi" font-size="10">p </tspan>as
+     </p>
+<div class="math-display" >
+<img 
+src="Na2313x.png" alt="--  ∏g -- e
+f ≡    (f i) i  (mod  p).
+    i=1
+" class="math-display"  /></div>
+     <!--l. 442--><p class="noindent" >Then <tspan font-family="eufm" font-size="10">𝔭</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = (<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>(<tspan font-family="cmmi" font-size="10">𝜃</tspan>)<tspan font-family="cmmi" font-size="10">,p</tspan>) is prime for each <tspan font-family="cmmi" font-size="10">i </tspan>and the factorization of (<tspan font-family="cmmi" font-size="10">p</tspan>) is
+     </p>
+<div class="math-display" >
+<img 
+src="Na2314x.png" alt="           ∏g
+𝒪K  ⊇ (p) =   𝔭eii.
+           i=1
+" class="math-display"  /></div>
+     </blockquote>
+<!--l. 446--><p class="noindent" >In particular, if <tspan font-family="cmmi" font-size="10">K </tspan>is monogenic with <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> = <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">𝜃</tspan>] then <tspan font-family="cmmi" font-size="10">j </tspan>= 1 and the theorem applies for all
+primes <tspan font-family="cmmi" font-size="10">p</tspan>.
+</p>
+  </div>
+<!--l. 448--><p class="indent" >  </p></div>
+<!--l. 449--><p class="indent" >  In almost all our applications in this book, <tspan font-family="cmmi" font-size="10">K </tspan>will be monogenic; i.e. <tspan font-family="cmmi" font-size="10">j </tspan>= 1. Here <span class="overline"><tspan font-family="cmmi" font-size="10">ψ</tspan></span> denotes
+the image in <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>[<tspan font-family="cmmi" font-size="10">x</tspan>] of a polynomial <tspan font-family="cmmi" font-size="10">ψ </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>].
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-794">
+<a 
+ id="x436-414013r1235"></a>
+<div class="newtheorem">
+<!--l. 453--><p class="noindent" ><span class="head">
+<a 
+ id="x436-414014r5"></a>
+<tspan font-family="cmbx" font-size="10">Question 48.5.5.</tspan>  </span><a 
+ id="x436-414015"></a><tspan font-family="cmr" font-size="10">There are many possible pre-images </tspan><tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="7">i</tspan></sub> <tspan font-family="cmr" font-size="10">we could have chosen (for example if</tspan>
+<span class="overline"><tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="7">i</tspan></sub></span> <tspan font-family="cmr" font-size="10">= </tspan><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="7">2</tspan></sup> <tspan font-family="cmr" font-size="10">+ 1 (</tspan><tspan font-family="cmr" font-size="10">mod</tspan> <tspan font-family="cmr" font-size="10">3), we could pick </tspan><tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="7">i</tspan></sub> <tspan font-family="cmr" font-size="10">= </tspan><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="7">2</tspan></sup> <tspan font-family="cmr" font-size="10">+ 3</tspan><tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmr" font-size="10">+ 7.) Why does this not affect the value of </tspan><tspan font-family="eufm" font-size="10">𝔭</tspan><sub><tspan font-family="cmmi" font-size="7">i</tspan></sub><tspan font-family="cmr" font-size="10">?</tspan></p>
+  </div>
+<!--l. 456--><p class="indent" >  </p></div>
+<!--l. 458--><p class="indent" >  Note that earlier, we could check the factorization worked for any particular case. The proof
+that this works is much the same, but we need one extra tool, the ideal norm. After that we
+leave the proposition as <tspan font-family="cmbx" font-size="10">??</tspan> .
+</p><!--l. 463--><p class="indent" >  This algorithm gives us a concrete way to compute prime factorizations of (<tspan font-family="cmmi" font-size="10">p</tspan>) in any
+monogenic number field with <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> = <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">𝜃</tspan>]. To summarize the recipe:
+     </p><dl class="enumerate"><dt class="enumerate">
+   1. </dt><dd 
+class="enumerate">Find the minimal polynomial of <tspan font-family="cmmi" font-size="10">𝜃</tspan>, say <tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>].
+     </dd><dt class="enumerate">
+   2. </dt><dd 
+class="enumerate">Factor <tspan font-family="cmmi" font-size="10">f </tspan>mod <tspan font-family="cmmi" font-size="10">p </tspan>into irreducible polynomials <span class="overline"><tspan font-family="cmmi" font-size="10">f</tspan></span><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmmi" font-size="8">e</tspan><sub><tspan font-family="cmr" font-size="6">1</tspan></sub></sup><span class="overline"><tspan font-family="cmmi" font-size="10">f</tspan></span><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmmi" font-size="8">e</tspan><sub><tspan font-family="cmr" font-size="6">2</tspan></sub></sup><tspan font-family="cmmi" font-size="10">…</tspan><span class="overline"><tspan font-family="cmmi" font-size="10">f</tspan></span><sub><tspan font-family="cmmi" font-size="8">g</tspan></sub><sup><tspan font-family="cmmi" font-size="8">e</tspan><sub><tspan font-family="cmmi" font-size="6">g</tspan></sub></sup>.
+     </dd><dt class="enumerate">
+   3. </dt><dd 
+class="enumerate">Compute <tspan font-family="eufm" font-size="10">𝔭</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = (<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>(<tspan font-family="cmmi" font-size="10">𝜃</tspan>)<tspan font-family="cmmi" font-size="10">,p</tspan>) for each <tspan font-family="cmmi" font-size="10">i</tspan>.</dd></dl>
+<!--l. 471--><p class="noindent" >Then your (<tspan font-family="cmmi" font-size="10">p</tspan>) = <tspan font-family="eufm" font-size="10">𝔭</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmmi" font-size="8">e</tspan><sub><tspan font-family="cmr" font-size="6">1</tspan></sub></sup><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="eufm" font-size="10">𝔭</tspan><sub><tspan font-family="cmmi" font-size="8">g</tspan></sub><sup><tspan font-family="cmmi" font-size="8">e</tspan><sub><tspan font-family="cmmi" font-size="6">g</tspan></sub></sup>.
+</p>
+<div class="mdframed" id="mdframed-795">
+<a 
+ id="x436-414019r1236"></a>
+<div class="newtheorem">
+<!--l. 474--><p class="noindent" ><span class="head">
+<a 
+ id="x436-414020r6"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 48.5.6.</tspan>  </span><a 
+ id="x436-414021"></a><tspan font-family="cmr" font-size="10">Factor (29) in </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmr" font-size="10">[</tspan><tspan font-family="cmmi" font-size="10">i</tspan><tspan font-family="cmr" font-size="10">] using the above algorithm.</tspan></p>
+  </div>
+<!--l. 475--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 488--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase325.htm" >next</a>] [<a 
+href="Nase304.htm" >prev</a>] [<a 
+href="Nase304.htm#tailNase304.htm" >prev-tail</a>] [<a 
+href="Nase305.htm" >front</a>] [<a 
+href="Nase320.htm#Nase324.htm" >up</a>] </p></div>
+<!--l. 488--><p class="indent" >  <a 
+ id="tailNase305.htm"></a> </p> 
+</body> 
+</html>

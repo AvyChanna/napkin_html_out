@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Exact sequences</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 166--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase427.htm" >next</a>] [<a 
+href="Nase397.htm" >prev</a>] [<a 
+href="Nase397.htm#tailNase397.htm" >prev-tail</a>] [<a 
+href="Nase373.htm#tailNase398.htm">tail</a>] [<a 
+href="Nase423.htm#Nase426.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">63.3</span>  <a 
+ id="x557-53300063.3"></a>Exact sequences</h3>
+<!--l. 167--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> 0 <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">H </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">H </tspan><tspan font-family="cmsy" font-size="10">→ </tspan>0 <tspan font-family="cmti" font-size="10">is exact.</tspan>
+</p><!--l. 168--><p class="indent" >  Exact sequences will seem exceedingly unmotivated until you learn about homology groups,
+which is one of the most natural places that exact sequences appear. In light of this, it might
+be worth trying to read the chapter on homology groups simultaneously with this
+one.
+</p><!--l. 173--><p class="indent" >  First, let me state the definition for groups, to motivate the general categorical definition. A
+sequence of groups
+</p>
+  <div class="math-display" >
+<img 
+src="Na3100x.png" alt="    f1    f2     f3    fn
+G0 −→  G1 −→ G2 −→  ...−→ Gn
+" class="math-display"  /></div>
+<!--l. 176--><p class="indent" >  is <tspan font-family="cmti" font-size="10">exact </tspan>at <tspan font-family="cmmi" font-size="10">G</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> if the image of <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> is the kernel of <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">+1</tspan></sub>. We say the entire sequence is exact if
+it’s exact at <tspan font-family="cmmi" font-size="10">k </tspan>= 1<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,n </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1.</p>
+<div class="mdframed" id="mdframed-1066">
+<a 
+ id="x557-533001r1613"></a>
+<div class="newtheorem">
+<!--l. 179--><p class="noindent" ><span class="head">
+<a 
+ id="x557-533002r1"></a>
+<tspan font-family="cmbx" font-size="10">Example 63.3.1 </tspan>(Exact sequences)<br 
+class="newline" /> </span><a 
+ id="x557-533003"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The sequence
+<div class="math-display" >
+                                                                                
+                                                                                
+<img 
+src="Na3101x.png" alt="0 → ℤ ∕3ℤ ×`→5 ℤ∕15ℤ ↠  ℤ∕5ℤ →  0
+" class="math-display"  /></div>
+    <!--l. 187--><p class="noindent" >is exact. Actually, 0 <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">G</tspan><img 
+src="Na3102x.png" alt="`→"  class="hookrightarrow"  /><tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">H </tspan><tspan font-family="msam" font-size="10">↠ </tspan><tspan font-family="cmmi" font-size="10">H </tspan><tspan font-family="cmsy" font-size="10">→ </tspan>0 is exact in general. (Here 0 denotes
+    the trivial group.)
+    </p></dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">For groups, the map 0 <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B </tspan>is exact if and only if <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B </tspan>is injective.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">For groups, the map <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B </tspan><tspan font-family="cmsy" font-size="10">→ </tspan>0 is exact if and only if <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B </tspan>is surjective.</dd></dl>
+</p>
+  </div>
+<!--l. 193--><p class="indent" >  </p></div>
+<!--l. 195--><p class="indent" >  Now, we want to mimic this definition in a general <tspan font-family="cmti" font-size="10">abelian </tspan>category <tspan font-family="cmsy" font-size="10">𝒜</tspan>. So, let’s write down
+a criterion for when <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3103x.png" alt="f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">B</tspan><img 
+src="Na3104x.png" alt=" g
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">C </tspan>is exact. First, we had better have that <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">f </tspan>= 0, which
+encodes the fact that im(<tspan font-family="cmmi" font-size="10">f</tspan>) <tspan font-family="cmsy" font-size="10">⊆</tspan> ker(<tspan font-family="cmmi" font-size="10">g</tspan>). Adding in all the relevant objects, we get the
+commutative diagram below. <img 
+src="Na3105x.png" alt="     -----f-----0--- ----
+   A|                       C|
+    |                        |
+imf |          B  -----g---⊃-0
+    |                        |
+                             |
+  Im  f⊂----........................    Ker g
+           ι    ∃!
+"  />
+Here the map <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="msam" font-size="10">↠</tspan> Im<tspan font-family="cmmi" font-size="10">f </tspan>is epic since we are assuming <tspan font-family="cmsy" font-size="10">𝒜 </tspan>is an abelian category. So, we have
+that
+</p>
+  <div class="math-display" >
+<img 
+src="Na3106x.png" alt="0 = (g ∘ι)∘ im f = g ∘ (ι ∘im f) = g ∘ f = 0
+" class="math-display"  /></div>
+<!--l. 208--><p class="indent" >  but since im<tspan font-family="cmmi" font-size="10">f </tspan>is epic, this means that <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∘</tspan><tspan font-family="cmmi" font-size="10">ι </tspan>= 0. So there is a <tspan font-family="cmti" font-size="10">unique </tspan>map Im<tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmsy" font-size="10">→</tspan> Ker<tspan font-family="cmmi" font-size="10">g</tspan>, and
+we require that this diagram commutes. In short, <a 
+ id="x557-533007r1614"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 212--><p class="noindent" ><span class="head">
+                                                                                
+                                                                                
+<a 
+ id="x557-533008r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 63.3.2.</tspan>  </span><a 
+ id="x557-533009"></a>Let <tspan font-family="cmsy" font-size="10">𝒜 </tspan>be an abelian category. The sequence
+</p>
+  <div class="math-display" >
+<img 
+src="Na3107x.png" alt="           fn     fn+1
+⋅⋅⋅ → An−1 −→ An  −− −→  An+1 →  ...
+" class="math-display"  /></div>
+<!--l. 214--><p class="indent" >  is <tspan font-family="cmbx" font-size="10">exact</tspan> at <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>  if <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> <tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmr" font-size="8">+1</tspan></sub>  = 0 and the canonical map Im<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>  <tspan font-family="cmsy" font-size="10">→</tspan> Ker<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmr" font-size="8">+1</tspan></sub>  is an
+isomorphism. The entire sequence is exact if it is exact at each <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>. (For finite sequences
+we don’t impose condition on the very first and very last object.)
+</p>
+  </div>
+<!--l. 218--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-1067">
+<a 
+ id="x557-533010r1615"></a>
+<div class="newtheorem">
+<!--l. 221--><p class="noindent" ><span class="head">
+<a 
+ id="x557-533011r3"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 63.3.3.</tspan>  </span><a 
+ id="x557-533012"></a><tspan font-family="cmr" font-size="10">Show that, as before, 0 </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B </tspan><tspan font-family="cmr" font-size="10">is exact</tspan>  <tspan font-family="cmmi" font-size="10">⇔</tspan>  <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B </tspan><tspan font-family="cmr" font-size="10">is monic.</tspan></p>
+  </div>
+<!--l. 222--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 224--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase427.htm" >next</a>] [<a 
+href="Nase397.htm" >prev</a>] [<a 
+href="Nase397.htm#tailNase397.htm" >prev-tail</a>] [<a 
+href="Nase398.htm" >front</a>] [<a 
+href="Nase423.htm#Nase426.htm" >up</a>] </p></div>
+<!--l. 224--><p class="indent" >  <a 
+ id="tailNase398.htm"></a> </p> 
+</body> 
+</html>

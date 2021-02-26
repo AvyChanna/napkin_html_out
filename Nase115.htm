@@ -1,0 +1,180 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Application: Arrow’s Impossibility Theorem</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 435--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase116.htm" >next</a>] [<a 
+href="Nase114.htm" >prev</a>] [<a 
+href="Nase114.htm#tailNase114.htm" >prev-tail</a>] [<a 
+href="#tailNase115.htm">tail</a>] [<a 
+href="Nach17.htm#Nase115.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">14.7</span>  <a 
+ id="x171-15800014.7"></a>Application: Arrow’s Impossibility Theorem</h3>
+<!--l. 436--><p class="noindent" >As an application of binary Fourier analysis, we now prove a form of <a 
+href="https://en.wikipedia.org/wiki/Arrow's_impossibility_theorem" >Arrow’s theorem</a>.
+</p><!--l. 440--><p class="indent" >  Consider <tspan font-family="cmmi" font-size="10">n </tspan>voters voting among 3 candidates <tspan font-family="cmmi" font-size="10">A</tspan>, <tspan font-family="cmmi" font-size="10">B</tspan>, <tspan font-family="cmmi" font-size="10">C</tspan>. Each voter specifies a tuple
+<tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = (<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmmi" font-size="10">,y</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmmi" font-size="10">,z</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>) <tspan font-family="cmsy" font-size="10">∈{±</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> as follows: </p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = 1 if person <tspan font-family="cmmi" font-size="10">i </tspan>ranks <tspan font-family="cmmi" font-size="10">A </tspan>ahead of <tspan font-family="cmmi" font-size="10">B</tspan>, and <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = <tspan font-family="cmsy" font-size="10">−</tspan>1 otherwise.
+     </li>
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = 1 if person <tspan font-family="cmmi" font-size="10">i </tspan>ranks <tspan font-family="cmmi" font-size="10">B </tspan>ahead of <tspan font-family="cmmi" font-size="10">C</tspan>, and <tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = <tspan font-family="cmsy" font-size="10">−</tspan>1 otherwise.
+     </li>
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = 1 if person <tspan font-family="cmmi" font-size="10">i </tspan>ranks <tspan font-family="cmmi" font-size="10">C </tspan>ahead of <tspan font-family="cmmi" font-size="10">A</tspan>, and <tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = <tspan font-family="cmsy" font-size="10">−</tspan>1 otherwise.</li></ul>
+<!--l. 447--><p class="noindent" >Tacitly, we only consider 3! = 6 possibilities for <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>: we forbid “paradoxical” votes of the form
+<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = <tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = <tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> by assuming that people’s votes are consistent (meaning the preferences are
+transitive).
+</p><!--l. 453--><p class="indent" >  For brevity, let <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmsy" font-size="8">∙</tspan></sub> = (<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>) and define <tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmsy" font-size="8">∙</tspan></sub> and <tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmsy" font-size="8">∙</tspan></sub> similarly. Then, we can consider a
+voting mechanism
+</p><table 
+class="align-star"><!--l. 460--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="cmsy" font-size="10">{±</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup></td><td 
+class="align-even"> <tspan font-family="cmsy" font-size="10">→{±</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">g</tspan>: <tspan font-family="cmsy" font-size="10">{±</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup></td><td 
+class="align-even"> <tspan font-family="cmsy" font-size="10">→{±</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">h</tspan>: <tspan font-family="cmsy" font-size="10">{±</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup></td><td 
+class="align-even"> <tspan font-family="cmsy" font-size="10">→{±</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                                               </td></tr></table>
+                                                                                
+                                                                                
+</p><!--l. 461--><p class="indent" >  such that </p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmsy" font-size="8">∙</tspan></sub>) is the global preference of <tspan font-family="cmmi" font-size="10">A </tspan>vs. <tspan font-family="cmmi" font-size="10">B</tspan>,
+     </li>
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">g</tspan>(<tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmsy" font-size="8">∙</tspan></sub>) is the global preference of <tspan font-family="cmmi" font-size="10">B </tspan>vs. <tspan font-family="cmmi" font-size="10">C</tspan>,
+     </li>
+     <li class="itemize">and <tspan font-family="cmmi" font-size="10">h</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmsy" font-size="8">∙</tspan></sub>) is the global preference of <tspan font-family="cmmi" font-size="10">C </tspan>vs. <tspan font-family="cmmi" font-size="10">A</tspan>.</li></ul>
+<!--l. 467--><p class="noindent" >We’d like to avoid situations where the global preference (<tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmsy" font-size="8">∙</tspan></sub>)<tspan font-family="cmmi" font-size="10">,g</tspan>(<tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmsy" font-size="8">∙</tspan></sub>)<tspan font-family="cmmi" font-size="10">,h</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmsy" font-size="8">∙</tspan></sub>)) is itself
+paradoxical.
+</p><!--l. 470--><p class="indent" >  Let <tspan font-family="msbm" font-size="10">𝔼</tspan><tspan font-family="cmmi" font-size="10">f </tspan>denote the average value of <tspan font-family="cmmi" font-size="10">f </tspan>across all 2<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> inputs. Define <tspan font-family="msbm" font-size="10">𝔼</tspan><tspan font-family="cmmi" font-size="10">g </tspan>and <tspan font-family="msbm" font-size="10">𝔼</tspan><tspan font-family="cmmi" font-size="10">h </tspan>similarly. We’ll
+add an assumption that <tspan font-family="msbm" font-size="10">𝔼</tspan><tspan font-family="cmmi" font-size="10">f </tspan>= <tspan font-family="msbm" font-size="10">𝔼</tspan><tspan font-family="cmmi" font-size="10">g </tspan>= <tspan font-family="msbm" font-size="10">𝔼</tspan><tspan font-family="cmmi" font-size="10">h </tspan>= 0, which provides symmetry (and e.g. excludes the
+possibility that <tspan font-family="cmmi" font-size="10">f</tspan>, <tspan font-family="cmmi" font-size="10">g</tspan>, <tspan font-family="cmmi" font-size="10">h </tspan>are constant functions which ignore voter input). With that we will
+prove the following result:</p>
+<div class="mdframed" id="mdframed-339">
+<a 
+ id="x171-158001r532"></a>
+<div class="newtheorem">
+<!--l. 478--><p class="noindent" ><span class="head">
+<a 
+ id="x171-158002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 14.7.1 </tspan><tspan font-family="cmss" font-size="10">(Arrow Impossibility Theorem)</tspan><br 
+class="newline" /> </span><a 
+ id="x171-158003"></a>Assume   that   (<tspan font-family="cmmi" font-size="10">f,g,h</tspan>)   always   avoids
+paradoxical  outcomes,  and  assume  <tspan font-family="msbm" font-size="10">𝔼</tspan><tspan font-family="cmmi" font-size="10">f  </tspan>=  <tspan font-family="msbm" font-size="10">𝔼</tspan><tspan font-family="cmmi" font-size="10">g  </tspan>=  <tspan font-family="msbm" font-size="10">𝔼</tspan><tspan font-family="cmmi" font-size="10">h </tspan>=  0.  Then  (<tspan font-family="cmmi" font-size="10">f,g,h</tspan>)  is  either  a
+dictatorship or anti-dictatorship: there exists a “dictator” <tspan font-family="cmmi" font-size="10">k </tspan>such that
+</p>
+<div class="math-display" >
+<img 
+src="Na715x.png" alt="f(x∙) = ±xk,    g(y∙) = ±yk,     h(z∙) = ±zk
+" class="math-display"  /></div>
+<!--l. 485--><p class="noindent" >where all three signs coincide.
+</p>
+  </div>
+<!--l. 486--><p class="indent" >  </p></div>
+<!--l. 487--><p class="indent" >  Unlike the usual Arrow theorem, we do <tspan font-family="cmti" font-size="10">not </tspan>assume that <tspan font-family="cmmi" font-size="10">f</tspan>(+1<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,</tspan>+1) = +1 (hence
+possibility of anti-dictatorship).
+</p><!--l. 490--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+  <div class="proof">
+<!--l. 491--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Suppose the voters each randomly select one of the 3! = 6 possible consistent
+votes. In <tspan font-family="cmbx" font-size="10">??</tspan>  it is shown that the exact probability of a paradoxical outcome for any
+functions <tspan font-family="cmmi" font-size="10">f</tspan>, <tspan font-family="cmmi" font-size="10">g</tspan>, <tspan font-family="cmmi" font-size="10">h </tspan>is given exactly by
+</p>
+  <div class="math-display" >
+<img 
+src="Na716x.png" alt="              (   )
+1-  1-  ∑        1- |S|( ^             ^      ^    ^   )
+4 + 4          − 3     f (S)^g(S)+ ^g(S )h (S)+ h(S )f (S) .
+     S⊆ {1,...,n}
+" class="math-display"  /></div>
+<!--l. 500--><p class="indent" >  Assume that this probability (of a paradoxical outcome) equals 0. Then, we derive
+</p>
+  <div class="math-display" >
+<img 
+src="Na717x.png" alt="               (   )
+       ∑          1- |S|( ^             ^      ^    ^   )
+1 =          −  − 3     f (S )^g(S)+ ^g(S )h (S )+ h(S )f (S ) .
+    S⊆ {1,...,n}
+" class="math-display"  /></div>
+<!--l. 505--><p class="indent" >  But now we can just use weak inequalities. We have <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">f</tspan></span>(<tspan font-family="msbm" font-size="10">∅</tspan>) = <tspan font-family="msbm" font-size="10">𝔼</tspan><tspan font-family="cmmi" font-size="10">f </tspan>= 0 and similarly for <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">g</tspan></span>
+and <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">h</tspan></span>, so we restrict attention to <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">S</tspan><tspan font-family="cmsy" font-size="10">|≥ </tspan>1. We then combine the famous inequality
+<tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">ab </tspan>+ <tspan font-family="cmmi" font-size="10">bc </tspan>+ <tspan font-family="cmmi" font-size="10">ca</tspan><tspan font-family="cmsy" font-size="10">|≤ </tspan><tspan font-family="cmmi" font-size="10">a</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">b</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">c</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> (which is true across all real numbers) to deduce that
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 520--><p class="indent" >
+<tr><td 
+class="align-odd">1</td><td 
+class="align-even"> = <tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">S</tspan><tspan font-family="cmsy" font-size="8">⊆{</tspan><tspan font-family="cmr" font-size="8">1</tspan><tspan font-family="cmmi" font-size="8">,</tspan><tspan font-family="cmmi" font-size="8">…</tspan><tspan font-family="cmmi" font-size="8">,n</tspan><tspan font-family="cmsy" font-size="8">}</tspan></sub><tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na719x.png" alt="(  1 )
+  −3-"  class="left" align="middle" /><sup><img 
+src="Na720x.png" alt="|S|"  class="left" align="middle" /></sup><img 
+src="Na721x.png" alt="(                              )
+ f^(S )^g (S )+ ^g(S)^h(S )+ ^h(S)f^(S )"  class="left" align="middle" /></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td> <td 
+class="align-even"><tspan font-family="cmsy" font-size="10">≤</tspan><tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">S</tspan><tspan font-family="cmsy" font-size="8">⊆{</tspan><tspan font-family="cmr" font-size="8">1</tspan><tspan font-family="cmmi" font-size="8">,</tspan><tspan font-family="cmmi" font-size="8">…</tspan><tspan font-family="cmmi" font-size="8">,n</tspan><tspan font-family="cmsy" font-size="8">}</tspan></sub><img 
+src="Na722x.png" alt="(  )
+  1-
+  3"  class="left" align="middle" /><sup><img 
+src="Na723x.png" alt="|S|"  class="left" align="middle" /></sup><img 
+src="Na724x.png" alt="(                    )
+ ^f(S)2 + ^g(S)2 + ^h(S )2"  class="left" align="middle" /></td>              <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td> <td 
+class="align-even"><tspan font-family="cmsy" font-size="10">≤</tspan><tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">S</tspan><tspan font-family="cmsy" font-size="8">⊆{</tspan><tspan font-family="cmr" font-size="8">1</tspan><tspan font-family="cmmi" font-size="8">,</tspan><tspan font-family="cmmi" font-size="8">…</tspan><tspan font-family="cmmi" font-size="8">,n</tspan><tspan font-family="cmsy" font-size="8">}</tspan></sub><img 
+src="Na725x.png" alt="( 1)
+  --
+  3"  class="left" align="middle" /><sup><tspan font-family="cmr" font-size="8">1</tspan></sup><img 
+src="Na726x.png" alt="(                    )
+ ^f(S)2 + ^g(S )2 + ^h(S )2"  class="left" align="middle" /></td>               <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td> <td 
+class="align-even"> = <img 
+src="Na727x.png" alt="1-
+3"  class="frac" align="middle" />(1 + 1 + 1) = 1<tspan font-family="cmmi" font-size="10">.</tspan></td>                                        <td 
+class="align-label"></td><td 
+class="align-label">                    </td></tr></table>
+</p><!--l. 521--><p class="indent" >  with the last step by Parseval. So all inequalities must be sharp, and in particular <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">f</tspan></span>, <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">g</tspan></span>, <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">h</tspan></span>
+are supported on one-element sets, i.e. they are linear in inputs. As <tspan font-family="cmmi" font-size="10">f</tspan>, <tspan font-family="cmmi" font-size="10">g</tspan>, <tspan font-family="cmmi" font-size="10">h </tspan>are <tspan font-family="cmsy" font-size="10">±</tspan>1 valued,
+each <tspan font-family="cmmi" font-size="10">f</tspan>, <tspan font-family="cmmi" font-size="10">g</tspan>, <tspan font-family="cmmi" font-size="10">h </tspan>is itself either a dictator or anti-dictator function. Since (<tspan font-family="cmmi" font-size="10">f,g,h</tspan>) is always
+consistent, this implies the final result.                                                              □
+</p>
+  </div>
+                                                                                
+                                                                                
+  <!--l. 530--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase116.htm" >next</a>] [<a 
+href="Nase114.htm" >prev</a>] [<a 
+href="Nase114.htm#tailNase114.htm" >prev-tail</a>] [<a 
+href="Nase115.htm" >front</a>] [<a 
+href="Nach17.htm#Nase115.htm" >up</a>] </p></div>
+<!--l. 530--><p class="indent" >  <a 
+ id="tailNase115.htm"></a> </p> 
+</body> 
+</html>

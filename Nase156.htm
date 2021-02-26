@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Burnside’s theorem</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 69--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase157.htm" >next</a>] [<a 
+href="Nase155.htm" >prev</a>] [<a 
+href="Nase155.htm#tailNase155.htm" >prev-tail</a>] [<a 
+href="#tailNase156.htm">tail</a>] [<a 
+href="Nach25.htm#Nase156.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">22.2</span>  <a 
+ id="x225-21400022.2"></a>Burnside’s theorem</h3>
+<!--l. 70--><p class="noindent" >We now prove a group-theoretic result. This is the famous poster child for representation
+theory (in the same way that RSA is the poster child of number theory) because the result is
+purely group theoretic.
+</p><!--l. 75--><p class="indent" >  Recall that a group is <tspan font-family="cmbx" font-size="10">simple</tspan> if it has no normal subgroups. In fact, we will prove:</p>
+<div class="mdframed" id="mdframed-450">
+<a 
+ id="x225-214001r717"></a>
+<div class="newtheorem">
+<!--l. 77--><p class="noindent" ><span class="head">
+<a 
+ id="x225-214002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 22.2.1 </tspan><tspan font-family="cmss" font-size="10">(Burnside)</tspan><br 
+class="newline" /> </span><a 
+ id="x225-214003"></a>Let <tspan font-family="cmmi" font-size="10">G </tspan>be a nonabelian group of order <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">a</tspan></sup><tspan font-family="cmmi" font-size="10">q</tspan><sup><tspan font-family="cmmi" font-size="8">b</tspan></sup> (where <tspan font-family="cmmi" font-size="10">p,q </tspan>are
+distinct primes and <tspan font-family="cmmi" font-size="10">a,b </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan>0). Then <tspan font-family="cmmi" font-size="10">G </tspan>is not simple.
+</p>
+  </div>
+<!--l. 80--><p class="indent" >  </p></div>
+<!--l. 81--><p class="indent" >  In what follows <tspan font-family="cmmi" font-size="10">p </tspan>and <tspan font-family="cmmi" font-size="10">q </tspan>will always denote prime numbers.</p>
+<div class="mdframed" id="mdframed-451">
+<a 
+ id="x225-214004r718"></a>
+<div class="newtheorem">
+<!--l. 83--><p class="noindent" ><span class="head">
+<a 
+ id="x225-214005r2"></a>
+<tspan font-family="cmssbx" font-size="10">Lemma 22.2.2 </tspan><tspan font-family="cmss" font-size="10">(On</tspan> gcd(<tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">C</tspan><tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">,</tspan>dim<tspan font-family="cmmi" font-size="10">V </tspan>) = 1<tspan font-family="cmss" font-size="10">)</tspan><br 
+class="newline" /> </span><a 
+ id="x225-214006"></a> Let <tspan font-family="cmmi" font-size="10">V </tspan>= (<tspan font-family="cmmi" font-size="10">V,ρ</tspan>) be an complex irrep of <tspan font-family="cmmi" font-size="10">G</tspan>. Assume
+<tspan font-family="cmmi" font-size="10">C </tspan>is a conjugacy class of <tspan font-family="cmmi" font-size="10">G </tspan>with gcd(<tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">C</tspan><tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">,</tspan>dim<tspan font-family="cmmi" font-size="10">V </tspan>) = 1. Then for any <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">C</tspan>, either
+</p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">ρ</tspan>(<tspan font-family="cmmi" font-size="10">g</tspan>) is multiplication by a scalar, or
+     </li>
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">χ</tspan><sub><tspan font-family="cmmi" font-size="8">V</tspan> </sub>(<tspan font-family="cmmi" font-size="10">g</tspan>) = Tr<tspan font-family="cmmi" font-size="10">ρ</tspan>(<tspan font-family="cmmi" font-size="10">g</tspan>) = 0.</li></ul>
+</p>
+  </div>
+<!--l. 92--><p class="indent" >  </p></div>
+<!--l. 93--><p class="indent" >
+</p>
+                                                                                
+                                                                                
+  <div class="proof">
+<!--l. 94--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>If <tspan font-family="cmmi" font-size="10">𝜀</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> are the <tspan font-family="cmmi" font-size="10">n </tspan>eigenvalues of <tspan font-family="cmmi" font-size="10">ρ</tspan>(<tspan font-family="cmmi" font-size="10">g</tspan>) (which are roots of unity), then from the proof
+of Frobenius divisibility we know <img 
+src="Na999x.png" alt="|Cn|"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">χ</tspan><sub><tspan font-family="cmmi" font-size="8">V</tspan> </sub>(<tspan font-family="cmmi" font-size="10">g</tspan>) <tspan font-family="cmsy" font-size="10">∈</tspan><span class="overline"><tspan font-family="msbm" font-size="10">ℤ</tspan></span>, thus from gcd(<tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">C</tspan><tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">,n</tspan>) = 1 we get
+</p>
+  <div class="math-display" >
+<img 
+src="Na1000x.png" alt="1-        1-               --
+n χV(g) = n (𝜀1 + ⋅⋅⋅+ 𝜀n) ∈ ℤ.
+" class="math-display"  /></div>
+<!--l. 99--><p class="indent" >  So this follows readily from a fact from algebraic number theory, namely <tspan font-family="cmbx" font-size="10">??</tspan> : either
+<tspan font-family="cmmi" font-size="10">𝜀</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> = <img 
+src="Na1001x.png" alt="⋅⋅⋅"  class="@cdots"  /> = <tspan font-family="cmmi" font-size="10">𝜀</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> (first case) or <tspan font-family="cmmi" font-size="10">𝜀</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <img 
+src="Na1002x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">𝜀</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> = 0 (second case).                                  □
+</p>
+  </div><div class="mdframed" id="mdframed-452">
+<a 
+ id="x225-214007r719"></a>
+<div class="newtheorem">
+<!--l. 106--><p class="noindent" ><span class="head">
+<a 
+ id="x225-214008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Lemma 22.2.3 </tspan><tspan font-family="cmss" font-size="10">(Simple groups don’t have prime power conjugacy classes)</tspan><br 
+class="newline" /> </span><a 
+ id="x225-214009"></a>Let <tspan font-family="cmmi" font-size="10">G </tspan>be a finite
+simple group. Then <tspan font-family="cmmi" font-size="10">G </tspan>cannot have a conjugacy class of order <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">k</tspan></sup> (where <tspan font-family="cmmi" font-size="10">k &#x003E; </tspan>0).
+</p>
+  </div>
+<!--l. 109--><p class="indent" >  </p></div>
+<!--l. 110--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 111--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>By contradiction. Assume <tspan font-family="cmmi" font-size="10">C </tspan>is such a conjugacy class, and fix any <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">C</tspan>. By
+the second orthogonality formula (<tspan font-family="cmbx" font-size="10">??</tspan> ) applied <tspan font-family="cmmi" font-size="10">g </tspan>and 1<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub> (which are not conjugate since
+<tspan font-family="cmmi" font-size="10">g</tspan><tspan font-family="cmmi" font-size="10">≠</tspan>1<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub>) we have
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1003x.png" alt="∑ r
+    dim ViχVi(g) = 0
+ i=1
+" class="math-display"  /></div>
+<!--l. 116--><p class="indent" >  where <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> are as usual all irreps of <tspan font-family="cmmi" font-size="10">G</tspan>.</p>
+<div class="mdframed" id="mdframed-453">
+<a 
+ id="x225-214010r720"></a>
+<div class="newtheorem">
+<!--l. 118--><p class="noindent" ><span class="head">
+<a 
+ id="x225-214011r4"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 22.2.4.</tspan>  </span><a 
+ id="x225-214012"></a><tspan font-family="cmr" font-size="10">Show that there exists a nontrivial irrep </tspan><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmr" font-size="10">such that </tspan><tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="msbm" font-size="10">∤</tspan> <tspan font-family="cmr" font-size="10">dim</tspan><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmr" font-size="10">and </tspan><tspan font-family="cmmi" font-size="10">χ</tspan><sub><tspan font-family="cmmi" font-size="7">V</tspan> </sub><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">g</tspan><tspan font-family="cmr" font-size="10">)</tspan><tspan font-family="cmmi" font-size="10">≠</tspan><tspan font-family="cmr" font-size="10">0.</tspan>
+<tspan font-family="cmr" font-size="10">(Proceed by contradiction to show that </tspan><tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1004x.png" alt="1p"  class="frac" align="middle" /> <tspan font-family="cmsy" font-size="10">∈</tspan><span class="overline"><tspan font-family="msbm" font-size="10">ℤ</tspan></span> <tspan font-family="cmr" font-size="10">if not.)</tspan></p>
+  </div>
+<!--l. 121--><p class="indent" >  </p></div>
+<!--l. 122--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">V </tspan>= (<tspan font-family="cmmi" font-size="10">V,ρ</tspan>) be the irrep mentioned. By the previous lemma, we now know that <tspan font-family="cmmi" font-size="10">ρ</tspan>(<tspan font-family="cmmi" font-size="10">g</tspan>) acts
+as a scalar in <tspan font-family="cmmi" font-size="10">V </tspan>.
+</p><!--l. 125--><p class="indent" >  Now consider the subgroup
+</p>
+  <div class="math-display" >
+<img 
+src="Na1005x.png" alt="     ⟨             ⟩
+H  =  ab−1 | a,b ∈ C ⊆ G.
+" class="math-display"  /></div>
+<!--l. 127--><p class="indent" >  We claim this is a nontrivial normal subgroup of <tspan font-family="cmmi" font-size="10">G</tspan>. It is easy to check <tspan font-family="cmmi" font-size="10">H </tspan>is normal, and
+since <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">C</tspan><tspan font-family="cmsy" font-size="10">| </tspan><tspan font-family="cmmi" font-size="10">&#x003E; </tspan>1 we have that <tspan font-family="cmmi" font-size="10">H </tspan>is nontrivial. As represented by <tspan font-family="cmmi" font-size="10">V </tspan>each element of <tspan font-family="cmmi" font-size="10">H </tspan>acts
+trivially in <tspan font-family="cmmi" font-size="10">G</tspan>, so since <tspan font-family="cmmi" font-size="10">V </tspan>is nontrivial and irreducible, <tspan font-family="cmmi" font-size="10">H</tspan><tspan font-family="cmmi" font-size="10">≠</tspan><tspan font-family="cmmi" font-size="10">G</tspan>. This contradicts the assumption
+that <tspan font-family="cmmi" font-size="10">G </tspan>was simple.                                                                                        □
+</p>
+  </div>
+                                                                                
+                                                                                
+<!--l. 135--><p class="indent" >  With this lemma, Burnside’s theorem follows by partitioning the <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">G</tspan><tspan font-family="cmsy" font-size="10">| </tspan>elements of our group
+into conjugacy classes. Assume for contradiction <tspan font-family="cmmi" font-size="10">G </tspan>is simple. Each conjugacy class must
+have order either 1 (of which there are <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">Z</tspan>(<tspan font-family="cmmi" font-size="10">G</tspan>)<tspan font-family="cmsy" font-size="10">| </tspan>by <tspan font-family="cmbx" font-size="10">??</tspan> ) or divisible by <tspan font-family="cmmi" font-size="10">pq </tspan>(by the
+previous lemma), but on the other hand the sum equals <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">G</tspan><tspan font-family="cmsy" font-size="10">| </tspan>= <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">a</tspan></sup><tspan font-family="cmmi" font-size="10">q</tspan><sup><tspan font-family="cmmi" font-size="8">b</tspan></sup>. Consequently,
+we must have <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">Z</tspan>(<tspan font-family="cmmi" font-size="10">G</tspan>)<tspan font-family="cmsy" font-size="10">| </tspan><tspan font-family="cmmi" font-size="10">&#x003E; </tspan>1. But <tspan font-family="cmmi" font-size="10">G </tspan>is not abelian, hence <tspan font-family="cmmi" font-size="10">Z</tspan>(<tspan font-family="cmmi" font-size="10">G</tspan>)<tspan font-family="cmmi" font-size="10">≠</tspan><tspan font-family="cmmi" font-size="10">G</tspan>, thus the center
+<tspan font-family="cmmi" font-size="10">Z</tspan>(<tspan font-family="cmmi" font-size="10">G</tspan>) is a nontrivial normal subgroup, contradicting the assumption that <tspan font-family="cmmi" font-size="10">G </tspan>was
+simple.
+                                                                                
+                                                                                
+</p>
+  <!--l. 147--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase157.htm" >next</a>] [<a 
+href="Nase155.htm" >prev</a>] [<a 
+href="Nase155.htm#tailNase155.htm" >prev-tail</a>] [<a 
+href="Nase156.htm" >front</a>] [<a 
+href="Nach25.htm#Nase156.htm" >up</a>] </p></div>
+<!--l. 147--><p class="indent" >  <a 
+ id="tailNase156.htm"></a> </p> 
+</body> 
+</html>

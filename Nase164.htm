@@ -1,0 +1,230 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Reversible classical logic</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 105--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase165.htm" >next</a>] [<a 
+href="Nase163.htm" >prev</a>] [<a 
+href="Nase163.htm#tailNase163.htm" >prev-tail</a>] [<a 
+href="#tailNase164.htm">tail</a>] [<a 
+href="Nach27.htm#Nase164.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">24.2</span>  <a 
+ id="x236-22500024.2"></a>Reversible classical logic</h3>
+<!--l. 106--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">CNOT gate, Toffoli gate.</tspan>
+</p><!--l. 108--><p class="indent" >  For the purposes of quantum mechanics, this is not enough. To carry through the analogy
+we in fact need gates that are <tspan font-family="cmbx" font-size="10">reversible</tspan>, meaning the gates are bijections from the input
+space to the output space. In particular, such gates must take the same number of input and
+output gates.</p>
+<div class="mdframed" id="mdframed-472">
+<a 
+ id="x236-225001r740"></a>
+<div class="newtheorem">
+<!--l. 112--><p class="noindent" ><span class="head">
+<a 
+ id="x236-225002r1"></a>
+<tspan font-family="cmbx" font-size="10">Example 24.2.1 </tspan>(Reversible gates)<br 
+class="newline" /> </span><a 
+ id="x236-225003"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">None of the gates AND, OR, COPY are reversible for dimension reasons.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The NOT gate, however, is reversible: it is a bijection <tspan font-family="cmsy" font-size="10">{</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmsy" font-size="10">}→{</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan>.</dd></dl>
+</p>
+  </div>
+<!--l. 119--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-473">
+<a 
+ id="x236-225006r741"></a>
+<div class="newtheorem">
+<!--l. 121--><p class="noindent" ><span class="head">
+<a 
+ id="x236-225007r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 24.2.2 </tspan>(The CNOT gate)<br 
+class="newline" /> </span><a 
+ id="x236-225008"></a>The controlled-NOT gate, or the <tspan font-family="cmbx" font-size="10">CNOT</tspan> gate, is a
+reversible 2-bit gate with the following truth table.
+</p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na1162x.png" alt="|-----|-----|
+|-In--|Out--|
+|0  0 |0  0 |
+|1  0 |1  1 |
+|     |     |
+|0  1 |0  1 |
+-1--1--1--0-|
+" class="math-display"  /></div>
+<!--l. 135--><p class="noindent" >In other words, this gate XOR’s the first bit to the second bit, while leaving the first bit
+unchanged. It is depicted as follows.
+</p>
+<div class="math-display" >
+<img 
+src="Na1163x.png" alt="x    ∙    x
+ y        x+ y   mod 2
+" class="math-display"  /></div>
+<!--l. 144--><p class="noindent" >The first dot is called the “control”, while the <tspan font-family="cmsy" font-size="10">⊕ </tspan>is the “negation” operation: the first
+bit controls whether the second bit gets flipped or not. Thus, a typical application might
+be as follows.
+</p>
+<div class="math-display" >
+<img 
+src="Na1164x.png" alt="1   ∙    1
+0        1
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 154--><p class="indent" >  </p></div>
+<!--l. 155--><p class="indent" >  So, NOT and CNOT are the only nontrivial reversible gates on two bits.
+</p><!--l. 157--><p class="indent" >  We now need a different definition of universal for our reversible gates. <a 
+ id="x236-225009r742"></a>
+</p>
+                                                                                
+                                                                                
+  <div class="newtheorem">
+<!--l. 159--><p class="noindent" ><span class="head">
+<a 
+ id="x236-225010r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 24.2.3.</tspan>  </span><a 
+ id="x236-225011"></a>A set of reversible gates can <tspan font-family="cmbx" font-size="10">simulate</tspan> a Boolean function <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>), if
+one can implement a circuit which takes </p>
+     <ul class="itemize1">
+     <li class="itemize">As input, <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> plus some fixed bits set to 0 or 1, called <tspan font-family="cmbx" font-size="10">ancilla bits</tspan><span class="footnote-mark"><a 
+href="Na237.htm#fn1x28"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x236-225012f1"></a> .
+     </li>
+     <li class="itemize">As output, the input bits <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>, the output bit <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>), and possibly some
+     extra bits (called <tspan font-family="cmbx" font-size="10">garbage bits</tspan>).</li></ul>
+<!--l. 169--><p class="noindent" >The gate(s) are <tspan font-family="cmbx" font-size="10">universal</tspan> if they can simulate any Boolean function.
+</p>
+  </div>
+<!--l. 170--><p class="indent" >
+For example, the CNOT gate can simulate the NOT gate, using a single ancilla bit 1,
+according to the following circuit.
+</p>
+  <div class="math-display" >
+<img 
+src="Na1165x.png" alt="x    ∙    x
+ 1        not x
+" class="math-display"  /></div>
+<!--l. 180--><p class="indent" >  Unfortunately, it is not universal.</p>
+<div class="mdframed" id="mdframed-474">
+<a 
+ id="x236-225013r743"></a>
+<div class="newtheorem">
+<!--l. 182--><p class="noindent" ><span class="head">
+<a 
+ id="x236-225014r4"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 24.2.4 </tspan><tspan font-family="cmss" font-size="10">(CNOT</tspan> <tspan font-family="cmsy" font-size="10">⇏</tspan><tspan font-family="cmss" font-size="10">AND)</tspan><br 
+class="newline" /> </span><a 
+ id="x236-225015"></a>The  CNOT  gate  cannot  simulate  the  boolean
+function “<tspan font-family="cmmi" font-size="10">x</tspan> and <tspan font-family="cmmi" font-size="10">y</tspan>”.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 184--><p class="indent" >  </p></div>
+<!--l. 185--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 185--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Sketch of Proof.</tspan> </span> One can see that any function simulated using only CNOT gates must
+be of the form
+</p>
+  <div class="math-display" >
+<img 
+src="Na1166x.png" alt="a1x1 + a2x2 + ⋅⋅⋅+ anxn (mod  2)
+" class="math-display"  /></div>
+<!--l. 189--><p class="indent" >  because CNOT is the map (<tspan font-family="cmmi" font-size="10">x,y</tspan>)<img 
+src="Na1167x.png" alt="↦→"  class="mapsto"  />(<tspan font-family="cmmi" font-size="10">x,x</tspan>+<tspan font-family="cmmi" font-size="10">y</tspan>). Thus, even with ancilla bits, we can only
+create functions of the form <tspan font-family="cmmi" font-size="10">ax </tspan>+ <tspan font-family="cmmi" font-size="10">by </tspan>+ <tspan font-family="cmmi" font-size="10">c </tspan>(mod 2) for fixed <tspan font-family="cmmi" font-size="10">a</tspan>, <tspan font-family="cmmi" font-size="10">b</tspan>, <tspan font-family="cmmi" font-size="10">c</tspan>. The AND gate is not
+of this form.                                                                                                 □
+</p>
+  </div>
+<!--l. 195--><p class="indent" >  So, we need at least a three-qubit gate. The most commonly used one is: <a 
+ id="x236-225016r744"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 198--><p class="noindent" ><span class="head">
+<a 
+ id="x236-225017r5"></a>
+<tspan font-family="cmbx" font-size="10">Definition 24.2.5.</tspan>  </span><a 
+ id="x236-225018"></a>The three-bit <tspan font-family="cmbx" font-size="10">Toffoli gate</tspan>, also called the CCNOT gate, is given
+by
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na1168x.png" alt="x    ∙    x
+ y   ∙    y
+ z        z + xy  (mod  2)
+" class="math-display"  /></div>
+<!--l. 206--><p class="indent" >  So the Toffoli has two controls, and toggles the last bit if and only if both of the
+control bits are 1.
+</p>
+  </div>
+<!--l. 208--><p class="indent" >
+This replacement is sufficient.</p>
+<div class="mdframed" id="mdframed-475">
+<a 
+ id="x236-225019r745"></a>
+<div class="newtheorem">
+<!--l. 211--><p class="noindent" ><span class="head">
+<a 
+ id="x236-225020r6"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 24.2.6 </tspan><tspan font-family="cmss" font-size="10">(Toffoli gate is universal)</tspan><br 
+class="newline" /> </span><a 
+ id="x236-225021"></a>The Toffoli gate is universal.
+</p>
+  </div>
+<!--l. 213--><p class="indent" >  </p></div>
+<!--l. 214--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 215--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>We will show it can <tspan font-family="cmti" font-size="10">reversibly </tspan>simulate AND, NOT, hence OR, which we know
+is enough to show universality. (We don’t need COPY because of reversibility.)
+</p><!--l. 220--><p class="indent" >  For the AND gate, we draw the circuit
+</p>
+  <div class="math-display" >
+<img 
+src="Na1169x.png" alt="x    ∙    x
+ y   ∙    y
+ 0        x and y
+" class="math-display"  /></div>
+<!--l. 228--><p class="indent" >  with one ancilla bit, and no garbage bits.
+</p><!--l. 230--><p class="indent" >  For the NOT gate, we use two ancilla 1 bits and one garbage bit:
+</p>
+  <div class="math-display" >
+<img 
+src="Na1170x.png" alt="1   ∙    1
+z   ∙    z
+1        not z
+" class="math-display"  /></div>
+<!--l. 238--><p class="indent" >  This completes the proof.                                                                            □
+</p>
+  </div>
+<!--l. 241--><p class="indent" >  Hence, in theory we can create any classical circuit we desire using the Toffoli gate alone. Of
+course, this could require exponentially many gates for even the simplest of functions.
+Fortunately, this is NO BIG DEAL because I’m a math major, and having 2<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> gates is a
+problem best left for the CS majors.
+                                                                                
+                                                                                
+</p>
+  <!--l. 248--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase165.htm" >next</a>] [<a 
+href="Nase163.htm" >prev</a>] [<a 
+href="Nase163.htm#tailNase163.htm" >prev-tail</a>] [<a 
+href="Nase164.htm" >front</a>] [<a 
+href="Nach27.htm#Nase164.htm" >up</a>] </p></div>
+<!--l. 248--><p class="indent" >  <a 
+ id="tailNase164.htm"></a> </p> 
+</body> 
+</html>

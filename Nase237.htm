@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Relation to Riemann integrals (or: actually computing Lebesgue integrals)</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 150--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach42.htm" >next</a>] [<a 
+href="Nase236.htm" >prev</a>] [<a 
+href="Nase236.htm#tailNase236.htm" >prev-tail</a>] [<a 
+href="#tailNase237.htm">tail</a>] [<a 
+href="Nase248.htm#Napa11.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">36.2</span>  <a 
+ id="x345-32200036.2"></a>Relation to Riemann integrals (or: actually computing Lebesgue integrals)</h3>
+<!--l. 151--><p class="noindent" >For closed intervals, this actually just works out of the box.</p>
+<div class="mdframed" id="mdframed-651">
+<a 
+ id="x345-322001r1017"></a>
+<div class="newtheorem">
+<!--l. 153--><p class="noindent" ><span class="head">
+<a 
+ id="x345-322002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 36.2.1 </tspan><tspan font-family="cmss" font-size="10">(Lebesgue integral generalizes Riemann integral)</tspan><br 
+class="newline" /> </span><a 
+ id="x345-322003"></a>Let <tspan font-family="cmmi" font-size="10">f</tspan> : [<tspan font-family="cmmi" font-size="10">a,b</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>be a
+Riemann integrable function (where [<tspan font-family="cmmi" font-size="10">a,b</tspan>] is equipped with the Borel measure). Then <tspan font-family="cmmi" font-size="10">f</tspan>
+is also Lebesgue integrable and the integrals agree:
+</p>
+<div class="math-display" >
+<img 
+src="Na1856x.png" alt="∫ b         ∫
+   f(x) dx =     f dμ.
+ a            [a,b]
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 158--><p class="indent" >  </p></div>
+<!--l. 160--><p class="indent" >  Thus in practice, we do all theory with Lebesgue integrals (they’re nicer), but when we
+actually need to compute <tspan font-family="cmex" font-size="10">∫</tspan>
+  <sub><tspan font-family="cmr" font-size="8">[1</tspan><tspan font-family="cmmi" font-size="8">,</tspan><tspan font-family="cmr" font-size="8">4]</tspan></sub><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmmi" font-size="10">dμ </tspan>we just revert back to our usual antics with the
+Fundamental Theorem of Calculus.</p>
+<div class="mdframed" id="mdframed-652">
+<a 
+ id="x345-322004r1018"></a>
+<div class="newtheorem">
+<!--l. 165--><p class="noindent" ><span class="head">
+<a 
+ id="x345-322005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 36.2.2 </tspan>(Integrating <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> over [1<tspan font-family="cmmi" font-size="10">,</tspan>4])<br 
+class="newline" /> </span><a 
+ id="x345-322006"></a>Reprising our old example:
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na1857x.png" alt="∫     2     ∫ 4  2      1  3   1   3
+     x dμ =     x dx =  3 ⋅4 − 3-⋅1 =  21.
+ [1,4]         1
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 170--><p class="indent" >  </p></div>
+<!--l. 172--><p class="indent" >  This even works for <tspan font-family="cmti" font-size="10">improper </tspan>integrals, if the functions are nonnegative. The statement is a
+bit cumbersome to write down, but here it is.</p>
+<div class="mdframed" id="mdframed-653">
+<a 
+ id="x345-322007r1019"></a>
+<div class="newtheorem">
+<!--l. 176--><p class="noindent" ><span class="head">
+<a 
+ id="x345-322008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 36.2.3 </tspan><tspan font-family="cmss" font-size="10">(Improper integrals are nice Lebesgue ones)</tspan><br 
+class="newline" /> </span><a 
+ id="x345-322009"></a>Let <tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan>0 be a <tspan font-family="cmti" font-size="10">nonnegative</tspan>
+continuous function defined on (<tspan font-family="cmmi" font-size="10">a,b</tspan>) <tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>, possibly allowing <tspan font-family="cmmi" font-size="10">a </tspan>= <tspan font-family="cmsy" font-size="10">−∞ </tspan>or <tspan font-family="cmmi" font-size="10">b </tspan>= <tspan font-family="cmsy" font-size="10">∞</tspan>. Then
+</p>
+<div class="math-display" >
+<img 
+src="Na1858x.png" alt="∫                ∫ b′
+     f d μ = ′lim+    f(x) dx
+ (a,b)       ab′→→ab−  a′
+" class="math-display"  /></div>
+<!--l. 184--><p class="noindent" >where we allow both sides to be +<tspan font-family="cmsy" font-size="10">∞ </tspan>if <tspan font-family="cmmi" font-size="10">f </tspan>is not absolutely integrable.
+</p>
+  </div>
+<!--l. 186--><p class="indent" >  </p></div>
+<!--l. 187--><p class="indent" >  The right-hand side makes sense since [<tspan font-family="cmmi" font-size="10">a</tspan><tspan font-family="cmsy" font-size="10">′</tspan><tspan font-family="cmmi" font-size="10">,b</tspan><tspan font-family="cmsy" font-size="10">′</tspan>] <tspan font-family="msbm" font-size="10">⊊ </tspan>(<tspan font-family="cmmi" font-size="10">a,b</tspan>) is a compact interval on which <tspan font-family="cmmi" font-size="10">f </tspan>is
+continuous. This means that improper Riemann integrals of nonnegative functions can just be
+regarded as Lebesgue ones over the corresponding open intervals.
+</p><!--l. 193--><p class="indent" >  It’s probably better to just look at an example though.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-654">
+<a 
+ id="x345-322010r1020"></a>
+<div class="newtheorem">
+<!--l. 195--><p class="noindent" ><span class="head">
+<a 
+ id="x345-322011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 36.2.4 </tspan>(Integrating 1<tspan font-family="cmmi" font-size="10">∕</tspan><img 
+src="Na1859x.png" alt="√x-"  class="sqrt"  /> on (0<tspan font-family="cmmi" font-size="10">,</tspan>1))<br 
+class="newline" /> </span><a 
+ id="x345-322012"></a>For example, you might be familiar with
+improper integrals like
+</p>
+<div class="math-display" >
+<img 
+src="Na1860x.png" alt="∫                ∫
+  1-1--            1 -1--         (  √--   √ -)
+ 0 √ x dx :=  l𝜀→i0m+   𝜀 √ x dx = l𝜀→i0m+   2 1 − 2  𝜀  = 2.
+" class="math-display"  /></div>
+<!--l. 202--><p class="noindent" >(Note this appeared before as <tspan font-family="cmbx" font-size="10">??</tspan> .) In the Riemann integration situation, we needed the
+limit as <tspan font-family="cmmi" font-size="10">𝜀 </tspan><tspan font-family="cmsy" font-size="10">→ </tspan>0<sup><tspan font-family="cmr" font-size="8">+</tspan></sup> since otherwise <img 
+src="Na1861x.png" alt="√1-
+ x"  class="frac" align="middle" /> is not defined as a function [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>. However, it
+is a <tspan font-family="cmti" font-size="10">measurable nonnegative </tspan>function (0<tspan font-family="cmmi" font-size="10">,</tspan>1) <tspan font-family="cmsy" font-size="10">→ </tspan>[0<tspan font-family="cmmi" font-size="10">,</tspan>+<tspan font-family="cmsy" font-size="10">∞</tspan>], and hence
+</p>
+<div class="math-display" >
+<img 
+src="Na1862x.png" alt="∫
+     -1--
+ (0,1)√ x dμ = 2.
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 208--><p class="indent" >  </p></div>
+<!--l. 210--><p class="indent" >  If <tspan font-family="cmmi" font-size="10">f </tspan>is not nonnegative, then all bets are off. Indeed <tspan font-family="cmbx" font-size="10">??</tspan>  is the famous counterexample.
+                                                                                
+                                                                                
+</p>
+  <!--l. 213--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach42.htm" >next</a>] [<a 
+href="Nase236.htm" >prev</a>] [<a 
+href="Nase236.htm#tailNase236.htm" >prev-tail</a>] [<a 
+href="Nase237.htm" >front</a>] [<a 
+href="Nase248.htm#Napa11.htm" >up</a>] </p></div>
+<!--l. 213--><p class="indent" >  <a 
+ id="tailNase237.htm"></a> </p> 
+</body> 
+</html>

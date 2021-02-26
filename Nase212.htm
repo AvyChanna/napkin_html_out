@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Argument principle</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 331--><div class="crosslinks"><p class="noindent">[<a 
+href="Napa10.htm" >next</a>] [<a 
+href="Nase211.htm" >prev</a>] [<a 
+href="Nase211.htm#tailNase211.htm" >prev-tail</a>] [<a 
+href="Nase206.htm#tailNase212.htm">tail</a>] [<a 
+href="Nase215.htm#Nase220.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">32.4</span>  <a 
+ id="x307-29100032.4"></a>Argument principle</h3>
+<!--l. 332--><p class="noindent" >One tricky application is as follows. Given a polynomial <tspan font-family="cmmi" font-size="10">P</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = (<tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>)<sup><tspan font-family="cmmi" font-size="8">e</tspan><sub><tspan font-family="cmr" font-size="6">1</tspan></sub></sup>(<tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>)<sup><tspan font-family="cmmi" font-size="8">e</tspan><sub><tspan font-family="cmr" font-size="6">2</tspan></sub></sup><tspan font-family="cmmi" font-size="10">…</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>)<sup><tspan font-family="cmmi" font-size="8">e</tspan><sub><tspan font-family="cmmi" font-size="6">n</tspan></sub></sup>,
+you might know that we have
+</p>
+  <div class="math-display" >
+<img 
+src="Na1781x.png" alt="P ′(x)     e        e             e
+----- = ---1-- + ---2--+  ⋅⋅⋅+  ---n--.
+P (x)   x − a1   x − a2        x−  an
+" class="math-display"  /></div>
+<!--l. 335--><p class="indent" >  The quantity <tspan font-family="cmmi" font-size="10">P</tspan><tspan font-family="cmsy" font-size="10">′</tspan><tspan font-family="cmmi" font-size="10">∕P </tspan>is called the <tspan font-family="cmbx" font-size="10">logarithmic derivative</tspan>, as it is the derivative of log <tspan font-family="cmmi" font-size="10">P</tspan>.
+This trick allows us to convert zeros of <tspan font-family="cmmi" font-size="10">P </tspan>into poles of <tspan font-family="cmmi" font-size="10">P</tspan><tspan font-family="cmsy" font-size="10">′</tspan><tspan font-family="cmmi" font-size="10">∕P </tspan>with order 1; moreover the
+residues of these poles are the multiplicities of the roots.
+</p><!--l. 339--><p class="indent" >  In an analogous fashion, we can obtain a similar result for any meromorphic function
+<tspan font-family="cmmi" font-size="10">f</tspan>.</p>
+<div class="mdframed" id="mdframed-609">
+<a 
+ id="x307-291001r949"></a>
+<div class="newtheorem">
+<!--l. 341--><p class="noindent" ><span class="head">
+<a 
+ id="x307-291002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 32.4.1 </tspan><tspan font-family="cmss" font-size="10">(The logarithmic derivative)</tspan><br 
+class="newline" /> </span><a 
+ id="x307-291003"></a>Let <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>be a meromorphic function.
+Then the logarithmic derivative <tspan font-family="cmmi" font-size="10">f</tspan><tspan font-family="cmsy" font-size="10">′</tspan><tspan font-family="cmmi" font-size="10">∕f </tspan>is meromorphic as a function from <tspan font-family="cmmi" font-size="10">U </tspan>to <tspan font-family="msbm" font-size="10">ℂ</tspan>; its zeros and
+poles are:
+     </p><dl class="enumerate"><dt class="enumerate">
+  (i) </dt><dd 
+class="enumerate">A pole at each zero of <tspan font-family="cmmi" font-size="10">f </tspan>whose residue is the multiplicity, and
+     </dd><dt class="enumerate">
+ (ii) </dt><dd 
+class="enumerate">A pole at each pole of <tspan font-family="cmmi" font-size="10">f </tspan>whose residue is the negative of the pole’s order.</dd></dl>
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 349--><p class="indent" >  </p></div>
+<!--l. 350--><p class="indent" >  Again, you can almost think of a pole as a zero of negative multiplicity. This spirit is
+exemplified below.
+</p><!--l. 352--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 353--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Dead easy with Taylor series. Let <tspan font-family="cmmi" font-size="10">a </tspan>be a zero/pole of <tspan font-family="cmmi" font-size="10">f</tspan>, and WLOG set <tspan font-family="cmmi" font-size="10">a </tspan>= 0
+for convenience. We take the Taylor series at zero to get
+</p>
+  <div class="math-display" >
+<img 
+src="Na1782x.png" alt="f(z) = c zk + c  zk+1 + ...
+       k      k+1
+" class="math-display"  /></div>
+<!--l. 357--><p class="indent" >  where <tspan font-family="cmmi" font-size="10">k &#x003C; </tspan>0 if 0 is a pole and <tspan font-family="cmmi" font-size="10">k &#x003E; </tspan>0 if 0 is a zero. Taking the derivative gives
+</p>
+  <div class="math-display" >
+<img 
+src="Na1783x.png" alt="f′(z) = kckzk− 1 + (k + 1)ck+1zk + ....
+" class="math-display"  /></div>
+<!--l. 360--><p class="indent" >  Now look at <tspan font-family="cmmi" font-size="10">f</tspan><tspan font-family="cmsy" font-size="10">′</tspan><tspan font-family="cmmi" font-size="10">∕f</tspan>; with some computation, it equals
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na1784x.png" alt="f′(z)-  -1kck-+-(k-+-1)ck+1z +-...
+f(z) = z     ck + ck+1z + ...  .
+" class="math-display"  /></div>
+<!--l. 365--><p class="indent" >  So we get a simple pole at <tspan font-family="cmmi" font-size="10">z </tspan>= 0, with residue <tspan font-family="cmmi" font-size="10">k</tspan>.                                              □
+</p>
+  </div>
+<!--l. 368--><p class="indent" >  Using this trick you can determine the number of zeros and poles inside a regular closed
+curve, using the so-called Argument Principle.</p>
+<div class="mdframed" id="mdframed-610">
+<a 
+ id="x307-291006r950"></a>
+<div class="newtheorem">
+<!--l. 372--><p class="noindent" ><span class="head">
+<a 
+ id="x307-291007r2"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 32.4.2 </tspan><tspan font-family="cmss" font-size="10">(Argument principle)</tspan><br 
+class="newline" /> </span><a 
+ id="x307-291008"></a> Let <tspan font-family="cmmi" font-size="10">γ </tspan>be a regular curve. Suppose <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>is
+meromorphic inside and on <tspan font-family="cmmi" font-size="10">γ</tspan>, and none of its zeros or poles lie on <tspan font-family="cmmi" font-size="10">γ</tspan>. Then
+</p>
+<div class="math-display" >
+<img 
+src="Na1785x.png" alt=" 1  ∮ f ′
+----  -- dz = Z − P
+2πi  γ f
+" class="math-display"  /></div>
+<!--l. 382--><p class="noindent" >where <tspan font-family="cmmi" font-size="10">Z </tspan>is the number of zeros inside <tspan font-family="cmmi" font-size="10">γ </tspan>(counted with multiplicity) and <tspan font-family="cmmi" font-size="10">P </tspan>is the number
+of poles inside <tspan font-family="cmmi" font-size="10">γ </tspan>(again with multiplicity).
+</p>
+  </div>
+<!--l. 384--><p class="indent" >  </p></div>
+<!--l. 385--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 386--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Immediate  by  applying  Cauchy’s  residue  theorem  alongside  the  preceding
+proposition. In fact you can generalize to any curve <tspan font-family="cmmi" font-size="10">γ </tspan>via the winding number: the
+                                                                                
+                                                                                
+integral is
+</p>
+  <div class="math-display" >
+<img 
+src="Na1786x.png" alt=" 1  ∮  f′      ∑            ∑
+----   --dz =      I(γ, z)−      I(γ,p)
+2πi  γ f      zero z        pole p
+" class="math-display"  /></div>
+<!--l. 392--><p class="indent" >  where the sums are with multiplicity.                                                             □
+</p>
+  </div>
+<!--l. 395--><p class="indent" >  Thus the Argument Principle allows one to count zeros and poles inside any region of
+choice.
+</p><!--l. 397--><p class="indent" >  Computers can use this to get information on functions whose values can be computed but
+whose behavior as a whole is hard to understand. Suppose you have a holomorphic function <tspan font-family="cmmi" font-size="10">f</tspan>,
+and you want to understand where its zeros are. Then just start picking various circles <tspan font-family="cmmi" font-size="10">γ</tspan>. Even
+with machine rounding error, the integral will be close enough to the true integer value that
+we can decide how many zeros are in any given circle. Numerical evidence for the Riemann
+Hypothesis (concerning the zeros of the Riemann zeta function) can be obtained in this
+way.
+                                                                                
+                                                                                
+</p>
+  <!--l. 406--><div class="crosslinks"><p class="noindent">[<a 
+href="Napa10.htm" >next</a>] [<a 
+href="Nase211.htm" >prev</a>] [<a 
+href="Nase211.htm#tailNase211.htm" >prev-tail</a>] [<a 
+href="Nase212.htm" >front</a>] [<a 
+href="Nase215.htm#Nase220.htm" >up</a>] </p></div>
+<!--l. 406--><p class="indent" >  <a 
+ id="tailNase212.htm"></a> </p> 
+</body> 
+</html>

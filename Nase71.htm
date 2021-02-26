@@ -1,0 +1,192 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Compactness using open covers</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 156--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase72.htm" >next</a>] [<a 
+href="Nase70.htm" >prev</a>] [<a 
+href="Nase70.htm#tailNase70.htm" >prev-tail</a>] [<a 
+href="#tailNase71.htm">tail</a>] [<a 
+href="Nach11.htm#Nase71.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">8.3</span>  <a 
+ id="x112-1010008.3"></a>Compactness using open covers</h3>
+<!--l. 157--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmti" font-size="10">is compact.</tspan>
+</p><!--l. 158--><p class="indent" >  There’s a second related notion of compactness which I’ll now define. The following
+definitions might appear very unmotivated, but bear with me. <a 
+ id="x112-101001r321"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 161--><p class="noindent" ><span class="head">
+<a 
+ id="x112-101002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 8.3.1.</tspan>  </span><a 
+ id="x112-101003"></a>An open cover of a topological space <tspan font-family="cmmi" font-size="10">X </tspan>is a collection of open sets
+<tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">α</tspan></sub><tspan font-family="cmsy" font-size="10">} </tspan>(possibly infinite or uncountable) which <tspan font-family="cmti" font-size="10">cover </tspan>it: every point in <tspan font-family="cmmi" font-size="10">X </tspan>lies in at least
+one of the <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">α</tspan></sub>, so that
+</p>
+  <div class="math-display" >
+<img 
+src="Na286x.png" alt="     ⋃
+X  =    Uα.
+" class="math-display"  /></div>
+<!--l. 166--><p class="indent" >  Such a cover is called an <tspan font-family="cmbx" font-size="10">open cover</tspan>.
+</p><!--l. 168--><p class="indent" >  A <tspan font-family="cmbx" font-size="10">subcover</tspan> is exactly what it sounds like: it takes only some of the <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">α</tspan></sub>, while ensuring
+that <tspan font-family="cmmi" font-size="10">X </tspan>remains covered.
+</p>
+  </div>
+<!--l. 171--><p class="indent" >
+</p><!--l. 173--><p class="indent" >  Some art: </p>
+                                                                                
+                                                                                
+<div class="center" 
+>
+<!--l. 174--><p class="noindent" >
+</p>
+</div>
+<a 
+ id="x112-101004r322"></a>
+  <div class="newtheorem">
+<!--l. 205--><p class="noindent" ><span class="head">
+<a 
+ id="x112-101005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 8.3.2.</tspan>  </span><a 
+ id="x112-101006"></a>A topological space <tspan font-family="cmmi" font-size="10">X </tspan>is <tspan font-family="cmbx" font-size="10">quasicompact</tspan> if <tspan font-family="cmti" font-size="10">every </tspan>open cover has a
+finite subcover. It is <tspan font-family="cmbx" font-size="10">compact</tspan> if it is also Hausdorff.
+</p>
+  </div>
+<!--l. 208--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-204">
+<a 
+ id="x112-101007r323"></a>
+<div class="newtheorem">
+<!--l. 210--><p class="noindent" ><span class="head">
+<a 
+ id="x112-101008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 8.3.3 —  </tspan> </span><a 
+ id="x112-101009"></a>The “Hausdorff” hypothesis that I snuck in is a sanity condition which
+is not worth worrying about unless you’re working on the algebraic geometry chapters,
+since all the spaces you will deal with are Hausdorff. (In fact, some authors don’t even
+bother to include it.) For example all metric spaces are Hausdorff and thus this condition
+can be safely ignored if you are working with metric spaces.</p>
+  </div>
+<!--l. 218--><p class="indent" >  </p></div>
+<!--l. 219--><p class="indent" >  What does this mean? Here’s an example:</p>
+<div class="mdframed" id="mdframed-205">
+<a 
+ id="x112-101010r324"></a>
+<div class="newtheorem">
+<!--l. 220--><p class="noindent" ><span class="head">
+<a 
+ id="x112-101011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 8.3.4 </tspan>(Example of a finite subcover)<br 
+class="newline" /> </span><a 
+ id="x112-101012"></a>Suppose we cover the unit square <tspan font-family="cmmi" font-size="10">M </tspan>=
+[0<tspan font-family="cmmi" font-size="10">,</tspan>1]<sup><tspan font-family="cmr" font-size="8">2</tspan></sup>  by putting an open disk of diameter 1 centered at every point (trimming any
+overflow). This is clearly an open cover because, well, every point lies in <tspan font-family="cmti" font-size="10">many </tspan>of the
+open sets, and in particular is the center of one.
+                                                                                
+                                                                                
+</p><!--l. 228--><p class="noindent" >But this is way overkill – we only need about four of these circles to cover the whole square.
+That’s what is meant by a “finite subcover”. </p>
+<div class="center" 
+>
+<!--l. 231--><p class="noindent" >
+</p>
+</div>
+</p>
+  </div>
+<!--l. 243--><p class="indent" >  </p></div>
+<!--l. 245--><p class="indent" >  Why do we care? Because of this:</p>
+<div class="mdframed" id="mdframed-206">
+<a 
+ id="x112-101013r325"></a>
+<div class="newtheorem">
+<!--l. 247--><p class="noindent" ><span class="head">
+<a 
+ id="x112-101014r5"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 8.3.5 </tspan><tspan font-family="cmss" font-size="10">(Sequentially compact</tspan>  <tspan font-family="cmmi" font-size="10">⇔</tspan>  <tspan font-family="cmss" font-size="10">compact)</tspan><br 
+class="newline" /> </span><a 
+ id="x112-101015"></a>A  metric  space  <tspan font-family="cmmi" font-size="10">M  </tspan>is  sequentially
+compact if and only if it is compact.
+</p>
+  </div>
+<!--l. 250--><p class="indent" >  </p></div>
+<!--l. 251--><p class="indent" >  We defer the proof to the last section.
+</p><!--l. 253--><p class="indent" >  This gives us the motivation we wanted for our definition. Sequential compactness was a
+condition that made sense. The open-cover definition looked strange, but it turned out to be
+equivalent. But we now prefer it, because we have seen that whenever possible we want
+to resort to open-set-only based definitions: so that e.g. they are preserved under
+homeomorphism.</p>
+<div class="mdframed" id="mdframed-207">
+<a 
+ id="x112-101016r326"></a>
+<div class="newtheorem">
+<!--l. 261--><p class="noindent" ><span class="head">
+<a 
+ id="x112-101017r6"></a>
+<tspan font-family="cmbx" font-size="10">Example 8.3.6 </tspan>(An example of non-compactness)<br 
+class="newline" /> </span><a 
+ id="x112-101018"></a>The space <tspan font-family="cmmi" font-size="10">X </tspan>= [0<tspan font-family="cmmi" font-size="10">,</tspan>1) is not compact
+in either sense. We can already see it is not sequentially compact, because it is not even
+complete (look at <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> = 1 <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na287x.png" alt="1n"  class="frac" align="middle" />). To see it is not compact under the covering definition,
+consider the sets
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na288x.png" alt="     [            )
+            ---1--
+Um =   0,1− m  + 1
+" class="math-display"  /></div>
+<!--l. 266--><p class="noindent" >for <tspan font-family="cmmi" font-size="10">m </tspan>= 1<tspan font-family="cmmi" font-size="10">,</tspan>2<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan>. Then <tspan font-family="cmmi" font-size="10">X </tspan>= <tspan font-family="cmex" font-size="10">⋃</tspan>
+  <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>; hence the <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> are indeed a cover. But no finite collection
+of the <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>’s will cover <tspan font-family="cmmi" font-size="10">X</tspan>.
+</p>
+  </div>
+<!--l. 268--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-208">
+<a 
+ id="x112-101019r327"></a>
+<div class="newtheorem">
+<!--l. 270--><p class="noindent" ><span class="head">
+<a 
+ id="x112-101020r7"></a>
+<tspan font-family="cmbx" font-size="10">Question 8.3.7.</tspan>  </span><a 
+ id="x112-101021"></a><tspan font-family="cmr" font-size="10">Convince yourself that [0</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmr" font-size="10">1] </tspan><tspan font-family="cmti" font-size="10">is </tspan><tspan font-family="cmr" font-size="10">compact; this is a little less intuitive than it</tspan>
+<tspan font-family="cmr" font-size="10">being sequentially compact.</tspan></p>
+  </div>
+<!--l. 272--><p class="indent" >  </p></div>
+<a 
+ id="x112-101022r328"></a>
+  <div class="newtheorem">
+<!--l. 274--><p class="noindent" ><span class="head">
+<a 
+ id="x112-101023r8"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 8.3.8.</tspan>  </span><a 
+ id="x112-101024"></a>Thus,   we’ll   never   call   a   metric   space   “sequentially
+compact” again — we’ll just say “compact”. (Indeed, I kind of already did this in the
+previous few sections.)
+</p>
+  </div>
+<!--l. 277--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+  <!--l. 280--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase72.htm" >next</a>] [<a 
+href="Nase70.htm" >prev</a>] [<a 
+href="Nase70.htm#tailNase70.htm" >prev-tail</a>] [<a 
+href="Nase71.htm" >front</a>] [<a 
+href="Nach11.htm#Nase71.htm" >up</a>] </p></div>
+<!--l. 280--><p class="indent" >  <a 
+ id="tailNase71.htm"></a> </p> 
+</body> 
+</html>

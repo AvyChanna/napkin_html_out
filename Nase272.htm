@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Pictures of differential forms</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 8--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase290.htm" >next</a>] [<a 
+href="Nase258.htm#tailNase272.htm">tail</a>] [<a 
+href="Nase288.htm#Nase289.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">43.1</span>  <a 
+ id="x392-37200043.1"></a>Pictures of differential forms</h3>
+<!--l. 9--><p class="noindent" >Before defining a differential form, we first draw some pictures. The key thing to keep in mind
+is</p>
+<div class="mdframed" id="mdframed-710">
+<!--l. 13--><p class="noindent" ><tspan font-family="cmbx" font-size="10">“The definition of a differential form is: something you can integrate.”</tspan>
+<br 
+class="newline" /><tspan font-family="cmbx" font-size="10">— Joe Harris</tspan></p><!--l. 15--><p class="noindent" ></p>
+  </div>
+<!--l. 17--><p class="indent" >  We’ll assume that all functions are <tspan font-family="cmbx" font-size="10">smooth</tspan>, i.e. infinitely differentiable.
+</p><!--l. 20--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>be an open set of a vector space <tspan font-family="cmmi" font-size="10">V </tspan>. Suppose that we have a function <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>,
+i.e. we assign a value to every point of <tspan font-family="cmmi" font-size="10">U</tspan>. </p>
+<div class="center" 
+>
+<!--l. 23--><p class="noindent" >
+</p>
+</div>
+<a 
+ id="x392-372001r1107"></a>
+<div class="newtheorem">
+<!--l. 33--><p class="noindent" ><span class="head">
+<a 
+ id="x392-372002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 43.1.1.</tspan>  </span><a 
+ id="x392-372003"></a>A 0<tspan font-family="cmbx" font-size="10">-form</tspan> <tspan font-family="cmmi" font-size="10">f </tspan>on <tspan font-family="cmmi" font-size="10">U </tspan>is just a smooth function <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>.
+                                                                                
+                                                                                
+</p>
+</div>
+<!--l. 34--><p class="indent" >
+Thus, if we specify a finite set <tspan font-family="cmmi" font-size="10">S </tspan>of points in <tspan font-family="cmmi" font-size="10">U </tspan>we can “integrate” over <tspan font-family="cmmi" font-size="10">S </tspan>by just adding up
+the values of the points:
+</p>
+<div class="math-display" >
+<img 
+src="Na2016x.png" alt="      --                 --
+0 + √ 2+ 3 + (− 1) = 2+ √2.
+" class="math-display"  /></div>
+<!--l. 39--><p class="noindent" >So, <tspan font-family="cmbx" font-size="10">a </tspan>0<tspan font-family="cmbx" font-size="10">-form </tspan><tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmbx" font-size="10">lets us integrate over </tspan>0<tspan font-family="cmbx" font-size="10">-dimensional “cells”</tspan>.
+</p><!--l. 41--><p class="indent" >  But this is quite boring, because as we know we like to integrate over things like curves, not
+single points. So, by analogy, we want a 1-form to let us integrate over 1-dimensional cells:
+i.e. over curves. What information would we need to do that? To answer this, let’s
+draw a picture of a curve <tspan font-family="cmmi" font-size="10">c</tspan>, which can be thought of as a function <tspan font-family="cmmi" font-size="10">c </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">U</tspan>.
+</p>
+<div class="center" 
+>
+<!--l. 48--><p class="noindent" >
+</p>
+</div>
+<!--l. 65--><p class="noindent" >We might think that we could get away with just specifying a number on every point of <tspan font-family="cmmi" font-size="10">U</tspan>
+(i.e. a 0-form <tspan font-family="cmmi" font-size="10">f</tspan>), and then somehow “add up” all the values of <tspan font-family="cmmi" font-size="10">f </tspan>along the curve.
+We’ll use this idea in a moment, but we can in fact do something more general.
+Notice how when we walk along a smooth curve, at every point <tspan font-family="cmmi" font-size="10">p </tspan>we also have some
+extra information: a <tspan font-family="cmti" font-size="10">tangent vector </tspan><tspan font-family="cmmi" font-size="10">v</tspan>. So, we can define a 1-form <tspan font-family="cmmi" font-size="10">α </tspan>as follows. A
+0-form just took a point and gave a real number, but <tspan font-family="cmbx" font-size="10">a </tspan>1<tspan font-family="cmbx" font-size="10">-form will take both a</tspan>
+<tspan font-family="cmbx" font-size="10">point </tspan><tspan font-family="cmbxti" font-size="10">and </tspan><tspan font-family="cmbx" font-size="10">a tangent vector at that point, and spit out a real number. </tspan>So a
+1-form <tspan font-family="cmmi" font-size="10">α </tspan>is a smooth function on pairs (<tspan font-family="cmmi" font-size="10">p,v</tspan>), where <tspan font-family="cmmi" font-size="10">v </tspan>is a tangent vector at <tspan font-family="cmmi" font-size="10">p</tspan>, to <tspan font-family="msbm" font-size="10">ℝ</tspan>.
+Hence
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na2017x.png" alt="α : U × V → ℝ.
+" class="math-display"  /></div>
+<!--l. 80--><p class="indent" >  Actually, for any point <tspan font-family="cmmi" font-size="10">p</tspan>, we will require that <tspan font-family="cmmi" font-size="10">α</tspan>(<tspan font-family="cmmi" font-size="10">p,</tspan><tspan font-family="cmsy" font-size="10">−</tspan>) is a linear function in terms of the
+vectors: i.e. we want for example that <tspan font-family="cmmi" font-size="10">α</tspan>(<tspan font-family="cmmi" font-size="10">p,</tspan>2<tspan font-family="cmmi" font-size="10">v</tspan>) = 2<tspan font-family="cmmi" font-size="10">α</tspan>(<tspan font-family="cmmi" font-size="10">p,v</tspan>). So it is more customary to think of
+<tspan font-family="cmmi" font-size="10">α </tspan>as: <a 
+ id="x392-372004r1108"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 85--><p class="noindent" ><span class="head">
+<a 
+ id="x392-372005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 43.1.2.</tspan>  </span><a 
+ id="x392-372006"></a>A 1<tspan font-family="cmbx" font-size="10">-form</tspan> <tspan font-family="cmmi" font-size="10">α </tspan>is a smooth function
+</p>
+  <div class="math-display" >
+<img 
+src="Na2018x.png" alt="α : U → V ∨.
+" class="math-display"  /></div>
+  </div>
+<!--l. 87--><p class="indent" >
+Like with <tspan font-family="cmmi" font-size="10">Df</tspan>, we’ll use <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> instead of <tspan font-family="cmmi" font-size="10">α</tspan>(<tspan font-family="cmmi" font-size="10">p</tspan>). So, at every point <tspan font-family="cmmi" font-size="10">p</tspan>, <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> is some linear functional
+that eats tangent vectors at <tspan font-family="cmmi" font-size="10">p</tspan>, and spits out a real number. Thus, we think of <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> as an element
+of <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>;
+</p>
+  <div class="math-display" >
+<img 
+src="Na2019x.png" alt="      ∨
+αp ∈ V .
+" class="math-display"  /></div>
+<!--l. 94--><p class="indent" >  Next, we draw pictures of 2-forms. This should, for example, let us integrate over a blob (a
+so-called 2-cell) of the form
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na2020x.png" alt="c : [0,1]× [0,1] → U
+" class="math-display"  /></div>
+<!--l. 98--><p class="indent" >  i.e. for example, a square in <tspan font-family="cmmi" font-size="10">U</tspan>. In the previous example with 1-forms, we looked at tangent
+vectors to the curve <tspan font-family="cmmi" font-size="10">c</tspan>. This time, at points we will look at <tspan font-family="cmti" font-size="10">pairs </tspan>of tangent vectors in <tspan font-family="cmmi" font-size="10">U</tspan>: in the
+same sense that lots of tangent vectors approximate the entire curve, lots of tiny squares will
+approximate the big square in <tspan font-family="cmmi" font-size="10">U</tspan>. </p>
+<div class="center" 
+>
+<!--l. 105--><p class="noindent" >
+</p>
+</div>
+<!--l. 125--><p class="noindent" >So what should a 2-form <tspan font-family="cmmi" font-size="10">β </tspan>be? As before, it should start by taking a point <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U</tspan>, so <tspan font-family="cmmi" font-size="10">β</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> is now a
+linear functional: but this time, it should be a linear map on two vectors <tspan font-family="cmmi" font-size="10">v </tspan>and <tspan font-family="cmmi" font-size="10">w</tspan>. Here <tspan font-family="cmmi" font-size="10">v </tspan>and
+<tspan font-family="cmmi" font-size="10">w </tspan>are not tangent so much as their span cuts out a small parallelogram. So, the right thing to
+do is in fact consider
+</p>
+  <div class="math-display" >
+<img 
+src="Na2021x.png" alt="βp ∈ V∨ ∧ V ∨.
+" class="math-display"  /></div>
+<!--l. 132--><p class="indent" >  That is, to use the wedge product to get a handle on the idea that <tspan font-family="cmmi" font-size="10">v </tspan>and <tspan font-family="cmmi" font-size="10">w </tspan>span a
+parallelogram. Another valid choice would have been (<tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>)<sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>; in fact, the two are
+isomorphic, but it will be more convenient to write it in the former.
+                                                                                
+                                                                                
+</p>
+  <!--l. 138--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase290.htm" >next</a>] [<a 
+href="Nase272.htm" >front</a>] [<a 
+href="Nase288.htm#Nase289.htm" >up</a>] </p></div>
+<!--l. 138--><p class="indent" >  <a 
+ id="tailNase272.htm"></a> </p> 
+</body> 
+</html>

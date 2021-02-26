@@ -1,0 +1,1823 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title></title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+  <div class="titlepage">
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 16--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+<h2 class="titleHead">An Infinitely Large Napkin</h2>
+<a 
+href="http://web.evanchen.cc/napkin.html" class="url" ><span 
+class="cmtt-12">http://web.evanchen.cc/napkin.html</span></a>
+<div class="tabular"> <table id="TBL-1" class="tabular" 
+ 
+><colgroup id="TBL-1-1g"><col 
+id="TBL-1-1" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-1-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-1-1"  
+class="td11"><div class="author" ><span 
+class="cmr-12x-x-120">Evan Chen</span></div></td></tr></table>
+</div>
+<div class="date" ><span 
+class="cmr-12x-x-120">Version: html-alpha</span></div>
+                                                                                
+                                                                                
+  </div>
+                                                                                
+                                                                                
+  <div class="titlepage">
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 1--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+                                                                                <div class="flushright" 
+>
+<!--l. 3--><p class="noindent" >
+ <span 
+class="cmti-12">When introduced to a new idea, always ask why you should care.</span><br />
+<span 
+class="cmti-12">Do not expect an answer right away, but demand one eventually.</span><br /><br />
+<span 
+class="cmti-12">— Ravi Vakil </span><span class="cite"><span 
+class="cmti-12">[</span><span 
+class="cmbx-12">?</span><span 
+class="cmti-12">]</span></span></p></div>
+<!--l. 11--><p class="indent" >   _______________________________________________________________________________________________
+</p>
+<div class="minipage"><!--l. 16--><p class="noindent" >If you like this book and want to support me,
+please consider buying me a coffee!<br /><br />
+<a 
+href="http://ko-fi.com/evanchen" ><img 
+src="media/kofi4.png" alt="PIC"  
+width="150" height="150"  /></a><br />
+<a 
+href="http://ko-fi.com/evanchen/" class="url" ><span 
+class="cmtt-10x-x-109">http://ko-fi.com/evanchen/</span></a>
+</p></div>
+<!--l. 26--><p class="noindent" ><span 
+class="cmti-10">For Brian and Lisa, who finally got me to write it</span><span 
+class="cmr-10">.</span><br 
+class="newline" /> <span 
+class="tcrm-1000">© </span><span 
+class="cmr-10">2021 Evan Chen. Some rights reserved; check the GitHub. </span><br 
+class="newline" /><span 
+class="cmr-10">This is (still!) an </span><span 
+class="cmbx-10">incomplete draft</span><span 
+class="cmr-10">. Please send corrections, comments, pictures of kittens, etc.</span><span 
+class="cmr-10"> to</span>
+<a 
+href="mailto:evan@evanchen.cc" ><span 
+class="cmtt-10">evan@evanchen.cc</span></a><span 
+class="cmr-10">, or pull-request at </span><a 
+href="https://github.com/vEnhance/napkin" class="url" ><span 
+class="cmtt-10">https://github.com/vEnhance/napkin</span></a><span 
+class="cmr-10">.</span><br 
+class="newline" /> <span 
+class="cmr-10">Last updated February 27, 2021.</span>
+                                                                                
+                                                                                
+</p>
+  </div>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 1--><p class="indent" >
+                                                                                
+                                                                                
+</p><!--l. 1--><p class="indent" >  <a 
+ id="chapter*.1"></a> </p><div class="tableofcontents">
+  <span class="chapterToc" >  <a 
+href="Nach1.htm#x2-1000" id="QQ2-2-1">Preface</a></span>
+<br />  <span class="chapterToc" >  <a 
+href="Nach2.htm#x11-8000" id="QQ2-11-8">Advice for the reader</a></span>
+<br />   <span class="sectionToc" >1  <a 
+href="Nase1.htm#x12-90001" id="QQ2-12-9">Prerequisites</a></span>
+<br />   <span class="sectionToc" >2  <a 
+href="Nase2.htm#x13-100002" id="QQ2-13-10">Deciding what to read</a></span>
+<br />   <span class="sectionToc" >3  <a 
+href="Nase3.htm#x14-110003" id="QQ2-14-11">Questions, exercises, and problems</a></span>
+<br />   <span class="sectionToc" >4  <a 
+href="Nase4.htm#x16-120004" id="QQ2-16-12">Paper</a></span>
+<br />   <span class="sectionToc" >5  <a 
+href="Nase5.htm#x18-130005" id="QQ2-18-13">On the importance of examples</a></span>
+<br />   <span class="sectionToc" >6  <a 
+href="Nase6.htm#x19-140006" id="QQ2-19-14">Conventions and notations</a></span>
+<br />   <span class="sectionToc" >7  <a 
+href="Nase7.htm#x20-210007" id="QQ2-20-21">Further reading</a></span>
+<br />  <span class="partToc" >I  <a 
+href="Napa1.htm#x22-23000I" id="QQ2-22-23">Starting Out</a></span>
+<br />  <span class="chapterToc" >0  <a 
+href="Nach3.htm#x23-240000" id="QQ2-23-24">Sales pitches</a></span>
+<br />   <span class="sectionToc" >0.1  <a 
+href="Nase8.htm#x24-250000.1" id="QQ2-24-25">The basics</a></span>
+<br />   <span class="sectionToc" >0.2  <a 
+href="Nase9.htm#x26-260000.2" id="QQ2-26-26">Abstract algebra</a></span>
+<br />   <span class="sectionToc" >0.3  <a 
+href="Nase10.htm#x27-270000.3" id="QQ2-27-27">Real and complex analysis</a></span>
+<br />   <span class="sectionToc" >0.4  <a 
+href="Nase11.htm#x28-280000.4" id="QQ2-28-28">Algebraic number theory</a></span>
+<br />   <span class="sectionToc" >0.5  <a 
+href="Nase12.htm#x29-290000.5" id="QQ2-29-29">Algebraic topology</a></span>
+<br />   <span class="sectionToc" >0.6  <a 
+href="Nase13.htm#x30-300000.6" id="QQ2-30-30">Algebraic geometry</a></span>
+<br />   <span class="sectionToc" >0.7  <a 
+href="Nase14.htm#x31-310000.7" id="QQ2-31-31">Set theory</a></span>
+<br />  <span class="chapterToc" >1  <a 
+href="Nach4.htm#x32-320001" id="QQ2-32-32">Groups</a></span>
+<br />   <span class="sectionToc" >1.1  <a 
+href="Nase15.htm#x33-330001.1" id="QQ2-33-33">Definition and examples of groups</a></span>
+<br />   <span class="sectionToc" >1.2  <a 
+href="Nase16.htm#x34-340001.2" id="QQ2-34-34">Properties of groups</a></span>
+<br />   <span class="sectionToc" >1.3  <a 
+href="Nase17.htm#x35-350001.3" id="QQ2-35-35">Isomorphisms</a></span>
+<br />   <span class="sectionToc" >1.4  <a 
+href="Nase18.htm#x36-360001.4" id="QQ2-36-36">Orders of groups, and Lagrange’s theorem</a></span>
+<br />   <span class="sectionToc" >1.5  <a 
+href="Nase19.htm#x37-370001.5" id="QQ2-37-37">Subgroups</a></span>
+<br />   <span class="sectionToc" >1.6  <a 
+href="Nase20.htm#x38-380001.6" id="QQ2-38-38">Groups of small orders</a></span>
+<br />   <span class="sectionToc" >1.7  <a 
+href="Nase21.htm#x39-390001.7" id="QQ2-39-39">Unimportant long digression</a></span>
+<br />   <span class="sectionToc" >1.8  <a 
+href="Nase22.htm#x40-400001.8" id="QQ2-40-40">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >2  <a 
+href="Nach5.htm#x42-410002" id="QQ2-42-41">Metric spaces</a></span>
+<br />   <span class="sectionToc" >2.1  <a 
+href="Nase23.htm#x44-420002.1" id="QQ2-44-42">Definition and examples of metric spaces</a></span>
+<br />   <span class="sectionToc" >2.2  <a 
+href="Nase24.htm#x45-430002.2" id="QQ2-45-43">Convergence in metric spaces</a></span>
+<br />   <span class="sectionToc" >2.3  <a 
+href="Nase25.htm#x46-440002.3" id="QQ2-46-44">Continuous maps</a></span>
+<br />   <span class="sectionToc" >2.4  <a 
+href="Nase26.htm#x47-450002.4" id="QQ2-47-45">Homeomorphisms</a></span>
+<br />   <span class="sectionToc" >2.5  <a 
+href="Nase27.htm#x48-460002.5" id="QQ2-48-46">Extended example/definition: product metric</a></span>
+<br />   <span class="sectionToc" >2.6  <a 
+href="Nase28.htm#x49-470002.6" id="QQ2-49-47">Open sets</a></span>
+<br />   <span class="sectionToc" >2.7  <a 
+href="Nase29.htm#x50-480002.7" id="QQ2-50-49">Closed sets</a></span>
+<br />   <span class="sectionToc" >2.8  <a 
+href="Nase30.htm#x51-490002.8" id="QQ2-51-50">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >II  <a 
+href="Napa2.htm#x52-50000II" id="QQ2-52-51">Basic Abstract Algebra</a></span>
+<br />  <span class="chapterToc" >3  <a 
+href="Nach6.htm#x53-510003" id="QQ2-53-52">Homomorphisms and quotient groups</a></span>
+<br />   <span class="sectionToc" >3.1  <a 
+href="Nase31.htm#x54-520003.1" id="QQ2-54-53">Generators and group presentations</a></span>
+<br />   <span class="sectionToc" >3.2  <a 
+href="Nase32.htm#x56-530003.2" id="QQ2-56-54">Homomorphisms</a></span>
+<br />   <span class="sectionToc" >3.3  <a 
+href="Nase33.htm#x57-540003.3" id="QQ2-57-55">Cosets and modding out</a></span>
+<br />   <span class="sectionToc" >3.4  <a 
+href="Nase34.htm#x58-550003.4" id="QQ2-58-56">(Optional) Proof of Lagrange’s theorem</a></span>
+<br />   <span class="sectionToc" >3.5  <a 
+href="Nase35.htm#x59-560003.5" id="QQ2-59-57">Eliminating the homomorphism</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >3.6  <a 
+href="Nase36.htm#x60-570003.6" id="QQ2-60-58">(Digression) The first isomorphism theorem</a></span>
+<br />   <span class="sectionToc" >3.7  <a 
+href="Nase37.htm#x62-580003.7" id="QQ2-62-59">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >4  <a 
+href="Nach7.htm#x63-590004" id="QQ2-63-60">Rings and ideals</a></span>
+<br />   <span class="sectionToc" >4.1  <a 
+href="Nase38.htm#x64-600004.1" id="QQ2-64-61">Some motivational metaphors about rings vs groups</a></span>
+<br />   <span class="sectionToc" >4.2  <a 
+href="Nase39.htm#x65-610004.2" id="QQ2-65-62">(Optional) Pedagogical notes on motivation</a></span>
+<br />   <span class="sectionToc" >4.3  <a 
+href="Nase40.htm#x66-620004.3" id="QQ2-66-63">Definition and examples of rings</a></span>
+<br />   <span class="sectionToc" >4.4  <a 
+href="Nase41.htm#x68-630004.4" id="QQ2-68-64">Fields</a></span>
+<br />   <span class="sectionToc" >4.5  <a 
+href="Nase42.htm#x69-640004.5" id="QQ2-69-65">Homomorphisms</a></span>
+<br />   <span class="sectionToc" >4.6  <a 
+href="Nase43.htm#x71-650004.6" id="QQ2-71-66">Ideals</a></span>
+<br />   <span class="sectionToc" >4.7  <a 
+href="Nase44.htm#x72-660004.7" id="QQ2-72-67">Generating ideals</a></span>
+<br />   <span class="sectionToc" >4.8  <a 
+href="Nase45.htm#x73-670004.8" id="QQ2-73-68">Principal ideal domains</a></span>
+<br />   <span class="sectionToc" >4.9  <a 
+href="Nase46.htm#x74-680004.9" id="QQ2-74-69">Noetherian rings</a></span>
+<br />   <span class="sectionToc" >4.10  <a 
+href="Nase47.htm#x76-690004.10" id="QQ2-76-70">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >5  <a 
+href="Nach8.htm#x77-700005" id="QQ2-77-71">Flavors of rings</a></span>
+<br />   <span class="sectionToc" >5.1  <a 
+href="Nase48.htm#x78-710005.1" id="QQ2-78-72">Fields</a></span>
+<br />   <span class="sectionToc" >5.2  <a 
+href="Nase49.htm#x79-720005.2" id="QQ2-79-73">Integral domains</a></span>
+<br />   <span class="sectionToc" >5.3  <a 
+href="Nase50.htm#x81-730005.3" id="QQ2-81-74">Prime ideals</a></span>
+<br />   <span class="sectionToc" >5.4  <a 
+href="Nase51.htm#x82-740005.4" id="QQ2-82-75">Maximal ideals</a></span>
+<br />   <span class="sectionToc" >5.5  <a 
+href="Nase52.htm#x83-750005.5" id="QQ2-83-76">Field of fractions</a></span>
+<br />   <span class="sectionToc" >5.6  <a 
+href="Nase53.htm#x84-760005.6" id="QQ2-84-77">Unique factorization domains (UFD’s)</a></span>
+<br />   <span class="sectionToc" >5.7  <a 
+href="Nase54.htm#x85-770005.7" id="QQ2-85-78">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >III  <a 
+href="Napa3.htm#x87-78000III" id="QQ2-87-79">Basic Topology</a></span>
+<br />  <span class="chapterToc" >6  <a 
+href="Nach9.htm#x88-790006" id="QQ2-88-80">Properties of metric spaces</a></span>
+<br />   <span class="sectionToc" >6.1  <a 
+href="Nase55.htm#x89-800006.1" id="QQ2-89-81">Boundedness</a></span>
+<br />   <span class="sectionToc" >6.2  <a 
+href="Nase56.htm#x90-810006.2" id="QQ2-90-82">Completeness</a></span>
+<br />   <span class="sectionToc" >6.3  <a 
+href="Nase57.htm#x91-820006.3" id="QQ2-91-83">Let the buyer beware</a></span>
+<br />   <span class="sectionToc" >6.4  <a 
+href="Nase58.htm#x92-830006.4" id="QQ2-92-84">Subspaces, and (inb4) a confusing linguistic point</a></span>
+<br />   <span class="sectionToc" >6.5  <a 
+href="Nase59.htm#x94-840006.5" id="QQ2-94-85">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >7  <a 
+href="Nach10.htm#x95-850007" id="QQ2-95-86">Topological spaces</a></span>
+<br />   <span class="sectionToc" >7.1  <a 
+href="Nase60.htm#x97-860007.1" id="QQ2-97-87">Forgetting the metric</a></span>
+<br />   <span class="sectionToc" >7.2  <a 
+href="Nase61.htm#x99-870007.2" id="QQ2-99-88">Re-definitions</a></span>
+<br />   <span class="sectionToc" >7.3  <a 
+href="Nase62.htm#x100-910007.3" id="QQ2-100-92">Hausdorff spaces</a></span>
+<br />   <span class="sectionToc" >7.4  <a 
+href="Nase63.htm#x101-920007.4" id="QQ2-101-93">Subspaces</a></span>
+<br />   <span class="sectionToc" >7.5  <a 
+href="Nase64.htm#x102-930007.5" id="QQ2-102-94">Connected spaces</a></span>
+<br />   <span class="sectionToc" >7.6  <a 
+href="Nase65.htm#x103-940007.6" id="QQ2-103-95">Path-connected spaces</a></span>
+<br />   <span class="sectionToc" >7.7  <a 
+href="Nase66.htm#x104-950007.7" id="QQ2-104-96">Homotopy and simply connected spaces</a></span>
+<br />   <span class="sectionToc" >7.8  <a 
+href="Nase67.htm#x106-960007.8" id="QQ2-106-97">Bases of spaces</a></span>
+<br />   <span class="sectionToc" >7.9  <a 
+href="Nase68.htm#x107-970007.9" id="QQ2-107-98">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >8  <a 
+href="Nach11.htm#x109-980008" id="QQ2-109-99">Compactness</a></span>
+<br />   <span class="sectionToc" >8.1  <a 
+href="Nase69.htm#x110-990008.1" id="QQ2-110-100">Definition of sequential compactness</a></span>
+<br />   <span class="sectionToc" >8.2  <a 
+href="Nase70.htm#x111-1000008.2" id="QQ2-111-102">Criteria for compactness</a></span>
+<br />   <span class="sectionToc" >8.3  <a 
+href="Nase71.htm#x112-1010008.3" id="QQ2-112-103">Compactness using open covers</a></span>
+<br />   <span class="sectionToc" >8.4  <a 
+href="Nase72.htm#x113-1020008.4" id="QQ2-113-104">Applications of compactness</a></span>
+<br />   <span class="sectionToc" >8.5  <a 
+href="Nase73.htm#x114-1030008.5" id="QQ2-114-105">(Optional) Equivalence of formulations of compactness</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >8.6  <a 
+href="Nase74.htm#x115-1040008.6" id="QQ2-115-106">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >IV  <a 
+href="Napa4.htm#x116-105000IV" id="QQ2-116-107">Linear Algebra</a></span>
+<br />  <span class="chapterToc" >9  <a 
+href="Nach12.htm#x117-1060009" id="QQ2-117-108">Vector spaces</a></span>
+<br />   <span class="sectionToc" >9.1  <a 
+href="Nase75.htm#x118-1070009.1" id="QQ2-118-109">The definitions of a ring and field</a></span>
+<br />   <span class="sectionToc" >9.2  <a 
+href="Nase76.htm#x119-1080009.2" id="QQ2-119-110">Modules and vector spaces</a></span>
+<br />   <span class="sectionToc" >9.3  <a 
+href="Nase77.htm#x120-1090009.3" id="QQ2-120-111">Direct sums</a></span>
+<br />   <span class="sectionToc" >9.4  <a 
+href="Nase78.htm#x121-1100009.4" id="QQ2-121-112">Linear independence, spans, and basis</a></span>
+<br />   <span class="sectionToc" >9.5  <a 
+href="Nase79.htm#x122-1110009.5" id="QQ2-122-113">Linear maps</a></span>
+<br />   <span class="sectionToc" >9.6  <a 
+href="Nase80.htm#x124-1120009.6" id="QQ2-124-114">What is a matrix?</a></span>
+<br />   <span class="sectionToc" >9.7  <a 
+href="Nase81.htm#x125-1130009.7" id="QQ2-125-115">Subspaces and picking convenient bases</a></span>
+<br />   <span class="sectionToc" >9.8  <a 
+href="Nase82.htm#x126-1140009.8" id="QQ2-126-116">A cute application: Lagrange interpolation</a></span>
+<br />   <span class="sectionToc" >9.9  <a 
+href="Nase83.htm#x128-1150009.9" id="QQ2-128-117">(Digression) Arrays of numbers are evil</a></span>
+<br />   <span class="sectionToc" >9.10  <a 
+href="Nase84.htm#x129-1160009.10" id="QQ2-129-118">A word on general modules</a></span>
+<br />   <span class="sectionToc" >9.11  <a 
+href="Nase85.htm#x130-1170009.11" id="QQ2-130-119">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >10  <a 
+href="Nach13.htm#x131-11800010" id="QQ2-131-120">Eigen-things</a></span>
+<br />   <span class="sectionToc" >10.1  <a 
+href="Nase86.htm#x132-11900010.1" id="QQ2-132-121">Why you should care</a></span>
+<br />   <span class="sectionToc" >10.2  <a 
+href="Nase87.htm#x133-12000010.2" id="QQ2-133-122">Warning on assumptions</a></span>
+<br />   <span class="sectionToc" >10.3  <a 
+href="Nase88.htm#x134-12100010.3" id="QQ2-134-123">Eigenvectors and eigenvalues</a></span>
+<br />   <span class="sectionToc" >10.4  <a 
+href="Nase89.htm#x136-12200010.4" id="QQ2-136-124">The Jordan form</a></span>
+<br />   <span class="sectionToc" >10.5  <a 
+href="Nase90.htm#x137-12300010.5" id="QQ2-137-125">Nilpotent maps</a></span>
+<br />   <span class="sectionToc" >10.6  <a 
+href="Nase91.htm#x138-12400010.6" id="QQ2-138-126">Reducing to the nilpotent case</a></span>
+<br />   <span class="sectionToc" >10.7  <a 
+href="Nase92.htm#x139-12500010.7" id="QQ2-139-127">(Optional) Proof of nilpotent Jordan</a></span>
+<br />   <span class="sectionToc" >10.8  <a 
+href="Nase93.htm#x140-12600010.8" id="QQ2-140-128">Algebraic and geometric multiplicity</a></span>
+<br />   <span class="sectionToc" >10.9  <a 
+href="Nase94.htm#x141-12700010.9" id="QQ2-141-129">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >11  <a 
+href="Nach14.htm#x142-12800011" id="QQ2-142-130">Dual space and trace</a></span>
+<br />   <span class="sectionToc" >11.1  <a 
+href="Nase95.htm#x143-12900011.1" id="QQ2-143-131">Tensor product</a></span>
+<br />   <span class="sectionToc" >11.2  <a 
+href="Nase96.htm#x146-13000011.2" id="QQ2-146-132">Dual space</a></span>
+<br />   <span class="sectionToc" >11.3  <a 
+href="Nase97.htm#x147-13100011.3" id="QQ2-147-133"><span 
+class="cmmi-10x-x-109">V</span> <sup><span 
+class="cmsy-8">∨</span></sup><span 
+class="cmsy-10x-x-109">⊗ </span><span 
+class="cmmi-10x-x-109">W </span>gives matrices from <span 
+class="cmmi-10x-x-109">V </span>to <span 
+class="cmmi-10x-x-109">W</span></a></span>
+<br />   <span class="sectionToc" >11.4  <a 
+href="Nase98.htm#x148-13200011.4" id="QQ2-148-134">The trace</a></span>
+<br />   <span class="sectionToc" >11.5  <a 
+href="Nase99.htm#x149-13300011.5" id="QQ2-149-135">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >12  <a 
+href="Nach15.htm#x150-13400012" id="QQ2-150-136">Determinant</a></span>
+<br />   <span class="sectionToc" >12.1  <a 
+href="Nase100.htm#x151-13500012.1" id="QQ2-151-137">Wedge product</a></span>
+<br />   <span class="sectionToc" >12.2  <a 
+href="Nase101.htm#x153-13600012.2" id="QQ2-153-138">The determinant</a></span>
+<br />   <span class="sectionToc" >12.3  <a 
+href="Nase102.htm#x154-13700012.3" id="QQ2-154-139">Characteristic polynomials, and Cayley-Hamilton</a></span>
+<br />   <span class="sectionToc" >12.4  <a 
+href="Nase103.htm#x155-13800012.4" id="QQ2-155-140">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >13  <a 
+href="Nach16.htm#x156-13900013" id="QQ2-156-141">Inner product spaces</a></span>
+<br />   <span class="sectionToc" >13.1  <a 
+href="Nase104.htm#x157-14000013.1" id="QQ2-157-142">The inner product</a></span>
+<br />   <span class="sectionToc" >13.2  <a 
+href="Nase105.htm#x159-14400013.2" id="QQ2-159-146">Norms</a></span>
+<br />   <span class="sectionToc" >13.3  <a 
+href="Nase106.htm#x160-14500013.3" id="QQ2-160-147">Orthogonality</a></span>
+<br />   <span class="sectionToc" >13.4  <a 
+href="Nase107.htm#x161-14600013.4" id="QQ2-161-148">Hilbert spaces</a></span>
+<br />   <span class="sectionToc" >13.5  <a 
+href="Nase108.htm#x162-14700013.5" id="QQ2-162-149">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >14  <a 
+href="Nach17.htm#x163-14800014" id="QQ2-163-150">Bonus: Fourier analysis</a></span>
+<br />   <span class="sectionToc" >14.1  <a 
+href="Nase109.htm#x164-14900014.1" id="QQ2-164-151">Synopsis</a></span>
+<br />   <span class="sectionToc" >14.2  <a 
+href="Nase110.htm#x165-15000014.2" id="QQ2-165-152">A reminder on Hilbert spaces</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >14.3  <a 
+href="Nase111.htm#x166-15100014.3" id="QQ2-166-153">Common examples</a></span>
+<br />   <span class="sectionToc" >14.4  <a 
+href="Nase112.htm#x168-15500014.4" id="QQ2-168-157">Summary, and another teaser</a></span>
+<br />   <span class="sectionToc" >14.5  <a 
+href="Nase113.htm#x169-15600014.5" id="QQ2-169-158">Parseval and friends</a></span>
+<br />   <span class="sectionToc" >14.6  <a 
+href="Nase114.htm#x170-15700014.6" id="QQ2-170-159">Application: Basel problem</a></span>
+<br />   <span class="sectionToc" >14.7  <a 
+href="Nase115.htm#x171-15800014.7" id="QQ2-171-160">Application: Arrow’s Impossibility Theorem</a></span>
+<br />   <span class="sectionToc" >14.8  <a 
+href="Nase116.htm#x172-15900014.8" id="QQ2-172-161">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >15  <a 
+href="Nach18.htm#x173-16000015" id="QQ2-173-162">Duals, adjoint, and transposes</a></span>
+<br />   <span class="sectionToc" >15.1  <a 
+href="Nase117.htm#x174-16100015.1" id="QQ2-174-163">Dual of a map</a></span>
+<br />   <span class="sectionToc" >15.2  <a 
+href="Nase118.htm#x175-16200015.2" id="QQ2-175-164">Identifying with the dual space</a></span>
+<br />   <span class="sectionToc" >15.3  <a 
+href="Nase119.htm#x176-16300015.3" id="QQ2-176-165">The adjoint (conjugate transpose)</a></span>
+<br />   <span class="sectionToc" >15.4  <a 
+href="Nase120.htm#x177-16400015.4" id="QQ2-177-166">Eigenvalues of normal maps</a></span>
+<br />   <span class="sectionToc" >15.5  <a 
+href="Nase121.htm#x178-16500015.5" id="QQ2-178-167">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >V  <a 
+href="Napa5.htm#x180-166000V" id="QQ2-180-168">More on Groups</a></span>
+<br />  <span class="chapterToc" >16  <a 
+href="Nach19.htm#x181-16700016" id="QQ2-181-169">Group actions overkill AIME problems</a></span>
+<br />   <span class="sectionToc" >16.1  <a 
+href="Nase122.htm#x182-16800016.1" id="QQ2-182-170">Definition of a group action</a></span>
+<br />   <span class="sectionToc" >16.2  <a 
+href="Nase123.htm#x183-16900016.2" id="QQ2-183-171">Stabilizers and orbits</a></span>
+<br />   <span class="sectionToc" >16.3  <a 
+href="Nase124.htm#x184-17000016.3" id="QQ2-184-172">Burnside’s lemma</a></span>
+<br />   <span class="sectionToc" >16.4  <a 
+href="Nase125.htm#x185-17100016.4" id="QQ2-185-173">Conjugation of elements</a></span>
+<br />   <span class="sectionToc" >16.5  <a 
+href="Nase126.htm#x186-17200016.5" id="QQ2-186-174">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >17  <a 
+href="Nach20.htm#x187-17300017" id="QQ2-187-175">Find all groups</a></span>
+<br />   <span class="sectionToc" >17.1  <a 
+href="Nase127.htm#x188-17400017.1" id="QQ2-188-176">Sylow theorems</a></span>
+<br />   <span class="sectionToc" >17.2  <a 
+href="Nase128.htm#x189-17500017.2" id="QQ2-189-177">(Optional) Proving Sylow’s theorem</a></span>
+<br />   <span class="sectionToc" >17.3  <a 
+href="Nase129.htm#x190-18100017.3" id="QQ2-190-183">(Optional) Simple groups and Jordan-Hölder</a></span>
+<br />   <span class="sectionToc" >17.4  <a 
+href="Nase130.htm#x191-18200017.4" id="QQ2-191-184">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >18  <a 
+href="Nach21.htm#x193-18300018" id="QQ2-193-185">The PID structure theorem</a></span>
+<br />   <span class="sectionToc" >18.1  <a 
+href="Nase131.htm#x194-18400018.1" id="QQ2-194-186">Finitely generated abelian groups</a></span>
+<br />   <span class="sectionToc" >18.2  <a 
+href="Nase132.htm#x195-18500018.2" id="QQ2-195-187">Some ring theory prerequisites</a></span>
+<br />   <span class="sectionToc" >18.3  <a 
+href="Nase133.htm#x196-18600018.3" id="QQ2-196-188">The structure theorem</a></span>
+<br />   <span class="sectionToc" >18.4  <a 
+href="Nase134.htm#x197-18700018.4" id="QQ2-197-189">Reduction to maps of free <span 
+class="cmmi-10x-x-109">R</span>-modules</a></span>
+<br />   <span class="sectionToc" >18.5  <a 
+href="Nase135.htm#x198-18800018.5" id="QQ2-198-190">Smith normal form</a></span>
+<br />   <span class="sectionToc" >18.6  <a 
+href="Nase136.htm#x199-18900018.6" id="QQ2-199-191">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >VI  <a 
+href="Napa6.htm#x200-190000VI" id="QQ2-200-192">Representation Theory</a></span>
+<br />  <span class="chapterToc" >19  <a 
+href="Nach22.htm#x201-19100019" id="QQ2-201-193">Representations of algebras</a></span>
+<br />   <span class="sectionToc" >19.1  <a 
+href="Nase137.htm#x202-19200019.1" id="QQ2-202-194">Algebras</a></span>
+<br />   <span class="sectionToc" >19.2  <a 
+href="Nase138.htm#x203-19300019.2" id="QQ2-203-195">Representations</a></span>
+<br />   <span class="sectionToc" >19.3  <a 
+href="Nase139.htm#x204-19400019.3" id="QQ2-204-196">Direct sums</a></span>
+<br />   <span class="sectionToc" >19.4  <a 
+href="Nase140.htm#x205-19500019.4" id="QQ2-205-197">Irreducible and indecomposable representations</a></span>
+<br />   <span class="sectionToc" >19.5  <a 
+href="Nase141.htm#x206-19600019.5" id="QQ2-206-198">Morphisms of representations</a></span>
+<br />   <span class="sectionToc" >19.6  <a 
+href="Nase142.htm#x207-19700019.6" id="QQ2-207-199">The representations of Mat<sub><span 
+class="cmmi-8">d</span></sub>(<span 
+class="cmmi-10x-x-109">k</span>)</a></span>
+<br />   <span class="sectionToc" >19.7  <a 
+href="Nase143.htm#x208-19800019.7" id="QQ2-208-200">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >20  <a 
+href="Nach23.htm#x209-19900020" id="QQ2-209-201">Semisimple algebras</a></span>
+<br />   <span class="sectionToc" >20.1  <a 
+href="Nase144.htm#x210-20000020.1" id="QQ2-210-202">Schur’s lemma continued</a></span>
+<br />   <span class="sectionToc" >20.2  <a 
+href="Nase145.htm#x211-20100020.2" id="QQ2-211-203">Density theorem</a></span>
+<br />   <span class="sectionToc" >20.3  <a 
+href="Nase146.htm#x212-20200020.3" id="QQ2-212-204">Semisimple algebras</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >20.4  <a 
+href="Nase147.htm#x213-20300020.4" id="QQ2-213-205">Maschke’s theorem</a></span>
+<br />   <span class="sectionToc" >20.5  <a 
+href="Nase148.htm#x214-20400020.5" id="QQ2-214-206">Example: the representations of <span 
+class="msbm-10x-x-109">ℂ</span>[<span 
+class="cmmi-10x-x-109">S</span><sub><span 
+class="cmr-8">3</span></sub>]</a></span>
+<br />   <span class="sectionToc" >20.6  <a 
+href="Nase149.htm#x215-20500020.6" id="QQ2-215-207">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >21  <a 
+href="Nach24.htm#x216-20600021" id="QQ2-216-208">Characters</a></span>
+<br />   <span class="sectionToc" >21.1  <a 
+href="Nase150.htm#x217-20700021.1" id="QQ2-217-209">Definitions</a></span>
+<br />   <span class="sectionToc" >21.2  <a 
+href="Nase151.htm#x218-20800021.2" id="QQ2-218-210">The dual space modulo the commutator</a></span>
+<br />   <span class="sectionToc" >21.3  <a 
+href="Nase152.htm#x220-20900021.3" id="QQ2-220-211">Orthogonality of characters</a></span>
+<br />   <span class="sectionToc" >21.4  <a 
+href="Nase153.htm#x221-21000021.4" id="QQ2-221-212">Examples of character tables</a></span>
+<br />   <span class="sectionToc" >21.5  <a 
+href="Nase154.htm#x222-21100021.5" id="QQ2-222-213">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >22  <a 
+href="Nach25.htm#x223-21200022" id="QQ2-223-214">Some applications</a></span>
+<br />   <span class="sectionToc" >22.1  <a 
+href="Nase155.htm#x224-21300022.1" id="QQ2-224-215">Frobenius divisibility</a></span>
+<br />   <span class="sectionToc" >22.2  <a 
+href="Nase156.htm#x225-21400022.2" id="QQ2-225-216">Burnside’s theorem</a></span>
+<br />   <span class="sectionToc" >22.3  <a 
+href="Nase157.htm#x226-21500022.3" id="QQ2-226-217">Frobenius determinant</a></span>
+<br />  <span class="partToc" >VII  <a 
+href="Napa7.htm#x227-216000VII" id="QQ2-227-218">Quantum Algorithms</a></span>
+<br />  <span class="chapterToc" >23  <a 
+href="Nach26.htm#x228-21700023" id="QQ2-228-219">Quantum states and measurements</a></span>
+<br />   <span class="sectionToc" >23.1  <a 
+href="Nase158.htm#x229-21800023.1" id="QQ2-229-220">Bra-ket notation</a></span>
+<br />   <span class="sectionToc" >23.2  <a 
+href="Nase159.htm#x230-21900023.2" id="QQ2-230-221">The state space</a></span>
+<br />   <span class="sectionToc" >23.3  <a 
+href="Nase160.htm#x231-22000023.3" id="QQ2-231-222">Observations</a></span>
+<br />   <span class="sectionToc" >23.4  <a 
+href="Nase161.htm#x232-22100023.4" id="QQ2-232-223">Entanglement</a></span>
+<br />   <span class="sectionToc" >23.5  <a 
+href="Nase162.htm#x233-22200023.5" id="QQ2-233-224">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >24  <a 
+href="Nach27.htm#x234-22300024" id="QQ2-234-225">Quantum circuits</a></span>
+<br />   <span class="sectionToc" >24.1  <a 
+href="Nase163.htm#x235-22400024.1" id="QQ2-235-226">Classical logic gates</a></span>
+<br />   <span class="sectionToc" >24.2  <a 
+href="Nase164.htm#x236-22500024.2" id="QQ2-236-227">Reversible classical logic</a></span>
+<br />   <span class="sectionToc" >24.3  <a 
+href="Nase165.htm#x238-22600024.3" id="QQ2-238-228">Quantum logic gates</a></span>
+<br />   <span class="sectionToc" >24.4  <a 
+href="Nase166.htm#x239-22700024.4" id="QQ2-239-229">Deutsch-Jozsa algorithm</a></span>
+<br />   <span class="sectionToc" >24.5  <a 
+href="Nase167.htm#x240-22800024.5" id="QQ2-240-230">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >25  <a 
+href="Nach28.htm#x241-22900025" id="QQ2-241-231">Shor’s algorithm</a></span>
+<br />   <span class="sectionToc" >25.1  <a 
+href="Nase168.htm#x242-23000025.1" id="QQ2-242-232">The classical (inverse) Fourier transform</a></span>
+<br />   <span class="sectionToc" >25.2  <a 
+href="Nase169.htm#x243-23100025.2" id="QQ2-243-233">The quantum Fourier transform</a></span>
+<br />   <span class="sectionToc" >25.3  <a 
+href="Nase170.htm#x244-23200025.3" id="QQ2-244-234">Shor’s algorithm</a></span>
+<br />  <span class="partToc" >VIII  <a 
+href="Napa8.htm#x245-233000VIII" id="QQ2-245-235">Calculus 101</a></span>
+<br />  <span class="chapterToc" >26  <a 
+href="Nach29.htm#x246-23400026" id="QQ2-246-236">Limits and series</a></span>
+<br />   <span class="sectionToc" >26.1  <a 
+href="Nase171.htm#x247-23500026.1" id="QQ2-247-237">Completeness and inf/sup</a></span>
+<br />   <span class="sectionToc" >26.2  <a 
+href="Nase172.htm#x248-23600026.2" id="QQ2-248-238">Proofs of the two key completeness properties of <span 
+class="msbm-10x-x-109">ℝ</span></a></span>
+<br />   <span class="sectionToc" >26.3  <a 
+href="Nase173.htm#x249-23700026.3" id="QQ2-249-239">Monotonic sequences</a></span>
+<br />   <span class="sectionToc" >26.4  <a 
+href="Nase174.htm#x250-23800026.4" id="QQ2-250-240">Infinite series</a></span>
+<br />   <span class="sectionToc" >26.5  <a 
+href="Nase175.htm#x252-23900026.5" id="QQ2-252-241">Series addition is not commutative: a horror story</a></span>
+<br />   <span class="sectionToc" >26.6  <a 
+href="Nase176.htm#x253-24000026.6" id="QQ2-253-242">Limits of functions at points</a></span>
+<br />   <span class="sectionToc" >26.7  <a 
+href="Nase177.htm#x255-24100026.7" id="QQ2-255-243">Limits of functions at infinity</a></span>
+<br />   <span class="sectionToc" >26.8  <a 
+href="Nase178.htm#x256-24200026.8" id="QQ2-256-244">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >27  <a 
+href="Nach30.htm#x257-24300027" id="QQ2-257-245">Bonus: A hint of p-adic numbers</a></span>
+<br />   <span class="sectionToc" >27.1  <a 
+href="Nase179.htm#x258-24400027.1" id="QQ2-258-246">Motivation</a></span>
+<br />   <span class="sectionToc" >27.2  <a 
+href="Nase180.htm#x260-24500027.2" id="QQ2-260-247">Algebraic perspective</a></span>
+<br />   <span class="sectionToc" >27.3  <a 
+href="Nase181.htm#x261-24900027.3" id="QQ2-261-251">Analytic perspective</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >27.4  <a 
+href="Nase182.htm#x262-25500027.4" id="QQ2-262-257">Mahler coefficients</a></span>
+<br />   <span class="sectionToc" >27.5  <a 
+href="Nase183.htm#x263-25600027.5" id="QQ2-263-258">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >28  <a 
+href="Nach31.htm#x264-25700028" id="QQ2-264-259">Differentiation</a></span>
+<br />   <span class="sectionToc" >28.1  <a 
+href="Nase184.htm#x265-25800028.1" id="QQ2-265-260">Definition</a></span>
+<br />   <span class="sectionToc" >28.2  <a 
+href="Nase185.htm#x268-25900028.2" id="QQ2-268-261">How to compute them</a></span>
+<br />   <span class="sectionToc" >28.3  <a 
+href="Nase186.htm#x270-26000028.3" id="QQ2-270-262">Local (and global) maximums</a></span>
+<br />   <span class="sectionToc" >28.4  <a 
+href="Nase187.htm#x272-26100028.4" id="QQ2-272-263">Rolle and friends</a></span>
+<br />   <span class="sectionToc" >28.5  <a 
+href="Nase188.htm#x273-26200028.5" id="QQ2-273-264">Smooth functions</a></span>
+<br />   <span class="sectionToc" >28.6  <a 
+href="Nase189.htm#x274-26300028.6" id="QQ2-274-265">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >29  <a 
+href="Nach32.htm#x275-26400029" id="QQ2-275-266">Power series and Taylor series</a></span>
+<br />   <span class="sectionToc" >29.1  <a 
+href="Nase190.htm#x276-26500029.1" id="QQ2-276-267">Motivation</a></span>
+<br />   <span class="sectionToc" >29.2  <a 
+href="Nase191.htm#x277-26600029.2" id="QQ2-277-268">Power series</a></span>
+<br />   <span class="sectionToc" >29.3  <a 
+href="Nase192.htm#x278-26700029.3" id="QQ2-278-269">Differentiating them</a></span>
+<br />   <span class="sectionToc" >29.4  <a 
+href="Nase193.htm#x279-26800029.4" id="QQ2-279-270">Analytic functions</a></span>
+<br />   <span class="sectionToc" >29.5  <a 
+href="Nase194.htm#x280-26900029.5" id="QQ2-280-271">A definition of Euler’s constant and exponentiation</a></span>
+<br />   <span class="sectionToc" >29.6  <a 
+href="Nase195.htm#x281-27000029.6" id="QQ2-281-272">This all works over complex numbers as well, except also
+complex analysis is heaven</a></span>
+<br />   <span class="sectionToc" >29.7  <a 
+href="Nase196.htm#x282-27100029.7" id="QQ2-282-273">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >30  <a 
+href="Nach33.htm#x283-27200030" id="QQ2-283-274">Riemann integrals</a></span>
+<br />   <span class="sectionToc" >30.1  <a 
+href="Nase197.htm#x284-27300030.1" id="QQ2-284-275">Uniform continuity</a></span>
+<br />   <span class="sectionToc" >30.2  <a 
+href="Nase198.htm#x285-27400030.2" id="QQ2-285-276">Dense sets and extension</a></span>
+<br />   <span class="sectionToc" >30.3  <a 
+href="Nase199.htm#x286-27500030.3" id="QQ2-286-277">Defining the Riemann integral</a></span>
+<br />   <span class="sectionToc" >30.4  <a 
+href="Nase200.htm#x287-27600030.4" id="QQ2-287-278">Meshes</a></span>
+<br />   <span class="sectionToc" >30.5  <a 
+href="Nase201.htm#x288-27700030.5" id="QQ2-288-279">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >IX  <a 
+href="Napa9.htm#x290-278000IX" id="QQ2-290-280">Complex Analysis</a></span>
+<br />  <span class="chapterToc" >31  <a 
+href="Nach34.htm#x291-27900031" id="QQ2-291-281">Holomorphic functions</a></span>
+<br />   <span class="sectionToc" >31.1  <a 
+href="Nase202.htm#x292-28000031.1" id="QQ2-292-282">The nicest functions on earth</a></span>
+<br />   <span class="sectionToc" >31.2  <a 
+href="Nase203.htm#x293-28100031.2" id="QQ2-293-284">Complex differentiation</a></span>
+<br />   <span class="sectionToc" >31.3  <a 
+href="Nase204.htm#x295-28200031.3" id="QQ2-295-285">Contour integrals</a></span>
+<br />   <span class="sectionToc" >31.4  <a 
+href="Nase205.htm#x297-28300031.4" id="QQ2-297-286">Cauchy-Goursat theorem</a></span>
+<br />   <span class="sectionToc" >31.5  <a 
+href="Nase206.htm#x298-28400031.5" id="QQ2-298-287">Cauchy’s integral theorem</a></span>
+<br />   <span class="sectionToc" >31.6  <a 
+href="Nase207.htm#x299-28500031.6" id="QQ2-299-288">Holomorphic functions are analytic</a></span>
+<br />   <span class="sectionToc" >31.7  <a 
+href="Nase208.htm#x300-28600031.7" id="QQ2-300-289">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >32  <a 
+href="Nach35.htm#x302-28700032" id="QQ2-302-290">Meromorphic functions</a></span>
+<br />   <span class="sectionToc" >32.1  <a 
+href="Nase209.htm#x303-28800032.1" id="QQ2-303-291">The second nicest functions on earth</a></span>
+<br />   <span class="sectionToc" >32.2  <a 
+href="Nase210.htm#x304-28900032.2" id="QQ2-304-292">Meromorphic functions</a></span>
+<br />   <span class="sectionToc" >32.3  <a 
+href="Nase211.htm#x305-29000032.3" id="QQ2-305-293">Winding numbers and the residue theorem</a></span>
+<br />   <span class="sectionToc" >32.4  <a 
+href="Nase212.htm#x307-29100032.4" id="QQ2-307-294">Argument principle</a></span>
+<br />   <span class="sectionToc" >32.5  <a 
+href="Nase213.htm#x308-29200032.5" id="QQ2-308-295">Philosophy: why are holomorphic functions so nice?</a></span>
+<br />   <span class="sectionToc" >32.6  <a 
+href="Nase214.htm#x310-29300032.6" id="QQ2-310-296">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >33  <a 
+href="Nach36.htm#x312-29400033" id="QQ2-312-297">Holomorphic square roots and logarithms</a></span>
+<br />   <span class="sectionToc" >33.1  <a 
+href="Nase215.htm#x313-29500033.1" id="QQ2-313-298">Motivation: square root of a complex number</a></span>
+<br />   <span class="sectionToc" >33.2  <a 
+href="Nase216.htm#x314-29600033.2" id="QQ2-314-299">Square roots of holomorphic functions</a></span>
+<br />   <span class="sectionToc" >33.3  <a 
+href="Nase217.htm#x315-29700033.3" id="QQ2-315-300">Covering projections</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >33.4  <a 
+href="Nase218.htm#x316-29800033.4" id="QQ2-316-301">Complex logarithms</a></span>
+<br />   <span class="sectionToc" >33.5  <a 
+href="Nase219.htm#x317-29900033.5" id="QQ2-317-302">Some special cases</a></span>
+<br />   <span class="sectionToc" >33.6  <a 
+href="Nase220.htm#x318-30000033.6" id="QQ2-318-303">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >X  <a 
+href="Napa10.htm#x319-301000X" id="QQ2-319-304">Measure Theory</a></span>
+<br />  <span class="chapterToc" >34  <a 
+href="Nach37.htm#x320-30200034" id="QQ2-320-305">Measure spaces</a></span>
+<br />   <span class="sectionToc" >34.1  <a 
+href="Nase221.htm#x322-30400034.1" id="QQ2-322-307">Motivating measure spaces via random variables</a></span>
+<br />   <span class="sectionToc" >34.2  <a 
+href="Nase222.htm#x323-30500034.2" id="QQ2-323-308">Motivating measure spaces geometrically</a></span>
+<br />   <span class="sectionToc" >34.3  <a 
+href="Nase223.htm#x324-30600034.3" id="QQ2-324-309"><span 
+class="cmmi-10x-x-109">σ</span>-algebras and measurable spaces</a></span>
+<br />   <span class="sectionToc" >34.4  <a 
+href="Nase224.htm#x325-30700034.4" id="QQ2-325-310">Measure spaces</a></span>
+<br />   <span class="sectionToc" >34.5  <a 
+href="Nase225.htm#x326-30800034.5" id="QQ2-326-311">A hint of Banach-Tarski</a></span>
+<br />   <span class="sectionToc" >34.6  <a 
+href="Nase226.htm#x327-30900034.6" id="QQ2-327-312">Measurable functions</a></span>
+<br />   <span class="sectionToc" >34.7  <a 
+href="Nase227.htm#x328-31000034.7" id="QQ2-328-313">On the word “almost” (TO DO)</a></span>
+<br />   <span class="sectionToc" >34.8  <a 
+href="Nase228.htm#x330-31100034.8" id="QQ2-330-314">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >35  <a 
+href="Nach38.htm#x331-31200035" id="QQ2-331-315">Constructing the Borel and Lebesgue measure</a></span>
+<br />   <span class="sectionToc" >35.1  <a 
+href="Nase229.htm#x332-31300035.1" id="QQ2-332-316">Pre-measures</a></span>
+<br />   <span class="sectionToc" >35.2  <a 
+href="Nase230.htm#x335-31400035.2" id="QQ2-335-317">Outer measures</a></span>
+<br />   <span class="sectionToc" >35.3  <a 
+href="Nase231.htm#x336-31500035.3" id="QQ2-336-318">Carathéodory extension for outer measures</a></span>
+<br />   <span class="sectionToc" >35.4  <a 
+href="Nase232.htm#x337-31600035.4" id="QQ2-337-319">Defining the Lebesgue measure</a></span>
+<br />   <span class="sectionToc" >35.5  <a 
+href="Nase233.htm#x339-31700035.5" id="QQ2-339-320">A fourth row: Carathéodory for pre-measures</a></span>
+<br />   <span class="sectionToc" >35.6  <a 
+href="Nase234.htm#x340-31800035.6" id="QQ2-340-321">From now on, we assume the Borel measure</a></span>
+<br />   <span class="sectionToc" >35.7  <a 
+href="Nase235.htm#x341-31900035.7" id="QQ2-341-322">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >36  <a 
+href="Nach39.htm#x342-32000036" id="QQ2-342-323">Lebesgue integration</a></span>
+<br />   <span class="sectionToc" >36.1  <a 
+href="Nase236.htm#x343-32100036.1" id="QQ2-343-324">The definition</a></span>
+<br />   <span class="sectionToc" >36.2  <a 
+href="Nase237.htm#x345-32200036.2" id="QQ2-345-325">Relation to Riemann integrals (or: actually computing Lebesgue integrals)</a></span>
+<br />   <span class="sectionToc" >36.3  <a 
+href="Nase238.htm#x346-32300036.3" id="QQ2-346-326">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >37  <a 
+href="Nach40.htm#x347-32400037" id="QQ2-347-327">Swapping order with Lebesgue integrals</a></span>
+<br />   <span class="sectionToc" >37.1  <a 
+href="Nase239.htm#x348-32500037.1" id="QQ2-348-328">Motivating limit interchange</a></span>
+<br />   <span class="sectionToc" >37.2  <a 
+href="Nase240.htm#x349-32600037.2" id="QQ2-349-329">Overview</a></span>
+<br />   <span class="sectionToc" >37.3  <a 
+href="Nase241.htm#x350-32700037.3" id="QQ2-350-330">Fatou’s lemma</a></span>
+<br />   <span class="sectionToc" >37.4  <a 
+href="Nase242.htm#x351-32800037.4" id="QQ2-351-331">Everything else</a></span>
+<br />   <span class="sectionToc" >37.5  <a 
+href="Nase243.htm#x352-32900037.5" id="QQ2-352-332">Fubini and Tonelli</a></span>
+<br />   <span class="sectionToc" >37.6  <a 
+href="Nase244.htm#x353-33000037.6" id="QQ2-353-333">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >38  <a 
+href="Nach41.htm#x354-33100038" id="QQ2-354-334">Bonus: A hint of Pontryagin duality</a></span>
+<br />   <span class="sectionToc" >38.1  <a 
+href="Nase245.htm#x355-33200038.1" id="QQ2-355-335">LCA groups</a></span>
+<br />   <span class="sectionToc" >38.2  <a 
+href="Nase246.htm#x357-33300038.2" id="QQ2-357-336">The Pontryagin dual</a></span>
+<br />   <span class="sectionToc" >38.3  <a 
+href="Nase247.htm#x359-33400038.3" id="QQ2-359-337">The orthonormal basis in the compact case</a></span>
+<br />   <span class="sectionToc" >38.4  <a 
+href="Nase248.htm#x360-33500038.4" id="QQ2-360-338">The Fourier transform of the non-compact case</a></span>
+<br />   <span class="sectionToc" >38.5  <a 
+href="Nase249.htm#x361-33600038.5" id="QQ2-361-339">Summary</a></span>
+<br />   <span class="sectionToc" >38.6  <a 
+href="Nase250.htm#x362-33700038.6" id="QQ2-362-340">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >XI  <a 
+href="Napa11.htm#x363-338000XI" id="QQ2-363-341">Probability (TO DO)</a></span>
+<br />  <span class="chapterToc" >39  <a 
+href="Nach42.htm#x364-33900039" id="QQ2-364-342">Random variables (TO DO)</a></span>
+<br />   <span class="sectionToc" >39.1  <a 
+href="Nase251.htm#x365-34000039.1" id="QQ2-365-343">Random variables</a></span>
+<br />   <span class="sectionToc" >39.2  <a 
+href="Nase252.htm#x366-34100039.2" id="QQ2-366-344">Distribution functions</a></span>
+<br />   <span class="sectionToc" >39.3  <a 
+href="Nase253.htm#x367-34200039.3" id="QQ2-367-345">Examples of random variables</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >39.4  <a 
+href="Nase254.htm#x368-34300039.4" id="QQ2-368-346">Characteristic functions</a></span>
+<br />   <span class="sectionToc" >39.5  <a 
+href="Nase255.htm#x369-34400039.5" id="QQ2-369-347">Independent random variables</a></span>
+<br />   <span class="sectionToc" >39.6  <a 
+href="Nase256.htm#x370-34500039.6" id="QQ2-370-348">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >40  <a 
+href="Nach43.htm#x371-34600040" id="QQ2-371-349">Large number laws (TO DO)</a></span>
+<br />   <span class="sectionToc" >40.1  <a 
+href="Nase257.htm#x372-34700040.1" id="QQ2-372-350">Notions of convergence</a></span>
+<br />   <span class="sectionToc" >40.2  <a 
+href="Nase258.htm#x373-35100040.2" id="QQ2-373-354">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >41  <a 
+href="Nach44.htm#x374-35200041" id="QQ2-374-355">Stopped martingales (TO DO)</a></span>
+<br />   <span class="sectionToc" >41.1  <a 
+href="Nase259.htm#x375-35300041.1" id="QQ2-375-356">How to make money almost surely</a></span>
+<br />   <span class="sectionToc" >41.2  <a 
+href="Nase260.htm#x376-35400041.2" id="QQ2-376-357">Sub-<span 
+class="cmmi-10x-x-109">σ</span>-algebras and filtrations</a></span>
+<br />   <span class="sectionToc" >41.3  <a 
+href="Nase261.htm#x378-35500041.3" id="QQ2-378-358">Conditional expectation</a></span>
+<br />   <span class="sectionToc" >41.4  <a 
+href="Nase262.htm#x379-35600041.4" id="QQ2-379-359">Supermartingales</a></span>
+<br />   <span class="sectionToc" >41.5  <a 
+href="Nase263.htm#x380-35700041.5" id="QQ2-380-360">Optional stopping</a></span>
+<br />   <span class="sectionToc" >41.6  <a 
+href="Nase264.htm#x381-35800041.6" id="QQ2-381-361">Fun applications of optional stopping (TO DO)</a></span>
+<br />   <span class="sectionToc" >41.7  <a 
+href="Nase265.htm#x382-36200041.7" id="QQ2-382-365">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >XII  <a 
+href="Napa12.htm#x383-363000XII" id="QQ2-383-366">Differential Geometry</a></span>
+<br />  <span class="chapterToc" >42  <a 
+href="Nach45.htm#x384-36400042" id="QQ2-384-367">Multivariable calculus done correctly</a></span>
+<br />   <span class="sectionToc" >42.1  <a 
+href="Nase266.htm#x385-36500042.1" id="QQ2-385-368">The total derivative</a></span>
+<br />   <span class="sectionToc" >42.2  <a 
+href="Nase267.htm#x386-36600042.2" id="QQ2-386-369">The projection principle</a></span>
+<br />   <span class="sectionToc" >42.3  <a 
+href="Nase268.htm#x387-36700042.3" id="QQ2-387-370">Total and partial derivatives</a></span>
+<br />   <span class="sectionToc" >42.4  <a 
+href="Nase269.htm#x388-36800042.4" id="QQ2-388-371">(Optional) A word on higher derivatives</a></span>
+<br />   <span class="sectionToc" >42.5  <a 
+href="Nase270.htm#x389-36900042.5" id="QQ2-389-372">Towards differential forms</a></span>
+<br />   <span class="sectionToc" >42.6  <a 
+href="Nase271.htm#x390-37000042.6" id="QQ2-390-373">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >43  <a 
+href="Nach46.htm#x391-37100043" id="QQ2-391-374">Differential forms</a></span>
+<br />   <span class="sectionToc" >43.1  <a 
+href="Nase272.htm#x392-37200043.1" id="QQ2-392-375">Pictures of differential forms</a></span>
+<br />   <span class="sectionToc" >43.2  <a 
+href="Nase273.htm#x393-37300043.2" id="QQ2-393-376">Pictures of exterior derivatives</a></span>
+<br />   <span class="sectionToc" >43.3  <a 
+href="Nase274.htm#x394-37400043.3" id="QQ2-394-377">Differential forms</a></span>
+<br />   <span class="sectionToc" >43.4  <a 
+href="Nase275.htm#x395-37500043.4" id="QQ2-395-378">Exterior derivatives</a></span>
+<br />   <span class="sectionToc" >43.5  <a 
+href="Nase276.htm#x397-37600043.5" id="QQ2-397-379">Closed and exact forms</a></span>
+<br />   <span class="sectionToc" >43.6  <a 
+href="Nase277.htm#x398-37700043.6" id="QQ2-398-380">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >44  <a 
+href="Nach47.htm#x399-37800044" id="QQ2-399-381">Integrating differential forms</a></span>
+<br />   <span class="sectionToc" >44.1  <a 
+href="Nase278.htm#x400-37900044.1" id="QQ2-400-382">Motivation: line integrals</a></span>
+<br />   <span class="sectionToc" >44.2  <a 
+href="Nase279.htm#x402-38000044.2" id="QQ2-402-383">Pullbacks</a></span>
+<br />   <span class="sectionToc" >44.3  <a 
+href="Nase280.htm#x403-38100044.3" id="QQ2-403-384">Cells</a></span>
+<br />   <span class="sectionToc" >44.4  <a 
+href="Nase281.htm#x404-38200044.4" id="QQ2-404-385">Boundaries</a></span>
+<br />   <span class="sectionToc" >44.5  <a 
+href="Nase282.htm#x405-38300044.5" id="QQ2-405-386">Stokes’ theorem</a></span>
+<br />   <span class="sectionToc" >44.6  <a 
+href="Nase283.htm#x406-38400044.6" id="QQ2-406-387">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >45  <a 
+href="Nach48.htm#x407-38500045" id="QQ2-407-388">A bit of manifolds</a></span>
+<br />   <span class="sectionToc" >45.1  <a 
+href="Nase284.htm#x408-38600045.1" id="QQ2-408-389">Topological manifolds</a></span>
+<br />   <span class="sectionToc" >45.2  <a 
+href="Nase285.htm#x409-38700045.2" id="QQ2-409-390">Smooth manifolds</a></span>
+<br />   <span class="sectionToc" >45.3  <a 
+href="Nase286.htm#x410-38800045.3" id="QQ2-410-391">Regular value theorem</a></span>
+<br />   <span class="sectionToc" >45.4  <a 
+href="Nase287.htm#x411-38900045.4" id="QQ2-411-392">Differential forms on manifolds</a></span>
+<br />   <span class="sectionToc" >45.5  <a 
+href="Nase288.htm#x412-39000045.5" id="QQ2-412-393">Orientations</a></span>
+<br />   <span class="sectionToc" >45.6  <a 
+href="Nase289.htm#x413-39100045.6" id="QQ2-413-394">Stokes’ theorem for manifolds</a></span>
+<br />   <span class="sectionToc" >45.7  <a 
+href="Nase290.htm#x414-39200045.7" id="QQ2-414-395">(Optional) The tangent and contangent space</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >45.8  <a 
+href="Nase291.htm#x416-39600045.8" id="QQ2-416-399">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >XIII  <a 
+href="Napa13.htm#x417-397000XIII" id="QQ2-417-400">Algebraic NT I: Rings of Integers</a></span>
+<br />  <span class="chapterToc" >46  <a 
+href="Nach49.htm#x418-39800046" id="QQ2-418-401">Algebraic integers</a></span>
+<br />   <span class="sectionToc" >46.1  <a 
+href="Nase292.htm#x419-39900046.1" id="QQ2-419-402">Motivation from high school algebra</a></span>
+<br />   <span class="sectionToc" >46.2  <a 
+href="Nase293.htm#x421-40000046.2" id="QQ2-421-403">Algebraic numbers and algebraic integers</a></span>
+<br />   <span class="sectionToc" >46.3  <a 
+href="Nase294.htm#x422-40100046.3" id="QQ2-422-404">Number fields</a></span>
+<br />   <span class="sectionToc" >46.4  <a 
+href="Nase295.htm#x423-40200046.4" id="QQ2-423-405">Primitive element theorem, and monogenic extensions</a></span>
+<br />   <span class="sectionToc" >46.5  <a 
+href="Nase296.htm#x424-40300046.5" id="QQ2-424-406">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >47  <a 
+href="Nach50.htm#x425-40400047" id="QQ2-425-407">The ring of integers</a></span>
+<br />   <span class="sectionToc" >47.1  <a 
+href="Nase297.htm#x426-40500047.1" id="QQ2-426-408">Norms and traces</a></span>
+<br />   <span class="sectionToc" >47.2  <a 
+href="Nase298.htm#x427-40600047.2" id="QQ2-427-409">The ring of integers</a></span>
+<br />   <span class="sectionToc" >47.3  <a 
+href="Nase299.htm#x428-40700047.3" id="QQ2-428-410">On monogenic extensions</a></span>
+<br />   <span class="sectionToc" >47.4  <a 
+href="Nase300.htm#x429-40800047.4" id="QQ2-429-411">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >48  <a 
+href="Nach51.htm#x430-40900048" id="QQ2-430-412">Unique factorization (finally!)</a></span>
+<br />   <span class="sectionToc" >48.1  <a 
+href="Nase301.htm#x431-41000048.1" id="QQ2-431-413">Motivation</a></span>
+<br />   <span class="sectionToc" >48.2  <a 
+href="Nase302.htm#x432-41100048.2" id="QQ2-432-414">Ideal arithmetic</a></span>
+<br />   <span class="sectionToc" >48.3  <a 
+href="Nase303.htm#x433-41200048.3" id="QQ2-433-415">Dedekind domains</a></span>
+<br />   <span class="sectionToc" >48.4  <a 
+href="Nase304.htm#x434-41300048.4" id="QQ2-434-416">Unique factorization works</a></span>
+<br />   <span class="sectionToc" >48.5  <a 
+href="Nase305.htm#x436-41400048.5" id="QQ2-436-417">The factoring algorithm</a></span>
+<br />   <span class="sectionToc" >48.6  <a 
+href="Nase306.htm#x437-41500048.6" id="QQ2-437-418">Fractional ideals</a></span>
+<br />   <span class="sectionToc" >48.7  <a 
+href="Nase307.htm#x438-41600048.7" id="QQ2-438-419">The ideal norm</a></span>
+<br />   <span class="sectionToc" >48.8  <a 
+href="Nase308.htm#x439-41700048.8" id="QQ2-439-420">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >49  <a 
+href="Nach52.htm#x440-41800049" id="QQ2-440-421">Minkowski bound and class groups</a></span>
+<br />   <span class="sectionToc" >49.1  <a 
+href="Nase309.htm#x441-41900049.1" id="QQ2-441-422">The class group</a></span>
+<br />   <span class="sectionToc" >49.2  <a 
+href="Nase310.htm#x442-42000049.2" id="QQ2-442-423">The discriminant of a number field</a></span>
+<br />   <span class="sectionToc" >49.3  <a 
+href="Nase311.htm#x444-42100049.3" id="QQ2-444-424">The signature of a number field</a></span>
+<br />   <span class="sectionToc" >49.4  <a 
+href="Nase312.htm#x445-42200049.4" id="QQ2-445-425">Minkowski’s theorem</a></span>
+<br />   <span class="sectionToc" >49.5  <a 
+href="Nase313.htm#x446-42300049.5" id="QQ2-446-426">The trap box</a></span>
+<br />   <span class="sectionToc" >49.6  <a 
+href="Nase314.htm#x447-42400049.6" id="QQ2-447-427">The Minkowski bound</a></span>
+<br />   <span class="sectionToc" >49.7  <a 
+href="Nase315.htm#x448-42500049.7" id="QQ2-448-428">The class group is finite</a></span>
+<br />   <span class="sectionToc" >49.8  <a 
+href="Nase316.htm#x449-42600049.8" id="QQ2-449-429">Computation of class numbers</a></span>
+<br />   <span class="sectionToc" >49.9  <a 
+href="Nase317.htm#x450-42700049.9" id="QQ2-450-430">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >50  <a 
+href="Nach53.htm#x452-42800050" id="QQ2-452-431">More properties of the discriminant</a></span>
+<br />   <span class="sectionToc" >50.1  <a 
+href="Nase318.htm#x453-42900050.1" id="QQ2-453-432">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >51  <a 
+href="Nach54.htm#x454-43000051" id="QQ2-454-433">Bonus: Let’s solve Pell’s equation!</a></span>
+<br />   <span class="sectionToc" >51.1  <a 
+href="Nase319.htm#x455-43100051.1" id="QQ2-455-434">Units</a></span>
+<br />   <span class="sectionToc" >51.2  <a 
+href="Nase320.htm#x456-43200051.2" id="QQ2-456-435">Dirichlet’s unit theorem</a></span>
+<br />   <span class="sectionToc" >51.3  <a 
+href="Nase321.htm#x457-43300051.3" id="QQ2-457-436">Finding fundamental units</a></span>
+<br />   <span class="sectionToc" >51.4  <a 
+href="Nase322.htm#x458-43400051.4" id="QQ2-458-437">Pell’s equation</a></span>
+<br />   <span class="sectionToc" >51.5  <a 
+href="Nase323.htm#x459-43500051.5" id="QQ2-459-438">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >XIV  <a 
+href="Napa14.htm#x460-436000XIV" id="QQ2-460-439">Algebraic NT II: Galois and Ramification Theory</a></span>
+<br />  <span class="chapterToc" >52  <a 
+href="Nach55.htm#x461-43700052" id="QQ2-461-440">Things Galois</a></span>
+<br />   <span class="sectionToc" >52.1  <a 
+href="Nase324.htm#x462-43800052.1" id="QQ2-462-441">Motivation</a></span>
+<br />   <span class="sectionToc" >52.2  <a 
+href="Nase325.htm#x463-43900052.2" id="QQ2-463-442">Field extensions, algebraic closures, and splitting fields</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >52.3  <a 
+href="Nase326.htm#x464-44000052.3" id="QQ2-464-443">Embeddings into algebraic closures for number fields</a></span>
+<br />   <span class="sectionToc" >52.4  <a 
+href="Nase327.htm#x465-44100052.4" id="QQ2-465-444">Everyone hates characteristic 2: separable vs irreducible</a></span>
+<br />   <span class="sectionToc" >52.5  <a 
+href="Nase328.htm#x466-44200052.5" id="QQ2-466-445">Automorphism groups and Galois extensions</a></span>
+<br />   <span class="sectionToc" >52.6  <a 
+href="Nase329.htm#x467-44300052.6" id="QQ2-467-446">Fundamental theorem of Galois theory</a></span>
+<br />   <span class="sectionToc" >52.7  <a 
+href="Nase330.htm#x468-44400052.7" id="QQ2-468-447">A few harder problems to think about</a></span>
+<br />   <span class="sectionToc" >52.8  <a 
+href="Nase331.htm#x469-44500052.8" id="QQ2-469-448">(Optional) Proof that Galois extensions are splitting</a></span>
+<br />  <span class="chapterToc" >53  <a 
+href="Nach56.htm#x470-44600053" id="QQ2-470-449">Finite fields</a></span>
+<br />   <span class="sectionToc" >53.1  <a 
+href="Nase332.htm#x471-44700053.1" id="QQ2-471-450">Example of a finite field</a></span>
+<br />   <span class="sectionToc" >53.2  <a 
+href="Nase333.htm#x472-44800053.2" id="QQ2-472-451">Finite fields have prime power order</a></span>
+<br />   <span class="sectionToc" >53.3  <a 
+href="Nase334.htm#x473-44900053.3" id="QQ2-473-452">All finite fields are isomorphic</a></span>
+<br />   <span class="sectionToc" >53.4  <a 
+href="Nase335.htm#x474-45000053.4" id="QQ2-474-453">The Galois theory of finite fields</a></span>
+<br />   <span class="sectionToc" >53.5  <a 
+href="Nase336.htm#x475-45100053.5" id="QQ2-475-454">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >54  <a 
+href="Nach57.htm#x476-45200054" id="QQ2-476-455">Ramification theory</a></span>
+<br />   <span class="sectionToc" >54.1  <a 
+href="Nase337.htm#x477-45300054.1" id="QQ2-477-456">Ramified / inert / split primes</a></span>
+<br />   <span class="sectionToc" >54.2  <a 
+href="Nase338.htm#x479-45400054.2" id="QQ2-479-457">Primes ramify if and only if they divide Δ<sub><span 
+class="cmmi-8">K</span></sub></a></span>
+<br />   <span class="sectionToc" >54.3  <a 
+href="Nase339.htm#x480-45500054.3" id="QQ2-480-458">Inertial degrees</a></span>
+<br />   <span class="sectionToc" >54.4  <a 
+href="Nase340.htm#x481-45600054.4" id="QQ2-481-459">The magic of Galois extensions</a></span>
+<br />   <span class="sectionToc" >54.5  <a 
+href="Nase341.htm#x482-45700054.5" id="QQ2-482-460">(Optional) Decomposition and inertia groups</a></span>
+<br />   <span class="sectionToc" >54.6  <a 
+href="Nase342.htm#x483-45800054.6" id="QQ2-483-461">Tangential remark: more general Galois extensions</a></span>
+<br />   <span class="sectionToc" >54.7  <a 
+href="Nase343.htm#x484-45900054.7" id="QQ2-484-462">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >55  <a 
+href="Nach58.htm#x485-46000055" id="QQ2-485-463">The Frobenius element</a></span>
+<br />   <span class="sectionToc" >55.1  <a 
+href="Nase344.htm#x486-46100055.1" id="QQ2-486-464">Frobenius elements</a></span>
+<br />   <span class="sectionToc" >55.2  <a 
+href="Nase345.htm#x487-46200055.2" id="QQ2-487-465">Conjugacy classes</a></span>
+<br />   <span class="sectionToc" >55.3  <a 
+href="Nase346.htm#x488-46300055.3" id="QQ2-488-466">Chebotarev density theorem</a></span>
+<br />   <span class="sectionToc" >55.4  <a 
+href="Nase347.htm#x489-46400055.4" id="QQ2-489-467">Example: Frobenius elements of cyclotomic fields</a></span>
+<br />   <span class="sectionToc" >55.5  <a 
+href="Nase348.htm#x490-46500055.5" id="QQ2-490-468">Frobenius elements behave well with restriction</a></span>
+<br />   <span class="sectionToc" >55.6  <a 
+href="Nase349.htm#x491-46600055.6" id="QQ2-491-469">Application: Quadratic reciprocity</a></span>
+<br />   <span class="sectionToc" >55.7  <a 
+href="Nase350.htm#x492-47100055.7" id="QQ2-492-474">Frobenius elements control factorization</a></span>
+<br />   <span class="sectionToc" >55.8  <a 
+href="Nase351.htm#x493-47200055.8" id="QQ2-493-475">Example application: IMO 2003 problem 6</a></span>
+<br />   <span class="sectionToc" >55.9  <a 
+href="Nase352.htm#x494-47300055.9" id="QQ2-494-476">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >56  <a 
+href="Nach59.htm#x495-47400056" id="QQ2-495-477">Bonus: A Bit on Artin Reciprocity</a></span>
+<br />   <span class="sectionToc" >56.1  <a 
+href="Nase353.htm#x496-47500056.1" id="QQ2-496-478">Infinite primes</a></span>
+<br />   <span class="sectionToc" >56.2  <a 
+href="Nase354.htm#x498-47600056.2" id="QQ2-498-479">Modular arithmetic with infinite primes</a></span>
+<br />   <span class="sectionToc" >56.3  <a 
+href="Nase355.htm#x499-47700056.3" id="QQ2-499-480">Infinite primes in extensions</a></span>
+<br />   <span class="sectionToc" >56.4  <a 
+href="Nase356.htm#x500-47800056.4" id="QQ2-500-481">Frobenius element and Artin symbol</a></span>
+<br />   <span class="sectionToc" >56.5  <a 
+href="Nase357.htm#x501-47900056.5" id="QQ2-501-482">Artin reciprocity</a></span>
+<br />   <span class="sectionToc" >56.6  <a 
+href="Nase358.htm#x502-48000056.6" id="QQ2-502-483">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >XV  <a 
+href="Napa15.htm#x503-481000XV" id="QQ2-503-484">Algebraic Topology I: Homotopy</a></span>
+<br />  <span class="chapterToc" >57  <a 
+href="Nach60.htm#x504-48200057" id="QQ2-504-485">Some topological constructions</a></span>
+<br />   <span class="sectionToc" >57.1  <a 
+href="Nase359.htm#x505-48300057.1" id="QQ2-505-486">Spheres</a></span>
+<br />   <span class="sectionToc" >57.2  <a 
+href="Nase360.htm#x506-48400057.2" id="QQ2-506-487">Quotient topology</a></span>
+<br />   <span class="sectionToc" >57.3  <a 
+href="Nase361.htm#x507-48500057.3" id="QQ2-507-488">Product topology</a></span>
+<br />   <span class="sectionToc" >57.4  <a 
+href="Nase362.htm#x508-48600057.4" id="QQ2-508-489">Disjoint union and wedge sum</a></span>
+<br />   <span class="sectionToc" >57.5  <a 
+href="Nase363.htm#x509-48700057.5" id="QQ2-509-490">CW complexes</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >57.6  <a 
+href="Nase364.htm#x510-48800057.6" id="QQ2-510-491">The torus, Klein bottle, <span 
+class="msbm-10x-x-109">ℝℙ</span><sup><span 
+class="cmmi-8">n</span></sup>, <span 
+class="msbm-10x-x-109">ℂℙ</span><sup><span 
+class="cmmi-8">n</span></sup></a></span>
+<br />   <span class="sectionToc" >57.7  <a 
+href="Nase365.htm#x511-49300057.7" id="QQ2-511-496">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >58  <a 
+href="Nach61.htm#x512-49400058" id="QQ2-512-497">Fundamental groups</a></span>
+<br />   <span class="sectionToc" >58.1  <a 
+href="Nase366.htm#x513-49500058.1" id="QQ2-513-498">Fusing paths together</a></span>
+<br />   <span class="sectionToc" >58.2  <a 
+href="Nase367.htm#x515-49600058.2" id="QQ2-515-499">Fundamental groups</a></span>
+<br />   <span class="sectionToc" >58.3  <a 
+href="Nase368.htm#x517-49700058.3" id="QQ2-517-500">Fundamental groups are functorial</a></span>
+<br />   <span class="sectionToc" >58.4  <a 
+href="Nase369.htm#x518-49800058.4" id="QQ2-518-501">Higher homotopy groups</a></span>
+<br />   <span class="sectionToc" >58.5  <a 
+href="Nase370.htm#x519-49900058.5" id="QQ2-519-502">Homotopy equivalent spaces</a></span>
+<br />   <span class="sectionToc" >58.6  <a 
+href="Nase371.htm#x520-50000058.6" id="QQ2-520-503">The pointed homotopy category</a></span>
+<br />   <span class="sectionToc" >58.7  <a 
+href="Nase372.htm#x521-50100058.7" id="QQ2-521-504">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >59  <a 
+href="Nach62.htm#x522-50200059" id="QQ2-522-505">Covering projections</a></span>
+<br />   <span class="sectionToc" >59.1  <a 
+href="Nase373.htm#x523-50300059.1" id="QQ2-523-506">Even coverings and covering projections</a></span>
+<br />   <span class="sectionToc" >59.2  <a 
+href="Nase374.htm#x524-50400059.2" id="QQ2-524-507">Lifting theorem</a></span>
+<br />   <span class="sectionToc" >59.3  <a 
+href="Nase375.htm#x525-50500059.3" id="QQ2-525-508">Lifting correspondence</a></span>
+<br />   <span class="sectionToc" >59.4  <a 
+href="Nase376.htm#x526-50600059.4" id="QQ2-526-509">Regular coverings</a></span>
+<br />   <span class="sectionToc" >59.5  <a 
+href="Nase377.htm#x528-50700059.5" id="QQ2-528-510">The algebra of fundamental groups</a></span>
+<br />   <span class="sectionToc" >59.6  <a 
+href="Nase378.htm#x529-50800059.6" id="QQ2-529-511">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >XVI  <a 
+href="Napa16.htm#x530-509000XVI" id="QQ2-530-512">Category Theory</a></span>
+<br />  <span class="chapterToc" >60  <a 
+href="Nach63.htm#x531-51000060" id="QQ2-531-513">Objects and morphisms</a></span>
+<br />   <span class="sectionToc" >60.1  <a 
+href="Nase379.htm#x532-51100060.1" id="QQ2-532-514">Motivation: isomorphisms</a></span>
+<br />   <span class="sectionToc" >60.2  <a 
+href="Nase380.htm#x533-51200060.2" id="QQ2-533-515">Categories, and examples thereof</a></span>
+<br />   <span class="sectionToc" >60.3  <a 
+href="Nase381.htm#x535-51300060.3" id="QQ2-535-516">Special objects in categories</a></span>
+<br />   <span class="sectionToc" >60.4  <a 
+href="Nase382.htm#x536-51400060.4" id="QQ2-536-517">Binary products</a></span>
+<br />   <span class="sectionToc" >60.5  <a 
+href="Nase383.htm#x537-51500060.5" id="QQ2-537-518">Monic and epic maps</a></span>
+<br />   <span class="sectionToc" >60.6  <a 
+href="Nase384.htm#x538-51600060.6" id="QQ2-538-519">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >61  <a 
+href="Nach64.htm#x539-51700061" id="QQ2-539-520">Functors and natural transformations</a></span>
+<br />   <span class="sectionToc" >61.1  <a 
+href="Nase385.htm#x540-51800061.1" id="QQ2-540-521">Many examples of functors</a></span>
+<br />   <span class="sectionToc" >61.2  <a 
+href="Nase386.htm#x541-51900061.2" id="QQ2-541-522">Covariant functors</a></span>
+<br />   <span class="sectionToc" >61.3  <a 
+href="Nase387.htm#x543-52000061.3" id="QQ2-543-523">Contravariant functors</a></span>
+<br />   <span class="sectionToc" >61.4  <a 
+href="Nase388.htm#x544-52100061.4" id="QQ2-544-524">Equivalence of categories</a></span>
+<br />   <span class="sectionToc" >61.5  <a 
+href="Nase389.htm#x545-52200061.5" id="QQ2-545-525">(Optional) Natural transformations</a></span>
+<br />   <span class="sectionToc" >61.6  <a 
+href="Nase390.htm#x546-52300061.6" id="QQ2-546-526">(Optional) The Yoneda lemma</a></span>
+<br />   <span class="sectionToc" >61.7  <a 
+href="Nase391.htm#x547-52400061.7" id="QQ2-547-527">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >62  <a 
+href="Nach65.htm#x549-52500062" id="QQ2-549-528">Limits in categories (TO DO)</a></span>
+<br />   <span class="sectionToc" >62.1  <a 
+href="Nase392.htm#x550-52600062.1" id="QQ2-550-529">Equalizers</a></span>
+<br />   <span class="sectionToc" >62.2  <a 
+href="Nase393.htm#x551-52700062.2" id="QQ2-551-530">Pullback squares (TO DO)</a></span>
+<br />   <span class="sectionToc" >62.3  <a 
+href="Nase394.htm#x552-52800062.3" id="QQ2-552-531">Limits</a></span>
+<br />   <span class="sectionToc" >62.4  <a 
+href="Nase395.htm#x553-52900062.4" id="QQ2-553-532">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >63  <a 
+href="Nach66.htm#x554-53000063" id="QQ2-554-533">Abelian categories</a></span>
+<br />   <span class="sectionToc" >63.1  <a 
+href="Nase396.htm#x555-53100063.1" id="QQ2-555-534">Zero objects, kernels, cokernels, and images</a></span>
+<br />   <span class="sectionToc" >63.2  <a 
+href="Nase397.htm#x556-53200063.2" id="QQ2-556-535">Additive and abelian categories</a></span>
+<br />   <span class="sectionToc" >63.3  <a 
+href="Nase398.htm#x557-53300063.3" id="QQ2-557-536">Exact sequences</a></span>
+<br />   <span class="sectionToc" >63.4  <a 
+href="Nase399.htm#x558-53400063.4" id="QQ2-558-537">The Freyd-Mitchell embedding theorem</a></span>
+<br />   <span class="sectionToc" >63.5  <a 
+href="Nase400.htm#x559-53500063.5" id="QQ2-559-538">Breaking long exact sequences</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >63.6  <a 
+href="Nase401.htm#x560-53600063.6" id="QQ2-560-539">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >XVII  <a 
+href="Napa17.htm#x561-537000XVII" id="QQ2-561-540">Algebraic Topology II: Homology</a></span>
+<br />  <span class="chapterToc" >64  <a 
+href="Nach67.htm#x562-53800064" id="QQ2-562-541">Singular homology</a></span>
+<br />   <span class="sectionToc" >64.1  <a 
+href="Nase402.htm#x563-53900064.1" id="QQ2-563-542">Simplices and boundaries</a></span>
+<br />   <span class="sectionToc" >64.2  <a 
+href="Nase403.htm#x564-54000064.2" id="QQ2-564-543">The singular homology groups</a></span>
+<br />   <span class="sectionToc" >64.3  <a 
+href="Nase404.htm#x565-54100064.3" id="QQ2-565-544">The homology functor and chain complexes</a></span>
+<br />   <span class="sectionToc" >64.4  <a 
+href="Nase405.htm#x566-54400064.4" id="QQ2-566-547">More examples of chain complexes</a></span>
+<br />   <span class="sectionToc" >64.5  <a 
+href="Nase406.htm#x567-54500064.5" id="QQ2-567-548">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >65  <a 
+href="Nach68.htm#x568-54600065" id="QQ2-568-549">The long exact sequence</a></span>
+<br />   <span class="sectionToc" >65.1  <a 
+href="Nase407.htm#x569-54700065.1" id="QQ2-569-550">Short exact sequences and four examples</a></span>
+<br />   <span class="sectionToc" >65.2  <a 
+href="Nase408.htm#x570-54800065.2" id="QQ2-570-551">The long exact sequence of homology groups</a></span>
+<br />   <span class="sectionToc" >65.3  <a 
+href="Nase409.htm#x571-54900065.3" id="QQ2-571-552">The Mayer-Vietoris sequence</a></span>
+<br />   <span class="sectionToc" >65.4  <a 
+href="Nase410.htm#x572-55000065.4" id="QQ2-572-553">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >66  <a 
+href="Nach69.htm#x573-55100066" id="QQ2-573-554">Excision and relative homology</a></span>
+<br />   <span class="sectionToc" >66.1  <a 
+href="Nase411.htm#x574-55200066.1" id="QQ2-574-555">The long exact sequences</a></span>
+<br />   <span class="sectionToc" >66.2  <a 
+href="Nase412.htm#x575-55300066.2" id="QQ2-575-556">The category of pairs</a></span>
+<br />   <span class="sectionToc" >66.3  <a 
+href="Nase413.htm#x576-55400066.3" id="QQ2-576-557">Excision</a></span>
+<br />   <span class="sectionToc" >66.4  <a 
+href="Nase414.htm#x577-55500066.4" id="QQ2-577-558">Some applications</a></span>
+<br />   <span class="sectionToc" >66.5  <a 
+href="Nase415.htm#x578-55600066.5" id="QQ2-578-559">Invariance of dimension</a></span>
+<br />   <span class="sectionToc" >66.6  <a 
+href="Nase416.htm#x579-55700066.6" id="QQ2-579-560">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >67  <a 
+href="Nach70.htm#x580-55800067" id="QQ2-580-561">Bonus: Cellular homology</a></span>
+<br />   <span class="sectionToc" >67.1  <a 
+href="Nase417.htm#x581-55900067.1" id="QQ2-581-562">Degrees</a></span>
+<br />   <span class="sectionToc" >67.2  <a 
+href="Nase418.htm#x582-56000067.2" id="QQ2-582-563">Cellular chain complex</a></span>
+<br />   <span class="sectionToc" >67.3  <a 
+href="Nase419.htm#x583-56100067.3" id="QQ2-583-564">The cellular boundary formula</a></span>
+<br />   <span class="sectionToc" >67.4  <a 
+href="Nase420.htm#x584-56200067.4" id="QQ2-584-565">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >68  <a 
+href="Nach71.htm#x585-56300068" id="QQ2-585-566">Singular cohomology</a></span>
+<br />   <span class="sectionToc" >68.1  <a 
+href="Nase421.htm#x586-56400068.1" id="QQ2-586-567">Cochain complexes</a></span>
+<br />   <span class="sectionToc" >68.2  <a 
+href="Nase422.htm#x587-56500068.2" id="QQ2-587-568">Cohomology of spaces</a></span>
+<br />   <span class="sectionToc" >68.3  <a 
+href="Nase423.htm#x589-56600068.3" id="QQ2-589-569">Cohomology of spaces is functorial</a></span>
+<br />   <span class="sectionToc" >68.4  <a 
+href="Nase424.htm#x590-56700068.4" id="QQ2-590-570">Universal coefficient theorem</a></span>
+<br />   <span class="sectionToc" >68.5  <a 
+href="Nase425.htm#x591-56800068.5" id="QQ2-591-571">Example computation of cohomology groups</a></span>
+<br />   <span class="sectionToc" >68.6  <a 
+href="Nase426.htm#x592-56900068.6" id="QQ2-592-572">Relative cohomology groups</a></span>
+<br />   <span class="sectionToc" >68.7  <a 
+href="Nase427.htm#x593-57000068.7" id="QQ2-593-573">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >69  <a 
+href="Nach72.htm#x594-57100069" id="QQ2-594-574">Application of cohomology</a></span>
+<br />   <span class="sectionToc" >69.1  <a 
+href="Nase428.htm#x595-57200069.1" id="QQ2-595-575">Poincaré duality</a></span>
+<br />   <span class="sectionToc" >69.2  <a 
+href="Nase429.htm#x596-57300069.2" id="QQ2-596-576">de Rham cohomology</a></span>
+<br />   <span class="sectionToc" >69.3  <a 
+href="Nase430.htm#x597-57400069.3" id="QQ2-597-577">Graded rings</a></span>
+<br />   <span class="sectionToc" >69.4  <a 
+href="Nase431.htm#x598-57500069.4" id="QQ2-598-578">Cup products</a></span>
+<br />   <span class="sectionToc" >69.5  <a 
+href="Nase432.htm#x599-57600069.5" id="QQ2-599-579">Relative cohomology pseudo-rings</a></span>
+<br />   <span class="sectionToc" >69.6  <a 
+href="Nase433.htm#x600-57700069.6" id="QQ2-600-580">Wedge sums</a></span>
+<br />   <span class="sectionToc" >69.7  <a 
+href="Nase434.htm#x601-57800069.7" id="QQ2-601-581">Künneth formula</a></span>
+<br />   <span class="sectionToc" >69.8  <a 
+href="Nase435.htm#x602-57900069.8" id="QQ2-602-582">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >XVIII  <a 
+href="Napa18.htm#x603-580000XVIII" id="QQ2-603-583">Algebraic Geometry I: Classical Varieties</a></span>
+<br />  <span class="chapterToc" >70  <a 
+href="Nach73.htm#x604-58100070" id="QQ2-604-584">Affine varieties</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >70.1  <a 
+href="Nase436.htm#x605-58200070.1" id="QQ2-605-585">Affine varieties</a></span>
+<br />   <span class="sectionToc" >70.2  <a 
+href="Nase437.htm#x606-58300070.2" id="QQ2-606-586">Naming affine varieties via ideals</a></span>
+<br />   <span class="sectionToc" >70.3  <a 
+href="Nase438.htm#x608-58400070.3" id="QQ2-608-587">Radical ideals and Hilbert’s Nullstellensatz</a></span>
+<br />   <span class="sectionToc" >70.4  <a 
+href="Nase439.htm#x609-58500070.4" id="QQ2-609-588">Pictures of varieties in <span 
+class="msbm-10x-x-109">𝔸</span><sup><span 
+class="cmr-8">1</span></sup></a></span>
+<br />   <span class="sectionToc" >70.5  <a 
+href="Nase440.htm#x610-58600070.5" id="QQ2-610-589">Prime ideals correspond to irreducible affine varieties</a></span>
+<br />   <span class="sectionToc" >70.6  <a 
+href="Nase441.htm#x611-58700070.6" id="QQ2-611-590">Pictures in <span 
+class="msbm-10x-x-109">𝔸</span><sup><span 
+class="cmr-8">2</span></sup> and <span 
+class="msbm-10x-x-109">𝔸</span><sup><span 
+class="cmr-8">3</span></sup></a></span>
+<br />   <span class="sectionToc" >70.7  <a 
+href="Nase442.htm#x612-58800070.7" id="QQ2-612-591">Maximal ideals</a></span>
+<br />   <span class="sectionToc" >70.8  <a 
+href="Nase443.htm#x613-58900070.8" id="QQ2-613-592">Motivating schemes with non-radical ideals</a></span>
+<br />   <span class="sectionToc" >70.9  <a 
+href="Nase444.htm#x614-59000070.9" id="QQ2-614-593">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >71  <a 
+href="Nach74.htm#x615-59100071" id="QQ2-615-594">Affine varieties as ringed spaces</a></span>
+<br />   <span class="sectionToc" >71.1  <a 
+href="Nase445.htm#x616-59200071.1" id="QQ2-616-595">Synopsis</a></span>
+<br />   <span class="sectionToc" >71.2  <a 
+href="Nase446.htm#x617-59300071.2" id="QQ2-617-596">The Zariski topology on <span 
+class="msbm-10x-x-109">𝔸</span><sup><span 
+class="cmmi-8">n</span></sup></a></span>
+<br />   <span class="sectionToc" >71.3  <a 
+href="Nase447.htm#x618-59400071.3" id="QQ2-618-597">The Zariski topology on affine varieties</a></span>
+<br />   <span class="sectionToc" >71.4  <a 
+href="Nase448.htm#x619-59500071.4" id="QQ2-619-598">Coordinate rings</a></span>
+<br />   <span class="sectionToc" >71.5  <a 
+href="Nase449.htm#x620-59600071.5" id="QQ2-620-599">The sheaf of regular functions</a></span>
+<br />   <span class="sectionToc" >71.6  <a 
+href="Nase450.htm#x621-59700071.6" id="QQ2-621-600">Regular functions on distinguished open sets</a></span>
+<br />   <span class="sectionToc" >71.7  <a 
+href="Nase451.htm#x622-59800071.7" id="QQ2-622-601">Baby ringed spaces</a></span>
+<br />   <span class="sectionToc" >71.8  <a 
+href="Nase452.htm#x623-59900071.8" id="QQ2-623-602">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >72  <a 
+href="Nach75.htm#x624-60000072" id="QQ2-624-603">Projective varieties</a></span>
+<br />   <span class="sectionToc" >72.1  <a 
+href="Nase453.htm#x625-60100072.1" id="QQ2-625-604">Graded rings</a></span>
+<br />   <span class="sectionToc" >72.2  <a 
+href="Nase454.htm#x626-60200072.2" id="QQ2-626-605">The ambient space</a></span>
+<br />   <span class="sectionToc" >72.3  <a 
+href="Nase455.htm#x627-60300072.3" id="QQ2-627-606">Homogeneous ideals</a></span>
+<br />   <span class="sectionToc" >72.4  <a 
+href="Nase456.htm#x628-60400072.4" id="QQ2-628-607">As ringed spaces</a></span>
+<br />   <span class="sectionToc" >72.5  <a 
+href="Nase457.htm#x629-60500072.5" id="QQ2-629-608">Examples of regular functions</a></span>
+<br />   <span class="sectionToc" >72.6  <a 
+href="Nase458.htm#x630-60600072.6" id="QQ2-630-609">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >73  <a 
+href="Nach76.htm#x631-60700073" id="QQ2-631-610">Bonus: Bézout’s theorem</a></span>
+<br />   <span class="sectionToc" >73.1  <a 
+href="Nase459.htm#x632-60800073.1" id="QQ2-632-611">Non-radical ideals</a></span>
+<br />   <span class="sectionToc" >73.2  <a 
+href="Nase460.htm#x633-60900073.2" id="QQ2-633-612">Hilbert functions of finitely many points</a></span>
+<br />   <span class="sectionToc" >73.3  <a 
+href="Nase461.htm#x634-61000073.3" id="QQ2-634-613">Hilbert polynomials</a></span>
+<br />   <span class="sectionToc" >73.4  <a 
+href="Nase462.htm#x635-61100073.4" id="QQ2-635-614">Bézout’s theorem</a></span>
+<br />   <span class="sectionToc" >73.5  <a 
+href="Nase463.htm#x636-61200073.5" id="QQ2-636-615">Applications</a></span>
+<br />   <span class="sectionToc" >73.6  <a 
+href="Nase464.htm#x637-61300073.6" id="QQ2-637-616">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >74  <a 
+href="Nach77.htm#x638-61400074" id="QQ2-638-617">Morphisms of varieties</a></span>
+<br />   <span class="sectionToc" >74.1  <a 
+href="Nase465.htm#x639-61500074.1" id="QQ2-639-618">Defining morphisms of baby ringed spaces</a></span>
+<br />   <span class="sectionToc" >74.2  <a 
+href="Nase466.htm#x640-61600074.2" id="QQ2-640-619">Classifying the simplest examples</a></span>
+<br />   <span class="sectionToc" >74.3  <a 
+href="Nase467.htm#x641-61900074.3" id="QQ2-641-622">Some more applications and examples</a></span>
+<br />   <span class="sectionToc" >74.4  <a 
+href="Nase468.htm#x642-62000074.4" id="QQ2-642-623">The hyperbola effect</a></span>
+<br />   <span class="sectionToc" >74.5  <a 
+href="Nase469.htm#x643-62100074.5" id="QQ2-643-624">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >XIX  <a 
+href="Napa19.htm#x644-622000XIX" id="QQ2-644-625">Algebraic Geometry II: Affine Schemes</a></span>
+<br />  <span class="chapterToc" >75  <a 
+href="Nach78.htm#x645-62300075" id="QQ2-645-626">Sheaves and ringed spaces</a></span>
+<br />   <span class="sectionToc" >75.1  <a 
+href="Nase470.htm#x646-62400075.1" id="QQ2-646-627">Motivation and warnings</a></span>
+<br />   <span class="sectionToc" >75.2  <a 
+href="Nase471.htm#x647-62500075.2" id="QQ2-647-628">Pre-sheaves</a></span>
+<br />   <span class="sectionToc" >75.3  <a 
+href="Nase472.htm#x648-62800075.3" id="QQ2-648-631">Stalks and germs</a></span>
+<br />   <span class="sectionToc" >75.4  <a 
+href="Nase473.htm#x649-62900075.4" id="QQ2-649-632">Sheaves</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >75.5  <a 
+href="Nase474.htm#x650-63000075.5" id="QQ2-650-633">For sheaves, sections “are” sequences of germs</a></span>
+<br />   <span class="sectionToc" >75.6  <a 
+href="Nase475.htm#x651-63100075.6" id="QQ2-651-634">Sheafification (optional)</a></span>
+<br />   <span class="sectionToc" >75.7  <a 
+href="Nase476.htm#x652-63200075.7" id="QQ2-652-635">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >76  <a 
+href="Nach79.htm#x653-63300076" id="QQ2-653-636">Localization</a></span>
+<br />   <span class="sectionToc" >76.1  <a 
+href="Nase477.htm#x654-63400076.1" id="QQ2-654-637">Spoilers</a></span>
+<br />   <span class="sectionToc" >76.2  <a 
+href="Nase478.htm#x655-63500076.2" id="QQ2-655-638">The definition</a></span>
+<br />   <span class="sectionToc" >76.3  <a 
+href="Nase479.htm#x656-63600076.3" id="QQ2-656-639">Localization away from an element</a></span>
+<br />   <span class="sectionToc" >76.4  <a 
+href="Nase480.htm#x657-63700076.4" id="QQ2-657-640">Localization at a prime ideal</a></span>
+<br />   <span class="sectionToc" >76.5  <a 
+href="Nase481.htm#x658-63800076.5" id="QQ2-658-641">Prime ideals of localizations</a></span>
+<br />   <span class="sectionToc" >76.6  <a 
+href="Nase482.htm#x659-63900076.6" id="QQ2-659-642">Prime ideals of quotients</a></span>
+<br />   <span class="sectionToc" >76.7  <a 
+href="Nase483.htm#x660-64000076.7" id="QQ2-660-643">Localization commutes with quotients</a></span>
+<br />   <span class="sectionToc" >76.8  <a 
+href="Nase484.htm#x661-64100076.8" id="QQ2-661-644">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >77  <a 
+href="Nach80.htm#x662-64200077" id="QQ2-662-645">Affine schemes: the Zariski topology</a></span>
+<br />   <span class="sectionToc" >77.1  <a 
+href="Nase485.htm#x663-64300077.1" id="QQ2-663-646">Some more advertising</a></span>
+<br />   <span class="sectionToc" >77.2  <a 
+href="Nase486.htm#x664-64400077.2" id="QQ2-664-647">The set of points</a></span>
+<br />   <span class="sectionToc" >77.3  <a 
+href="Nase487.htm#x665-64500077.3" id="QQ2-665-648">The Zariski topology on the spectrum</a></span>
+<br />   <span class="sectionToc" >77.4  <a 
+href="Nase488.htm#x667-64600077.4" id="QQ2-667-649">On radicals</a></span>
+<br />   <span class="sectionToc" >77.5  <a 
+href="Nase489.htm#x668-64700077.5" id="QQ2-668-650">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >78  <a 
+href="Nach81.htm#x669-64800078" id="QQ2-669-651">Affine schemes: the sheaf</a></span>
+<br />   <span class="sectionToc" >78.1  <a 
+href="Nase490.htm#x670-64900078.1" id="QQ2-670-652">A useless definition of the structure sheaf</a></span>
+<br />   <span class="sectionToc" >78.2  <a 
+href="Nase491.htm#x671-65000078.2" id="QQ2-671-653">The value of distinguished open sets (or: how to actually compute sections)</a></span>
+<br />   <span class="sectionToc" >78.3  <a 
+href="Nase492.htm#x673-65500078.3" id="QQ2-673-658">The stalks of the structure sheaf</a></span>
+<br />   <span class="sectionToc" >78.4  <a 
+href="Nase493.htm#x674-65800078.4" id="QQ2-674-661">Local rings and residue fields: linking germs to values</a></span>
+<br />   <span class="sectionToc" >78.5  <a 
+href="Nase494.htm#x676-66100078.5" id="QQ2-676-664">Recap</a></span>
+<br />   <span class="sectionToc" >78.6  <a 
+href="Nase495.htm#x677-66200078.6" id="QQ2-677-665">Functions are determined by germs, not values</a></span>
+<br />   <span class="sectionToc" >78.7  <a 
+href="Nase496.htm#x678-66300078.7" id="QQ2-678-666">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >79  <a 
+href="Nach82.htm#x679-66400079" id="QQ2-679-667">Interlude: eighteen examples of affine schemes</a></span>
+<br />   <span class="sectionToc" >79.1  <a 
+href="Nase497.htm#x680-66500079.1" id="QQ2-680-668">Example: Spec<span 
+class="cmmi-10x-x-109">k</span>, a single point</a></span>
+<br />   <span class="sectionToc" >79.2  <a 
+href="Nase498.htm#x681-66600079.2" id="QQ2-681-669">Spec <span 
+class="msbm-10x-x-109">ℂ</span>[<span 
+class="cmmi-10x-x-109">x</span>], a one-dimensional line</a></span>
+<br />   <span class="sectionToc" >79.3  <a 
+href="Nase499.htm#x682-66700079.3" id="QQ2-682-670">Spec <span 
+class="msbm-10x-x-109">ℝ</span>[<span 
+class="cmmi-10x-x-109">x</span>], a one-dimensional line with complex conjugates
+glued (no fear nullstellensatz)</a></span>
+<br />   <span class="sectionToc" >79.4  <a 
+href="Nase500.htm#x683-66800079.4" id="QQ2-683-671">Spec<span 
+class="cmmi-10x-x-109">k</span>[<span 
+class="cmmi-10x-x-109">x</span>], over any ground field</a></span>
+<br />   <span class="sectionToc" >79.5  <a 
+href="Nase501.htm#x684-66900079.5" id="QQ2-684-672">Spec <span 
+class="msbm-10x-x-109">ℤ</span>, a one-dimensional scheme</a></span>
+<br />   <span class="sectionToc" >79.6  <a 
+href="Nase502.htm#x685-67000079.6" id="QQ2-685-673">Spec<span 
+class="cmmi-10x-x-109">k</span>[<span 
+class="cmmi-10x-x-109">x</span>]<span 
+class="cmmi-10x-x-109">∕</span>(<span 
+class="cmmi-10x-x-109">x</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-109">− </span><span 
+class="cmmi-10x-x-109">x</span>), two points</a></span>
+<br />   <span class="sectionToc" >79.7  <a 
+href="Nase503.htm#x686-67100079.7" id="QQ2-686-674">Spec<span 
+class="cmmi-10x-x-109">k</span>[<span 
+class="cmmi-10x-x-109">x</span>]<span 
+class="cmmi-10x-x-109">∕</span>(<span 
+class="cmmi-10x-x-109">x</span><sup><span 
+class="cmr-8">2</span></sup>), the double point</a></span>
+<br />   <span class="sectionToc" >79.8  <a 
+href="Nase504.htm#x687-67200079.8" id="QQ2-687-675">Spec<span 
+class="cmmi-10x-x-109">k</span>[<span 
+class="cmmi-10x-x-109">x</span>]<span 
+class="cmmi-10x-x-109">∕</span>(<span 
+class="cmmi-10x-x-109">x</span><sup><span 
+class="cmr-8">3</span></sup> <span 
+class="cmsy-10x-x-109">− </span><span 
+class="cmmi-10x-x-109">x</span><sup><span 
+class="cmr-8">2</span></sup>), a double point and a single point</a></span>
+<br />   <span class="sectionToc" >79.9  <a 
+href="Nase505.htm#x688-67300079.9" id="QQ2-688-676">Spec <span 
+class="msbm-10x-x-109">ℤ</span><span 
+class="cmmi-10x-x-109">∕</span>60<span 
+class="msbm-10x-x-109">ℤ</span>, a scheme with three points</a></span>
+<br />   <span class="sectionToc" >79.10  <a 
+href="Nase506.htm#x689-67400079.10" id="QQ2-689-677">Spec<span 
+class="cmmi-10x-x-109">k</span>[<span 
+class="cmmi-10x-x-109">x,y</span>], the two-dimensional plane</a></span>
+<br />   <span class="sectionToc" >79.11  <a 
+href="Nase507.htm#x690-67500079.11" id="QQ2-690-678">Spec <span 
+class="msbm-10x-x-109">ℤ</span>[<span 
+class="cmmi-10x-x-109">x</span>], a two-dimensional scheme, and Mumford’s picture</a></span>
+<br />   <span class="sectionToc" >79.12  <a 
+href="Nase508.htm#x691-67600079.12" id="QQ2-691-679">Spec<span 
+class="cmmi-10x-x-109">k</span>[<span 
+class="cmmi-10x-x-109">x,y</span>]<span 
+class="cmmi-10x-x-109">∕</span>(<span 
+class="cmmi-10x-x-109">y </span><span 
+class="cmsy-10x-x-109">− </span><span 
+class="cmmi-10x-x-109">x</span><sup><span 
+class="cmr-8">2</span></sup>), the parabola</a></span>
+<br />   <span class="sectionToc" >79.13  <a 
+href="Nase509.htm#x692-67700079.13" id="QQ2-692-680">Spec <span 
+class="msbm-10x-x-109">ℤ</span>[<span 
+class="cmmi-10x-x-109">i</span>], the Gaussian integers (one-dimensional)</a></span>
+<br />   <span class="sectionToc" >79.14  <a 
+href="Nase510.htm#x693-67800079.14" id="QQ2-693-681">Long example: Spec<span 
+class="cmmi-10x-x-109">k</span>[<span 
+class="cmmi-10x-x-109">x,y</span>]<span 
+class="cmmi-10x-x-109">∕</span>(<span 
+class="cmmi-10x-x-109">xy</span>), two axes</a></span>
+<br />   <span class="sectionToc" >79.15  <a 
+href="Nase511.htm#x694-68300079.15" id="QQ2-694-686">Spec<span 
+class="cmmi-10x-x-109">k</span>[<span 
+class="cmmi-10x-x-109">x,x</span><sup><span 
+class="cmsy-8">−</span><span 
+class="cmr-8">1</span></sup>], the punctured line (or hyperbola)</a></span>
+<br />   <span class="sectionToc" >79.16  <a 
+href="Nase512.htm#x695-68400079.16" id="QQ2-695-687">Spec<span 
+class="cmmi-10x-x-109">k</span>[<span 
+class="cmmi-10x-x-109">x</span>]<sub><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">x</span><span 
+class="cmr-8">)</span></sub>, zooming in to the origin of the line</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >79.17  <a 
+href="Nase513.htm#x696-68500079.17" id="QQ2-696-688">Spec<span 
+class="cmmi-10x-x-109">k</span>[<span 
+class="cmmi-10x-x-109">x,y</span>]<sub><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">x,y</span><span 
+class="cmr-8">)</span></sub>, zooming in to the origin of the plane</a></span>
+<br />   <span class="sectionToc" >79.18  <a 
+href="Nase514.htm#x697-68600079.18" id="QQ2-697-689">Spec<span 
+class="cmmi-10x-x-109">k</span>[<span 
+class="cmmi-10x-x-109">x,y</span>]<sub><span 
+class="cmr-8">(0)</span></sub> = Spec<span 
+class="cmmi-10x-x-109">k</span>(<span 
+class="cmmi-10x-x-109">x,y</span>), the stalk above the generic point</a></span>
+<br />   <span class="sectionToc" >79.19  <a 
+href="Nase515.htm#x698-68700079.19" id="QQ2-698-690">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >80  <a 
+href="Nach83.htm#x699-68800080" id="QQ2-699-691">Morphisms of locally ringed spaces</a></span>
+<br />   <span class="sectionToc" >80.1  <a 
+href="Nase516.htm#x700-68900080.1" id="QQ2-700-692">Morphisms of ringed spaces via sections</a></span>
+<br />   <span class="sectionToc" >80.2  <a 
+href="Nase517.htm#x702-69000080.2" id="QQ2-702-693">Morphisms of ringed spaces via stalks</a></span>
+<br />   <span class="sectionToc" >80.3  <a 
+href="Nase518.htm#x703-69100080.3" id="QQ2-703-694">Morphisms of locally ringed spaces</a></span>
+<br />   <span class="sectionToc" >80.4  <a 
+href="Nase519.htm#x705-69200080.4" id="QQ2-705-695">A few examples of morphisms between affine schemes</a></span>
+<br />   <span class="sectionToc" >80.5  <a 
+href="Nase520.htm#x706-69700080.5" id="QQ2-706-700">The big theorem</a></span>
+<br />   <span class="sectionToc" >80.6  <a 
+href="Nase521.htm#x708-69800080.6" id="QQ2-708-701">More examples of scheme morphisms</a></span>
+<br />   <span class="sectionToc" >80.7  <a 
+href="Nase522.htm#x709-69900080.7" id="QQ2-709-702">A little bit on non-affine schemes</a></span>
+<br />   <span class="sectionToc" >80.8  <a 
+href="Nase523.htm#x710-70000080.8" id="QQ2-710-703">Where to go from here</a></span>
+<br />   <span class="sectionToc" >80.9  <a 
+href="Nase524.htm#x711-70100080.9" id="QQ2-711-704">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >XX  <a 
+href="Napa20.htm#x712-702000XX" id="QQ2-712-705">Algebraic Geometry III: Schemes (TO DO)</a></span>
+<br />  <span class="partToc" >XXI  <a 
+href="Napa21.htm#x713-703000XXI" id="QQ2-713-706">Set Theory I: ZFC, Ordinals, and Cardinals</a></span>
+<br />  <span class="chapterToc" >81  <a 
+href="Nach84.htm#x714-70400081" id="QQ2-714-707">Interlude: Cauchy’s functional equation and Zorn’s lemma</a></span>
+<br />   <span class="sectionToc" >81.1  <a 
+href="Nase525.htm#x715-70500081.1" id="QQ2-715-708">Let’s construct a monster</a></span>
+<br />   <span class="sectionToc" >81.2  <a 
+href="Nase526.htm#x716-70600081.2" id="QQ2-716-709">Review of finite induction</a></span>
+<br />   <span class="sectionToc" >81.3  <a 
+href="Nase527.htm#x717-70700081.3" id="QQ2-717-710">Transfinite induction</a></span>
+<br />   <span class="sectionToc" >81.4  <a 
+href="Nase528.htm#x718-70800081.4" id="QQ2-718-711">Wrapping up functional equations</a></span>
+<br />   <span class="sectionToc" >81.5  <a 
+href="Nase529.htm#x719-70900081.5" id="QQ2-719-712">Zorn’s lemma</a></span>
+<br />   <span class="sectionToc" >81.6  <a 
+href="Nase530.htm#x720-71000081.6" id="QQ2-720-713">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >82  <a 
+href="Nach85.htm#x721-71100082" id="QQ2-721-714">Zermelo-Fraenkel with choice</a></span>
+<br />   <span class="sectionToc" >82.1  <a 
+href="Nase531.htm#x722-71200082.1" id="QQ2-722-715">The ultimate functional equation</a></span>
+<br />   <span class="sectionToc" >82.2  <a 
+href="Nase532.htm#x723-71300082.2" id="QQ2-723-716">Cantor’s paradox</a></span>
+<br />   <span class="sectionToc" >82.3  <a 
+href="Nase533.htm#x724-71400082.3" id="QQ2-724-717">The language of set theory</a></span>
+<br />   <span class="sectionToc" >82.4  <a 
+href="Nase534.htm#x725-71500082.4" id="QQ2-725-718">The axioms of <span 
+class="cmss-10x-x-109">ZFC</span></a></span>
+<br />   <span class="sectionToc" >82.5  <a 
+href="Nase535.htm#x726-71600082.5" id="QQ2-726-719">Encoding</a></span>
+<br />   <span class="sectionToc" >82.6  <a 
+href="Nase536.htm#x727-71700082.6" id="QQ2-727-720">Choice and well-ordering</a></span>
+<br />   <span class="sectionToc" >82.7  <a 
+href="Nase537.htm#x728-71800082.7" id="QQ2-728-721">Sets vs classes</a></span>
+<br />   <span class="sectionToc" >82.8  <a 
+href="Nase538.htm#x729-71900082.8" id="QQ2-729-722">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >83  <a 
+href="Nach86.htm#x730-72000083" id="QQ2-730-723">Ordinals</a></span>
+<br />   <span class="sectionToc" >83.1  <a 
+href="Nase539.htm#x731-72100083.1" id="QQ2-731-724">Counting for preschoolers</a></span>
+<br />   <span class="sectionToc" >83.2  <a 
+href="Nase540.htm#x732-72200083.2" id="QQ2-732-725">Counting for set theorists</a></span>
+<br />   <span class="sectionToc" >83.3  <a 
+href="Nase541.htm#x734-72300083.3" id="QQ2-734-726">Definition of an ordinal</a></span>
+<br />   <span class="sectionToc" >83.4  <a 
+href="Nase542.htm#x735-72400083.4" id="QQ2-735-727">Ordinals are “tall”</a></span>
+<br />   <span class="sectionToc" >83.5  <a 
+href="Nase543.htm#x736-72500083.5" id="QQ2-736-728">Transfinite induction and recursion</a></span>
+<br />   <span class="sectionToc" >83.6  <a 
+href="Nase544.htm#x737-72600083.6" id="QQ2-737-729">Ordinal arithmetic</a></span>
+<br />   <span class="sectionToc" >83.7  <a 
+href="Nase545.htm#x738-72700083.7" id="QQ2-738-730">The hierarchy of sets</a></span>
+<br />   <span class="sectionToc" >83.8  <a 
+href="Nase546.htm#x739-72800083.8" id="QQ2-739-731">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >84  <a 
+href="Nach87.htm#x740-72900084" id="QQ2-740-732">Cardinals</a></span>
+<br />   <span class="sectionToc" >84.1  <a 
+href="Nase547.htm#x741-73000084.1" id="QQ2-741-733">Equinumerous sets and cardinals</a></span>
+<br />   <span class="sectionToc" >84.2  <a 
+href="Nase548.htm#x742-73100084.2" id="QQ2-742-734">Cardinalities</a></span>
+<br />   <span class="sectionToc" >84.3  <a 
+href="Nase549.htm#x743-73200084.3" id="QQ2-743-735">Aleph numbers</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >84.4  <a 
+href="Nase550.htm#x744-73300084.4" id="QQ2-744-736">Cardinal arithmetic</a></span>
+<br />   <span class="sectionToc" >84.5  <a 
+href="Nase551.htm#x745-73400084.5" id="QQ2-745-737">Cardinal exponentiation</a></span>
+<br />   <span class="sectionToc" >84.6  <a 
+href="Nase552.htm#x746-73500084.6" id="QQ2-746-738">Cofinality</a></span>
+<br />   <span class="sectionToc" >84.7  <a 
+href="Nase553.htm#x747-73600084.7" id="QQ2-747-739">Inaccessible cardinals</a></span>
+<br />   <span class="sectionToc" >84.8  <a 
+href="Nase554.htm#x748-73700084.8" id="QQ2-748-740">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >XXII  <a 
+href="Napa22.htm#x749-738000XXII" id="QQ2-749-741">Set Theory II: Model Theory and Forcing</a></span>
+<br />  <span class="chapterToc" >85  <a 
+href="Nach88.htm#x750-73900085" id="QQ2-750-742">Inner model theory</a></span>
+<br />   <span class="sectionToc" >85.1  <a 
+href="Nase555.htm#x751-74000085.1" id="QQ2-751-743">Models</a></span>
+<br />   <span class="sectionToc" >85.2  <a 
+href="Nase556.htm#x752-74100085.2" id="QQ2-752-744">Sentences and satisfaction</a></span>
+<br />   <span class="sectionToc" >85.3  <a 
+href="Nase557.htm#x753-74200085.3" id="QQ2-753-745">The Levy hierarchy</a></span>
+<br />   <span class="sectionToc" >85.4  <a 
+href="Nase558.htm#x754-74300085.4" id="QQ2-754-746">Substructures, and Tarski-Vaught</a></span>
+<br />   <span class="sectionToc" >85.5  <a 
+href="Nase559.htm#x755-74400085.5" id="QQ2-755-747">Obtaining the axioms of <span 
+class="cmss-10x-x-109">ZFC</span></a></span>
+<br />   <span class="sectionToc" >85.6  <a 
+href="Nase560.htm#x756-74500085.6" id="QQ2-756-748">Mostowski collapse</a></span>
+<br />   <span class="sectionToc" >85.7  <a 
+href="Nase561.htm#x757-74600085.7" id="QQ2-757-749">Adding an inaccessible</a></span>
+<br />   <span class="sectionToc" >85.8  <a 
+href="Nase562.htm#x758-74700085.8" id="QQ2-758-750">FAQ’s on countable models</a></span>
+<br />   <span class="sectionToc" >85.9  <a 
+href="Nase563.htm#x759-74800085.9" id="QQ2-759-751">Picturing inner models</a></span>
+<br />   <span class="sectionToc" >85.10  <a 
+href="Nase564.htm#x760-74900085.10" id="QQ2-760-752">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >86  <a 
+href="Nach89.htm#x761-75000086" id="QQ2-761-753">Forcing</a></span>
+<br />   <span class="sectionToc" >86.1  <a 
+href="Nase565.htm#x762-75100086.1" id="QQ2-762-754">Setting up posets</a></span>
+<br />   <span class="sectionToc" >86.2  <a 
+href="Nase566.htm#x763-75200086.2" id="QQ2-763-755">More properties of posets</a></span>
+<br />   <span class="sectionToc" >86.3  <a 
+href="Nase567.htm#x764-75300086.3" id="QQ2-764-756">Names, and the generic extension</a></span>
+<br />   <span class="sectionToc" >86.4  <a 
+href="Nase568.htm#x765-75400086.4" id="QQ2-765-757">Fundamental theorem of forcing</a></span>
+<br />   <span class="sectionToc" >86.5  <a 
+href="Nase569.htm#x767-75500086.5" id="QQ2-767-758">(Optional) Defining the relation</a></span>
+<br />   <span class="sectionToc" >86.6  <a 
+href="Nase570.htm#x768-75600086.6" id="QQ2-768-759">The remaining axioms</a></span>
+<br />   <span class="sectionToc" >86.7  <a 
+href="Nase571.htm#x769-75700086.7" id="QQ2-769-760">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >87  <a 
+href="Nach90.htm#x770-75800087" id="QQ2-770-761">Breaking the continuum hypothesis</a></span>
+<br />   <span class="sectionToc" >87.1  <a 
+href="Nase572.htm#x771-75900087.1" id="QQ2-771-762">Adding in reals</a></span>
+<br />   <span class="sectionToc" >87.2  <a 
+href="Nase573.htm#x772-76000087.2" id="QQ2-772-763">The countable chain condition</a></span>
+<br />   <span class="sectionToc" >87.3  <a 
+href="Nase574.htm#x774-76100087.3" id="QQ2-774-764">Preserving cardinals</a></span>
+<br />   <span class="sectionToc" >87.4  <a 
+href="Nase575.htm#x775-76200087.4" id="QQ2-775-765">Infinite combinatorics</a></span>
+<br />   <span class="sectionToc" >87.5  <a 
+href="Nase576.htm#x776-76300087.5" id="QQ2-776-766">A few harder problems to think about</a></span>
+<br />  <span class="partToc" >XXIII  <a 
+href="Napa23.htm#x777-764000XXIII" id="QQ2-777-767">Appendix</a></span>
+<br />  <span class="appendixToc" >A  <a 
+href="Naap1.htm#x778-765000A" id="QQ2-778-768">Pedagogical comments and references</a></span>
+<br />   <span class="sectionToc" >A.1  <a 
+href="Nase577.htm#x779-766000A.1" id="QQ2-779-769">Basic algebra and topology</a></span>
+<br />   <span class="sectionToc" >A.2  <a 
+href="Nase578.htm#x780-771000A.2" id="QQ2-780-774">Second-year topics</a></span>
+<br />   <span class="sectionToc" >A.3  <a 
+href="Nase579.htm#x781-778000A.3" id="QQ2-781-781">Advanced topics</a></span>
+<br />   <span class="sectionToc" >A.4  <a 
+href="Nase580.htm#x782-782000A.4" id="QQ2-782-785">Topics not in Napkin</a></span>
+<br />  <span class="appendixToc" >B  <a 
+href="Naap2.htm#x783-784000B" id="QQ2-783-787">Hints to selected problems</a></span>
+<br />  <span class="appendixToc" >C  <a 
+href="Naap3.htm#x784-785000C" id="QQ2-784-788">Sketches of selected solutions</a></span>
+<br />  <span class="appendixToc" >D  <a 
+href="Naap4.htm#x786-786000D" id="QQ2-786-789">Glossary of notations</a></span>
+<br />   <span class="sectionToc" >D.1  <a 
+href="Nase581.htm#x787-787000D.1" id="QQ2-787-790">General</a></span>
+<br />   <span class="sectionToc" >D.2  <a 
+href="Nase582.htm#x788-788000D.2" id="QQ2-788-791">Functions and sets</a></span>
+<br />   <span class="sectionToc" >D.3  <a 
+href="Nase583.htm#x789-789000D.3" id="QQ2-789-792">Abstract and linear algebra</a></span>
+<br />   <span class="sectionToc" >D.4  <a 
+href="Nase584.htm#x790-790000D.4" id="QQ2-790-793">Quantum computation</a></span>
+                                                                                
+                                                                                
+<br />   <span class="sectionToc" >D.5  <a 
+href="Nase585.htm#x791-791000D.5" id="QQ2-791-794">Topology and real/complex analysis</a></span>
+<br />   <span class="sectionToc" >D.6  <a 
+href="Nase586.htm#x792-792000D.6" id="QQ2-792-795">Measure theory and probability</a></span>
+<br />   <span class="sectionToc" >D.7  <a 
+href="Nase587.htm#x793-793000D.7" id="QQ2-793-796">Algebraic topology</a></span>
+<br />   <span class="sectionToc" >D.8  <a 
+href="Nase588.htm#x794-794000D.8" id="QQ2-794-797">Category theory</a></span>
+<br />   <span class="sectionToc" >D.9  <a 
+href="Nase589.htm#x795-795000D.9" id="QQ2-795-798">Differential geometry</a></span>
+<br />   <span class="sectionToc" >D.10  <a 
+href="Nase590.htm#x796-796000D.10" id="QQ2-796-799">Algebraic number theory</a></span>
+<br />   <span class="sectionToc" >D.11  <a 
+href="Nase591.htm#x797-797000D.11" id="QQ2-797-800">Representation theory</a></span>
+<br />   <span class="sectionToc" >D.12  <a 
+href="Nase592.htm#x798-798000D.12" id="QQ2-798-801">Algebraic geometry</a></span>
+<br />   <span class="sectionToc" >D.13  <a 
+href="Nase593.htm#x799-799000D.13" id="QQ2-799-802">Set theory</a></span>
+<br />  <span class="appendixToc" >E  <a 
+href="Naap5.htm#x800-800000E" id="QQ2-800-803">Terminology on sets and functions</a></span>
+<br />   <span class="sectionToc" >E.1  <a 
+href="Nase594.htm#x801-801000E.1" id="QQ2-801-804">Sets</a></span>
+<br />   <span class="sectionToc" >E.2  <a 
+href="Nase595.htm#x802-802000E.2" id="QQ2-802-805">Functions</a></span>
+<br />   <span class="sectionToc" >E.3  <a 
+href="Nase596.htm#x803-805000E.3" id="QQ2-803-808">Equivalence relations</a></span>
+  </div>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 2--><p class="indent" >  <a 
+ id="chapter*.3"></a></p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 32--><p class="indent" >  <a 
+ id="chapter*.4"></a>
+</p><!--l. 32--><p class="noindent" >
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 37--><p class="indent" >
+                                                                                
+                                                                                
+</p><!--l. 37--><p class="indent" >
+</p><!--l. 37--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 45--><p class="indent" >
+                                                                                
+                                                                                
+</p><!--l. 45--><p class="indent" >
+</p><!--l. 45--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 52--><p class="indent" >
+</p><!--l. 52--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 59--><p class="indent" >
+                                                                                
+                                                                                
+</p><!--l. 59--><p class="indent" >
+</p><!--l. 59--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 70--><p class="indent" >
+</p><!--l. 70--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 77--><p class="indent" >
+                                                                                
+                                                                                
+</p><!--l. 77--><p class="indent" >
+</p><!--l. 77--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 85--><p class="indent" >
+</p><!--l. 85--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 92--><p class="indent" >
+</p><!--l. 92--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 101--><p class="indent" >
+                                                                                
+                                                                                
+</p><!--l. 101--><p class="indent" >
+</p><!--l. 101--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 108--><p class="indent" >
+                                                                                
+                                                                                
+</p><!--l. 108--><p class="indent" >
+</p><!--l. 108--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 117--><p class="indent" >
+</p><!--l. 117--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 124--><p class="indent" >
+                                                                                
+                                                                                
+</p><!--l. 124--><p class="indent" >
+</p><!--l. 124--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 132--><p class="indent" >
+                                             

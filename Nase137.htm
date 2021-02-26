@@ -1,0 +1,200 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Algebras</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 17--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase138.htm" >next</a>] [<a 
+href="#tailNase137.htm">tail</a>] [<a 
+href="Nach22.htm#Nase137.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">19.1</span>  <a 
+ id="x202-19200019.1"></a>Algebras</h3>
+<!--l. 18--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmmi" font-size="10">k</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>] <tspan font-family="cmti" font-size="10">and </tspan><tspan font-family="cmmi" font-size="10">k</tspan>[<tspan font-family="cmmi" font-size="10">G</tspan>]<tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 19--><p class="indent" >  Rather than working directly with groups from the beginning, it will be more convenient to
+deal with so-called <tspan font-family="cmmi" font-size="10">k</tspan>-algebras. This setting is more natural and general than that of groups, so
+once we develop the theory of algebras well enough, it will be fairly painless to specialize to
+the case of groups.
+</p><!--l. 25--><p class="indent" >  Colloquially,</p>
+<div class="mdframed" id="mdframed-395">
+<!--l. 27--><p class="noindent" ><tspan font-family="cmbx" font-size="10">An associative </tspan><tspan font-family="cmmi" font-size="10">k</tspan><tspan font-family="cmbx" font-size="10">-algebra is a possibly noncommutative ring with a copy of </tspan><tspan font-family="cmmi" font-size="10">k </tspan><tspan font-family="cmbx" font-size="10">inside</tspan>
+<tspan font-family="cmbx" font-size="10">it. It is thus a </tspan><tspan font-family="cmmi" font-size="10">k</tspan><tspan font-family="cmbx" font-size="10">-vector space.</tspan></p><!--l. 30--><p class="noindent" ></p>
+  </div>
+<!--l. 32--><p class="indent" >  I’ll present examples before the definition:</p>
+<div class="mdframed" id="mdframed-396">
+<a 
+ id="x202-192001r625"></a>
+<div class="newtheorem">
+<!--l. 34--><p class="noindent" ><span class="head">
+<a 
+ id="x202-192002r1"></a>
+<tspan font-family="cmbx" font-size="10">Example 19.1.1 </tspan>(Examples of <tspan font-family="cmmi" font-size="10">k</tspan>-Algebras)<br 
+class="newline" /> </span><a 
+ id="x202-192003"></a>Let <tspan font-family="cmmi" font-size="10">k </tspan>be any field. The following are examples of
+<tspan font-family="cmmi" font-size="10">k</tspan>-algebras:
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The field <tspan font-family="cmmi" font-size="10">k </tspan>itself.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The polynomial ring <tspan font-family="cmmi" font-size="10">k</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>].
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The set of <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">n </tspan>matrices with entries in <tspan font-family="cmmi" font-size="10">k</tspan>, which we denote by Mat<sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>(<tspan font-family="cmmi" font-size="10">k</tspan>). Note the
+    multiplication here is not commutative.
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate">The set Mat(<tspan font-family="cmmi" font-size="10">V </tspan>) of linear operators <tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">V  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>, with multiplication given by the
+    composition of operators. (Here <tspan font-family="cmmi" font-size="10">V  </tspan>is some vector space over <tspan font-family="cmmi" font-size="10">k</tspan>.) This is really the
+    same as the previous example.</dd></dl>
+</p>
+  </div>
+<!--l. 47--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<a 
+ id="x202-192008r626"></a>
+  <div class="newtheorem">
+<!--l. 49--><p class="noindent" ><span class="head">
+<a 
+ id="x202-192009r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 19.1.2.</tspan>  </span><a 
+ id="x202-192010"></a>Let <tspan font-family="cmmi" font-size="10">k </tspan>be a field. A <tspan font-family="cmmi" font-size="10">k</tspan><tspan font-family="cmbx" font-size="10">-algebra</tspan> <tspan font-family="cmmi" font-size="10">A </tspan>is a <tspan font-family="cmti" font-size="10">possibly noncommutative </tspan>ring,
+equipped with an injective ring homomorphism <tspan font-family="cmmi" font-size="10">k</tspan><img 
+src="Na881x.png" alt="`→"  class="hookrightarrow"  /><tspan font-family="cmmi" font-size="10">A </tspan>(whose image is the “copy of <tspan font-family="cmmi" font-size="10">k</tspan>”).
+In particular, 1<sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><img 
+src="Na882x.png" alt="↦→"  class="mapsto"  />1<sub><tspan font-family="cmmi" font-size="8">A</tspan></sub>.
+</p><!--l. 55--><p class="indent" >  Thus we can consider <tspan font-family="cmmi" font-size="10">k </tspan>as a subset of <tspan font-family="cmmi" font-size="10">A</tspan>, and we then additionally require <tspan font-family="cmmi" font-size="10">λ</tspan><tspan font-family="cmsy" font-size="10">⋅</tspan><tspan font-family="cmmi" font-size="10">a </tspan>= <tspan font-family="cmmi" font-size="10">a</tspan><tspan font-family="cmsy" font-size="10">⋅</tspan><tspan font-family="cmmi" font-size="10">λ</tspan>
+for each <tspan font-family="cmmi" font-size="10">λ </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">k </tspan>and <tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">A</tspan>.
+</p><!--l. 59--><p class="indent" >  If the multiplication operation is also commutative, then we say <tspan font-family="cmmi" font-size="10">A </tspan>is a <tspan font-family="cmbx" font-size="10">commutative</tspan>
+<tspan font-family="cmbx" font-size="10">algebra</tspan>.
+</p>
+  </div>
+<!--l. 61--><p class="indent" >
+<a 
+ id="x202-192011r627"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 63--><p class="noindent" ><span class="head">
+<a 
+ id="x202-192012r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 19.1.3.</tspan>  </span><a 
+ id="x202-192013"></a>Equivalently, a <tspan font-family="cmmi" font-size="10">k</tspan><tspan font-family="cmbx" font-size="10">-algebra</tspan> <tspan font-family="cmmi" font-size="10">A </tspan>is a <tspan font-family="cmmi" font-size="10">k</tspan>-<tspan font-family="cmti" font-size="10">vector space </tspan>which also has an
+associative, bilinear multiplication operation (with an identity 1<sub><tspan font-family="cmmi" font-size="8">A</tspan></sub>). The “copy of <tspan font-family="cmmi" font-size="10">k</tspan>” is
+obtained by considering elements <tspan font-family="cmmi" font-size="10">λ</tspan>1<sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> for each <tspan font-family="cmmi" font-size="10">λ </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">k </tspan>(i.e. scaling the identity by the
+elements of <tspan font-family="cmmi" font-size="10">k</tspan>, taking advantage of the vector space structure).
+</p>
+  </div>
+<!--l. 70--><p class="indent" >
+<a 
+ id="x202-192014r628"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 73--><p class="noindent" ><span class="head">
+<a 
+ id="x202-192015r4"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 19.1.4.</tspan>  </span><a 
+ id="x202-192016"></a>Some other authors don’t require <tspan font-family="cmmi" font-size="10">A </tspan>to be associative or
+to have an identity, so to them what we have just defined is an “associative algebra with
+1”. However, this is needlessly wordy for our purposes.
+</p>
+  </div>
+                                                                                
+                                                                                
+<!--l. 77--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-397">
+<a 
+ id="x202-192017r629"></a>
+<div class="newtheorem">
+<!--l. 80--><p class="noindent" ><span class="head">
+<a 
+ id="x202-192018r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 19.1.5 </tspan>(Group algebra)<br 
+class="newline" /> </span><a 
+ id="x202-192019"></a>The <tspan font-family="cmbx" font-size="10">group algebra</tspan> <tspan font-family="cmmi" font-size="10">k</tspan>[<tspan font-family="cmmi" font-size="10">G</tspan>] is the <tspan font-family="cmmi" font-size="10">k</tspan>-vector space whose
+<tspan font-family="cmti" font-size="10">basis elements </tspan>are the elements of a group <tspan font-family="cmmi" font-size="10">G</tspan>, and where the product of two basis elements
+is the group multiplication. For example, suppose <tspan font-family="cmmi" font-size="10">G </tspan>= <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ </tspan>= <tspan font-family="cmsy" font-size="10">{</tspan>1<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub><tspan font-family="cmmi" font-size="10">,x</tspan><tspan font-family="cmsy" font-size="10">}</tspan>. Then
+</p>
+<div class="math-display" >
+<img 
+src="Na883x.png" alt="k[G] = {a1G + bx | a,b ∈ k}
+" class="math-display"  /></div>
+<!--l. 87--><p class="noindent" >with multiplication given by
+</p>
+<div class="math-display" >
+<img 
+src="Na884x.png" alt="(a1  + bx)(c1  + dx ) = (ac + bd)1 + (bc+  ad)x.
+   G         G                 G
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 89--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-398">
+<a 
+ id="x202-192020r630"></a>
+<div class="newtheorem">
+<!--l. 91--><p class="noindent" ><span class="head">
+<a 
+ id="x202-192021r6"></a>
+<tspan font-family="cmbx" font-size="10">Question 19.1.6.</tspan>  </span><a 
+ id="x202-192022"></a><tspan font-family="cmr" font-size="10">When is </tspan><tspan font-family="cmmi" font-size="10">k</tspan><tspan font-family="cmr" font-size="10">[</tspan><tspan font-family="cmmi" font-size="10">G</tspan><tspan font-family="cmr" font-size="10">] commutative?</tspan>
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 92--><p class="indent" >  </p></div>
+<!--l. 93--><p class="indent" >  The example <tspan font-family="cmmi" font-size="10">k</tspan>[<tspan font-family="cmmi" font-size="10">G</tspan>] is very important, because (as we will soon see) a representation of the
+algebra <tspan font-family="cmmi" font-size="10">k</tspan>[<tspan font-family="cmmi" font-size="10">G</tspan>] amounts to a representation of the group <tspan font-family="cmmi" font-size="10">G </tspan>itself.
+</p><!--l. 97--><p class="indent" >  It is worth mentioning at this point that: <a 
+ id="x202-192023r631"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 99--><p class="noindent" ><span class="head">
+<a 
+ id="x202-192024r7"></a>
+<tspan font-family="cmbx" font-size="10">Definition 19.1.7.</tspan>  </span><a 
+ id="x202-192025"></a>A <tspan font-family="cmbx" font-size="10">homomorphism</tspan> of <tspan font-family="cmmi" font-size="10">k</tspan>-algebras <tspan font-family="cmmi" font-size="10">A</tspan>, <tspan font-family="cmmi" font-size="10">B </tspan>is a linear map <tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B</tspan>
+which respects multiplication (i.e. <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">xy</tspan>) = <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>)<tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">y</tspan>)) and which sends 1<sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> to 1<sub><tspan font-family="cmmi" font-size="8">B</tspan></sub>. In
+other words, <tspan font-family="cmmi" font-size="10">T </tspan>is both a homomorphism as a ring and as a vector space.
+</p>
+  </div>
+<!--l. 103--><p class="indent" >
+<a 
+ id="x202-192026r632"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 105--><p class="noindent" ><span class="head">
+<a 
+ id="x202-192027r8"></a>
+<tspan font-family="cmbx" font-size="10">Definition 19.1.8.</tspan>  </span><a 
+ id="x202-192028"></a>Given <tspan font-family="cmmi" font-size="10">k</tspan>-algebras <tspan font-family="cmmi" font-size="10">A </tspan>and <tspan font-family="cmmi" font-size="10">B</tspan>, the <tspan font-family="cmbx" font-size="10">direct sum</tspan> <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">B </tspan>is defined as
+pairs <tspan font-family="cmmi" font-size="10">a </tspan>+ <tspan font-family="cmmi" font-size="10">b</tspan>, where addition is done in the obvious way, but we declare <tspan font-family="cmmi" font-size="10">ab </tspan>= 0 for any
+<tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">A </tspan>and <tspan font-family="cmmi" font-size="10">b </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">B</tspan>.
+</p>
+  </div>
+<!--l. 108--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-399">
+<a 
+ id="x202-192029r633"></a>
+<div class="newtheorem">
+<!--l. 110--><p class="noindent" ><span class="head">
+<a 
+ id="x202-192030r9"></a>
+<tspan font-family="cmbx" font-size="10">Question 19.1.9.</tspan>  </span><a 
+ id="x202-192031"></a><tspan font-family="cmr" font-size="10">Show that 1</tspan><sub><tspan font-family="cmmi" font-size="7">A</tspan></sub> <tspan font-family="cmr" font-size="10">+ 1</tspan><sub><tspan font-family="cmmi" font-size="7">B</tspan></sub> <tspan font-family="cmr" font-size="10">is the multiplicative identity of </tspan><tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">B</tspan><tspan font-family="cmr" font-size="10">.</tspan></p>
+  </div>
+<!--l. 111--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 113--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase138.htm" >next</a>] [<a 
+href="Nase137.htm" >front</a>] [<a 
+href="Nach22.htm#Nase137.htm" >up</a>] </p></div>
+<!--l. 113--><p class="indent" >  <a 
+ id="tailNase137.htm"></a> </p> 
+</body> 
+</html>

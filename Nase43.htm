@@ -1,0 +1,228 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Ideals</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 332--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase44.htm" >next</a>] [<a 
+href="Nase42.htm" >prev</a>] [<a 
+href="Nase42.htm#tailNase42.htm" >prev-tail</a>] [<a 
+href="#tailNase43.htm">tail</a>] [<a 
+href="Nach7.htm#Nase43.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">4.6</span>  <a 
+ id="x71-650004.6"></a>Ideals</h3>
+<!--l. 333--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">The multiples of </tspan>5 <tspan font-family="cmti" font-size="10">are an ideal of </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 334--><p class="indent" >  Now, just like we were able to mod out by groups, we’d also like to define quotient rings. So
+once again, <a 
+ id="x71-65001r181"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 338--><p class="noindent" ><span class="head">
+<a 
+ id="x71-65002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 4.6.1.</tspan>  </span><a 
+ id="x71-65003"></a>The <tspan font-family="cmbx" font-size="10">kernel</tspan> of a ring homomorphism <tspan font-family="cmmi" font-size="10">ϕ</tspan>: <tspan font-family="cmmi" font-size="10">R </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">S</tspan>, denoted ker<tspan font-family="cmmi" font-size="10">ϕ</tspan>, is
+the set of <tspan font-family="cmmi" font-size="10">r </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">R </tspan>such that <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">r</tspan>) = 0.
+</p>
+  </div>
+<!--l. 340--><p class="indent" >
+</p><!--l. 342--><p class="indent" >  In group theory, we were able to characterize the “normal” subgroups by a few obviously
+necessary conditions (namely, <tspan font-family="cmmi" font-size="10">gHg</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan> = <tspan font-family="cmmi" font-size="10">H</tspan>). We can do the same thing for rings, and it’s in
+fact easier because our operations are commutative.
+</p><!--l. 346--><p class="indent" >  First, note two obvious facts: </p>
+     <ul class="itemize1">
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">y</tspan>) = 0, then <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">x </tspan>+ <tspan font-family="cmmi" font-size="10">y</tspan>) = 0 as well. So ker<tspan font-family="cmmi" font-size="10">ϕ </tspan>should be closed under
+     addition.
+     </li>
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = 0, then for any <tspan font-family="cmmi" font-size="10">r </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">R </tspan>we have <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">rx</tspan>) = <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">r</tspan>)<tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = 0 too. So for <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈</tspan> ker<tspan font-family="cmmi" font-size="10">ϕ</tspan>
+     and <tspan font-family="cmti" font-size="10">any </tspan><tspan font-family="cmmi" font-size="10">r </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">R</tspan>, we have <tspan font-family="cmmi" font-size="10">rx </tspan><tspan font-family="cmsy" font-size="10">∈</tspan> ker<tspan font-family="cmmi" font-size="10">ϕ</tspan>.</li></ul>
+<!--l. 356--><p class="indent" >  A (nonempty) subset <tspan font-family="cmmi" font-size="10">I </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">R </tspan>is called an ideal if it satisfies these properties. That is,
+<a 
+ id="x71-65004r182"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 360--><p class="noindent" ><span class="head">
+<a 
+ id="x71-65005r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Definition 4.6.2.</tspan>  </span><a 
+ id="x71-65006"></a>A nonempty subset <tspan font-family="cmmi" font-size="10">I </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">R </tspan>is an <tspan font-family="cmbx" font-size="10">ideal</tspan> if it is closed under addition,
+and for each <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">I</tspan>, <tspan font-family="cmmi" font-size="10">rx </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">I </tspan>for all <tspan font-family="cmmi" font-size="10">r </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">R</tspan>. It is <tspan font-family="cmbx" font-size="10">proper</tspan> if <tspan font-family="cmmi" font-size="10">I</tspan><tspan font-family="cmmi" font-size="10">≠</tspan><tspan font-family="cmmi" font-size="10">R</tspan>.
+</p>
+  </div>
+<!--l. 364--><p class="indent" >
+</p><!--l. 366--><p class="indent" >  Note that in the second condition, <tspan font-family="cmmi" font-size="10">r </tspan>need not be in <tspan font-family="cmmi" font-size="10">I</tspan>! So this is stronger than merely saying
+<tspan font-family="cmmi" font-size="10">I </tspan>is closed under multiplication.</p>
+<div class="mdframed" id="mdframed-124">
+<a 
+ id="x71-65007r183"></a>
+<div class="newtheorem">
+<!--l. 369--><p class="noindent" ><span class="head">
+<a 
+ id="x71-65008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 4.6.3 —  </tspan> </span><a 
+ id="x71-65009"></a>If <tspan font-family="cmmi" font-size="10">R </tspan>is not commutative, we also need the condition <tspan font-family="cmmi" font-size="10">xr </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">I</tspan>. That is,
+the ideal is <tspan font-family="cmti" font-size="10">two-sided</tspan>: it absorbs multiplication from both the left and the right. But
+since rings in Napkin are commutative we needn’t worry with this distinction.</p>
+  </div>
+<!--l. 374--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-125">
+<a 
+ id="x71-65010r184"></a>
+<div class="newtheorem">
+<!--l. 377--><p class="noindent" ><span class="head">
+<a 
+ id="x71-65011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 4.6.4 </tspan>(Prototypical example of an ideal)<br 
+class="newline" /> </span><a 
+ id="x71-65012"></a>Consider   the   set   <tspan font-family="cmmi" font-size="10">I   </tspan>=   5<tspan font-family="msbm" font-size="10">ℤ    </tspan>=
+<tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">−</tspan>10<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">−</tspan>5<tspan font-family="cmmi" font-size="10">,</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>5<tspan font-family="cmmi" font-size="10">,</tspan>10<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmsy" font-size="10">} </tspan>as an ideal in <tspan font-family="msbm" font-size="10">ℤ</tspan>. We indeed see <tspan font-family="cmmi" font-size="10">I </tspan>is the kernel of the “take mod
+5” homomorphism:
+</p>
+<div class="math-display" >
+<img 
+src="Na213x.png" alt="ℤ ↠ ℤ ∕5ℤ.
+" class="math-display"  /></div>
+<!--l. 381--><p class="noindent" >It’s clearly closed under addition, but it absorbs multiplication from <tspan font-family="cmti" font-size="10">all </tspan>elements of <tspan font-family="msbm" font-size="10">ℤ</tspan>:
+given 15 <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">I</tspan>, 999 <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>, we get 15 <tspan font-family="cmsy" font-size="10">⋅ </tspan>999 <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">I</tspan>.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 384--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-126">
+<a 
+ id="x71-65013r185"></a>
+<div class="newtheorem">
+<!--l. 387--><p class="noindent" ><span class="head">
+<a 
+ id="x71-65014r5"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 4.6.5 </tspan><tspan font-family="cmr" font-size="10">(Mandatory: fields have two ideals)</tspan><tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x71-65015"></a><tspan font-family="cmr" font-size="10">If </tspan><tspan font-family="cmmi" font-size="10">K </tspan><tspan font-family="cmr" font-size="10">is a field, show that </tspan><tspan font-family="cmmi" font-size="10">K </tspan><tspan font-family="cmr" font-size="10">has exactly two</tspan>
+<tspan font-family="cmr" font-size="10">ideals. What are they?</tspan></p>
+  </div>
+<!--l. 391--><p class="indent" >  </p></div>
+<!--l. 393--><p class="indent" >  Now we claim that these conditions are sufficient. More explicitly,</p>
+<div class="mdframed" id="mdframed-127">
+<a 
+ id="x71-65016r186"></a>
+<div class="newtheorem">
+<!--l. 396--><p class="noindent" ><span class="head">
+<a 
+ id="x71-65017r6"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 4.6.6 </tspan><tspan font-family="cmss" font-size="10">(Ring analog of normal subgroups)</tspan><br 
+class="newline" /> </span><a 
+ id="x71-65018"></a>Let <tspan font-family="cmmi" font-size="10">R </tspan>be a ring and <tspan font-family="cmmi" font-size="10">I </tspan><tspan font-family="msbm" font-size="10">⊊ </tspan><tspan font-family="cmmi" font-size="10">R</tspan>. Then <tspan font-family="cmmi" font-size="10">I </tspan>is
+the kernel of some homomorphism if and only if it’s an ideal.
+</p>
+  </div>
+<!--l. 399--><p class="indent" >  </p></div>
+<!--l. 400--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 401--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>It’s quite similar to the proof for the normal subgroup thing, and you might try
+it yourself as an exercise.
+</p><!--l. 404--><p class="indent" >  Obviously the conditions are necessary. To see they’re sufficient, we <tspan font-family="cmti" font-size="10">define </tspan>a ring by
+“cosets”
+</p>
+  <div class="math-display" >
+<img 
+src="Na214x.png" alt="S = {r + I | r ∈ R }.
+" class="math-display"  /></div>
+<!--l. 407--><p class="indent" >  These are the equivalence where we say <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∼ </tspan><tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> if <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">I </tspan>(think of this as taking “mod
+<tspan font-family="cmmi" font-size="10">I</tspan>”). To see that these form a ring, we have to check that the addition and multiplication we
+put on them is well-defined. Specifically, we want to check that if <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∼ </tspan><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∼ </tspan><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, then
+<tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∼ </tspan><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> and <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∼ </tspan><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. We actually already did the first part – just think of <tspan font-family="cmmi" font-size="10">R </tspan>and
+<tspan font-family="cmmi" font-size="10">S </tspan>as abelian groups, forgetting for the moment that we can multiply. The multiplication is
+more interesting.</p>
+<div class="mdframed" id="mdframed-128">
+<a 
+ id="x71-65019r187"></a>
+<div class="newtheorem">
+<!--l. 418--><p class="noindent" ><span class="head">
+<a 
+ id="x71-65020r7"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 4.6.7 </tspan><tspan font-family="cmr" font-size="10">(Recommended)</tspan><tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x71-65021"></a><tspan font-family="cmr" font-size="10">Show that if </tspan><tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="7">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∼ </tspan><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="7">1</tspan></sub> <tspan font-family="cmr" font-size="10">and </tspan><tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="7">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∼ </tspan><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="7">2</tspan></sub><tspan font-family="cmr" font-size="10">, then </tspan><tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="7">1</tspan></sub><tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="7">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∼ </tspan><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="7">1</tspan></sub><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="7">2</tspan></sub><tspan font-family="cmr" font-size="10">. You will</tspan>
+<tspan font-family="cmr" font-size="10">need to use the fact that </tspan><tspan font-family="cmmi" font-size="10">I </tspan><tspan font-family="cmr" font-size="10">absorbs multiplication from </tspan><tspan font-family="cmti" font-size="10">any </tspan><tspan font-family="cmr" font-size="10">elements of </tspan><tspan font-family="cmmi" font-size="10">R</tspan><tspan font-family="cmr" font-size="10">, not just those in </tspan><tspan font-family="cmmi" font-size="10">I</tspan><tspan font-family="cmr" font-size="10">.</tspan></p>
+  </div>
+<!--l. 422--><p class="indent" >  </p></div>
+<!--l. 423--><p class="indent" >  Anyways, since this addition and multiplication is well-defined there is now a surjective
+homomorphism <tspan font-family="cmmi" font-size="10">R </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">S </tspan>with kernel exactly <tspan font-family="cmmi" font-size="10">I</tspan>.                                                     □
+</p>
+  </div>
+<a 
+ id="x71-65022r188"></a>
+  <div class="newtheorem">
+<!--l. 428--><p class="noindent" ><span class="head">
+<a 
+ id="x71-65023r8"></a>
+<tspan font-family="cmbx" font-size="10">Definition 4.6.8.</tspan>  </span><a 
+ id="x71-65024"></a>Given an ideal <tspan font-family="cmmi" font-size="10">I</tspan>, we define as above the <tspan font-family="cmbx" font-size="10">quotient ring</tspan>
+</p>
+  <div class="math-display" >
+<img 
+src="Na215x.png" alt="R ∕I := {r + I | r ∈ R} .
+" class="math-display"  /></div>
+<!--l. 430--><p class="indent" >  It’s the ring of these equivalence classes. This ring is pronounced “<tspan font-family="cmmi" font-size="10">R </tspan>mod <tspan font-family="cmmi" font-size="10">I</tspan>”.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 432--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-129">
+<a 
+ id="x71-65025r189"></a>
+<div class="newtheorem">
+<!--l. 433--><p class="noindent" ><span class="head">
+<a 
+ id="x71-65026r9"></a>
+<tspan font-family="cmbx" font-size="10">Example 4.6.9 </tspan>(<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>5<tspan font-family="msbm" font-size="10">ℤ</tspan>)<br 
+class="newline" /> </span><a 
+ id="x71-65027"></a>The integers modulo 5 formed by “modding out additively by
+5” are the <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>5<tspan font-family="msbm" font-size="10">ℤ </tspan>we have already met.
+</p>
+  </div>
+<!--l. 436--><p class="indent" >  </p></div>
+<!--l. 437--><p class="indent" >  But here’s an important point: just as we don’t actually think of <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>5<tspan font-family="msbm" font-size="10">ℤ </tspan>as consisting of
+<tspan font-family="cmmi" font-size="10">k </tspan>+ 5<tspan font-family="msbm" font-size="10">ℤ </tspan>for <tspan font-family="cmmi" font-size="10">k </tspan>= 0<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,</tspan>4, we also don’t really want to think about <tspan font-family="cmmi" font-size="10">R∕I </tspan>as elements <tspan font-family="cmmi" font-size="10">r </tspan>+ <tspan font-family="cmmi" font-size="10">I</tspan>. The
+better way to think about it is</p>
+<div class="mdframed" id="mdframed-130">
+<!--l. 443--><p class="noindent" ><tspan font-family="cmmi" font-size="10">R∕I </tspan><tspan font-family="cmbx" font-size="10">is the result when we declare that elements of </tspan><tspan font-family="cmmi" font-size="10">I </tspan><tspan font-family="cmbx" font-size="10">are all zero; that is, we “mod</tspan>
+<tspan font-family="cmbx" font-size="10">out by elements of </tspan><tspan font-family="cmmi" font-size="10">I</tspan><tspan font-family="cmbx" font-size="10">”.</tspan></p><!--l. 445--><p class="noindent" ></p>
+  </div>
+<!--l. 446--><p class="indent" >  For example, modding out by 5<tspan font-family="msbm" font-size="10">ℤ </tspan>means that we consider all elements in <tspan font-family="msbm" font-size="10">ℤ </tspan>divisible by 5 to
+be zero. This gives you the usual modular arithmetic!</p>
+<div class="mdframed" id="mdframed-131">
+<a 
+ id="x71-65028r190"></a>
+<div class="newtheorem">
+<!--l. 451--><p class="noindent" ><span class="head">
+<a 
+ id="x71-65029r10"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 4.6.10.</tspan>  </span><a 
+ id="x71-65030"></a><tspan font-family="cmr" font-size="10">Earlier, we wrote </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmr" font-size="10">[</tspan><tspan font-family="cmmi" font-size="10">i</tspan><tspan font-family="cmr" font-size="10">] for the Gaussian integers, which was a slight abuse of</tspan>
+<tspan font-family="cmr" font-size="10">notation. Convince yourself that this ring could instead be written as </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmr" font-size="10">[</tspan><tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmr" font-size="10">]</tspan><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="7">2</tspan></sup><tspan font-family="cmr" font-size="10">+1), if we wanted</tspan>
+<tspan font-family="cmr" font-size="10">to be perfectly formal. (We will stick with </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmr" font-size="10">[</tspan><tspan font-family="cmmi" font-size="10">i</tspan><tspan font-family="cmr" font-size="10">] though — it’s more natural.)</tspan>
+</p><!--l. 458--><p class="noindent" ><tspan font-family="cmr" font-size="10">Figure out the analogous formalization of </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmr" font-size="10">[</tspan><img 
+src="Na216x.png" alt="√32-"  class="root" align="middle"  /><tspan font-family="cmr" font-size="10">].</tspan></p>
+  </div>
+<!--l. 459--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 461--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase44.htm" >next</a>] [<a 
+href="Nase42.htm" >prev</a>] [<a 
+href="Nase42.htm#tailNase42.htm" >prev-tail</a>] [<a 
+href="Nase43.htm" >front</a>] [<a 
+href="Nach7.htm#Nase43.htm" >up</a>] </p></div>
+<!--l. 461--><p class="indent" >  <a 
+ id="tailNase43.htm"></a> </p> 
+</body> 
+</html>

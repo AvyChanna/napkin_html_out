@@ -1,0 +1,365 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Fundamental groups</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 133--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase393.htm" >next</a>] [<a 
+href="Nase366.htm" >prev</a>] [<a 
+href="Nase366.htm#tailNase366.htm" >prev-tail</a>] [<a 
+href="Nase344.htm#tailNase367.htm">tail</a>] [<a 
+href="Nase389.htm#Nach65.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">58.2</span>  <a 
+ id="x515-49600058.2"></a>Fundamental groups</h3>
+<!--l. 134--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>) <tspan font-family="cmti" font-size="10">is trivial and </tspan><tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>)<img 
+src="Na2900x.png" alt="∼="  class="cong"  /><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 136--><p class="indent" >  At this point I’m a little annoyed at keeping track of endpoints, so now I’m going to
+specialize to a certain type of path. <a 
+ id="x515-496001r1470"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 139--><p class="noindent" ><span class="head">
+<a 
+ id="x515-496002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 58.2.1.</tspan>  </span><a 
+ id="x515-496003"></a>A <tspan font-family="cmbx" font-size="10">loop</tspan> is a path with <tspan font-family="cmmi" font-size="10">γ</tspan>(0) = <tspan font-family="cmmi" font-size="10">γ</tspan>(1).
+</p>
+  </div>
+<!--l. 140--><p class="indent" >
+</p>
+<div class="center" 
+>
+<!--l. 141--><p class="noindent" >
+</p>
+</div>
+<!--l. 151--><p class="indent" >  Hence if we restrict our attention to paths starting at a single point <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>,
+then we can stop caring about endpoints and start-points, since everything
+starts and stops at <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>. We even have a very canonical loop: the “do-nothing”
+loop<span class="footnote-mark"><a 
+href="Na516.htm#fn2x67"><sup class="textsuperscript">2</sup></a></span><a 
+ id="x515-496004f2"></a> 
+given by standing at <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> the whole time.
+<a 
+ id="x515-496005r1471"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 157--><p class="noindent" ><span class="head">
+<a 
+ id="x515-496006r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Definition 58.2.2.</tspan>  </span><a 
+ id="x515-496007"></a>Denote   the   trivial   “do-nothing   loop”   by   1.   A   loop   <tspan font-family="cmmi" font-size="10">γ  </tspan>is
+<tspan font-family="cmbx" font-size="10">nulhomotopic</tspan> if it is homotopic to 1; i.e. <tspan font-family="cmmi" font-size="10">γ </tspan><tspan font-family="cmsy" font-size="10">≃ </tspan>1.
+</p>
+  </div>
+<!--l. 159--><p class="indent" >
+</p><!--l. 161--><p class="indent" >  For homotopy of loops, you might visualize “reeling in” the loop, contracting it to a single
+point.</p>
+<div class="mdframed" id="mdframed-966">
+<a 
+ id="x515-496008r1472"></a>
+<div class="newtheorem">
+<!--l. 163--><p class="noindent" ><span class="head">
+<a 
+ id="x515-496009r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 58.2.3 </tspan>(Loops in <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> are nulhomotopic)<br 
+class="newline" /> </span><a 
+ id="x515-496010"></a>As the following picture should convince
+you, every loop in the simply connected space <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> is nulhomotopic. </p>
+<div class="center" 
+>
+<!--l. 166--><p class="noindent" >
+</p><!--l. 167--><p class="noindent" ><img 
+src="media/S2-simply.png" alt="PIC"  
+width="170" height="170"  /></p></div>
+<!--l. 169--><p class="noindent" >(Starting with the purple loop, we contract to the red-brown point.)
+</p>
+  </div>
+<!--l. 170--><p class="indent" >  </p></div>
+<!--l. 172--><p class="indent" >  Hence to show that spaces are simply connected it suffices to understand the loops of that
+space. We are now ready to provide: <a 
+ id="x515-496011r1473"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 176--><p class="noindent" ><span class="head">
+<a 
+ id="x515-496012r4"></a>
+<tspan font-family="cmbx" font-size="10">Definition 58.2.4.</tspan>  </span><a 
+ id="x515-496013"></a>The  <tspan font-family="cmbx" font-size="10">fundamental  group</tspan>  of  <tspan font-family="cmmi" font-size="10">X  </tspan>with  basepoint  <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>,  denoted
+<tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>), is the set of homotopy classes
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na2901x.png" alt="{[γ] | γ a loop at x0}
+" class="math-display"  /></div>
+<!--l. 179--><p class="indent" >  equipped with <tspan font-family="cmsy" font-size="10">∗ </tspan>as a group operation.
+</p>
+  </div>
+<!--l. 180--><p class="indent" >
+</p><!--l. 182--><p class="indent" >  It might come as a surprise that this has a group structure. For example, what is the
+inverse? Let’s define it now. <a 
+ id="x515-496014r1474"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 186--><p class="noindent" ><span class="head">
+<a 
+ id="x515-496015r5"></a>
+<tspan font-family="cmbx" font-size="10">Definition 58.2.5.</tspan>  </span><a 
+ id="x515-496016"></a>Given a path <tspan font-family="cmmi" font-size="10">α </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>we can define a path <span class="overline"><tspan font-family="cmmi" font-size="10">α</tspan></span>
+</p>
+  <div class="math-display" >
+<img 
+src="Na2902x.png" alt="α-(t) = α(1 − t).
+" class="math-display"  /></div>
+<!--l. 188--><p class="indent" >  In effect, this “runs <tspan font-family="cmmi" font-size="10">α </tspan>backwards”. Note that <span class="overline"><tspan font-family="cmmi" font-size="10">α</tspan></span> starts at the endpoint of <tspan font-family="cmmi" font-size="10">α </tspan>and ends
+at the starting point of <tspan font-family="cmmi" font-size="10">α</tspan>.
+</p>
+  </div>
+<!--l. 191--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-967">
+<a 
+ id="x515-496017r1475"></a>
+<div class="newtheorem">
+<!--l. 193--><p class="noindent" ><span class="head">
+<a 
+ id="x515-496018r6"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Exercise 58.2.6.</tspan>  </span><a 
+ id="x515-496019"></a><tspan font-family="cmr" font-size="10">Show that for any path </tspan><tspan font-family="cmmi" font-size="10">α</tspan><tspan font-family="cmr" font-size="10">, </tspan><tspan font-family="cmmi" font-size="10">α </tspan><tspan font-family="cmsy" font-size="10">∗</tspan><span class="overline"><tspan font-family="cmmi" font-size="10">α</tspan></span> <tspan font-family="cmr" font-size="10">is homotopic to the “do-nothing” loop at</tspan>
+<tspan font-family="cmmi" font-size="10">α</tspan><tspan font-family="cmr" font-size="10">(0). (Draw a picture.)</tspan></p>
+  </div>
+<!--l. 197--><p class="indent" >  </p></div>
+<!--l. 199--><p class="indent" >  Let’s check it.
+</p><!--l. 200--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 201--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof that this is a group structure.</tspan> </span> Clearly <tspan font-family="cmsy" font-size="10">∗ </tspan>takes two loops at <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> and spits out a loop at
+<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>. We also already took the time to show that <tspan font-family="cmsy" font-size="10">∗ </tspan>is associative. So we only have to check that
+(i) there’s an identity, and (ii) there’s an inverse. </p>
+     <ul class="itemize1">
+     <li class="itemize">We claim that the identity is the “do-nothing” loop 1 we described above. The
+     reader can check that for any <tspan font-family="cmmi" font-size="10">γ</tspan>,
+<div class="math-display" >
+<img 
+src="Na2903x.png" alt="γ ≃ γ ∗ 1 = 1∗ γ.
+" class="math-display"  /></div>
+     </li>
+     <li class="itemize">For a loop <tspan font-family="cmmi" font-size="10">γ</tspan>, recall again we define its “backwards” loop <span class="overline"><tspan font-family="cmmi" font-size="10">γ</tspan></span> by
+<div class="math-display" >
+<img 
+src="Na2904x.png" alt="γ(t) = γ(1−  t).
+" class="math-display"  /></div>
+     <!--l. 212--><p class="noindent" >Then we have <tspan font-family="cmmi" font-size="10">γ </tspan><tspan font-family="cmsy" font-size="10">∗</tspan><span class="overline"><tspan font-family="cmmi" font-size="10">γ</tspan></span> =<span class="overline"> <tspan font-family="cmmi" font-size="10">γ</tspan></span> <tspan font-family="cmsy" font-size="10">∗ </tspan><tspan font-family="cmmi" font-size="10">γ </tspan>= 1.</p></li></ul>
+<!--l. 214--><p class="noindent" >Hence <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) is actually a group.                                                                    □
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 217--><p class="indent" >  Before going any further I had better give some examples.</p>
+<div class="mdframed" id="mdframed-968">
+<a 
+ id="x515-496020r1476"></a>
+<div class="newtheorem">
+<!--l. 219--><p class="noindent" ><span class="head">
+<a 
+ id="x515-496021r7"></a>
+<tspan font-family="cmbx" font-size="10">Example 58.2.7 </tspan>(Examples of fundamental groups)<br 
+class="newline" /> </span><a 
+ id="x515-496022"></a>Note that proving the following results is
+not at all trivial. For now, just try to see intuitively why the claimed answer “should” be
+correct.
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The  fundamental  group  of  <tspan font-family="msbm" font-size="10">ℂ  </tspan>is  the  trivial  group:  in  the  plane,  every  loop  is
+    nulhomotopic. (Proof: imagine it’s a piece of rope and reel it in.)
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">On the other hand, the fundamental group of <tspan font-family="msbm" font-size="10">ℂ</tspan><tspan font-family="cmsy" font-size="10">−{</tspan>0<tspan font-family="cmsy" font-size="10">} </tspan>(meteor example from earlier)
+    with any base point is actually <tspan font-family="msbm" font-size="10">ℤ</tspan>! We won’t be able to prove this for a while, but
+    essentially a loop is determined by the number of times that it winds around the
+    origin – these are so-called <tspan font-family="cmti" font-size="10">winding numbers</tspan>. Think about it!
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">Similarly, we will soon show that the fundamental group of <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> (the boundary of the
+    unit circle) is <tspan font-family="msbm" font-size="10">ℤ</tspan>.</dd></dl>
+<!--l. 235--><p class="noindent" >Officially, I also have to tell you what the base point is, but by symmetry in these examples, it
+doesn’t matter.</p>
+  </div>
+<!--l. 237--><p class="indent" >  </p></div>
+<!--l. 238--><p class="indent" >  Here is the picture for <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">∖{</tspan>0<tspan font-family="cmsy" font-size="10">}</tspan>, with the hole exaggerated as the meteor from <tspan font-family="cmbx" font-size="10">??</tspan> .
+</p>
+<div class="center" 
+>
+<!--l. 240--><p class="noindent" >
+</p>
+</div>
+<div class="mdframed" id="mdframed-969">
+<a 
+ id="x515-496026r1477"></a>
+<div class="newtheorem">
+<!--l. 251--><p class="noindent" ><span class="head">
+<a 
+ id="x515-496027r8"></a>
+<tspan font-family="cmbx" font-size="10">Question 58.2.8.</tspan>  </span><a 
+ id="x515-496028"></a><tspan font-family="cmr" font-size="10">Convince yourself that the fundamental group of </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="7">1</tspan></sup> <tspan font-family="cmr" font-size="10">is </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmr" font-size="10">, and understand why</tspan>
+                                                                                
+                                                                                
+<tspan font-family="cmr" font-size="10">we call these “winding numbers”. (This will be the most important example of a fundamental</tspan>
+<tspan font-family="cmr" font-size="10">group in later chapters, so it’s crucial you figure it out now.)</tspan></p>
+  </div>
+<!--l. 255--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-970">
+<a 
+ id="x515-496029r1478"></a>
+<div class="newtheorem">
+<!--l. 258--><p class="noindent" ><span class="head">
+<a 
+ id="x515-496030r9"></a>
+<tspan font-family="cmbx" font-size="10">Example 58.2.9 </tspan>(The figure eight)<br 
+class="newline" /> </span><a 
+ id="x515-496031"></a> Consider a figure eight <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> <tspan font-family="cmsy" font-size="10">∨ </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>, and let <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> be the
+center. Then
+</p>
+<div class="math-display" >
+<img 
+src="Na2905x.png" alt="    1    1    ∼
+π1(S  ∨ S ,x0)=  ⟨a,b⟩
+" class="math-display"  /></div>
+<!--l. 263--><p class="noindent" >is the <tspan font-family="cmti" font-size="10">free group </tspan>generated on two letters. The idea is that one loop of the eight is <tspan font-family="cmmi" font-size="10">a</tspan>, and the
+other loop is <tspan font-family="cmmi" font-size="10">b</tspan>, so we expect <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> to be generated by this loop <tspan font-family="cmmi" font-size="10">a </tspan>and <tspan font-family="cmmi" font-size="10">b </tspan>(and its inverses <span class="overline"><tspan font-family="cmmi" font-size="10">a</tspan></span> and <span class="overline"><tspan font-family="cmmi" font-size="10">b</tspan></span>).
+These loops don’t talk to each other. </p>
+<div class="center" 
+>
+<!--l. 269--><p class="noindent" >
+</p>
+</div>
+</p>
+  </div>
+<!--l. 281--><p class="indent" >  </p></div>
+<!--l. 283--><p class="indent" >  Recall that in graph theory, we usually assume our graphs are connected, since
+otherwise we can just consider every connected component separately. Likewise, we
+generally want to restrict our attention to path-connected spaces, since if a space isn’t
+path-connected then it can be broken into a bunch of “path-connected components”. (Can you
+guess how to define this?) Indeed, you could imagine a space <tspan font-family="cmmi" font-size="10">X </tspan>that consists of
+the objects on my desk (but not the desk itself): <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> of my phone has nothing to
+do with <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> of my mug. They are just totally disconnected, both figuratively and
+literally.
+</p><!--l. 289--><p class="indent" >  But on the other hand we claim that in a path-connected space, the groups are very
+related!
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-971">
+<a 
+ id="x515-496032r1479"></a>
+<div class="newtheorem">
+<!--l. 291--><p class="noindent" ><span class="head">
+<a 
+ id="x515-496033r10"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 58.2.10 </tspan><tspan font-family="cmss" font-size="10">(Fundamental groups don’t depend on basepoint)</tspan><br 
+class="newline" /> </span><a 
+ id="x515-496034"></a>Let     <tspan font-family="cmmi" font-size="10">X     </tspan>be     a
+path-connected space. Then for any <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">X</tspan>, we have
+</p>
+<div class="math-display" >
+<img 
+src="Na2906x.png" alt="π1 (X, x1) ∼= π1(X,x2).
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 295--><p class="indent" >  </p></div>
+<!--l. 296--><p class="indent" >  Before you read the proof, see if you can guess the isomorphism based just on the picture
+below. </p>
+<div class="center" 
+>
+<!--l. 297--><p class="noindent" >
+</p>
+</div>
+<!--l. 309--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 310--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Let <tspan font-family="cmmi" font-size="10">α </tspan>be any path from <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> to <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> (possible by path-connectedness), and let <span class="overline"><tspan font-family="cmmi" font-size="10">α</tspan></span> be
+its reverse. Then we can construct a map
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na2907x.png" alt="π1(X, x1) → π1(X, x2) by [γ] ↦→ [α-∗ γ ∗ α].
+" class="math-display"  /></div>
+<!--l. 316--><p class="indent" >  In other words, given a loop <tspan font-family="cmmi" font-size="10">γ </tspan>at <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, we can start at <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, follow <span class="overline"><tspan font-family="cmmi" font-size="10">α</tspan></span> to <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, run <tspan font-family="cmmi" font-size="10">γ</tspan>, then
+run along <tspan font-family="cmmi" font-size="10">α </tspan>home to <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. Hence this is a map which builds a loop of <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) from every
+loop at <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>). It is a <tspan font-family="cmti" font-size="10">homomorphism </tspan>of the groups just because
+</p>
+  <div class="math-display" >
+<img 
+src="Na2908x.png" alt=" --          --          --
+(α∗ γ1 ∗ α)∗ (α ∗γ2 ∗α) = α ∗γ1 ∗γ2 ∗α
+" class="math-display"  /></div>
+<!--l. 325--><p class="indent" >  as <tspan font-family="cmmi" font-size="10">α </tspan><tspan font-family="cmsy" font-size="10">∗</tspan><span class="overline"><tspan font-family="cmmi" font-size="10">α</tspan></span> is nulhomotopic.
+</p><!--l. 327--><p class="indent" >  Similarly, there is a homomorphism
+</p>
+  <div class="math-display" >
+<img 
+src="Na2909x.png" alt="π (X, x ) → π (X, x ) by [γ] ↦→ [α ∗ γ ∗ α].
+ 1     2     1     1
+" class="math-display"  /></div>
+<!--l. 332--><p class="indent" >  As these maps are mutual inverses, it follows they must be isomorphisms. End of
+story.                                                                                                          □
+</p>
+  </div>
+<!--l. 335--><p class="noindent" >This is a bigger reason why we usually only care about path-connected spaces.
+<a 
+ id="x515-496035r1480"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 338--><p class="noindent" ><span class="head">
+<a 
+ id="x515-496036r11"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 58.2.11.</tspan>  </span><a 
+ id="x515-496037"></a>For a path-connected space <tspan font-family="cmmi" font-size="10">X </tspan>we will often abbreviate
+<tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) to just <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">X</tspan>), since it doesn’t matter which <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>we pick.
+</p>
+  </div>
+<!--l. 341--><p class="indent" >
+</p><!--l. 343--><p class="indent" >  Finally, recall that we originally defined “simply connected” as saying that any two paths
+with matching endpoints were homotopic. It’s possible to weaken this condition and then
+rephrase it using fundamental groups.</p>
+<div class="mdframed" id="mdframed-972">
+<a 
+ id="x515-496038r1481"></a>
+<div class="newtheorem">
+<!--l. 348--><p class="noindent" ><span class="head">
+<a 
+ id="x515-496039r12"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 58.2.12.</tspan>  </span><a 
+ id="x515-496040"></a><tspan font-family="cmr" font-size="10">Let </tspan><tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmr" font-size="10">be a path-connected space. Prove that </tspan><tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmr" font-size="10">is </tspan><tspan font-family="cmbx" font-size="10">simply connected</tspan> <tspan font-family="cmr" font-size="10">if</tspan>
+<tspan font-family="cmr" font-size="10">and only if </tspan><tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="7">1</tspan></sub><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">X</tspan><tspan font-family="cmr" font-size="10">) is the trivial group. (One direction is easy; the other is a little trickier.)</tspan></p>
+  </div>
+<!--l. 352--><p class="indent" >  </p></div>
+<!--l. 353--><p class="indent" >  This is the “usual” definition of simply connected.
+                                                                                
+                                                                                
+</p>
+  <!--l. 356--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase393.htm" >next</a>] [<a 
+href="Nase366.htm" >prev</a>] [<a 
+href="Nase366.htm#tailNase366.htm" >prev-tail</a>] [<a 
+href="Nase367.htm" >front</a>] [<a 
+href="Nase389.htm#Nach65.htm" >up</a>] </p></div>
+<!--l. 356--><p class="indent" >  <a 
+ id="tailNase367.htm"></a> </p> 
+</body> 
+</html>

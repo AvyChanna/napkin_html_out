@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="Napkin.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="181.02472pt" height="92.84698pt" viewBox="-90.51236 -46.4235 181.02472 92.84698 "> 
+<g transform="translate(0, 46.4235 ) scale(1,-1) translate(0,46.4235 )"> 
+                            </p><g stroke="#000" fill="#000">
+ <g stroke-width="0.4">
+ <g transform="translate(-90.51236,-42.41609)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(90.51236,0)" text-anchor="middle"  font-size="10.95"> 
+                           <g transform="translate(-10.0375,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(10.0375,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmsy" font-size="10">{</tspan>id<tspan font-family="cmsy" font-size="10">}</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+       
+  <g transform="translate(-15.484,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(15.484,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmsy" font-size="10">{</tspan>id<tspan font-family="cmmi" font-size="10">,τ</tspan><tspan font-family="cmsy" font-size="10">}</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+      <g transform="translate(-18.80891,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(18.80891,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmsy" font-size="10">{</tspan>id<tspan font-family="cmmi" font-size="10">,στ</tspan><tspan font-family="cmsy" font-size="10">}</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+     <g transform="translate(-15.79575,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(15.79575,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmsy" font-size="10">{</tspan>id<tspan font-family="cmmi" font-size="10">,σ</tspan><tspan font-family="cmsy" font-size="10">}</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+ 
+          <g transform="translate(-4.3047,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.3047,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmmi" font-size="10">G</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+               </text> 
+</g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -15.26382 28.68616 L -52.79414 7.94864  " fill="none"/>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -0.31175 27.25871 L -0.31175 7.94864  " fill="none"/>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M 14.64032 28.71924 L 52.40439 7.94864  " fill="none"/>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -52.45247 -11.41614 L -9.53102 -34.6824  " fill="none"/>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -0.31175 -11.41614 L -0.31175 -30.72621  " fill="none"/>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M 52.06715 -11.41614 L 8.90752 -34.70378  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g> 
+</svg> 

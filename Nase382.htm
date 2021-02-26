@@ -1,0 +1,313 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Binary products</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 323--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase409.htm" >next</a>] [<a 
+href="Nase381.htm" >prev</a>] [<a 
+href="Nase381.htm#tailNase381.htm" >prev-tail</a>] [<a 
+href="Nach60.htm#tailNase382.htm">tail</a>] [<a 
+href="Nase404.htm#Nase408.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">60.4</span>  <a 
+ id="x536-51400060.4"></a>Binary products</h3>
+<!--l. 324--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">Y </tspan><tspan font-family="cmti" font-size="10">in most concrete categories is the set-theoretic</tspan>
+<tspan font-family="cmti" font-size="10">product.</tspan>
+</p><!--l. 325--><p class="indent" >  The “universal property” is a way of describing objects in terms of maps in such a way that
+it defines the object up to unique isomorphism (much the same as the initial and terminal
+objects).
+</p><!--l. 329--><p class="indent" >  To show how this works in general, let me give a concrete example. Suppose I’m in a
+category – let’s say <tspan font-family="cmss" font-size="10">Set</tspan> for now. I have two sets <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>, and I want to construct the
+Cartesian product <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>as we know it. The philosophy of category theory dictates that I
+should talk about maps only, and avoid referring to anything about the sets themselves. How
+might I do this?
+</p><!--l. 336--><p class="indent" >  Well, let’s think about maps into <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>. The key observation is that</p>
+<div class="mdframed" id="mdframed-1030">
+<!--l. 339--><p class="noindent" ><tspan font-family="cmbx" font-size="10">A function </tspan><tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na2971x.png" alt="f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">Y  </tspan><tspan font-family="cmbx" font-size="10">amounts to a pair of functions </tspan>(<tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na2972x.png" alt="g
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">X,A</tspan><img 
+src="Na2973x.png" alt=" h
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">Y </tspan>)<tspan font-family="cmbx" font-size="10">.</tspan></p><!--l. 341--><p class="noindent" ></p>
+  </div>
+<!--l. 342--><p class="indent" >  Put another way, there is a natural projection map <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">Y </tspan><tspan font-family="msam" font-size="10">↠ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">Y </tspan><tspan font-family="msam" font-size="10">↠ </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>:
+<img 
+src="Na2974x.png" alt="               X
+
+
+X × Y----πX---
+         πY
+
+               Y
+"  />
+(We have to do this in terms of projection maps rather than elements, because category theory
+forces us to talk about arrows.) Now how do I add <tspan font-family="cmmi" font-size="10">A </tspan>to this diagram? The point is that there
+is a bijection between functions <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na2975x.png" alt=" f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>and pairs (<tspan font-family="cmmi" font-size="10">g,h</tspan>) of functions. Thus for every pair
+<tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na2976x.png" alt="g
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na2977x.png" alt=" h
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">Y </tspan>there is a <tspan font-family="cmti" font-size="10">unique </tspan>function <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na2978x.png" alt=" f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>.
+</p><!--l. 356--><p class="indent" >  But <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">×</tspan><tspan font-family="cmmi" font-size="10">Y </tspan>is special in that it is “universal”: for any <tspan font-family="cmti" font-size="10">other </tspan>set <tspan font-family="cmmi" font-size="10">A</tspan>, if you give me functions
+<tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>, I can use it build a <tspan font-family="cmti" font-size="10">unique </tspan>function <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>. Picture:
+<img 
+src="Na2979x.png" alt="                         X
+
+A ........∃!f.-X--g×-Y---πY----
+             h      πX
+
+                         Y
+                                                                                
+                                                                                
+"  />
+We can do this in any general category, defining a so-called product. <a 
+ id="x536-514001r1556"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 367--><p class="noindent" ><span class="head">
+<a 
+ id="x536-514002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 60.4.1.</tspan>  </span><a 
+ id="x536-514003"></a>Let <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>be objects in any category <tspan font-family="cmsy" font-size="10">𝒜</tspan>. The <tspan font-family="cmbx" font-size="10">product</tspan> consists of an
+object <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">×</tspan><tspan font-family="cmmi" font-size="10">Y </tspan>and arrows <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmmi" font-size="8">X</tspan></sub>, <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmmi" font-size="8">Y</tspan> </sub> to <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>(thought of as projection). We require that for
+any object <tspan font-family="cmmi" font-size="10">A </tspan>and arrows <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na2980x.png" alt="g
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">X</tspan>, <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na2981x.png" alt="h
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">Y </tspan>, there is a <tspan font-family="cmti" font-size="10">unique </tspan>function <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na2982x.png" alt="f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>such that the
+diagram <img 
+src="Na2983x.png" alt="                         X
+
+             g     πY
+A ........∃!f.-X--×h-Y----πX----
+
+                         Y
+"  />
+commutes.
+</p>
+  </div>
+<!--l. 378--><p class="indent" >
+<a 
+ id="x536-514004r1557"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 380--><p class="noindent" ><span class="head">
+<a 
+ id="x536-514005r2"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 60.4.2.</tspan>  </span><a 
+ id="x536-514006"></a>Strictly speaking, the product should consist of <tspan font-family="cmti" font-size="10">both </tspan>the
+object <tspan font-family="cmmi" font-size="10">X</tspan><tspan font-family="cmsy" font-size="10">×</tspan><tspan font-family="cmmi" font-size="10">Y </tspan>and the projection maps <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmmi" font-size="8">X</tspan></sub> and <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmmi" font-size="8">Y</tspan> </sub>. However, if <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmmi" font-size="8">X</tspan></sub> and <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmmi" font-size="8">Y</tspan> </sub> are understood,
+then we often use <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>to refer to the object, and refer to it also as the product.
+</p>
+  </div>
+<!--l. 387--><p class="indent" >
+</p><!--l. 389--><p class="indent" >  Products do not always exist; for example, take a category with just two objects and no
+non-identity morphisms. Nonetheless:</p>
+<div class="mdframed" id="mdframed-1031">
+<a 
+ id="x536-514007r1558"></a>
+<div class="newtheorem">
+<!--l. 392--><p class="noindent" ><span class="head">
+<a 
+ id="x536-514008r3"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmssbx" font-size="10">Proposition 60.4.3 </tspan><tspan font-family="cmss" font-size="10">(Uniqueness of products)</tspan><br 
+class="newline" /> </span><a 
+ id="x536-514009"></a>When they exist, products are unique up to
+isomorphism: given two products <tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> of <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>there is an isomorphism between
+the two objects.
+</p>
+  </div>
+<!--l. 396--><p class="indent" >  </p></div>
+<!--l. 397--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 398--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>This is very similar to the proof that initial objects are unique up to unique
+isomorphism. Consider two such objects <tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, and the associated projection maps. So,
+we have a diagram <img 
+src="Na2984x.png" alt="                      1
+             X   ----πX-------
+              |
+              |
+              π2X
+              |
+   ------π1X-------- ----
+P1     f π1Y P2|    g     P1
+              |
+              π2
+              |Y
+
+             Y   -----1-------
+                     πY
+"  />
+There are unique morphisms <tspan font-family="cmmi" font-size="10">f </tspan>and <tspan font-family="cmmi" font-size="10">g </tspan>between <tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> that make the entire diagram
+commute, according to the universal property.
+</p><!--l. 411--><p class="indent" >  On the other hand, look at <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∘</tspan><tspan font-family="cmmi" font-size="10">f </tspan>and focus on just the outer square. Observe that <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∘</tspan><tspan font-family="cmmi" font-size="10">f </tspan>is a
+map which makes the outer square commute, so by the universal property of <tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> it is the only
+one. But id<sub><tspan font-family="cmmi" font-size="8">P</tspan><sub><tspan font-family="cmr" font-size="6">1</tspan></sub></sub> works as well. Thus id<sub><tspan font-family="cmmi" font-size="8">P</tspan><sub><tspan font-family="cmr" font-size="6">1</tspan></sub></sub> = <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">f</tspan>. Similarly, <tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">g </tspan>= id<sub><tspan font-family="cmmi" font-size="8">P</tspan><sub><tspan font-family="cmr" font-size="6">2</tspan></sub></sub> so <tspan font-family="cmmi" font-size="10">f </tspan>and <tspan font-family="cmmi" font-size="10">g </tspan>are
+isomorphisms.                                                                                              □
+</p>
+  </div>
+<a 
+ id="x536-514010r1559"></a>
+  <div class="newtheorem">
+<!--l. 419--><p class="noindent" ><span class="head">
+<a 
+ id="x536-514011r4"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 60.4.4.</tspan>  </span><a 
+ id="x536-514012"></a>Actually, this is not really the morally correct theorem;
+since we’ve only showed the objects <tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> are isomorphic and have not made any
+assertion about the projection maps. But I haven’t (and won’t) define isomorphism of
+the entire product, and so in what follows if I say “<tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> are isomorphic” I really
+                                                                                
+                                                                                
+just mean the objects are isomorphic.
+</p>
+  </div>
+<!--l. 425--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-1032">
+<a 
+ id="x536-514013r1560"></a>
+<div class="newtheorem">
+<!--l. 427--><p class="noindent" ><span class="head">
+<a 
+ id="x536-514014r5"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 60.4.5.</tspan>  </span><a 
+ id="x536-514015"></a><tspan font-family="cmr" font-size="10">In fact, show the products are unique up to </tspan><tspan font-family="cmti" font-size="10">unique </tspan><tspan font-family="cmr" font-size="10">isomorphism: the </tspan><tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmr" font-size="10">and </tspan><tspan font-family="cmmi" font-size="10">g</tspan>
+<tspan font-family="cmr" font-size="10">above are the only isomorphisms between the objects </tspan><tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmr" font-size="7">1</tspan></sub> <tspan font-family="cmr" font-size="10">and </tspan><tspan font-family="cmmi" font-size="10">P</tspan><sub><tspan font-family="cmr" font-size="7">2</tspan></sub><tspan font-family="cmr" font-size="10">.</tspan></p>
+  </div>
+<!--l. 430--><p class="indent" >  </p></div>
+<!--l. 432--><p class="indent" >  The nice fact about this “universal property” mindset is that we don’t have to give explicit
+constructions; assuming existence, the “universal property” allows us to bypass all this work
+by saying “the object with these properties is unique up to unique isomorphism”,
+thus we don’t need to understand the internal workings of the object to use its
+properties.
+</p><!--l. 439--><p class="indent" >  Of course, that’s not to say we can’t give concrete examples.</p>
+<div class="mdframed" id="mdframed-1033">
+<a 
+ id="x536-514016r1561"></a>
+<div class="newtheorem">
+<!--l. 441--><p class="noindent" ><span class="head">
+<a 
+ id="x536-514017r6"></a>
+<tspan font-family="cmbx" font-size="10">Example 60.4.6 </tspan>(Examples of products)<br 
+class="newline" /> </span><a 
+ id="x536-514018"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">In <tspan font-family="cmss" font-size="10">Set</tspan>, the product of two sets <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>is their Cartesian product <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">In <tspan font-family="cmss" font-size="10">Grp</tspan>, the product of <tspan font-family="cmmi" font-size="10">G</tspan>, <tspan font-family="cmmi" font-size="10">H </tspan>is the group product <tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">H</tspan>.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">In <tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>, the product of <tspan font-family="cmmi" font-size="10">V </tspan>and <tspan font-family="cmmi" font-size="10">W </tspan>is <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>.
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate">In <tspan font-family="cmss" font-size="10">CRing</tspan>, the product of <tspan font-family="cmmi" font-size="10">R </tspan>and <tspan font-family="cmmi" font-size="10">S </tspan>is appropriately the ring product <tspan font-family="cmmi" font-size="10">R </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">S</tspan>.
+    </dd><dt class="enumerate">
+(e) </dt><dd 
+class="enumerate">Let <tspan font-family="cmsy" font-size="10">𝒫 </tspan>be a poset interpreted as a category. Then the product of two objects <tspan font-family="cmmi" font-size="10">x </tspan>and <tspan font-family="cmmi" font-size="10">y </tspan>is the
+    <tspan font-family="cmbx" font-size="10">greatest lower bound</tspan>; for example,
+        <ul class="itemize1">
+        <li class="itemize">If the poset is (<tspan font-family="msbm" font-size="10">ℝ</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">≤</tspan>) then it’s min<tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">x,y</tspan><tspan font-family="cmsy" font-size="10">}</tspan>.
+                                                                                
+                                                                                
+        </li>
+        <li class="itemize">If the poset is the subsets of a finite set by inclusion, then it’s <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∩ </tspan><tspan font-family="cmmi" font-size="10">y</tspan>.
+        </li>
+        <li class="itemize">If the poset is the positive integers ordered by division, then it’s gcd(<tspan font-family="cmmi" font-size="10">x,y</tspan>).</li></ul>
+    </dd></dl>
+</p>
+  </div>
+<!--l. 464--><p class="indent" >  </p></div>
+<!--l. 466--><p class="indent" >  Of course, we can define products of more than just one object. Consider a set of objects
+(<tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>)<sub><tspan font-family="cmmi" font-size="8">i</tspan><tspan font-family="cmsy" font-size="8">∈</tspan><tspan font-family="cmmi" font-size="8">I</tspan></sub> in a category <tspan font-family="cmsy" font-size="10">𝒜</tspan>. We define a <tspan font-family="cmbx" font-size="10">cone</tspan> on the <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> to be an object <tspan font-family="cmmi" font-size="10">A </tspan>with some
+“projection” maps to each <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>. Then the <tspan font-family="cmbx" font-size="10">product</tspan> is a cone <tspan font-family="cmmi" font-size="10">P </tspan>which is “universal” in the same
+sense as before: given any other cone <tspan font-family="cmmi" font-size="10">A </tspan>there is a unique map <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">P </tspan>making the diagram
+commute. In short, a product is a “universal cone”.
+</p><!--l. 474--><p class="indent" >  The picture of this is <img 
+src="Na2985x.png" alt="             A|------------------------
+              |
+
+             !∃f
+              |
+             P -------------
+
+
+
+
+
+X1   -X2-----------X3----X4------
+"  />
+See also <tspan font-family="cmbx" font-size="10">??</tspan> .
+</p><!--l. 484--><p class="indent" >  One can also do the dual construction to get a <tspan font-family="cmbx" font-size="10">coproduct</tspan>: given <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>, it’s the object
+<tspan font-family="cmmi" font-size="10">X </tspan>+ <tspan font-family="cmmi" font-size="10">Y </tspan>together with maps <tspan font-family="cmmi" font-size="10">X</tspan><img 
+src="Na2986x.png" alt=" ιX
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">X </tspan>+ <tspan font-family="cmmi" font-size="10">Y </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan><img 
+src="Na2987x.png" alt="ιY
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">X </tspan>+ <tspan font-family="cmmi" font-size="10">Y </tspan>(that’s Greek iota, think inclusion)
+such that for any object <tspan font-family="cmmi" font-size="10">A </tspan>and maps <tspan font-family="cmmi" font-size="10">X</tspan><img 
+src="Na2988x.png" alt="g−→"  class=""  /><tspan font-family="cmmi" font-size="10">A</tspan>, <tspan font-family="cmmi" font-size="10">Y </tspan><img 
+src="Na2989x.png" alt="h−→"  class=""  /><tspan font-family="cmmi" font-size="10">A </tspan>there is a unique <tspan font-family="cmmi" font-size="10">f </tspan>for which
+<img 
+src="Na2990x.png" alt="X ----------g---------
+       ιX
+
+
+
+           --  ---
+    X +  Y  !∃f    A
+
+
+
+        Y
+Y  ----ι--------------
+            h
+"  />
+commutes. We’ll leave some of the concrete examples as an exercise this time, for
+example:
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-1034">
+<a 
+ id="x536-514024r1562"></a>
+<div class="newtheorem">
+<!--l. 501--><p class="noindent" ><span class="head">
+<a 
+ id="x536-514025r7"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 60.4.7.</tspan>  </span><a 
+ id="x536-514026"></a><tspan font-family="cmr" font-size="10">Describe the coproduct in</tspan> <tspan font-family="cmss" font-size="10">Set</tspan><tspan font-family="cmr" font-size="10">.</tspan></p>
+  </div>
+<!--l. 502--><p class="indent" >  </p></div>
+<!--l. 503--><p class="indent" >  Predictable terminology: a coproduct is a universal <tspan font-family="cmbx" font-size="10">cocone</tspan>.
+</p><!--l. 505--><p class="indent" >  Spoiler alert later on: this construction can be generalized vastly to so-called “limits”, and
+we’ll do so later on.
+                                                                                
+                                                                                
+</p>
+  <!--l. 509--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase409.htm" >next</a>] [<a 
+href="Nase381.htm" >prev</a>] [<a 
+href="Nase381.htm#tailNase381.htm" >prev-tail</a>] [<a 
+href="Nase382.htm" >front</a>] [<a 
+href="Nase404.htm#Nase408.htm" >up</a>] </p></div>
+<!--l. 509--><p class="indent" >  <a 
+ id="tailNase382.htm"></a> </p> 
+</body> 
+</html>

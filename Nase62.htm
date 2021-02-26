@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Hausdorff spaces</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 222--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase63.htm" >next</a>] [<a 
+href="Nase61.htm" >prev</a>] [<a 
+href="Nase61.htm#tailNase61.htm" >prev-tail</a>] [<a 
+href="#tailNase62.htm">tail</a>] [<a 
+href="Nach10.htm#Nase62.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">7.3</span>  <a 
+ id="x100-910007.3"></a>Hausdorff spaces</h3>
+<!--l. 223--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Every space that’s not the Zariski topology (defined much</tspan>
+<tspan font-family="cmti" font-size="10">later).</tspan>
+</p><!--l. 225--><p class="indent" >  As you might have guessed, there exist topological spaces which cannot be realized as metric
+spaces (in other words, are not <tspan font-family="cmbx" font-size="10">metrizable</tspan>). One example is just to take <tspan font-family="cmmi" font-size="10">X </tspan>= <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">a,b,c</tspan><tspan font-family="cmsy" font-size="10">} </tspan>and the
+topology <tspan font-family="cmmi" font-size="10">τ</tspan><sub><tspan font-family="cmmi" font-size="8">X</tspan></sub> = <img 
+src="Na263x.png" alt="{∅,{a,b,c}}"  class="left" align="middle" />. This topology is fairly “stupid”: it can’t tell apart any of the
+points <tspan font-family="cmmi" font-size="10">a</tspan>, <tspan font-family="cmmi" font-size="10">b</tspan>, <tspan font-family="cmmi" font-size="10">c</tspan>! But any metric space can tell its points apart (because <tspan font-family="cmmi" font-size="10">d</tspan>(<tspan font-family="cmmi" font-size="10">x,y</tspan>) <tspan font-family="cmmi" font-size="10">&#x003E; </tspan>0 when
+<tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmmi" font-size="10">≠</tspan><tspan font-family="cmmi" font-size="10">y</tspan>).
+</p><!--l. 234--><p class="indent" >  We’ll see less trivial examples later, but for now we want to add a little more sanity
+condition onto our spaces. There is a whole hierarchy of such axioms, labelled <tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> for integers
+<tspan font-family="cmmi" font-size="10">n </tspan>(with <tspan font-family="cmmi" font-size="10">n </tspan>= 0 being the weakest and <tspan font-family="cmmi" font-size="10">n </tspan>= 6 the strongest); these axioms are called <tspan font-family="cmbx" font-size="10">separation</tspan>
+<tspan font-family="cmbx" font-size="10">axioms</tspan>.
+</p><!--l. 240--><p class="indent" >  By far the most common hypothesis is the <tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> axiom, which bears a special name.
+<a 
+ id="x100-91001r282"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 243--><p class="noindent" ><span class="head">
+<a 
+ id="x100-91002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 7.3.1.</tspan>  </span><a 
+ id="x100-91003"></a>A topological space <tspan font-family="cmmi" font-size="10">X </tspan>is <tspan font-family="cmbx" font-size="10">Hausdorff</tspan> if for any two distinct points <tspan font-family="cmmi" font-size="10">p</tspan>
+and <tspan font-family="cmmi" font-size="10">q </tspan>in <tspan font-family="cmmi" font-size="10">X</tspan>, there exists an open neighborhood <tspan font-family="cmmi" font-size="10">U </tspan>of <tspan font-family="cmmi" font-size="10">p </tspan>and an open neighborhood <tspan font-family="cmmi" font-size="10">V </tspan>of
+<tspan font-family="cmmi" font-size="10">q </tspan>such that
+</p>
+  <div class="math-display" >
+<img 
+src="Na264x.png" alt="U ∩ V  = ∅.
+" class="math-display"  /></div>
+  </div>
+                                                                                
+                                                                                
+<!--l. 248--><p class="indent" >
+</p><!--l. 250--><p class="indent" >  In other words, around any two distinct points we should be able to draw disjoint
+open neighborhoods. Here’s a picture to go with above, but not much going on.
+</p>
+<div class="center" 
+>
+<!--l. 254--><p class="noindent" >
+</p>
+</div>
+<div class="mdframed" id="mdframed-183">
+<a 
+ id="x100-91004r283"></a>
+<div class="newtheorem">
+<!--l. 267--><p class="noindent" ><span class="head">
+<a 
+ id="x100-91005r2"></a>
+<tspan font-family="cmbx" font-size="10">Question 7.3.2.</tspan>  </span><a 
+ id="x100-91006"></a><tspan font-family="cmr" font-size="10">Show that all metric spaces are Hausdorff.</tspan></p>
+  </div>
+<!--l. 268--><p class="indent" >  </p></div>
+<!--l. 270--><p class="indent" >  I just want to define this here so that I can use this word later. In any case, basically any
+space we will encounter other than the Zariski topology is Hausdorff.
+                                                                                
+                                                                                
+</p>
+  <!--l. 275--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase63.htm" >next</a>] [<a 
+href="Nase61.htm" >prev</a>] [<a 
+href="Nase61.htm#tailNase61.htm" >prev-tail</a>] [<a 
+href="Nase62.htm" >front</a>] [<a 
+href="Nach10.htm#Nase62.htm" >up</a>] </p></div>
+<!--l. 275--><p class="indent" >  <a 
+ id="tailNase62.htm"></a> </p> 
+</body> 
+</html>

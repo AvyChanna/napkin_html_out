@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Homomorphisms</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 268--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase43.htm" >next</a>] [<a 
+href="Nase41.htm" >prev</a>] [<a 
+href="Nase41.htm#tailNase41.htm" >prev-tail</a>] [<a 
+href="#tailNase42.htm">tail</a>] [<a 
+href="Nach7.htm#Nase42.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">4.5</span>  <a 
+ id="x69-640004.5"></a>Homomorphisms</h3>
+<!--l. 269--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>5<tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmti" font-size="10">by modding out by </tspan>5<tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 270--><p class="indent" >  This section is going to go briskly – it’s the obvious generalization of all the stuff we did with quotient
+groups.<span class="footnote-mark"><a 
+href="Na70.htm#fn2x8"><sup class="textsuperscript">2</sup></a></span><a 
+ id="x69-64001f2"></a> 
+</p><!--l. 283--><p class="indent" >  First, we define a homomorphism and isomorphism. <a 
+ id="x69-64002r178"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 285--><p class="noindent" ><span class="head">
+<a 
+ id="x69-64003r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 4.5.1.</tspan>  </span><a 
+ id="x69-64004"></a>Let <tspan font-family="cmmi" font-size="10">R </tspan>= (<tspan font-family="cmmi" font-size="10">R,</tspan>+<sub><tspan font-family="cmmi" font-size="8">R</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">×</tspan><sub><tspan font-family="cmmi" font-size="8">R</tspan></sub>) and <tspan font-family="cmmi" font-size="10">S </tspan>= (<tspan font-family="cmmi" font-size="10">S,</tspan>+<sub><tspan font-family="cmmi" font-size="8">S</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">×</tspan><sub><tspan font-family="cmmi" font-size="8">S</tspan></sub>) be rings. A <tspan font-family="cmbx" font-size="10">ring homomorphism</tspan>
+is a map <tspan font-family="cmmi" font-size="10">ϕ </tspan>: <tspan font-family="cmmi" font-size="10">R </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">S </tspan>such that
+     </p><dl class="enumerate"><dt class="enumerate">
+  (i) </dt><dd 
+class="enumerate"><tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">x </tspan>+ <sub><tspan font-family="cmmi" font-size="8">R</tspan></sub><tspan font-family="cmmi" font-size="10">y</tspan>) = <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) + <sub><tspan font-family="cmmi" font-size="8">S</tspan></sub><tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">y</tspan>) for each <tspan font-family="cmmi" font-size="10">x,y </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">R</tspan>.
+     </dd><dt class="enumerate">
+ (ii) </dt><dd 
+class="enumerate"><tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">×</tspan><sub><tspan font-family="cmmi" font-size="8">R</tspan></sub><tspan font-family="cmmi" font-size="10">y</tspan>) = <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) <tspan font-family="cmsy" font-size="10">×</tspan><sub><tspan font-family="cmmi" font-size="8">S</tspan></sub><tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">y</tspan>) for each <tspan font-family="cmmi" font-size="10">x,y </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">R</tspan>.
+     </dd><dt class="enumerate">
+ (iii) </dt><dd 
+class="enumerate"><tspan font-family="cmmi" font-size="10">ϕ</tspan>(1<sub><tspan font-family="cmmi" font-size="8">R</tspan></sub>) = 1<sub><tspan font-family="cmmi" font-size="8">S</tspan></sub>.</dd></dl>
+<!--l. 293--><p class="noindent" >If <tspan font-family="cmmi" font-size="10">ϕ </tspan>is a bijection then <tspan font-family="cmmi" font-size="10">ϕ </tspan>is an <tspan font-family="cmbx" font-size="10">isomorphism</tspan> and we say that rings <tspan font-family="cmmi" font-size="10">R </tspan>and <tspan font-family="cmmi" font-size="10">S </tspan>are <tspan font-family="cmbx" font-size="10">isomorphic</tspan>.
+</p>
+  </div>
+<!--l. 295--><p class="indent" >
+Just what you would expect. The only surprise is that we also demand <tspan font-family="cmmi" font-size="10">ϕ</tspan>(1<sub><tspan font-family="cmmi" font-size="8">R</tspan></sub>) to go to
+1<sub><tspan font-family="cmmi" font-size="8">S</tspan></sub>. This condition is not extraneous: consider the map <tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℤ </tspan>called “multiply by
+zero”.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-122">
+<a 
+ id="x69-64008r179"></a>
+<div class="newtheorem">
+<!--l. 301--><p class="noindent" ><span class="head">
+<a 
+ id="x69-64009r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 4.5.2 </tspan>(Examples of homomorphisms)<br 
+class="newline" /> </span><a 
+ id="x69-64010"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The identity map, as always.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The map <tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>5<tspan font-family="msbm" font-size="10">ℤ </tspan>modding out by 5.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The map <tspan font-family="msbm" font-size="10">ℝ</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>by <tspan font-family="cmmi" font-size="10">p</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>)<img 
+src="Na210x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">p</tspan>(0) by taking the constant term.
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate">For any ring <tspan font-family="cmmi" font-size="10">R</tspan>, there is a trivial ring homomorphism <tspan font-family="cmmi" font-size="10">R </tspan><tspan font-family="cmsy" font-size="10">→ </tspan>0.</dd></dl>
+</p>
+  </div>
+<!--l. 310--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-123">
+<a 
+ id="x69-64015r180"></a>
+<div class="newtheorem">
+<!--l. 312--><p class="noindent" ><span class="head">
+<a 
+ id="x69-64016r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 4.5.3 </tspan>(Non-examples of homomorphisms)<br 
+class="newline" /> </span><a 
+ id="x69-64017"></a>Because we require 1<sub><tspan font-family="cmmi" font-size="8">R</tspan></sub> to 1<sub><tspan font-family="cmmi" font-size="8">S</tspan></sub>, some maps
+that you might have thought were homomorphisms will fail.
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The map <tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℤ </tspan>by <tspan font-family="cmmi" font-size="10">x</tspan><img 
+src="Na211x.png" alt="↦→"  class="mapsto"  />2<tspan font-family="cmmi" font-size="10">x </tspan>is not a ring homomomorphism. Aside from the fact it
+    sends 1 to 2, it also does not preserve multiplication.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">If <tspan font-family="cmmi" font-size="10">S </tspan>is a nontrivial ring, the map <tspan font-family="cmmi" font-size="10">R </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">S </tspan>by <tspan font-family="cmmi" font-size="10">x</tspan><img 
+src="Na212x.png" alt="↦→"  class="mapsto"  />0 is not a ring homomorphism, even
+    though it preserves multiplication.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">There is no ring homomorphism <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2016<tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℤ </tspan>at all.</dd></dl>
+<!--l. 327--><p class="noindent" >In particular, whereas for groups <tspan font-family="cmmi" font-size="10">G </tspan>and <tspan font-family="cmmi" font-size="10">H </tspan>there was always a trivial group homomorphism
+sending everything in <tspan font-family="cmmi" font-size="10">G </tspan>to 1<sub><tspan font-family="cmmi" font-size="8">H</tspan></sub>, this is not the case for rings.
+</p>
+  </div>
+<!--l. 330--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 332--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase43.htm" >next</a>] [<a 
+href="Nase41.htm" >prev</a>] [<a 
+href="Nase41.htm#tailNase41.htm" >prev-tail</a>] [<a 
+href="Nase42.htm" >front</a>] [<a 
+href="Nach7.htm#Nase42.htm" >up</a>] </p></div>
+<!--l. 332--><p class="indent" >  <a 
+ id="tailNase42.htm"></a> </p> 
+</body> 
+</html>

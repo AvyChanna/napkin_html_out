@@ -1,0 +1,236 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Shor’s algorithm</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 176--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase169.htm" >prev</a>] [<a 
+href="Nase169.htm#tailNase169.htm" >prev-tail</a>] [<a 
+href="#tailNase170.htm">tail</a>] [<a 
+href="Nach28.htm#Nase170.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">25.3</span>  <a 
+ id="x244-23200025.3"></a>Shor’s algorithm</h3>
+<!--l. 177--><p class="noindent" >The quantum Fourier transform is the key piece of Shor’s algorithm. Now that we have it, we
+can solve the factoring problem.
+</p><!--l. 180--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">p,q &#x003E; </tspan>3 be odd primes, and assume <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmmi" font-size="10">≠</tspan><tspan font-family="cmmi" font-size="10">q</tspan>. The main idea is to turn factoring an integer
+<tspan font-family="cmmi" font-size="10">M </tspan>= <tspan font-family="cmmi" font-size="10">pq </tspan>into a problem about finding the order of <tspan font-family="cmmi" font-size="10">x </tspan>(mod <tspan font-family="cmmi" font-size="10">M</tspan>); the latter is a “periodicity”
+problem that the quantum Fourier transform will let us solve. Specifically, say that an <tspan font-family="cmmi" font-size="10">x</tspan>
+(mod <tspan font-family="cmmi" font-size="10">M</tspan>) is <tspan font-family="cmti" font-size="10">good </tspan>if
+     </p><dl class="enumerate"><dt class="enumerate">
+  (i) </dt><dd 
+class="enumerate">gcd(<tspan font-family="cmmi" font-size="10">x,M</tspan>) = 1,
+     </dd><dt class="enumerate">
+ (ii) </dt><dd 
+class="enumerate">The order <tspan font-family="cmmi" font-size="10">r </tspan>of <tspan font-family="cmmi" font-size="10">x </tspan>(mod <tspan font-family="cmmi" font-size="10">M</tspan>) is even, and
+     </dd><dt class="enumerate">
+ (iii) </dt><dd 
+class="enumerate">Factoring  0  <tspan font-family="cmsy" font-size="10">≡ </tspan>(<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">r∕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>1)(<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">r∕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup> + 1) (mod <tspan font-family="cmmi" font-size="10">M</tspan>),  neither  of  the  two  factors  is  0
+     (mod <tspan font-family="cmmi" font-size="10">M</tspan>). Thus one of them is divisible by <tspan font-family="cmmi" font-size="10">p</tspan>, and the other is divisible by <tspan font-family="cmmi" font-size="10">q</tspan>.</dd></dl>
+<div class="mdframed" id="mdframed-485">
+<a 
+ id="x244-232004r762"></a>
+<div class="newtheorem">
+<!--l. 194--><p class="noindent" ><span class="head">
+<a 
+ id="x244-232005r1"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 25.3.1 </tspan><tspan font-family="cmr" font-size="10">(For contest number theory practice)</tspan><tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x244-232006"></a><tspan font-family="cmr" font-size="10">Show that for </tspan><tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmr" font-size="10">= </tspan><tspan font-family="cmmi" font-size="10">pq </tspan><tspan font-family="cmr" font-size="10">at least half of</tspan>
+<tspan font-family="cmr" font-size="10">the residues in (</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕M</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmr" font-size="10">)</tspan><tspan font-family="cmsy" font-size="7">×</tspan> <tspan font-family="cmr" font-size="10">are good.</tspan></p>
+</div>
+<!--l. 197--><p class="indent" >  </p></div>
+<!--l. 199--><p class="indent" >  So if we can find the order of an arbitrary <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan>(<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕M</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>)<tspan font-family="cmsy" font-size="8">×</tspan>, then we just keep picking <tspan font-family="cmmi" font-size="10">x </tspan>until
+we pick a good one (this happens more than half the time); once we do, we compute
+gcd(<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">r∕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>1<tspan font-family="cmmi" font-size="10">,M</tspan>) using the Euclidean algorithm to extract one of the prime factors of <tspan font-family="cmmi" font-size="10">M</tspan>, and
+we’re home free.
+</p><!--l. 205--><p class="indent" >  Now how do we do this? The idea is not so difficult: first we generate a sequence which is
+periodic modulo <tspan font-family="cmmi" font-size="10">r</tspan>.</p>
+<div class="mdframed" id="mdframed-486">
+<a 
+ id="x244-232007r763"></a>
+<div class="newtheorem">
+<!--l. 207--><p class="noindent" ><span class="head">
+<a 
+ id="x244-232008r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Example 25.3.2 </tspan>(Factoring 77: generating the periodic state)<br 
+class="newline" /> </span><a 
+ id="x244-232009"></a>Let’s say we’re trying to
+factor <tspan font-family="cmmi" font-size="10">M </tspan>= 77, and we randomly select <tspan font-family="cmmi" font-size="10">x </tspan>= 2, and want to find its order <tspan font-family="cmmi" font-size="10">r</tspan>. Let <tspan font-family="cmmi" font-size="10">n </tspan>= 13
+and <tspan font-family="cmmi" font-size="10">N </tspan>= 2<sup><tspan font-family="cmr" font-size="8">13</tspan></sup>, and start by initializing the state
+</p>
+<div class="math-display" >
+<img 
+src="Na1309x.png" alt="       1  N∑− 1
+|ψ⟩ = √---    |k⟩.
+        N k=0
+" class="math-display"  /></div>
+<!--l. 212--><p class="noindent" >Now, build a circuit <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">x</tspan></sub> (depending on <tspan font-family="cmmi" font-size="10">x </tspan>= 2!) which takes <img 
+src="Na1310x.png" alt="|k⟩"  class="left" align="middle" /><img 
+src="Na1311x.png" alt="|0⟩"  class="left" align="middle" /> to <img 
+src="Na1312x.png" alt="|k⟩"  class="left" align="middle" /><img 
+src="Na1313x.png" alt="  k        ⟩
+ |2 mod  M"  class="left" align="middle" />.
+Applying this to <img 
+src="Na1314x.png" alt="|ψ⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1315x.png" alt="|0⟩"  class="left" align="middle" /> gives
+</p>
+<div class="math-display" >
+<img 
+src="Na1316x.png" alt="                N −1                 ⟩
+U(|ψ⟩ |0⟩) = √1-- ∑  |k⟩⊗  |2k  mod  M   .
+              N
+                 k=0
+" class="math-display"  /></div>
+<!--l. 217--><p class="noindent" >Now suppose we measure the second qubit, and get a state of <img 
+src="Na1317x.png" alt="|128⟩"  class="left" align="middle" />. That tells us that
+the collapsed state now, up to scaling, is
+</p>
+<div class="math-display" >
+<img 
+src="Na1318x.png" alt="( |7⟩+  |7 + r⟩+ |7 + 2r⟩+ ...)⊗ |128⟩.
+                                                                                
+                                                                                
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 220--><p class="indent" >  </p></div>
+<!--l. 221--><p class="indent" >  The bottleneck is actually the circuit <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">x</tspan></sub>; one can compute <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">k</tspan></sup> (mod <tspan font-family="cmmi" font-size="10">M</tspan>) by using repeated
+squaring, but it’s still the clumsy part of the whole operation.
+</p><!--l. 225--><p class="indent" >  In general, the operation is: </p>
+     <ul class="itemize1">
+     <li class="itemize">Pick a sufficiently large <tspan font-family="cmmi" font-size="10">N </tspan>= 2<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> (say, <tspan font-family="cmmi" font-size="10">N </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan><tspan font-family="cmmi" font-size="10">M</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>).
+     </li>
+     <li class="itemize">Generate <img 
+src="Na1319x.png" alt="|ψ⟩"  class="left" align="middle" /> = <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">=0</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan>
+       </sup><img 
+src="Na1320x.png" alt="|k⟩"  class="left" align="middle" />.
+     </li>
+     <li class="itemize">Build a circuit <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">x</tspan></sub> which computes <img 
+src="Na1321x.png" alt="|xk  mod M  ⟩"  class="left" align="middle" />.
+     </li>
+     <li class="itemize">Apply it to get a state <img 
+src="Na1322x.png" alt="√1N-"  class="frac" align="middle" /> <tspan font-family="cmex" font-size="10">∑</tspan>
+    <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">=0</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan>
+       </sup><img 
+src="Na1323x.png" alt="|k⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1324x.png" alt="           ⟩
+|xk mod  M"  class="left" align="middle" />.
+     </li>
+     <li class="itemize">Measure the second qubit to cause the first qubit to collapse to something which
+     is periodic modulo <tspan font-family="cmmi" font-size="10">r</tspan>. Let <img 
+src="Na1325x.png" alt="|ϕ⟩"  class="left" align="middle" /> denote the left qubit.</li></ul>
+<!--l. 237--><p class="indent" >  Suppose we apply the quantum Fourier transform to the left qubit <img 
+src="Na1326x.png" alt="|ϕ⟩"  class="left" align="middle" /> now: since the left
+bit is periodic modulo <tspan font-family="cmmi" font-size="10">r</tspan>, we expect the transform will tell us what <tspan font-family="cmmi" font-size="10">r </tspan>is. Unfortunately,
+this doesn’t quite work out, since <tspan font-family="cmmi" font-size="10">N </tspan>is a power of two, but we don’t expect <tspan font-family="cmmi" font-size="10">r </tspan>to
+be.
+</p><!--l. 243--><p class="indent" >  Nevertheless, consider a state
+</p>
+  <div class="math-display" >
+<img 
+src="Na1327x.png" alt="|ϕ⟩ = |k0⟩+  |k0 + r⟩+ ...
+" class="math-display"  /></div>
+<!--l. 245--><p class="indent" >  so for example previously we had <tspan font-family="cmmi" font-size="10">k</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> = 7 if we measured 128 on <tspan font-family="cmmi" font-size="10">x </tspan>= 2. Applying the
+quantum Fourier transform, we see that the coefficient of <img 
+src="Na1328x.png" alt="|j⟩"  class="left" align="middle" /> in the transformed image is
+equal to
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1329x.png" alt="     (                           )
+ωkN0j⋅ ω0N +  ωjNr+ ω2Njr+ ω3jNr + ...
+" class="math-display"  /></div>
+<!--l. 253--><p class="indent" >  As this is a sum of roots of unity, we realize we have destructive interference unless
+<tspan font-family="cmmi" font-size="10">ω</tspan><sub><tspan font-family="cmmi" font-size="8">N</tspan></sub><sup><tspan font-family="cmmi" font-size="8">jr</tspan></sup> = 1 (since <tspan font-family="cmmi" font-size="10">N </tspan>is large). In other words, we approximately have
+</p>
+  <div class="math-display" >
+<img 
+src="Na1330x.png" alt="U    (|ϕ⟩) ≈  ∑    |j⟩
+  QFT
+            j0≤rj∕&#x003C;NN∈ℤ
+" class="math-display"  /></div>
+<!--l. 261--><p class="indent" >  up to scaling as usual. The bottom line is that</p>
+<div class="mdframed" id="mdframed-487">
+<!--l. 264--><p class="noindent" ><tspan font-family="cmbx" font-size="10">If we measure </tspan><tspan font-family="cmmi" font-size="10">U</tspan><tspan font-family="cmr" font-size="8">QFT</tspan><img 
+src="Na1331x.png" alt="|ϕ⟩"  class="left" align="middle" /> <tspan font-family="cmbx" font-size="10">we obtain a </tspan><img 
+src="Na1332x.png" alt="|j⟩"  class="left" align="middle" /> <tspan font-family="cmbx" font-size="10">such that</tspan> <img 
+src="Na1333x.png" alt="jr
+N-"  class="frac" align="middle" /> <tspan font-family="cmbx" font-size="10">is close to an </tspan><tspan font-family="cmmi" font-size="10">s </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmbx" font-size="10">.</tspan></p><!--l. 266--><p class="noindent" ></p>
+  </div>
+<!--l. 267--><p class="indent" >  And thus given sufficient luck we can use continued fractions to extract the value of
+<tspan font-family="cmmi" font-size="10">r</tspan>.</p>
+<div class="mdframed" id="mdframed-488">
+<a 
+ id="x244-232010r764"></a>
+<div class="newtheorem">
+<!--l. 271--><p class="noindent" ><span class="head">
+<a 
+ id="x244-232011r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 25.3.3 </tspan>(Finishing the factoring of <tspan font-family="cmmi" font-size="10">M </tspan>= 77)<br 
+class="newline" /> </span><a 
+ id="x244-232012"></a>As
+before, we made an observation to the second qubit, and thus the first qubit collapses to
+the state <img 
+src="Na1334x.png" alt="|ϕ⟩"  class="left" align="middle" /> = <img 
+src="Na1335x.png" alt="|7⟩"  class="left" align="middle" /> + <img 
+src="Na1336x.png" alt="|7+  r⟩"  class="left" align="middle" /> + <tspan font-family="cmmi" font-size="10">…</tspan>. Now we make a measurement and obtain <tspan font-family="cmmi" font-size="10">j </tspan>= 4642,
+which means that for some integer <tspan font-family="cmmi" font-size="10">s </tspan>we have
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na1337x.png" alt="4642r-≈ s.
+ 213
+" class="math-display"  /></div>
+<!--l. 278--><p class="noindent" >Now, we analyze the continued fraction of <img 
+src="Na1338x.png" alt="4642-
+213"  class="frac" align="middle" />; we find the first few convergents are
+</p>
+<div class="math-display" >
+<img 
+src="Na1339x.png" alt="     1- 4- 13- 17- 1152-
+0, 1, 2, 7, 23, 30, 2033 , ...
+" class="math-display"  /></div>
+<!--l. 290--><p class="noindent" >So <img 
+src="Na1340x.png" alt="1370"  class="frac" align="middle" /> is a very good approximation, hence we deduce <tspan font-family="cmmi" font-size="10">s </tspan>= 17 and <tspan font-family="cmmi" font-size="10">r </tspan>= 30 as candidates.
+And indeed, one can check that <tspan font-family="cmmi" font-size="10">r </tspan>= 30 is the desired order.
+</p>
+  </div>
+<!--l. 293--><p class="indent" >  </p></div>
+<!--l. 295--><p class="indent" >  This won’t work all the time (for example, we could get unlucky and measure <tspan font-family="cmmi" font-size="10">j </tspan>= 0,
+i.e. <tspan font-family="cmmi" font-size="10">s </tspan>= 0, which would tell us no information at all).
+</p><!--l. 298--><p class="indent" >  But one can show that we succeed any time that
+</p>
+  <div class="math-display" >
+<img 
+src="Na1341x.png" alt="gcd(s,r) = 1.
+" class="math-display"  /></div>
+<!--l. 299--><p class="indent" >  This happens at least <img 
+src="Na1342x.png" alt="l1ogr-"  class="frac" align="middle" /> of the time, and since <tspan font-family="cmmi" font-size="10">r &#x003C; M </tspan>this means that given
+sufficiently many trials, we will eventually extract the correct order <tspan font-family="cmmi" font-size="10">r</tspan>. This is Shor’s
+algorithm.
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+</p>
+  <!--l. 92--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase169.htm" >prev</a>] [<a 
+href="Nase169.htm#tailNase169.htm" >prev-tail</a>] [<a 
+href="Nase170.htm" >front</a>] [<a 
+href="Nach28.htm#Nase170.htm" >up</a>] </p></div>
+<!--l. 92--><p class="indent" >  <a 
+ id="tailNase170.htm"></a> </p> 
+</body> 
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Closed sets</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 627--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase30.htm" >next</a>] [<a 
+href="Nase28.htm" >prev</a>] [<a 
+href="Nase28.htm#tailNase28.htm" >prev-tail</a>] [<a 
+href="#tailNase29.htm">tail</a>] [<a 
+href="Nach5.htm#Nase29.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">2.7</span>  <a 
+ id="x50-480002.7"></a>Closed sets</h3>
+<!--l. 628--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">The closed unit disk </tspan><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">r</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmti" font-size="10">in </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 629--><p class="indent" >  It would be criminal for me to talk about open sets without talking about closed sets. The
+name “closed” comes from the definition in a metric space. <a 
+ id="x50-48001r99"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 633--><p class="noindent" ><span class="head">
+<a 
+ id="x50-48002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 2.7.1.</tspan>  </span><a 
+ id="x50-48003"></a>Let <tspan font-family="cmmi" font-size="10">M </tspan>be a metric space. A subset <tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">M </tspan>is <tspan font-family="cmbx" font-size="10">closed</tspan> in <tspan font-family="cmmi" font-size="10">M </tspan>if the
+following property holds: let <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, …be a sequence of points in <tspan font-family="cmmi" font-size="10">S </tspan>and suppose that <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>
+converges to <tspan font-family="cmmi" font-size="10">x </tspan>in <tspan font-family="cmmi" font-size="10">M</tspan>. Then <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">S </tspan>as well.
+</p>
+  </div>
+<!--l. 638--><p class="indent" >
+<a 
+ id="x50-48004r100"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 640--><p class="noindent" ><span class="head">
+<a 
+ id="x50-48005r2"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 2.7.2.</tspan>  </span><a 
+ id="x50-48006"></a>Same caveat: we abbreviate “closed in <tspan font-family="cmmi" font-size="10">M</tspan>” to just “closed”
+if the parent space <tspan font-family="cmmi" font-size="10">M </tspan>is understood.
+</p>
+  </div>
+<!--l. 642--><p class="indent" >
+Here’s another way to phrase it. The <tspan font-family="cmbx" font-size="10">limit points</tspan> of a subset <tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">M </tspan>are defined
+by
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na123x.png" alt="lim S :=  {p ∈ M : ∃(xn) ∈ S such that xn → p}.
+" class="math-display"  /></div>
+<!--l. 647--><p class="indent" >  Thus <tspan font-family="cmmi" font-size="10">S </tspan>is closed if and only if <tspan font-family="cmmi" font-size="10">S </tspan>= lim<tspan font-family="cmmi" font-size="10">S</tspan>.</p>
+<div class="mdframed" id="mdframed-71">
+<a 
+ id="x50-48007r101"></a>
+<div class="newtheorem">
+<!--l. 650--><p class="noindent" ><span class="head">
+<a 
+ id="x50-48008r3"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 2.7.3.</tspan>  </span><a 
+ id="x50-48009"></a><tspan font-family="cmr" font-size="10">Prove that</tspan> <tspan font-family="cmr" font-size="10">lim</tspan><tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmr" font-size="10">is closed even if </tspan><tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmr" font-size="10">isn’t closed. (Draw a picture.)</tspan></p>
+  </div>
+<!--l. 651--><p class="indent" >  </p></div>
+<!--l. 652--><p class="indent" >  For this reason, lim<tspan font-family="cmmi" font-size="10">S </tspan>is also called the <tspan font-family="cmbx" font-size="10">closure</tspan> of <tspan font-family="cmmi" font-size="10">S </tspan>in <tspan font-family="cmmi" font-size="10">M</tspan>, and denoted <span class="overline"><tspan font-family="cmmi" font-size="10">S</tspan></span>. It is simply the
+smallest closed set which contains <tspan font-family="cmmi" font-size="10">S</tspan>.</p>
+<div class="mdframed" id="mdframed-72">
+<a 
+ id="x50-48010r102"></a>
+<div class="newtheorem">
+<!--l. 657--><p class="noindent" ><span class="head">
+<a 
+ id="x50-48011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 2.7.4 </tspan>(Examples of closed sets)<br 
+class="newline" /> </span><a 
+ id="x50-48012"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The empty set <tspan font-family="msbm" font-size="10">∅ </tspan>is closed in <tspan font-family="cmmi" font-size="10">M </tspan>for vacuous reasons: there are no sequences of points
+    with elements in <tspan font-family="msbm" font-size="10">∅</tspan>.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The entire space <tspan font-family="cmmi" font-size="10">M </tspan>is closed in <tspan font-family="cmmi" font-size="10">M </tspan>for tautological reasons. (Verify this!)
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The closed interval [0<tspan font-family="cmmi" font-size="10">,</tspan>1] in <tspan font-family="msbm" font-size="10">ℝ </tspan>is closed in <tspan font-family="msbm" font-size="10">ℝ</tspan>, hence the name. Like with open sets,
+    this is the prototypical example of a closed set to keep in mind!
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate">In fact, the closed interval [0<tspan font-family="cmmi" font-size="10">,</tspan>1] is even closed in <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>.</dd></dl>
+</p>
+  </div>
+<!--l. 667--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-73">
+<a 
+ id="x50-48017r103"></a>
+<div class="newtheorem">
+<!--l. 669--><p class="noindent" ><span class="head">
+<a 
+ id="x50-48018r5"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Example 2.7.5 </tspan>(Non-examples of closed sets)<br 
+class="newline" /> </span><a 
+ id="x50-48019"></a>Let <tspan font-family="cmmi" font-size="10">S </tspan>= (0<tspan font-family="cmmi" font-size="10">,</tspan>1) denote the open interval.
+Then <tspan font-family="cmmi" font-size="10">S </tspan>is not closed in <tspan font-family="msbm" font-size="10">ℝ </tspan>because the sequence of points
+</p>
+<div class="math-display" >
+<img 
+src="Na124x.png" alt="1, 1, 1, ...
+2  4  8
+" class="math-display"  /></div>
+<!--l. 679--><p class="noindent" >converges to 0 <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>, but 0<img 
+src="Na125x.png" alt="∕∈"  class="notin"  />(0<tspan font-family="cmmi" font-size="10">,</tspan>1).
+</p>
+  </div>
+<!--l. 680--><p class="indent" >  </p></div>
+<!--l. 682--><p class="indent" >  I should now warn you about a confusing part of this terminology. Firstly, <tspan font-family="cmbx" font-size="10">“most” sets are</tspan>
+<tspan font-family="cmbx" font-size="10">neither open nor closed</tspan>.</p>
+<div class="mdframed" id="mdframed-74">
+<a 
+ id="x50-48020r104"></a>
+<div class="newtheorem">
+<!--l. 684--><p class="noindent" ><span class="head">
+<a 
+ id="x50-48021r6"></a>
+<tspan font-family="cmbx" font-size="10">Example 2.7.6 </tspan>(A set neither open nor closed)<br 
+class="newline" /> </span><a 
+ id="x50-48022"></a>The half-open interval [0<tspan font-family="cmmi" font-size="10">,</tspan>1) is neither
+open nor closed in <tspan font-family="msbm" font-size="10">ℝ</tspan>.
+</p>
+  </div>
+<!--l. 687--><p class="indent" >  </p></div>
+<!--l. 688--><p class="indent" >  Secondly, it’s <tspan font-family="cmbx" font-size="10">also possible for a set to be both open and closed</tspan>; this will be discussed
+in <tspan font-family="cmbx" font-size="10">??</tspan> .
+</p><!--l. 691--><p class="indent" >  The reason for the opposing terms is the following theorem:</p>
+<div class="mdframed" id="mdframed-75">
+<a 
+ id="x50-48023r105"></a>
+<div class="newtheorem">
+<!--l. 692--><p class="noindent" ><span class="head">
+<a 
+ id="x50-48024r7"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 2.7.7 </tspan><tspan font-family="cmss" font-size="10">(Closed sets are complements of open sets)</tspan><br 
+class="newline" /> </span><a 
+ id="x50-48025"></a>Let <tspan font-family="cmmi" font-size="10">M </tspan>be a metric space, and
+<tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">M </tspan>any subset. Then the following are equivalent: </p>
+                                                                                
+                                                                                
+     <ul class="itemize1">
+     <li class="itemize">The set <tspan font-family="cmmi" font-size="10">S </tspan>is closed in <tspan font-family="cmmi" font-size="10">M</tspan>.
+     </li>
+     <li class="itemize">The complement <tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmsy" font-size="10">∖ </tspan><tspan font-family="cmmi" font-size="10">S </tspan>is open in <tspan font-family="cmmi" font-size="10">M</tspan>.</li></ul>
+</p>
+  </div>
+<!--l. 699--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-76">
+<a 
+ id="x50-48026r106"></a>
+<div class="newtheorem">
+<!--l. 701--><p class="noindent" ><span class="head">
+<a 
+ id="x50-48027r8"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 2.7.8 </tspan><tspan font-family="cmr" font-size="10">(Great)</tspan><tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x50-48028"></a><tspan font-family="cmr" font-size="10">Prove this theorem! You’ll want to draw a picture to make it clear</tspan>
+<tspan font-family="cmr" font-size="10">what’s happening: for example, you might take </tspan><tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmr" font-size="10">= </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="7">2</tspan></sup> <tspan font-family="cmr" font-size="10">and </tspan><tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmr" font-size="10">to be the closed unit disk.</tspan></p>
+  </div>
+<!--l. 705--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 707--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase30.htm" >next</a>] [<a 
+href="Nase28.htm" >prev</a>] [<a 
+href="Nase28.htm#tailNase28.htm" >prev-tail</a>] [<a 
+href="Nase29.htm" >front</a>] [<a 
+href="Nach5.htm#Nase29.htm" >up</a>] </p></div>
+<!--l. 707--><p class="indent" >  <a 
+ id="tailNase29.htm"></a> </p> 
+</body> 
+</html>

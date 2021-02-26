@@ -1,0 +1,174 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The Jordan form</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 172--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase90.htm" >next</a>] [<a 
+href="Nase88.htm" >prev</a>] [<a 
+href="Nase88.htm#tailNase88.htm" >prev-tail</a>] [<a 
+href="#tailNase89.htm">tail</a>] [<a 
+href="Nach13.htm#Nase89.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">10.4</span>  <a 
+ id="x136-12200010.4"></a>The Jordan form</h3>
+<!--l. 173--><p class="noindent" >So that you know exactly where I’m going, here’s the main theorem. <a 
+ id="x136-122001r413"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 176--><p class="noindent" ><span class="head">
+<a 
+ id="x136-122002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 10.4.1.</tspan>  </span><a 
+ id="x136-122003"></a>A <tspan font-family="cmbx" font-size="10">Jordan block</tspan> is an <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">n </tspan>matrix of the following shape:
+</p>
+  <div class="math-display" >
+<img 
+src="Na407x.png" alt="⌊λ   1  0  0  ...  0  0⌋
+|                      |
+|| 0  λ  1  0  ...  0  0||
+| 0  0  λ  1  ...  0  0|
+|| 0  0  0  λ  ...  0  0|| .
+|| ...  ...  ...  ...  ...  ...  ...||
+|⌈                      |⌉
+  0  0  0  0  ...  λ  1
+  0  0  0  0  ...  0  λ
+" class="math-display"  /></div>
+<!--l. 188--><p class="indent" >  In other words, it has <tspan font-family="cmmi" font-size="10">λ </tspan>on the diagonal, and 1 above it. We allow <tspan font-family="cmmi" font-size="10">n </tspan>= 1, so <img 
+src="Na408x.png" alt="[ ]
+ λ"  class="left" align="middle" /> is a
+Jordan block.
+</p>
+  </div>
+<!--l. 192--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-262">
+<a 
+ id="x136-122004r414"></a>
+<div class="newtheorem">
+<!--l. 195--><p class="noindent" ><span class="head">
+<a 
+ id="x136-122005r2"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 10.4.2 </tspan><tspan font-family="cmss" font-size="10">(Jordan canonical form)</tspan><br 
+class="newline" /> </span><a 
+ id="x136-122006"></a>Let   <tspan font-family="cmmi" font-size="10">T</tspan> :  <tspan font-family="cmmi" font-size="10">V    </tspan><tspan font-family="cmsy" font-size="10">→  </tspan><tspan font-family="cmmi" font-size="10">V   </tspan>be   a   linear   map   of
+finite-dimensional vector spaces over an algebraically closed field <tspan font-family="cmmi" font-size="10">k</tspan>. Then we can choose
+a basis of <tspan font-family="cmmi" font-size="10">V </tspan>such that the matrix <tspan font-family="cmmi" font-size="10">T </tspan>is “block-diagonal” with each block being a Jordan
+block.
+</p><!--l. 203--><p class="noindent" >Such a matrix is said to be in <tspan font-family="cmbx" font-size="10">Jordan form</tspan>. This form is unique up to rearranging the
+order of the blocks.</p>
+  </div>
+<!--l. 205--><p class="indent" >  </p></div>
+<!--l. 206--><p class="indent" >  As an example, this means the matrix should look something like:
+</p>
+  <div class="math-display" >
+<img 
+src="Na409x.png" alt="⌊                                     ⌋
+  λ1  1
+| 0   λ1                              |
+||         λ2                          ||
+||             λ   1   0               ||
+||              3                      ||
+||             0   λ3  1               ||
+||             0   0   λ3              ||
+|                         ...         |
+|⌈                             λ     1 |⌉
+                               m
+                               0   λm
+" class="math-display"  /></div><div class="mdframed" id="mdframed-263">
+<a 
+ id="x136-122007r415"></a>
+<div class="newtheorem">
+<!--l. 221--><p class="noindent" ><span class="head">
+<a 
+ id="x136-122008r3"></a>
+<tspan font-family="cmbx" font-size="10">Question 10.4.3.</tspan>  </span><a 
+ id="x136-122009"></a><tspan font-family="cmr" font-size="10">Check that diagonal matrices are the special case when each block is 1 </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmr" font-size="10">1.</tspan></p>
+  </div>
+                                                                                
+                                                                                
+<!--l. 223--><p class="indent" >  </p></div>
+<!--l. 225--><p class="indent" >  What does this mean? Basically, it means <tspan font-family="cmti" font-size="10">our dream is almost true</tspan>. What happens is that
+<tspan font-family="cmmi" font-size="10">V </tspan>can get broken down as a direct sum
+</p>
+  <div class="math-display" >
+<img 
+src="Na410x.png" alt="V = J1 ⊕ J2 ⊕ ⋅⋅⋅⊕ Jm
+" class="math-display"  /></div>
+<!--l. 229--><p class="indent" >  and <tspan font-family="cmmi" font-size="10">T </tspan>acts on each of these subspaces independently. These subspaces correspond to the
+blocks in the matrix above. In the simplest case, dim<tspan font-family="cmmi" font-size="10">J</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = 1, so <tspan font-family="cmmi" font-size="10">J</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> has a basis element <tspan font-family="cmmi" font-size="10">e </tspan>for
+which <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan>) = <tspan font-family="cmmi" font-size="10">λ</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan>; in other words, we just have a simple eigenvalue. But on occasion, the
+situation is not quite so simple, and we have a block of size greater than 1; this leads to 1’s
+just above the diagonals.
+</p><!--l. 239--><p class="indent" >  I’ll explain later how to interpret the 1’s, when I make up the word <tspan font-family="cmti" font-size="10">descending staircase</tspan>. For
+now, you should note that even if dim<tspan font-family="cmmi" font-size="10">J</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">≥ </tspan>2, we still have a basis element which is an
+eigenvector with eigenvalue <tspan font-family="cmmi" font-size="10">λ</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>.</p>
+<div class="mdframed" id="mdframed-264">
+<a 
+ id="x136-122010r416"></a>
+<div class="newtheorem">
+<!--l. 246--><p class="noindent" ><span class="head">
+<a 
+ id="x136-122011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 10.4.4 </tspan>(A concrete example of Jordan form)<br 
+class="newline" /> </span><a 
+ id="x136-122012"></a>Let <tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">k</tspan><sup><tspan font-family="cmr" font-size="8">6</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">k</tspan><sup><tspan font-family="cmr" font-size="8">6</tspan></sup> and suppose <tspan font-family="cmmi" font-size="10">T</tspan>
+is given by the matrix
+</p>
+<div class="math-display" >
+<img 
+src="Na411x.png" alt="    ⌊                ⌋
+     5  0  0  0  0  0
+    ||0  2  1  0  0  0||
+    ||0  0  2  0  0  0||
+T = |0  0  0  7  0  0| .
+    |⌈0  0  0  0  3  0|⌉
+     0  0  0  0  0  3
+" class="math-display"  /></div>
+<!--l. 258--><p class="noindent" >Reading the matrix, we can compute all the eigenvectors and eigenvalues: for any constants
+<tspan font-family="cmmi" font-size="10">a,b </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">k </tspan>we have
+</p><table 
+class="align-star"><!--l. 265--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>)</td>       <td 
+class="align-even"> = 5<tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub></td>         <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>)</td>       <td 
+class="align-even"> = 2<tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub></td>         <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">4</tspan></sub>)</td>       <td 
+class="align-even"> = 7<tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">4</tspan></sub></td>         <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">5</tspan></sub> + <tspan font-family="cmmi" font-size="10">b </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">6</tspan></sub>)</td><td 
+class="align-even"> = 3<img 
+src="Na413x.png" alt="[a ⋅e5 + b ⋅e6]"  class="left" align="middle" /><tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                                </td></tr></table>
+</p><!--l. 266--><p class="noindent" >The element <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> on the other hand, is not an eigenvector since <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>) = <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> + 2<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>.
+</p>
+  </div>
+<!--l. 268--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 288--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase90.htm" >next</a>] [<a 
+href="Nase88.htm" >prev</a>] [<a 
+href="Nase88.htm#tailNase88.htm" >prev-tail</a>] [<a 
+href="Nase89.htm" >front</a>] [<a 
+href="Nach13.htm#Nase89.htm" >up</a>] </p></div>
+<!--l. 288--><p class="indent" >  <a 
+ id="tailNase89.htm"></a> </p> 
+</body> 
+</html>

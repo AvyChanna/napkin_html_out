@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>All finite fields are isomorphic</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 121--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase358.htm" >next</a>] [<a 
+href="Nase333.htm" >prev</a>] [<a 
+href="Nase333.htm#tailNase333.htm" >prev-tail</a>] [<a 
+href="Nase314.htm#tailNase334.htm">tail</a>] [<a 
+href="Nase354.htm#Nase357.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">53.3</span>  <a 
+ id="x473-44900053.3"></a>All finite fields are isomorphic</h3>
+<!--l. 122--><p class="noindent" >We next proceed to prove “Fermat’s little theorem”:</p>
+<div class="mdframed" id="mdframed-886">
+<a 
+ id="x473-449001r1365"></a>
+<div class="newtheorem">
+<!--l. 124--><p class="noindent" ><span class="head">
+<a 
+ id="x473-449002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 53.3.1 </tspan><tspan font-family="cmss" font-size="10">(Fermat’s little theorem in finite fields)</tspan><br 
+class="newline" /> </span><a 
+ id="x473-449003"></a>Let <tspan font-family="cmmi" font-size="10">F </tspan>be a finite field of order <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>.
+Then every element <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">F </tspan>satisfies
+</p>
+<div class="math-display" >
+<img 
+src="Na2683x.png" alt=" pn
+x   − x = 0.
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 128--><p class="indent" >  </p></div>
+<!--l. 129--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 130--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>If <tspan font-family="cmmi" font-size="10">x </tspan>= 0 it’s true; otherwise, use Lagrange’s theorem on the abelian group (<tspan font-family="cmmi" font-size="10">F,</tspan><tspan font-family="cmsy" font-size="10">×</tspan>)
+to get <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan>
+       </sup> = 1<sub><tspan font-family="cmmi" font-size="8">F</tspan> </sub>.                                                                                         □
+</p>
+  </div>
+<!--l. 134--><p class="indent" >  We can now prove the following result, which is the “main surprise” about finite fields: that
+there is a unique one up to isomorphism for each size.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-887">
+<a 
+ id="x473-449004r1366"></a>
+<div class="newtheorem">
+<!--l. 137--><p class="noindent" ><span class="head">
+<a 
+ id="x473-449005r2"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 53.3.2 </tspan><tspan font-family="cmss" font-size="10">(Complete classification of finite fields)</tspan><br 
+class="newline" /> </span><a 
+ id="x473-449006"></a>A field <tspan font-family="cmmi" font-size="10">F </tspan>is a finite field with <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>
+elements if and only if it is a splitting field of <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup>
+   </sup> <tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">x </tspan>over <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>.
+</p>
+  </div>
+<!--l. 140--><p class="indent" >  </p></div>
+<!--l. 141--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 142--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>By “Fermat’s little theorem”, all the elements of <tspan font-family="cmmi" font-size="10">F </tspan>satisfy this polynomial. So we
+just have to show that the roots of this polynomial are distinct (i.e. that it is separable).
+</p><!--l. 146--><p class="indent" >  To do this, we use the derivative trick again: the derivative of this polynomial is
+</p>
+  <div class="math-display" >
+<img 
+src="Na2684x.png" alt="pn ⋅xpn− 1 − 1 = − 1
+" class="math-display"  /></div>
+<!--l. 148--><p class="indent" >  which has no roots at all, so the polynomial cannot have any double roots.            □
+</p>
+  </div>
+<a 
+ id="x473-449007r1367"></a>
+  <div class="newtheorem">
+<!--l. 152--><p class="noindent" ><span class="head">
+<a 
+ id="x473-449008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 53.3.3.</tspan>  </span><a 
+ id="x473-449009"></a>For this reason, it’s customary to denote <tspan font-family="cmti" font-size="10">the </tspan>field with <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> elements
+by <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup></sub>.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 154--><p class="indent" >
+</p><!--l. 156--><p class="indent" >  Note that the polynomial <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup>
+   </sup> <tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">x </tspan>(mod <tspan font-family="cmmi" font-size="10">p</tspan>) is far from irreducible, but the computation
+above shows that it’s separable.</p>
+<div class="mdframed" id="mdframed-888">
+<a 
+ id="x473-449010r1368"></a>
+<div class="newtheorem">
+<!--l. 158--><p class="noindent" ><span class="head">
+<a 
+ id="x473-449011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 53.3.4 </tspan>(The finite field of order nine again)<br 
+class="newline" /> </span><a 
+ id="x473-449012"></a>The   polynomial   <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">9</tspan></sup>   <tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">x   </tspan>is
+separable modulo 3 and has factorization
+</p>
+<div class="math-display" >
+<img 
+src="Na2685x.png" alt="x (x + 1)(x+  2)(x2 + 1)(x2 + x + 2)(x2 + 2x + 2) (mod 3 ).
+" class="math-display"  /></div>
+<!--l. 162--><p class="noindent" >So if <tspan font-family="cmmi" font-size="10">F </tspan>has order 9, then we intuitively expect it to be the field generated by adjoining
+all the roots: 0, 1, 2, as well as <tspan font-family="cmsy" font-size="10">±</tspan><tspan font-family="cmmi" font-size="10">i</tspan>, 1 <tspan font-family="cmsy" font-size="10">±</tspan><tspan font-family="cmmi" font-size="10">i</tspan>, 2 <tspan font-family="cmsy" font-size="10">±</tspan><tspan font-family="cmmi" font-size="10">i</tspan>. Indeed, that’s the example we had at the
+beginning of this chapter.
+</p><!--l. 167--><p class="noindent" >(Here <tspan font-family="cmmi" font-size="10">i </tspan>denotes <tspan font-family="cmti" font-size="10">an </tspan>element of <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmr" font-size="8">9</tspan></sub> satisfying <tspan font-family="cmmi" font-size="10">i</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> = <tspan font-family="cmsy" font-size="10">−</tspan>1. The notation is deliberately similar
+to the usual imaginary unit.)
+</p>
+  </div>
+<!--l. 169--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 171--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase358.htm" >next</a>] [<a 
+href="Nase333.htm" >prev</a>] [<a 
+href="Nase333.htm#tailNase333.htm" >prev-tail</a>] [<a 
+href="Nase334.htm" >front</a>] [<a 
+href="Nase354.htm#Nase357.htm" >up</a>] </p></div>
+<!--l. 171--><p class="indent" >  <a 
+ id="tailNase334.htm"></a> </p> 
+</body> 
+</html>

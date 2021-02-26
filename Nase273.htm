@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Pictures of exterior derivatives</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 138--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase291.htm" >next</a>] [<a 
+href="Nase272.htm" >prev</a>] [<a 
+href="Nase272.htm#tailNase272.htm" >prev-tail</a>] [<a 
+href="Nach44.htm#tailNase273.htm">tail</a>] [<a 
+href="Nase288.htm#Nase290.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">43.2</span>  <a 
+ id="x393-37300043.2"></a>Pictures of exterior derivatives</h3>
+<!--l. 139--><p class="noindent" >Next question:</p>
+<div class="mdframed" id="mdframed-711">
+<!--l. 141--><p class="noindent" ><tspan font-family="cmbx" font-size="10">How can we build a </tspan>1<tspan font-family="cmbx" font-size="10">-form from a </tspan>0<tspan font-family="cmbx" font-size="10">-form?</tspan></p><!--l. 142--><p class="noindent" ></p>
+  </div>
+<!--l. 143--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">f </tspan>be a 0-form on <tspan font-family="cmmi" font-size="10">U</tspan>; thus, we have a function <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>. Then in fact there is a very
+natural 1-form on <tspan font-family="cmmi" font-size="10">U </tspan>arising from <tspan font-family="cmmi" font-size="10">f</tspan>, appropriately called <tspan font-family="cmmi" font-size="10">df</tspan>. Namely, given a point <tspan font-family="cmmi" font-size="10">p </tspan>and a
+tangent vector <tspan font-family="cmmi" font-size="10">v</tspan>, the differential form (<tspan font-family="cmmi" font-size="10">df</tspan>)<sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> returns the <tspan font-family="cmti" font-size="10">change in </tspan><tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmti" font-size="10">along </tspan><tspan font-family="cmmi" font-size="10">v</tspan>. In other words,
+it’s just the total derivative (<tspan font-family="cmmi" font-size="10">Df</tspan>)<sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">v</tspan>). </p>
+<div class="center" 
+>
+<!--l. 149--><p class="noindent" >
+</p>
+</div>
+<!--l. 161--><p class="noindent" >Thus, <tspan font-family="cmmi" font-size="10">df </tspan>measures “the change in <tspan font-family="cmmi" font-size="10">f</tspan>”.
+</p><!--l. 163--><p class="indent" >  Now, even if I haven’t defined integration yet, given a curve <tspan font-family="cmmi" font-size="10">c </tspan>from a point <tspan font-family="cmmi" font-size="10">a </tspan>to <tspan font-family="cmmi" font-size="10">b</tspan>, what do
+you think
+</p>
+  <div class="math-display" >
+<img 
+src="Na2022x.png" alt="∫
+
+  df
+ c
+" class="math-display"  /></div>
+<!--l. 166--><p class="indent" >  should be equal to? Remember that <tspan font-family="cmmi" font-size="10">df </tspan>is the 1-form that measures “infinitesimal change in
+<tspan font-family="cmmi" font-size="10">f</tspan>”. So if we add up all the change in <tspan font-family="cmmi" font-size="10">f </tspan>along a path from <tspan font-family="cmmi" font-size="10">a </tspan>to <tspan font-family="cmmi" font-size="10">b</tspan>, then the answer we get
+should just be
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na2023x.png" alt="∫
+  df = f(b)− f(a).
+ c
+" class="math-display"  /></div>
+<!--l. 172--><p class="indent" >  This is the first case of something we call Stokes’ theorem.
+</p><!--l. 174--><p class="indent" >  Generalizing, how should we get from a 1-form to a 2-form? At each point <tspan font-family="cmmi" font-size="10">p</tspan>, the 2-form <tspan font-family="cmmi" font-size="10">β</tspan>
+gives a <tspan font-family="cmmi" font-size="10">β</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> which takes in a “parallelogram” and returns a real number. Now suppose we have a
+1-form <tspan font-family="cmmi" font-size="10">α</tspan>. Then along each of the edges of a parallelogram, with an appropriate sign
+convention the 1-form <tspan font-family="cmmi" font-size="10">α </tspan>gives us a real number. So, given a 1-form <tspan font-family="cmmi" font-size="10">α</tspan>, we define <tspan font-family="cmmi" font-size="10">dα </tspan>to be the
+2-form that takes in a parallelogram spanned by <tspan font-family="cmmi" font-size="10">v </tspan>and <tspan font-family="cmmi" font-size="10">w</tspan>, and returns <tspan font-family="cmbx" font-size="10">the measure of </tspan><tspan font-family="cmmi" font-size="10">α</tspan>
+<tspan font-family="cmbx" font-size="10">along the boundary</tspan>.
+</p><!--l. 186--><p class="indent" >  Now, what happens if you integrate <tspan font-family="cmmi" font-size="10">df </tspan>along the entire square <tspan font-family="cmmi" font-size="10">c</tspan>? The right picture is that, if
+we think of each little square as making up the big square, then the adjacent boundaries
+cancel out, and all we are left is the main boundary. This is again just a case of the so-called
+Stokes’ theorem.
+</p>
+<div class="center" 
+>
+<!--l. 192--><p class="noindent" >
+</p><!--l. 212--><p class="noindent" >                 </p><div class="minipage"><img 
+src="media/stokes-patch.png" alt="PIC"  
+width="170" height="170"  /> <br 
+class="newline" /><tspan font-family="cmr" font-size="8">Image from </tspan><span class="cite"><tspan font-family="cmr" font-size="8">[</tspan><tspan font-family="cmbx" font-size="8">?</tspan><tspan font-family="cmr" font-size="8">]</tspan></span>
+</div></div>
+                                                                                
+                                                                                
+  <!--l. 220--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase291.htm" >next</a>] [<a 
+href="Nase272.htm" >prev</a>] [<a 
+href="Nase272.htm#tailNase272.htm" >prev-tail</a>] [<a 
+href="Nase273.htm" >front</a>] [<a 
+href="Nase288.htm#Nase290.htm" >up</a>] </p></div>
+<!--l. 220--><p class="indent" >  <a 
+ id="tailNase273.htm"></a> </p> 
+</body> 
+</html>

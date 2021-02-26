@@ -1,0 +1,161 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The Freyd-Mitchell embedding theorem</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 224--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach72.htm" >next</a>] [<a 
+href="Nase398.htm" >prev</a>] [<a 
+href="Nase398.htm#tailNase398.htm" >prev-tail</a>] [<a 
+href="Nase374.htm#tailNase399.htm">tail</a>] [<a 
+href="Nase423.htm#Nase427.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">63.4</span>  <a 
+ id="x558-53400063.4"></a>The Freyd-Mitchell embedding theorem</h3>
+<!--l. 225--><p class="noindent" >We now introduce the Freyd-Mitchell embedding theorem, which essentially says that any
+abelian category can be realized as a concrete one.
+<a 
+ id="x558-534001r1616"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 229--><p class="noindent" ><span class="head">
+<a 
+ id="x558-534002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 63.4.1.</tspan>  </span><a 
+ id="x558-534003"></a>A  category  is  <tspan font-family="cmbx" font-size="10">small</tspan> if  obj(<tspan font-family="cmsy" font-size="10">𝒜</tspan>)  is  a  set  (as  opposed  to  a  class),
+i.e. there is a “set of all objects in <tspan font-family="cmsy" font-size="10">𝒜</tspan>”. For example, <tspan font-family="cmss" font-size="10">Set</tspan> is not small because there is no
+set of all sets.
+</p>
+  </div>
+<!--l. 232--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-1068">
+<a 
+ id="x558-534004r1617"></a>
+<div class="newtheorem">
+<!--l. 235--><p class="noindent" ><span class="head">
+<a 
+ id="x558-534005r2"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 63.4.2 </tspan><tspan font-family="cmss" font-size="10">(Freyd-Mitchell embedding theorem)</tspan><br 
+class="newline" /> </span><a 
+ id="x558-534006"></a>Let <tspan font-family="cmsy" font-size="10">𝒜 </tspan>be a small abelian category.
+Then there exists a ring <tspan font-family="cmmi" font-size="10">R </tspan>(with 1 but possibly non-commutative) and a full, faithful,
+exact functor onto the category of left <tspan font-family="cmmi" font-size="10">R</tspan>-modules.
+</p>
+  </div>
+<!--l. 239--><p class="indent" >  </p></div>
+<!--l. 240--><p class="indent" >  Here a functor is <tspan font-family="cmbx" font-size="10">exact</tspan> if it preserves exact sequences. This theorem is good because it
+means</p>
+<div class="mdframed" id="mdframed-1069">
+<!--l. 243--><p class="noindent" ><tspan font-family="cmbx" font-size="10">You can basically forget about all the weird definitions that work in any abelian</tspan>
+<tspan font-family="cmbx" font-size="10">category.</tspan></p><!--l. 245--><p class="noindent" ></p>
+  </div>
+                                                                                
+                                                                                
+<!--l. 246--><p class="indent" >  Any time you’re faced with a statement about an abelian category, it suffices to just prove it
+for a “concrete” category where injective/surjective/kernel/image/exact/etc. agree
+with your previous notions. A proof by this means is sometimes called <tspan font-family="cmti" font-size="10">diagram</tspan>
+<tspan font-family="cmti" font-size="10">chasing</tspan>.</p>
+<div class="mdframed" id="mdframed-1070">
+<a 
+ id="x558-534007r1618"></a>
+<div class="newtheorem">
+<!--l. 253--><p class="noindent" ><span class="head">
+<a 
+ id="x558-534008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 63.4.3 —  </tspan> </span><a 
+ id="x558-534009"></a>The “small” condition is a technical obstruction that requires the
+objects <tspan font-family="cmsy" font-size="10">𝒜 </tspan>to actually form a set. I’ll ignore this distinction, because one can almost
+always work around it by doing enough set-theoretic technicalities.</p>
+  </div>
+<!--l. 258--><p class="indent" >  </p></div>
+<!--l. 260--><p class="indent" >  For example, let’s prove:</p>
+<div class="mdframed" id="mdframed-1071">
+<a 
+ id="x558-534010r1619"></a>
+<div class="newtheorem">
+<!--l. 262--><p class="noindent" ><span class="head">
+<a 
+ id="x558-534011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Lemma 63.4.4 </tspan><tspan font-family="cmss" font-size="10">(Short five lemma)</tspan><br 
+class="newline" /> </span><a 
+ id="x558-534012"></a>In an abelian category, consider the commutative diagram
+<img 
+src="Na3108x.png" alt="                   p           q
+0 ----------A|⊂--------- B --------  C|---------- 0
+             |           |            |
+           ∼ |           |          ∼ |
+           = α           |β         = γ
+             |     ′     |      ′     |
+0 --------- A′ ⊂--p---- B ′----q---  C′ --------- 0
+"  />
+and assume the top and bottom rows are exact. If <tspan font-family="cmmi" font-size="10">α </tspan>and <tspan font-family="cmmi" font-size="10">γ </tspan>are isomorphisms, then so is
+<tspan font-family="cmmi" font-size="10">β</tspan>.
+</p>
+  </div>
+<!--l. 271--><p class="indent" >  </p></div>
+<!--l. 273--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 274--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>We prove that <tspan font-family="cmmi" font-size="10">β </tspan>is epic (with a similar proof to get monic). By the embedding
+theorem  we  can  treat  the  category  as  <tspan font-family="cmmi" font-size="10">R</tspan>-modules  over  some  <tspan font-family="cmmi" font-size="10">R</tspan>.  This  lets  us  do  a
+                                                                                
+                                                                                
+so-called “diagram chase” where we move elements around the picture, using the concrete
+interpretation of our category as <tspan font-family="cmmi" font-size="10">R</tspan>-modules.
+</p><!--l. 284--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">b</tspan><tspan font-family="cmsy" font-size="10">′ </tspan>be an element of <tspan font-family="cmmi" font-size="10">B</tspan><tspan font-family="cmsy" font-size="10">′</tspan>. Then <tspan font-family="cmmi" font-size="10">q</tspan><tspan font-family="cmsy" font-size="10">′</tspan>(<tspan font-family="cmmi" font-size="10">b</tspan><tspan font-family="cmsy" font-size="10">′</tspan>) <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">C</tspan><tspan font-family="cmsy" font-size="10">′</tspan>, and since <tspan font-family="cmmi" font-size="10">γ </tspan>is surjective, we have a <tspan font-family="cmmi" font-size="10">c </tspan>such that
+<tspan font-family="cmmi" font-size="10">γ</tspan>(<tspan font-family="cmmi" font-size="10">c</tspan>) = <tspan font-family="cmmi" font-size="10">b</tspan><tspan font-family="cmsy" font-size="10">′</tspan>, and finally a <tspan font-family="cmmi" font-size="10">b </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">B </tspan>such that <tspan font-family="cmmi" font-size="10">q</tspan>(<tspan font-family="cmmi" font-size="10">b</tspan>) = <tspan font-family="cmmi" font-size="10">c</tspan>. Picture: <img 
+src="Na3109x.png" alt="      |  q
+b ∈|B ------ c ∈|C
+   |           |
+   |β         ∼|γ
+   |          =|
+   |     ′     |
+b′ ∈ B ′-q--c′ ∈ C ′
+"  />
+Now, it is not necessarily the case that <tspan font-family="cmmi" font-size="10">β</tspan>(<tspan font-family="cmmi" font-size="10">b</tspan>) = <tspan font-family="cmmi" font-size="10">b</tspan><tspan font-family="cmsy" font-size="10">′</tspan>. However, since the diagram commutes we at
+least have that
+</p>
+  <div class="math-display" >
+<img 
+src="Na3110x.png" alt=" ′  ′    ′
+q (b) = q(β (b))
+" class="math-display"  /></div>
+<!--l. 296--><p class="indent" >  so <tspan font-family="cmmi" font-size="10">b</tspan><tspan font-family="cmsy" font-size="10">′−</tspan><tspan font-family="cmmi" font-size="10">β</tspan>(<tspan font-family="cmmi" font-size="10">b</tspan>) <tspan font-family="cmsy" font-size="10">∈</tspan> Ker<tspan font-family="cmmi" font-size="10">q</tspan><tspan font-family="cmsy" font-size="10">′ </tspan>= Im<tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmsy" font-size="10">′</tspan>, and there is an <tspan font-family="cmmi" font-size="10">a</tspan><tspan font-family="cmsy" font-size="10">′∈ </tspan><tspan font-family="cmmi" font-size="10">A</tspan><tspan font-family="cmsy" font-size="10">′ </tspan>such that <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmsy" font-size="10">′</tspan>(<tspan font-family="cmmi" font-size="10">a</tspan><tspan font-family="cmsy" font-size="10">′</tspan>) = <tspan font-family="cmmi" font-size="10">b</tspan><tspan font-family="cmsy" font-size="10">′−</tspan><tspan font-family="cmmi" font-size="10">β</tspan>(<tspan font-family="cmmi" font-size="10">b</tspan>); use <tspan font-family="cmmi" font-size="10">α </tspan>now
+to lift it to <tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">A</tspan>. Picture: <img 
+src="Na3111x.png" alt="a ∈|A          b ∈ B
+   |
+   |
+   |
+   |
+a′ ∈ A ′---b′ − β (b) ∈ B′----0 ∈ C ′
+"  />
+Then, we have
+</p>
+  <div class="math-display" >
+<img 
+src="Na3112x.png" alt="                             ′           ′         ′
+β(b+ q(a)) = βb + βpa = βb + p αa = βb + (b− βb) = b
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 312--><p class="indent" >  so <tspan font-family="cmmi" font-size="10">b</tspan><tspan font-family="cmsy" font-size="10">′∈</tspan> Im<tspan font-family="cmmi" font-size="10">β </tspan>which completes the proof that <tspan font-family="cmmi" font-size="10">β</tspan><tspan font-family="cmsy" font-size="10">′ </tspan>is surjective.                                □
+</p>
+  </div>
+                                                                                
+                                                                                
+  <!--l. 315--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach72.htm" >next</a>] [<a 
+href="Nase398.htm" >prev</a>] [<a 
+href="Nase398.htm#tailNase398.htm" >prev-tail</a>] [<a 
+href="Nase399.htm" >front</a>] [<a 
+href="Nase423.htm#Nase427.htm" >up</a>] </p></div>
+<!--l. 315--><p class="indent" >  <a 
+ id="tailNase399.htm"></a> </p> 
+</body> 
+</html>

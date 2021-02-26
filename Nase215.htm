@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Motivation: square root of a complex number</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 16--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase224.htm" >next</a>] [<a 
+href="Nach35.htm#tailNase215.htm">tail</a>] [<a 
+href="Nase222.htm#Nase223.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">33.1</span>  <a 
+ id="x313-29500033.1"></a>Motivation: square root of a complex number</h3>
+<!--l. 17--><p class="noindent" >To start us off, can we define <img 
+src="Na1794x.png" alt="√ --
+  z"  class="sqrt"  /> for any complex number <tspan font-family="cmmi" font-size="10">z</tspan>?
+</p><!--l. 19--><p class="indent" >  The first obvious problem that comes up is that for any <tspan font-family="cmmi" font-size="10">z</tspan>, there are <tspan font-family="cmti" font-size="10">two </tspan>numbers <tspan font-family="cmmi" font-size="10">w </tspan>such
+that <tspan font-family="cmmi" font-size="10">w</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> = <tspan font-family="cmmi" font-size="10">z</tspan>. How can we pick one to use? For our ordinary square root function, we had a
+notion of “positive”, and so we simply took the positive root.
+</p><!--l. 25--><p class="indent" >  Let’s expand on this: given <tspan font-family="cmmi" font-size="10">z </tspan>= <tspan font-family="cmmi" font-size="10">r</tspan><img 
+src="Na1795x.png" alt="(cos𝜃 + isin𝜃)"  class="left" align="middle" /> (here <tspan font-family="cmmi" font-size="10">r </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan>0) we should take the root to
+be
+</p>
+  <div class="math-display" >
+<img 
+src="Na1796x.png" alt="    √ -
+w =   r(cosα + isin α).
+" class="math-display"  /></div>
+<!--l. 29--><p class="indent" >  such that 2<tspan font-family="cmmi" font-size="10">α </tspan><tspan font-family="cmsy" font-size="10">≡ </tspan><tspan font-family="cmmi" font-size="10">𝜃 </tspan>(mod 2<tspan font-family="cmmi" font-size="10">π</tspan>); there are two choices for <tspan font-family="cmmi" font-size="10">α </tspan>(mod 2<tspan font-family="cmmi" font-size="10">π</tspan>), differing by
+<tspan font-family="cmmi" font-size="10">π</tspan>.
+                                                                                
+                                                                                
+</p><!--l. 32--><p class="indent" >  For complex numbers, we don’t have an obvious way to pick <tspan font-family="cmmi" font-size="10">α</tspan>. Nonetheless, perhaps we can
+also get away with an arbitrary distinction: let’s see what happens if we just choose the <tspan font-family="cmmi" font-size="10">α </tspan>with
+<tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1797x.png" alt="1
+2"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">π &#x003C; α </tspan><tspan font-family="cmsy" font-size="10">≤</tspan><img 
+src="Na1798x.png" alt="1
+2"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">π</tspan>.
+</p><!--l. 36--><p class="indent" >  Pictured below are some points (in red) and their images (in blue) under this “upper-half”
+square root. The condition on <tspan font-family="cmmi" font-size="10">α </tspan>means we are forcing the blue points to lie on the right-half
+plane.
+</p>
+<div class="center" 
+>
+<!--l. 40--><p class="noindent" >
+</p>
+</div>
+<!--l. 68--><p class="indent" >  Here, <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> = <tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> for each <tspan font-family="cmmi" font-size="10">i</tspan>, and we are constraining the <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> to lie in the right half of the
+complex plane. We see there is an obvious issue: there is a big discontinuity near the points <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">5</tspan></sub>
+and <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">7</tspan></sub>! The nearby point <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">6</tspan></sub> has been mapped very far away. This discontinuity occurs since
+the points on the negative real axis are at the “boundary”. For example, given <tspan font-family="cmsy" font-size="10">−</tspan>4, we send it
+to <tspan font-family="cmsy" font-size="10">−</tspan>2<tspan font-family="cmmi" font-size="10">i</tspan>, but we have hit the boundary: in our interval <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1799x.png" alt="12"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">π </tspan><tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">α &#x003C;</tspan> <img 
+src="Na1800x.png" alt="12"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">π</tspan>, we are at the very left
+edge.
+</p><!--l. 79--><p class="indent" >  The negative real axis that we must not touch is what we will later call a <tspan font-family="cmti" font-size="10">branch cut</tspan>, but for
+now I call it a <tspan font-family="cmbx" font-size="10">ray of death</tspan>. It is a warning to the red points: if you cross this line, you will
+die! However, if we move the red circle just a little upwards (so that it misses the negative real
+axis) this issue is avoided entirely, and we get what seems to be a “nice” square
+root.
+</p>
+<div class="center" 
+>
+<!--l. 87--><p class="noindent" >
+</p>
+</div>
+<!--l. 114--><p class="indent" >  In fact, the ray of death is fairly arbitrary: it is the set of “boundary issues” that arose when
+we picked <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1801x.png" alt="12"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">π &#x003C; α </tspan><tspan font-family="cmsy" font-size="10">≤</tspan><img 
+src="Na1802x.png" alt="12"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">π</tspan>. Suppose we instead insisted on the interval 0 <tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">α &#x003C; π</tspan>; then the ray
+of death would be the <tspan font-family="cmti" font-size="10">positive </tspan>real axis instead. The earlier circle we had now works just
+fine.
+</p>
+<div class="center" 
+>
+<!--l. 121--><p class="noindent" >
+</p>
+</div>
+                                                                                
+                                                                                
+<!--l. 147--><p class="indent" >  What we see is that picking a particular <tspan font-family="cmmi" font-size="10">α</tspan>-interval leads to a different set of edge cases,
+and hence a different ray of death. The only thing these rays have in common is
+their starting point of zero. In other words, given a red circle and a restriction of <tspan font-family="cmmi" font-size="10">α</tspan>,
+I can make a nice “square rooted” blue circle as long as the ray of death misses
+it.
+</p><!--l. 154--><p class="indent" >  So, what exactly is going on?
+                                                                                
+                                                                                
+</p>
+  <!--l. 156--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase224.htm" >next</a>] [<a 
+href="Nase215.htm" >front</a>] [<a 
+href="Nase222.htm#Nase223.htm" >up</a>] </p></div>
+<!--l. 156--><p class="indent" >  <a 
+ id="tailNase215.htm"></a> </p> 
+</body> 
+</html>

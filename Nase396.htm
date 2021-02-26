@@ -1,0 +1,167 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Zero objects, kernels, cokernels, and images</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 9--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase425.htm" >next</a>] [<a 
+href="Nase372.htm#tailNase396.htm">tail</a>] [<a 
+href="Nase423.htm#Nase424.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">63.1</span>  <a 
+ id="x555-53100063.1"></a>Zero objects, kernels, cokernels, and images</h3>
+<!--l. 13--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">In</tspan> <tspan font-family="cmss" font-size="10">Grp</tspan><tspan font-family="cmti" font-size="10">, the trivial group and homomorphism are the</tspan>
+<tspan font-family="cmti" font-size="10">zero objects and morphisms. If </tspan><tspan font-family="cmmi" font-size="10">G</tspan><tspan font-family="cmti" font-size="10">, </tspan><tspan font-family="cmmi" font-size="10">H </tspan><tspan font-family="cmti" font-size="10">are abelian then the cokernel of </tspan><tspan font-family="cmmi" font-size="10">ϕ </tspan>: <tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">H </tspan><tspan font-family="cmti" font-size="10">is</tspan>
+<tspan font-family="cmmi" font-size="10">H∕</tspan>im<tspan font-family="cmmi" font-size="10">ϕ</tspan><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 15--><p class="indent" >  A <tspan font-family="cmbx" font-size="10">zero object</tspan> of a category is an object 0 which is both initial and terminal; of course, it’s
+unique up to unique isomorphism. For example, in <tspan font-family="cmss" font-size="10">Grp</tspan> the zero object is the trivial
+group, in <tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> it’s the zero-dimensional vector space consisting of one point, and so
+on.</p>
+<div class="mdframed" id="mdframed-1060">
+<a 
+ id="x555-531001r1602"></a>
+<div class="newtheorem">
+<!--l. 20--><p class="noindent" ><span class="head">
+<a 
+ id="x555-531002r1"></a>
+<tspan font-family="cmbx" font-size="10">Question 63.1.1.</tspan>  </span><a 
+ id="x555-531003"></a><tspan font-family="cmr" font-size="10">Show that</tspan> <tspan font-family="cmss" font-size="10">Set</tspan> <tspan font-family="cmr" font-size="10">and</tspan> <tspan font-family="cmss" font-size="10">Top</tspan> <tspan font-family="cmr" font-size="10">don’t have zero objects.</tspan></p>
+  </div>
+<!--l. 21--><p class="indent" >  </p></div>
+<!--l. 22--><p class="indent" >  For the rest of this chapter, all categories will have zero objects.
+</p><!--l. 24--><p class="indent" >  In a category <tspan font-family="cmsy" font-size="10">𝒜 </tspan>with zero objects, any two objects <tspan font-family="cmmi" font-size="10">A </tspan>and <tspan font-family="cmmi" font-size="10">B </tspan>thus have a distinguished
+morphism
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na3074x.png" alt="A →  0 → B
+" class="math-display"  /></div>
+<!--l. 26--><p class="indent" >  which is called the <tspan font-family="cmbx" font-size="10">zero morphism</tspan> and also denoted 0. For example, in <tspan font-family="cmss" font-size="10">Grp</tspan> this is the
+trivial homomorphism.
+</p><!--l. 29--><p class="indent" >  We can now define: <a 
+ id="x555-531004r1603"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 31--><p class="noindent" ><span class="head">
+<a 
+ id="x555-531005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 63.1.2.</tspan>  </span><a 
+ id="x555-531006"></a>Consider a map <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3075x.png" alt="f−→"  class=""  /><tspan font-family="cmmi" font-size="10">B</tspan>. The <tspan font-family="cmbx" font-size="10">kernel</tspan> is defined as the equalizer of this map
+and the map <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3076x.png" alt=" 0
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">B</tspan>. Thus, it’s a map ker<tspan font-family="cmmi" font-size="10">f </tspan>: Ker<tspan font-family="cmmi" font-size="10">f</tspan><img 
+src="Na3077x.png" alt="`→"  class="hookrightarrow"  /><tspan font-family="cmmi" font-size="10">A </tspan>such that <img 
+src="Na3078x.png" alt="            0
+  Kerf --- ---- ---
+    ∩
+kerf|
+    |
+    |
+   A  --------- B
+          f
+"  />
+commutes, and moreover any other map with the same property factors uniquely through
+Ker<tspan font-family="cmmi" font-size="10">A </tspan>(so it is universal with this property). By <tspan font-family="cmbx" font-size="10">??</tspan> , ker<tspan font-family="cmmi" font-size="10">f </tspan>is a monic morphism, which
+justifies the use of “<img 
+src="Na3079x.png" alt="`→"  class="hookrightarrow"  />”.
+</p>
+  </div>
+<!--l. 43--><p class="indent" >
+Notice that we’re using ker<tspan font-family="cmmi" font-size="10">f </tspan>to represent the map and Ker<tspan font-family="cmmi" font-size="10">f </tspan>to represent the object Similarly,
+we define the cokernel, the dual notion: <a 
+ id="x555-531007r1604"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 47--><p class="noindent" ><span class="head">
+<a 
+ id="x555-531008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 63.1.3.</tspan>  </span><a 
+ id="x555-531009"></a>Consider a map <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3080x.png" alt="f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">B</tspan>. The <tspan font-family="cmbx" font-size="10">cokernel</tspan> of <tspan font-family="cmmi" font-size="10">f </tspan>is a map coker<tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">B </tspan><tspan font-family="msam" font-size="10">↠</tspan> Coker<tspan font-family="cmmi" font-size="10">f</tspan>
+such that <img 
+src="Na3081x.png" alt="A ----f-----B|--
+         0   |
+             |
+             |cokerf
+
+
+          Cokerf
+"  />
+commutes, and moreover any other map with the same property factors uniquely through
+Coker<tspan font-family="cmmi" font-size="10">f </tspan>(so it is universal with this property). Thus it is the “coequalizer” of this map and the
+map <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3082x.png" alt=" 0
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">B</tspan>. By the dual of <tspan font-family="cmbx" font-size="10">??</tspan> , coker<tspan font-family="cmmi" font-size="10">f </tspan>is an epic morphism, which justifies the use of
+“<tspan font-family="msam" font-size="10">↠</tspan>”.
+</p>
+  </div>
+<!--l. 59--><p class="indent" >
+Think of the cokernel of a map <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3083x.png" alt="f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">B </tspan>as “<tspan font-family="cmmi" font-size="10">B </tspan>modulo the image of <tspan font-family="cmmi" font-size="10">f</tspan>”, e.g.</p>
+<div class="mdframed" id="mdframed-1061">
+<a 
+ id="x555-531010r1605"></a>
+<div class="newtheorem">
+<!--l. 62--><p class="noindent" ><span class="head">
+<a 
+ id="x555-531011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 63.1.4 </tspan>(Cokernels)<br 
+class="newline" /> </span><a 
+ id="x555-531012"></a>Consider                           the                           map
+<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>6<tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">D</tspan><sub><tspan font-family="cmr" font-size="8">12</tspan></sub> = <img 
+src="Na3084x.png" alt="⟨      6    2           −1⟩
+ r,s | r = s = 1,rs = sr"  class="left" align="middle" />. Then the cokernel of this map in <tspan font-family="cmss" font-size="10">Grp</tspan> is
+<tspan font-family="cmmi" font-size="10">D</tspan><sub><tspan font-family="cmr" font-size="8">12</tspan></sub><tspan font-family="cmmi" font-size="10">∕</tspan><img 
+src="Na3085x.png" alt="⟨r⟩"  class="left" align="middle" /><img 
+src="Na3086x.png" alt="∼="  class="cong"  /><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ</tspan>.
+</p>
+  </div>
+<!--l. 65--><p class="indent" >  </p></div>
+<!--l. 66--><p class="indent" >  This doesn’t always work out quite the way we want since in general the image of a
+homomorphism need not be normal in the codomain. Nonetheless, we can use this to define:
+<a 
+ id="x555-531013r1606"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 70--><p class="noindent" ><span class="head">
+<a 
+ id="x555-531014r5"></a>
+<tspan font-family="cmbx" font-size="10">Definition 63.1.5.</tspan>  </span><a 
+ id="x555-531015"></a>The <tspan font-family="cmbx" font-size="10">image</tspan> of <tspan font-family="cmmi" font-size="10">A</tspan><img 
+src="Na3087x.png" alt="f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">B </tspan>is the kernel of coker<tspan font-family="cmmi" font-size="10">f</tspan>. We denote Im<tspan font-family="cmmi" font-size="10">f </tspan>=
+Ker(coker<tspan font-family="cmmi" font-size="10">f</tspan>). This gives a unique map im<tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">→</tspan> Im<tspan font-family="cmmi" font-size="10">f</tspan>.
+</p>
+  </div>
+<!--l. 73--><p class="indent" >
+When it exists, this coincides with our concrete notion of “image”. Picture: <img 
+src="Na3088x.png" alt="A ----f∃0!---B-----cokerf---
+
+
+
+
+         ⊂---0-----
+     Im f       Coker f
+"  />
+Note that by universality of Im<tspan font-family="cmmi" font-size="10">f</tspan>, we find that there is a unique map im<tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">→</tspan> Im<tspan font-family="cmmi" font-size="10">f </tspan>that
+makes the entire diagram commute.
+                                                                                
+                                                                                
+</p>
+  <!--l. 84--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase425.htm" >next</a>] [<a 
+href="Nase396.htm" >front</a>] [<a 
+href="Nase423.htm#Nase424.htm" >up</a>] </p></div>
+<!--l. 84--><p class="indent" >  <a 
+ id="tailNase396.htm"></a> </p> 
+</body> 
+</html>

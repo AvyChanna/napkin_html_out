@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>XV Algebraic Topology I: Homotopy</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 151--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase403.htm" >next</a>] [<a 
+href="Napa14.htm" >prev</a>] [<a 
+href="Napa14.htm#tailNapa14.htm" >prev-tail</a>] [<a 
+href="Nase336.htm#tailNapa15.htm">tail</a>] [<a 
+href="Napkin.htm#Nase381.htm" >up</a>] </p></div>
+  <h1 class="partHead"><span class="titlemark">Part XV<br /></span><a 
+ id="x503-481000XV"></a>Algebraic Topology I: Homotopy</h1>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+  <div class="chapterTOCS">
+   <span class="sectionToc" >9.5  <a 
+href="Nase79.htm#x122-1110009.5">Linear maps</a></span>
+<br />   <span class="sectionToc" >9.6  <a 
+href="Nase80.htm#x124-1120009.6">What is a matrix?</a></span>
+<br />   <span class="sectionToc" >9.7  <a 
+href="Nase81.htm#x125-1130009.7">Subspaces and picking convenient bases</a></span>
+<br />   <span class="sectionToc" >9.8  <a 
+href="Nase82.htm#x126-1140009.8">A cute application: Lagrange interpolation</a></span>
+<br />   <span class="sectionToc" >9.9  <a 
+href="Nase83.htm#x128-1150009.9">(Digression) Arrays of numbers are evil</a></span>
+<br />   <span class="sectionToc" >9.10  <a 
+href="Nase84.htm#x129-1160009.10">A word on general modules</a></span>
+<br />   <span class="sectionToc" >9.11  <a 
+href="Nase85.htm#x130-1170009.11">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >10  <a 
+href="Nach13.htm#x131-11800010">Eigen-things</a></span>
+<br />   <span class="sectionToc" >10.1  <a 
+href="Nase86.htm#x132-11900010.1">Why you should care</a></span>
+<br />   <span class="sectionToc" >10.2  <a 
+href="Nase87.htm#x133-12000010.2">Warning on assumptions</a></span>
+<br />   <span class="sectionToc" >10.3  <a 
+href="Nase88.htm#x134-12100010.3">Eigenvectors and eigenvalues</a></span>
+<br />   <span class="sectionToc" >10.4  <a 
+href="Nase89.htm#x136-12200010.4">The Jordan form</a></span>
+<br />   <span class="sectionToc" >10.5  <a 
+href="Nase90.htm#x137-12300010.5">Nilpotent maps</a></span>
+<br />   <span class="sectionToc" >10.6  <a 
+href="Nase91.htm#x138-12400010.6">Reducing to the nilpotent case</a></span>
+<br />   <span class="sectionToc" >10.7  <a 
+href="Nase92.htm#x139-12500010.7">(Optional) Proof of nilpotent Jordan</a></span>
+<br />   <span class="sectionToc" >10.8  <a 
+href="Nase93.htm#x140-12600010.8">Algebraic and geometric multiplicity</a></span>
+<br />   <span class="sectionToc" >10.9  <a 
+href="Nase94.htm#x141-12700010.9">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >11  <a 
+href="Nach14.htm#x142-12800011">Dual space and trace</a></span>
+<br />   <span class="sectionToc" >11.1  <a 
+href="Nase95.htm#x143-12900011.1">Tensor product</a></span>
+<br />   <span class="sectionToc" >11.2  <a 
+href="Nase96.htm#x146-13000011.2">Dual space</a></span>
+<br />   <span class="sectionToc" >11.3  <a 
+href="Nase97.htm#x147-13100011.3"><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>gives matrices from <tspan font-family="cmmi" font-size="10">V </tspan>to <tspan font-family="cmmi" font-size="10">W</tspan></a></span>
+<br />   <span class="sectionToc" >11.4  <a 
+href="Nase98.htm#x148-13200011.4">The trace</a></span>
+<br />   <span class="sectionToc" >11.5  <a 
+href="Nase99.htm#x149-13300011.5">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >12  <a 
+href="Nach15.htm#x150-13400012">Determinant</a></span>
+<br />   <span class="sectionToc" >12.1  <a 
+href="Nase100.htm#x151-13500012.1">Wedge product</a></span>
+<br />   <span class="sectionToc" >12.2  <a 
+href="Nase101.htm#x153-13600012.2">The determinant</a></span>
+<br />   <span class="sectionToc" >12.3  <a 
+href="Nase102.htm#x154-13700012.3">Characteristic polynomials, and Cayley-Hamilton</a></span>
+<br />   <span class="sectionToc" >12.4  <a 
+href="Nase103.htm#x155-13800012.4">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >13  <a 
+href="Nach16.htm#x156-13900013">Inner product spaces</a></span>
+<br />   <span class="sectionToc" >13.1  <a 
+href="Nase104.htm#x157-14000013.1">The inner product</a></span>
+<br />   <span class="sectionToc" >13.2  <a 
+href="Nase105.htm#x159-14400013.2">Norms</a></span>
+<br />   <span class="sectionToc" >13.3  <a 
+href="Nase106.htm#x160-14500013.3">Orthogonality</a></span>
+<br />   <span class="sectionToc" >13.4  <a 
+href="Nase107.htm#x161-14600013.4">Hilbert spaces</a></span>
+<br />   <span class="sectionToc" >13.5  <a 
+href="Nase108.htm#x162-14700013.5">A few harder problems to think about</a></span>
+<br />  <span class="chapterToc" >14  <a 
+href="Nach17.htm#x163-14800014">Bonus: Fourier analysis</a></span>
+<br />   <span class="sectionToc" >14.1  <a 
+href="Nase109.htm#x164-14900014.1">Synopsis</a></span>
+<br />   <span class="sectionToc" >14.2  <a 
+href="Nase110.htm#x165-15000014.2">A reminder on Hilbert spaces</a></span>
+<br />   <span class="sectionToc" >14.3  <a 
+href="Nase111.htm#x166-15100014.3">Common examples</a></span>
+<br />   <span class="sectionToc" >14.4  <a 
+href="Nase112.htm#x168-15500014.4">Summary, and another teaser</a></span>
+<br />   <span class="sectionToc" >14.5  <a 
+href="Nase113.htm#x169-15600014.5">Parseval and friends</a></span>
+<br />   <span class="sectionToc" >14.6  <a 
+href="Nase114.htm#x170-15700014.6">Application: Basel problem</a></span>
+<br />   <span class="sectionToc" >14.7  <a 
+href="Nase115.htm#x171-15800014.7">Application: Arrow’s Impossibility Theorem</a></span>
+<br />   <span class="sectionToc" >14.8  <a 
+href="Nase116.htm#x172-15900014.8">A few harder problems to think about</a></span>
+                                                                                
+                                                                                
+<br />  <span class="chapterToc" >15  <a 
+href="Nach18.htm#x173-16000015">Duals, adjoint, and transposes</a></span>
+<br />   <span class="sectionToc" >15.1  <a 
+href="Nase117.htm#x174-16100015.1">Dual of a map</a></span>
+<br />   <span class="sectionToc" >15.2  <a 
+href="Nase118.htm#x175-16200015.2">Identifying with the dual space</a></span>
+<br />   <span class="sectionToc" >15.3  <a 
+href="Nase119.htm#x176-16300015.3">The adjoint (conjugate transpose)</a></span>
+<br />   <span class="sectionToc" >15.4  <a 
+href="Nase120.htm#x177-16400015.4">Eigenvalues of normal maps</a></span>
+<br />   <span class="sectionToc" >15.5  <a 
+href="Nase121.htm#x178-16500015.5">A few harder problems to think about</a></span>
+  </div>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+                                                                                
+                                                                                
+  <!--l. 158--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase403.htm" >next</a>] [<a 
+href="Napa14.htm" >prev</a>] [<a 
+href="Napa14.htm#tailNapa14.htm" >prev-tail</a>] [<a 
+href="Napa15.htm" >front</a>] [<a 
+href="Napkin.htm#Nase381.htm" >up</a>] </p></div>
+<!--l. 158--><p class="indent" >  <a 
+ id="tailNapa15.htm"></a> </p> 
+</body> 
+</html>

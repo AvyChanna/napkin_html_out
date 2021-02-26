@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>(Optional) A word on higher derivatives</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 308--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase286.htm" >next</a>] [<a 
+href="Nase268.htm" >prev</a>] [<a 
+href="Nase268.htm#tailNase268.htm" >prev-tail</a>] [<a 
+href="Nase255.htm#tailNase269.htm">tail</a>] [<a 
+href="Nase282.htm#Nase285.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">42.4</span>  <a 
+ id="x388-36800042.4"></a>(Optional) A word on higher derivatives</h3>
+<!--l. 309--><p class="noindent" >Let <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>be open, and take <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>, so that <tspan font-family="cmmi" font-size="10">Df </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→</tspan> Hom(<tspan font-family="cmmi" font-size="10">V,W</tspan>).
+</p><!--l. 311--><p class="indent" >  Well, Hom(<tspan font-family="cmmi" font-size="10">V,W</tspan>) can also be thought of as a normed vector space in its own right: it turns
+out that one can define an operator norm on it by setting
+</p>
+  <div class="math-display" >
+<img 
+src="Na2004x.png" alt="          {                  }
+∥T ∥ := sup ∥T-(v)∥W-| v ⁄= 0V  .
+              ∥v∥V
+" class="math-display"  /></div>
+<!--l. 314--><p class="indent" >  So Hom(<tspan font-family="cmmi" font-size="10">V,W</tspan>) can be thought of as a normed vector space as well. Thus it makes sense to
+write
+</p>
+  <div class="math-display" >
+<img 
+src="Na2005x.png" alt="D (Df ) : U → Hom (V,Hom  (V, W ))
+" class="math-display"  /></div>
+<!--l. 317--><p class="indent" >  which we abbreviate as <tspan font-family="cmmi" font-size="10">D</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">f</tspan>. Dropping all doubt and plunging on,
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na2006x.png" alt="D3f : U → Hom  (V, Hom (V,Hom (V,W  ))).
+" class="math-display"  /></div>
+<!--l. 319--><p class="indent" >  I’m sorry. As consolation, we at least know that Hom(<tspan font-family="cmmi" font-size="10">V,W</tspan>)<img 
+src="Na2007x.png" alt="∼="  class="cong"  /><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">W </tspan>in a natural way, so
+we can at least condense this to
+</p>
+  <div class="math-display" >
+<img 
+src="Na2008x.png" alt=" k           ∨ ⊗k
+D f : V → (V  )  ⊗  W
+" class="math-display"  /></div>
+<!--l. 323--><p class="indent" >  rather than writing a bunch of Hom’s.</p>
+<div class="mdframed" id="mdframed-707">
+<a 
+ id="x388-368001r1102"></a>
+<div class="newtheorem">
+<!--l. 325--><p class="noindent" ><span class="head">
+<a 
+ id="x388-368002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 42.4.1 —  </tspan> </span><a 
+ id="x388-368003"></a>If <tspan font-family="cmmi" font-size="10">k </tspan>= 2, <tspan font-family="cmmi" font-size="10">W </tspan>= <tspan font-family="msbm" font-size="10">ℝ</tspan>, then <tspan font-family="cmmi" font-size="10">D</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">v</tspan>) <tspan font-family="cmsy" font-size="10">∈ </tspan>(<tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>)<sup><tspan font-family="cmsy" font-size="8">⊗</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup>, so it can be represented
+as an <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">n </tspan>matrix, which for some reason is called a <tspan font-family="cmbx" font-size="10">Hessian</tspan>.</p>
+  </div>
+<!--l. 328--><p class="indent" >  </p></div>
+<!--l. 329--><p class="indent" >  The most important property of the second derivative is that</p>
+<div class="mdframed" id="mdframed-708">
+<a 
+ id="x388-368004r1103"></a>
+<div class="newtheorem">
+<!--l. 331--><p class="noindent" ><span class="head">
+<a 
+ id="x388-368005r2"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 42.4.2 </tspan><tspan font-family="cmss" font-size="10">(Symmetry of </tspan><tspan font-family="cmmi" font-size="10">D</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">f</tspan><tspan font-family="cmss" font-size="10">)</tspan><br 
+class="newline" /> </span><a 
+ id="x388-368006"></a>Let <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>with <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>open. If (<tspan font-family="cmmi" font-size="10">D</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">f</tspan>)<sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> exists
+at some <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U</tspan>, then it is symmetric, meaning
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na2009x.png" alt="(D2f )p(v1,v2) = (D2f )p(v2,v1).
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 335--><p class="indent" >  </p></div>
+<!--l. 336--><p class="indent" >  I’ll just quote this without proof (see e.g. <span class="cite">[<tspan font-family="cmbx" font-size="10">?</tspan>, <tspan font-family="tcrm" font-size="1095">§</tspan>5, theorem 16]</span>), because double derivatives
+make my head spin. An important corollary of this theorem:</p>
+<div class="mdframed" id="mdframed-709">
+<a 
+ id="x388-368007r1104"></a>
+<div class="newtheorem">
+<!--l. 340--><p class="noindent" ><span class="head">
+<a 
+ id="x388-368008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Corollary 42.4.3 </tspan><tspan font-family="cmss" font-size="10">(Clairaut’s theorem: mixed partials are symmetric)</tspan><br 
+class="newline" /> </span><a 
+ id="x388-368009"></a>Let <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ  </tspan>with
+<tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">V  </tspan>open be twice differentiable. Then for any point <tspan font-family="cmmi" font-size="10">p </tspan>such that the quantities are
+defined,
+</p>
+<div class="math-display" >
+<img 
+src="Na2010x.png" alt="∂---∂--      -∂--∂-
+∂ei∂ejf(p) = ∂ej∂ei f(p).
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 352--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 354--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase286.htm" >next</a>] [<a 
+href="Nase268.htm" >prev</a>] [<a 
+href="Nase268.htm#tailNase268.htm" >prev-tail</a>] [<a 
+href="Nase269.htm" >front</a>] [<a 
+href="Nase282.htm#Nase285.htm" >up</a>] </p></div>
+<!--l. 354--><p class="indent" >  <a 
+ id="tailNase269.htm"></a> </p> 
+</body> 
+</html>

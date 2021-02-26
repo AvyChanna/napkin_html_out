@@ -1,0 +1,384 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Computation of class numbers</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 602--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach57.htm" >next</a>] [<a 
+href="Nase315.htm" >prev</a>] [<a 
+href="Nase315.htm#tailNase315.htm" >prev-tail</a>] [<a 
+href="Nase296.htm#tailNase316.htm">tail</a>] [<a 
+href="Nase328.htm#Nase336.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">49.8</span>  <a 
+ id="x449-42600049.8"></a>Computation of class numbers</h3>
+<a 
+ id="x449-426001r1277"></a>
+  <div class="newtheorem">
+<!--l. 604--><p class="noindent" ><span class="head">
+<a 
+ id="x449-426002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 49.8.1.</tspan>  </span><a 
+ id="x449-426003"></a>The order of Cl<sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> is called the <tspan font-family="cmbx" font-size="10">class number</tspan> of <tspan font-family="cmmi" font-size="10">K</tspan>.
+</p>
+  </div>
+<!--l. 605--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-825">
+<a 
+ id="x449-426004r1278"></a>
+<div class="newtheorem">
+<!--l. 607--><p class="noindent" ><span class="head">
+<a 
+ id="x449-426005r2"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 49.8.2 —  </tspan> </span><a 
+ id="x449-426006"></a>If Cl<sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> = 1, then <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> is a PID, hence a UFD.</p>
+  </div>
+<!--l. 608--><p class="indent" >  </p></div>
+<!--l. 610--><p class="noindent" >By computing the actual value of <tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>, we can quite literally build the entire “cherry tree”
+mentioned in the previous proof. Let’s give an example how!</p>
+<div class="mdframed" id="mdframed-826">
+<a 
+ id="x449-426007r1279"></a>
+<div class="newtheorem">
+<!--l. 614--><p class="noindent" ><span class="head">
+<a 
+ id="x449-426008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 49.8.3</tspan><br 
+class="newline" /> </span><a 
+ id="x449-426009"></a>The field <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2435x.png" alt="√ − 67"  class="sqrt"  />) has class number 1.
+</p>
+  </div>
+<!--l. 615--><p class="indent" >  </p></div>
+<!--l. 616--><p class="indent" >
+</p>
+  <div class="proof">
+                                                                                
+                                                                                
+<!--l. 617--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Since <tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2436x.png" alt="√ −-67"  class="sqrt"  />) has signature (0<tspan font-family="cmmi" font-size="10">,</tspan>1) and discriminant Δ<sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>  = <tspan font-family="cmsy" font-size="10">−</tspan>67 (since
+<tspan font-family="cmsy" font-size="10">−</tspan>67 <tspan font-family="cmsy" font-size="10">≡ </tspan>1 (mod 4)) we can compute
+</p>
+  <div class="math-display" >
+<img 
+src="Na2437x.png" alt="      (  )1
+M   =   4-  ⋅ 2!√67-≈ 5.2.
+  K     π     22
+" class="math-display"  /></div>
+<!--l. 621--><p class="indent" >  That means we can cut off the cherry tree after (2), (3), (5), since any cherries on these
+branches will necessarily have norm <tspan font-family="cmsy" font-size="10">≥ </tspan><tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>. We now want to factor each of these in
+<tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> = <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">𝜃</tspan>], where <tspan font-family="cmmi" font-size="10">𝜃 </tspan>= <img 
+src="Na2438x.png" alt="    ---
+1+√-−67
+   2"  class="frac" align="middle" /> has minimal polynomial <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">x </tspan>+ 17. But something miraculous
+happens: </p>
+     <ul class="itemize1">
+     <li class="itemize">When we try to reduce <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">x </tspan>+ 17 (mod 2), we get an irreducible polynomial
+     <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">x </tspan>+ 1. By the factoring algorithm (<tspan font-family="cmbx" font-size="10">??</tspan> ) this means (2) is prime.
+     </li>
+     <li class="itemize">Similarly, reducing mod 3 gives <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">x </tspan>+ 2, which is irreducible. This means (3) is
+     prime.
+     </li>
+     <li class="itemize">Finally, for the same reason, (5) is prime.</li></ul>
+<!--l. 633--><p class="noindent" >It’s our lucky day; all of the ideals (2), (3), (5) are prime (already principal). To put it another
+way, each of the three branches has only one (large) cherry on it. That means any time we put
+together an integral ideal with norm <tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>, it is actually principal. In fact, these guys have
+norm 4, 9, 25 respectively…so we can’t even touch (3) and (5), and the only ideals we can get
+are (1) and (2) (with norms 1 and 4).
+</p><!--l. 643--><p class="indent" >  Now we claim that’s all. Pick a fractional ideal <tspan font-family="cmmi" font-size="10">J</tspan>. By <tspan font-family="cmbx" font-size="10">??</tspan> , we can find an integral ideal
+<tspan font-family="eufm" font-size="10">𝔟 </tspan><tspan font-family="cmsy" font-size="10">∼ </tspan><tspan font-family="cmmi" font-size="10">J </tspan>with N(<tspan font-family="eufm" font-size="10">𝔟</tspan>) <tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>. But by the above, either <tspan font-family="eufm" font-size="10">𝔟 </tspan>= (1) or <tspan font-family="eufm" font-size="10">𝔟 </tspan>= (2), both of which are
+principal, and hence trivial in Cl<sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>. So <tspan font-family="cmmi" font-size="10">J </tspan>is trivial in Cl<sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> too, as needed.                  □
+</p>
+  </div>
+<!--l. 651--><p class="indent" >  Let’s do a couple more.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-827">
+<a 
+ id="x449-426010r1280"></a>
+<div class="newtheorem">
+<!--l. 652--><p class="noindent" ><span class="head">
+<a 
+ id="x449-426011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 49.8.4 </tspan><tspan font-family="cmss" font-size="10">(Gaussian integers </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">i</tspan>] <tspan font-family="cmss" font-size="10">form a UFD)</tspan><br 
+class="newline" /> </span><a 
+ id="x449-426012"></a>The field <tspan font-family="msbm" font-size="10">ℚ</tspan>(<tspan font-family="cmmi" font-size="10">i</tspan>) has class number 1.
+</p>
+  </div>
+<!--l. 654--><p class="indent" >  </p></div>
+<!--l. 655--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 656--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>This  is  <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>  where  <tspan font-family="cmmi" font-size="10">K  </tspan>=  <tspan font-family="msbm" font-size="10">ℚ</tspan>(<tspan font-family="cmmi" font-size="10">i</tspan>),  so  we  just  want  Cl<sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>  to  be  trivial.  We  have
+<tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> = <img 
+src="Na2439x.png" alt="2
+π"  class="frac" align="middle" /><img 
+src="Na2440x.png" alt="√4--"  class="sqrt"  /> <tspan font-family="cmmi" font-size="10">&#x003C; </tspan>2. So every class has an integral ideal of norm <tspan font-family="eufm" font-size="10">𝔟 </tspan>satisfying
+</p>
+  <div class="math-display" >
+<img 
+src="Na2441x.png" alt="       (  )
+         4- 1 2!  √ --  4-
+N(𝔟) ≤   π   ⋅22 ⋅  4 = π &#x003C; 2.
+" class="math-display"  /></div>
+<!--l. 665--><p class="indent" >  Well, that’s silly: we don’t have any branches to pick from at all. In other words, we
+can only have <tspan font-family="eufm" font-size="10">𝔟 </tspan>= (1).                                                                                    □
+</p>
+  </div>
+<!--l. 669--><p class="indent" >  Here’s another example of something that still turns out to be unique factorization, but this
+time our cherry tree will actually have cherries that can be picked.</p>
+<div class="mdframed" id="mdframed-828">
+<a 
+ id="x449-426013r1281"></a>
+<div class="newtheorem">
+<!--l. 671--><p class="noindent" ><span class="head">
+<a 
+ id="x449-426014r5"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmssbx" font-size="10">Proposition 49.8.5 </tspan><tspan font-family="cmss" font-size="10">(</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>[<img 
+src="Na2442x.png" alt="√ --
+  7"  class="sqrt"  />] <tspan font-family="cmss" font-size="10">is a UFD)</tspan><br 
+class="newline" /> </span><a 
+ id="x449-426015"></a>The field <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2443x.png" alt="√ --
+  7"  class="sqrt"  />) has class number 1.
+</p>
+  </div>
+<!--l. 673--><p class="indent" >  </p></div>
+<!--l. 674--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 675--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>First we compute the Minkowski bound.</p>
+<div class="mdframed" id="mdframed-829">
+<a 
+ id="x449-426016r1282"></a>
+<div class="newtheorem">
+<!--l. 677--><p class="noindent" ><span class="head">
+<a 
+ id="x449-426017r6"></a>
+<tspan font-family="cmbx" font-size="10">Question 49.8.6.</tspan>  </span><a 
+ id="x449-426018"></a><tspan font-family="cmr" font-size="10">Check that </tspan><tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="7">K</tspan></sub> <tspan font-family="cmsy" font-size="10">≈ </tspan><tspan font-family="cmr" font-size="10">2</tspan><tspan font-family="cmmi" font-size="10">.</tspan><tspan font-family="cmr" font-size="10">646.</tspan></p>
+  </div>
+<!--l. 678--><p class="indent" >  </p></div>
+<!--l. 679--><p class="indent" >  So this time, the only branch is (2). Let’s factor (2) as usual: the polynomial <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + 7 reduces
+as (<tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1)(<tspan font-family="cmmi" font-size="10">x </tspan>+ 1) (mod 2), and hence
+</p>
+  <div class="math-display" >
+<img 
+src="Na2444x.png" alt="      (    --   )(    --   )
+(2) =  2,√ 7− 1   2,√ 7 + 1 .
+" class="math-display"  /></div>
+<!--l. 682--><p class="indent" >  Oops! We now have two cherries, and they both seem reasonable. But actually, I claim
+that
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na2445x.png" alt="(         )   (      )
+ 2,√7-−  1 =   3− √7-- .
+" class="math-display"  /></div><div class="mdframed" id="mdframed-830">
+<a 
+ id="x449-426019r1283"></a>
+<div class="newtheorem">
+<!--l. 686--><p class="noindent" ><span class="head">
+<a 
+ id="x449-426020r7"></a>
+<tspan font-family="cmbx" font-size="10">Question 49.8.7.</tspan>  </span><a 
+ id="x449-426021"></a><tspan font-family="cmr" font-size="10">Prove this.</tspan></p>
+  </div>
+<!--l. 687--><p class="indent" >  </p></div>
+<!--l. 688--><p class="indent" >  So both the cherries are principal ideals, and as before we conclude that Cl<sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> is trivial. But
+note that this time, the prime ideal (2) actually splits; we got lucky that the two cherries were
+principal but this won’t always work.                                                                □
+</p>
+  </div>
+<!--l. 693--><p class="indent" >  How about some nontrivial class groups? First, we use a lemma that will help us with
+narrowing down the work in our cherry tree.</p>
+<div class="mdframed" id="mdframed-831">
+<a 
+ id="x449-426022r1284"></a>
+<div class="newtheorem">
+<!--l. 696--><p class="noindent" ><span class="head">
+<a 
+ id="x449-426023r8"></a>
+<tspan font-family="cmssbx" font-size="10">Lemma 49.8.8 </tspan><tspan font-family="cmss" font-size="10">(Ideals divide their norms)</tspan><br 
+class="newline" /> </span><a 
+ id="x449-426024"></a>Let <tspan font-family="eufm" font-size="10">𝔟 </tspan>be an integral ideal with N(<tspan font-family="eufm" font-size="10">𝔟</tspan>) = <tspan font-family="cmmi" font-size="10">n</tspan>. Then
+<tspan font-family="eufm" font-size="10">𝔟 </tspan>divides the ideal (<tspan font-family="cmmi" font-size="10">n</tspan>).
+</p>
+  </div>
+<!--l. 699--><p class="indent" >  </p></div>
+<!--l. 700--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 701--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>By definition, <tspan font-family="cmmi" font-size="10">n </tspan>= <img 
+src="Na2446x.png" alt="|𝒪  ∕𝔟|
+  K"  class="left" align="middle" />. Treating <tspan font-family="cmsy" font-size="10">𝒪</tspan><sub><tspan font-family="cmmi" font-size="8">K</tspan></sub><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="eufm" font-size="10">𝔟 </tspan>as an (additive) abelian group and
+using Lagrange’s theorem, we find
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na2447x.png" alt="0 ≡ α◟-+-⋅◝⋅◜⋅+-α◞ = nα   (mod 𝔟)    for all α ∈ 𝒪K .
+       n times
+" class="math-display"  /></div>
+<!--l. 706--><p class="indent" >  Thus (<tspan font-family="cmmi" font-size="10">n</tspan>) <tspan font-family="cmsy" font-size="10">⊆</tspan><tspan font-family="eufm" font-size="10">𝔟</tspan>, done.                                                                                    □
+</p>
+  </div>
+<!--l. 709--><p class="indent" >  Now we can give such an example.</p>
+<div class="mdframed" id="mdframed-832">
+<a 
+ id="x449-426025r1285"></a>
+<div class="newtheorem">
+<!--l. 710--><p class="noindent" ><span class="head">
+<a 
+ id="x449-426026r9"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 49.8.9 </tspan><tspan font-family="cmss" font-size="10">(Class group of </tspan><tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2448x.png" alt="√ − 17"  class="sqrt"  />)<tspan font-family="cmss" font-size="10">)</tspan><br 
+class="newline" /> </span><a 
+ id="x449-426027"></a>The number field <tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2449x.png" alt="√ −-17"  class="sqrt"  />) has class
+group <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>4<tspan font-family="msbm" font-size="10">ℤ</tspan>.
+</p>
+  </div>
+<!--l. 712--><p class="indent" >  </p></div>
+<!--l. 713--><p class="indent" >  You are not obliged to read the entire proof in detail, as it is somewhat gory. The idea is
+just that there are some cherries which are not trivial in the class group.
+</p><!--l. 716--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 717--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Since Δ<sub><tspan font-family="cmmi" font-size="8">K</tspan></sub> = <tspan font-family="cmsy" font-size="10">−</tspan>68, we compute the Minkowski bound
+</p>
+  <div class="math-display" >
+<img 
+src="Na2450x.png" alt="M   = 4-√17-&#x003C; 6.
+  K   π
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 721--><p class="indent" >  Now, it suffices to factor with (2), (3), (5). The minimal polynomial of <img 
+src="Na2451x.png" alt="√ ----
+  − 17"  class="sqrt"  /> is <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + 17, so
+as usual
+</p><table 
+class="align-star"><!--l. 727--><p class="indent" >
+<tr><td 
+class="align-odd">(2)</td><td 
+class="align-even"> = (2<tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na2453x.png" alt="√ ----
+  − 17"  class="sqrt"  /> + 1)<sup><tspan font-family="cmr" font-size="8">2</tspan></sup></td>            <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd">(3)</td><td 
+class="align-even"> = (3<tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na2454x.png" alt="√ ----
+  − 17"  class="sqrt"  /> <tspan font-family="cmsy" font-size="10">− </tspan>1)(3<tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na2455x.png" alt="√ ----
+  − 17"  class="sqrt"  /> + 1)</td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd">(5)</td><td 
+class="align-even"> = (5)</td>                       <td 
+class="align-label"></td><td 
+class="align-label">                                                 </td></tr></table>
+</p><!--l. 728--><p class="indent" >  corresponding to the factorizations of <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + 17 modulo each of 2, 3, 5. Set <tspan font-family="eufm" font-size="10">𝔭 </tspan>= (2<tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na2456x.png" alt="√ ----
+  − 17"  class="sqrt"  /> + 1)
+and <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> = (3<tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na2457x.png" alt="√ − 17"  class="sqrt"  /> <tspan font-family="cmsy" font-size="10">− </tspan>1), <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> = (3<tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na2458x.png" alt="√ −-17"  class="sqrt"  /> + 1). We can compute
+</p>
+  <div class="math-display" >
+<img 
+src="Na2459x.png" alt="N (𝔭) = 2  and   N(𝔮1) = N(𝔮2) = 3.
+" class="math-display"  /></div>
+<!--l. 732--><p class="indent" >  In particular, they are not principal. The ideal (5) is out the window; it has norm 25. Hence,
+the three cherries are <tspan font-family="eufm" font-size="10">𝔭</tspan>, <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>.
+</p><!--l. 736--><p class="indent" >  The possible ways to arrange these cherries into ideals with norm <tspan font-family="cmsy" font-size="10">≤ </tspan>5 are
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na2460x.png" alt="{              }
+  (1),𝔭,𝔮1,𝔮2,𝔭2 .
+" class="math-display"  /></div>
+<!--l. 738--><p class="indent" >  However, you can compute
+</p>
+  <div class="math-display" >
+<img 
+src="Na2461x.png" alt="𝔭2 = (2)
+" class="math-display"  /></div>
+<!--l. 738--><p class="indent" >  so <tspan font-family="eufm" font-size="10">𝔭</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> and (1) are in the same class group; that is, they are trivial. In particular, the class
+group has order at most 4.
+</p><!--l. 742--><p class="indent" >  From now on, let [<tspan font-family="eufm" font-size="10">𝔞</tspan>] denote the class (member of the class group) that <tspan font-family="eufm" font-size="10">𝔞 </tspan>is in. Since <tspan font-family="eufm" font-size="10">𝔭 </tspan>isn’t
+principal (so [<tspan font-family="eufm" font-size="10">𝔭</tspan>]<tspan font-family="cmmi" font-size="10">≠</tspan>[(1)]), it follows that <tspan font-family="eufm" font-size="10">𝔭 </tspan>has order two. So Lagrange’s theorem says that Cl<sub><tspan font-family="cmmi" font-size="8">K</tspan></sub>
+has order either 2 or 4.
+</p><!--l. 746--><p class="indent" >  Now we claim [<tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>]<sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">≠</tspan>[(1)], which implies that <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> has order greater than 2. If not, <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> is
+principal. We know N(<tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) = 3, so this can only occur if <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> = (3); this would force <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> = <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>.
+This is impossible since <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> = (1).
+</p><!--l. 753--><p class="indent" >  Thus, <tspan font-family="eufm" font-size="10">𝔮</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> has even order greater than 2. So it has to have order 4. From this we
+deduce
+</p>
+  <div class="math-display" >
+<img 
+src="Na2462x.png" alt="ClK ∼= ℤ ∕4ℤ.                                -|
+" class="math-display"  /></div>
+  </div>
+                                                                                
+                                                                                
+<div class="mdframed" id="mdframed-833">
+<a 
+ id="x449-426028r1286"></a>
+<div class="newtheorem">
+<!--l. 762--><p class="noindent" ><span class="head">
+<a 
+ id="x449-426029r10"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 49.8.10 —  </tspan> </span><a 
+ id="x449-426030"></a>When we did this at Harvard during Math 129, there was a five-minute
+interruption in which students (jokingly) complained about the difficulty of evaluating <img 
+src="Na2463x.png" alt="4
+π"  class="frac" align="middle" /><img 
+src="Na2464x.png" alt="√ ---
+  17"  class="sqrt"  />.
+Excerpt:
+     </p><blockquote class="quote">
+     <!--l. 766--><p class="noindent" >“Will we be allowed to bring a small calculator on the exam?” – Student 1 <br 
+class="newline" />“What does the size have to do with anything? You could have an Apple
+     Watch” – Professor <br 
+class="newline" />“Just use the fact that <tspan font-family="cmmi" font-size="10">π </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan>3” – me <br 
+class="newline" />“Even  [other  professor]  doesn’t  know  that,  how  are  we  supposed  to?”  –
+     Student 2 <br 
+class="newline" />“You have to do this yourself!” – Professor <br 
+class="newline" />“This is an outrage.” – Student 1</p></blockquote>
+</p>
+  </div>
+<!--l. 773--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 774--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach57.htm" >next</a>] [<a 
+href="Nase315.htm" >prev</a>] [<a 
+href="Nase315.htm#tailNase315.htm" >prev-tail</a>] [<a 
+href="Nase316.htm" >front</a>] [<a 
+href="Nase328.htm#Nase336.htm" >up</a>] </p></div>
+<!--l. 774--><p class="indent" >  <a 
+ id="tailNase316.htm"></a> </p> 
+</body> 
+</html>

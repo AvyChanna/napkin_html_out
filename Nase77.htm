@@ -1,0 +1,194 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Direct sums</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 179--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase78.htm" >next</a>] [<a 
+href="Nase76.htm" >prev</a>] [<a 
+href="Nase76.htm#tailNase76.htm" >prev-tail</a>] [<a 
+href="#tailNase77.htm">tail</a>] [<a 
+href="Nach12.htm#Nase77.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">9.3</span>  <a 
+ id="x120-1090009.3"></a>Direct sums</h3>
+<!--l. 181--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">ax</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">bx </tspan>+ <tspan font-family="cmmi" font-size="10">c</tspan><tspan font-family="cmsy" font-size="10">} </tspan>= <tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">⊕</tspan><tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">⊕</tspan><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="msbm" font-size="10">ℝ</tspan><tspan font-family="cmti" font-size="10">, and </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> <tspan font-family="cmti" font-size="10">is the sum of its</tspan>
+<tspan font-family="cmti" font-size="10">axes.</tspan>
+</p><!--l. 182--><p class="indent" >  Let’s return to <tspan font-family="cmbx" font-size="10">??</tspan> , and consider
+</p>
+  <div class="math-display" >
+<img 
+src="Na312x.png" alt="    {                      }
+V =   ax2 + bx + c | a,b,c ∈ ℝ .
+" class="math-display"  /></div>
+<!--l. 184--><p class="indent" >  Even though I haven’t told you what a dimension is, you can probably see that this vector
+space “should have” dimension 3. We’ll get to that in a moment.
+</p><!--l. 188--><p class="indent" >  The other thing you may have noticed is that somehow the <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, <tspan font-family="cmmi" font-size="10">x </tspan>and 1 terms don’t “talk to
+each other”. They’re totally unrelated. In other words, we can consider the three
+sets
+</p><table 
+class="align-star"><!--l. 196--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="msbm" font-size="10">ℝ</tspan></td><td 
+class="align-even"> := <img 
+src="Na314x.png" alt="{   2       }
+  ax | a ∈ ℝ"  class="left" align="middle" /></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="msbm" font-size="10">ℝ</tspan></td> <td 
+class="align-even"> : = <img 
+src="Na315x.png" alt="{bx | b ∈ ℝ}"  class="left" align="middle" /></td>  <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="msbm" font-size="10">ℝ</tspan></td>  <td 
+class="align-even"> : = <img 
+src="Na316x.png" alt="{c | c ∈ ℝ}"  class="left" align="middle" /><tspan font-family="cmmi" font-size="10">.</tspan></td>  <td 
+class="align-label"></td><td 
+class="align-label">                                                            </td></tr></table>
+                                                                                
+                                                                                
+</p><!--l. 197--><p class="indent" >  In an obvious way, each of these can be thought of as a “copy” of <tspan font-family="msbm" font-size="10">ℝ</tspan>.
+</p><!--l. 199--><p class="indent" >  Then <tspan font-family="cmmi" font-size="10">V </tspan>quite literally consists of the “sums of these sets”. Specifically, every element of <tspan font-family="cmmi" font-size="10">V</tspan>
+can be written <tspan font-family="cmti" font-size="10">uniquely </tspan>as the sum of one element from each of these sets. This motivates us
+to write
+</p>
+  <div class="math-display" >
+<img 
+src="Na317x.png" alt="     2
+V = x ℝ ⊕ xℝ ⊕  ℝ.
+" class="math-display"  /></div>
+<!--l. 204--><p class="indent" >  The notion which captures this formally is the <tspan font-family="cmbx" font-size="10">direct sum</tspan>.
+<a 
+ id="x120-109001r360"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 207--><p class="noindent" ><span class="head">
+<a 
+ id="x120-109002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 9.3.1.</tspan>  </span><a 
+ id="x120-109003"></a>Let <tspan font-family="cmmi" font-size="10">M </tspan>be an <tspan font-family="cmmi" font-size="10">R</tspan>-module. Let <tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> be subsets of <tspan font-family="cmmi" font-size="10">M </tspan>which are
+themselves <tspan font-family="cmmi" font-size="10">R</tspan>-modules. Then we write <tspan font-family="cmmi" font-size="10">M </tspan>= <tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> and say <tspan font-family="cmmi" font-size="10">M </tspan>is a <tspan font-family="cmbx" font-size="10">direct sum</tspan> of
+<tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> if every element from <tspan font-family="cmmi" font-size="10">M </tspan>can be written uniquely as the sum of an element
+from <tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>.
+</p>
+  </div>
+<!--l. 213--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-229">
+<a 
+ id="x120-109004r361"></a>
+<div class="newtheorem">
+<!--l. 214--><p class="noindent" ><span class="head">
+<a 
+ id="x120-109005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 9.3.2 </tspan>(Euclidean plane)<br 
+class="newline" /> </span><a 
+ id="x120-109006"></a>Take the vector space <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>  = <img 
+src="Na318x.png" alt="{(x,y) | x ∈ ℝ,y ∈ ℝ}"  class="left" align="middle" />.
+We can consider it as a direct sum of its <tspan font-family="cmmi" font-size="10">x</tspan>-axis and <tspan font-family="cmmi" font-size="10">y</tspan>-axis:
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na319x.png" alt="X  = {(x,0) | x ∈ ℝ } and Y = {(0,y) | y ∈ ℝ}.
+" class="math-display"  /></div>
+<!--l. 220--><p class="noindent" >Then <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> = <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>.
+</p>
+  </div>
+<!--l. 221--><p class="indent" >  </p></div>
+<!--l. 223--><p class="indent" >  This gives us a “top-down” way to break down modules into some disconnected
+components.
+</p><!--l. 226--><p class="indent" >  By applying this idea in reverse, we can also construct new vector spaces as follows. In a
+very unfortunate accident, the two names and notations for technically distinct things are
+exactly the same. <a 
+ id="x120-109007r362"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 231--><p class="noindent" ><span class="head">
+<a 
+ id="x120-109008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 9.3.3.</tspan>  </span><a 
+ id="x120-109009"></a>Let <tspan font-family="cmmi" font-size="10">M </tspan>and <tspan font-family="cmmi" font-size="10">N </tspan>be <tspan font-family="cmmi" font-size="10">R</tspan>-modules. We define the <tspan font-family="cmbx" font-size="10">direct sum</tspan> <tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">N </tspan>to
+be the <tspan font-family="cmmi" font-size="10">R</tspan>-module whose elements are pairs (<tspan font-family="cmmi" font-size="10">m,n</tspan>) <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">N</tspan>. The operations are given
+by
+</p>
+  <div class="math-display" >
+<img 
+src="Na320x.png" alt="(m1, n1)+  (m2, n2) = (m1 + m2, n1 + n2).
+" class="math-display"  /></div>
+<!--l. 236--><p class="indent" >  and
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na321x.png" alt="r ⋅(m, n) = (r ⋅m, r ⋅n).
+" class="math-display"  /></div>
+  </div>
+<!--l. 238--><p class="indent" >
+</p><!--l. 240--><p class="indent" >  For example, while we technically wrote <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> = <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">⊕</tspan><tspan font-family="cmmi" font-size="10">Y </tspan>, since each of <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>is a copy of <tspan font-family="msbm" font-size="10">ℝ</tspan>,
+we might as well have written <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><img 
+src="Na322x.png" alt="∼="  class="cong"  /><tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>.
+<a 
+ id="x120-109010r363"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 245--><p class="noindent" ><span class="head">
+<a 
+ id="x120-109011r4"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 9.3.4.</tspan>  </span><a 
+ id="x120-109012"></a>The above illustrates an abuse of notation in the way we write a
+direct sum. The symbol <tspan font-family="cmsy" font-size="10">⊕ </tspan>has two meanings. </p>
+     <ul class="itemize1">
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">V </tspan>is a <tspan font-family="cmti" font-size="10">given </tspan>space and <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> are subspaces, then <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> means
+     that “<tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmti" font-size="10">splits </tspan>as a direct sum <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>” in the way we defined above.
+     </li>
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> are two <tspan font-family="cmti" font-size="10">unrelated </tspan>spaces, then <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> is <tspan font-family="cmti" font-size="10">defined </tspan>as the vector
+     space whose <tspan font-family="cmti" font-size="10">elements </tspan>are pairs (<tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,w</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>.</li></ul>
+<!--l. 250--><p class="noindent" >You can see that these definitions “kind of” coincide.
+</p>
+  </div>
+<!--l. 251--><p class="indent" >
+</p><!--l. 253--><p class="indent" >  In this way, you can see that <tspan font-family="cmmi" font-size="10">V </tspan>should be isomorphic to <tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>; we had <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">⊕</tspan><tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>,
+but the 1, <tspan font-family="cmmi" font-size="10">x</tspan>, <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> don’t really talk to each other and each of the summands is really just a copy
+of <tspan font-family="msbm" font-size="10">ℝ </tspan>at heart.
+<a 
+ id="x120-109013r364"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 260--><p class="noindent" ><span class="head">
+<a 
+ id="x120-109014r5"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Definition 9.3.5.</tspan>  </span><a 
+ id="x120-109015"></a>We can also define, for every positive integer <tspan font-family="cmmi" font-size="10">n</tspan>, the module
+</p>
+  <div class="math-display" >
+<img 
+src="Na323x.png" alt="  ⊕n
+M    :=  M◟-⊕-M--⊕◝◜⋅⋅⋅⊕-M-◞.
+             n times
+" class="math-display"  /></div>
+  </div>
+<!--l. 263--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+  <!--l. 265--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase78.htm" >next</a>] [<a 
+href="Nase76.htm" >prev</a>] [<a 
+href="Nase76.htm#tailNase76.htm" >prev-tail</a>] [<a 
+href="Nase77.htm" >front</a>] [<a 
+href="Nach12.htm#Nase77.htm" >up</a>] </p></div>
+<!--l. 265--><p class="indent" >  <a 
+ id="tailNase77.htm"></a> </p> 
+</body> 
+</html>

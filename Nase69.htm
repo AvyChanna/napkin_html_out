@@ -1,0 +1,184 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Definition of sequential compactness</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 17--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase70.htm" >next</a>] [<a 
+href="#tailNase69.htm">tail</a>] [<a 
+href="Nach11.htm#Nase69.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">8.1</span>  <a 
+ id="x110-990008.1"></a>Definition of sequential compactness</h3>
+<!--l. 18--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmti" font-size="10">is compact, but </tspan>(0<tspan font-family="cmmi" font-size="10">,</tspan>1) <tspan font-family="cmti" font-size="10">is not.</tspan>
+</p><!--l. 19--><p class="indent" >  To emphasize, compactness is one of the <tspan font-family="cmti" font-size="10">best </tspan>possible properties that a metric space can
+have. <a 
+ id="x110-99001r309"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 22--><p class="noindent" ><span class="head">
+<a 
+ id="x110-99002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 8.1.1.</tspan>  </span><a 
+ id="x110-99003"></a>A <tspan font-family="cmbx" font-size="10">subsequence</tspan> of an infinite sequence <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan> is exactly what it
+sounds like: a sequence <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan><sub><tspan font-family="cmr" font-size="6">1</tspan></sub></sub><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan><sub><tspan font-family="cmr" font-size="6">2</tspan></sub></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan> where <tspan font-family="cmmi" font-size="10">i</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmmi" font-size="10">&#x003C; i</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmmi" font-size="10">&#x003C;</tspan> <img 
+src="Na272x.png" alt="⋅⋅⋅"  class="@cdots"  /> are positive integers. Note that
+the sequence is required to be infinite.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 27--><p class="indent" >
+Another way to think about this is “selecting infinitely many terms” or “deleting
+some terms” of the sequence, depending on whether your glass is half empty or half
+full.
+<a 
+ id="x110-99004r310"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 33--><p class="noindent" ><span class="head">
+<a 
+ id="x110-99005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 8.1.2.</tspan>  </span><a 
+ id="x110-99006"></a>A metric space <tspan font-family="cmmi" font-size="10">M </tspan>is <tspan font-family="cmbx" font-size="10">sequentially compact</tspan> if every sequence has
+a subsequence which converges.
+</p>
+  </div>
+<!--l. 35--><p class="indent" >
+This time, let me give some non-examples before the examples.</p>
+<div class="mdframed" id="mdframed-194">
+<a 
+ id="x110-99007r311"></a>
+<div class="newtheorem">
+<!--l. 38--><p class="noindent" ><span class="head">
+<a 
+ id="x110-99008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 8.1.3 </tspan>(Non-examples of compact metric spaces)<br 
+class="newline" /> </span><a 
+ id="x110-99009"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The space <tspan font-family="msbm" font-size="10">ℝ </tspan>is not compact: consider the sequence 1<tspan font-family="cmmi" font-size="10">,</tspan>2<tspan font-family="cmmi" font-size="10">,</tspan>3<tspan font-family="cmmi" font-size="10">,</tspan>4<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan>. Any subsequence
+    explodes, hence <tspan font-family="msbm" font-size="10">ℝ </tspan>cannot possibly be compact.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">More generally, if a space is not bounded it cannot be compact. (You can prove this
+    if you want.)
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The open interval (0<tspan font-family="cmmi" font-size="10">,</tspan>1) is bounded but not compact: consider the sequence <img 
+src="Na273x.png" alt="1
+2"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na274x.png" alt="1
+3"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na275x.png" alt="1
+4"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan>.
+    No subsequence can converge to a point in (0<tspan font-family="cmmi" font-size="10">,</tspan>1) because the sequence “converges
+    to 0”.
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate">More generally, any space which is not complete cannot be compact.</dd></dl>
+</p>
+  </div>
+<!--l. 51--><p class="indent" >  </p></div>
+<!--l. 53--><p class="indent" >  Now for the examples!
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-195">
+<a 
+ id="x110-99014r312"></a>
+<div class="newtheorem">
+<!--l. 55--><p class="noindent" ><span class="head">
+<a 
+ id="x110-99015r4"></a>
+<tspan font-family="cmbx" font-size="10">Question 8.1.4.</tspan>  </span><a 
+ id="x110-99016"></a><tspan font-family="cmr" font-size="10">Show that a finite set is compact. (Pigeonhole Principle.)</tspan></p>
+  </div>
+<!--l. 57--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-196">
+<a 
+ id="x110-99017r313"></a>
+<div class="newtheorem">
+<!--l. 58--><p class="noindent" ><span class="head">
+<a 
+ id="x110-99018r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 8.1.5 </tspan>(Examples of compact spaces)<br 
+class="newline" /> </span><a 
+ id="x110-99019"></a>Here are some more examples of compact
+spaces. I’ll prove they’re compact in just a moment; for now just convince yourself they
+are.
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">[0<tspan font-family="cmmi" font-size="10">,</tspan>1] is compact. Convince yourself of this! Imagine having a large number of dots
+    in the unit interval…
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The surface of a sphere, <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> = <img 
+src="Na276x.png" alt="{                        }
+ (x,y,z) | x2 + y2 + z2 = 1"  class="left" align="middle" /> is compact.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The unit ball <tspan font-family="cmmi" font-size="10">B</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> = <img 
+src="Na277x.png" alt="{                  }
+  (x, y) | x2 + y2 ≤ 1"  class="left" align="middle" /> is compact.
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate">The <tspan font-family="cmbx" font-size="10">Hawaiian earring</tspan> living in <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>  is compact: it consists of mutually tangent
+    circles of radius <img 
+src="Na278x.png" alt="1n"  class="frac" align="middle" /> for each <tspan font-family="cmmi" font-size="10">n</tspan>, as in <tspan font-family="cmbx" font-size="10">??</tspan> .</dd></dl>
+</p>
+  </div>
+<!--l. 71--><p class="indent" >  </p></div>
+  <figure class="figure"> 
+
+                                                                                
+                                                                                
+<a 
+ id="x110-990241"></a>
+                                                                                
+                                                                                
+<figcaption class="caption" ><span class="id">Figure 8.1:</span><span  
+class="content">Hawaiian Earring.</span></figcaption><!--tex4ht:label?: x110-990241 -->
+                                                                                
+                                                                                
+  </figure>
+<!--l. 83--><p class="indent" >  To aid in generating more examples, we remark:</p>
+<div class="mdframed" id="mdframed-197">
+<a 
+ id="x110-99025r314"></a>
+<div class="newtheorem">
+<!--l. 84--><p class="noindent" ><span class="head">
+<a 
+ id="x110-99026r6"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 8.1.6 </tspan><tspan font-family="cmss" font-size="10">(Closed subsets of compacts)</tspan><br 
+class="newline" /> </span><a 
+ id="x110-99027"></a>Closed  subsets  of  sequentially  compact
+sets are compact.
+</p>
+  </div>
+<!--l. 86--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-198">
+<a 
+ id="x110-99028r315"></a>
+<div class="newtheorem">
+<!--l. 88--><p class="noindent" ><span class="head">
+<a 
+ id="x110-99029r7"></a>
+<tspan font-family="cmbx" font-size="10">Question 8.1.7.</tspan>  </span><a 
+ id="x110-99030"></a><tspan font-family="cmr" font-size="10">Prove this. (It should follow easily from definitions.)</tspan></p>
+  </div>
+<!--l. 89--><p class="indent" >  </p></div>
+<!--l. 91--><p class="indent" >  We need to do a bit more work for these examples, which we do in the next section.
+                                                                                
+                                                                                
+</p>
+  <!--l. 93--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase70.htm" >next</a>] [<a 
+href="Nase69.htm" >front</a>] [<a 
+href="Nach11.htm#Nase69.htm" >up</a>] </p></div>
+<!--l. 93--><p class="indent" >  <a 
+ id="tailNase69.htm"></a> </p> 
+</body> 
+</html>

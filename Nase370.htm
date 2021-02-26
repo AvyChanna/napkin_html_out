@@ -1,0 +1,279 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Homotopy equivalent spaces</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 481--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach66.htm" >next</a>] [<a 
+href="Nase369.htm" >prev</a>] [<a 
+href="Nase369.htm#tailNase369.htm" >prev-tail</a>] [<a 
+href="Nase347.htm#tailNase370.htm">tail</a>] [<a 
+href="Nase389.htm#Nase395.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">58.5</span>  <a 
+ id="x519-49900058.5"></a>Homotopy equivalent spaces</h3>
+<!--l. 482--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">A disk is homotopy equivalent to a point, an annulus is</tspan>
+<tspan font-family="cmti" font-size="10">homotopy equivalent to </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 483--><p class="indent" >  Up to now I’ve abused notation and referred to “path homotopy” as just “homotopy” for
+two paths. I will unfortunately continue to do so (and so any time I say two paths are
+homotopic, you should assume I mean “path-homotopic”). But let me tell you what the
+general definition of homotopy is first. <a 
+ id="x519-499001r1487"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 487--><p class="noindent" ><span class="head">
+<a 
+ id="x519-499002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 58.5.1.</tspan>  </span><a 
+ id="x519-499003"></a>Let  <tspan font-family="cmmi" font-size="10">f,g  </tspan>:  <tspan font-family="cmmi" font-size="10">X  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">Y  </tspan>be  continuous  functions.  A  <tspan font-family="cmbx" font-size="10">homotopy</tspan> is  a
+continuous function <tspan font-family="cmmi" font-size="10">F </tspan>: <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">× </tspan>[0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>, which we’ll write <tspan font-family="cmmi" font-size="10">F</tspan><sub><tspan font-family="cmmi" font-size="8">s</tspan></sub>(<tspan font-family="cmmi" font-size="10">x</tspan>) for <tspan font-family="cmmi" font-size="10">s </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan>[0<tspan font-family="cmmi" font-size="10">,</tspan>1], <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">X</tspan>,
+such that
+</p>
+  <div class="math-display" >
+<img 
+src="Na2918x.png" alt="F0(x) = f(x) and F1(x) = g (x ) for all x ∈ X.
+" class="math-display"  /></div>
+<!--l. 491--><p class="indent" >  If such a function exists, then <tspan font-family="cmmi" font-size="10">f </tspan>and <tspan font-family="cmmi" font-size="10">g </tspan>are <tspan font-family="cmbx" font-size="10">homotopic</tspan>.
+</p>
+  </div>
+<!--l. 492--><p class="indent" >
+Intuitively this is once again “deforming <tspan font-family="cmmi" font-size="10">f </tspan>to <tspan font-family="cmmi" font-size="10">g</tspan>”. You might notice this is almost exactly the
+same definition as path-homotopy, except that <tspan font-family="cmmi" font-size="10">f </tspan>and <tspan font-family="cmmi" font-size="10">g </tspan>are any functions instead of paths,
+and hence there’s no restriction on keeping some “endpoints” fixed through the
+deformation.
+</p><!--l. 498--><p class="indent" >  This homotopy can be quite dramatic:
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-977">
+<a 
+ id="x519-499004r1488"></a>
+<div class="newtheorem">
+<!--l. 500--><p class="noindent" ><span class="head">
+<a 
+ id="x519-499005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 58.5.2</tspan><br 
+class="newline" /> </span><a 
+ id="x519-499006"></a>The zero function <tspan font-family="cmmi" font-size="10">z</tspan><img 
+src="Na2919x.png" alt="↦→"  class="mapsto"  />0 and the identity function <tspan font-family="cmmi" font-size="10">z</tspan><img 
+src="Na2920x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">z </tspan>are homotopic
+as functions <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>. The necessary deformation is
+</p>
+<div class="math-display" >
+<img 
+src="Na2921x.png" alt="[0,1]× ℂ →  ℂ by (t,z ) ↦→ tz.
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 504--><p class="indent" >  </p></div>
+<!--l. 506--><p class="indent" >  I bring this up because I want to define: <a 
+ id="x519-499007r1489"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 508--><p class="noindent" ><span class="head">
+<a 
+ id="x519-499008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 58.5.3.</tspan>  </span><a 
+ id="x519-499009"></a>Let <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>be continuous spaces. They are <tspan font-family="cmbx" font-size="10">homotopy equivalent</tspan> if
+there exist functions <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>and <tspan font-family="cmmi" font-size="10">g </tspan>: <tspan font-family="cmmi" font-size="10">Y </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>such that
+     </p><dl class="enumerate"><dt class="enumerate">
+  (i) </dt><dd 
+class="enumerate"><tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">g </tspan>: <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>is homotopic to the identity map on <tspan font-family="cmmi" font-size="10">X</tspan>, and
+     </dd><dt class="enumerate">
+ (ii) </dt><dd 
+class="enumerate"><tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">Y </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>is homotopic to the identity map on <tspan font-family="cmmi" font-size="10">Y </tspan>.</dd></dl>
+<!--l. 515--><p class="noindent" >If a topological space is homotopy equivalent to a point, then it is said to be <tspan font-family="cmbx" font-size="10">contractible</tspan>.
+</p>
+  </div>
+<!--l. 517--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-978">
+<a 
+ id="x519-499012r1490"></a>
+<div class="newtheorem">
+<!--l. 519--><p class="noindent" ><span class="head">
+<a 
+ id="x519-499013r4"></a>
+<tspan font-family="cmbx" font-size="10">Question 58.5.4.</tspan>  </span><a 
+ id="x519-499014"></a><tspan font-family="cmr" font-size="10">Why are two homeomorphic spaces also homotopy equivalent?</tspan></p>
+  </div>
+<!--l. 520--><p class="indent" >  </p></div>
+<!--l. 522--><p class="indent" >  Intuitively, you can think of this as a more generous form of stretching and bending than
+homeomorphism: we are allowed to compress huge spaces into single points.</p>
+<div class="mdframed" id="mdframed-979">
+<a 
+ id="x519-499015r1491"></a>
+<div class="newtheorem">
+<!--l. 525--><p class="noindent" ><span class="head">
+<a 
+ id="x519-499016r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 58.5.5 </tspan>(<tspan font-family="msbm" font-size="10">ℂ </tspan>is contractible)<br 
+class="newline" /> </span><a 
+ id="x519-499017"></a>Consider the topological spaces <tspan font-family="msbm" font-size="10">ℂ </tspan>and the space
+consisting of the single point <tspan font-family="cmsy" font-size="10">{</tspan>0<tspan font-family="cmsy" font-size="10">}</tspan>. We claim these spaces are homotopy equivalent (can you
+guess what <tspan font-family="cmmi" font-size="10">f </tspan>and <tspan font-family="cmmi" font-size="10">g </tspan>are?) Indeed, the two things to check are
+     </p><dl class="enumerate"><dt class="enumerate">
+  (i) </dt><dd 
+class="enumerate"><tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">→{</tspan>0<tspan font-family="cmsy" font-size="10">}</tspan><img 
+src="Na2922x.png" alt="`→"  class="hookrightarrow"  /><tspan font-family="msbm" font-size="10">ℂ </tspan>by <tspan font-family="cmmi" font-size="10">z</tspan><img 
+src="Na2923x.png" alt="↦→"  class="mapsto"  />0<img 
+src="Na2924x.png" alt="↦→"  class="mapsto"  />0 is homotopy equivalent to the identity on <tspan font-family="msbm" font-size="10">ℂ</tspan>, which we
+     just saw, and
+     </dd><dt class="enumerate">
+ (ii) </dt><dd 
+class="enumerate"><tspan font-family="cmsy" font-size="10">{</tspan>0<tspan font-family="cmsy" font-size="10">}</tspan><img 
+src="Na2925x.png" alt="`→"  class="hookrightarrow"  /><tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">→{</tspan>0<tspan font-family="cmsy" font-size="10">} </tspan>by 0<img 
+src="Na2926x.png" alt="↦→"  class="mapsto"  />0<img 
+src="Na2927x.png" alt="↦→"  class="mapsto"  />0, which <tspan font-family="cmti" font-size="10">is </tspan>the identity on <tspan font-family="cmsy" font-size="10">{</tspan>0<tspan font-family="cmsy" font-size="10">}</tspan>.</dd></dl>
+<!--l. 535--><p class="noindent" >Here by <img 
+src="Na2928x.png" alt="`→"  class="hookrightarrow"  /> I just mean <tspan font-family="cmsy" font-size="10">→ </tspan>in the special case that the function is just an “inclusion”.
+</p>
+  </div>
+<!--l. 537--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-980">
+<a 
+ id="x519-499020r1492"></a>
+<div class="newtheorem">
+<!--l. 539--><p class="noindent" ><span class="head">
+<a 
+ id="x519-499021r6"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 58.5.6 —  </tspan> </span><a 
+ id="x519-499022"></a><tspan font-family="msbm" font-size="10">ℂ </tspan>cannot be <tspan font-family="cmti" font-size="10">homeomorphic </tspan>to a point because there is no bijection
+of sets between them.</p>
+  </div>
+<!--l. 541--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-981">
+<a 
+ id="x519-499023r1493"></a>
+<div class="newtheorem">
+<!--l. 543--><p class="noindent" ><span class="head">
+                                                                                
+                                                                                
+<a 
+ id="x519-499024r7"></a>
+<tspan font-family="cmbx" font-size="10">Example 58.5.7 </tspan>(<tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">∖{</tspan>0<tspan font-family="cmsy" font-size="10">} </tspan>is homotopy equivalent to <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>)<br 
+class="newline" /> </span><a 
+ id="x519-499025"></a>Consider                        the
+topological spaces <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">∖{</tspan>0<tspan font-family="cmsy" font-size="10">}</tspan>, the <tspan font-family="cmbx" font-size="10">punctured plane</tspan>, and the circle <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> viewed as a subset
+of <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>. We claim these spaces are actually homotopy equivalent! The necessary functions
+are the inclusion
+</p>
+<div class="math-display" >
+<img 
+src="Na2929x.png" alt="S1 `→ ℂ ∖ {0}
+" class="math-display"  /></div>
+<!--l. 549--><p class="noindent" >and the function
+</p>
+<div class="math-display" >
+<img 
+src="Na2930x.png" alt="ℂ ∖{0} → S1   by  z ↦→  z-.
+                       |z|
+" class="math-display"  /></div>
+<!--l. 553--><p class="noindent" >You can check that these satisfy the required condition.
+</p>
+  </div>
+<!--l. 554--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-982">
+<a 
+ id="x519-499026r1494"></a>
+<div class="newtheorem">
+<!--l. 556--><p class="noindent" ><span class="head">
+<a 
+ id="x519-499027r8"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 58.5.8 —  </tspan> </span><a 
+ id="x519-499028"></a>On the other hand, <tspan font-family="msbm" font-size="10">ℂ</tspan><tspan font-family="cmsy" font-size="10">∖{</tspan>0<tspan font-family="cmsy" font-size="10">} </tspan>cannot be <tspan font-family="cmti" font-size="10">homeomorphic </tspan>to <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>. One can
+make <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> disconnected by deleting two points; the same is not true for <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">∖{</tspan>0<tspan font-family="cmsy" font-size="10">}</tspan>.
+</p>
+  </div>
+<!--l. 559--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<div class="mdframed" id="mdframed-983">
+<a 
+ id="x519-499029r1495"></a>
+<div class="newtheorem">
+<!--l. 561--><p class="noindent" ><span class="head">
+<a 
+ id="x519-499030r9"></a>
+<tspan font-family="cmbx" font-size="10">Example 58.5.9 </tspan>(Disk = Point, Annulus = Circle.)<br 
+class="newline" /> </span><a 
+ id="x519-499031"></a>By  the  same  token,  a  disk  is
+homotopic to a point; an annulus is homotopic to a circle. (This might be a little easier
+to visualize, since it’s finite.)
+</p>
+  </div>
+<!--l. 565--><p class="indent" >  </p></div>
+<!--l. 567--><p class="indent" >  I bring these up because it turns out that</p>
+<div class="mdframed" id="mdframed-984">
+<!--l. 569--><p class="noindent" ><tspan font-family="cmbx" font-size="10">Algebraic topology can’t distinguish between homotopy equivalent spaces.</tspan></p><!--l. 570--><p class="noindent" ></p>
+  </div>
+<!--l. 571--><p class="indent" >  More precisely,</p>
+<div class="mdframed" id="mdframed-985">
+<a 
+ id="x519-499032r1496"></a>
+<div class="newtheorem">
+<!--l. 572--><p class="noindent" ><span class="head">
+<a 
+ id="x519-499033r10"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 58.5.10 </tspan><tspan font-family="cmss" font-size="10">(Homotopy equivalent spaces have isomorphic fundamental groups)</tspan><br 
+class="newline" /> </span><a 
+ id="x519-499034"></a> Let
+<tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>be path-connected, homotopy-equivalent spaces. Then <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>(<tspan font-family="cmmi" font-size="10">X</tspan>)<img 
+src="Na2931x.png" alt="∼="  class="cong"  /><tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>(<tspan font-family="cmmi" font-size="10">Y </tspan>) for every
+positive integer <tspan font-family="cmmi" font-size="10">n</tspan>.
+</p>
+  </div>
+<!--l. 576--><p class="indent" >  </p></div>
+<!--l. 577--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 578--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Let <tspan font-family="cmmi" font-size="10">γ </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>be a loop. Let <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>and <tspan font-family="cmmi" font-size="10">g </tspan>: <tspan font-family="cmmi" font-size="10">Y </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>be maps witnessing
+that <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>are homotopy equivalent (meaning <tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">g </tspan>and <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">f </tspan>are each homotopic to
+the identity). Then the composition
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na2932x.png" alt="      γ    f
+[0,1]−→  X −→ Y
+" class="math-display"  /></div>
+<!--l. 583--><p class="indent" >  is a loop in <tspan font-family="cmmi" font-size="10">Y </tspan>and hence <tspan font-family="cmmi" font-size="10">f </tspan>induces a natural homomorphism <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">X</tspan>) <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">Y </tspan>). Similarly
+<tspan font-family="cmmi" font-size="10">g </tspan>induces a natural homomorphism <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">Y </tspan>) <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">X</tspan>). The conditions on <tspan font-family="cmmi" font-size="10">f </tspan>and <tspan font-family="cmmi" font-size="10">g </tspan>now say
+exactly that these two homomorphisms are inverse to each other, meaning the maps are
+isomorphisms.                                                                                              □
+</p>
+  </div>
+<!--l. 588--><p class="indent" >  In particular,</p>
+<div class="mdframed" id="mdframed-986">
+<a 
+ id="x519-499035r1497"></a>
+<div class="newtheorem">
+<!--l. 590--><p class="noindent" ><span class="head">
+<a 
+ id="x519-499036r11"></a>
+<tspan font-family="cmbx" font-size="10">Question 58.5.11.</tspan>  </span><a 
+ id="x519-499037"></a><tspan font-family="cmr" font-size="10">What are the fundamental groups of contractible spaces?</tspan></p>
+  </div>
+<!--l. 591--><p class="indent" >  </p></div>
+<!--l. 593--><p class="indent" >  That means, for example, that algebraic topology can’t tell the following homotopic
+subspaces of <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> apart. </p>
+<div class="center" 
+>
+<!--l. 595--><p class="noindent" >
+</p><!--l. 596--><p class="noindent" ><tspan font-family="wasy" font-size="10">♀</tspan>     <tspan font-family="wasy" font-size="10">♂</tspan></p></div>
+                                                                                
+                                                                                
+  <!--l. 601--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach66.htm" >next</a>] [<a 
+href="Nase369.htm" >prev</a>] [<a 
+href="Nase369.htm#tailNase369.htm" >prev-tail</a>] [<a 
+href="Nase370.htm" >front</a>] [<a 
+href="Nase389.htm#Nase395.htm" >up</a>] </p></div>
+<!--l. 601--><p class="indent" >  <a 
+ id="tailNase370.htm"></a> </p> 
+</body> 
+</html>

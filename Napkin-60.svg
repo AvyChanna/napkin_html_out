@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="Napkin.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="228.5906pt" height="45.92616pt" viewBox="-114.2953 -18.3347 228.5906 45.92616 "> 
+<g transform="translate(0, 27.59146 ) scale(1,-1) translate(0,18.3347 )"> 
+                               </p><g stroke="#000" fill="#000">
+ <g stroke-width="0.4">
+ <g transform="translate(-114.2953,-11.58983)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(114.2953,0)" text-anchor="middle"  font-size="10.95"> 
+     <g transform="translate(-14.65381,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(14.65381,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmmi" font-size="10">I</tspan><tspan baseline-shift="sub"><tspan font-family="msbm" font-size="10">ℚ</tspan></tspan>(<tspan font-family="eufm" font-size="10">𝔪</tspan>)</g> </g>
+ </text> 
+</g>
+ </g>
+               <g transform="translate(-31.12486,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(31.12486,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> Gal(<tspan font-family="msbm" font-size="10">ℚ</tspan>(<tspan font-family="cmmi" font-size="10">ζ</tspan>)<tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="msbm" font-size="10">ℚ</tspan>)</g> </g>
+ </text> 
+</g>
+ </g>
+          <g transform="translate(-22.65858,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(22.65858,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> (<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕m</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>)<tspan baseline-shift="sub"><tspan font-family="cmsy" font-size="8">×</tspan></tspan></g> </g>
+ </text> 
+</g>
+ </g>
+ 
+   <g transform="translate(-2.75461,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.75461,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmmi" font-size="10">p</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+                   <g transform="translate(-19.90176,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(19.90176,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> (<tspan font-family="cmmi" font-size="10">x</tspan><img 
+src="Na2866x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">x</tspan><tspan baseline-shift="sub"><tspan font-family="cmmi" font-size="8">p</tspan></tspan>)</g> </g>
+ </text> 
+</g>
+ </g>
+                <g transform="translate(-28.09293,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(28.09293,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmmi" font-size="10">p </tspan>(mod <tspan font-family="cmmi" font-size="10">m</tspan>)<tspan font-family="cmmi" font-size="10">.</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+ </text> 
+</g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -75.35855 8.25775 L -49.91653 8.25775  " fill="none"/>
+ <g transform="translate(-49.69754,8.25775)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ <g transform="translate(-80.0621,16.0341)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(17.64355,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <img 
+src="Na2867x.png" alt="(ℚ(ζ)∕ℚ)
+   ∙"  class="left" align="middle" /></g> </g>
+ </text> 
+</g>
+ </g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M 22.60031 8.25775 L 53.47667 8.25775  " fill="none"/>
+ <g transform="translate(53.69566,8.25775)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ <g transform="translate(34.95187,11.33403)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(3.3056,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <img 
+src="Na2868x.png" alt="∼="  class="cong"  /> </g> </g>
+ </text> 
+</g>
+ </g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -86.92926 -8.85234 L -38.69344 -8.85234  " fill="none"/>
+ <g transform="matrix(-1.0,0.0,0.0,-1.0,-87.03876,-8.85234)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="miter">
+ <path d=" M 0.0 1.79575 L 0.0 -1.79575  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ <g transform="translate(-38.47444,-8.85234)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M 11.7057 -8.85234 L 48.04233 -8.85234  " fill="none"/>
+ <g transform="matrix(-1.0,0.0,0.0,-1.0,11.5962,-8.85234)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="miter">
+ <path d=" M 0.0 1.79575 L 0.0 -1.79575  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ <g transform="translate(48.26132,-8.85234)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ </g>
+                             </g> 
+</svg> 

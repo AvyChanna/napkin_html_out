@@ -1,0 +1,212 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The algebra of fundamental groups</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 466--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase402.htm" >next</a>] [<a 
+href="Nase376.htm" >prev</a>] [<a 
+href="Nase376.htm#tailNase376.htm" >prev-tail</a>] [<a 
+href="#tailNase377.htm">tail</a>] [<a 
+href="Nase397.htm#Nach67.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">59.5</span>  <a 
+ id="x528-50700059.5"></a>The algebra of fundamental groups</h3>
+<!--l. 467--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup><tspan font-family="cmti" font-size="10">, with fundamental group </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 468--><p class="indent" >  Next up, we’re going to turn functions between spaces into homomorphisms of fundamental
+groups.
+</p><!--l. 470--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>be topological spaces and <tspan font-family="cmmi" font-size="10">f </tspan>: (<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) <tspan font-family="cmsy" font-size="10">→ </tspan>(<tspan font-family="cmmi" font-size="10">Y,y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>). Recall that we defined a group
+homomorphism
+</p>
+  <div class="math-display" >
+<img 
+src="Na2960x.png" alt="f♯ : π1(X, x0) → π1(Y0,y0) by [γ] ↦→ [f ∘γ ].
+" class="math-display"  /></div>
+<!--l. 477--><p class="indent" >  More importantly, we have:</p>
+<div class="mdframed" id="mdframed-1010">
+<a 
+ id="x528-507001r1531"></a>
+<div class="newtheorem">
+<!--l. 479--><p class="noindent" ><span class="head">
+<a 
+ id="x528-507002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 59.5.1</tspan><br 
+class="newline" /> </span><a 
+ id="x528-507003"></a>Let <tspan font-family="cmmi" font-size="10">p </tspan>: (<tspan font-family="cmmi" font-size="10">E,e</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) <tspan font-family="cmsy" font-size="10">→ </tspan>(<tspan font-family="cmmi" font-size="10">B,b</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) be a covering projection of path-connected
+spaces.  Then  the  homomorphism  <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmmi" font-size="8">♯</tspan></sub>   :  <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">E,e</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>)  <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">B,b</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>)  is  <tspan font-family="cmti" font-size="10">injective</tspan>.  Hence
+<tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmmi" font-size="8">♯</tspan></sub>img(<tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">E,e</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>)) is an isomorphic copy of <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">E,e</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) as a subgroup of <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">B,b</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>).
+</p>
+  </div>
+<!--l. 483--><p class="indent" >  </p></div>
+<!--l. 484--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 485--><p class="indent" >  <span class="head">
+                                                                                
+                                                                                
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>We’ll show ker<tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmmi" font-size="8">♯</tspan></sub> is trivial. It suffices to show if <tspan font-family="cmmi" font-size="10">γ </tspan>is a nulhomotopic loop in <tspan font-family="cmmi" font-size="10">B</tspan>
+then its lift is nulhomotopic.
+</p><!--l. 489--><p class="indent" >  By definition, there’s a homotopy <tspan font-family="cmmi" font-size="10">F </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">× </tspan>[0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B </tspan>taking <tspan font-family="cmmi" font-size="10">γ </tspan>to the constant loop
+1<sub><tspan font-family="cmmi" font-size="8">B</tspan></sub>. We can lift it to a homotopy <span class='accenttilde'><tspan font-family="cmmi" font-size="10">F</tspan></span> : [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">× </tspan>[0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">E </tspan>that establishes <span class='accenttilde'><tspan font-family="cmmi" font-size="10">γ</tspan></span> <tspan font-family="cmsy" font-size="10">≃</tspan><span class='accenttilde'>1</span><sub><tspan font-family="cmmi" font-size="8">B</tspan></sub>. But 1<sub><tspan font-family="cmmi" font-size="8">E</tspan></sub>
+is a lift of 1<sub><tspan font-family="cmmi" font-size="8">B</tspan></sub> (duh) and lifts are unique.                                                            □
+</p>
+  </div><div class="mdframed" id="mdframed-1011">
+<a 
+ id="x528-507004r1532"></a>
+<div class="newtheorem">
+<!--l. 496--><p class="noindent" ><span class="head">
+<a 
+ id="x528-507005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 59.5.2 </tspan>(Subgroups of <tspan font-family="msbm" font-size="10">ℤ</tspan>)<br 
+class="newline" /> </span><a 
+ id="x528-507006"></a>Let’s look at the space <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> with fundamental group <tspan font-family="msbm" font-size="10">ℤ</tspan>. The
+group <tspan font-family="msbm" font-size="10">ℤ </tspan>has two types of subgroups: </p>
+     <ul class="itemize1">
+     <li class="itemize">The trivial subgroup. This corresponds to the canonical projection <tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>, since
+     <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="msbm" font-size="10">ℝ</tspan>) is the trivial group (<tspan font-family="msbm" font-size="10">ℝ </tspan>is simply connected) and hence its image in <tspan font-family="msbm" font-size="10">ℤ </tspan>is the
+     trivial group.
+     </li>
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">n</tspan><tspan font-family="msbm" font-size="10">ℤ </tspan>for <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan>1. This is given by the covering projection <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>  by <tspan font-family="cmmi" font-size="10">z</tspan><img 
+src="Na2961x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>. The
+     image of a loop in the covering <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> is a “multiple of <tspan font-family="cmmi" font-size="10">n</tspan>” in the base <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>.</li></ul>
+</p>
+  </div>
+<!--l. 510--><p class="indent" >  </p></div>
+<!--l. 512--><p class="indent" >  It turns out that these are the <tspan font-family="cmti" font-size="10">only </tspan>covering projections of <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> by path-connected spaces:
+there’s one for each subgroup of <tspan font-family="msbm" font-size="10">ℤ</tspan>. (We don’t care about disconnected spaces because, again, a
+covering projection via disconnected spaces is just a bunch of unrelated “good” coverings.) For
+this statement to make sense I need to tell you what it means for two covering projections to
+be equivalent.
+<a 
+ id="x528-507007r1533"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 519--><p class="noindent" ><span class="head">
+<a 
+ id="x528-507008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 59.5.3.</tspan>  </span><a 
+ id="x528-507009"></a>Fix a space <tspan font-family="cmmi" font-size="10">B</tspan>. Given two covering projections <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> : <tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B </tspan>and
+<tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> : <tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B </tspan>a <tspan font-family="cmbx" font-size="10">map of covering projections</tspan> is a continuous function <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> such that
+<tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">f </tspan>= <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>. <img 
+src="Na2962x.png" alt="E1 ----f-----------E2
+            p1      |
+                    |
+                    p2
+                    |
+                    |
+                   B
+"  />
+Then two covering projections <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> are isomorphic if there are <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> and
+<tspan font-family="cmmi" font-size="10">g </tspan>: <tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> such that <tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">g </tspan>= id<sub><tspan font-family="cmmi" font-size="8">E</tspan><sub><tspan font-family="cmr" font-size="6">1</tspan></sub></sub> and <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">f </tspan>= id<sub><tspan font-family="cmmi" font-size="8">E</tspan><sub><tspan font-family="cmr" font-size="6">2</tspan></sub></sub>.
+</p>
+  </div>
+<!--l. 531--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-1012">
+<a 
+ id="x528-507010r1534"></a>
+<div class="newtheorem">
+<!--l. 533--><p class="noindent" ><span class="head">
+<a 
+ id="x528-507011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 59.5.4 </tspan><tspan font-family="cmss" font-size="10">(For category theorists) </tspan><tspan font-family="cmssbx" font-size="10">—  </tspan> </span><a 
+ id="x528-507012"></a>The  set  of  covering  projections  forms  a
+category in this way.</p>
+  </div>
+<!--l. 535--><p class="indent" >  </p></div>
+<!--l. 537--><p class="indent" >  It’s an absolute miracle that this is true more generally: the greatest triumph of covering
+spaces is the following result. Suppose a space <tspan font-family="cmmi" font-size="10">X </tspan>satisfies some nice conditions, like:
+<a 
+ id="x528-507013r1535"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 541--><p class="noindent" ><span class="head">
+<a 
+ id="x528-507014r5"></a>
+<tspan font-family="cmbx" font-size="10">Definition 59.5.5.</tspan>  </span><a 
+ id="x528-507015"></a>A space <tspan font-family="cmmi" font-size="10">X </tspan>is called <tspan font-family="cmbx" font-size="10">locally connected</tspan> if for each point <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>and
+open neighborhood <tspan font-family="cmmi" font-size="10">V </tspan>of it, there is a connected open set <tspan font-family="cmmi" font-size="10">U </tspan>with <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>.
+</p>
+  </div>
+<!--l. 544--><p class="indent" >
+<a 
+ id="x528-507016r1536"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 546--><p class="noindent" ><span class="head">
+<a 
+ id="x528-507017r6"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Definition 59.5.6.</tspan>  </span><a 
+ id="x528-507018"></a>A space <tspan font-family="cmmi" font-size="10">X </tspan>is <tspan font-family="cmbx" font-size="10">semi-locally simply connected</tspan> if for every point
+<tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>there is an open neighborhood <tspan font-family="cmmi" font-size="10">U </tspan>such that all loops in <tspan font-family="cmmi" font-size="10">U </tspan>are nulhomotopic. (But
+the contraction need not take place in <tspan font-family="cmmi" font-size="10">U</tspan>.)
+</p>
+  </div>
+<!--l. 551--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-1013">
+<a 
+ id="x528-507019r1537"></a>
+<div class="newtheorem">
+<!--l. 552--><p class="noindent" ><span class="head">
+<a 
+ id="x528-507020r7"></a>
+<tspan font-family="cmbx" font-size="10">Example 59.5.7 </tspan>(These conditions are weak)<br 
+class="newline" /> </span><a 
+ id="x528-507021"></a>Pretty much every space I’ve shown you
+has these two properties. In other words, they are rather mild conditions, and you can
+think of them as just saying “the space is not too pathological”.
+</p>
+  </div>
+<!--l. 556--><p class="indent" >  </p></div>
+<!--l. 557--><p class="indent" >  Then we get:</p>
+<div class="mdframed" id="mdframed-1014">
+<a 
+ id="x528-507022r1538"></a>
+<div class="newtheorem">
+<!--l. 558--><p class="noindent" ><span class="head">
+<a 
+ id="x528-507023r8"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 59.5.8 </tspan><tspan font-family="cmss" font-size="10">(Group theory via covering spaces)</tspan><br 
+class="newline" /> </span><a 
+ id="x528-507024"></a>Suppose <tspan font-family="cmmi" font-size="10">B </tspan>is a locally connected,
+semi-locally simply connected space. Then: </p>
+     <ul class="itemize1">
+     <li class="itemize">Every  subgroup  <tspan font-family="cmmi" font-size="10">H  </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">B</tspan>)  corresponds  to  exactly  one  covering  projection
+     <tspan font-family="cmmi" font-size="10">p </tspan>: <tspan font-family="cmmi" font-size="10">E </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B </tspan>with <tspan font-family="cmmi" font-size="10">E </tspan>path-connected (up to isomorphism).
+     <!--l. 566--><p class="noindent" >(Specifically, <tspan font-family="cmmi" font-size="10">H </tspan>is the image of <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">E</tspan>) in <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">B</tspan>) through <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmmi" font-size="8">♯</tspan></sub>.)
+     </p></li>
+     <li class="itemize">Moreover,  the  <tspan font-family="cmti" font-size="10">normal  </tspan>subgroups  of  <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">B</tspan>)  correspond  exactly  to  the  regular
+     covering projections.</li></ul>
+</p>
+  </div>
+<!--l. 570--><p class="indent" >  </p></div>
+<!--l. 571--><p class="indent" >  Hence it’s possible to understand the group theory of <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">B</tspan>) completely in terms of the
+covering projections.
+                                                                                
+                                                                                
+</p><!--l. 574--><p class="indent" >  Moreover, this is how the “universal cover” gets its name: it is the one corresponding to
+the trivial subgroup of <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">B</tspan>). Actually, you can show that it really is universal
+in the sense that if <tspan font-family="cmmi" font-size="10">p </tspan>: <tspan font-family="cmmi" font-size="10">E </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B </tspan>is another covering projection, then <tspan font-family="cmmi" font-size="10">E </tspan>is in turn
+covered by the universal space. More generally, if <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">G </tspan>are subgroups,
+then the space corresponding to <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> can be covered by the space corresponding to
+<tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>.
+                                                                                
+                                                                                
+</p>
+  <!--l. 587--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase402.htm" >next</a>] [<a 
+href="Nase376.htm" >prev</a>] [<a 
+href="Nase376.htm#tailNase376.htm" >prev-tail</a>] [<a 
+href="Nase377.htm" >front</a>] [<a 
+href="Nase397.htm#Nach67.htm" >up</a>] </p></div>
+<!--l. 587--><p class="indent" >  <a 
+ id="tailNase377.htm"></a> </p> 
+</body> 
+</html>

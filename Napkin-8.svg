@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="Napkin.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94.81757pt" height="62.52525pt" viewBox="-47.40878 -28.81981 94.81757 62.52525 "> 
+<g transform="translate(0, 33.70544 ) scale(1,-1) translate(0,28.81981 )"> 
+             </p><g stroke="#000" fill="#000">
+ <g stroke-width="0.4">
+ <g transform="translate(-47.40878,-22.07494)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(47.40878,0)" text-anchor="middle"  font-size="10.95"> 
+       <g transform="translate(-20.88548,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(20.88548,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmmi" font-size="10">M</tspan>([<tspan font-family="cmmi" font-size="10">a,b</tspan>])</g> </g>
+ </text> 
+</g>
+ </g>
+      <g transform="translate(-3.95416,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(3.95416,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="msbm" font-size="10">ℝ</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+ 
+        <g transform="translate(-19.17645,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(19.17645,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmmi" font-size="10">R</tspan>([<tspan font-family="cmmi" font-size="10">a,b</tspan>])</g> </g>
+ </text> 
+</g>
+ </g>
+       </text> 
+</g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M 3.99132 19.3374 L 29.43333 19.3374  " fill="none"/>
+ <g transform="translate(29.65233,19.3374)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ <g transform="translate(9.2219,24.35817)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(7.70943,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmex" font-size="8">∫</tspan>
+ <tspan baseline-shift="sub"><tspan font-family="cmmi" font-size="6">a</tspan></tspan><tspan baseline-shift="sub"><tspan font-family="cmmi" font-size="6">b</tspan></tspan></g> </g>
+ </text> 
+</g>
+ </g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -21.80873 -8.0783 L -21.80873 9.21704  " fill="none"/>
+ <g transform="matrix(0.0,-1.0,-1.0,0.0,-21.80873,-8.0783)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <g stroke-linecap="round">
+ <path d=" M 0.0 2.14612 C 0.74988 2.14612 1.35776 1.6657 1.35776 1.07306 C 1.35776 0.48042 0.74988 0.0 0.0 0.0  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ <g transform="matrix(0.0,1.0,-1.0,0.0,-21.80873,9.43604)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -6.6528 -9.65504 L 29.50223 13.43881  " fill="none"/>
+ <g transform="matrix(0.84271,0.53828,-0.53828,0.84271,29.68677,13.55667)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ <g transform="translate(14.18553,-6.03317)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(3.06949,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmr" font-size="8">Σ</tspan> </g> </g>
+ </text> 
+</g>
+ </g>
+ </g>
+ </g>
+ </g>
+            </g> 
+</svg> 

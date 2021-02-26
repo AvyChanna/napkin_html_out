@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Notions of convergence</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 3--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase272.htm" >next</a>] [<a 
+href="Nach41.htm#tailNase257.htm">tail</a>] [<a 
+href="Nase271.htm#Nach46.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">40.1</span>  <a 
+ id="x372-34700040.1"></a>Notions of convergence</h3>
+<!--l. 4--><p class="noindent" >
+</p>
+  <h4 class="subsectionHead"><span class="titlemark">40.1.i</span>  <a 
+ id="x372-34800040.1.i"></a>Almost sure convergence</h4>
+<a 
+ id="x372-348001r1054"></a>
+  <div class="newtheorem">
+<!--l. 6--><p class="noindent" ><span class="head">
+<a 
+ id="x372-348002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 40.1.1.</tspan>  </span><a 
+ id="x372-348003"></a>Let <tspan font-family="cmmi" font-size="10">X</tspan>, <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> be random variables on a probability space Ω. We say
+<tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> <tspan font-family="cmbx" font-size="10">converges almost surely</tspan> to <tspan font-family="cmmi" font-size="10">X </tspan>if
+</p>
+  <div class="math-display" >
+<img 
+src="Na1915x.png" alt="  (                        )
+μ  ω ∈ Ω : lim Xn (ω ) = X (ω) = 1.
+           n
+" class="math-display"  /></div>
+  </div>
+<!--l. 10--><p class="indent" >
+This is a very strong notion of convergence: it says in almost every <tspan font-family="cmti" font-size="10">world</tspan>, the values of <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>
+converge to <tspan font-family="cmmi" font-size="10">X</tspan>. In fact, it is almost better for me to give a <tspan font-family="cmti" font-size="10">non-example</tspan>.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-676">
+<a 
+ id="x372-348004r1055"></a>
+<div class="newtheorem">
+<!--l. 16--><p class="noindent" ><span class="head">
+<a 
+ id="x372-348005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 40.1.2 </tspan>(Non-example of almost sure convergence)<br 
+class="newline" />
+</span><a 
+ id="x372-348006"></a>Imagine an immortal skeleton archer is practicing shots, and on the <tspan font-family="cmmi" font-size="10">n</tspan>th shot, he scores
+a bulls-eye with probability 1 <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1916x.png" alt="1n"  class="frac" align="middle" /> (which tends to 1 because the archer improves over
+time). Let <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> <tspan font-family="cmsy" font-size="10">∈{</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,</tspan>10<tspan font-family="cmsy" font-size="10">} </tspan>be the score of the <tspan font-family="cmmi" font-size="10">n</tspan>th shot.
+</p><!--l. 23--><p class="noindent" >Although the skeleton is gradually approaching perfection, there are <tspan font-family="cmti" font-size="10">almost no worlds</tspan>
+in which the archer misses only finitely many shots: that is
+</p>
+<div class="math-display" >
+<img 
+src="Na1917x.png" alt=" (                      )
+μ  ω ∈ Ω : lim Xn (ω) = 10 = 0.
+           n
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 28--><p class="indent" >  </p></div>
+  <h4 class="subsectionHead"><span class="titlemark">40.1.ii</span>  <a 
+ id="x372-34900040.1.ii"></a>Convergence in probability</h4>
+<!--l. 31--><p class="noindent" >Therefore, for many purposes we need a weaker notion of convergence. <a 
+ id="x372-349001r1056"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 33--><p class="noindent" ><span class="head">
+<a 
+ id="x372-349002r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 40.1.3.</tspan>  </span><a 
+ id="x372-349003"></a>Let <tspan font-family="cmmi" font-size="10">X</tspan>, <tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> be random variables on a probability space Ω. We say
+<tspan font-family="cmmi" font-size="10">X</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> <tspan font-family="cmbx" font-size="10">converges in probability</tspan> to <tspan font-family="cmmi" font-size="10">X </tspan>if if for every <tspan font-family="cmmi" font-size="10">𝜀 &#x003E; </tspan>0 and <tspan font-family="cmmi" font-size="10">δ &#x003E; </tspan>0, we have
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1918x.png" alt="μ(ω ∈ Ω : |Xn (ω )− X (ω)| &#x003C; 𝜀) ≥ 1 − δ
+" class="math-display"  /></div>
+<!--l. 39--><p class="indent" >  for <tspan font-family="cmmi" font-size="10">n </tspan>large enough (in terms of <tspan font-family="cmmi" font-size="10">𝜀 </tspan>and <tspan font-family="cmmi" font-size="10">δ</tspan>).
+</p>
+  </div>
+<!--l. 40--><p class="indent" >
+In this sense, our skeleton archer does succeed: for any <tspan font-family="cmmi" font-size="10">δ &#x003E; </tspan>0, if <tspan font-family="cmmi" font-size="10">n &#x003E; δ</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan> then the skeleton
+archer does hit a bulls-eye in a 1 <tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">δ </tspan>fraction of the worlds. In general, you can think of this as
+saying that for any <tspan font-family="cmmi" font-size="10">δ &#x003E; </tspan>0, the chance of an <tspan font-family="cmmi" font-size="10">𝜀</tspan>-anomaly event at the <tspan font-family="cmmi" font-size="10">n</tspan>th stage eventually drops
+below <tspan font-family="cmmi" font-size="10">δ</tspan>.</p>
+<div class="mdframed" id="mdframed-677">
+<a 
+ id="x372-349004r1057"></a>
+<div class="newtheorem">
+<!--l. 50--><p class="noindent" ><span class="head">
+<a 
+ id="x372-349005r4"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 40.1.4 —  </tspan> </span><a 
+ id="x372-349006"></a>To mask <tspan font-family="cmmi" font-size="10">δ </tspan>from the definition, this is sometimes written instead as:
+for all <tspan font-family="cmmi" font-size="10">𝜀</tspan>
+</p>
+<div class="math-display" >
+<img 
+src="Na1919x.png" alt=" lim μ (ω ∈ Ω : |Xn(ω )− X (ω)| &#x003C; 𝜀) = 1.
+n→ ∞
+" class="math-display"  /></div>
+<!--l. 56--><p class="noindent" >I suppose it doesn’t make much difference, though I personally don’t like the asymmetry.</p>
+  </div>
+<!--l. 58--><p class="indent" >  </p></div>
+  <h4 class="subsectionHead"><span class="titlemark">40.1.iii</span>  <a 
+ id="x372-35000040.1.iii"></a>Convergence in law</h4>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+  <!--l. 62--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase272.htm" >next</a>] [<a 
+href="Nase257.htm" >front</a>] [<a 
+href="Nase271.htm#Nach46.htm" >up</a>] </p></div>
+<!--l. 62--><p class="indent" >  <a 
+ id="tailNase257.htm"></a>  </p> 
+</body> 
+</html>

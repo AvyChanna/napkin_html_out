@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Burnside’s lemma</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 136--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase125.htm" >next</a>] [<a 
+href="Nase123.htm" >prev</a>] [<a 
+href="Nase123.htm#tailNase123.htm" >prev-tail</a>] [<a 
+href="#tailNase124.htm">tail</a>] [<a 
+href="Nach19.htm#Nase124.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">16.3</span>  <a 
+ id="x184-17000016.3"></a>Burnside’s lemma</h3>
+<!--l. 137--><p class="noindent" >Now for the crux of this chapter: a way to count the number of orbits.</p>
+<div class="mdframed" id="mdframed-357">
+<a 
+ id="x184-170001r563"></a>
+<div class="newtheorem">
+<!--l. 139--><p class="noindent" ><span class="head">
+<a 
+ id="x184-170002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 16.3.1 </tspan><tspan font-family="cmss" font-size="10">(Burnside’s lemma)</tspan><br 
+class="newline" /> </span><a 
+ id="x184-170003"></a>Let <tspan font-family="cmmi" font-size="10">G </tspan>act on a set <tspan font-family="cmmi" font-size="10">X</tspan>. The number of orbits of the
+action is equal to
+</p>
+<div class="math-display" >
+<img 
+src="Na801x.png" alt="    ∑
+-1-    |FixPtg |
+|G |g∈G
+" class="math-display"  /></div>
+<!--l. 144--><p class="noindent" >where FixPt<tspan font-family="cmmi" font-size="10">g </tspan>is the set of points <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>such that <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">x </tspan>= <tspan font-family="cmmi" font-size="10">x</tspan>.
+</p>
+  </div>
+<!--l. 146--><p class="indent" >  </p></div>
+<!--l. 147--><p class="indent" >  The proof is deferred as a bonus problem, since it has a very olympiad-flavored
+solution. As usual, this lemma was not actually proven by Burnside; Cauchy got there
+first, and thus it is sometimes called <tspan font-family="cmti" font-size="10">the lemma that is not Burnside’s</tspan>. Example
+application:</p>
+<div class="mdframed" id="mdframed-358">
+<a 
+ id="x184-170004r564"></a>
+<div class="newtheorem">
+<!--l. 154--><p class="noindent" ><span class="head">
+<a 
+ id="x184-170005r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Example 16.3.2 </tspan>(AIME 1996)<br 
+class="newline" /> </span><a 
+ id="x184-170006"></a> <tspan font-family="cmr" font-size="9">Two of the squares of a 7 </tspan><tspan font-family="cmsy" font-size="9">×</tspan><tspan font-family="cmr" font-size="9">7 checkerboard are painted yellow,</tspan>
+<tspan font-family="cmr" font-size="9">and the rest are painted green. Two color schemes are equivalent if one can be obtained from the other</tspan>
+<tspan font-family="cmr" font-size="9">by applying a rotation in the plane of the board. How many inequivalent color schemes are possible?</tspan>
+</p><!--l. 157--><p class="noindent" >We know that <tspan font-family="cmmi" font-size="10">G </tspan>= <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>4<tspan font-family="msbm" font-size="10">ℤ </tspan>acts on the set <tspan font-family="cmmi" font-size="10">X </tspan>of <img 
+src="Na802x.png" alt="(49)
+ 2"  /> possible coloring schemes. Now we can
+compute FixPt<tspan font-family="cmmi" font-size="10">g </tspan>explicitly for each <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>4<tspan font-family="msbm" font-size="10">ℤ</tspan>. </p>
+     <ul class="itemize1">
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">g </tspan>= 1<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub>, then every coloring is fixed, for a count of <img 
+src="Na803x.png" alt="(49)
+ 2"  /> = 1176.
+     </li>
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">g </tspan>= <tspan font-family="cmmi" font-size="10">r</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> there are exactly 24 coloring schemes fixed by <tspan font-family="cmmi" font-size="10">g</tspan>: this occurs when the two
+     squares are reflections across the center, which means they are preserved under a
+     180<tspan font-family="cmsy" font-size="8">∘</tspan> rotation.
+     </li>
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">g </tspan>= <tspan font-family="cmmi" font-size="10">r </tspan>or <tspan font-family="cmmi" font-size="10">g </tspan>= <tspan font-family="cmmi" font-size="10">r</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup>, then there are no fixed coloring schemes.</li></ul>
+<!--l. 166--><p class="noindent" >As <img 
+src="Na804x.png" alt="|G |"  class="left" align="middle" /> = 4, the average is
+</p>
+<div class="math-display" >
+<img 
+src="Na805x.png" alt="1176-+-24-+-0+-0 = 300.
+        4
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 168--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-359">
+<a 
+ id="x184-170007r565"></a>
+<div class="newtheorem">
+<!--l. 170--><p class="noindent" ><span class="head">
+<a 
+ id="x184-170008r3"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 16.3.3 </tspan><tspan font-family="cmr" font-size="10">(MathCounts Chapter Target Round)</tspan><tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x184-170009"></a><tspan font-family="cmr" font-size="10">A circular spinner has seven sections of</tspan>
+<tspan font-family="cmr" font-size="10">equal size, each of which is colored either red or blue. Two colorings are considered the same if</tspan>
+<tspan font-family="cmr" font-size="10">one can be rotated to yield the other. In how many ways can the spinner be colored? (Answer:</tspan>
+<tspan font-family="cmr" font-size="10">20)</tspan></p>
+  </div>
+<!--l. 175--><p class="indent" >  </p></div>
+<!--l. 178--><p class="indent" >  Consult <span class="cite">[<tspan font-family="cmbx" font-size="10">?</tspan>]</span> for some more examples of “hands-on” applications.
+                                                                                
+                                                                                
+</p>
+  <!--l. 181--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase125.htm" >next</a>] [<a 
+href="Nase123.htm" >prev</a>] [<a 
+href="Nase123.htm#tailNase123.htm" >prev-tail</a>] [<a 
+href="Nase124.htm" >front</a>] [<a 
+href="Nach19.htm#Nase124.htm" >up</a>] </p></div>
+<!--l. 181--><p class="indent" >  <a 
+ id="tailNase124.htm"></a> </p> 
+</body> 
+</html>

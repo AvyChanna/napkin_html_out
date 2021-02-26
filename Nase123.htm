@@ -1,0 +1,145 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Stabilizers and orbits</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 43--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase124.htm" >next</a>] [<a 
+href="Nase122.htm" >prev</a>] [<a 
+href="Nase122.htm#tailNase122.htm" >prev-tail</a>] [<a 
+href="#tailNase123.htm">tail</a>] [<a 
+href="Nach19.htm#Nase123.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">16.2</span>  <a 
+ id="x183-16900016.2"></a>Stabilizers and orbits</h3>
+<!--l. 44--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Again the AIME problem.</tspan>
+</p><!--l. 46--><p class="indent" >  Given a group action <tspan font-family="cmmi" font-size="10">G </tspan>on <tspan font-family="cmmi" font-size="10">X</tspan>, we can define an equivalence relation <tspan font-family="cmsy" font-size="10">∼ </tspan>on <tspan font-family="cmmi" font-size="10">X </tspan>as follows:
+<tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∼ </tspan><tspan font-family="cmmi" font-size="10">y </tspan>if <tspan font-family="cmmi" font-size="10">x </tspan>= <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">y </tspan>for some <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G</tspan>. For example, in the AIME problem, <tspan font-family="cmsy" font-size="10">∼ </tspan>means “one can be
+obtained from the other by a rotation”.</p>
+<div class="mdframed" id="mdframed-353">
+<a 
+ id="x183-169001r558"></a>
+<div class="newtheorem">
+<!--l. 51--><p class="noindent" ><span class="head">
+<a 
+ id="x183-169002r1"></a>
+<tspan font-family="cmbx" font-size="10">Question 16.2.1.</tspan>  </span><a 
+ id="x183-169003"></a><tspan font-family="cmr" font-size="10">Why is this an equivalence relation?</tspan></p>
+  </div>
+<!--l. 52--><p class="indent" >  </p></div>
+<!--l. 53--><p class="indent" >  In that case, the AIME problem wants the number of equivalence classes under <tspan font-family="cmsy" font-size="10">∼</tspan>. So
+let’s give these equivalence classes a name: <tspan font-family="cmbx" font-size="10">orbits</tspan>. We usually denote orbits by
+<tspan font-family="cmsy" font-size="10">𝒪</tspan>.
+</p><!--l. 57--><p class="indent" >  As usual, orbits carve out <tspan font-family="cmmi" font-size="10">X </tspan>into equivalence classes. </p>
+<div class="center" 
+>
+<!--l. 58--><p class="noindent" >
+</p>
+</div>
+<!--l. 82--><p class="indent" >  It turns out that a very closely related concept is: <a 
+ id="x183-169004r559"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 84--><p class="noindent" ><span class="head">
+<a 
+ id="x183-169005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 16.2.2.</tspan>  </span><a 
+ id="x183-169006"></a>The <tspan font-family="cmbx" font-size="10">stabilizer</tspan> of a point <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">X</tspan>, denoted Stab<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub>(<tspan font-family="cmmi" font-size="10">x</tspan>), is the set of
+<tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G </tspan>which fix <tspan font-family="cmmi" font-size="10">x</tspan>; in other words
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na796x.png" alt="Stab  (x ) := {g ∈ G | g ⋅x = x} .
+    G
+" class="math-display"  /></div>
+  </div>
+<!--l. 87--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-354">
+<a 
+ id="x183-169007r560"></a>
+<div class="newtheorem">
+<!--l. 89--><p class="noindent" ><span class="head">
+<a 
+ id="x183-169008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 16.2.3</tspan><br 
+class="newline" /> </span><a 
+ id="x183-169009"></a>Consider the AIME problem again, with <tspan font-family="cmmi" font-size="10">X </tspan>the possible set of states
+(again <tspan font-family="cmmi" font-size="10">G </tspan>= <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>4<tspan font-family="msbm" font-size="10">ℤ</tspan>). Let <tspan font-family="cmmi" font-size="10">x </tspan>be the configuration where two opposite corners are colored
+yellow. Evidently 1<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub> fixes <tspan font-family="cmmi" font-size="10">x</tspan>, but so does the 180<tspan font-family="cmsy" font-size="8">∘</tspan> rotation <tspan font-family="cmmi" font-size="10">r</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>. But <tspan font-family="cmmi" font-size="10">r </tspan>and <tspan font-family="cmmi" font-size="10">r</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup>  do not
+preserve <tspan font-family="cmmi" font-size="10">x</tspan>, so Stab<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmsy" font-size="10">{</tspan>1<tspan font-family="cmmi" font-size="10">,r</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmsy" font-size="10">}</tspan><img 
+src="Na797x.png" alt="∼
+="  class="cong"  /><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ</tspan>.
+</p>
+  </div>
+<!--l. 95--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-355">
+<a 
+ id="x183-169010r561"></a>
+<div class="newtheorem">
+<!--l. 97--><p class="noindent" ><span class="head">
+<a 
+ id="x183-169011r4"></a>
+<tspan font-family="cmbx" font-size="10">Question 16.2.4.</tspan>  </span><a 
+ id="x183-169012"></a><tspan font-family="cmr" font-size="10">Why is</tspan> <tspan font-family="cmr" font-size="10">Stab</tspan><sub><tspan font-family="cmmi" font-size="7">G</tspan></sub><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmr" font-size="10">) a subgroup of </tspan><tspan font-family="cmmi" font-size="10">G</tspan><tspan font-family="cmr" font-size="10">?</tspan></p>
+  </div>
+<!--l. 98--><p class="indent" >  </p></div>
+<!--l. 100--><p class="indent" >  Once we realize the stabilizer is a group, this leads us to what I privately call the
+“fundamental theorem of how big an orbit is”.</p>
+<div class="mdframed" id="mdframed-356">
+<a 
+ id="x183-169013r562"></a>
+<div class="newtheorem">
+<!--l. 101--><p class="noindent" ><span class="head">
+<a 
+ id="x183-169014r5"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 16.2.5 </tspan><tspan font-family="cmss" font-size="10">(Orbit-stabilizer theorem)</tspan><br 
+class="newline" /> </span><a 
+ id="x183-169015"></a>Let <tspan font-family="cmsy" font-size="10">𝒪 </tspan>be an orbit, and pick any <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ 𝒪</tspan>. Let
+                                                                                
+                                                                                
+<tspan font-family="cmmi" font-size="10">S </tspan>= Stab<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub>(<tspan font-family="cmmi" font-size="10">x</tspan>) be a subgroup of <tspan font-family="cmmi" font-size="10">G</tspan>. There is a natural bijection between <tspan font-family="cmsy" font-size="10">𝒪 </tspan>and left
+cosets. In particular,
+</p>
+<div class="math-display" >
+<img 
+src="Na798x.png" alt="|𝒪 ||S | = |G|.
+" class="math-display"  /></div>
+<!--l. 107--><p class="noindent" >In particular, the stabilizers of each <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈𝒪 </tspan>have the same size.
+</p>
+  </div>
+<!--l. 108--><p class="indent" >  </p></div>
+<!--l. 109--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 110--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>The point is that every coset <tspan font-family="cmmi" font-size="10">gS </tspan>just specifies an element of <tspan font-family="cmsy" font-size="10">𝒪</tspan>, namely <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">⋅</tspan><tspan font-family="cmmi" font-size="10">x</tspan>. The
+fact that <tspan font-family="cmmi" font-size="10">S </tspan>is a stabilizer implies that it is irrelevant which representative we pick.
+</p>
+<div class="center" 
+>
+<!--l. 114--><p class="noindent" >
+</p>
+</div>
+<!--l. 132--><p class="indent" >  Since the <img 
+src="Na799x.png" alt="|𝒪 |"  class="left" align="middle" /> cosets partition <tspan font-family="cmmi" font-size="10">G</tspan>, each of size <img 
+src="Na800x.png" alt="|S|"  class="left" align="middle" />, we obtain the second result.       □
+</p>
+  </div>
+                                                                                
+                                                                                
+  <!--l. 136--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase124.htm" >next</a>] [<a 
+href="Nase122.htm" >prev</a>] [<a 
+href="Nase122.htm#tailNase122.htm" >prev-tail</a>] [<a 
+href="Nase123.htm" >front</a>] [<a 
+href="Nach19.htm#Nase123.htm" >up</a>] </p></div>
+<!--l. 136--><p class="indent" >  <a 
+ id="tailNase123.htm"></a> </p> 
+</body> 
+</html>

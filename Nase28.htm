@@ -1,0 +1,265 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Open sets</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 452--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase29.htm" >next</a>] [<a 
+href="Nase27.htm" >prev</a>] [<a 
+href="Nase27.htm#tailNase27.htm" >prev-tail</a>] [<a 
+href="#tailNase28.htm">tail</a>] [<a 
+href="Nach5.htm#Nase28.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">2.6</span>  <a 
+ id="x49-470002.6"></a>Open sets</h3>
+<!--l. 453--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">The open disk </tspan><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmmi" font-size="10">&#x003C; r</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmti" font-size="10">in </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 455--><p class="indent" >  Continuity is really about what happens “locally”: how a function behaves “close to a
+certain point <tspan font-family="cmmi" font-size="10">p</tspan>”. One way to capture this notion of “closeness” is to use metrics as we’ve done
+above. In this way we can define an <tspan font-family="cmmi" font-size="10">r</tspan>-neighborhood of a point.
+<a 
+ id="x49-47001r87"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 462--><p class="noindent" ><span class="head">
+<a 
+ id="x49-47002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 2.6.1.</tspan>  </span><a 
+ id="x49-47003"></a>Let <tspan font-family="cmmi" font-size="10">M </tspan>be a metric space. For each real number <tspan font-family="cmmi" font-size="10">r &#x003E; </tspan>0 and point
+<tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">M</tspan>, we define
+</p>
+  <div class="math-display" >
+<img 
+src="Na122x.png" alt="Mr (p) := {x ∈ M : d(x,p) &#x003C; r} .
+" class="math-display"  /></div>
+<!--l. 465--><p class="indent" >  The set <tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="8">r</tspan></sub>(<tspan font-family="cmmi" font-size="10">p</tspan>) is called an <tspan font-family="cmmi" font-size="10">r</tspan><tspan font-family="cmbx" font-size="10">-neighborhood</tspan> of <tspan font-family="cmmi" font-size="10">p</tspan>.
+</p>
+  </div>
+<!--l. 466--><p class="indent" >
+</p>
+<div class="center" 
+>
+<!--l. 467--><p class="noindent" >
+</p>
+</div>
+                                                                                
+                                                                                
+<!--l. 480--><p class="indent" >  We can rephrase convergence more succinctly in terms of <tspan font-family="cmmi" font-size="10">r</tspan>-neighborhoods. Specifically, a
+sequence (<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>) converges to <tspan font-family="cmmi" font-size="10">x </tspan>if for every <tspan font-family="cmmi" font-size="10">r</tspan>-neighborhood of <tspan font-family="cmmi" font-size="10">x</tspan>, all terms of <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> eventually stay
+within that <tspan font-family="cmmi" font-size="10">r</tspan>-neighborhood.
+</p><!--l. 485--><p class="indent" >  Let’s try to do the same with functions.</p>
+<div class="mdframed" id="mdframed-62">
+<a 
+ id="x49-47004r88"></a>
+<div class="newtheorem">
+<!--l. 487--><p class="noindent" ><span class="head">
+<a 
+ id="x49-47005r2"></a>
+<tspan font-family="cmbx" font-size="10">Question 2.6.2.</tspan>  </span><a 
+ id="x49-47006"></a><tspan font-family="cmr" font-size="10">In terms of </tspan><tspan font-family="cmmi" font-size="10">r</tspan><tspan font-family="cmr" font-size="10">-neighborhoods, what does it mean for a function </tspan><tspan font-family="cmmi" font-size="10">f</tspan> <tspan font-family="cmr" font-size="10">:</tspan> <tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N </tspan><tspan font-family="cmr" font-size="10">to</tspan>
+<tspan font-family="cmr" font-size="10">be continuous at a point </tspan><tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">M</tspan><tspan font-family="cmr" font-size="10">?</tspan></p>
+  </div>
+<!--l. 490--><p class="indent" >  </p></div>
+<!--l. 492--><p class="indent" >  Essentially, we require that the pre-image of every <tspan font-family="cmmi" font-size="10">𝜀</tspan>-neighborhood has the property that
+some <tspan font-family="cmmi" font-size="10">δ</tspan>-neighborhood exists inside it. This motivates: <a 
+ id="x49-47007r89"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 496--><p class="noindent" ><span class="head">
+<a 
+ id="x49-47008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 2.6.3.</tspan>  </span><a 
+ id="x49-47009"></a>A set <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">M </tspan>is <tspan font-family="cmbx" font-size="10">open</tspan> in <tspan font-family="cmmi" font-size="10">M </tspan>if for each <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U</tspan>, some <tspan font-family="cmmi" font-size="10">r</tspan>-neighborhood
+of <tspan font-family="cmmi" font-size="10">p </tspan>is contained inside <tspan font-family="cmmi" font-size="10">U</tspan>. In other words, there exists <tspan font-family="cmmi" font-size="10">r &#x003E; </tspan>0 such that <tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="8">r</tspan></sub>(<tspan font-family="cmmi" font-size="10">p</tspan>) <tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">U</tspan>.
+</p>
+  </div>
+<!--l. 500--><p class="indent" >
+<a 
+ id="x49-47010r90"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 502--><p class="noindent" ><span class="head">
+<a 
+ id="x49-47011r4"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 2.6.4.</tspan>  </span><a 
+ id="x49-47012"></a>Note that a set being open is defined <tspan font-family="cmti" font-size="10">relative to </tspan>the parent
+space <tspan font-family="cmmi" font-size="10">M</tspan>. However, if <tspan font-family="cmmi" font-size="10">M </tspan>is understood we can abbreviate “open in <tspan font-family="cmmi" font-size="10">M</tspan>” to just “open”.
+</p>
+  </div>
+<!--l. 506--><p class="indent" >
+</p>
+  <figure class="figure"> 
+
+                                                                                
+                                                                                
+<a 
+ id="x49-470131"></a>
+                                                                                
+                                                                                
+<figcaption class="caption" ><span class="id">Figure 2.1:</span><span  
+class="content">The set of points <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmmi" font-size="10">&#x003C; </tspan>1 in <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> is open in <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>.</span></figcaption><!--tex4ht:label?: x49-470131 -->
+                                                                                
+                                                                                
+  </figure><div class="mdframed" id="mdframed-63">
+<a 
+ id="x49-47014r91"></a>
+<div class="newtheorem">
+<!--l. 521--><p class="noindent" ><span class="head">
+<a 
+ id="x49-47015r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 2.6.5 </tspan>(Examples of open sets)<br 
+class="newline" /> </span><a 
+ id="x49-47016"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">Any <tspan font-family="cmmi" font-size="10">r</tspan>-neighborhood of a point is open.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">Open intervals of <tspan font-family="msbm" font-size="10">ℝ </tspan>are open in <tspan font-family="msbm" font-size="10">ℝ</tspan>, hence the name! This is the prototypical example
+    to keep in mind.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The open unit ball <tspan font-family="cmmi" font-size="10">B</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> is open in <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> for the same reason.
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate">In particular, the open interval (0<tspan font-family="cmmi" font-size="10">,</tspan>1) is open in <tspan font-family="msbm" font-size="10">ℝ</tspan>. However, if we embed it in <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, it
+    is no longer open!
+    </dd><dt class="enumerate">
+(e) </dt><dd 
+class="enumerate">The empty set <tspan font-family="msbm" font-size="10">∅ </tspan>and the whole set of points <tspan font-family="cmmi" font-size="10">M </tspan>are open in <tspan font-family="cmmi" font-size="10">M</tspan>.</dd></dl>
+</p>
+  </div>
+<!--l. 532--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-64">
+<a 
+ id="x49-47022r92"></a>
+<div class="newtheorem">
+<!--l. 534--><p class="noindent" ><span class="head">
+<a 
+ id="x49-47023r6"></a>
+<tspan font-family="cmbx" font-size="10">Example 2.6.6 </tspan>(Non-examples of open sets)<br 
+class="newline" /> </span><a 
+ id="x49-47024"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The closed interval [0<tspan font-family="cmmi" font-size="10">,</tspan>1] is not open in <tspan font-family="msbm" font-size="10">ℝ</tspan>. There is no <tspan font-family="cmmi" font-size="10">𝜀</tspan>-neighborhood of the point
+    0 which is contained in [0<tspan font-family="cmmi" font-size="10">,</tspan>1].
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The unit circle <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> is not open in <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>.</dd></dl>
+</p>
+  </div>
+<!--l. 542--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-65">
+<a 
+ id="x49-47027r93"></a>
+<div class="newtheorem">
+<!--l. 544--><p class="noindent" ><span class="head">
+<a 
+ id="x49-47028r7"></a>
+<tspan font-family="cmbx" font-size="10">Question 2.6.7.</tspan>  </span><a 
+ id="x49-47029"></a><tspan font-family="cmr" font-size="10">What are the open sets of the discrete space?</tspan>
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 545--><p class="indent" >  </p></div>
+<!--l. 547--><p class="indent" >  Here are two quite important properties of open sets.</p>
+<div class="mdframed" id="mdframed-66">
+<a 
+ id="x49-47030r94"></a>
+<div class="newtheorem">
+<!--l. 549--><p class="noindent" ><span class="head">
+<a 
+ id="x49-47031r8"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 2.6.8 </tspan><tspan font-family="cmss" font-size="10">(Intersections and unions of open sets)</tspan><br 
+class="newline" /> </span><a 
+ id="x49-47032"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The intersection of finitely many open sets is open.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The union of open sets is open, even if there are infinitely many.</dd></dl>
+</p>
+  </div>
+<!--l. 555--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-67">
+<a 
+ id="x49-47035r95"></a>
+<div class="newtheorem">
+<!--l. 557--><p class="noindent" ><span class="head">
+<a 
+ id="x49-47036r9"></a>
+<tspan font-family="cmbx" font-size="10">Question 2.6.9.</tspan>  </span><a 
+ id="x49-47037"></a><tspan font-family="cmr" font-size="10">Convince yourself this is true.</tspan></p>
+  </div>
+<!--l. 558--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-68">
+<a 
+ id="x49-47038r96"></a>
+<div class="newtheorem">
+<!--l. 560--><p class="noindent" ><span class="head">
+<a 
+ id="x49-47039r10"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 2.6.10.</tspan>  </span><a 
+ id="x49-47040"></a><tspan font-family="cmr" font-size="10">Exhibit an infinite collection of open sets in </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmr" font-size="10">whose intersection is the set</tspan>
+<tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmr" font-size="10">0</tspan><tspan font-family="cmsy" font-size="10">}</tspan><tspan font-family="cmr" font-size="10">. This implies that infinite intersections of open sets are not necessarily open.</tspan></p>
+  </div>
+<!--l. 563--><p class="indent" >  </p></div>
+<!--l. 565--><p class="indent" >  The whole upshot of this is:</p>
+<div class="mdframed" id="mdframed-69">
+<a 
+ id="x49-47041r97"></a>
+<div class="newtheorem">
+<!--l. 566--><p class="noindent" ><span class="head">
+<a 
+ id="x49-47042r11"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 2.6.11 </tspan><tspan font-family="cmss" font-size="10">(Open set condition)</tspan><br 
+class="newline" /> </span><a 
+ id="x49-47043"></a>  A  function  <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="cmmi" font-size="10">M  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N  </tspan>of  metric  spaces  is
+continuous if and only if the pre-image of every open set in <tspan font-family="cmmi" font-size="10">N </tspan>is open in <tspan font-family="cmmi" font-size="10">M</tspan>.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 570--><p class="indent" >  </p></div>
+<!--l. 571--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 572--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>I’ll just do one direction…</p>
+<div class="mdframed" id="mdframed-70">
+<a 
+ id="x49-47044r98"></a>
+<div class="newtheorem">
+<!--l. 574--><p class="noindent" ><span class="head">
+<a 
+ id="x49-47045r12"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 2.6.12.</tspan>  </span><a 
+ id="x49-47046"></a><tspan font-family="cmr" font-size="10">Show that </tspan><tspan font-family="cmmi" font-size="10">δ</tspan><tspan font-family="cmr" font-size="10">-</tspan><tspan font-family="cmmi" font-size="10">𝜀 </tspan><tspan font-family="cmr" font-size="10">continuity follows from the open set condition.</tspan></p>
+  </div>
+<!--l. 576--><p class="indent" >  </p></div>
+<!--l. 577--><p class="indent" >  Now assume <tspan font-family="cmmi" font-size="10">f </tspan>is continuous. First, suppose <tspan font-family="cmmi" font-size="10">V </tspan>is an open subset of the metric space <tspan font-family="cmmi" font-size="10">N</tspan>; let
+<tspan font-family="cmmi" font-size="10">U </tspan>= <tspan font-family="cmmi" font-size="10">f</tspan>pre(<tspan font-family="cmmi" font-size="10">V </tspan>). Pick <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U</tspan>, so <tspan font-family="cmmi" font-size="10">y </tspan>= <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>; we want an open neighborhood of <tspan font-family="cmmi" font-size="10">x </tspan>inside
+<tspan font-family="cmmi" font-size="10">U</tspan>.
+</p>
+<div class="center" 
+>
+<!--l. 582--><p class="noindent" >
+</p>
+</div>
+<!--l. 605--><p class="indent" >  As <tspan font-family="cmmi" font-size="10">V </tspan>is open, there is some small <tspan font-family="cmmi" font-size="10">𝜀</tspan>-neighborhood around <tspan font-family="cmmi" font-size="10">y </tspan>which is contained inside <tspan font-family="cmmi" font-size="10">V </tspan>. By
+continuity of <tspan font-family="cmmi" font-size="10">f</tspan>, we can find a <tspan font-family="cmmi" font-size="10">δ </tspan>such that the <tspan font-family="cmmi" font-size="10">δ</tspan>-neighborhood of <tspan font-family="cmmi" font-size="10">x </tspan>gets mapped by <tspan font-family="cmmi" font-size="10">f </tspan>into the
+<tspan font-family="cmmi" font-size="10">𝜀</tspan>-neighborhood in <tspan font-family="cmmi" font-size="10">N</tspan>, which in particular lives inside <tspan font-family="cmmi" font-size="10">V </tspan>. Thus the <tspan font-family="cmmi" font-size="10">δ</tspan>-neighborhood lives in <tspan font-family="cmmi" font-size="10">U</tspan>,
+as desired.                                                                                                   □
+</p>
+  </div>
+                                                                                
+                                                                                
+  <!--l. 627--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase29.htm" >next</a>] [<a 
+href="Nase27.htm" >prev</a>] [<a 
+href="Nase27.htm#tailNase27.htm" >prev-tail</a>] [<a 
+href="Nase28.htm" >front</a>] [<a 
+href="Nach5.htm#Nase28.htm" >up</a>] </p></div>
+<!--l. 627--><p class="indent" >  <a 
+ id="tailNase28.htm"></a> </p> 
+</body> 
+</html>

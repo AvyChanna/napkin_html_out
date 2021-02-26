@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Smooth manifolds</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 123--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase303.htm" >next</a>] [<a 
+href="Nase284.htm" >prev</a>] [<a 
+href="Nase284.htm#tailNase284.htm" >prev-tail</a>] [<a 
+href="Nase269.htm#tailNase285.htm">tail</a>] [<a 
+href="Nach51.htm#Nase302.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">45.2</span>  <a 
+ id="x409-38700045.2"></a>Smooth manifolds</h3>
+<!--l. 124--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">All the topological manifolds.</tspan>
+</p><!--l. 126--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">M </tspan>be a topological <tspan font-family="cmmi" font-size="10">n</tspan>-manifold with atlas <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><img 
+src="Na2087x.png" alt="ϕi
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmsy" font-size="10">}</tspan>. <a 
+ id="x409-387001r1152"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 129--><p class="noindent" ><span class="head">
+<a 
+ id="x409-387002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 45.2.1.</tspan>  </span><a 
+ id="x409-387003"></a>For any <tspan font-family="cmmi" font-size="10">i</tspan>, <tspan font-family="cmmi" font-size="10">j </tspan>such that <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">∩ </tspan><tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">j</tspan></sub><tspan font-family="cmmi" font-size="10">≠</tspan><tspan font-family="msbm" font-size="10">∅</tspan>, the <tspan font-family="cmbx" font-size="10">transition map</tspan> <tspan font-family="cmmi" font-size="10">ϕ</tspan><sub><tspan font-family="cmmi" font-size="8">ij</tspan></sub> is the
+composed map
+</p>
+  <div class="math-display" >
+<img 
+src="Na2088x.png" alt="                       ϕ− 1        ϕ
+ϕij : Ei ∩ ϕimg(Ui ∩Uj )−i−→ Ui ∩ Uj −j→ Ej ∩ ϕimg(Ui ∩ Uj ).
+          i                                j
+" class="math-display"  /></div>
+  </div>
+<!--l. 137--><p class="indent" >
+Sorry for the dense notation, let me explain. The intersection with the image <tspan font-family="cmmi" font-size="10">ϕ</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>img(<tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">∩</tspan><tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">j</tspan></sub>)
+and the image <tspan font-family="cmmi" font-size="10">ϕ</tspan><sub><tspan font-family="cmmi" font-size="8">j</tspan></sub>img(<tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">∩</tspan><tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">j</tspan></sub>) is a notational annoyance to make the map well-defined and a
+homeomorphism. The transition map is just the natural way to go from <tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmmi" font-size="8">j</tspan></sub>, restricted to
+overlaps. Picture below, where the intersections are just the green portions of each <tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and
+<tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>:
+</p>
+<div class="center" 
+>
+<!--l. 147--><p class="noindent" >
+                                                                                
+                                                                                
+</p>
+</div>
+<!--l. 184--><p class="indent" >  We want to add enough structure so that we can use differential forms.
+<a 
+ id="x409-387004r1153"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 187--><p class="noindent" ><span class="head">
+<a 
+ id="x409-387005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 45.2.2.</tspan>  </span><a 
+ id="x409-387006"></a>We say <tspan font-family="cmmi" font-size="10">M </tspan>is a <tspan font-family="cmbx" font-size="10">smooth manifold</tspan> if all its transition maps are
+smooth.
+</p>
+  </div>
+<!--l. 189--><p class="indent" >
+</p><!--l. 191--><p class="indent" >  This definition makes sense, because we know what it means for a map between two open
+sets of <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> to be differentiable.
+</p><!--l. 194--><p class="indent" >  With smooth manifolds we can try to port over definitions that we built for <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> onto our
+manifolds. So in general, all definitions involving smooth manifolds will reduce to something
+on each of the coordinate charts, with a compatibility condition.
+</p><!--l. 199--><p class="indent" >  AS an example, here is the definition of a “smooth map”: <a 
+ id="x409-387007r1154"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 201--><p class="noindent" ><span class="head">
+<a 
+ id="x409-387008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 45.2.3.</tspan>  </span><a 
+ id="x409-387009"></a>
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">Let <tspan font-family="cmmi" font-size="10">M </tspan>be a smooth manifold. A continuous function <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>is called <tspan font-family="cmbx" font-size="10">smooth</tspan>
+    if the composition
+<div class="math-display" >
+<img 
+src="Na2089x.png" alt="   ϕ−i1          f
+Ei−−→  Ui `→  M −→ ℝ
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+    <!--l. 206--><p class="noindent" >is smooth as a function <tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>.
+    </p></dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">Let <tspan font-family="cmmi" font-size="10">M </tspan>and <tspan font-family="cmmi" font-size="10">N </tspan>be smooth with atlases <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><sup><tspan font-family="cmmi" font-size="8">M</tspan></sup><img 
+src="Na2090x.png" alt="ϕ−i→"  class=""  /><tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><sup><tspan font-family="cmmi" font-size="8">M</tspan></sup><tspan font-family="cmsy" font-size="10">}</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> and <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">j</tspan></sub><sup><tspan font-family="cmmi" font-size="8">N</tspan></sup><img 
+src="Na2091x.png" alt="ϕ
+−→j"  class=""  /><tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><sup><tspan font-family="cmmi" font-size="8">N</tspan></sup><tspan font-family="cmsy" font-size="10">}</tspan><sub><tspan font-family="cmmi" font-size="8">j</tspan></sub>, A map
+    <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N </tspan>is <tspan font-family="cmbx" font-size="10">smooth</tspan> if for every <tspan font-family="cmmi" font-size="10">i </tspan>and <tspan font-family="cmmi" font-size="10">j</tspan>, the composed map
+<div class="math-display" >
+<img 
+src="Na2092x.png" alt="    ϕ−i1          f          ϕj
+Ei −−→  Ui `→ M  −→  N  ↠ Uj −→  Ej
+" class="math-display"  /></div>
+    <!--l. 214--><p class="noindent" >is smooth, as a function <tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmmi" font-size="8">j</tspan></sub>.</p></dd></dl>
+  </div>
+<!--l. 216--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+  <!--l. 218--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase303.htm" >next</a>] [<a 
+href="Nase284.htm" >prev</a>] [<a 
+href="Nase284.htm#tailNase284.htm" >prev-tail</a>] [<a 
+href="Nase285.htm" >front</a>] [<a 
+href="Nach51.htm#Nase302.htm" >up</a>] </p></div>
+<!--l. 218--><p class="indent" >  <a 
+ id="tailNase285.htm"></a> </p> 
+</body> 
+</html>

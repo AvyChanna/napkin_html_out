@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Orthogonality</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 281--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase107.htm" >next</a>] [<a 
+href="Nase105.htm" >prev</a>] [<a 
+href="Nase105.htm#tailNase105.htm" >prev-tail</a>] [<a 
+href="#tailNase106.htm">tail</a>] [<a 
+href="Nach16.htm#Nase106.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">13.3</span>  <a 
+ id="x160-14500013.3"></a>Orthogonality</h3>
+<!--l. 282--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Still </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup><tspan font-family="cmti" font-size="10">!</tspan>
+</p><!--l. 283--><p class="indent" >  Our next goal is to give the geometric notion of “perpendicular”. The definition is easy
+enough: <a 
+ id="x160-145001r496"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 286--><p class="noindent" ><span class="head">
+<a 
+ id="x160-145002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 13.3.1.</tspan>  </span><a 
+ id="x160-145003"></a>Two  nonzero  vectors  <tspan font-family="cmmi" font-size="10">v  </tspan>and  <tspan font-family="cmmi" font-size="10">w  </tspan>in  an  inner  product  space  are
+<tspan font-family="cmbx" font-size="10">orthogonal</tspan> if <img 
+src="Na612x.png" alt="⟨v,w ⟩"  class="left" align="middle" /> = 0.
+</p>
+  </div>
+<!--l. 288--><p class="indent" >
+</p><!--l. 290--><p class="indent" >  As we expect from our geometric intuition in <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>, this implies independence:</p>
+<div class="mdframed" id="mdframed-315">
+<a 
+ id="x160-145004r497"></a>
+<div class="newtheorem">
+<!--l. 292--><p class="noindent" ><span class="head">
+<a 
+ id="x160-145005r2"></a>
+<tspan font-family="cmssbx" font-size="10">Lemma 13.3.2 </tspan><tspan font-family="cmss" font-size="10">(Orthogonal vectors are independent)</tspan><br 
+class="newline" /> </span><a 
+ id="x160-145006"></a>Any   set   of   pairwise   orthogonal
+vectors <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>, with <img 
+src="Na613x.png" alt="∥vi∥"  class="left" align="middle" /><tspan font-family="cmmi" font-size="10">≠</tspan>0 for each <tspan font-family="cmmi" font-size="10">i</tspan>, is linearly independent.
+</p>
+  </div>
+<!--l. 296--><p class="indent" >  </p></div>
+<!--l. 297--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 298--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Consider a dependence
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na614x.png" alt="a1v1 + ⋅⋅⋅+ anvn = 0
+" class="math-display"  /></div>
+<!--l. 300--><p class="indent" >  for <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> in <tspan font-family="msbm" font-size="10">ℝ </tspan>or <tspan font-family="msbm" font-size="10">ℂ</tspan>. Then
+</p>
+  <div class="math-display" >
+<img 
+src="Na615x.png" alt="      ⟨          ⟩
+0   =  v ,∑  a v  =  a-∥v ∥2.
+  V     1     i i     1  1
+" class="math-display"  /></div>
+<!--l. 302--><p class="indent" >  Hence <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> = 0, since we assumed <img 
+src="Na616x.png" alt="∥v1∥"  class="left" align="middle" /><tspan font-family="cmmi" font-size="10">≠</tspan>0. Similarly <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> = <img 
+src="Na617x.png" alt="⋅⋅⋅"  class="@cdots"  /> = <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub> = 0.                  □
+</p>
+  </div>
+<!--l. 306--><p class="indent" >  In light of this, we can now consider a stronger condition on our bases: <a 
+ id="x160-145007r498"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 308--><p class="noindent" ><span class="head">
+<a 
+ id="x160-145008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 13.3.3.</tspan>  </span><a 
+ id="x160-145009"></a>An <tspan font-family="cmbx" font-size="10">orthonormal</tspan> basis of a <tspan font-family="cmti" font-size="10">finite-dimensional </tspan>inner product space
+<tspan font-family="cmmi" font-size="10">V </tspan>is a basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> such that <img 
+src="Na618x.png" alt="∥e ∥
+  i"  class="left" align="middle" /> = 1 for every <tspan font-family="cmmi" font-size="10">i </tspan>and <img 
+src="Na619x.png" alt="⟨e ,e⟩
+  i j"  class="left" align="middle" /> = 0 for any <tspan font-family="cmmi" font-size="10">i</tspan><tspan font-family="cmmi" font-size="10">≠</tspan><tspan font-family="cmmi" font-size="10">j</tspan>.
+</p>
+  </div>
+<!--l. 313--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-316">
+<a 
+ id="x160-145010r499"></a>
+<div class="newtheorem">
+<!--l. 314--><p class="noindent" ><span class="head">
+<a 
+ id="x160-145011r4"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Example 13.3.4 </tspan>(<tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> and <tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> have standard bases)<br 
+class="newline" /> </span><a 
+ id="x160-145012"></a>In  <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>  and  <tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>  equipped  with  the
+standard dot product, the standard basis <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> is also orthonormal.
+</p>
+  </div>
+<!--l. 317--><p class="indent" >  </p></div>
+<!--l. 318--><p class="indent" >  This is no loss of generality:</p>
+<div class="mdframed" id="mdframed-317">
+<a 
+ id="x160-145013r500"></a>
+<div class="newtheorem">
+<!--l. 319--><p class="noindent" ><span class="head">
+<a 
+ id="x160-145014r5"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 13.3.5 </tspan><tspan font-family="cmss" font-size="10">(Gram-Schmidt)</tspan><br 
+class="newline" /> </span><a 
+ id="x160-145015"></a>Let  <tspan font-family="cmmi" font-size="10">V  </tspan>be  a  finite-dimensional  inner  product  space.
+Then it has an orthonormal basis.</p>
+  </div>
+<!--l. 322--><p class="indent" >  </p></div>
+<!--l. 323--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 323--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Sketch of Proof.</tspan> </span> One constructs the orthonormal basis explicitly from any basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> of
+<tspan font-family="cmmi" font-size="10">V </tspan>. Define proj<sub><tspan font-family="cmmi" font-size="8">u</tspan></sub>(<tspan font-family="cmmi" font-size="10">v</tspan>) = <img 
+src="Na620x.png" alt="⟨v⟨u,,u⟩u⟩-"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">u</tspan>. Then recursively define
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 334--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">u</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub></td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub></td>                                <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">u</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub></td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">−</tspan> proj<sub><tspan font-family="cmmi" font-size="8">u</tspan><sub><tspan font-family="cmr" font-size="6">1</tspan></sub></sub>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>)</td>                    <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">u</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub></td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> <tspan font-family="cmsy" font-size="10">−</tspan> proj<sub><tspan font-family="cmmi" font-size="8">u</tspan><sub><tspan font-family="cmr" font-size="6">1</tspan></sub></sub>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>) <tspan font-family="cmsy" font-size="10">−</tspan> proj<sub><tspan font-family="cmmi" font-size="8">u</tspan><sub><tspan font-family="cmr" font-size="6">2</tspan></sub></sub>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>)</td>        <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>  <td 
+class="align-even"><img 
+src="Na622x.png" alt=".
+.."  class="mathpalette"  /></td>                                  <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">u</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub></td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> <tspan font-family="cmsy" font-size="10">−</tspan> proj<sub><tspan font-family="cmmi" font-size="8">u</tspan><sub><tspan font-family="cmr" font-size="6">1</tspan></sub></sub>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>) <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na623x.png" alt="⋅⋅⋅"  class="@cdots"  /><tspan font-family="cmsy" font-size="10">−</tspan> proj<sub><tspan font-family="cmmi" font-size="8">u</tspan><sub><tspan font-family="cmmi" font-size="6">n</tspan><tspan font-family="cmsy" font-size="6">−</tspan><tspan font-family="cmr" font-size="6">1</tspan></sub></sub>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>)<tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                        </td></tr></table>
+</p><!--l. 335--><p class="indent" >  One can show the <tspan font-family="cmmi" font-size="10">u</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> are pairwise orthogonal and not zero.                                 □
+</p>
+  </div>
+<!--l. 337--><p class="indent" >  Thus, we can generally assume our bases are orthonormal.
+</p><!--l. 339--><p class="indent" >  Worth remarking:</p>
+<div class="mdframed" id="mdframed-318">
+<a 
+ id="x160-145016r501"></a>
+<div class="newtheorem">
+<!--l. 340--><p class="noindent" ><span class="head">
+<a 
+ id="x160-145017r6"></a>
+<tspan font-family="cmbx" font-size="10">Example 13.3.6 </tspan>(The dot product is the “only” inner form)<br 
+class="newline" />
+</span><a 
+ id="x160-145018"></a>Let <tspan font-family="cmmi" font-size="10">V </tspan>be a finite-dimensional inner product space, and consider <tspan font-family="cmti" font-size="10">any </tspan>orthonormal basis
+<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>. Then we have that
+</p>
+<div class="math-display" >
+<img 
+src="Na624x.png" alt="                                     n                n
+                                    ∑     --         ∑    --
+⟨a1e1 + ⋅⋅⋅+ anen,b1e1 + ⋅⋅⋅+ bnen⟩ =   aibj ⟨ei,ej⟩ =   aibi
+                                    i,j=1             i=1
+" class="math-display"  /></div>
+<!--l. 348--><p class="noindent" >owing to the fact that the <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmsy" font-size="10">} </tspan>are orthonormal.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 349--><p class="indent" >  </p></div>
+<!--l. 350--><p class="indent" >  And now you know why the dot product expression is so ubiquitous.
+                                                                                
+                                                                                
+</p>
+  <!--l. 352--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase107.htm" >next</a>] [<a 
+href="Nase105.htm" >prev</a>] [<a 
+href="Nase105.htm#tailNase105.htm" >prev-tail</a>] [<a 
+href="Nase106.htm" >front</a>] [<a 
+href="Nach16.htm#Nase106.htm" >up</a>] </p></div>
+<!--l. 352--><p class="indent" >  <a 
+ id="tailNase106.htm"></a> </p> 
+</body> 
+</html>

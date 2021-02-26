@@ -1,0 +1,188 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Some ring theory prerequisites</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 65--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase133.htm" >next</a>] [<a 
+href="Nase131.htm" >prev</a>] [<a 
+href="Nase131.htm#tailNase131.htm" >prev-tail</a>] [<a 
+href="#tailNase132.htm">tail</a>] [<a 
+href="Nach21.htm#Nase132.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">18.2</span>  <a 
+ id="x195-18500018.2"></a>Some ring theory prerequisites</h3>
+<!--l. 66--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmmi" font-size="10">R </tspan>= <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 67--><p class="indent" >  Before I can state the main theorem, I need to define a few terms for UFD’s, which behave
+much like <tspan font-family="msbm" font-size="10">ℤ</tspan>:</p>
+<div class="mdframed" id="mdframed-379">
+<!--l. 70--><p class="noindent" ><tspan font-family="cmbx" font-size="10">Our intuition from the case </tspan><tspan font-family="cmmi" font-size="10">R </tspan>= <tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmbx" font-size="10">basically carries over verbatim.</tspan></p><!--l. 71--><p class="noindent" ></p>
+  </div>
+<!--l. 72--><p class="indent" >  We don’t even need to deal with prime ideals and can factor elements instead.
+<a 
+ id="x195-185001r602"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 75--><p class="noindent" ><span class="head">
+<a 
+ id="x195-185002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 18.2.1.</tspan>  </span><a 
+ id="x195-185003"></a>If <tspan font-family="cmmi" font-size="10">R </tspan>is a UFD, then <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">R </tspan>is a <tspan font-family="cmbx" font-size="10">prime element</tspan> if (<tspan font-family="cmmi" font-size="10">p</tspan>) is a prime
+ideal and <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmmi" font-size="10">≠</tspan>0. For UFD’s this is equivalent to: if <tspan font-family="cmmi" font-size="10">p </tspan>= <tspan font-family="cmmi" font-size="10">xy </tspan>then either <tspan font-family="cmmi" font-size="10">x </tspan>or <tspan font-family="cmmi" font-size="10">y </tspan>is a unit.
+</p>
+  </div>
+<!--l. 79--><p class="indent" >
+So for example in <tspan font-family="msbm" font-size="10">ℤ </tspan>the set of prime elements is <tspan font-family="cmsy" font-size="10">{±</tspan>2<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">±</tspan>3<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">±</tspan>5<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmsy" font-size="10">}</tspan>. Now, since <tspan font-family="cmmi" font-size="10">R </tspan>is a UFD,
+every element <tspan font-family="cmmi" font-size="10">r </tspan>factors into a product of prime elements
+</p>
+  <div class="math-display" >
+<img 
+src="Na850x.png" alt="      e1 e2    em
+r = up1 p2 ...pm
+" class="math-display"  /></div>
+<a 
+ id="x195-185004r603"></a>
+  <div class="newtheorem">
+                                                                                
+                                                                                
+<!--l. 85--><p class="noindent" ><span class="head">
+<a 
+ id="x195-185005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 18.2.2.</tspan>  </span><a 
+ id="x195-185006"></a>We say <tspan font-family="cmmi" font-size="10">r </tspan><tspan font-family="cmbx" font-size="10">divides</tspan> <tspan font-family="cmmi" font-size="10">s </tspan>if <tspan font-family="cmmi" font-size="10">s </tspan>= <tspan font-family="cmmi" font-size="10">r</tspan><tspan font-family="cmsy" font-size="10">′</tspan><tspan font-family="cmmi" font-size="10">r </tspan>for some <tspan font-family="cmmi" font-size="10">r</tspan><tspan font-family="cmsy" font-size="10">′∈ </tspan><tspan font-family="cmmi" font-size="10">R</tspan>. This is written <tspan font-family="cmmi" font-size="10">r</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">s</tspan>.
+</p>
+  </div>
+<!--l. 87--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-380">
+<a 
+ id="x195-185007r604"></a>
+<div class="newtheorem">
+<!--l. 89--><p class="noindent" ><span class="head">
+<a 
+ id="x195-185008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 18.2.3 </tspan>(Divisibility in <tspan font-family="msbm" font-size="10">ℤ</tspan>)<br 
+class="newline" /> </span><a 
+ id="x195-185009"></a>The number 0 is divisible by every element of <tspan font-family="msbm" font-size="10">ℤ</tspan>. All
+other divisibility as expected.
+</p>
+  </div>
+<!--l. 92--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-381">
+<a 
+ id="x195-185010r605"></a>
+<div class="newtheorem">
+<!--l. 94--><p class="noindent" ><span class="head">
+<a 
+ id="x195-185011r4"></a>
+<tspan font-family="cmbx" font-size="10">Question 18.2.4.</tspan>  </span><a 
+ id="x195-185012"></a><tspan font-family="cmr" font-size="10">Show that </tspan><tspan font-family="cmmi" font-size="10">r</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">s </tspan><tspan font-family="cmr" font-size="10">if and only if the exponent of each prime in </tspan><tspan font-family="cmmi" font-size="10">r </tspan><tspan font-family="cmr" font-size="10">is less than or</tspan>
+<tspan font-family="cmr" font-size="10">equal to the corresponding exponent in </tspan><tspan font-family="cmmi" font-size="10">s</tspan><tspan font-family="cmr" font-size="10">.</tspan></p>
+  </div>
+<!--l. 96--><p class="indent" >  </p></div>
+<!--l. 98--><p class="indent" >  Now, the case of interest is the even stronger case when <tspan font-family="cmmi" font-size="10">R </tspan>is a PID:</p>
+<div class="mdframed" id="mdframed-382">
+<a 
+ id="x195-185013r606"></a>
+<div class="newtheorem">
+<!--l. 100--><p class="noindent" ><span class="head">
+<a 
+ id="x195-185014r5"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 18.2.5 </tspan><tspan font-family="cmss" font-size="10">(PID’s are Noetherian UFD’s)</tspan><br 
+class="newline" /> </span><a 
+ id="x195-185015"></a>If <tspan font-family="cmmi" font-size="10">R </tspan>is a PID, then it is Noetherian and
+also a UFD.</p>
+  </div>
+<!--l. 102--><p class="indent" >  </p></div>
+<!--l. 103--><p class="indent" >
+</p>
+  <div class="proof">
+                                                                                
+                                                                                
+<!--l. 104--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>The fact that <tspan font-family="cmmi" font-size="10">R </tspan>is Noetherian is obvious. For <tspan font-family="cmmi" font-size="10">R </tspan>to be a UFD we essentially repeat
+the proof for <tspan font-family="msbm" font-size="10">ℤ</tspan>, using the fact that (<tspan font-family="cmmi" font-size="10">a,b</tspan>) is principal in order to extract gcd(<tspan font-family="cmmi" font-size="10">a,b</tspan>).      □
+</p>
+  </div>
+<!--l. 110--><p class="indent" >  In this case, we have a Chinese remainder theorem for elements.</p>
+<div class="mdframed" id="mdframed-383">
+<a 
+ id="x195-185016r607"></a>
+<div class="newtheorem">
+<!--l. 112--><p class="noindent" ><span class="head">
+<a 
+ id="x195-185017r6"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 18.2.6 </tspan><tspan font-family="cmss" font-size="10">(Chinese remainder theorem for rings)</tspan><br 
+class="newline" /> </span><a 
+ id="x195-185018"></a>Let <tspan font-family="cmmi" font-size="10">m </tspan>and <tspan font-family="cmmi" font-size="10">n </tspan>be relatively prime
+elements, meaning (<tspan font-family="cmmi" font-size="10">m</tspan>) + (<tspan font-family="cmmi" font-size="10">n</tspan>) = (1). Then
+</p>
+<div class="math-display" >
+<img 
+src="Na851x.png" alt="R ∕(mn ) ∼= R ∕(m )× R ∕(n ).
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 115--><p class="indent" >  </p></div>
+<!--l. 116--><p class="indent" >  Here the ring product is as defined in <tspan font-family="cmbx" font-size="10">??</tspan> .
+</p><!--l. 117--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 118--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>This is the same as the proof of the usual Chinese remainder theorem. First, since
+(<tspan font-family="cmmi" font-size="10">m,n</tspan>) = (1) we have <tspan font-family="cmmi" font-size="10">am </tspan>+ <tspan font-family="cmmi" font-size="10">bn </tspan>= 1 for some <tspan font-family="cmmi" font-size="10">a </tspan>and <tspan font-family="cmmi" font-size="10">b</tspan>. Then we have a map
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na852x.png" alt="R∕(m )× R ∕(n) → R ∕(mn )  by  (r,s) ↦→ r ⋅bn + s⋅am.
+" class="math-display"  /></div>
+<!--l. 123--><p class="indent" >  One can check that this map is well-defined and an isomorphism of rings. (Diligent
+readers invited to do so.)                                                                                □
+</p>
+  </div>
+<!--l. 127--><p class="indent" >  Finally, we need to introduce the concept of a Noetherian <tspan font-family="cmmi" font-size="10">R</tspan>-module. <a 
+ id="x195-185019r608"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 129--><p class="noindent" ><span class="head">
+<a 
+ id="x195-185020r7"></a>
+<tspan font-family="cmbx" font-size="10">Definition 18.2.7.</tspan>  </span><a 
+ id="x195-185021"></a>An <tspan font-family="cmmi" font-size="10">R</tspan>-module <tspan font-family="cmmi" font-size="10">M </tspan>is <tspan font-family="cmbx" font-size="10">Noetherian</tspan> if it satisfies one of the two equivalent
+conditions: </p>
+     <ul class="itemize1">
+     <li class="itemize">Its submodules obey the ascending chain condition: there is no infinite sequence of
+     modules <tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="msbm" font-size="10">⊊ </tspan><tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="msbm" font-size="10">⊊</tspan> <tspan font-family="cmmi" font-size="10">…</tspan>.
+     </li>
+     <li class="itemize">All submodules of <tspan font-family="cmmi" font-size="10">M </tspan>(including <tspan font-family="cmmi" font-size="10">M </tspan>itself) are finitely generated.</li></ul>
+  </div>
+<!--l. 137--><p class="indent" >
+This generalizes the notion of a Noetherian ring: a Noetherian ring <tspan font-family="cmmi" font-size="10">R </tspan>is one for which <tspan font-family="cmmi" font-size="10">R </tspan>is
+Noetherian as an <tspan font-family="cmmi" font-size="10">R</tspan>-module.</p>
+<div class="mdframed" id="mdframed-384">
+<a 
+ id="x195-185022r609"></a>
+<div class="newtheorem">
+<!--l. 141--><p class="noindent" ><span class="head">
+<a 
+ id="x195-185023r8"></a>
+<tspan font-family="cmbx" font-size="10">Question 18.2.8.</tspan>  </span><a 
+ id="x195-185024"></a><tspan font-family="cmr" font-size="10">Check these two conditions are equivalent. (Copy the proof for rings.)</tspan></p>
+  </div>
+<!--l. 142--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 144--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase133.htm" >next</a>] [<a 
+href="Nase131.htm" >prev</a>] [<a 
+href="Nase131.htm#tailNase131.htm" >prev-tail</a>] [<a 
+href="Nase132.htm" >front</a>] [<a 
+href="Nach21.htm#Nase132.htm" >up</a>] </p></div>
+<!--l. 144--><p class="indent" >  <a 
+ id="tailNase132.htm"></a> </p> 
+</body> 
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Application: Basel problem</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 393--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase115.htm" >next</a>] [<a 
+href="Nase113.htm" >prev</a>] [<a 
+href="Nase113.htm#tailNase113.htm" >prev-tail</a>] [<a 
+href="#tailNase114.htm">tail</a>] [<a 
+href="Nach17.htm#Nase114.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">14.6</span>  <a 
+ id="x170-15700014.6"></a>Application: Basel problem</h3>
+<!--l. 394--><p class="noindent" >One cute application about Fourier analysis on <tspan font-family="cmmi" font-size="10">L</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>([<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">π,π</tspan>]) is that you can get some otherwise
+hard-to-compute sums, as long as you are willing to use a little calculus.
+</p><!--l. 398--><p class="indent" >  Here is the classical one:</p>
+<div class="mdframed" id="mdframed-338">
+<a 
+ id="x170-157001r531"></a>
+<div class="newtheorem">
+<!--l. 400--><p class="noindent" ><span class="head">
+<a 
+ id="x170-157002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 14.6.1 </tspan><tspan font-family="cmss" font-size="10">(Basel problem)</tspan><br 
+class="newline" /> </span><a 
+ id="x170-157003"></a>We have
+</p>
+<div class="math-display" >
+<img 
+src="Na703x.png" alt="          2
+∑  -1-=  π-.
+n≥1n2    6
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 403--><p class="indent" >  </p></div>
+<!--l. 404--><p class="indent" >  The proof is to consider the identity function <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmmi" font-size="10">x</tspan>, which is certainly square-integrable.
+Then by Parseval, we have
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na704x.png" alt="   |    |              ∫
+∑  |^   |2          -1-            2
+   |f(n)| =  ⟨f,f ⟩ = 2π [−π,π]|f(x)|  dx.
+n∈ℤ
+" class="math-display"  /></div>
+<!--l. 412--><p class="indent" >  A calculus computation gives
+</p>
+  <div class="math-display" >
+<img 
+src="Na705x.png" alt="1  ∫             π2
+---      x2 dx = --.
+2π  [− π,π]        3
+" class="math-display"  /></div>
+<!--l. 414--><p class="indent" >  On the other hand, we will now compute all Fourier coefficients. We have already
+that
+</p>
+  <div class="math-display" >
+<img 
+src="Na706x.png" alt="          ∫                  ∫
+^f(0) = -1-      f(x) dx = 1--      x dx = 0.
+       2π  [− π,π]          2π  [− π,π]
+" class="math-display"  /></div>
+<!--l. 418--><p class="indent" >  For <tspan font-family="cmmi" font-size="10">n</tspan><tspan font-family="cmmi" font-size="10">≠</tspan>0, we have by definition (or “Fourier inversion formula”, if you want to use big words)
+the formula
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 425--><p class="indent" >
+<tr><td 
+class="align-odd"><span class='accentwidehat'><tspan font-family="cmmi" font-size="10">f</tspan></span>(<tspan font-family="cmmi" font-size="10">n</tspan>)</td><td 
+class="align-even"> = <img 
+src="Na708x.png" alt="⟨f,exp (inx )⟩"  class="left" align="middle" /></td>             <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>    <td 
+class="align-even"> = <img 
+src="Na709x.png" alt="-1-
+2π"  class="frac" align="middle" /><tspan font-family="cmex" font-size="10">∫</tspan>
+    <sub><tspan font-family="cmr" font-size="8">[</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmmi" font-size="8">π,π</tspan><tspan font-family="cmr" font-size="8">]</tspan></sub><tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">⋅</tspan><span class="overline">exp(<tspan font-family="cmmi" font-size="10">inx</tspan>)</span> <tspan font-family="cmmi" font-size="10">dx</tspan></td> <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>    <td 
+class="align-even"> = <img 
+src="Na710x.png" alt="-1-
+2π"  class="frac" align="middle" /><tspan font-family="cmex" font-size="10">∫</tspan>
+    <sub><tspan font-family="cmr" font-size="8">[</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmmi" font-size="8">π,π</tspan><tspan font-family="cmr" font-size="8">]</tspan></sub><tspan font-family="cmmi" font-size="10">x</tspan>exp(<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">inx</tspan>) <tspan font-family="cmmi" font-size="10">dx.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                                </td></tr></table>
+</p><!--l. 426--><p class="indent" >  The anti-derivative is equal to <img 
+src="Na711x.png" alt="1n2"  class="frac" align="middle" /> exp(<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">inx</tspan>)(1 + <tspan font-family="cmmi" font-size="10">inx</tspan>), which thus with some more
+calculation gives that
+</p>
+  <div class="math-display" >
+<img 
+src="Na712x.png" alt="       (− 1)n
+^f(n) = -----i.
+         n
+" class="math-display"  /></div>
+<!--l. 430--><p class="indent" >  So
+</p>
+  <div class="math-display" >
+<img 
+src="Na713x.png" alt="   |    |
+∑  ||^f(n)||2 = 2 ∑ -1-
+ n               n2
+              n≥1
+" class="math-display"  /></div>
+<!--l. 433--><p class="indent" >  implying the result.
+                                                                                
+                                                                                
+</p>
+  <!--l. 435--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase115.htm" >next</a>] [<a 
+href="Nase113.htm" >prev</a>] [<a 
+href="Nase113.htm#tailNase113.htm" >prev-tail</a>] [<a 
+href="Nase114.htm" >front</a>] [<a 
+href="Nach17.htm#Nase114.htm" >up</a>] </p></div>
+<!--l. 435--><p class="indent" >  <a 
+ id="tailNase114.htm"></a> </p> 
+</body> 
+</html>

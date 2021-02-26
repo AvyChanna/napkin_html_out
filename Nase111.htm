@@ -1,0 +1,503 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Common examples</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 74--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase112.htm" >next</a>] [<a 
+href="Nase110.htm" >prev</a>] [<a 
+href="Nase110.htm#tailNase110.htm" >prev-tail</a>] [<a 
+href="#tailNase111.htm">tail</a>] [<a 
+href="Nach17.htm#Nase111.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">14.3</span>  <a 
+ id="x166-15100014.3"></a>Common examples</h3>
+<!--l. 75--><p class="noindent" >
+</p>
+  <h4 class="subsectionHead"><span class="titlemark">14.3.i</span>  <a 
+ id="x166-15200014.3.i"></a>Binary Fourier analysis on <tspan font-family="cmsy" font-size="10">{±</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup></h4>
+<!--l. 76--><p class="noindent" >Let <tspan font-family="cmmi" font-size="10">Z </tspan>= <tspan font-family="cmsy" font-size="10">{±</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> for some positive integer <tspan font-family="cmmi" font-size="10">n</tspan>, so we are considering functions <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>)
+accepting binary values. Then the functions <tspan font-family="cmmi" font-size="10">Z </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>form a 2<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>-dimensional vector space <tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmmi" font-size="8">Z</tspan></sup>,
+and we endow it with the inner form
+</p>
+  <div class="math-display" >
+<img 
+src="Na651x.png" alt="⟨f,g⟩ = -1-∑  f (x )g-(x-).
+        2n
+           x∈Z
+" class="math-display"  /></div>
+<!--l. 81--><p class="indent" >  In particular,
+</p>
+  <div class="math-display" >
+<img 
+src="Na652x.png" alt="        1 ∑        2
+⟨f,f ⟩ = 2n    |f (x )|
+          x∈Z
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 84--><p class="indent" >  is the average of the squares; this establishes also that <img 
+src="Na653x.png" alt="⟨− ,− ⟩"  class="left" align="middle" /> is positive definite.
+</p><!--l. 87--><p class="indent" >  In that case, the <tspan font-family="cmbx" font-size="10">multilinear polynomials</tspan> form a basis of <tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmmi" font-size="8">Z</tspan></sup>, that is the polynomials
+</p>
+  <div class="math-display" >
+<img 
+src="Na654x.png" alt="                ∏
+χS(x1,...,xn) =    xs.
+                s∈S
+" class="math-display"  /></div><div class="mdframed" id="mdframed-323">
+<a 
+ id="x166-152001r514"></a>
+<div class="newtheorem">
+<!--l. 91--><p class="noindent" ><span class="head">
+<a 
+ id="x166-152002r1"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 14.3.1.</tspan>  </span><a 
+ id="x166-152003"></a><tspan font-family="cmr" font-size="10">Show that they’re actually orthonormal under </tspan><img 
+src="Na655x.png" alt="⟨− ,− ⟩"  class="left" align="middle" /><tspan font-family="cmr" font-size="10">. This proves they form</tspan>
+<tspan font-family="cmr" font-size="10">a basis, since there are 2</tspan><sup><tspan font-family="cmmi" font-size="7">n</tspan></sup> <tspan font-family="cmr" font-size="10">of them.</tspan></p>
+  </div>
+<!--l. 93--><p class="indent" >  </p></div>
+<!--l. 94--><p class="indent" >  Thus our frequency set is actually the subsets <tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmsy" font-size="10">⊆{</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,n</tspan><tspan font-family="cmsy" font-size="10">}</tspan>. Thus, we have a
+decomposition
+</p>
+  <div class="math-display" >
+<img 
+src="Na656x.png" alt="      ∑
+f =         f^(S )χS.
+    S⊆{1,...,n}
+" class="math-display"  /></div><div class="mdframed" id="mdframed-324">
+<a 
+ id="x166-152004r515"></a>
+<div class="newtheorem">
+<!--l. 98--><p class="noindent" ><span class="head">
+<a 
+ id="x166-152005r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Example 14.3.2 </tspan>(An example of binary Fourier analysis)<br 
+class="newline" /> </span><a 
+ id="x166-152006"></a>Let  <tspan font-family="cmmi" font-size="10">n  </tspan>=   2.  Then  binary
+functions <tspan font-family="cmsy" font-size="10">{±</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>have a basis given by the four polynomials
+</p>
+<div class="math-display" >
+<img 
+src="Na657x.png" alt="1,  x1,  x2,  x1x2.
+" class="math-display"  /></div>
+<!--l. 103--><p class="noindent" >For example, consider the function <tspan font-family="cmmi" font-size="10">f </tspan>which is 1 at (1<tspan font-family="cmmi" font-size="10">,</tspan>1) and 0 elsewhere. Then we can
+put
+</p>
+<div class="math-display" >
+<img 
+src="Na658x.png" alt="f(x ,x ) = x1-+-1 ⋅ x2 +-1= 1(1 + x + x  + x x ).
+    1  2      2      2      4      1    2   1 2
+" class="math-display"  /></div>
+<!--l. 108--><p class="noindent" >So the Fourier coefficients are <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">f</tspan></span>(<tspan font-family="cmmi" font-size="10">S</tspan>) = <img 
+src="Na659x.png" alt="1
+4"  class="frac" align="middle" /> for each of the four <tspan font-family="cmmi" font-size="10">S</tspan>’s.</p>
+  </div>
+<!--l. 110--><p class="indent" >  </p></div>
+<!--l. 111--><p class="indent" >  This notion is useful in particular for binary functions <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmsy" font-size="10">{±</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> <tspan font-family="cmsy" font-size="10">→{±</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan>; for these
+functions (and products thereof), we always have <img 
+src="Na660x.png" alt="⟨f,f⟩"  class="left" align="middle" /> = 1.
+</p><!--l. 116--><p class="indent" >  It is worth noting that the frequency <tspan font-family="msbm" font-size="10">∅ </tspan>plays a special role:</p>
+<div class="mdframed" id="mdframed-325">
+<a 
+ id="x166-152007r516"></a>
+<div class="newtheorem">
+<!--l. 118--><p class="noindent" ><span class="head">
+<a 
+ id="x166-152008r3"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 14.3.3.</tspan>  </span><a 
+ id="x166-152009"></a><tspan font-family="cmr" font-size="10">Show that</tspan>
+</p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na661x.png" alt="          ∑
+^f(∅) = -1-   f(x).
+       |Z |x∈Z
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 120--><p class="indent" >  </p></div>
+  <h4 class="subsectionHead"><span class="titlemark">14.3.ii</span>  <a 
+ id="x166-15300014.3.ii"></a>Fourier analysis on finite groups <tspan font-family="cmmi" font-size="10">Z</tspan></h4>
+<!--l. 123--><p class="noindent" >This time, suppose we have a finite abelian group <tspan font-family="cmmi" font-size="10">Z</tspan>, and consider functions <tspan font-family="cmmi" font-size="10">Z </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>; this is a
+<tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">Z</tspan><tspan font-family="cmsy" font-size="10">|</tspan>-dimensional vector space. The inner product is the same as before:
+</p>
+  <div class="math-display" >
+<img 
+src="Na662x.png" alt="⟨f,g⟩ = -1-∑   f(x)g(x).
+        |Z |
+           x∈Z
+" class="math-display"  /></div>
+<!--l. 129--><p class="indent" >  To proceed, we’ll need to be able to multiply two elements of <tspan font-family="cmmi" font-size="10">Z</tspan>. This is a bit of a nuisance
+since it actually won’t really matter what map I pick, so I’ll move briskly; feel free to skip
+most or all of the remaining paragraph. <a 
+ id="x166-153001r517"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 134--><p class="noindent" ><span class="head">
+<a 
+ id="x166-153002r4"></a>
+<tspan font-family="cmbx" font-size="10">Definition 14.3.4.</tspan>  </span><a 
+ id="x166-153003"></a>We select a <tspan font-family="cmti" font-size="10">symmetric non-degenerate bilinear form</tspan>
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na663x.png" alt="⋅: Z × Z → 𝕋
+" class="math-display"  /></div>
+<!--l. 136--><p class="indent" >  satisfying the following properties: </p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">ξ </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan>(<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) = <tspan font-family="cmmi" font-size="10">ξ </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">ξ </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>  and (<tspan font-family="cmmi" font-size="10">ξ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">ξ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) <tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">x </tspan>= <tspan font-family="cmmi" font-size="10">ξ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">x </tspan>+ <tspan font-family="cmmi" font-size="10">ξ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">x </tspan>(this is the word
+     “bilinear”)
+     </li>
+     <li class="itemize"><tspan font-family="cmsy" font-size="10">⋅ </tspan>is symmetric,
+     </li>
+     <li class="itemize">For any <tspan font-family="cmmi" font-size="10">ξ</tspan><tspan font-family="cmmi" font-size="10">≠</tspan>0, there is an <tspan font-family="cmmi" font-size="10">x </tspan>with <tspan font-family="cmmi" font-size="10">ξ </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmmi" font-size="10">≠</tspan>0 (this is the word “nondegenerate”).</li></ul>
+  </div>
+<!--l. 145--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-326">
+<a 
+ id="x166-153004r518"></a>
+<div class="newtheorem">
+<!--l. 147--><p class="noindent" ><span class="head">
+<a 
+ id="x166-153005r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 14.3.5 </tspan>(The form on <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕n</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>)<br 
+class="newline" /> </span><a 
+ id="x166-153006"></a>If <tspan font-family="cmmi" font-size="10">Z </tspan>= <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕n</tspan><tspan font-family="msbm" font-size="10">ℤ  </tspan>then <tspan font-family="cmmi" font-size="10">ξ </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">x </tspan>= (<tspan font-family="cmmi" font-size="10">ξx</tspan>)<tspan font-family="cmmi" font-size="10">∕n </tspan>satisfies the
+above.</p>
+  </div>
+<!--l. 149--><p class="indent" >  </p></div>
+<!--l. 150--><p class="indent" >  In general, it turns out finite abelian groups decompose as the sum of cyclic groups (see
+<tspan font-family="cmbx" font-size="10">??</tspan> ), which makes it relatively easy to find such a <tspan font-family="cmsy" font-size="10">⋅</tspan>; but as I said the choice won’t matter, so
+let’s move on.
+</p><!--l. 155--><p class="indent" >  Now for the fun part: defining the characters.</p>
+<div class="mdframed" id="mdframed-327">
+<a 
+ id="x166-153007r519"></a>
+<div class="newtheorem">
+<!--l. 157--><p class="noindent" ><span class="head">
+<a 
+ id="x166-153008r6"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 14.3.6 </tspan><tspan font-family="cmss" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">ξ</tspan></sub> <tspan font-family="cmss" font-size="10">are orthonormal)</tspan><br 
+class="newline" /> </span><a 
+ id="x166-153009"></a>For each <tspan font-family="cmmi" font-size="10">ξ </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">Z </tspan>we define the character
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na664x.png" alt="eξ(x) = e(ξ ⋅x).
+" class="math-display"  /></div>
+<!--l. 160--><p class="noindent" >The <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">Z</tspan><tspan font-family="cmsy" font-size="10">| </tspan>characters form an orthonormal basis of the space of functions <tspan font-family="cmmi" font-size="10">Z </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>.
+</p>
+  </div>
+<!--l. 162--><p class="indent" >  </p></div>
+<!--l. 163--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 164--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>I recommend skipping this one, but it is:
+</p><table 
+class="align-star"><!--l. 170--><p class="indent" >
+<tr><td 
+class="align-odd"><img 
+src="Na666x.png" alt="⟨e,e ′⟩
+  ξ ξ"  class="left" align="middle" /></td><td 
+class="align-even"> = <img 
+src="Na667x.png" alt="-1-
+|Z |"  class="frac" align="middle" /><tspan font-family="cmex" font-size="10">∑</tspan>
+     <sub><tspan font-family="cmmi" font-size="8">x</tspan><tspan font-family="cmsy" font-size="8">∈</tspan><tspan font-family="cmmi" font-size="8">Z</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan>(<tspan font-family="cmmi" font-size="10">ξ </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">x</tspan>)<span class="overline"><tspan font-family="cmmi" font-size="10">e</tspan>(<tspan font-family="cmmi" font-size="10">ξ</tspan><tspan font-family="cmsy" font-size="10">′⋅ </tspan><tspan font-family="cmmi" font-size="10">x</tspan>)</span></td>  <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>       <td 
+class="align-even"> = <img 
+src="Na668x.png" alt=" 1
+|Z-|"  class="frac" align="middle" /><tspan font-family="cmex" font-size="10">∑</tspan>
+     <sub><tspan font-family="cmmi" font-size="8">x</tspan><tspan font-family="cmsy" font-size="8">∈</tspan><tspan font-family="cmmi" font-size="8">Z</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan>(<tspan font-family="cmmi" font-size="10">ξ </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">x</tspan>)<tspan font-family="cmmi" font-size="10">e</tspan>(<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">ξ</tspan><tspan font-family="cmsy" font-size="10">′⋅ </tspan><tspan font-family="cmmi" font-size="10">x</tspan>)</td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>       <td 
+class="align-even"> = <img 
+src="Na669x.png" alt="-1-
+|Z |"  class="frac" align="middle" /><tspan font-family="cmex" font-size="10">∑</tspan>
+     <sub><tspan font-family="cmmi" font-size="8">x</tspan><tspan font-family="cmsy" font-size="8">∈</tspan><tspan font-family="cmmi" font-size="8">Z</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><img 
+src="Na670x.png" alt="((ξ − ξ′)⋅x)"  class="left" align="middle" /><tspan font-family="cmmi" font-size="10">.</tspan></td> <td 
+class="align-label"></td><td 
+class="align-label">                                            </td></tr></table>
+                                                                               □
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 173--><p class="indent" >  In this way, the set of frequencies is also <tspan font-family="cmmi" font-size="10">Z</tspan>, but the <tspan font-family="cmmi" font-size="10">ξ </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">Z </tspan>play very different roles from the
+“physical” <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">Z</tspan>. Here is an example which might be enlightening.</p>
+<div class="mdframed" id="mdframed-328">
+<a 
+ id="x166-153010r520"></a>
+<div class="newtheorem">
+<!--l. 177--><p class="noindent" ><span class="head">
+<a 
+ id="x166-153011r7"></a>
+<tspan font-family="cmbx" font-size="10">Example 14.3.7 </tspan>(Cube roots of unity filter)<br 
+class="newline" /> </span><a 
+ id="x166-153012"></a>Suppose <tspan font-family="cmmi" font-size="10">Z </tspan>= <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>3<tspan font-family="msbm" font-size="10">ℤ</tspan>, with the inner form
+given by <tspan font-family="cmmi" font-size="10">ξ </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">x </tspan>= (<tspan font-family="cmmi" font-size="10">ξx</tspan>)<tspan font-family="cmmi" font-size="10">∕</tspan>3. Let <tspan font-family="cmmi" font-size="10">ω </tspan>= exp(<img 
+src="Na671x.png" alt="2
+3"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">πi</tspan>) be a primitive cube root of unity. Note that
+</p>
+<div class="math-display" >
+<img 
+src="Na672x.png" alt="       (
+       |{ 1    ξ = 0
+e(x) =    x
+ ξ     |( ω    ξ = 1
+         ω2x  ξ = 2.
+" class="math-display"  /></div>
+<!--l. 186--><p class="noindent" >Then given <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="cmmi" font-size="10">Z </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>with <tspan font-family="cmmi" font-size="10">f</tspan>(0) = <tspan font-family="cmmi" font-size="10">a</tspan>, <tspan font-family="cmmi" font-size="10">f</tspan>(1) = <tspan font-family="cmmi" font-size="10">b</tspan>, <tspan font-family="cmmi" font-size="10">f</tspan>(2) = <tspan font-family="cmmi" font-size="10">c</tspan>, we obtain
+</p>
+<div class="math-display" >
+<img 
+src="Na673x.png" alt="                         2                       2
+f(x) = a+-b-+-c⋅1 + a-+-ω-b+--ωc⋅ ωx + a+-ωb-+-ω-c-⋅ω2x.
+          3              3                  3
+" class="math-display"  /></div>
+<!--l. 191--><p class="noindent" >In this way we derive that the transforms are
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 196--><p class="noindent" >
+<tr><td 
+class="align-odd"><span class='accentwidehat'><tspan font-family="cmmi" font-size="10">f</tspan></span>(0)</td><td 
+class="align-even"> = <img 
+src="Na675x.png" alt="a + b+ c
+--------
+    3"  class="frac" align="middle" /></td>    <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><span class='accentwidehat'><tspan font-family="cmmi" font-size="10">f</tspan></span>(1)</td><td 
+class="align-even"> = <img 
+src="Na676x.png" alt="     2
+a-+-ω-b+--ωc
+     3"  class="frac" align="middle" /></td> <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><span class='accentwidehat'><tspan font-family="cmmi" font-size="10">f</tspan></span>(2)</td><td 
+class="align-even"> = <img 
+src="Na677x.png" alt="a-+-ωb-+-ω2c
+     3"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                                            </td></tr></table>
+</p>
+  </div>
+<!--l. 197--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-329">
+<a 
+ id="x166-153013r521"></a>
+<div class="newtheorem">
+<!--l. 199--><p class="noindent" ><span class="head">
+<a 
+ id="x166-153014r8"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 14.3.8.</tspan>  </span><a 
+ id="x166-153015"></a><tspan font-family="cmr" font-size="10">Show that in analogy to</tspan> <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">f</tspan></span><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="msbm" font-size="10">∅</tspan><tspan font-family="cmr" font-size="10">) for binary Fourier analysis, we now have</tspan>
+</p>
+<div class="math-display" >
+<img 
+src="Na678x.png" alt="          ∑
+^f(0) =-1-    f(x).
+      |Z| x∈Z
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 202--><p class="indent" >  </p></div>
+<!--l. 203--><p class="indent" >  Olympiad contestants may recognize the previous example as a “roots of unity filter”, which
+is exactly the point. For concreteness, suppose one wants to compute
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na679x.png" alt="(     )   (     )        (     )
+  1000      1000           1000
+    0   +    3    + ⋅⋅⋅+   999  .
+" class="math-display"  /></div>
+<!--l. 207--><p class="indent" >  In that case, we can consider the function
+</p>
+  <div class="math-display" >
+<img 
+src="Na680x.png" alt="w : ℤ∕3 → ℂ.
+" class="math-display"  /></div>
+<!--l. 209--><p class="indent" >  such that <tspan font-family="cmmi" font-size="10">w</tspan>(0) = 1 but <tspan font-family="cmmi" font-size="10">w</tspan>(1) = <tspan font-family="cmmi" font-size="10">w</tspan>(2) = 0. By abuse of notation we will also think of <tspan font-family="cmmi" font-size="10">w </tspan>as a
+function <tspan font-family="cmmi" font-size="10">w </tspan>: <tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="msam" font-size="10">↠ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>3 <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>. Then the sum in question is
+</p><table 
+class="align-star"><!--l. 218--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmex" font-size="10">∑</tspan>
+    <sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><img 
+src="Na682x.png" alt="(     )
+  1000
+   n"  /><tspan font-family="cmmi" font-size="10">w</tspan>(<tspan font-family="cmmi" font-size="10">n</tspan>)</td><td 
+class="align-even"> = <tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><img 
+src="Na683x.png" alt="(     )
+ 1000
+   n"  /><tspan font-family="cmex" font-size="10">∑</tspan>
+           <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">=0</tspan><tspan font-family="cmmi" font-size="8">,</tspan><tspan font-family="cmr" font-size="8">1</tspan><tspan font-family="cmmi" font-size="8">,</tspan><tspan font-family="cmr" font-size="8">2</tspan></sub><span class='accentwidehat'><tspan font-family="cmmi" font-size="10">w</tspan></span>(<tspan font-family="cmmi" font-size="10">k</tspan>)<tspan font-family="cmmi" font-size="10">ω</tspan><sup><tspan font-family="cmmi" font-size="8">kn</tspan></sup></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                <td 
+class="align-even"> = <tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">=0</tspan><tspan font-family="cmmi" font-size="8">,</tspan><tspan font-family="cmr" font-size="8">1</tspan><tspan font-family="cmmi" font-size="8">,</tspan><tspan font-family="cmr" font-size="8">2</tspan></sub><span class='accentwidehat'><tspan font-family="cmmi" font-size="10">w</tspan></span>(<tspan font-family="cmmi" font-size="10">k</tspan>)<tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><img 
+src="Na684x.png" alt="(1000)
+
+   n"  /><tspan font-family="cmmi" font-size="10">ω</tspan><sup><tspan font-family="cmmi" font-size="8">kn</tspan></sup></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                <td 
+class="align-even"> = <tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">=0</tspan><tspan font-family="cmmi" font-size="8">,</tspan><tspan font-family="cmr" font-size="8">1</tspan><tspan font-family="cmmi" font-size="8">,</tspan><tspan font-family="cmr" font-size="8">2</tspan></sub><span class='accentwidehat'><tspan font-family="cmmi" font-size="10">w</tspan></span>(<tspan font-family="cmmi" font-size="10">k</tspan>)(1 + <tspan font-family="cmmi" font-size="10">ω</tspan><sup><tspan font-family="cmmi" font-size="8">k</tspan></sup>)<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup><tspan font-family="cmmi" font-size="10">.</tspan></td>      <td 
+class="align-label"></td><td 
+class="align-label">                                </td></tr></table>
+                                                                                
+                                                                                
+</p><!--l. 219--><p class="indent" >  In our situation, we have <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">w</tspan></span>(0) = <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">w</tspan></span>(1) = <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">w</tspan></span>(2) = <img 
+src="Na685x.png" alt="1
+3"  class="frac" align="middle" />, and we have evaluated the desired sum.
+More generally, we can take any periodic weight <tspan font-family="cmmi" font-size="10">w </tspan>and use Fourier analysis in order to
+interchange the order of summation.</p>
+<div class="mdframed" id="mdframed-330">
+<a 
+ id="x166-153016r522"></a>
+<div class="newtheorem">
+<!--l. 225--><p class="noindent" ><span class="head">
+<a 
+ id="x166-153017r9"></a>
+<tspan font-family="cmbx" font-size="10">Example 14.3.9 </tspan>(Binary Fourier analysis)<br 
+class="newline" /> </span><a 
+ id="x166-153018"></a>Suppose <tspan font-family="cmmi" font-size="10">Z </tspan>= <tspan font-family="cmsy" font-size="10">{±</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>, viewed as an abelian
+group under pointwise multiplication hence isomorphic to (<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ</tspan>)<sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmmi" font-size="8">n</tspan></sup>. Assume we pick
+the dot product defined by
+</p>
+<div class="math-display" >
+<img 
+src="Na686x.png" alt="⟨ξ,x⟩ = 1∑   ξi −-1-⋅ xi −-1
+        2      2      2
+          i
+" class="math-display"  /></div>
+<!--l. 232--><p class="noindent" >where <tspan font-family="cmmi" font-size="10">ξ </tspan>= (<tspan font-family="cmmi" font-size="10">ξ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,ξ</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>) and <tspan font-family="cmmi" font-size="10">x </tspan>= (<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>).
+</p><!--l. 234--><p class="noindent" >We claim this coincides with the first example we gave. Indeed, let <tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmsy" font-size="10">⊆{</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,n</tspan><tspan font-family="cmsy" font-size="10">} </tspan>and let
+<tspan font-family="cmmi" font-size="10">ξ </tspan><tspan font-family="cmsy" font-size="10">∈{±</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> which is <tspan font-family="cmsy" font-size="10">−</tspan>1 at positions in <tspan font-family="cmmi" font-size="10">S</tspan>, and +1 at positions not in <tspan font-family="cmmi" font-size="10">S</tspan>. Then the character
+<tspan font-family="cmmi" font-size="10">χ</tspan><sub><tspan font-family="cmmi" font-size="8">S</tspan></sub> from the previous example coincides with the character <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">ξ</tspan></sub> in the new notation. In
+particular, <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">f</tspan></span>(<tspan font-family="cmmi" font-size="10">S</tspan>) = <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">f</tspan></span>(<tspan font-family="cmmi" font-size="10">ξ</tspan>).
+</p><!--l. 242--><p class="noindent" >Thus Fourier analysis on a finite group <tspan font-family="cmmi" font-size="10">Z </tspan>subsumes binary Fourier analysis.
+</p>
+  </div>
+<!--l. 244--><p class="indent" >  </p></div>
+  <h4 class="subsectionHead"><span class="titlemark">14.3.iii</span>  <a 
+ id="x166-15400014.3.iii"></a>Fourier series for functions <tspan font-family="cmmi" font-size="10">L</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>([<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">π,π</tspan>])</h4>
+<!--l. 247--><p class="noindent" >This is the most famous one, and hence the one you’ve heard of. <a 
+ id="x166-154001r523"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 249--><p class="noindent" ><span class="head">
+<a 
+ id="x166-154002r10"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Definition 14.3.10.</tspan>  </span><a 
+ id="x166-154003"></a>The space <tspan font-family="cmmi" font-size="10">L</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>([<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">π,π</tspan>]) consists of all functions <tspan font-family="cmmi" font-size="10">f</tspan> : [<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">π,π</tspan>]  <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>
+such that the integral <tspan font-family="cmex" font-size="10">∫</tspan>
+  <sub><tspan font-family="cmr" font-size="8">[</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmmi" font-size="8">π,π</tspan><tspan font-family="cmr" font-size="8">]</tspan></sub><img 
+src="Na687x.png" alt="|f(x)|"  class="left" align="middle" /><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmmi" font-size="10">dx </tspan>exists and is finite, modulo the relation that a
+function which is zero “almost everywhere” is considered to equal zero.<span class="footnote-mark"><a 
+href="Na167.htm#fn1x18"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x166-154004f1"></a> 
+</p><!--l. 266--><p class="indent" >  It is made into an inner product space according to
+</p>
+  <div class="math-display" >
+<img 
+src="Na688x.png" alt="          ∫         ----
+⟨f,g ⟩ =-1-      f (x )g (x ) dx.
+       2π  [−π,π]
+" class="math-display"  /></div>
+  </div>
+<!--l. 269--><p class="indent" >
+It turns out (we won’t prove) that this is an (infinite-dimensional) Hilbert space!
+</p><!--l. 273--><p class="indent" >  Now, the beauty of Fourier analysis is that <tspan font-family="cmbx" font-size="10">this space has a great basis</tspan>:</p>
+<div class="mdframed" id="mdframed-331">
+<a 
+ id="x166-154005r524"></a>
+<div class="newtheorem">
+<!--l. 276--><p class="noindent" ><span class="head">
+<a 
+ id="x166-154006r11"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 14.3.11 </tspan><tspan font-family="cmss" font-size="10">(The classical Fourier basis)</tspan><br 
+class="newline" /> </span><a 
+ id="x166-154007"></a>For each integer <tspan font-family="cmmi" font-size="10">n</tspan>, define
+</p>
+<div class="math-display" >
+<img 
+src="Na689x.png" alt="en(x ) = exp(inx).
+" class="math-display"  /></div>
+<!--l. 279--><p class="noindent" >Then <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> form an orthonormal basis of the Hilbert space <tspan font-family="cmmi" font-size="10">L</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>([<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">π,π</tspan>]).
+</p>
+  </div>
+<!--l. 281--><p class="indent" >  </p></div>
+<!--l. 282--><p class="indent" >  Thus this time the frequency set <tspan font-family="msbm" font-size="10">ℤ </tspan>is infinite, and we have
+</p>
+  <div class="math-display" >
+<img 
+src="Na690x.png" alt="       ∑  ^
+f(x) =    f(n) exp (inx )  almost everywhere
+        n
+" class="math-display"  /></div>
+<!--l. 285--><p class="indent" >  for coefficients <span class='accentwidehat'><tspan font-family="cmmi" font-size="10">f</tspan></span>(<tspan font-family="cmmi" font-size="10">n</tspan>) with <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><img 
+src="Na691x.png" alt="|| ^  ||
+|f(n )|"  class="left" align="middle" /><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmmi" font-size="10">&#x003C; </tspan><tspan font-family="cmsy" font-size="10">∞</tspan>. Since the frequency set is indexed by <tspan font-family="msbm" font-size="10">ℤ</tspan>, we call
+this a <tspan font-family="cmbx" font-size="10">Fourier series</tspan> to reflect the fact that the index is <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>.</p>
+<div class="mdframed" id="mdframed-332">
+<a 
+ id="x166-154008r525"></a>
+<div class="newtheorem">
+<!--l. 291--><p class="noindent" ><span class="head">
+<a 
+ id="x166-154009r12"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 14.3.12.</tspan>  </span><a 
+ id="x166-154010"></a><tspan font-family="cmr" font-size="10">Show once again</tspan>
+</p>
+<div class="math-display" >
+<img 
+src="Na692x.png" alt="         ∫
+^     -1-
+f(0) = 2π [−π,π]f(x ) dx.
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 293--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 295--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase112.htm" >next</a>] [<a 
+href="Nase110.htm" >prev</a>] [<a 
+href="Nase110.htm#tailNase110.htm" >prev-tail</a>] [<a 
+href="Nase111.htm" >front</a>] [<a 
+href="Nach17.htm#Nase111.htm" >up</a>] </p></div>
+<!--l. 295--><p class="indent" >  <a 
+ id="tailNase111.htm"></a>  </p> 
+</body> 
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Complex differentiation</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 96--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase209.htm" >next</a>] [<a 
+href="Nase202.htm" >prev</a>] [<a 
+href="Nase202.htm#tailNase202.htm" >prev-tail</a>] [<a 
+href="Nase201.htm#tailNase203.htm">tail</a>] [<a 
+href="Nase206.htm#Nase208.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">31.2</span>  <a 
+ id="x293-28100031.2"></a>Complex differentiation</h3>
+<!--l. 97--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Polynomials are holomorphic; </tspan><span class="overline"><tspan font-family="cmmi" font-size="10">z</tspan></span> <tspan font-family="cmti" font-size="10">is not.</tspan>
+</p><!--l. 98--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>be a complex function. Then for some <tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U</tspan>, we define the <tspan font-family="cmbx" font-size="10">derivative</tspan> at <tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>
+to be
+</p>
+  <div class="math-display" >
+<img 
+src="Na1656x.png" alt=" lim f-(z0-+-h)−-f-(z0).
+h→0         h
+" class="math-display"  /></div>
+<!--l. 103--><p class="indent" >  Note that this limit may not exist; when it does we say <tspan font-family="cmmi" font-size="10">f </tspan>is <tspan font-family="cmbx" font-size="10">differentiable</tspan> at
+<tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>.
+</p><!--l. 106--><p class="indent" >  What do I mean by a “complex” limit <tspan font-family="cmmi" font-size="10">h </tspan><tspan font-family="cmsy" font-size="10">→ </tspan>0? It’s what you might expect: for every <tspan font-family="cmmi" font-size="10">𝜀 &#x003E; </tspan>0
+there should be a <tspan font-family="cmmi" font-size="10">δ &#x003E; </tspan>0 such that
+</p>
+  <div class="math-display" >
+<img 
+src="Na1657x.png" alt="                |                   |
+                |f (z0 + h)− f (z0)    |
+0 &#x003C; |h| &#x003C; δ =⇒   ||-------h------- − L|| &#x003C; 𝜀.
+" class="math-display"  /></div>
+<!--l. 112--><p class="indent" >  If you like topology, you are encouraged to think of this in terms of open neighborhoods in
+the complex plane. (This is why we require <tspan font-family="cmmi" font-size="10">U </tspan>to be open: it makes it possible to take
+<tspan font-family="cmmi" font-size="10">δ</tspan>-neighborhoods in it.)
+                                                                                
+                                                                                
+</p><!--l. 117--><p class="indent" >  But note that having a complex derivative is actually much stronger than a real function
+having a derivative. In the real line, <tspan font-family="cmmi" font-size="10">h </tspan>can only approach zero from below and above, and for
+the limit to exist we need the “left limit” to equal the “right limit”. But the complex numbers
+form a <tspan font-family="cmti" font-size="10">plane</tspan>: <tspan font-family="cmmi" font-size="10">h </tspan>can approach zero from many directions, and we need all the limits to be
+equal.</p>
+<div class="mdframed" id="mdframed-589">
+<a 
+ id="x293-281001r918"></a>
+<div class="newtheorem">
+<!--l. 125--><p class="noindent" ><span class="head">
+<a 
+ id="x293-281002r1"></a>
+<tspan font-family="cmbx" font-size="10">Example 31.2.1 </tspan>(Important: conjugation is <tspan font-family="cmti" font-size="10">not </tspan>holomorphic)<br 
+class="newline" /> </span><a 
+ id="x293-281003"></a>Let <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>) =<span class="overline"> <tspan font-family="cmmi" font-size="10">z</tspan></span> be complex
+conjugation, <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>. This function, despite its simple nature, is not holomorphic!
+Indeed, at <tspan font-family="cmmi" font-size="10">z </tspan>= 0 we have,
+</p>
+<div class="math-display" >
+<img 
+src="Na1658x.png" alt="              --
+f(h)−--f(0)=  h.
+     h        h
+" class="math-display"  /></div>
+<!--l. 130--><p class="noindent" >This does not have a limit as <tspan font-family="cmmi" font-size="10">h </tspan><tspan font-family="cmsy" font-size="10">→ </tspan>0, because depending on “which direction” we approach
+zero from we have different values. </p>
+<div class="center" 
+>
+<!--l. 132--><p class="noindent" >
+</p>
+</div>
+</p>
+  </div>
+<!--l. 153--><p class="indent" >  </p></div>
+<!--l. 155--><p class="indent" >  If a function <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>is complex differentiable at all the points in its domain it is called
+<tspan font-family="cmbx" font-size="10">holomorphic</tspan>. In the special case of a holomorphic function with domain <tspan font-family="cmmi" font-size="10">U </tspan>= <tspan font-family="msbm" font-size="10">ℂ</tspan>, we call the function
+<tspan font-family="cmbx" font-size="10">entire</tspan>.<span class="footnote-mark"><a 
+href="Na294.htm#fn1x35"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x293-281004f1"></a> 
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-590">
+<a 
+ id="x293-281005r919"></a>
+<div class="newtheorem">
+<!--l. 161--><p class="noindent" ><span class="head">
+<a 
+ id="x293-281006r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 31.2.2 </tspan>(Examples of holomorphic functions)<br 
+class="newline" /> </span><a 
+ id="x293-281007"></a>In all the examples below, the
+derivative of the function is the same as in their real analogues (e.g. the derivative of <tspan font-family="cmmi" font-size="10">e</tspan><sup><tspan font-family="cmmi" font-size="8">z</tspan></sup> is
+<tspan font-family="cmmi" font-size="10">e</tspan><sup><tspan font-family="cmmi" font-size="8">z</tspan></sup>).
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">Any polynomial <tspan font-family="cmmi" font-size="10">z</tspan><img 
+src="Na1659x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> + <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup> + <img 
+src="Na1660x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> is holomorphic.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The  complex  exponential  exp  :  <tspan font-family="cmmi" font-size="10">x </tspan>+ <tspan font-family="cmmi" font-size="10">yi</tspan><img 
+src="Na1661x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">e</tspan><sup><tspan font-family="cmmi" font-size="8">x</tspan></sup>(cos<tspan font-family="cmmi" font-size="10">y </tspan>+ <tspan font-family="cmmi" font-size="10">i</tspan>sin<tspan font-family="cmmi" font-size="10">y</tspan>)  can  be  shown  to  be
+    holomorphic.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">sin and cos are holomorphic when extended to the complex plane by cos<tspan font-family="cmmi" font-size="10">z </tspan>= <img 
+src="Na1662x.png" alt=" iz  −iz
+e-+e2---"  class="frac" align="middle" />
+    and sin<tspan font-family="cmmi" font-size="10">z </tspan>= <img 
+src="Na1663x.png" alt="eiz−e−iz
+   2i"  class="frac" align="middle" />.
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate">As usual, the sum, product, chain rules and so on apply, and hence <tspan font-family="cmbx" font-size="10">sums, products,</tspan>
+    <tspan font-family="cmbx" font-size="10">nonzero quotients, and compositions of holomorphic functions are also</tspan>
+    <tspan font-family="cmbx" font-size="10">holomorphic</tspan>.</dd></dl>
+</p>
+  </div>
+<!--l. 176--><p class="indent" >  </p></div>
+<!--l. 177--><p class="indent" >  You are welcome to try and prove these results, but I won’t bother to do so.
+                                                                                
+                                                                                
+</p>
+  <!--l. 179--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase209.htm" >next</a>] [<a 
+href="Nase202.htm" >prev</a>] [<a 
+href="Nase202.htm#tailNase202.htm" >prev-tail</a>] [<a 
+href="Nase203.htm" >front</a>] [<a 
+href="Nase206.htm#Nase208.htm" >up</a>] </p></div>
+<!--l. 179--><p class="indent" >  <a 
+ id="tailNase203.htm"></a> </p> 
+</body> 
+</html>

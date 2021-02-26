@@ -1,0 +1,280 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Modules and vector spaces</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 33--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase77.htm" >next</a>] [<a 
+href="Nase75.htm" >prev</a>] [<a 
+href="Nase75.htm#tailNase75.htm" >prev-tail</a>] [<a 
+href="#tailNase76.htm">tail</a>] [<a 
+href="Nach12.htm#Nase76.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">9.2</span>  <a 
+ id="x119-1080009.2"></a>Modules and vector spaces</h3>
+<!--l. 34--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Polynomials of degree at most </tspan><tspan font-family="cmmi" font-size="10">n</tspan><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 35--><p class="indent" >  You intuitively know already that <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> is a “vector space”: its elements can be
+added together, and there’s some scaling by real numbers. Let’s develop this more
+generally.
+</p><!--l. 40--><p class="indent" >  Fix a commutative ring <tspan font-family="cmmi" font-size="10">R</tspan>. Then informally,</p>
+<div class="mdframed" id="mdframed-221">
+<!--l. 43--><p class="noindent" ><tspan font-family="cmbx" font-size="10">An </tspan><tspan font-family="cmmi" font-size="10">R</tspan><tspan font-family="cmbx" font-size="10">-module is any structure where you can add two elements and scale by</tspan>
+<tspan font-family="cmbx" font-size="10">elements of </tspan><tspan font-family="cmmi" font-size="10">R</tspan><tspan font-family="cmbx" font-size="10">.</tspan></p><!--l. 45--><p class="noindent" ></p>
+  </div>
+<!--l. 48--><p class="indent" >  Moreover, a <tspan font-family="cmbx" font-size="10">vector space</tspan> is just a module whose commanding ring is actually a field. I’ll
+give you the full definition in a moment, but first, examples…</p>
+<div class="mdframed" id="mdframed-222">
+<a 
+ id="x119-108001r351"></a>
+<div class="newtheorem">
+<!--l. 54--><p class="noindent" ><span class="head">
+<a 
+ id="x119-108002r1"></a>
+<tspan font-family="cmbx" font-size="10">Example 9.2.1 </tspan>(Quadratic polynomials, aka my favorite example)<br 
+class="newline" /> </span><a 
+ id="x119-108003"></a>My            favorite
+example of an <tspan font-family="msbm" font-size="10">ℝ</tspan>-vector space is the set of polynomials of degree at most two, namely
+</p>
+<div class="math-display" >
+<img 
+src="Na303x.png" alt="{                      }
+ ax2 + bx + c | a,b,c ∈ ℝ .
+" class="math-display"  /></div>
+<!--l. 58--><p class="noindent" >Indeed, you can add any two quadratics, and multiply by constants. You can’t multiply
+two quadratics to get a quadratic, but that’s irrelevant – in a vector space there need
+not be a notion of multiplying two vectors together.
+</p><!--l. 63--><p class="noindent" >In a sense we’ll define later, this vector space has dimension 3 (as expected!).
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 67--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-223">
+<a 
+ id="x119-108004r352"></a>
+<div class="newtheorem">
+<!--l. 68--><p class="noindent" ><span class="head">
+<a 
+ id="x119-108005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 9.2.2 </tspan>(All polynomials)<br 
+class="newline" /> </span><a 
+ id="x119-108006"></a>The set of <tspan font-family="cmti" font-size="10">all </tspan>polynomials with real coefficients is an
+<tspan font-family="msbm" font-size="10">ℝ</tspan>-vector space, because you can <tspan font-family="cmti" font-size="10">add any two polynomials </tspan>and <tspan font-family="cmti" font-size="10">scale by constants</tspan>.
+</p>
+  </div>
+<!--l. 72--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-224">
+<a 
+ id="x119-108007r353"></a>
+<div class="newtheorem">
+<!--l. 75--><p class="noindent" ><span class="head">
+<a 
+ id="x119-108008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 9.2.3 </tspan>(Euclidean space)<br 
+class="newline" /> </span><a 
+ id="x119-108009"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The complex numbers
+<div class="math-display" >
+<img 
+src="Na304x.png" alt="{a+ bi | a,b ∈ ℝ }
+" class="math-display"  /></div>
+    <!--l. 80--><p class="noindent" >form a real vector space. As we’ll see later, it has “dimension 2”.
+    </p></dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The real numbers <tspan font-family="msbm" font-size="10">ℝ </tspan>form a real vector space of dimension 1.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The set of 3D vectors
+<div class="math-display" >
+                                                                                
+                                                                                
+<img 
+src="Na305x.png" alt="{(x,y,z) | x,y,z ∈ ℝ }
+" class="math-display"  /></div>
+    <!--l. 85--><p class="noindent" >forms a real vector space, because you can add any two triples component-wise.
+    Again, we’ll later explain why it has “dimension 3”.</p></dd></dl>
+</p>
+  </div>
+<!--l. 89--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-225">
+<a 
+ id="x119-108013r354"></a>
+<div class="newtheorem">
+<!--l. 92--><p class="noindent" ><span class="head">
+<a 
+ id="x119-108014r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 9.2.4 </tspan>(More examples of vector spaces)<br 
+class="newline" /> </span><a 
+ id="x119-108015"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The set
+<div class="math-display" >
+<img 
+src="Na306x.png" alt="        {                 }
+ℚ [√2-] =  a+ b√2--| a,b ∈ ℚ
+" class="math-display"  /></div>
+    <!--l. 96--><p class="noindent" >has a structure of a <tspan font-family="msbm" font-size="10">ℚ</tspan>-vector space in the obvious fashion: one can add any two
+    elements, and scale by rational numbers. (It is not a real vector space – why?)
+    </p></dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The set
+<div class="math-display" >
+<img 
+src="Na307x.png" alt="{(x,y,z) | x+ y + z = 0 and x,y,z ∈ ℝ}
+" class="math-display"  /></div>
+    <!--l. 100--><p class="noindent" >is a 2-dimensional real vector space.
+                                                                                
+                                                                                
+    </p></dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The set of all functions <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>is also a real vector space (since the notions <tspan font-family="cmmi" font-size="10">f </tspan>+<tspan font-family="cmmi" font-size="10">g</tspan>
+    and <tspan font-family="cmmi" font-size="10">c </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">f </tspan>both make sense for <tspan font-family="cmmi" font-size="10">c </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>).</dd></dl>
+</p>
+  </div>
+<!--l. 104--><p class="indent" >  </p></div>
+<!--l. 106--><p class="indent" >  Now let me write the actual rules for how this multiplication behaves. <a 
+ id="x119-108019r355"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 108--><p class="noindent" ><span class="head">
+<a 
+ id="x119-108020r5"></a>
+<tspan font-family="cmbx" font-size="10">Definition 9.2.5.</tspan>  </span><a 
+ id="x119-108021"></a>Let <tspan font-family="cmmi" font-size="10">R </tspan>be a commutative ring. An <tspan font-family="cmmi" font-size="10">R</tspan>-<tspan font-family="cmbx" font-size="10">module</tspan> starts with an additive
+abelian group <tspan font-family="cmmi" font-size="10">M </tspan>= (<tspan font-family="cmmi" font-size="10">M,</tspan>+) whose identity is denoted 0 = 0<sub><tspan font-family="cmmi" font-size="8">M</tspan></sub>. We additionally specify a left
+multiplication by elements of <tspan font-family="cmmi" font-size="10">R</tspan>. This multiplication must satisfy the following properties for
+<tspan font-family="cmmi" font-size="10">r,r</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,r</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">R </tspan>and <tspan font-family="cmmi" font-size="10">m,m</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,m</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">M</tspan>:
+     </p><dl class="enumerate"><dt class="enumerate">
+  (i) </dt><dd 
+class="enumerate"><tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⋅ </tspan>(<tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">m</tspan>) = (<tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) <tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">m</tspan>.
+     </dd><dt class="enumerate">
+ (ii) </dt><dd 
+class="enumerate">Multiplication is distributive, meaning
+<div class="math-display" >
+<img 
+src="Na308x.png" alt="(r  + r )⋅m =  r ⋅m + r  ⋅m and r ⋅(m  + m  ) = r ⋅m + r ⋅m .
+ 1    2       1       2             1     2       1       2
+" class="math-display"  /></div>
+     </dd><dt class="enumerate">
+ (iii) </dt><dd 
+class="enumerate">1<sub><tspan font-family="cmmi" font-size="8">R</tspan></sub> <tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">m </tspan>= <tspan font-family="cmmi" font-size="10">m</tspan>.
+     </dd><dt class="enumerate">
+ (iv) </dt><dd 
+class="enumerate">0<sub><tspan font-family="cmmi" font-size="8">R</tspan></sub> <tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">m </tspan>= 0<sub><tspan font-family="cmmi" font-size="8">M</tspan></sub>. (This is actually extraneous; one can deduce it from the first three.)</dd></dl>
+<!--l. 125--><p class="noindent" >If <tspan font-family="cmmi" font-size="10">R </tspan>is a field we say <tspan font-family="cmmi" font-size="10">M </tspan>is an <tspan font-family="cmmi" font-size="10">R</tspan>-<tspan font-family="cmbx" font-size="10">vector space</tspan>; its elements are called <tspan font-family="cmbx" font-size="10">vectors</tspan> and the members
+of <tspan font-family="cmmi" font-size="10">R </tspan>are called <tspan font-family="cmbx" font-size="10">scalars</tspan>.
+</p>
+  </div>
+                                                                                
+                                                                                
+<!--l. 128--><p class="indent" >
+<a 
+ id="x119-108026r356"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 131--><p class="noindent" ><span class="head">
+<a 
+ id="x119-108027r6"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 9.2.6.</tspan>  </span><a 
+ id="x119-108028"></a>In  the  above,  we’re  using  the  same  symbol  +  for  the
+addition of <tspan font-family="cmmi" font-size="10">M </tspan>and the addition of <tspan font-family="cmmi" font-size="10">R</tspan>. Sorry about that, but it’s kind of hard to avoid,
+and the point of the axioms is that these additions should be related. I’ll try to remember
+to put <tspan font-family="cmmi" font-size="10">r </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">m </tspan>for the multiplication of the module and <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> for the multiplication of <tspan font-family="cmmi" font-size="10">R</tspan>.
+</p>
+  </div>
+<!--l. 137--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-226">
+<a 
+ id="x119-108029r357"></a>
+<div class="newtheorem">
+<!--l. 140--><p class="noindent" ><span class="head">
+<a 
+ id="x119-108030r7"></a>
+<tspan font-family="cmbx" font-size="10">Question 9.2.7.</tspan>  </span><a 
+ id="x119-108031"></a><tspan font-family="cmr" font-size="10">In</tspan> <tspan font-family="cmbx" font-size="10">??</tspan><tspan font-family="cmr" font-size="10"> , I was careful to say “degree at most 2” instead of “degree 2”. What’s</tspan>
+<tspan font-family="cmr" font-size="10">the reason for this? In other words, why is</tspan>
+</p>
+<div class="math-display" >
+<img 
+src="Na309x.png" alt="{  2                      }
+ ax + bx +c | a,b,c ∈ ℝ,a ⁄= 0
+" class="math-display"  /></div>
+<!--l. 145--><p class="noindent" ><tspan font-family="cmr" font-size="10">not an </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><tspan font-family="cmr" font-size="10">-vector space?</tspan></p>
+  </div>
+<!--l. 146--><p class="indent" >  </p></div>
+<!--l. 148--><p class="indent" >  A couple less intuitive but somewhat important examples…</p>
+<div class="mdframed" id="mdframed-227">
+<a 
+ id="x119-108032r358"></a>
+<div class="newtheorem">
+<!--l. 149--><p class="noindent" ><span class="head">
+<a 
+ id="x119-108033r8"></a>
+<tspan font-family="cmbx" font-size="10">Example 9.2.8 </tspan>(Abelian groups are <tspan font-family="msbm" font-size="10">ℤ</tspan>-modules)<br 
+class="newline" /> </span><a 
+ id="x119-108034"></a>(Skip this example if you’re not comfortable
+with groups.)
+                                                                                
+                                                                                
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The example of real polynomials
+<div class="math-display" >
+<img 
+src="Na310x.png" alt="{ax2 + bx + c | a,b,c ∈ ℝ }
+" class="math-display"  /></div>
+    <!--l. 154--><p class="noindent" >is also a <tspan font-family="msbm" font-size="10">ℤ</tspan>-module! Indeed, we can add any two such polynomials, and we can scale
+    them by integers.
+    </p></dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The set of integers modulo 100, say <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>100<tspan font-family="msbm" font-size="10">ℤ</tspan>, is a <tspan font-family="msbm" font-size="10">ℤ</tspan>-module as well. Can you see
+    how?
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">In fact, <tspan font-family="cmti" font-size="10">any </tspan>abelian group <tspan font-family="cmmi" font-size="10">G </tspan>= (<tspan font-family="cmmi" font-size="10">G,</tspan>+) is a <tspan font-family="msbm" font-size="10">ℤ</tspan>-module. The multiplication can be
+    defined by
+<div class="math-display" >
+<img 
+src="Na311x.png" alt="n ⋅g = g◟ +-⋅◝⋅◜⋅+-g◞   (− n)⋅g = n ⋅(− g )
+         n times
+" class="math-display"  /></div>
+    <!--l. 163--><p class="noindent" >for <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan>0. (Here <tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">g </tspan>is the additive inverse of <tspan font-family="cmmi" font-size="10">g</tspan>.)</p></dd></dl>
+</p>
+  </div>
+<!--l. 165--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-228">
+<a 
+ id="x119-108038r359"></a>
+<div class="newtheorem">
+<!--l. 167--><p class="noindent" ><span class="head">
+<a 
+ id="x119-108039r9"></a>
+<tspan font-family="cmbx" font-size="10">Example 9.2.9 </tspan>(Every ring is its own module)<br 
+class="newline" /> </span><a 
+ id="x119-108040"></a>
+                                                                                
+                                                                                
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate"><tspan font-family="msbm" font-size="10">ℝ </tspan>can be thought of as an <tspan font-family="msbm" font-size="10">ℝ</tspan>-vector space over itself. Can you see why?
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">By the same reasoning, we see that <tspan font-family="cmti" font-size="10">any </tspan>commutative ring <tspan font-family="cmmi" font-size="10">R </tspan>can be thought of as
+    an <tspan font-family="cmmi" font-size="10">R</tspan>-module over itself.</dd></dl>
+</p>
+  </div>
+<!--l. 177--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 179--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase77.htm" >next</a>] [<a 
+href="Nase75.htm" >prev</a>] [<a 
+href="Nase75.htm#tailNase75.htm" >prev-tail</a>] [<a 
+href="Nase76.htm" >front</a>] [<a 
+href="Nach12.htm#Nase76.htm" >up</a>] </p></div>
+<!--l. 179--><p class="indent" >  <a 
+ id="tailNase76.htm"></a> </p> 
+</body> 
+</html>

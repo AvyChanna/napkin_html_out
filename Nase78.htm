@@ -1,0 +1,305 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Linear independence, spans, and basis</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 265--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase79.htm" >next</a>] [<a 
+href="Nase77.htm" >prev</a>] [<a 
+href="Nase77.htm#tailNase77.htm" >prev-tail</a>] [<a 
+href="#tailNase78.htm">tail</a>] [<a 
+href="Nach12.htm#Nase78.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">9.4</span>  <a 
+ id="x121-1100009.4"></a>Linear independence, spans, and basis</h3>
+<!--l. 268--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <img 
+src="Na324x.png" alt="{      2}
+ 1,x,x"  class="left" align="middle" /> <tspan font-family="cmti" font-size="10">is a basis of </tspan><img 
+src="Na325x.png" alt="{   2                  }
+  ax + bx + c | a,b,c ∈ ℝ"  class="left" align="middle" /><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 270--><p class="indent" >  The idea of a basis, the topic of this section, gives us another way to capture the notion
+that
+</p>
+  <div class="math-display" >
+<img 
+src="Na326x.png" alt="V  = {ax2 + bx+ c | a,b,c ∈ ℝ }
+" class="math-display"  /></div>
+<!--l. 273--><p class="indent" >  is sums of copies of <tspan font-family="cmsy" font-size="10">{</tspan>1<tspan font-family="cmmi" font-size="10">,x,x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmsy" font-size="10">}</tspan>. This section should be very intuitive, if technical. If you can’t
+see why the theorems here “should” be true, you’re doing it wrong.
+</p><!--l. 278--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">M </tspan>be an <tspan font-family="cmmi" font-size="10">R</tspan>-module now. We define three very classical notions that you likely are
+already familiar with. If not, fall upon your notion of Euclidean space or <tspan font-family="cmmi" font-size="10">V </tspan>above.
+<a 
+ id="x121-110001r365"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 282--><p class="noindent" ><span class="head">
+<a 
+ id="x121-110002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 9.4.1.</tspan>  </span><a 
+ id="x121-110003"></a>A <tspan font-family="cmbx" font-size="10">linear combination</tspan> of some vectors <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,v</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>  is a sum of the
+form <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <img 
+src="Na327x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>, where <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,r</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">R</tspan>. The linear combination is called <tspan font-family="cmbx" font-size="10">trivial</tspan> if
+<tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> = <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> = <img 
+src="Na328x.png" alt="⋅⋅⋅"  class="@cdots"  /> = <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> = 0<sub><tspan font-family="cmmi" font-size="8">R</tspan></sub>, and <tspan font-family="cmbx" font-size="10">nontrivial</tspan> otherwise.
+</p>
+  </div>
+<!--l. 287--><p class="indent" >
+<a 
+ id="x121-110004r366"></a>
+</p>
+  <div class="newtheorem">
+                                                                                
+                                                                                
+<!--l. 289--><p class="noindent" ><span class="head">
+<a 
+ id="x121-110005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 9.4.2.</tspan>  </span><a 
+ id="x121-110006"></a>Consider a finite set of vectors <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,v</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> in a module <tspan font-family="cmmi" font-size="10">M</tspan>. </p>
+     <ul class="itemize1">
+     <li class="itemize">It is called <tspan font-family="cmbx" font-size="10">linearly independent</tspan> if there is no nontrivial linear combination with
+     value 0<sub><tspan font-family="cmmi" font-size="8">M</tspan></sub>. (Observe that 0<sub><tspan font-family="cmmi" font-size="8">M</tspan></sub> = 0 <tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + 0 <tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> + <img 
+src="Na329x.png" alt="⋅⋅⋅"  class="@cdots"  /> + 0 <tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> is always true – the
+     assertion is that there is no other way to express 0<sub><tspan font-family="cmmi" font-size="8">M</tspan></sub> in this form.)
+     </li>
+     <li class="itemize">It is called a <tspan font-family="cmbx" font-size="10">generating set</tspan> if every <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">M </tspan>can be written as a linear combination
+     of the <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmsy" font-size="10">}</tspan>. If <tspan font-family="cmmi" font-size="10">M </tspan>is a vector space we say it is <tspan font-family="cmbx" font-size="10">spanning</tspan> instead.
+     </li>
+     <li class="itemize">It is called a <tspan font-family="cmbx" font-size="10">basis</tspan> (plural <tspan font-family="cmbx" font-size="10">bases</tspan>) if every <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">M </tspan>can be written <tspan font-family="cmti" font-size="10">uniquely </tspan>as a
+     linear combination of the <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmsy" font-size="10">}</tspan>.</li></ul>
+<!--l. 303--><p class="noindent" >The same definitions apply for an infinite set, with the proviso that all sums must be
+finite.
+</p>
+  </div>
+<!--l. 306--><p class="indent" >
+So by definition, <img 
+src="Na330x.png" alt="{1, x,x2}"  class="left" align="middle" /> is a basis for <tspan font-family="cmmi" font-size="10">V </tspan>. It’s not the only one: <tspan font-family="cmsy" font-size="10">{</tspan>2<tspan font-family="cmmi" font-size="10">,x,x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmsy" font-size="10">} </tspan>and
+<tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">x </tspan>+ 4<tspan font-family="cmmi" font-size="10">,x </tspan><tspan font-family="cmsy" font-size="10">− </tspan>2<tspan font-family="cmmi" font-size="10">,x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmsy" font-size="10">} </tspan>are other examples of bases, though not as natural. However, the set
+<tspan font-family="cmmi" font-size="10">S </tspan>= <tspan font-family="cmsy" font-size="10">{</tspan>3 + <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">,x </tspan>+ 1<tspan font-family="cmmi" font-size="10">,</tspan>5 + 2<tspan font-family="cmmi" font-size="10">x </tspan>+ <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmsy" font-size="10">} </tspan>is not a basis; it fails for two reasons: </p>
+     <ul class="itemize1">
+     <li class="itemize">Note that 0 = (3 + <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>) + 2(<tspan font-family="cmmi" font-size="10">x </tspan>+ 1) <tspan font-family="cmsy" font-size="10">− </tspan>(5 + 2<tspan font-family="cmmi" font-size="10">x </tspan>+ <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>). So the set <tspan font-family="cmmi" font-size="10">S </tspan>is not linearly
+     independent.
+     </li>
+     <li class="itemize">It’s not possible to write <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> as a sum of elements of <tspan font-family="cmmi" font-size="10">S</tspan>. So <tspan font-family="cmmi" font-size="10">S </tspan>fails to be spanning.</li></ul>
+<!--l. 319--><p class="noindent" >With these new terms, we can say a basis is a linearly independent and spanning
+set.</p>
+<div class="mdframed" id="mdframed-230">
+<a 
+ id="x121-110007r367"></a>
+<div class="newtheorem">
+<!--l. 321--><p class="noindent" ><span class="head">
+<a 
+ id="x121-110008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 9.4.3 </tspan>(More examples of bases)<br 
+class="newline" /> </span><a 
+ id="x121-110009"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">Regard <tspan font-family="msbm" font-size="10">ℚ</tspan>[<img 
+src="Na331x.png" alt="√ --
+  2"  class="sqrt"  />] = <img 
+src="Na332x.png" alt="{     √--        }
+ a + b 2 | a,b ∈ ℚ"  class="left" align="middle" /> as a <tspan font-family="msbm" font-size="10">ℚ</tspan>-vector space. Then <tspan font-family="cmsy" font-size="10">{</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na333x.png" alt="√--
+ 2"  class="sqrt"  /><tspan font-family="cmsy" font-size="10">} </tspan>is a basis.
+                                                                                
+                                                                                
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">If <tspan font-family="cmmi" font-size="10">V  </tspan>is the set of all real polynomials, there is an infinite basis <tspan font-family="cmsy" font-size="10">{</tspan>1<tspan font-family="cmmi" font-size="10">,x,x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmsy" font-size="10">}</tspan>. The
+    condition that we only use finitely many terms just says that the polynomials must
+    have finite degree (which is good).
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">Let <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="cmsy" font-size="10">{</tspan>(<tspan font-family="cmmi" font-size="10">x,y,z</tspan>)<tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">x </tspan>+ <tspan font-family="cmmi" font-size="10">y </tspan>+ <tspan font-family="cmmi" font-size="10">z </tspan>= 0 and <tspan font-family="cmmi" font-size="10">x,y,z </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><tspan font-family="cmsy" font-size="10">}</tspan>. Then we expect there to be a basis of
+    size 2, but unlike previous examples there is no immediately “obvious” choice. Some
+    working examples include:
+        <ul class="itemize1">
+        <li class="itemize">(1<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">−</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan>0) and (1<tspan font-family="cmmi" font-size="10">,</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">−</tspan>1),
+        </li>
+        <li class="itemize">(0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">−</tspan>1) and (1<tspan font-family="cmmi" font-size="10">,</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">−</tspan>1),
+        </li>
+        <li class="itemize">(5<tspan font-family="cmmi" font-size="10">,</tspan>3<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">−</tspan>8) and (2<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">−</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">−</tspan>1).</li></ul>
+    </dd></dl>
+</p>
+  </div>
+<!--l. 342--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-231">
+<a 
+ id="x121-110013r368"></a>
+<div class="newtheorem">
+<!--l. 345--><p class="noindent" ><span class="head">
+<a 
+ id="x121-110014r4"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 9.4.4.</tspan>  </span><a 
+ id="x121-110015"></a><tspan font-family="cmr" font-size="10">Show that a set of vectors is a basis if and only if it is linearly independent and</tspan>
+<tspan font-family="cmr" font-size="10">spanning. (Think about the polynomial example if you get stuck.)</tspan></p>
+  </div>
+<!--l. 348--><p class="indent" >  </p></div>
+<!--l. 350--><p class="indent" >  Now we state a few results which assert that bases in vector spaces behave as nicely as
+possible.</p>
+<div class="mdframed" id="mdframed-232">
+<a 
+ id="x121-110016r369"></a>
+<div class="newtheorem">
+<!--l. 352--><p class="noindent" ><span class="head">
+<a 
+ id="x121-110017r5"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 9.4.5 </tspan><tspan font-family="cmss" font-size="10">(Maximality and minimality of bases)</tspan><br 
+class="newline" /> </span><a 
+ id="x121-110018"></a> Let <tspan font-family="cmmi" font-size="10">V </tspan>be a vector space over some field <tspan font-family="cmmi" font-size="10">k</tspan>
+and take <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>. The following are equivalent:
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> form a basis.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> are spanning, but no proper subset is spanning.
+                                                                                
+                                                                                
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> are linearly independent, but adding any other element of <tspan font-family="cmmi" font-size="10">V </tspan>makes them not
+    linearly independent.</dd></dl>
+</p>
+  </div>
+<!--l. 362--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-233">
+<a 
+ id="x121-110022r370"></a>
+<div class="newtheorem">
+<!--l. 364--><p class="noindent" ><span class="head">
+<a 
+ id="x121-110023r6"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 9.4.6 —  </tspan> </span><a 
+ id="x121-110024"></a>If we replace <tspan font-family="cmmi" font-size="10">V </tspan>by a general module <tspan font-family="cmmi" font-size="10">M </tspan>over a commutative ring <tspan font-family="cmmi" font-size="10">R</tspan>,
+then (a)  <img 
+src="Na334x.png" alt="=⇒"  class="Longrightarrow"  /> (b) and (a)  <img 
+src="Na335x.png" alt="=⇒"  class="Longrightarrow"  /> (c) but not conversely.
+</p>
+  </div>
+<!--l. 366--><p class="indent" >  </p></div>
+<!--l. 367--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 368--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Straightforward, do it yourself if you like. The key point to notice is that you
+need to divide by scalars for the converse direction, hence <tspan font-family="cmmi" font-size="10">V </tspan>is required to be a vector
+space instead of just a module for the implications (b)  <img 
+src="Na336x.png" alt="=⇒"  class="Longrightarrow"  /> (a) and (c)  <img 
+src="Na337x.png" alt="=⇒"  class="Longrightarrow"  /> (a).    □
+</p>
+  </div><div class="mdframed" id="mdframed-234">
+<a 
+ id="x121-110025r371"></a>
+<div class="newtheorem">
+<!--l. 375--><p class="noindent" ><span class="head">
+<a 
+ id="x121-110026r7"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 9.4.7 </tspan><tspan font-family="cmss" font-size="10">(Dimension theorem for vector spaces)</tspan><br 
+class="newline" /> </span><a 
+ id="x121-110027"></a>If  a  vector  space  <tspan font-family="cmmi" font-size="10">V  </tspan>has  a  finite
+basis, then every other basis has the same number of elements.
+</p>
+  </div>
+<!--l. 378--><p class="indent" >  </p></div>
+<!--l. 379--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 380--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>We prove something stronger: Assume <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,v</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> is a spanning set while <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,w</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub> is
+                                                                                
+                                                                                
+linearly independent. We claim that <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan><tspan font-family="cmmi" font-size="10">m</tspan>.</p>
+<div class="mdframed" id="mdframed-235">
+<a 
+ id="x121-110028r372"></a>
+<div class="newtheorem">
+<!--l. 384--><p class="noindent" ><span class="head">
+<a 
+ id="x121-110029r8"></a>
+<tspan font-family="cmbx" font-size="10">Question 9.4.8.</tspan>  </span><a 
+ id="x121-110030"></a><tspan font-family="cmr" font-size="10">Show that this claim is enough to imply the theorem.</tspan></p>
+  </div>
+<!--l. 385--><p class="indent" >  </p></div>
+<!--l. 387--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> = <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,v</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmsy" font-size="10">} </tspan>be the spanning set. Throw in <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>: by the spanning condition,
+<tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> = <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <img 
+src="Na338x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>. There’s some nonzero coefficient, say <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>. Thus
+</p>
+  <div class="math-display" >
+<img 
+src="Na339x.png" alt="     -1     -c1     c2
+vn = cnw1 − cn v1 − cn v2 − ....
+" class="math-display"  /></div>
+<!--l. 392--><p class="indent" >  Thus <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> = <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,v</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,w</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmsy" font-size="10">} </tspan>is spanning. Now do the same thing, throwing in <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, and
+deleting some element of the <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> as before to get <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>; the condition that the <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> are linearly
+independent ensures that some <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> coefficient must always not be zero. Since we can eventually
+get to <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub>, we have <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan><tspan font-family="cmmi" font-size="10">m</tspan>.                                                                             □
+</p>
+  </div><div class="mdframed" id="mdframed-236">
+<a 
+ id="x121-110031r373"></a>
+<div class="newtheorem">
+<!--l. 401--><p class="noindent" ><span class="head">
+<a 
+ id="x121-110032r9"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 9.4.9 </tspan><tspan font-family="cmss" font-size="10">(Generalizations) </tspan> </span><a 
+ id="x121-110033"></a>                                                                         </p>
+     <ul class="itemize1">
+     <li class="itemize">The theorem is true for an infinite basis as well if we interpret “the number of
+     elements” as “cardinality”. This is confusing on a first read through, so we won’t
+     elaborate.
+                                                                                
+                                                                                
+     </li>
+     <li class="itemize">In fact, this is true for modules over any commutative ring. Interestingly, the proof
+     for the general case proceeds by reducing to the case of a vector space.</li></ul>
+</p>
+  </div>
+<!--l. 411--><p class="indent" >  </p></div>
+<!--l. 413--><p class="indent" >  The dimension theorem, true to its name, lets us define the <tspan font-family="cmbx" font-size="10">dimension</tspan> of a vector space as
+the size of any finite basis, if one exists. When it does exist we say <tspan font-family="cmmi" font-size="10">V </tspan>is <tspan font-family="cmbx" font-size="10">finite-dimensional</tspan>.
+So for example,
+</p>
+  <div class="math-display" >
+<img 
+src="Na340x.png" alt="     {                      }
+V  =  ax2 + bx+ c | a,b,c ∈ ℝ
+" class="math-display"  /></div>
+<!--l. 419--><p class="indent" >  has dimension three, because <img 
+src="Na341x.png" alt="{1,x,x2}"  class="left" align="middle" /> is a basis. That’s not the only basis: we could as
+well have written
+</p>
+  <div class="math-display" >
+<img 
+src="Na342x.png" alt="{a(x2 − 4x )+ b(x+ 2)+ c | a,b,c ∈ ℝ}
+" class="math-display"  /></div>
+<!--l. 422--><p class="indent" >  and gotten the exact same vector space. But the beauty of the theorem is that no matter
+how we try to contrive the generating set, we always will get exactly three elements. That’s
+why it makes sense to say <tspan font-family="cmmi" font-size="10">V </tspan>has dimension three.
+</p><!--l. 427--><p class="indent" >  On the other hand, the set of all polynomials <tspan font-family="msbm" font-size="10">ℝ</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>] is <tspan font-family="cmti" font-size="10">infinite-dimensional </tspan>(which should be
+intuitively clear).
+</p><!--l. 431--><p class="indent" >  A basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> of <tspan font-family="cmmi" font-size="10">V </tspan>is really cool because it means that to specify <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>, I only have to
+specify <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,a</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">k</tspan>, and then let <tspan font-family="cmmi" font-size="10">v </tspan>= <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <img 
+src="Na343x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>. You can even think of <tspan font-family="cmmi" font-size="10">v </tspan>as
+<img 
+src="Na344x.png" alt="(a1,...,an)"  class="left" align="middle" />. To put it another way, if <tspan font-family="cmmi" font-size="10">V </tspan>is a <tspan font-family="cmmi" font-size="10">k</tspan>-vector space we always have
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na345x.png" alt="V  = e1k ⊕ e2k ⊕ ⋅⋅⋅⊕ enk.
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+  <!--l. 440--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase79.htm" >next</a>] [<a 
+href="Nase77.htm" >prev</a>] [<a 
+href="Nase77.htm#tailNase77.htm" >prev-tail</a>] [<a 
+href="Nase78.htm" >front</a>] [<a 
+href="Nach12.htm#Nase78.htm" >up</a>] </p></div>
+<!--l. 440--><p class="indent" >  <a 
+ id="tailNase78.htm"></a> </p> 
+</body> 
+</html>

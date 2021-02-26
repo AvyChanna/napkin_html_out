@@ -1,0 +1,178 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Nilpotent maps</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 288--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase91.htm" >next</a>] [<a 
+href="Nase89.htm" >prev</a>] [<a 
+href="Nase89.htm#tailNase89.htm" >prev-tail</a>] [<a 
+href="#tailNase90.htm">tail</a>] [<a 
+href="Nach13.htm#Nase90.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">10.5</span>  <a 
+ id="x137-12300010.5"></a>Nilpotent maps</h3>
+<!--l. 289--><p class="noindent" >Bear with me for a moment. First, define: <a 
+ id="x137-123001r417"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 291--><p class="noindent" ><span class="head">
+<a 
+ id="x137-123002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 10.5.1.</tspan>  </span><a 
+ id="x137-123003"></a>A map <tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">V  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V  </tspan>is <tspan font-family="cmbx" font-size="10">nilpotent</tspan> if <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmmi" font-size="8">m</tspan></sup> is the zero map for some
+integer <tspan font-family="cmmi" font-size="10">m</tspan>. (Here <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmmi" font-size="8">m</tspan></sup> means “<tspan font-family="cmmi" font-size="10">T </tspan>applied <tspan font-family="cmmi" font-size="10">m </tspan>times”.)
+</p>
+  </div>
+<!--l. 293--><p class="indent" >
+What’s an example of a nilpotent map?</p>
+<div class="mdframed" id="mdframed-265">
+<a 
+ id="x137-123004r418"></a>
+<div class="newtheorem">
+<!--l. 296--><p class="noindent" ><span class="head">
+<a 
+ id="x137-123005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 10.5.2 </tspan>(The “descending staircase”)<br 
+class="newline" /> </span><a 
+ id="x137-123006"></a>Let <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="cmmi" font-size="10">k</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">3</tspan></sup> have basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>. Then
+the map <tspan font-family="cmmi" font-size="10">T </tspan>which sends
+</p>
+<div class="math-display" >
+<img 
+src="Na414x.png" alt="e3 ↦→  e2 ↦→ e1 ↦→ 0
+" class="math-display"  /></div>
+<!--l. 300--><p class="noindent" >is nilpotent, since <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) = <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) = <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>) = 0, and hence <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup>(<tspan font-family="cmmi" font-size="10">v</tspan>) = 0 for all <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 302--><p class="indent" >  </p></div>
+<!--l. 303--><p class="indent" >  The 3 <tspan font-family="cmsy" font-size="10">× </tspan>3 descending staircase has matrix representation
+</p>
+  <div class="math-display" >
+<img 
+src="Na415x.png" alt="    ⌊        ⌋
+      0  1  0
+T = ⌈ 0  0  1⌉ .
+      0  0  0
+" class="math-display"  /></div>
+<!--l. 309--><p class="indent" >  You’ll notice this is a Jordan block.</p>
+<div class="mdframed" id="mdframed-266">
+<a 
+ id="x137-123007r419"></a>
+<div class="newtheorem">
+<!--l. 311--><p class="noindent" ><span class="head">
+<a 
+ id="x137-123008r3"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 10.5.3.</tspan>  </span><a 
+ id="x137-123009"></a><tspan font-family="cmr" font-size="10">Show that the descending staircase above has 0 as its only eigenvalue.</tspan></p>
+  </div>
+<!--l. 313--><p class="indent" >  </p></div>
+<!--l. 315--><p class="indent" >  That’s a pretty nice example. As another example, we can have multiple such
+staircases.</p>
+<div class="mdframed" id="mdframed-267">
+<a 
+ id="x137-123010r420"></a>
+<div class="newtheorem">
+<!--l. 318--><p class="noindent" ><span class="head">
+<a 
+ id="x137-123011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 10.5.4 </tspan>(Double staircase)<br 
+class="newline" /> </span><a 
+ id="x137-123012"></a>Let <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="cmmi" font-size="10">k</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">5</tspan></sup> have basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">4</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">5</tspan></sub>. Then the
+map
+</p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na416x.png" alt="e3 ↦→  e2 ↦→ e1 ↦→ 0 and e5 ↦→ e4 ↦→ 0
+" class="math-display"  /></div>
+<!--l. 323--><p class="noindent" >is nilpotent.
+</p>
+  </div>
+<!--l. 324--><p class="indent" >  </p></div>
+<!--l. 325--><p class="indent" >  Picture, with some zeros omitted for emphasis:
+</p>
+  <div class="math-display" >
+<img 
+src="Na417x.png" alt="    ⌊             ⌋
+     0  1  0
+    ||0  0  1      ||
+T = ||0  0  0      ||
+    ⌈         0  1⌉
+              0  0
+" class="math-display"  /></div>
+<!--l. 334--><p class="indent" >  You can see this isn’t really that different from the previous example; it’s just the same idea
+repeated multiple times. And in fact we now claim that <tspan font-family="cmti" font-size="10">all </tspan>nilpotent maps have essentially
+that form.</p>
+<div class="mdframed" id="mdframed-268">
+<a 
+ id="x137-123013r421"></a>
+<div class="newtheorem">
+<!--l. 340--><p class="noindent" ><span class="head">
+<a 
+ id="x137-123014r5"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 10.5.5 </tspan><tspan font-family="cmss" font-size="10">(Nilpotent Jordan)</tspan><br 
+class="newline" /> </span><a 
+ id="x137-123015"></a>Let <tspan font-family="cmmi" font-size="10">V  </tspan>be a finite-dimensional vector space over an
+algebraically closed field <tspan font-family="cmmi" font-size="10">k</tspan>. Let <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V  </tspan>be a nilpotent map. Then we can write
+<tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="cmex" font-size="10">⊕</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">i</tspan><tspan font-family="cmr" font-size="8">=1</tspan></sub><sup><tspan font-family="cmmi" font-size="8">m</tspan></sup><tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> where each <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> has a basis of the form <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>, <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>), …, <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmr" font-size="8">dim</tspan> <tspan font-family="cmmi" font-size="8">V</tspan> <sub><tspan font-family="cmmi" font-size="6">i</tspan></sub><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup>(<tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>) for some
+<tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>.
+</p>
+  </div>
+<!--l. 348--><p class="indent" >  </p></div>
+<!--l. 349--><p class="indent" >  Hence:</p>
+<div class="mdframed" id="mdframed-269">
+<!--l. 351--><p class="noindent" ><tspan font-family="cmbx" font-size="10">Every nilpotent map can be viewed as independent staircases.</tspan></p><!--l. 352--><p class="noindent" ></p>
+  </div>
+                                                                                
+                                                                                
+<!--l. 353--><p class="indent" >  Each chain <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>, <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>), <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>)), …is just one staircase. The proof is given later, but first let
+me point out where this is going.
+</p><!--l. 356--><p class="indent" >  Here’s the punch line. Let’s take the double staircase again. Expressing it as a matrix gives,
+say
+</p>
+  <div class="math-display" >
+<img 
+src="Na418x.png" alt="    ⌊              ⌋
+      0  1  0
+    || 0  0  1      ||
+S = || 0  0  0      ||.
+    ⌈          0  1⌉
+               0  0
+" class="math-display"  /></div>
+<!--l. 368--><p class="indent" >  Then we can compute
+</p>
+  <div class="math-display" >
+<img 
+src="Na419x.png" alt="          ⌊              ⌋
+           λ  1   0
+          |0  λ   1      |
+S + λid = ||0  0  λ       || .
+          |⌈          λ  1|⌉
+
+                     0  λ
+" class="math-display"  /></div>
+<!--l. 378--><p class="indent" >  It’s a bunch of <tspan font-family="cmmi" font-size="10">λ </tspan>Jordan blocks! This gives us a plan to proceed: we need to break <tspan font-family="cmmi" font-size="10">V </tspan>into a
+bunch of subspaces such that <tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">λ</tspan>id is nilpotent over each subspace. Then Nilpotent Jordan
+will finish the job.
+                                                                                
+                                                                                
+</p>
+  <!--l. 383--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase91.htm" >next</a>] [<a 
+href="Nase89.htm" >prev</a>] [<a 
+href="Nase89.htm#tailNase89.htm" >prev-tail</a>] [<a 
+href="Nase90.htm" >front</a>] [<a 
+href="Nach13.htm#Nase90.htm" >up</a>] </p></div>
+<!--l. 383--><p class="indent" >  <a 
+ id="tailNase90.htm"></a> </p> 
+</body> 
+</html>

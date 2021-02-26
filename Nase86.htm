@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Why you should care</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 7--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase87.htm" >next</a>] [<a 
+href="#tailNase86.htm">tail</a>] [<a 
+href="Nach13.htm#Nase86.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">10.1</span>  <a 
+ id="x132-11900010.1"></a>Why you should care</h3>
+<!--l. 8--><p class="noindent" >We know that a square matrix <tspan font-family="cmmi" font-size="10">T </tspan>is really just a linear map from <tspan font-family="cmmi" font-size="10">V </tspan>to <tspan font-family="cmmi" font-size="10">V </tspan>. What’s the simplest
+type of linear map? It would just be multiplication by some scalar <tspan font-family="cmmi" font-size="10">λ</tspan>, which would have
+associated matrix (in any basis!)
+</p>
+  <div class="math-display" >
+<img 
+src="Na396x.png" alt="    ⌊λ  0   ...  0⌋
+    |0  λ   ...  0|
+T = || .  .  .    .|| .
+    ⌈ ..  ..   ..   ..⌉
+     0  0   ...  λ
+" class="math-display"  /></div>
+<!--l. 22--><p class="indent" >  That’s perhaps <tspan font-family="cmti" font-size="10">too </tspan>simple, though. If we had a fixed basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> then another very
+“simple” operation would just be scaling each basis element <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> by <tspan font-family="cmmi" font-size="10">λ</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>, i.e. a <tspan font-family="cmbx" font-size="10">diagonal matrix</tspan>
+of the form
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na397x.png" alt="    ⌊                ⌋
+      λ1  0   ...  0
+    || 0   λ2  ...  0 ||
+T = |⌈  ...   ...  ...  ... |⌉ .
+
+      0   0   ...  λn
+" class="math-display"  /></div>
+<!--l. 35--><p class="indent" >  These maps are more general. Indeed, you can, for example, compute <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmr" font-size="8">100</tspan></sup> in a
+heartbeat: the map sends <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">λ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmr" font-size="8">100</tspan></sup><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>. (Try doing that with an arbitrary <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">n</tspan>
+matrix.)
+</p><!--l. 40--><p class="indent" >  Of course, most linear maps are probably not that nice. Or are they?</p>
+<div class="mdframed" id="mdframed-256">
+<a 
+ id="x132-119001r405"></a>
+<div class="newtheorem">
+<!--l. 43--><p class="noindent" ><span class="head">
+<a 
+ id="x132-119002r1"></a>
+<tspan font-family="cmbx" font-size="10">Example 10.1.1 </tspan>(Getting lucky)<br 
+class="newline" /> </span><a 
+ id="x132-119003"></a>Let <tspan font-family="cmmi" font-size="10">V  </tspan>be some two-dimensional vector space with <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>
+and <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> as basis elements. Let’s consider a map <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>by <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><img 
+src="Na398x.png" alt="↦→"  class="mapsto"  />2<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><img 
+src="Na399x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> +3<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>,
+which you can even write concretely as
+</p>
+<div class="math-display" >
+<img 
+src="Na400x.png" alt="    [2  1]
+T =          in basis e1, e2.
+     0  3
+" class="math-display"  /></div>
+<!--l. 53--><p class="noindent" >This doesn’t look anywhere as nice until we realize we can rewrite it as
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 57--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub></td>    <td 
+class="align-even"><img 
+src="Na402x.png" alt="↦→"  class="mapsto"  />2<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub></td>       <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub></td><td 
+class="align-even"><img 
+src="Na403x.png" alt="↦→"  class="mapsto"  />3(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>)<tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                                             </td></tr></table>
+</p><!--l. 58--><p class="noindent" >So suppose we change to the basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. Thus in the new basis,
+</p>
+<div class="math-display" >
+<img 
+src="Na404x.png" alt="     [2  0]
+T  =         in basis e1, e1 + e2.
+      0  3
+" class="math-display"  /></div>
+<!--l. 64--><p class="noindent" >So our completely random-looking map, under a suitable change of basis, looks like the very
+nice maps we described before!
+</p>
+  </div>
+<!--l. 67--><p class="indent" >  </p></div>
+<!--l. 68--><p class="indent" >  In this chapter, we will be <tspan font-family="cmti" font-size="10">making </tspan>our luck, and we will see that our better understanding of
+matrices gives us the right way to think about this.
+                                                                                
+                                                                                
+</p>
+  <!--l. 72--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase87.htm" >next</a>] [<a 
+href="Nase86.htm" >front</a>] [<a 
+href="Nach13.htm#Nase86.htm" >up</a>] </p></div>
+<!--l. 72--><p class="indent" >  <a 
+ id="tailNase86.htm"></a> </p> 
+</body> 
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The nicest functions on earth</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 6--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase208.htm" >next</a>] [<a 
+href="Nase200.htm#tailNase202.htm">tail</a>] [<a 
+href="Nase206.htm#Nase207.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">31.1</span>  <a 
+ id="x292-28000031.1"></a>The nicest functions on earth</h3>
+<!--l. 7--><p class="noindent" >In high school you were told how to differentiate and integrate real-valued functions. In this
+chapter on complex analysis, we’ll extend it to differentiation and integration of
+complex-valued functions.
+</p><!--l. 11--><p class="indent" >  Big deal, you say. Calculus was boring enough. Why do I care about complex
+calculus?
+</p><!--l. 13--><p class="indent" >  Perhaps it’s easiest to motivate things if I compare real analysis to complex analysis. In real
+analysis, your input lives inside the real line <tspan font-family="msbm" font-size="10">ℝ</tspan>. This line is not terribly discerning – you can
+construct a lot of unfortunate functions. Here are some examples.</p>
+<div class="mdframed" id="mdframed-588">
+<a 
+ id="x292-280001r917"></a>
+<div class="newtheorem">
+<!--l. 18--><p class="noindent" ><span class="head">
+<a 
+ id="x292-280002r1"></a>
+<tspan font-family="cmbx" font-size="10">Example 31.1.1 </tspan>(Optional: evil real functions)<br 
+class="newline" /> </span><a 
+ id="x292-280003"></a>You can skim over these very quickly: they’re
+only here to make a point.
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The <tspan font-family="cmbx" font-size="10">Devil’s Staircase</tspan> (or Cantor function) is a continuous function <tspan font-family="cmmi" font-size="10">H </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→</tspan>
+                                                                                
+                                                                                
+    [0<tspan font-family="cmmi" font-size="10">,</tspan>1] which has derivative zero “almost everywhere”, yet <tspan font-family="cmmi" font-size="10">H</tspan>(0) = 0 and <tspan font-family="cmmi" font-size="10">H</tspan>(1) = 1.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The <tspan font-family="cmbx" font-size="10">Weierstraß</tspan><tspan font-family="cmbx" font-size="10"> function</tspan>
+<div class="math-display" >
+<img 
+src="Na1651x.png" alt="     ∞ (  )n
+x ↦→ ∑    1-  cos(2015n πx)
+         2
+    n=0
+" class="math-display"  /></div>
+    <!--l. 27--><p class="noindent" >is continuous <tspan font-family="cmti" font-size="10">everywhere </tspan>but differentiable <tspan font-family="cmti" font-size="10">nowhere</tspan>.
+    </p></dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The function
+<div class="math-display" >
+<img 
+src="Na1652x.png" alt="     {  100
+x ↦→   x       x ≥ 0
+      − x100  x &#x003C; 0
+" class="math-display"  /></div>
+    <!--l. 36--><p class="noindent" >has the first 99 derivatives but not the 100th one.
+    </p></dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate">If a function has all derivatives (we call these <tspan font-family="cmbx" font-size="10">smooth</tspan> functions), then it has a
+    Taylor series. But for real functions that Taylor series might still be wrong. The
+    function
+<div class="math-display" >
+                                                                                
+                                                                                
+<img 
+src="Na1653x.png" alt="    {
+      e−1∕x   x &#x003E; 0
+x ↦→   0      x ≤ 0
+" class="math-display"  /></div>
+    <!--l. 47--><p class="noindent" >has derivatives at every point. But if you expand the Taylor series at <tspan font-family="cmmi" font-size="10">x </tspan>= 0, you get
+    0 + 0<tspan font-family="cmmi" font-size="10">x </tspan>+ 0<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">…</tspan>, which is wrong for <tspan font-family="cmti" font-size="10">any </tspan><tspan font-family="cmmi" font-size="10">x &#x003E; </tspan>0 (even <tspan font-family="cmmi" font-size="10">x </tspan>= 0<tspan font-family="cmmi" font-size="10">.</tspan>0001).</p></dd></dl>
+</p>
+  </div>
+<!--l. 51--><p class="indent" >  </p></div>
+  <figure class="figure"> 
+
+                                                                                
+                                                                                
+<a 
+ id="x292-2800081"></a>
+                                                                                
+                                                                                
+<!--l. 54--><p class="noindent" ><img 
+src="media/weierstrass-pubdomain.png" alt="PIC"  
+width="334" height="334"  />
+</p>
+<figcaption class="caption" ><span class="id">Figure 31.1:</span><span  
+class="content">The Weierstraß Function (image from <span class="cite">[<tspan font-family="cmbx" font-size="10">?</tspan>]</span>).</span></figcaption><!--tex4ht:label?: x292-2800081 -->
+                                                                                
+                                                                                
+  </figure>
+<!--l. 58--><p class="indent" >  Let’s even put aside the pathology. If I tell you the value of a real smooth function on the
+interval [<tspan font-family="cmsy" font-size="10">−</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan>1], that still doesn’t tell you anything about the function as a whole. It
+could be literally anything, because it’s somehow possible to “fuse together” smooth
+functions.
+</p><!--l. 63--><p class="indent" >  So what about complex functions? If you consider them as functions <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, you now
+have the interesting property that you can integrate along things that are not line segments:
+you can write integrals across curves in the plane. But <tspan font-family="msbm" font-size="10">ℂ </tspan>has something more: it is a <tspan font-family="cmti" font-size="10">field</tspan>, so
+you can <tspan font-family="cmti" font-size="10">multiply </tspan>and <tspan font-family="cmti" font-size="10">divide </tspan>two complex numbers.
+</p><!--l. 69--><p class="indent" >  So we restrict our attention to differentiable functions called <tspan font-family="cmti" font-size="10">holomorphic functions</tspan>. It turns
+out that the multiplication on <tspan font-family="msbm" font-size="10">ℂ </tspan>makes all the difference. The primary theme in what follows
+is that holomorphic functions are <tspan font-family="cmti" font-size="10">really, really nice</tspan>, and that knowing tiny amounts of data
+about the function can determine all its values.
+</p><!--l. 75--><p class="indent" >  The two main highlights of this chapter, from which all other results are more or less
+corollaries: </p>
+     <ul class="itemize1">
+     <li class="itemize">Contour integrals of loops are always zero.
+     </li>
+     <li class="itemize">A  holomorphic  function  is  essentially  given  by  its  Taylor  series;  in  particular,
+     single-differentiable implies infinitely differentiable. Thus, holomorphic functions
+     behave quite like polynomials.</li></ul>
+<!--l. 83--><p class="noindent" >Some of the resulting corollaries: </p>
+     <ul class="itemize1">
+     <li class="itemize">It’ll turn out that knowing the values of a holomorphic function on the boundary
+     of the unit circle will tell you the values in its interior.
+     </li>
+     <li class="itemize">Knowing the values of the function at 1, <img 
+src="Na1654x.png" alt="12"  class="frac" align="middle" />, <img 
+src="Na1655x.png" alt="13"  class="frac" align="middle" />, …are enough to determine the whole
+     function!
+     </li>
+     <li class="itemize">Bounded holomorphic functions <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>must be constant
+     </li>
+     <li class="itemize">And more…</li></ul>
+<!--l. 93--><p class="indent" >  As <span class="cite">[<tspan font-family="cmbx" font-size="10">?</tspan>]</span> writes: “Complex analysis is the good twin and real analysis is the evil one: beautiful
+formulas and elegant theorems seem to blossom spontaneously in the complex domain, while
+toil and pathology rule the reals”.
+                                                                                
+                                                                                
+</p>
+  <!--l. 96--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase208.htm" >next</a>] [<a 
+href="Nase202.htm" >front</a>] [<a 
+href="Nase206.htm#Nase207.htm" >up</a>] </p></div>
+<!--l. 96--><p class="indent" >  <a 
+ id="tailNase202.htm"></a> </p> 
+</body> 
+</html>

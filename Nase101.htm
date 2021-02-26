@@ -1,0 +1,188 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The determinant</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 185--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase102.htm" >next</a>] [<a 
+href="Nase100.htm" >prev</a>] [<a 
+href="Nase100.htm#tailNase100.htm" >prev-tail</a>] [<a 
+href="#tailNase101.htm">tail</a>] [<a 
+href="Nach15.htm#Nase101.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">12.2</span>  <a 
+ id="x153-13600012.2"></a>The determinant</h3>
+<!--l. 186--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> (<tspan font-family="cmmi" font-size="10">ae</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">be</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) <tspan font-family="cmsy" font-size="10">∧ </tspan>(<tspan font-family="cmmi" font-size="10">ce</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">de</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) = (<tspan font-family="cmmi" font-size="10">ad </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">bc</tspan>)(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>)<tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 187--><p class="indent" >  Now we’re ready to define the determinant. Suppose <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>is a square matrix. We
+claim that the map Λ<sup><tspan font-family="cmmi" font-size="8">m</tspan></sup>(<tspan font-family="cmmi" font-size="10">V </tspan>) <tspan font-family="cmsy" font-size="10">→ </tspan>Λ<sup><tspan font-family="cmmi" font-size="8">m</tspan></sup>(<tspan font-family="cmmi" font-size="10">V </tspan>) given on wedges by
+</p>
+  <div class="math-display" >
+<img 
+src="Na496x.png" alt="v1 ∧ v2 ∧ ⋅⋅⋅∧ vm ↦→ T(v1)∧ T(v2)∧ ⋅⋅⋅∧ T (vm )
+" class="math-display"  /></div>
+<!--l. 192--><p class="indent" >  and extending linearly to all of Λ<sup><tspan font-family="cmmi" font-size="8">m</tspan></sup>(<tspan font-family="cmmi" font-size="10">V </tspan>) is a linear map. (You can check this yourself if you
+like.) We call that map Λ<sup><tspan font-family="cmmi" font-size="8">m</tspan></sup>(<tspan font-family="cmmi" font-size="10">T</tspan>).</p>
+<div class="mdframed" id="mdframed-296">
+<a 
+ id="x153-136001r466"></a>
+<div class="newtheorem">
+<!--l. 196--><p class="noindent" ><span class="head">
+<a 
+ id="x153-136002r1"></a>
+<tspan font-family="cmbx" font-size="10">Example 12.2.1 </tspan>(Example of Λ<sup><tspan font-family="cmmi" font-size="8">m</tspan></sup>(<tspan font-family="cmmi" font-size="10">T</tspan>))<br 
+class="newline" /> </span><a 
+ id="x153-136003"></a>In <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">4</tspan></sup> with standard basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">4</tspan></sub>, let
+<tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) = <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) = 2<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>, <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>) = <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> and <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">4</tspan></sub>) = 2<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> + <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>. Then, for example, Λ<sup><tspan font-family="cmr" font-size="8">2</tspan></sup>(<tspan font-family="cmmi" font-size="10">T</tspan>)
+sends
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 206--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> + <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> <tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">4</tspan></sub></td><td 
+class="align-even"><img 
+src="Na498x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) <tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) + <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>) <tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">4</tspan></sub>)</td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>               <td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∧ </tspan>2<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> + <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> <tspan font-family="cmsy" font-size="10">∧ </tspan>(2<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> + <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>)</td>    <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>               <td 
+class="align-even"> = 2(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> + <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> <tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>)</td>          <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>               <td 
+class="align-even"> = 0<tspan font-family="cmmi" font-size="10">.</tspan></td>                         <td 
+class="align-label"></td><td 
+class="align-label">                                   </td></tr></table>
+</p>
+  </div>
+<!--l. 207--><p class="indent" >  </p></div>
+<!--l. 209--><p class="indent" >  Now here’s something interesting. Suppose <tspan font-family="cmmi" font-size="10">V </tspan>has dimension <tspan font-family="cmmi" font-size="10">n</tspan>, and let <tspan font-family="cmmi" font-size="10">m </tspan>= <tspan font-family="cmmi" font-size="10">n</tspan>. Then Λ<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>(<tspan font-family="cmmi" font-size="10">V </tspan>)
+has dimension <img 
+src="Na499x.png" alt="(n)
+ n"  /> = 1 — it’s a one dimensional space! Hence Λ<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>(<tspan font-family="cmmi" font-size="10">V </tspan>)<img 
+src="Na500x.png" alt="∼="  class="cong"  /><tspan font-family="cmmi" font-size="10">k</tspan>.
+</p><!--l. 214--><p class="indent" >  So Λ<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>(<tspan font-family="cmmi" font-size="10">T</tspan>) can be thought of as a linear map from <tspan font-family="cmmi" font-size="10">k </tspan>to <tspan font-family="cmmi" font-size="10">k</tspan>. But we know that <tspan font-family="cmti" font-size="10">a linear map</tspan>
+<tspan font-family="cmti" font-size="10">from </tspan><tspan font-family="cmmi" font-size="10">k </tspan><tspan font-family="cmti" font-size="10">to </tspan><tspan font-family="cmmi" font-size="10">k </tspan><tspan font-family="cmti" font-size="10">is just multiplication by a constant</tspan>. Hence Λ<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>(<tspan font-family="cmmi" font-size="10">T</tspan>) is multiplication by some
+constant. <a 
+ id="x153-136004r467"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 218--><p class="noindent" ><span class="head">
+<a 
+ id="x153-136005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 12.2.2.</tspan>  </span><a 
+ id="x153-136006"></a>Let <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>, where <tspan font-family="cmmi" font-size="10">V  </tspan>is an <tspan font-family="cmmi" font-size="10">n</tspan>-dimensional vector space. Then
+Λ<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>(<tspan font-family="cmmi" font-size="10">T</tspan>) is multiplication by a constant <tspan font-family="cmmi" font-size="10">c</tspan>; we define the <tspan font-family="cmbx" font-size="10">determinant</tspan> of <tspan font-family="cmmi" font-size="10">T </tspan>as <tspan font-family="cmmi" font-size="10">c </tspan>= det<tspan font-family="cmmi" font-size="10">T</tspan>.
+</p>
+  </div>
+<!--l. 221--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-297">
+<a 
+ id="x153-136007r468"></a>
+<div class="newtheorem">
+<!--l. 223--><p class="noindent" ><span class="head">
+<a 
+ id="x153-136008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 12.2.3 </tspan>(The determinant of a 2 <tspan font-family="cmsy" font-size="10">× </tspan>2 matrix)<br 
+class="newline" /> </span><a 
+ id="x153-136009"></a>Let <tspan font-family="cmmi" font-size="10">V  </tspan>= <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>  again with basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>
+and <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. Let
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na501x.png" alt="    [a  c]
+T =        .
+     b  d
+" class="math-display"  /></div>
+<!--l. 230--><p class="noindent" >In other words, <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) = <tspan font-family="cmmi" font-size="10">ae</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">be</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> and <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) = <tspan font-family="cmmi" font-size="10">ce</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">de</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>.
+</p><!--l. 233--><p class="noindent" >Now let’s consider Λ<sup><tspan font-family="cmr" font-size="8">2</tspan></sup>(<tspan font-family="cmmi" font-size="10">V </tspan>). It has a basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. Now Λ<sup><tspan font-family="cmr" font-size="8">2</tspan></sup>(<tspan font-family="cmmi" font-size="10">T</tspan>) sends it to
+</p>
+<div class="math-display" >
+<img 
+src="Na502x.png" alt="       Λ2(T)
+e1 ∧ e2 ↦−−− −→ T(e1)∧ T (e2) = (ae1 + be2)∧ (ce1 + de2) = (ad− bc)(e1 ∧ e2).
+" class="math-display"  /></div>
+<!--l. 241--><p class="noindent" >So Λ<sup><tspan font-family="cmr" font-size="8">2</tspan></sup>(<tspan font-family="cmmi" font-size="10">T</tspan>) : Λ<sup><tspan font-family="cmr" font-size="8">2</tspan></sup>(<tspan font-family="cmmi" font-size="10">V </tspan>) <tspan font-family="cmsy" font-size="10">→ </tspan>Λ<sup><tspan font-family="cmr" font-size="8">2</tspan></sup>(<tspan font-family="cmmi" font-size="10">V </tspan>) is multiplication by det<tspan font-family="cmmi" font-size="10">T </tspan>= <tspan font-family="cmmi" font-size="10">ad </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">bc</tspan>, because it sent <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>
+to (<tspan font-family="cmmi" font-size="10">ad </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">bc</tspan>)(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>).
+</p>
+  </div>
+<!--l. 245--><p class="indent" >  </p></div>
+<!--l. 246--><p class="indent" >  And that is the definition of a determinant. Once again, since we defined it in terms of
+Λ<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>(<tspan font-family="cmmi" font-size="10">T</tspan>), this definition is totally independent of the choice of basis. In other words, the
+determinant can be defined based on <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>alone without any reference to
+matrices.</p>
+<div class="mdframed" id="mdframed-298">
+<a 
+ id="x153-136010r469"></a>
+<div class="newtheorem">
+<!--l. 253--><p class="noindent" ><span class="head">
+<a 
+ id="x153-136011r4"></a>
+<tspan font-family="cmbx" font-size="10">Question 12.2.4.</tspan>  </span><a 
+ id="x153-136012"></a><tspan font-family="cmr" font-size="10">Why does Λ</tspan><sup><tspan font-family="cmmi" font-size="7">n</tspan></sup><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">T</tspan><tspan font-family="cmr" font-size="10">) = Λ</tspan><sup><tspan font-family="cmmi" font-size="7">n</tspan></sup><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">S</tspan><tspan font-family="cmr" font-size="10">) </tspan><tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmr" font-size="10">Λ</tspan><sup><tspan font-family="cmmi" font-size="7">n</tspan></sup><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">T</tspan><tspan font-family="cmr" font-size="10">)?</tspan></p>
+  </div>
+<!--l. 254--><p class="indent" >  </p></div>
+<!--l. 255--><p class="indent" >  In this way, we also get
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na503x.png" alt="det(S ∘ T) = det(S )det(T)
+" class="math-display"  /></div>
+<!--l. 255--><p class="indent" >  for free.
+</p><!--l. 257--><p class="indent" >  More generally if we replace 2 by <tspan font-family="cmmi" font-size="10">n</tspan>, an write out the result of expanding
+</p>
+  <div class="math-display" >
+<img 
+src="Na504x.png" alt="(a11e1 + a21e2 + ...) ∧ ⋅⋅⋅∧ (a1ne1 + a2ne2 + ⋅⋅⋅+ annen)
+" class="math-display"  /></div>
+<!--l. 261--><p class="indent" >  then you will get the formula
+</p>
+  <div class="math-display" >
+<img 
+src="Na505x.png" alt="         ∑
+det(A) =     sgn(σ)a1,σ(1)a2,σ(2)...an,σ(n)
+         σ∈Sn
+" class="math-display"  /></div>
+<!--l. 264--><p class="indent" >  called the <tspan font-family="cmbx" font-size="10">Leibniz formula</tspan> for determinants. American high school students will recognize
+it; this is (unfortunately) taught as the definition of the determinant, rather than a corollary
+of the better definition using wedge products.</p>
+<div class="mdframed" id="mdframed-299">
+<a 
+ id="x153-136013r470"></a>
+<div class="newtheorem">
+<!--l. 270--><p class="noindent" ><span class="head">
+<a 
+ id="x153-136014r5"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Exercise 12.2.5.</tspan>  </span><a 
+ id="x153-136015"></a><tspan font-family="cmr" font-size="10">Verify that expanding the wedge product yields the Leibniz formula for </tspan><tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmr" font-size="10">= 3.</tspan></p>
+  </div>
+<!--l. 272--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 274--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase102.htm" >next</a>] [<a 
+href="Nase100.htm" >prev</a>] [<a 
+href="Nase100.htm#tailNase100.htm" >prev-tail</a>] [<a 
+href="Nase101.htm" >front</a>] [<a 
+href="Nach15.htm#Nase101.htm" >up</a>] </p></div>
+<!--l. 274--><p class="indent" >  <a 
+ id="tailNase101.htm"></a> </p> 
+</body> 
+</html>

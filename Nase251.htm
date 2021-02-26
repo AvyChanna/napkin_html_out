@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Random variables</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 7--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase266.htm" >next</a>] [<a 
+href="Nach40.htm#tailNase251.htm">tail</a>] [<a 
+href="Napa12.htm#Nach45.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">39.1</span>  <a 
+ id="x365-34000039.1"></a>Random variables</h3>
+                                                                                
+                                                                                
+<!--l. 8--><p class="noindent" >With all this set-up, random variables are going to be really quick to define. <a 
+ id="x365-340001r1048"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 10--><p class="noindent" ><span class="head">
+<a 
+ id="x365-340002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 39.1.1.</tspan>  </span><a 
+ id="x365-340003"></a>A (real) <tspan font-family="cmbx" font-size="10">random variable</tspan> <tspan font-family="cmmi" font-size="10">X </tspan>on a probability space Ω = (Ω<tspan font-family="cmmi" font-size="10">, </tspan><tspan font-family="rsfs" font-size="10">𝒜  </tspan><tspan font-family="cmmi" font-size="10">,μ</tspan>)
+is a measurable function <tspan font-family="cmmi" font-size="10">X</tspan> : Ω <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>, where <tspan font-family="msbm" font-size="10">ℝ </tspan>is equipped with the Borel <tspan font-family="cmmi" font-size="10">σ</tspan>-algebra.
+</p>
+  </div>
+<!--l. 14--><p class="indent" >
+In particular, addition of random variables, etc. all makes sense, as we can just add. Also, we
+can integrate <tspan font-family="cmmi" font-size="10">X </tspan>over Ω, by previous chapter.
+<a 
+ id="x365-340004r1049"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 20--><p class="noindent" ><span class="head">
+<a 
+ id="x365-340005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 39.1.2 </tspan>(First properties of random variables)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x365-340006"></a>Given a random variable <tspan font-family="cmmi" font-size="10">X</tspan>,
+the <tspan font-family="cmbx" font-size="10">expected value</tspan> of <tspan font-family="cmmi" font-size="10">X </tspan>is defined by the Lebesgue integral
+</p>
+  <div class="math-display" >
+<img 
+src="Na1911x.png" alt="        ∫
+
+𝔼 [X ] =  ΩX (ω ) dμ.
+" class="math-display"  /></div>
+<!--l. 25--><p class="indent" >  Confusingly, the letter <tspan font-family="cmmi" font-size="10">μ </tspan>is often used for expected values.
+</p><!--l. 27--><p class="indent" >  The <tspan font-family="cmmi" font-size="10">k</tspan><tspan font-family="cmbx" font-size="10">th moment</tspan> of <tspan font-family="cmmi" font-size="10">X </tspan>is defined as <tspan font-family="msbm" font-size="10">𝔼</tspan>[<tspan font-family="cmmi" font-size="10">X</tspan><sup><tspan font-family="cmmi" font-size="8">k</tspan></sup>], for each positive integer <tspan font-family="cmmi" font-size="10">k </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan>1. The
+<tspan font-family="cmbx" font-size="10">variance</tspan> of <tspan font-family="cmmi" font-size="10">X </tspan>is then defined as
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na1912x.png" alt="Var(X ) = 𝔼[(X − 𝔼 [X ])2].
+" class="math-display"  /></div>
+  </div>
+<!--l. 31--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-674">
+<a 
+ id="x365-340007r1050"></a>
+<div class="newtheorem">
+<!--l. 33--><p class="noindent" ><span class="head">
+<a 
+ id="x365-340008r3"></a>
+<tspan font-family="cmbx" font-size="10">Question 39.1.3.</tspan>  </span><a 
+ id="x365-340009"></a><tspan font-family="cmr" font-size="10">Show that </tspan><tspan font-family="cmbx" font-size="10">1</tspan><sub><tspan font-family="cmmi" font-size="7">A</tspan></sub> <tspan font-family="cmr" font-size="10">is a random variable (just check that it is Borel measurable),</tspan>
+<tspan font-family="cmr" font-size="10">and its expected value is </tspan><tspan font-family="cmmi" font-size="10">μ</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">A</tspan><tspan font-family="cmr" font-size="10">).</tspan></p>
+  </div>
+<!--l. 36--><p class="indent" >  </p></div>
+<!--l. 38--><p class="indent" >  An important property of expected value you probably already know:</p>
+<div class="mdframed" id="mdframed-675">
+<a 
+ id="x365-340010r1051"></a>
+<div class="newtheorem">
+<!--l. 40--><p class="noindent" ><span class="head">
+<a 
+ id="x365-340011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 39.1.4 </tspan><tspan font-family="cmss" font-size="10">(Linearity of expectation)</tspan><br 
+class="newline" /> </span><a 
+ id="x365-340012"></a>If <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>are random variables on Ω then
+</p>
+<div class="math-display" >
+<img 
+src="Na1913x.png" alt="𝔼[X + Y ] = 𝔼 [X ]+ 𝔼 [Y ].
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 43--><p class="indent" >  </p></div>
+<!--l. 44--><p class="indent" >
+</p>
+  <div class="proof">
+                                                                                
+                                                                                
+<!--l. 45--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span><tspan font-family="msbm" font-size="10">𝔼</tspan>[<tspan font-family="cmmi" font-size="10">X </tspan>+ <tspan font-family="cmmi" font-size="10">Y </tspan>] = <tspan font-family="cmex" font-size="10">∫</tspan>
+  <sub><tspan font-family="cmr" font-size="8">Ω</tspan></sub><tspan font-family="cmmi" font-size="10">X</tspan>(<tspan font-family="cmmi" font-size="10">ω</tspan>) + <tspan font-family="cmmi" font-size="10">Y </tspan>(<tspan font-family="cmmi" font-size="10">ω</tspan>) <tspan font-family="cmmi" font-size="10">dμ </tspan>= <tspan font-family="cmex" font-size="10">∫</tspan>
+  <sub><tspan font-family="cmr" font-size="8">Ω</tspan></sub><tspan font-family="cmmi" font-size="10">X</tspan>(<tspan font-family="cmmi" font-size="10">ω</tspan>) <tspan font-family="cmmi" font-size="10">dμ </tspan>+ <tspan font-family="cmex" font-size="10">∫</tspan>
+ <sub><tspan font-family="cmr" font-size="8">Ω</tspan></sub><tspan font-family="cmmi" font-size="10">Y </tspan>(<tspan font-family="cmmi" font-size="10">ω</tspan>) <tspan font-family="cmmi" font-size="10">dμ </tspan>= <tspan font-family="msbm" font-size="10">𝔼</tspan>[<tspan font-family="cmmi" font-size="10">X</tspan>] + <tspan font-family="msbm" font-size="10">𝔼</tspan>[<tspan font-family="cmmi" font-size="10">Y </tspan>].   □
+</p>
+  </div>
+<!--l. 49--><p class="indent" >  Note that <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>do not have to be “independent” here: a notion we will define
+shortly.
+                                                                                
+                                                                                
+</p>
+  <!--l. 52--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase266.htm" >next</a>] [<a 
+href="Nase251.htm" >front</a>] [<a 
+href="Napa12.htm#Nach45.htm" >up</a>] </p></div>
+<!--l. 52--><p class="indent" >  <a 
+ id="tailNase251.htm"></a> </p> 
+</body> 
+</html>

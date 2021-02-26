@@ -1,0 +1,224 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Quantum logic gates</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 248--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase166.htm" >next</a>] [<a 
+href="Nase164.htm" >prev</a>] [<a 
+href="Nase164.htm#tailNase164.htm" >prev-tail</a>] [<a 
+href="#tailNase165.htm">tail</a>] [<a 
+href="Nach27.htm#Nase165.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">24.3</span>  <a 
+ id="x238-22600024.3"></a>Quantum logic gates</h3>
+<!--l. 249--><p class="noindent" >In quantum mechanics, since we can have <tspan font-family="cmti" font-size="10">linear combinations </tspan>of basis elements, our logic
+gates will instead consist of <tspan font-family="cmti" font-size="10">linear maps</tspan>. Moreover, in quantum computation, gates are always
+reversible, which was why we took the time in the previous section to show that we can
+still simulate any function when restricted to reversible gates (e.g. using the Toffoli
+gate).
+</p><!--l. 256--><p class="indent" >  First, some linear algebra: <a 
+ id="x238-226001r746"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 258--><p class="noindent" ><span class="head">
+<a 
+ id="x238-226002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 24.3.1.</tspan>  </span><a 
+ id="x238-226003"></a>Let <tspan font-family="cmmi" font-size="10">V </tspan>be a finite dimensional inner product space. Then for a map
+<tspan font-family="cmmi" font-size="10">U </tspan>: <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>, the following are equivalent: </p>
+     <ul class="itemize1">
+     <li class="itemize"><img 
+src="Na1171x.png" alt="⟨U(x),U (y )⟩"  class="left" align="middle" /> = <img 
+src="Na1172x.png" alt="⟨x,y⟩"  class="left" align="middle" /> for <tspan font-family="cmmi" font-size="10">x,y </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>.
+     </li>
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">U</tspan><sup><tspan font-family="cmsy" font-size="8">†</tspan></sup> is the inverse of <tspan font-family="cmmi" font-size="10">U</tspan>.
+     </li>
+     <li class="itemize"><img 
+src="Na1173x.png" alt="∥x∥"  class="left" align="middle" /> = <img 
+src="Na1174x.png" alt="∥U (x)∥"  class="left" align="middle" /> for <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>.</li></ul>
+<!--l. 265--><p class="noindent" >The map <tspan font-family="cmmi" font-size="10">U </tspan>is called <tspan font-family="cmbx" font-size="10">unitary</tspan> if it satisfies these equivalent conditions.
+</p>
+  </div>
+<!--l. 267--><p class="indent" >
+</p><!--l. 269--><p class="indent" >  Then</p>
+<div class="mdframed" id="mdframed-476">
+<!--l. 271--><p class="noindent" ><tspan font-family="cmbx" font-size="10">Quantum logic gates are unitary matrices.</tspan></p><!--l. 272--><p class="noindent" ></p>
+  </div>
+<!--l. 273--><p class="indent" >  In particular, unlike the classical situation, quantum gates are always reversible (and hence
+they always take the same number of input and output bits).
+                                                                                
+                                                                                
+</p><!--l. 277--><p class="indent" >  For example, consider the CNOT gate. Its quantum analog should be a unitary map
+<tspan font-family="cmmi" font-size="10">U</tspan><tspan font-family="cmr" font-size="8">CNOT</tspan> : <tspan font-family="cmmi" font-size="10">H </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">H</tspan>, where <tspan font-family="cmmi" font-size="10">H </tspan>= <tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup>, given on basis elements by
+</p>
+  <div class="math-display" >
+<img 
+src="Na1175x.png" alt="U     (|00⟩) = |00⟩,  U      (|01⟩) = |01⟩
+ CNOT                  CNOT
+" class="math-display"  /></div>
+<!--l. 285--><p class="indent" >
+</p>
+  <div class="math-display" >
+<img 
+src="Na1176x.png" alt="UCNOT  (|10⟩) = |11⟩,  UCNOT (|11⟩) = |10⟩.
+" class="math-display"  /></div>
+<!--l. 289--><p class="indent" >  So pictorially, the quantum CNOT gate is given by
+</p>
+  <div class="math-display" >
+<img 
+src="Na1177x.png" alt="|0⟩   ∙   |0⟩     |0 ⟩  ∙    |0⟩     |1⟩   ∙   |1⟩     |1⟩  ∙    |1⟩
+|0⟩       |0⟩     |1 ⟩       |1⟩     |0⟩       |1⟩     |1⟩       |0⟩
+" class="math-display"  /></div>
+<!--l. 311--><p class="indent" >  OK, so what? The whole point of quantum mechanics is that we allow linear qubits to be in
+linear combinations of <img 
+src="Na1178x.png" alt="|0⟩"  class="left" align="middle" /> and <img 
+src="Na1179x.png" alt="|1⟩"  class="left" align="middle" />, too, and this will produce interesting results. For example,
+let’s take <img 
+src="Na1180x.png" alt="|← ⟩"  class="left" align="middle" /> = <img 
+src="Na1181x.png" alt="√1-
+  2"  class="frac" align="middle" />(<img 
+src="Na1182x.png" alt="|0⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1183x.png" alt="|1⟩"  class="left" align="middle" />) and plug it into the top, with <img 
+src="Na1184x.png" alt="|1⟩"  class="left" align="middle" /> on the bottom, and see what
+happens:
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1185x.png" alt="                          (                )
+U     (|← ⟩⊗  |1⟩) = U       √1-(|01⟩− |11⟩)  = √1--(|01⟩ − |10⟩) = |Ψ  ⟩
+ CNOT                CNOT     2                  2                 −
+" class="math-display"  /></div>
+<!--l. 323--><p class="indent" >  which is the fully entangled <tspan font-family="cmti" font-size="10">singlet state</tspan>! Picture:
+</p>
+  <div class="math-display" >
+<img 
+src="Na1186x.png" alt="|← ⟩   ∙   |Ψ − ⟩
+ |1⟩
+" class="math-display"  /></div>
+<!--l. 331--><p class="indent" >  Thus, when we input mixed states into our quantum gates, the outputs are often entangled
+states, even when the original inputs are not entangled.</p>
+<div class="mdframed" id="mdframed-477">
+<a 
+ id="x238-226004r747"></a>
+<div class="newtheorem">
+<!--l. 336--><p class="noindent" ><span class="head">
+<a 
+ id="x238-226005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 24.3.2 </tspan>(More examples of quantum gates)<br 
+class="newline" /> </span><a 
+ id="x238-226006"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">Every reversible classical gate that we encountered before has a quantum analog
+    obtained in the same way as CNOT: by specifying the values on basis elements. For
+    example, there is a quantum Tofolli gate which for example sends
+<div class="math-display" >
+                                                                                
+                                                                                
+<img 
+src="Na1187x.png" alt="|1⟩   ∙   |1⟩
+|1⟩   ∙   |1⟩
+|0⟩       |1⟩
+" class="math-display"  /></div>
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The <tspan font-family="cmbx" font-size="10">Hadamard gate</tspan> on one qubit is a rotation given by
+<div class="math-display" >
+<img 
+src="Na1188x.png" alt="[-1-  -1- ]
+ √2   √2-  .
+ √12- − √12-
+" class="math-display"  /></div>
+    <!--l. 358--><p class="noindent" >Thus, it sends <img 
+src="Na1189x.png" alt="|0⟩"  class="left" align="middle" /> to <img 
+src="Na1190x.png" alt="|→ ⟩"  class="left" align="middle" /> and <img 
+src="Na1191x.png" alt="|1⟩"  class="left" align="middle" /> to <img 
+src="Na1192x.png" alt="|← ⟩"  class="left" align="middle" />. Note that the Hadamard gate is its own
+    inverse. It is depicted by an “<tspan font-family="cmmi" font-size="10">H</tspan>” box.
+    </p>
+<div class="math-display" >
+<img 
+src="Na1193x.png" alt="|0⟩   H    |→ ⟩
+" class="math-display"  /></div>
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">More generally, if <tspan font-family="cmmi" font-size="10">U </tspan>is a 2 <tspan font-family="cmsy" font-size="10">× </tspan>2 unitary matrix (i.e. a map <tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup>) then there is
+    <tspan font-family="cmmi" font-size="10">U</tspan><tspan font-family="cmbx" font-size="10">-rotation gate</tspan> similar to the previous one, which applies <tspan font-family="cmmi" font-size="10">U </tspan>to the input.
+<div class="math-display" >
+                                                                                
+                                                                                
+<img 
+src="Na1194x.png" alt="|ψ ⟩   U    U |ψ⟩
+" class="math-display"  /></div>
+    <!--l. 375--><p class="noindent" >For example, the classical NOT gate is represented by <tspan font-family="cmmi" font-size="10">U </tspan>= <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">x</tspan></sub>.
+    </p></dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate">A <tspan font-family="cmbx" font-size="10">controlled </tspan><tspan font-family="cmmi" font-size="10">U</tspan><tspan font-family="cmbx" font-size="10">-rotation gate</tspan> generalizes the CNOT gate. Let <tspan font-family="cmmi" font-size="10">U </tspan>: <tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup> be
+    a rotation gate, and let <tspan font-family="cmmi" font-size="10">H </tspan>= <tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup> be a 2-qubit space. Then the controlled <tspan font-family="cmmi" font-size="10">U</tspan>
+    gate has the following circuit diagrams.
+<div class="math-display" >
+<img 
+src="Na1195x.png" alt=" |0⟩    ∙    |0⟩          |1⟩    ∙    |1⟩
+|ψ⟩   U     |ψ ⟩        |ψ⟩   U    U  |ψ ⟩
+" class="math-display"  /></div>
+    <!--l. 391--><p class="noindent" >Thus, <tspan font-family="cmmi" font-size="10">U </tspan>is applied when the controlling bit is 1, and CNOT is the special case
+    <tspan font-family="cmmi" font-size="10">U </tspan>= <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">x</tspan></sub>. As before, we get interesting behavior if the control is mixed.</p></dd></dl>
+</p>
+  </div>
+<!--l. 395--><p class="indent" >  </p></div>
+<!--l. 397--><p class="indent" >  And now, some more counterintuitive quantum behavior. Suppose we try to use CNOT as a
+copy, with truth table.
+</p>
+  <div class="math-display" >
+<img 
+src="Na1196x.png" alt="|-----|-----|
+|-In--|Out--|
+|0  0 |0  0 |
+|1  0 |1  1 |
+|     |     |
+|0  1 |0  1 |
+-1--1--1--0-|
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 410--><p class="indent" >  The point of this gate is to be used with a garbage 0 at the bottom to try and simulate a
+“copy” operation. So indeed, one can check that
+</p>
+  <div class="math-display" >
+<img 
+src="Na1197x.png" alt="|0⟩          |0⟩          |1⟩         |1⟩
+|0⟩    U     |0⟩          |0⟩    U    |1⟩
+" class="math-display"  /></div>
+<!--l. 424--><p class="indent" >  Thus we can copy <img 
+src="Na1198x.png" alt="|0⟩"  class="left" align="middle" /> and <img 
+src="Na1199x.png" alt="|1⟩"  class="left" align="middle" />. But as we’ve already seen if we input <img 
+src="Na1200x.png" alt="|← ⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1201x.png" alt="|0⟩"  class="left" align="middle" /> into <tspan font-family="cmmi" font-size="10">U</tspan>, we
+end up with the entangled state <img 
+src="Na1202x.png" alt="|Ψ  ⟩
+   −"  class="left" align="middle" /> which is decisively <tspan font-family="cmti" font-size="10">not </tspan>the <img 
+src="Na1203x.png" alt="|← ⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1204x.png" alt="|← ⟩"  class="left" align="middle" /> we wanted. And
+in fact, the so-called <tspan font-family="cmbx" font-size="10">no-cloning theorem</tspan> implies that it’s impossible to duplicate an
+arbitrary <img 
+src="Na1205x.png" alt="|ψ ⟩"  class="left" align="middle" />; the best we can do is copy specific orthogonal states as in the classical case. See
+also <tspan font-family="cmbx" font-size="10">??</tspan> .
+                                                                                
+                                                                                
+</p>
+  <!--l. 433--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase166.htm" >next</a>] [<a 
+href="Nase164.htm" >prev</a>] [<a 
+href="Nase164.htm#tailNase164.htm" >prev-tail</a>] [<a 
+href="Nase165.htm" >front</a>] [<a 
+href="Nach27.htm#Nase165.htm" >up</a>] </p></div>
+<!--l. 433--><p class="indent" >  <a 
+ id="tailNase165.htm"></a> </p> 
+</body> 
+</html>

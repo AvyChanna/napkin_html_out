@@ -1,0 +1,192 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Characteristic polynomials, and Cayley-Hamilton</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 274--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase103.htm" >next</a>] [<a 
+href="Nase101.htm" >prev</a>] [<a 
+href="Nase101.htm#tailNase101.htm" >prev-tail</a>] [<a 
+href="#tailNase102.htm">tail</a>] [<a 
+href="Nach15.htm#Nase102.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">12.3</span>  <a 
+ id="x154-13700012.3"></a>Characteristic polynomials, and Cayley-Hamilton</h3>
+<!--l. 275--><p class="noindent" >Let’s connect with the theory of eigenvalues. Take a map <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>, where <tspan font-family="cmmi" font-size="10">V </tspan>is <tspan font-family="cmmi" font-size="10">n</tspan>-dimensional
+over an algebraically closed field, and suppose its eigenvalues are <tspan font-family="cmmi" font-size="10">λ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">λ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">λ</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> (with
+repetition). Then the <tspan font-family="cmbx" font-size="10">characteristic polynomial</tspan> is given by
+</p>
+  <div class="math-display" >
+<img 
+src="Na506x.png" alt="pT(X ) = (X − λ1)(X − λ2)...(X − λn ).
+" class="math-display"  /></div>
+<!--l. 284--><p class="indent" >  Note that if we’ve written <tspan font-family="cmmi" font-size="10">T </tspan>in Jordan form, that is,
+</p>
+  <div class="math-display" >
+<img 
+src="Na507x.png" alt="    ⌊λ    ∗   0  ...   0⌋
+    | 1                 |
+    || 0  λ2   ∗  ...   0||
+T = | 0   0  λ3  ...   0|
+    |⌈ ...   ...   ...   ...   ...|⌉
+      0   0   0  ...  λ
+                       n
+" class="math-display"  /></div>
+<!--l. 294--><p class="indent" >  (here each <tspan font-family="cmsy" font-size="10">∗ </tspan>is either 0 or 1), then we can hack together the definition
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na508x.png" alt="                               ⌊                                     ⌋
+                                X − λ1     ∗        0    ...     0
+                               |   0    X  − λ2     ∗    ...     0   |
+                               ||   0       0     X − λ   ...     0   ||
+pT (X ) := det (X  ⋅idn − T ) = det ||  .       .        . 3   .      .   ||.
+                               ⌈   ..       ..        ..     ..     ..   ⌉
+                                   0       0        0    ...  X − λn
+" class="math-display"  /></div>
+<!--l. 307--><p class="indent" >  The latter definition is what you’ll see in most linear algebra books because it lets you
+define the characteristic polynomial without mentioning the word “eigenvalue” (i.e. entirely in
+terms of arrays of numbers). I’ll admit it does have the merit that it means that given any
+matrix, it’s easy to compute the characteristic polynomial and hence compute the eigenvalues;
+but I still think the definition should be done in terms of eigenvalues to begin with. For
+instance the determinant definition obscures the following theorem, which is actually a
+complete triviality.</p>
+<div class="mdframed" id="mdframed-300">
+<a 
+ id="x154-137001r471"></a>
+<div class="newtheorem">
+<!--l. 318--><p class="noindent" ><span class="head">
+<a 
+ id="x154-137002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 12.3.1 </tspan><tspan font-family="cmss" font-size="10">(Cayley-Hamilton)</tspan><br 
+class="newline" /> </span><a 
+ id="x154-137003"></a>Let <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>be a map of finite-dimensional vector
+spaces over an algebraically closed field. Then for any <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>, the map <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>(<tspan font-family="cmmi" font-size="10">T</tspan>) is the
+zero map.
+</p>
+  </div>
+<!--l. 323--><p class="indent" >  </p></div>
+<!--l. 324--><p class="indent" >  Here, by <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>(<tspan font-family="cmmi" font-size="10">T</tspan>) we mean that if
+</p>
+  <div class="math-display" >
+<img 
+src="Na509x.png" alt="pT (X) = Xn +  cn− 1Xn− 1 + ⋅⋅⋅+ c0
+" class="math-display"  /></div>
+<!--l. 326--><p class="indent" >  then
+</p>
+  <div class="math-display" >
+<img 
+src="Na510x.png" alt="          n        n− 1
+pT (T) = T  + cn−1T    + ⋅⋅⋅+ c1T + c0I
+" class="math-display"  /></div>
+<!--l. 327--><p class="indent" >  is the zero map, where <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmmi" font-size="8">k</tspan></sup> denotes <tspan font-family="cmmi" font-size="10">T </tspan>applied <tspan font-family="cmmi" font-size="10">k </tspan>times. We saw this concept already when we
+proved that <tspan font-family="cmmi" font-size="10">T </tspan>had at least one nonzero eigenvector.</p>
+<div class="mdframed" id="mdframed-301">
+<a 
+ id="x154-137004r472"></a>
+<div class="newtheorem">
+<!--l. 332--><p class="noindent" ><span class="head">
+<a 
+ id="x154-137005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 12.3.2 </tspan>(Example of Cayley-Hamilton using determinant definition)<br 
+class="newline" />
+</span><a 
+ id="x154-137006"></a>Suppose <tspan font-family="cmmi" font-size="10">T </tspan>= <img 
+src="Na511x.png" alt="[1  2]
+ 3  4"  class="left" align="middle" />. Using the determinant definition of characteristic polynomial, we
+find that <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>(<tspan font-family="cmmi" font-size="10">X</tspan>) = (<tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1)(<tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">− </tspan>4) <tspan font-family="cmsy" font-size="10">− </tspan>(<tspan font-family="cmsy" font-size="10">−</tspan>2)(<tspan font-family="cmsy" font-size="10">−</tspan>3) = <tspan font-family="cmmi" font-size="10">X</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>5<tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">− </tspan>2. Indeed, you can verify
+that
+</p>
+<div class="math-display" >
+<img 
+src="Na512x.png" alt="              [      ]      [    ]     [    ]   [    ]
+  2             7  10        1  2       1  0     0  0
+T  − 5T − 2 =  15  22  − 5 ⋅ 3  4 − 2 ⋅ 0  1  =  0  0 .
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 355--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<!--l. 356--><p class="indent" >  If you define <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub> without the word eigenvalue, and adopt the evil view that matrices are
+arrays of numbers, then this looks like a complete miracle. (Indeed, just look at the terrible
+proofs on Wikipedia.)
+</p><!--l. 361--><p class="indent" >  But if you use the abstract viewpoint of <tspan font-family="cmmi" font-size="10">T </tspan>as a linear map, then the theorem is almost
+obvious:
+</p><!--l. 363--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 363--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof of Cayley-Hamilton.</tspan> </span> Suppose we write <tspan font-family="cmmi" font-size="10">V </tspan>in Jordan normal form as
+</p>
+  <div class="math-display" >
+<img 
+src="Na513x.png" alt="V  = J ⊕ ⋅⋅⋅⊕ J
+      1         m
+" class="math-display"  /></div>
+<!--l. 366--><p class="indent" >  where <tspan font-family="cmmi" font-size="10">J</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> has eigenvalue <tspan font-family="cmmi" font-size="10">λ</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> and dimension <tspan font-family="cmmi" font-size="10">d</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>. By definition,
+</p>
+  <div class="math-display" >
+<img 
+src="Na514x.png" alt="pT(T) = (T − λ1)d1(T − λ2 )d2 ...(T − λm )dm.
+" class="math-display"  /></div>
+<!--l. 370--><p class="indent" >  By definition, (<tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">λ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>)<sup><tspan font-family="cmmi" font-size="8">d</tspan><sub><tspan font-family="cmr" font-size="6">1</tspan></sub></sup> is the zero map on <tspan font-family="cmmi" font-size="10">J</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>. So <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>(<tspan font-family="cmmi" font-size="10">T</tspan>) is zero on <tspan font-family="cmmi" font-size="10">J</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>. Similarly it’s
+zero on each of the other <tspan font-family="cmmi" font-size="10">J</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>’s — end of story.                                                     □
+</p>
+  </div><div class="mdframed" id="mdframed-302">
+<a 
+ id="x154-137007r473"></a>
+<div class="newtheorem">
+<!--l. 375--><p class="noindent" ><span class="head">
+<a 
+ id="x154-137008r3"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmssbx" font-size="10">Remark 12.3.3 </tspan><tspan font-family="cmss" font-size="10">(Tensoring up) </tspan><tspan font-family="cmssbx" font-size="10">—  </tspan> </span><a 
+ id="x154-137009"></a>The  Cayley-Hamilton  theorem  holds  without  the
+hypothesis that <tspan font-family="cmmi" font-size="10">k </tspan>is algebraically closed: because for example any real matrix can be
+regarded as a matrix with complex coefficients (a trick we’ve mentioned before). I’ll
+briefly hint at how you can use tensor products to formalize this idea.
+</p><!--l. 383--><p class="noindent" >Let’s take the space <tspan font-family="cmmi" font-size="10">V  </tspan>= <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup>, with basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>. Thus objects in <tspan font-family="cmmi" font-size="10">V  </tspan>are of the form
+<tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> +<tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> +<tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> where <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> are real numbers. We want to consider essentially the
+same vector space, but with complex coefficients <tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> rather than real coefficients <tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>.
+</p><!--l. 389--><p class="noindent" >So here’s what we do: view <tspan font-family="msbm" font-size="10">ℂ </tspan>as a <tspan font-family="msbm" font-size="10">ℝ</tspan>-vector space (with basis <tspan font-family="cmsy" font-size="10">{</tspan>1<tspan font-family="cmmi" font-size="10">,i</tspan><tspan font-family="cmsy" font-size="10">}</tspan>, say) and consider
+the <tspan font-family="cmbx" font-size="10">complexification</tspan>
+</p>
+<div class="math-display" >
+<img 
+src="Na515x.png" alt="Vℂ := ℂ ⊗ℝ V.
+" class="math-display"  /></div>
+<!--l. 393--><p class="noindent" >Then you can check that our elements are actually of the form
+</p>
+<div class="math-display" >
+<img 
+src="Na516x.png" alt="z1 ⊗ e1 + z2 ⊗ e2 + z3 ⊗ e3.
+" class="math-display"  /></div>
+<!--l. 395--><p class="noindent" >Here, the tensor product is over <tspan font-family="msbm" font-size="10">ℝ</tspan>, so we have <tspan font-family="cmmi" font-size="10">z</tspan><tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">re</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = (<tspan font-family="cmmi" font-size="10">zr</tspan>)<tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> for <tspan font-family="cmmi" font-size="10">r </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>. Then <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="msbm" font-size="10">ℂ</tspan></sub> can
+be thought as a three-dimensional vector space over <tspan font-family="msbm" font-size="10">ℂ</tspan>, with basis 1<tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> for <tspan font-family="cmmi" font-size="10">i </tspan><tspan font-family="cmsy" font-size="10">∈{</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan>2<tspan font-family="cmmi" font-size="10">,</tspan>3<tspan font-family="cmsy" font-size="10">}</tspan>.
+In this way, the tensor product lets us formalize the idea that we “fuse on” complex
+coefficients.
+</p><!--l. 402--><p class="noindent" >If <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>is a map, then <tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="msbm" font-size="10">ℂ</tspan></sub> : <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="msbm" font-size="10">ℂ</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="msbm" font-size="10">ℂ</tspan></sub> is just the map <tspan font-family="cmmi" font-size="10">z </tspan><tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">v</tspan><img 
+src="Na517x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">z </tspan><tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">v</tspan>). You’ll see
+this written sometimes as <tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="msbm" font-size="10">ℂ</tspan></sub> = id <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">T</tspan>. One can then apply theorems to <tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="msbm" font-size="10">ℂ</tspan></sub>  and try to
+deduce the corresponding results on <tspan font-family="cmmi" font-size="10">T</tspan>.</p>
+  </div>
+<!--l. 407--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 409--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase103.htm" >next</a>] [<a 
+href="Nase101.htm" >prev</a>] [<a 
+href="Nase101.htm#tailNase101.htm" >prev-tail</a>] [<a 
+href="Nase102.htm" >front</a>] [<a 
+href="Nach15.htm#Nase102.htm" >up</a>] </p></div>
+<!--l. 409--><p class="indent" >  <a 
+ id="tailNase102.htm"></a> </p> 
+</body> 
+</html>

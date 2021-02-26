@@ -1,0 +1,178 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Eigenvectors and eigenvalues</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 81--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase89.htm" >next</a>] [<a 
+href="Nase87.htm" >prev</a>] [<a 
+href="Nase87.htm#tailNase87.htm" >prev-tail</a>] [<a 
+href="#tailNase88.htm">tail</a>] [<a 
+href="Nach13.htm#Nase88.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">10.3</span>  <a 
+ id="x134-12100010.3"></a>Eigenvectors and eigenvalues</h3>
+<!--l. 82--><p class="noindent" >Let <tspan font-family="cmmi" font-size="10">k </tspan>be a field and <tspan font-family="cmmi" font-size="10">V </tspan>a vector space over it. In the above example, we saw that there were
+two very nice vectors, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, for which <tspan font-family="cmmi" font-size="10">V </tspan>did something very simple. Naturally, these
+vectors have a name. <a 
+ id="x134-121001r406"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 87--><p class="noindent" ><span class="head">
+<a 
+ id="x134-121002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 10.3.1.</tspan>  </span><a 
+ id="x134-121003"></a>Let <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V  </tspan>and <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V  </tspan>a <tspan font-family="cmti" font-size="10">nonzero </tspan>vector. We say that <tspan font-family="cmmi" font-size="10">v </tspan>is an
+<tspan font-family="cmbx" font-size="10">eigenvector</tspan> if <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">v</tspan>) = <tspan font-family="cmmi" font-size="10">λv </tspan>for some <tspan font-family="cmmi" font-size="10">λ </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">k </tspan>(possibly zero, but remember <tspan font-family="cmmi" font-size="10">v</tspan><tspan font-family="cmmi" font-size="10">≠</tspan>0). The value
+<tspan font-family="cmmi" font-size="10">λ </tspan>is called an <tspan font-family="cmbx" font-size="10">eigenvalue</tspan> of <tspan font-family="cmmi" font-size="10">T</tspan>.
+</p><!--l. 92--><p class="indent" >  We will sometimes abbreviate “<tspan font-family="cmmi" font-size="10">v </tspan>is an eigenvector with eigenvalue <tspan font-family="cmmi" font-size="10">λ</tspan>” to just “<tspan font-family="cmmi" font-size="10">v </tspan>is a
+<tspan font-family="cmmi" font-size="10">λ</tspan>-eigenvector”.
+</p>
+  </div>
+<!--l. 95--><p class="indent" >
+Of course, no mention to a basis anywhere.</p>
+<div class="mdframed" id="mdframed-257">
+<a 
+ id="x134-121004r407"></a>
+<div class="newtheorem">
+<!--l. 99--><p class="noindent" ><span class="head">
+<a 
+ id="x134-121005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 10.3.2 </tspan>(An example of an eigenvector and eigenvalue)<br 
+class="newline" /> </span><a 
+ id="x134-121006"></a>Consider the example earlier
+with <tspan font-family="cmmi" font-size="10">T </tspan>= <img 
+src="Na405x.png" alt="[2  1]
+ 0  3"  class="left" align="middle" />.
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">Note that <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> are 2-eigenvectors and 3-eigenvectors.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">Of course, 5<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> is also an 2-eigenvector.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">And, 7<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + 7<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> is also a 3-eigenvector.</dd></dl>
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 108--><p class="indent" >  </p></div>
+<!--l. 109--><p class="indent" >  So you can quickly see the following observation.</p>
+<div class="mdframed" id="mdframed-258">
+<a 
+ id="x134-121010r408"></a>
+<div class="newtheorem">
+<!--l. 111--><p class="noindent" ><span class="head">
+<a 
+ id="x134-121011r3"></a>
+<tspan font-family="cmbx" font-size="10">Question 10.3.3.</tspan>  </span><a 
+ id="x134-121012"></a><tspan font-family="cmr" font-size="10">Show that the </tspan><tspan font-family="cmmi" font-size="10">λ</tspan><tspan font-family="cmr" font-size="10">-eigenvectors, together with </tspan><tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmr" font-size="10">0</tspan><tspan font-family="cmsy" font-size="10">} </tspan><tspan font-family="cmr" font-size="10">form a subspace.</tspan></p>
+  </div>
+<!--l. 113--><p class="indent" >  </p></div>
+<a 
+ id="x134-121013r409"></a>
+  <div class="newtheorem">
+<!--l. 115--><p class="noindent" ><span class="head">
+<a 
+ id="x134-121014r4"></a>
+<tspan font-family="cmbx" font-size="10">Definition 10.3.4.</tspan>  </span><a 
+ id="x134-121015"></a>For any <tspan font-family="cmmi" font-size="10">λ</tspan>, we define the <tspan font-family="cmmi" font-size="10">λ</tspan>-<tspan font-family="cmbx" font-size="10">eigenspace</tspan> as the set of <tspan font-family="cmmi" font-size="10">λ</tspan>-eigenvectors
+together with 0.
+</p>
+  </div>
+<!--l. 117--><p class="indent" >
+This lets us state succinctly that “2 is an eigenvalue of <tspan font-family="cmmi" font-size="10">T </tspan>with one-dimensional eigenspace
+spanned by <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>”.
+</p><!--l. 122--><p class="indent" >  Unfortunately, it’s not exactly true that eigenvalues always exist.</p>
+<div class="mdframed" id="mdframed-259">
+<a 
+ id="x134-121016r410"></a>
+<div class="newtheorem">
+<!--l. 123--><p class="noindent" ><span class="head">
+<a 
+ id="x134-121017r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 10.3.5 </tspan>(Eigenvalues need not exist)<br 
+class="newline" /> </span><a 
+ id="x134-121018"></a>Let <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> and let <tspan font-family="cmmi" font-size="10">T </tspan>be the map which
+rotates a vector by 90<tspan font-family="cmsy" font-size="8">∘</tspan> around the origin. Then <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">v</tspan>) is not a multiple of <tspan font-family="cmmi" font-size="10">v </tspan>for any <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>,
+other than the trivial <tspan font-family="cmmi" font-size="10">v </tspan>= 0.</p>
+  </div>
+<!--l. 129--><p class="indent" >  </p></div>
+<!--l. 131--><p class="indent" >  However, it is true if we replace <tspan font-family="cmmi" font-size="10">k </tspan>with an algebraically closed
+field<span class="footnote-mark"><a 
+href="Na135.htm#fn1x14"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x134-121019f1"></a> .
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-260">
+<a 
+ id="x134-121020r411"></a>
+<div class="newtheorem">
+<!--l. 135--><p class="noindent" ><span class="head">
+<a 
+ id="x134-121021r6"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 10.3.6 </tspan><tspan font-family="cmss" font-size="10">(Eigenvalues always exist over algebraically closed fields)</tspan><br 
+class="newline" /> </span><a 
+ id="x134-121022"></a>Suppose <tspan font-family="cmmi" font-size="10">k </tspan>is an
+<tspan font-family="cmti" font-size="10">algebraically closed </tspan>field. Let <tspan font-family="cmmi" font-size="10">V </tspan>be a finite dimensional <tspan font-family="cmmi" font-size="10">k</tspan>-vector space. Then if <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V</tspan>
+is a linear map, there exists an eigenvalue <tspan font-family="cmmi" font-size="10">λ </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">k</tspan>.
+</p>
+  </div>
+<!--l. 140--><p class="indent" >  </p></div>
+<!--l. 141--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 142--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>(From <span class="cite">[<tspan font-family="cmbx" font-size="10">?</tspan>]</span>) The idea behind this proof is to consider “polynomials” in <tspan font-family="cmmi" font-size="10">T</tspan>. For example,
+2<tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>4<tspan font-family="cmmi" font-size="10">T </tspan>+ 5 would be shorthand for 2<tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">v</tspan>)) <tspan font-family="cmsy" font-size="10">− </tspan>4<tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">v</tspan>) + 5<tspan font-family="cmmi" font-size="10">v</tspan>. In this way we can consider
+“polynomials” <tspan font-family="cmmi" font-size="10">P</tspan>(<tspan font-family="cmmi" font-size="10">T</tspan>); this lets us tie in the “algebraically closed” condition. These polynomials
+behave nicely:</p>
+<div class="mdframed" id="mdframed-261">
+<a 
+ id="x134-121023r412"></a>
+<div class="newtheorem">
+<!--l. 149--><p class="noindent" ><span class="head">
+<a 
+ id="x134-121024r7"></a>
+<tspan font-family="cmbx" font-size="10">Question 10.3.7.</tspan>  </span><a 
+ id="x134-121025"></a><tspan font-family="cmr" font-size="10">Show that </tspan><tspan font-family="cmmi" font-size="10">P</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">T</tspan><tspan font-family="cmr" font-size="10">) + </tspan><tspan font-family="cmmi" font-size="10">Q</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">T</tspan><tspan font-family="cmr" font-size="10">) = (</tspan><tspan font-family="cmmi" font-size="10">P </tspan><tspan font-family="cmr" font-size="10">+ </tspan><tspan font-family="cmmi" font-size="10">Q</tspan><tspan font-family="cmr" font-size="10">)(</tspan><tspan font-family="cmmi" font-size="10">T</tspan><tspan font-family="cmr" font-size="10">) and </tspan><tspan font-family="cmmi" font-size="10">P</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">T</tspan><tspan font-family="cmr" font-size="10">) </tspan><tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">Q</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">T</tspan><tspan font-family="cmr" font-size="10">) = (</tspan><tspan font-family="cmmi" font-size="10">P </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">Q</tspan><tspan font-family="cmr" font-size="10">)(</tspan><tspan font-family="cmmi" font-size="10">T</tspan><tspan font-family="cmr" font-size="10">).</tspan></p>
+  </div>
+<!--l. 150--><p class="indent" >  </p></div>
+<!--l. 152--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">n </tspan>= dim<tspan font-family="cmmi" font-size="10">V &#x003C; </tspan><tspan font-family="cmsy" font-size="10">∞ </tspan>and fix any nonzero vector <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>, and consider vectors <tspan font-family="cmmi" font-size="10">v</tspan>, <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">v</tspan>), …,
+<tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>(<tspan font-family="cmmi" font-size="10">v</tspan>). There are <tspan font-family="cmmi" font-size="10">n </tspan>+ 1 of them, so they can’t be linearly independent for dimension reasons;
+thus there is a nonzero polynomial <tspan font-family="cmmi" font-size="10">P </tspan>such that <tspan font-family="cmmi" font-size="10">P</tspan>(<tspan font-family="cmmi" font-size="10">T</tspan>) is zero when applied to <tspan font-family="cmmi" font-size="10">v</tspan>. WLOG
+suppose <tspan font-family="cmmi" font-size="10">P </tspan>is a monic polynomial, and thus <tspan font-family="cmmi" font-size="10">P</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>) = (<tspan font-family="cmmi" font-size="10">z </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>)<tspan font-family="cmmi" font-size="10">…</tspan>(<tspan font-family="cmmi" font-size="10">z </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub>) say. Then we
+get
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na406x.png" alt="0 = (T − r1id) ∘(T − r2id )∘⋅⋅⋅∘ (T − rmid)(v)
+" class="math-display"  /></div>
+<!--l. 163--><p class="indent" >  (where id is the identity matrix). This means at least one of <tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">r</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>id is not injective, i.e. has
+a nontrivial kernel, which is the same as an eigenvector.                                        □
+</p>
+  </div>
+<!--l. 167--><p class="indent" >  So in general we like to consider algebraically closed fields. This is not a big loss: any real
+matrix can be interpreted as a complex matrix whose entries just happen to be real, for
+example.
+                                                                                
+                                                                                
+</p>
+  <!--l. 172--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase89.htm" >next</a>] [<a 
+href="Nase87.htm" >prev</a>] [<a 
+href="Nase87.htm#tailNase87.htm" >prev-tail</a>] [<a 
+href="Nase88.htm" >front</a>] [<a 
+href="Nach13.htm#Nase88.htm" >up</a>] </p></div>
+<!--l. 172--><p class="indent" >  <a 
+ id="tailNase88.htm"></a> </p> 
+</body> 
+</html>

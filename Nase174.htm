@@ -1,0 +1,352 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Infinite series</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 346--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase175.htm" >next</a>] [<a 
+href="Nase173.htm" >prev</a>] [<a 
+href="Nase173.htm#tailNase173.htm" >prev-tail</a>] [<a 
+href="#tailNase174.htm">tail</a>] [<a 
+href="Nach29.htm#Nase174.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">26.4</span>  <a 
+ id="x250-23800026.4"></a>Infinite series</h3>
+<!--l. 348--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmsy" font-size="8">≥</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∞</tspan></sup><img 
+src="Na1365x.png" alt="---1--
+k(k+1)"  class="frac" align="middle" /> = lim<sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">→∞</tspan></sub><img 
+src="Na1366x.png" alt="(        )
+  1− --1-
+     n+1"  class="left" align="middle" /> = 1<tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 350--><p class="indent" >  We will actually begin by working with infinite series, since in the previous chapters we
+defined limits of sequences, and so this is actually the next closest thing to work
+with.<span class="footnote-mark"><a 
+href="Na251.htm#fn1x30"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x250-238001f1"></a> 
+</p><!--l. 359--><p class="indent" >  This will give you a rigorous way to think about statements like
+</p>
+  <div class="math-display" >
+<img 
+src="Na1367x.png" alt="∑∞  1    π2
+    n2-= -6-
+n=1
+" class="math-display"  /></div>
+<!--l. 362--><p class="indent" >  and help answer questions like “how can you add rational numbers and get an irrational
+one?”.
+<a 
+ id="x250-238002r781"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 366--><p class="noindent" ><span class="head">
+<a 
+ id="x250-238003r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 26.4.1.</tspan>  </span><a 
+ id="x250-238004"></a>Consider a sequence <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, … of real numbers. The series <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> <tspan font-family="cmbx" font-size="10">converges</tspan>
+to a limit <tspan font-family="cmmi" font-size="10">L </tspan>if the sequence of “partial sums”
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 375--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub></td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub></td>          <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub></td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub></td>      <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub></td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> + <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub></td> <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>  <td 
+class="align-even"><img 
+src="Na1369x.png" alt="..."  class="mathpalette"  /></td>            <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub></td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <img 
+src="Na1370x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub></td><td 
+class="align-label"></td><td 
+class="align-label">                                                               </td></tr></table>
+</p><!--l. 376--><p class="indent" >  converges to the limit <tspan font-family="cmmi" font-size="10">L</tspan>. Otherwise it <tspan font-family="cmbx" font-size="10">diverges</tspan>.
+</p>
+  </div>
+<!--l. 378--><p class="indent" >
+<a 
+ id="x250-238005r782"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 380--><p class="noindent" ><span class="head">
+<a 
+ id="x250-238006r2"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 26.4.2 </tspan>(Writing divergence as +<tspan font-family="cmsy" font-size="10">∞</tspan>)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x250-238007"></a>It is customary, if all the <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>
+are nonnegative, to write <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> = <tspan font-family="cmsy" font-size="10">∞ </tspan>to denote that the series diverges.
+</p>
+  </div>
+<!--l. 383--><p class="indent" >
+</p><!--l. 385--><p class="indent" >  You will notice that by using the definition of sequences, we have masterfully sidestepped
+the issue of “adding infinitely many numbers” which would otherwise cause all sorts of
+problems.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-501">
+<!--l. 390--><p class="noindent" ><tspan font-family="cmbx" font-size="10">An “infinite sum” is actually the </tspan><tspan font-family="cmbxti" font-size="10">limit </tspan><tspan font-family="cmbx" font-size="10">of its partial sums. There is no infinite</tspan>
+<tspan font-family="cmbx" font-size="10">addition involved.</tspan></p><!--l. 392--><p class="noindent" ></p>
+  </div>
+<!--l. 394--><p class="indent" >  That’s why it’s for example okay to have <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">≥</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub><img 
+src="Na1371x.png" alt="n12"  class="frac" align="middle" /> = <img 
+src="Na1372x.png" alt=" 2
+π6"  class="frac" align="middle" /> be irrational; we have already seen
+many times that sequences of rational numbers can converge to irrational numbers. It
+also means we can gladly ignore all the irritating posts by middle schoolers about
+1 + 2 + 3 + <img 
+src="Na1373x.png" alt="⋅⋅⋅"  class="@cdots"  /> = <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1374x.png" alt="1-
+12"  class="frac" align="middle" />; the partial sums explode to +<tspan font-family="cmsy" font-size="10">∞</tspan>, end of story, and if you want to assign
+a value to that sum it had better be a definition.</p>
+<div class="mdframed" id="mdframed-502">
+<a 
+ id="x250-238008r783"></a>
+<div class="newtheorem">
+<!--l. 406--><p class="noindent" ><span class="head">
+<a 
+ id="x250-238009r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 26.4.3 </tspan>(The classical telescoping series)<br 
+class="newline" /> </span><a 
+ id="x250-238010"></a>We   can   now   prove   the   classic
+telescoping series
+</p>
+<div class="math-display" >
+<img 
+src="Na1375x.png" alt=" ∞
+∑   ---1----
+    k(k + 1)
+k=1
+" class="math-display"  /></div>
+<!--l. 409--><p class="noindent" >in a way that doesn’t just hand-wave the ending. Note that the <tspan font-family="cmmi" font-size="10">k</tspan>th partial sum
+is
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 419--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">=1</tspan></sub><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup><img 
+src="Na1377x.png" alt="----1---
+k(k + 1)"  class="frac" align="middle" /></td><td 
+class="align-even"> = <img 
+src="Na1378x.png" alt="-1--
+1 ⋅2"  class="frac" align="middle" /> + <img 
+src="Na1379x.png" alt="-1--
+2⋅3"  class="frac" align="middle" /> + <img 
+src="Na1380x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <img 
+src="Na1381x.png" alt="---1----
+n(n+ 1 )"  class="frac" align="middle" /></td>   <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                <td 
+class="align-even"> = <img 
+src="Na1382x.png" alt="(      )
+  1-− 1-
+  1   2"  class="left" align="middle" /> + <img 
+src="Na1383x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <img 
+src="Na1384x.png" alt="(          )
+  1-− --1--
+  n   n + 1"  class="left" align="middle" /></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                <td 
+class="align-even"> = 1 <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1385x.png" alt="--1--
+n+ 1"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">.</tspan></td>                    <td 
+class="align-label"></td><td 
+class="align-label">                               </td></tr></table>
+</p><!--l. 420--><p class="noindent" >The limit of this partial sum as <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">→∞ </tspan>is 1.
+</p>
+  </div>
+<!--l. 421--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-503">
+<a 
+ id="x250-238011r784"></a>
+<div class="newtheorem">
+<!--l. 424--><p class="noindent" ><span class="head">
+<a 
+ id="x250-238012r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 26.4.4 </tspan>(Harmonic series diverges)<br 
+class="newline" /> </span><a 
+ id="x250-238013"></a>We can also make sense of the statement
+that <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">=1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∞</tspan></sup><img 
+src="Na1386x.png" alt="1
+k"  class="frac" align="middle" /> = <tspan font-family="cmsy" font-size="10">∞ </tspan>(i.e. it diverges). We may bound the 2<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>th partial sums from
+below:
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 436--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">=1</tspan></sub><sup><tspan font-family="cmr" font-size="8">2</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup>
+   </sup><img 
+src="Na1388x.png" alt="1-
+k"  class="frac" align="middle" /></td><td 
+class="align-even"> = <img 
+src="Na1389x.png" alt="1-
+1"  class="frac" align="middle" /> + <img 
+src="Na1390x.png" alt="1-
+2"  class="frac" align="middle" /> + <img 
+src="Na1391x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <img 
+src="Na1392x.png" alt="1--
+2n"  class="frac" align="middle" /></td>                     <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>          <td 
+class="align-even"> <tspan font-family="cmsy" font-size="10">≥</tspan><img 
+src="Na1393x.png" alt="1
+--
+1"  class="frac" align="middle" /> + <img 
+src="Na1394x.png" alt="1
+--
+2"  class="frac" align="middle" /> + <img 
+src="Na1395x.png" alt="(1    1)
+ --+  --
+ 4    4"  class="left" align="middle" /> + <img 
+src="Na1396x.png" alt="( 1   1   1   1)
+  --+ --+ --+ --
+  8   8   8   8"  class="left" align="middle" /></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>          <td 
+class="align-even"> + <img 
+src="Na1397x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <img 
+src="Na1398x.png" alt="(             )
+ -1-        1--
+ 2n + ⋅⋅⋅+  2n
+◟------◝◜------◞"  /><sub><tspan font-family="cmr" font-size="8">2</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan><tspan font-family="cmsy" font-size="6">−</tspan><tspan font-family="cmr" font-size="6">1</tspan></sup> terms</sub></td>      <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>          <td 
+class="align-even"> = 1 + <img 
+src="Na1399x.png" alt="1-
+2"  class="frac" align="middle" /> + <img 
+src="Na1400x.png" alt="1-
+2"  class="frac" align="middle" /> + <img 
+src="Na1401x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <img 
+src="Na1402x.png" alt="1-
+2"  class="frac" align="middle" /> = 1 + <img 
+src="Na1403x.png" alt="n-−-1
+  2"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">.</tspan></td>      <td 
+class="align-label"></td><td 
+class="align-label">                              </td></tr></table>
+</p><!--l. 437--><p class="noindent" >A sequence satisfying <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup></sub> <tspan font-family="cmsy" font-size="10">≥ </tspan>1 + <img 
+src="Na1404x.png" alt="1
+2"  class="frac" align="middle" />(<tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1) will never converge to a finite number!</p>
+  </div>
+<!--l. 439--><p class="indent" >  </p></div>
+<!--l. 441--><p class="indent" >  I had better also mention that for nonnegative sums, convergence is just the same as having
+“finite sum” in the following sense.</p>
+<div class="mdframed" id="mdframed-504">
+<a 
+ id="x250-238014r785"></a>
+<div class="newtheorem">
+<!--l. 446--><p class="noindent" ><span class="head">
+<a 
+ id="x250-238015r5"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 26.4.5 </tspan><tspan font-family="cmss" font-size="10">(Partial sums of nonnegatives bounded implies convergent)</tspan><br 
+class="newline" /> </span><a 
+ id="x250-238016"></a> Let <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>
+be a series of <tspan font-family="cmti" font-size="10">nonnegative </tspan>real numbers. Then <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> converges to some limit if and only
+if there is a constant <tspan font-family="cmmi" font-size="10">M </tspan>such that
+</p>
+<div class="math-display" >
+<img 
+src="Na1405x.png" alt="a1 + ⋅⋅⋅+ an &#x003C; M
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 452--><p class="noindent" >for every positive integer <tspan font-family="cmmi" font-size="10">n</tspan>.
+</p>
+  </div>
+<!--l. 453--><p class="indent" >  </p></div>
+<!--l. 454--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 455--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>This is actually just <tspan font-family="cmbx" font-size="10">??</tspan>  in disguise, but since we left the proof as an exercise
+back then, we’ll write it out this time.
+</p><!--l. 459--><p class="indent" >  Obviously if no such <tspan font-family="cmmi" font-size="10">M </tspan>exists then convergence will not happen, since this means the
+sequence <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> of partial sums is unbounded.
+</p><!--l. 462--><p class="indent" >  Conversely, if such <tspan font-family="cmmi" font-size="10">M </tspan>exists then we have <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">≤</tspan><img 
+src="Na1406x.png" alt="⋅⋅⋅"  class="@cdots"  /> <tspan font-family="cmmi" font-size="10">&#x003C; M</tspan>. Then we contend the
+sequence <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> converges to <tspan font-family="cmmi" font-size="10">L</tspan> : = sup<sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> <tspan font-family="cmmi" font-size="10">&#x003C; </tspan><tspan font-family="cmsy" font-size="10">∞</tspan>. (If you read the proof that completeness implies
+Cauchy, the picture is nearly the same here, but simpler.) </p>
+<div class="center" 
+>
+<!--l. 468--><p class="noindent" >
+</p>
+</div>
+<!--l. 491--><p class="indent" >  Indeed, this means for any <tspan font-family="cmmi" font-size="10">𝜀 </tspan>there are infinitely many terms of the sequence exceeding
+<tspan font-family="cmmi" font-size="10">L </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">𝜀</tspan>; but since the sequence is monotonic, once <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> <tspan font-family="cmsy" font-size="10">≥ </tspan><tspan font-family="cmmi" font-size="10">L </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">𝜀 </tspan>then <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">′</tspan></sub><tspan font-family="cmsy" font-size="10">≥ </tspan><tspan font-family="cmmi" font-size="10">L </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">𝜀 </tspan>for all <tspan font-family="cmmi" font-size="10">n</tspan><tspan font-family="cmsy" font-size="10">′≥ </tspan><tspan font-family="cmmi" font-size="10">n</tspan>.
+This implies convergence.                                                                                □
+</p>
+  </div>
+<a 
+ id="x250-238017r786"></a>
+  <div class="newtheorem">
+<!--l. 499--><p class="noindent" ><span class="head">
+<a 
+ id="x250-238018r6"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 26.4.6 </tspan>(Writing <tspan font-family="cmex" font-size="10">∑</tspan>
+  <tspan font-family="cmmi" font-size="10">&#x003C; </tspan><tspan font-family="cmsy" font-size="10">∞</tspan>)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x250-238019"></a>For this reason, if <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> are nonnegative
+real numbers, it is customary to write
+</p>
+  <div class="math-display" >
+<img 
+src="Na1407x.png" alt="∑
+   ak &#x003C; ∞
+ k
+" class="math-display"  /></div>
+<!--l. 502--><p class="indent" >  as a shorthand for “<tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>  converges to a finite limit”, (or perhaps shorthand for
+“<tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> is bounded” — as we have just proved these are equivalent). We will use this
+notation too.
+</p>
+  </div>
+<!--l. 506--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+  <!--l. 508--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase175.htm" >next</a>] [<a 
+href="Nase173.htm" >prev</a>] [<a 
+href="Nase173.htm#tailNase173.htm" >prev-tail</a>] [<a 
+href="Nase174.htm" >front</a>] [<a 
+href="Nach29.htm#Nase174.htm" >up</a>] </p></div>
+<!--l. 508--><p class="indent" >  <a 
+ id="tailNase174.htm"></a> </p> 
+</body> 
+</html>

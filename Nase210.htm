@@ -1,0 +1,419 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Meromorphic functions</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 28--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase218.htm" >next</a>] [<a 
+href="Nase209.htm" >prev</a>] [<a 
+href="Nase209.htm#tailNase209.htm" >prev-tail</a>] [<a 
+href="#tailNase210.htm">tail</a>] [<a 
+href="Nase215.htm#Nase217.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">32.2</span>  <a 
+ id="x304-28900032.2"></a>Meromorphic functions</h3>
+<!--l. 29--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <img 
+src="Na1719x.png" alt="1
+z"  class="frac" align="middle" /><tspan font-family="cmti" font-size="10">, with a pole of order </tspan>1 <tspan font-family="cmti" font-size="10">and residue </tspan>1 <tspan font-family="cmti" font-size="10">at</tspan>
+<tspan font-family="cmmi" font-size="10">z </tspan>= 0<tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 31--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">U </tspan>be an open subset of <tspan font-family="msbm" font-size="10">ℂ </tspan>again. <a 
+ id="x304-289001r935"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 33--><p class="noindent" ><span class="head">
+<a 
+ id="x304-289002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 32.2.1.</tspan>  </span><a 
+ id="x304-289003"></a>A function <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>is <tspan font-family="cmbx" font-size="10">meromorphic</tspan> if there exists holomorphic
+functions <tspan font-family="cmmi" font-size="10">A,B</tspan>: <tspan font-family="cmmi" font-size="10">U  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ  </tspan>with <tspan font-family="cmmi" font-size="10">B </tspan>not identically zero in any open neighborhood, and
+<tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>) = <tspan font-family="cmmi" font-size="10">A</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>)<tspan font-family="cmmi" font-size="10">∕B</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>) whenever <tspan font-family="cmmi" font-size="10">B</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>)<tspan font-family="cmmi" font-size="10">≠</tspan>0.
+</p>
+  </div>
+<!--l. 37--><p class="indent" >
+Let’s see how this function <tspan font-family="cmmi" font-size="10">f </tspan>behaves. If <tspan font-family="cmmi" font-size="10">z </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U </tspan>has <tspan font-family="cmmi" font-size="10">B</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>)<tspan font-family="cmmi" font-size="10">≠</tspan>0, then in some small open
+neighborhood the function <tspan font-family="cmmi" font-size="10">B </tspan>isn’t zero at all, and thus <tspan font-family="cmmi" font-size="10">A∕B </tspan>is in fact <tspan font-family="cmti" font-size="10">holomorphic</tspan>; thus <tspan font-family="cmmi" font-size="10">f </tspan>is
+holomorphic at <tspan font-family="cmmi" font-size="10">z</tspan>. (Concrete example: <img 
+src="Na1720x.png" alt="1
+z"  class="frac" align="middle" /> is holomorphic in any disk not containing
+0.)
+</p><!--l. 46--><p class="indent" >  On the other hand, suppose <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U </tspan>has <tspan font-family="cmmi" font-size="10">B</tspan>(<tspan font-family="cmmi" font-size="10">p</tspan>) = 0: without loss of generality, <tspan font-family="cmmi" font-size="10">p </tspan>= 0 to ease
+notation. By using the Taylor series at <tspan font-family="cmmi" font-size="10">p </tspan>= 0 we can put
+</p>
+  <div class="math-display" >
+<img 
+src="Na1721x.png" alt="          k        k+1
+B (z) = ckz + ck+1z   +  ...
+" class="math-display"  /></div>
+<!--l. 50--><p class="indent" >  with <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">≠</tspan>0 (certainly some coefficient is nonzero since <tspan font-family="cmmi" font-size="10">B </tspan>is not identically zero!). Then we
+can write
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1722x.png" alt="--1-- = 1--⋅-------1-------.
+B (z)   zk  ck + ck+1z + ...
+" class="math-display"  /></div>
+<!--l. 54--><p class="indent" >  But the fraction on the right is a holomorphic function in this open neighborhood! So all
+that’s happened is that we have an extra <tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmmi" font-size="8">k</tspan></sup> kicking around.
+</p><!--l. 65--><p class="indent" >  This gives us an equivalent way of viewing meromorphic functions:
+<a 
+ id="x304-289004r936"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 68--><p class="noindent" ><span class="head">
+<a 
+ id="x304-289005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 32.2.2.</tspan>  </span><a 
+ id="x304-289006"></a>Let <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>as usual. A <tspan font-family="cmbx" font-size="10">meromorphic</tspan> function is a function
+which  is  holomorphic  on  <tspan font-family="cmmi" font-size="10">U  </tspan>except  at  an  isolated  set  <tspan font-family="cmmi" font-size="10">S  </tspan>of  points  (meaning  it  is
+holomorphic as a function <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">∖ </tspan><tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>). For each <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">S</tspan>, called a <tspan font-family="cmbx" font-size="10">pole</tspan> of <tspan font-family="cmmi" font-size="10">f</tspan>, the function
+<tspan font-family="cmmi" font-size="10">f </tspan>must admit a <tspan font-family="cmbx" font-size="10">Laurent series</tspan>, meaning that
+</p>
+  <div class="math-display" >
+<img 
+src="Na1723x.png" alt="f (z ) =--c−-m-- + --c−m+1--- + ⋅⋅⋅+ -c−1-+ c  + c (z − p)+ ...
+       (z − p)m   (z − p)m −1        z − p   0    1
+" class="math-display"  /></div>
+<!--l. 83--><p class="indent" >  for all <tspan font-family="cmmi" font-size="10">z </tspan>in some open neighborhood of <tspan font-family="cmmi" font-size="10">p</tspan>, other than <tspan font-family="cmmi" font-size="10">z </tspan>= <tspan font-family="cmmi" font-size="10">p</tspan>. Here <tspan font-family="cmmi" font-size="10">m </tspan>is a positive integer
+(and <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmmi" font-size="8">m</tspan></sub><tspan font-family="cmmi" font-size="10">≠</tspan>0).
+</p>
+  </div>
+<!--l. 86--><p class="indent" >
+Note that the trailing end <tspan font-family="cmti" font-size="10">must </tspan>terminate. By “isolated set”, I mean that we can draw open
+neighborhoods around each pole in <tspan font-family="cmmi" font-size="10">S</tspan>, in such a way that no two open neighborhoods
+intersect.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-601">
+<a 
+ id="x304-289007r937"></a>
+<div class="newtheorem">
+<!--l. 93--><p class="noindent" ><span class="head">
+<a 
+ id="x304-289008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 32.2.3 </tspan>(Example of a meromorphic function)<br 
+class="newline" /> </span><a 
+ id="x304-289009"></a>Consider the function
+</p>
+<div class="math-display" >
+<img 
+src="Na1724x.png" alt="z-+-1.
+sinz
+" class="math-display"  /></div>
+<!--l. 95--><p class="noindent" >It is meromorphic, because it is holomorphic everywhere except at the zeros of sin<tspan font-family="cmmi" font-size="10">z</tspan>. At each
+of these points we can put a Laurent series: for example at <tspan font-family="cmmi" font-size="10">z </tspan>= 0 we have
+</p><table 
+class="align-star"><!--l. 104--><p class="noindent" >
+<tr><td 
+class="align-odd"><img 
+src="Na1726x.png" alt="z + 1
+-----
+ sin z"  class="frac" align="middle" /></td><td 
+class="align-even"> = (<tspan font-family="cmmi" font-size="10">z </tspan>+ 1) <tspan font-family="cmsy" font-size="10">⋅</tspan><img 
+src="Na1727x.png" alt="       1
+----z3---z5------
+z − 3! + 5! − ..."  class="frac" align="middle" /></td>                <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>     <td 
+class="align-even"> = <img 
+src="Na1728x.png" alt="1-
+z"  class="frac" align="middle" /> <tspan font-family="cmsy" font-size="10">⋅</tspan><img 
+src="Na1729x.png" alt="----(----z-+-1--------)
+1 −  z2 − z4+  z6− ...
+      3!   5!   7!"  class="frac" align="middle" /></td>             <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>     <td 
+class="align-even"> = <img 
+src="Na1730x.png" alt="1
+z-"  class="frac" align="middle" /> <tspan font-family="cmsy" font-size="10">⋅ </tspan>(<tspan font-family="cmmi" font-size="10">z </tspan>+ 1)<tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmsy" font-size="8">≥</tspan><tspan font-family="cmr" font-size="8">0</tspan></sub><img 
+src="Na1731x.png" alt="(                  )
+ z2   z4   z6
+ 3! − 5! + 7! − ..."  class="left" align="middle" /><sup><tspan font-family="cmmi" font-size="8">k</tspan></sup><tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                 </td></tr></table>
+                                                                                
+                                                                                
+</p><!--l. 105--><p class="noindent" >If we expand out the horrible sum (which I won’t do), then you get <img 
+src="Na1732x.png" alt="1
+z"  class="frac" align="middle" /> times a perfectly fine
+Taylor series, i.e. a Laurent series.
+</p>
+  </div>
+<!--l. 108--><p class="indent" >  </p></div>
+<a 
+ id="x304-289010r938"></a>
+  <div class="newtheorem">
+<!--l. 111--><p class="noindent" ><span class="head">
+<a 
+ id="x304-289011r4"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 32.2.4.</tspan>  </span><a 
+ id="x304-289012"></a>We’ll  often  say  something  like  “consider  the  function
+<tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>by <tspan font-family="cmmi" font-size="10">z</tspan><img 
+src="Na1733x.png" alt="↦→"  class="mapsto"  /><img 
+src="Na1734x.png" alt="1
+z"  class="frac" align="middle" />”. Of course this isn’t completely correct, because <tspan font-family="cmmi" font-size="10">f </tspan>doesn’t have a
+value at <tspan font-family="cmmi" font-size="10">z </tspan>= 0. If I was going to be completely rigorous I would just set <tspan font-family="cmmi" font-size="10">f</tspan>(0) = 2015 or
+something and move on with life, but for all intents let’s just think of it as “undefined
+at <tspan font-family="cmmi" font-size="10">z </tspan>= 0”.
+</p><!--l. 121--><p class="indent" >  Why don’t I just write <tspan font-family="cmmi" font-size="10">g </tspan>: <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">∖{</tspan>0<tspan font-family="cmsy" font-size="10">}→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>? The reason I have to do this is that it’s still
+important for <tspan font-family="cmmi" font-size="10">f </tspan>to remember it’s “trying” to be holomorphic on <tspan font-family="msbm" font-size="10">ℂ</tspan>, even if isn’t assigned
+a value at <tspan font-family="cmmi" font-size="10">z </tspan>= 0. As a function <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">∖{</tspan>0<tspan font-family="cmsy" font-size="10">}→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>the function <img 
+src="Na1735x.png" alt="1z"  class="frac" align="middle" /> is actually holomorphic.
+</p>
+  </div>
+<!--l. 126--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-602">
+<a 
+ id="x304-289013r939"></a>
+<div class="newtheorem">
+<!--l. 129--><p class="noindent" ><span class="head">
+<a 
+ id="x304-289014r5"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 32.2.5 —  </tspan> </span><a 
+ id="x304-289015"></a>I have shown that any function <tspan font-family="cmmi" font-size="10">A</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>)<tspan font-family="cmmi" font-size="10">∕B</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>) has this characterization
+with poles, but an important result is that the converse is true too: if <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">∖ </tspan><tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>
+is holomorphic for some isolated set <tspan font-family="cmmi" font-size="10">S</tspan>, and moreover <tspan font-family="cmmi" font-size="10">f </tspan>admits a Laurent series at each
+point in <tspan font-family="cmmi" font-size="10">S</tspan>, then <tspan font-family="cmmi" font-size="10">f </tspan>can be written as a rational quotient of holomorphic functions. I won’t
+prove this here, but it is good to be aware of.</p>
+  </div>
+<!--l. 137--><p class="indent" >  </p></div>
+<a 
+ id="x304-289016r940"></a>
+  <div class="newtheorem">
+<!--l. 140--><p class="noindent" ><span class="head">
+<a 
+ id="x304-289017r6"></a>
+<tspan font-family="cmbx" font-size="10">Definition 32.2.6.</tspan>  </span><a 
+ id="x304-289018"></a>Let <tspan font-family="cmmi" font-size="10">p </tspan>be a pole of a meromorphic function <tspan font-family="cmmi" font-size="10">f</tspan>, with Laurent series
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1736x.png" alt="f(z) = --c−m---+  --c−m+1---+ ⋅⋅⋅+  c−-1-+ c + c (z − p)+ ....
+       (z − p)m   (z − p)m− 1       z − p   0   1
+" class="math-display"  /></div>
+<!--l. 148--><p class="indent" >  The integer <tspan font-family="cmmi" font-size="10">m </tspan>is called the <tspan font-family="cmbx" font-size="10">order</tspan> of the pole. A pole of order 1 is called a <tspan font-family="cmbx" font-size="10">simple</tspan>
+<tspan font-family="cmbx" font-size="10">pole</tspan>.
+</p><!--l. 151--><p class="indent" >  We also give the coefficient <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub> a name, the <tspan font-family="cmbx" font-size="10">residue</tspan> of <tspan font-family="cmmi" font-size="10">f </tspan>at <tspan font-family="cmmi" font-size="10">p</tspan>, which we write Res(<tspan font-family="cmmi" font-size="10">f</tspan>;<tspan font-family="cmmi" font-size="10">p</tspan>).
+</p>
+  </div>
+<!--l. 153--><p class="indent" >
+</p><!--l. 155--><p class="indent" >  The order of a pole tells you how “bad” the pole is. The order of a pole is the “opposite”
+concept of the <tspan font-family="cmbx" font-size="10">multiplicity</tspan> of a <tspan font-family="cmbx" font-size="10">zero</tspan>. If <tspan font-family="cmmi" font-size="10">f </tspan>has a pole at zero, then its Taylor series near <tspan font-family="cmmi" font-size="10">z </tspan>= 0
+might look something like
+</p>
+  <div class="math-display" >
+<img 
+src="Na1737x.png" alt="       1    8    2    4
+f(z) = -5 + -3 − -2 + -+ 9 − 3z + 8z2 + ...
+       z    z    z    z
+" class="math-display"  /></div>
+<!--l. 159--><p class="indent" >  and so <tspan font-family="cmmi" font-size="10">f </tspan>has a pole of order five. By analogy, if <tspan font-family="cmmi" font-size="10">g </tspan>has a zero at <tspan font-family="cmmi" font-size="10">z </tspan>= 0, it might look
+something like
+</p>
+  <div class="math-display" >
+<img 
+src="Na1738x.png" alt="g(z) = 3z3 + 2z4 + 9z5 + ...
+" class="math-display"  /></div>
+<!--l. 162--><p class="indent" >  and so <tspan font-family="cmmi" font-size="10">g </tspan>has a zero of multiplicity three. These orders are additive: <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>)<tspan font-family="cmmi" font-size="10">g</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>) still has a pole
+of order 5 <tspan font-family="cmsy" font-size="10">− </tspan>3 = 2, but <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>)<tspan font-family="cmmi" font-size="10">g</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>)<sup><tspan font-family="cmr" font-size="8">2</tspan></sup> is completely patched now, and in fact has a <tspan font-family="cmbx" font-size="10">simple zero</tspan>
+now (that is, a zero of degree 1).</p>
+<div class="mdframed" id="mdframed-603">
+<a 
+ id="x304-289019r941"></a>
+<div class="newtheorem">
+<!--l. 168--><p class="noindent" ><span class="head">
+<a 
+ id="x304-289020r7"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 32.2.7.</tspan>  </span><a 
+ id="x304-289021"></a><tspan font-family="cmr" font-size="10">Convince yourself that orders are additive as described above. (This is obvious</tspan>
+<tspan font-family="cmr" font-size="10">once you understand that you are multiplying Taylor/Laurent series.)</tspan></p>
+  </div>
+<!--l. 171--><p class="indent" >  </p></div>
+<!--l. 173--><p class="indent" >  Metaphorically, poles can be thought of as “negative zeros”.
+</p><!--l. 176--><p class="indent" >  We can now give many more examples.</p>
+<div class="mdframed" id="mdframed-604">
+<a 
+ id="x304-289022r942"></a>
+<div class="newtheorem">
+<!--l. 178--><p class="noindent" ><span class="head">
+<a 
+ id="x304-289023r8"></a>
+<tspan font-family="cmbx" font-size="10">Example 32.2.8 </tspan>(Examples of meromorphic functions)<br 
+class="newline" /> </span><a 
+ id="x304-289024"></a>
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">Any holomorphic function is a meromorphic function which happens to have no
+    poles. Stupid, yes.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The function <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>by <tspan font-family="cmmi" font-size="10">z</tspan><img 
+src="Na1739x.png" alt="↦→"  class="mapsto"  />100<tspan font-family="cmmi" font-size="10">z</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan> for <tspan font-family="cmmi" font-size="10">z</tspan><tspan font-family="cmmi" font-size="10">≠</tspan>0 but undefined at zero is a meromorphic
+    function. Its only pole is at zero, which has order 1 and residue 100.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The function <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>by <tspan font-family="cmmi" font-size="10">z</tspan><img 
+src="Na1740x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">3</tspan></sup> + <tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmr" font-size="8">9</tspan></sup> is also a meromorphic function. Its only
+    pole is at zero, and it has order 3, and residue 0.
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate">The function <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>by <tspan font-family="cmmi" font-size="10">z</tspan><img 
+src="Na1741x.png" alt="↦→"  class="mapsto"  /><img 
+src="Na1742x.png" alt="ezz2"  class="frac" align="middle" />  is meromorphic, with the Laurent series at <tspan font-family="cmmi" font-size="10">z </tspan>= 0
+    given by
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na1743x.png" alt="ez    1-   1-  1-  z-  z2-  z3--
+z2 =  z2 + z + 2 + 6 + 24 + 120 + ....
+" class="math-display"  /></div>
+    <!--l. 195--><p class="noindent" >Hence the pole <tspan font-family="cmmi" font-size="10">z </tspan>= 0 has order 2 and residue 1.</p></dd></dl>
+</p>
+  </div>
+<!--l. 197--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-605">
+<a 
+ id="x304-289029r943"></a>
+<div class="newtheorem">
+<!--l. 200--><p class="noindent" ><span class="head">
+<a 
+ id="x304-289030r9"></a>
+<tspan font-family="cmbx" font-size="10">Example 32.2.9 </tspan>(A rational meromorphic function)<br 
+class="newline" /> </span><a 
+ id="x304-289031"></a>Consider the function <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>given
+by
+</p><table 
+class="align-star"><!--l. 206--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">z</tspan></td><td 
+class="align-even"><img 
+src="Na1745x.png" alt="↦→"  class="mapsto"  /><img 
+src="Na1746x.png" alt="z4 + 1
+z2-−-1"  class="frac" align="middle" /> = <tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + 1 + <img 
+src="Na1747x.png" alt="      2
+(z −-1)(z-+-1)"  class="frac" align="middle" /></td>     <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td> <td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + 1 + <img 
+src="Na1748x.png" alt="--1--
+z − 1"  class="frac" align="middle" /> <tspan font-family="cmsy" font-size="10">⋅</tspan><img 
+src="Na1749x.png" alt="---1---
+1 + z−21"  class="frac" align="middle" /></td>            <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td> <td 
+class="align-even"> = <img 
+src="Na1750x.png" alt="--1--
+z − 1"  class="frac" align="middle" /> + <img 
+src="Na1751x.png" alt="3-
+2"  class="frac" align="middle" /> + <img 
+src="Na1752x.png" alt="9-
+4"  class="frac" align="middle" />(<tspan font-family="cmmi" font-size="10">z </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1) + <img 
+src="Na1753x.png" alt="7-
+8"  class="frac" align="middle" />(<tspan font-family="cmmi" font-size="10">z </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1)<sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">…</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                         </td></tr></table>
+</p><!--l. 207--><p class="noindent" >It has a pole of order 1 and residue 1 at <tspan font-family="cmmi" font-size="10">z </tspan>= 1. (It also has a pole of order 1 at <tspan font-family="cmmi" font-size="10">z </tspan>= <tspan font-family="cmsy" font-size="10">−</tspan>1; you are
+invited to compute the residue.)
+</p>
+  </div>
+<!--l. 209--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<div class="mdframed" id="mdframed-606">
+<a 
+ id="x304-289032r944"></a>
+<div class="newtheorem">
+<!--l. 211--><p class="noindent" ><span class="head">
+<a 
+ id="x304-289033r10"></a>
+<tspan font-family="cmbx" font-size="10">Example 32.2.10 </tspan>(Function with infinitely many poles)<br 
+class="newline" /> </span><a 
+ id="x304-289034"></a>The function <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>by
+</p>
+<div class="math-display" >
+<img 
+src="Na1754x.png" alt="z ↦→ --1---
+    sin(z)
+" class="math-display"  /></div>
+<!--l. 213--><p class="noindent" >has infinitely many poles: the numbers <tspan font-family="cmmi" font-size="10">z </tspan>= 2<tspan font-family="cmmi" font-size="10">πk</tspan>, where <tspan font-family="cmmi" font-size="10">k </tspan>is an integer. Let’s compute the
+Laurent series at just <tspan font-family="cmmi" font-size="10">z </tspan>= 0:
+</p><table 
+class="align-star"><!--l. 221--><p class="noindent" >
+<tr><td 
+class="align-odd"><img 
+src="Na1756x.png" alt="    1
+sin(2πz)"  class="frac" align="middle" /></td><td 
+class="align-even"> = <img 
+src="Na1757x.png" alt="        1
+-z---z3--z5-----
+1! − 3! + 5! − ..."  class="frac" align="middle" /></td>          <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>        <td 
+class="align-even"> = <img 
+src="Na1758x.png" alt="1-
+z"  class="frac" align="middle" /> <tspan font-family="cmsy" font-size="10">⋅</tspan><img 
+src="Na1759x.png" alt="----(----1-------)-
+1 −  z2 − z4+ ...
+      3!   5!"  class="frac" align="middle" /></td>     <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>        <td 
+class="align-even"> = <img 
+src="Na1760x.png" alt="1-
+z"  class="frac" align="middle" /><tspan font-family="cmex" font-size="10">∑</tspan>
+    <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmsy" font-size="8">≥</tspan><tspan font-family="cmr" font-size="8">0</tspan></sub><img 
+src="Na1761x.png" alt="(             )
+ z2   z4
+  3! − 5! + ..."  class="left" align="middle" /><sup><tspan font-family="cmmi" font-size="8">k</tspan></sup><tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                           </td></tr></table>
+                                                                                
+                                                                                
+</p><!--l. 222--><p class="noindent" >which is a Laurent series, though I have no clue what the coefficients are. You can at least see
+the residue; the constant term of that huge sum is 1, so the residue is 1. Also, the pole has
+order 1.</p>
+  </div>
+<!--l. 226--><p class="indent" >  </p></div>
+<!--l. 228--><p class="indent" >  The Laurent series, if it exists, is unique (as you might have guessed), and by our result on
+holomorphic functions it is actually valid for <tspan font-family="cmti" font-size="10">any </tspan>disk centered at <tspan font-family="cmmi" font-size="10">p </tspan>(minus the point <tspan font-family="cmmi" font-size="10">p</tspan>). The
+part <img 
+src="Na1762x.png" alt="c−1
+z−p"  class="frac" align="middle" /> + <img 
+src="Na1763x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <img 
+src="Na1764x.png" alt="--c−m-m
+(z−p)"  class="frac" align="middle" /> is called the <tspan font-family="cmbx" font-size="10">principal part</tspan>, and the rest of the series
+<tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> + <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">z </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">p</tspan>) + <tspan font-family="cmmi" font-size="10">…</tspan> is called the <tspan font-family="cmbx" font-size="10">analytic part</tspan>.
+                                                                                
+                                                                                
+</p>
+  <!--l. 236--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase218.htm" >next</a>] [<a 
+href="Nase209.htm" >prev</a>] [<a 
+href="Nase209.htm#tailNase209.htm" >prev-tail</a>] [<a 
+href="Nase210.htm" >front</a>] [<a 
+href="Nase215.htm#Nase217.htm" >up</a>] </p></div>
+<!--l. 236--><p class="indent" >  <a 
+ id="tailNase210.htm"></a> </p> 
+</body> 
+</html>

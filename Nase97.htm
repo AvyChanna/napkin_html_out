@@ -1,0 +1,196 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>V ∨⊗ W gives matrices from V to W</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 303--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase98.htm" >next</a>] [<a 
+href="Nase96.htm" >prev</a>] [<a 
+href="Nase96.htm#tailNase96.htm" >prev-tail</a>] [<a 
+href="#tailNase97.htm">tail</a>] [<a 
+href="Nach14.htm#Nase97.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">11.3</span>  <a 
+ id="x147-13100011.3"></a><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>gives matrices from <tspan font-family="cmmi" font-size="10">V </tspan>to <tspan font-family="cmmi" font-size="10">W</tspan></h3>
+<!--l. 304--><p class="noindent" >Goal of this section:</p>
+<div class="mdframed" id="mdframed-287">
+<!--l. 306--><p class="noindent" ><tspan font-family="cmbx" font-size="10">If </tspan><tspan font-family="cmmi" font-size="10">V  </tspan><tspan font-family="cmbx" font-size="10">and </tspan><tspan font-family="cmmi" font-size="10">W </tspan><tspan font-family="cmbx" font-size="10">are finite-dimensional </tspan><tspan font-family="cmmi" font-size="10">k</tspan><tspan font-family="cmbx" font-size="10">-vector spaces then </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">W </tspan><tspan font-family="cmbx" font-size="10">represents linear</tspan>
+<tspan font-family="cmbx" font-size="10">maps </tspan><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W</tspan><tspan font-family="cmbx" font-size="10">.</tspan></p><!--l. 308--><p class="noindent" ></p>
+  </div>
+<!--l. 310--><p class="indent" >  Here’s the intuition. If <tspan font-family="cmmi" font-size="10">V </tspan>is three-dimensional and <tspan font-family="cmmi" font-size="10">W </tspan>is five-dimensional, then we can think
+of the maps <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>as a 5 <tspan font-family="cmsy" font-size="10">× </tspan>3 array of numbers. We want to think of these maps as a vector
+space: (since one can add or scale matrices). So it had better be a vector space
+with dimension 15, but just saying “<tspan font-family="cmmi" font-size="10">k</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmr" font-size="8">15</tspan></sup>” is not really that satisfying (what is the
+basis?).
+</p><!--l. 319--><p class="indent" >  To do better, we consider the tensor product
+</p>
+  <div class="math-display" >
+<img 
+src="Na454x.png" alt="  ∨
+V  ⊗ W
+" class="math-display"  /></div>
+<!--l. 321--><p class="indent" >  which somehow is a product of maps out of <tspan font-family="cmmi" font-size="10">V </tspan>and the target space <tspan font-family="cmmi" font-size="10">W</tspan>. We claim that this is
+in fact the space we want: i.e. <tspan font-family="cmbx" font-size="10">there is a natural bijection between elements of </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">W</tspan>
+<tspan font-family="cmbx" font-size="10">and linear maps from </tspan><tspan font-family="cmmi" font-size="10">V  </tspan><tspan font-family="cmbx" font-size="10">to </tspan><tspan font-family="cmmi" font-size="10">W</tspan>.
+</p><!--l. 326--><p class="indent" >  First, how do we interpret an element of <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>as a map <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>? For concreteness,
+suppose <tspan font-family="cmmi" font-size="10">V </tspan>has a basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>, and <tspan font-family="cmmi" font-size="10">W </tspan>has a basis <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>, <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">4</tspan></sub>, <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">5</tspan></sub>. Consider an element of
+<tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>, say
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na455x.png" alt="e∨ ⊗ (f2 + 2f4) + 4e∨⊗ f5.
+ 1                 2
+" class="math-display"  /></div>
+<!--l. 331--><p class="indent" >  We want to interpret this element as a function <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>: so given a <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>, we want to
+output an element of <tspan font-family="cmmi" font-size="10">W</tspan>. There’s really only one way to do this: feed in <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>into the <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>
+guys on the left. That is, take the map
+</p>
+  <div class="math-display" >
+<img 
+src="Na456x.png" alt="v ↦→  e∨1(v)⋅(f2 + 2f4) + 4e∨2(v)⋅f5 ∈ W.
+" class="math-display"  /></div>
+<!--l. 338--><p class="indent" >  So, there’s a natural way to interpret any element <tspan font-family="cmmi" font-size="10">ξ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <img 
+src="Na457x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">ξ</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">W </tspan>as a
+linear map <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>. The claim is that in fact, every linear map <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>has such an
+interpretation.
+</p><!--l. 344--><p class="indent" >  First, for notational convenience, <a 
+ id="x147-131001r451"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 346--><p class="noindent" ><span class="head">
+<a 
+ id="x147-131002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 11.3.1.</tspan>  </span><a 
+ id="x147-131003"></a>Let Hom(<tspan font-family="cmmi" font-size="10">V,W</tspan>) denote the set of linear maps from <tspan font-family="cmmi" font-size="10">V </tspan>to <tspan font-family="cmmi" font-size="10">W </tspan>(which
+one can interpret as matrices which send <tspan font-family="cmmi" font-size="10">V </tspan>to <tspan font-family="cmmi" font-size="10">W</tspan>), viewed as a vector space over <tspan font-family="cmmi" font-size="10">k</tspan>. (The
+“Hom” stands for homomorphism.)
+</p>
+  </div>
+<!--l. 350--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-288">
+<a 
+ id="x147-131004r452"></a>
+<div class="newtheorem">
+<!--l. 352--><p class="noindent" ><span class="head">
+<a 
+ id="x147-131005r2"></a>
+<tspan font-family="cmbx" font-size="10">Question 11.3.2.</tspan>  </span><a 
+ id="x147-131006"></a><tspan font-family="cmr" font-size="10">Identify</tspan> <tspan font-family="cmr" font-size="10">Hom</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">V,k</tspan><tspan font-family="cmr" font-size="10">) by name.</tspan>
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 353--><p class="indent" >  </p></div>
+<!--l. 355--><p class="indent" >  We can now write down something that’s more true generally.</p>
+<div class="mdframed" id="mdframed-289">
+<a 
+ id="x147-131007r453"></a>
+<div class="newtheorem">
+<!--l. 356--><p class="noindent" ><span class="head">
+<a 
+ id="x147-131008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 11.3.3 </tspan><tspan font-family="cmss" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>  <tspan font-family="cmmi" font-size="10">⇔</tspan>  <tspan font-family="cmss" font-size="10">linear maps </tspan><tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W</tspan><tspan font-family="cmss" font-size="10">)</tspan><br 
+class="newline" /> </span><a 
+ id="x147-131009"></a> Let <tspan font-family="cmmi" font-size="10">V </tspan>and <tspan font-family="cmmi" font-size="10">W </tspan>be finite-dimensional
+vector spaces. We described a map
+</p>
+<div class="math-display" >
+<img 
+src="Na458x.png" alt="Ψ : V∨ ⊗ W  → Hom  (V,W )
+" class="math-display"  /></div>
+<!--l. 361--><p class="noindent" >by sending <tspan font-family="cmmi" font-size="10">ξ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <img 
+src="Na459x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">ξ</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub> <tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub> to the linear map
+</p>
+<div class="math-display" >
+<img 
+src="Na460x.png" alt="v ↦→ ξ1(v)w1 + ⋅⋅⋅+ ξm(v)wm.
+" class="math-display"  /></div>
+<!--l. 363--><p class="noindent" >Then Ψ is an isomorphism of vector spaces, i.e. every linear map <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>can be uniquely
+represented as an element of <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>in this way.
+</p>
+  </div>
+<!--l. 365--><p class="indent" >  </p></div>
+<!--l. 367--><p class="indent" >  The above is perhaps a bit dense, so here is a concrete example.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-290">
+<a 
+ id="x147-131010r454"></a>
+<div class="newtheorem">
+<!--l. 368--><p class="noindent" ><span class="head">
+<a 
+ id="x147-131011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 11.3.4 </tspan>(Explicit example)<br 
+class="newline" /> </span><a 
+ id="x147-131012"></a>Let <tspan font-family="cmmi" font-size="10">V  </tspan>= <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>  and take a basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>  of <tspan font-family="cmmi" font-size="10">V </tspan>. Then
+define <tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>by
+</p>
+<div class="math-display" >
+<img 
+src="Na461x.png" alt="    [    ]
+     1  2
+T =  3  4  .
+" class="math-display"  /></div>
+<!--l. 374--><p class="noindent" >Then we have
+</p>
+<div class="math-display" >
+<img 
+src="Na462x.png" alt="Ψ (e∨1 ⊗ e1 + 2e∨2 ⊗ e1 + 3e∨1 ⊗ e2 + 4e∨2 ⊗ e2) = T.
+" class="math-display"  /></div>
+<!--l. 377--><p class="noindent" >The beauty is that the Ψ definition is basis-free; thus even if we change the basis, although
+the above expression will look completely different, the <tspan font-family="cmti" font-size="10">actual element </tspan>in <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">V </tspan>doesn’t
+change.
+</p>
+  </div>
+<!--l. 381--><p class="indent" >  </p></div>
+<!--l. 383--><p class="indent" >  Despite this, we’ll indulge ourselves in using coordinates for the proof.
+</p><!--l. 384--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 385--><p class="indent" >  <span class="head">
+                                                                                
+                                                                                
+<tspan font-family="cmti" font-size="10">Proof of</tspan> <tspan font-family="cmbx" font-size="10">??</tspan><tspan font-family="cmti" font-size="10"> .</tspan> </span> This looks intimidating, but it’s actually not difficult. We proceed in two
+steps:
+     </p><dl class="enumerate"><dt class="enumerate">
+   1. </dt><dd 
+class="enumerate">First, we check that Ψ is <tspan font-family="cmti" font-size="10">surjective</tspan>; every linear map has at least one representation
+     in <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>. To see this, take any <tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>. Suppose <tspan font-family="cmmi" font-size="10">V </tspan>has basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> and
+     that <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) = <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) = <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> and <tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>) = <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>. Then the element
+<div class="math-display" >
+<img 
+src="Na463x.png" alt="e∨1 ⊗ w1 + e∨2 ⊗ w2 + e∨3 ⊗ w3
+" class="math-display"  /></div>
+     <!--l. 396--><p class="noindent" >works, as it is contrived to agree with <tspan font-family="cmmi" font-size="10">T </tspan>on the basis elements <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>.
+     </p></dd><dt class="enumerate">
+   2. </dt><dd 
+class="enumerate">So it suffices to check now that dim<tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">W </tspan>= dimHom(<tspan font-family="cmmi" font-size="10">V,W</tspan>). Certainly, <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">⊗</tspan><tspan font-family="cmmi" font-size="10">W</tspan>
+     has dimension dim<tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⋅</tspan>dim<tspan font-family="cmmi" font-size="10">W</tspan>. But by viewing Hom(<tspan font-family="cmmi" font-size="10">V,W</tspan>) as dim<tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⋅</tspan>dim<tspan font-family="cmmi" font-size="10">W </tspan>matrices,
+     we see that it too has dimension dim<tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">⋅</tspan> dim<tspan font-family="cmmi" font-size="10">W</tspan>.                                          □</dd></dl>
+</div>
+<!--l. 403--><p class="indent" >  So there is a <tspan font-family="cmbx" font-size="10">natural isomorphism </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">⊗ </tspan><tspan font-family="cmmi" font-size="10">W</tspan><img 
+src="Na464x.png" alt="∼="  class="cong"  />Hom(<tspan font-family="cmmi" font-size="10">V,W</tspan>). While we did use a basis
+liberally in the <tspan font-family="cmti" font-size="10">proof that it works</tspan>, this doesn’t change the fact that the isomorphism is
+“God-given”, depending only on the spirit of <tspan font-family="cmmi" font-size="10">V </tspan>and <tspan font-family="cmmi" font-size="10">W </tspan>itself and not which basis we choose to
+express the vector spaces in.
+                                                                                
+                                                                                
+</p>
+  <!--l. 411--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase98.htm" >next</a>] [<a 
+href="Nase96.htm" >prev</a>] [<a 
+href="Nase96.htm#tailNase96.htm" >prev-tail</a>] [<a 
+href="Nase97.htm" >front</a>] [<a 
+href="Nach14.htm#Nase97.htm" >up</a>] </p></div>
+<!--l. 411--><p class="indent" >  <a 
+ id="tailNase97.htm"></a> </p> 
+</body> 
+</html>

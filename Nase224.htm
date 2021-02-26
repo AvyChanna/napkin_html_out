@@ -1,0 +1,170 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Measure spaces</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 209--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase235.htm" >next</a>] [<a 
+href="Nase223.htm" >prev</a>] [<a 
+href="Nase223.htm#tailNase223.htm" >prev-tail</a>] [<a 
+href="Nase216.htm#tailNase224.htm">tail</a>] [<a 
+href="Nase229.htm#Nase234.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">34.4</span>  <a 
+ id="x325-30700034.4"></a>Measure spaces</h3>
+<a 
+ id="x325-307001r969"></a>
+  <div class="newtheorem">
+<!--l. 211--><p class="noindent" ><span class="head">
+<a 
+ id="x325-307002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 34.4.1.</tspan>  </span><a 
+ id="x325-307003"></a>Measurable spaces (Ω<tspan font-family="cmmi" font-size="10">, </tspan><tspan font-family="rsfs" font-size="10">𝒜  </tspan>) are then equipped with a function
+<tspan font-family="cmmi" font-size="10">μ</tspan>: <tspan font-family="rsfs" font-size="10">𝒜    </tspan><tspan font-family="cmsy" font-size="10">→ </tspan>[0<tspan font-family="cmmi" font-size="10">,</tspan>+<tspan font-family="cmsy" font-size="10">∞</tspan>] called the <tspan font-family="cmbx" font-size="10">measure</tspan>, which is required to satisfy the following axioms:
+</p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">μ</tspan>(<tspan font-family="msbm" font-size="10">∅</tspan>) = 0
+     </li>
+     <li class="itemize"><tspan font-family="cmbx" font-size="10">Countable additivity</tspan>: If <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, …are disjoint sets in <tspan font-family="rsfs" font-size="10">𝒜  </tspan>, then
+<div class="math-display" >
+<img 
+src="Na1821x.png" alt="  (      )
+    ⊔        ∑
+μ     An   =     μ(An ).
+    n         n
+" class="math-display"  /></div>
+     </li></ul>
+<!--l. 221--><p class="noindent" >The triple (Ω<tspan font-family="cmmi" font-size="10">, </tspan><tspan font-family="rsfs" font-size="10">𝒜  </tspan><tspan font-family="cmmi" font-size="10">,μ</tspan>) is called a <tspan font-family="cmbx" font-size="10">measure space</tspan>. It’s called a <tspan font-family="cmbx" font-size="10">probability space</tspan> if
+<tspan font-family="cmmi" font-size="10">μ</tspan>(Ω) = 1.
+</p>
+  </div>
+<!--l. 223--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-621">
+<a 
+ id="x325-307004r970"></a>
+<div class="newtheorem">
+<!--l. 225--><p class="noindent" ><span class="head">
+<a 
+ id="x325-307005r2"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 34.4.2 </tspan><tspan font-family="cmr" font-size="10">(Weaker equivalent definitions)</tspan><tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x325-307006"></a><tspan font-family="cmr" font-size="10">I chose to give axioms for </tspan><tspan font-family="rsfs" font-size="10">𝒜    </tspan><tspan font-family="cmr" font-size="10">and </tspan><tspan font-family="cmmi" font-size="10">μ </tspan><tspan font-family="cmr" font-size="10">that capture how</tspan>
+<tspan font-family="cmr" font-size="10">people think of them in practice, which means there is some redundancy: for example, being closed</tspan>
+<tspan font-family="cmr" font-size="10">under complements and unions is enough to get intersections, by de Morgan’s law. Here are more</tspan>
+<tspan font-family="cmr" font-size="10">minimal definitions, which are useful if you are trying to prove something satisfies them to reduce the</tspan>
+<tspan font-family="cmr" font-size="10">amount of work you have to do:</tspan>
+   </p><dl class="enumerate"><dt class="enumerate">
+<tspan font-family="cmr" font-size="10">(a)</tspan> </dt><dd 
+class="enumerate"><tspan font-family="cmr" font-size="10">The axioms on </tspan><tspan font-family="rsfs" font-size="10">𝒜    </tspan><tspan font-family="cmr" font-size="10">can be weakened to (i) </tspan><tspan font-family="msbm" font-size="10">∅ </tspan><tspan font-family="cmsy" font-size="10">∈</tspan><tspan font-family="rsfs" font-size="10">𝒜    </tspan><tspan font-family="cmr" font-size="10">and (ii) </tspan><tspan font-family="rsfs" font-size="10">𝒜    </tspan><tspan font-family="cmr" font-size="10">is closed under complements</tspan>
+   <tspan font-family="cmr" font-size="10">and countable </tspan><tspan font-family="cmti" font-size="10">disjoint </tspan><tspan font-family="cmr" font-size="10">unions.</tspan>
+   </dd><dt class="enumerate">
+<tspan font-family="cmr" font-size="10">(b)</tspan> </dt><dd 
+class="enumerate"><tspan font-family="cmr" font-size="10">The axioms on </tspan><tspan font-family="cmmi" font-size="10">μ </tspan><tspan font-family="cmr" font-size="10">can be weakened to (i) </tspan><tspan font-family="cmmi" font-size="10">μ</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="msbm" font-size="10">∅</tspan><tspan font-family="cmr" font-size="10">) = 0, (ii) </tspan><tspan font-family="cmmi" font-size="10">μ</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">⊔ </tspan><tspan font-family="cmmi" font-size="10">B</tspan><tspan font-family="cmr" font-size="10">) = </tspan><tspan font-family="cmmi" font-size="10">μ</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">A</tspan><tspan font-family="cmr" font-size="10">) + </tspan><tspan font-family="cmmi" font-size="10">μ</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">B</tspan><tspan font-family="cmr" font-size="10">), and (iii)</tspan>
+   <tspan font-family="cmr" font-size="10">for </tspan><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="7">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊇ </tspan><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="7">2</tspan></sub> <tspan font-family="cmsy" font-size="10">⊇</tspan><img 
+src="Na1822x.png" alt="⋅⋅⋅"  class="@cdots"  /><tspan font-family="cmr" font-size="10">, we have </tspan><tspan font-family="cmmi" font-size="10">μ</tspan><img 
+src="Na1823x.png" alt=" ⋂
+( n An)"  class="left" align="middle" /> <tspan font-family="cmr" font-size="10">=</tspan> <tspan font-family="cmr" font-size="10">lim</tspan><sub><tspan font-family="cmmi" font-size="7">n</tspan></sub><tspan font-family="cmmi" font-size="10">μ</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmmi" font-size="7">n</tspan></sub><tspan font-family="cmr" font-size="10">).</tspan></dd></dl>
+</p>
+  </div>
+<!--l. 244--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-622">
+<a 
+ id="x325-307009r971"></a>
+<div class="newtheorem">
+<!--l. 248--><p class="noindent" ><span class="head">
+<a 
+ id="x325-307010r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 34.4.3 —  </tspan> </span><a 
+ id="x325-307011"></a>Here are some immediate remarks on these definitions. </p>
+     <ul class="itemize1">
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">B </tspan>are measurable, then <tspan font-family="cmmi" font-size="10">μ</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan>) <tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">μ</tspan>(<tspan font-family="cmmi" font-size="10">B</tspan>) since <tspan font-family="cmmi" font-size="10">μ</tspan>(<tspan font-family="cmmi" font-size="10">B</tspan>) = <tspan font-family="cmmi" font-size="10">μ</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan>) + <tspan font-family="cmmi" font-size="10">μ</tspan>(<tspan font-family="cmmi" font-size="10">B </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">A</tspan>).
+     </li>
+     <li class="itemize">In particular, in a probability space all measures are in [0<tspan font-family="cmmi" font-size="10">,</tspan>1]. On the other hand,
+     for general measure spaces we’ll allow +<tspan font-family="cmsy" font-size="10">∞ </tspan>as a possible measure (hence the choice
+     of [0<tspan font-family="cmmi" font-size="10">,</tspan>+<tspan font-family="cmsy" font-size="10">∞</tspan>] as codomain for <tspan font-family="cmmi" font-size="10">μ</tspan>).
+     </li>
+     <li class="itemize">We want to allow at least countable unions / additivity because with finite unions
+     it’s too hard to make progress: it’s too hard to estimate the area of a circle without
+     being able to talk about limits of countably infinitely many triangles.</li></ul>
+</p>
+  </div>
+<!--l. 261--><p class="indent" >  </p></div>
+<!--l. 262--><p class="noindent" >We <tspan font-family="cmti" font-size="10">don’t </tspan>want to allow uncountable unions and additivity, because uncountable
+sums basically never work out. In particular, there is a nice elementary exercise as
+follows:
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-623">
+<a 
+ id="x325-307012r972"></a>
+<div class="newtheorem">
+<!--l. 266--><p class="noindent" ><span class="head">
+<a 
+ id="x325-307013r4"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 34.4.4 </tspan><tspan font-family="cmr" font-size="10">(Tricky)</tspan><tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x325-307014"></a><tspan font-family="cmr" font-size="10">Let </tspan><tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmr" font-size="10">be an uncountable set of positive real numbers. Show that</tspan>
+<tspan font-family="cmr" font-size="10">some finite subset </tspan><tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmr" font-size="10">has sum greater than 10</tspan><sup><tspan font-family="cmr" font-size="7">2019</tspan></sup><tspan font-family="cmr" font-size="10">. Colloquially, “uncountable many positive</tspan>
+<tspan font-family="cmr" font-size="10">reals cannot have finite sum”.</tspan></p>
+  </div>
+<!--l. 271--><p class="indent" >  </p></div>
+<!--l. 272--><p class="indent" >  So countable sums are as far as we’ll let the infinite sums go. This is the reason why we
+considered <tspan font-family="cmmi" font-size="10">σ</tspan>-algebras in the first place.</p>
+<div class="mdframed" id="mdframed-624">
+<a 
+ id="x325-307015r973"></a>
+<div class="newtheorem">
+<!--l. 277--><p class="noindent" ><span class="head">
+<a 
+ id="x325-307016r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 34.4.5 </tspan>(Measures)<br 
+class="newline" /> </span><a 
+ id="x325-307017"></a>We now discuss measures on each of the spaces in our previous
+examples.
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">If <tspan font-family="rsfs" font-size="10">𝒜    </tspan>= 2<sup><tspan font-family="cmr" font-size="8">Ω</tspan></sup> (or for that matter any <tspan font-family="rsfs" font-size="10">𝒜  </tspan>) we may declare <tspan font-family="cmmi" font-size="10">μ</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan>) = <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">A</tspan><tspan font-family="cmsy" font-size="10">| </tspan>for each <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="rsfs" font-size="10">𝒜</tspan>
+    (even if <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">A</tspan><tspan font-family="cmsy" font-size="10">| </tspan>=  <tspan font-family="cmsy" font-size="10">∞</tspan>). This is called the <tspan font-family="cmbx" font-size="10">counting measure</tspan>, simply counting the
+    number of elements.
+    <!--l. 287--><p class="noindent" >This is useful if Ω is countably infinite, and optimal if Ω is finite (and nonempty). In
+    the latter case, we will often normalize by <tspan font-family="cmmi" font-size="10">μ</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan>) = <img 
+src="Na1824x.png" alt="|A|
+|Ω|-"  class="frac" align="middle" /> so that Ω becomes a probability
+    space.
+    </p></dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">Suppose Ω was uncountable and we took <tspan font-family="rsfs" font-size="10">𝒜     </tspan>to be the countable sets and their
+    complements. Then
+<div class="math-display" >
+<img 
+src="Na1825x.png" alt="       {
+         0  A  is countable
+μ(A ) =  1  Ω ∖ A is countable
+" class="math-display"  /></div>
+    <!--l. 302--><p class="noindent" >is a measure. (Check this.)
+    </p></dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">Elephant in the room: defining a measure on <tspan font-family="rsfs" font-size="10">ℬ</tspan>(Ω) is hard even for Ω = <tspan font-family="msbm" font-size="10">ℝ</tspan>, and is
+    done in the next chapter. So you will have to hold your breath. Right now, all you
+    know is that by declaring my <tspan font-family="cmti" font-size="10">intent </tspan>to define a measure <tspan font-family="rsfs" font-size="10">ℬ</tspan>(Ω), I am hoping that at
+    least every open set will have a volume.</dd></dl>
+</p>
+  </div>
+<!--l. 312--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 314--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase235.htm" >next</a>] [<a 
+href="Nase223.htm" >prev</a>] [<a 
+href="Nase223.htm#tailNase223.htm" >prev-tail</a>] [<a 
+href="Nase224.htm" >front</a>] [<a 
+href="Nase229.htm#Nase234.htm" >up</a>] </p></div>
+<!--l. 314--><p class="indent" >  <a 
+ id="tailNase224.htm"></a> </p> 
+</body> 
+</html>

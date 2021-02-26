@@ -1,0 +1,180 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Differential forms</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 220--><div class="crosslinks"><p class="noindent">[<a 
+href="Napa13.htm" >next</a>] [<a 
+href="Nase273.htm" >prev</a>] [<a 
+href="Nase273.htm#tailNase273.htm" >prev-tail</a>] [<a 
+href="Nase259.htm#tailNase274.htm">tail</a>] [<a 
+href="Nase288.htm#Nase291.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">43.3</span>  <a 
+ id="x394-37400043.3"></a>Differential forms</h3>
+<!--l. 223--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Algebraically, something that looks like </tspan><tspan font-family="cmmi" font-size="10">f</tspan><tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">∧</tspan><tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> + <tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmti" font-size="10">,</tspan>
+<tspan font-family="cmti" font-size="10">and geometrically, see the previous section.</tspan>
+</p><!--l. 225--><p class="indent" >  Let’s now get a handle on what <tspan font-family="cmmi" font-size="10">dx </tspan>means. Fix a real vector space <tspan font-family="cmmi" font-size="10">V </tspan>of dimension <tspan font-family="cmmi" font-size="10">n</tspan>, and let
+<tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> be a standard basis. Let <tspan font-family="cmmi" font-size="10">U </tspan>be an open set.
+<a 
+ id="x394-374001r1109"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 231--><p class="noindent" ><span class="head">
+<a 
+ id="x394-374002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 43.3.1.</tspan>  </span><a 
+ id="x394-374003"></a>We define a <tspan font-family="cmbx" font-size="10">differential </tspan><tspan font-family="cmmi" font-size="10">k</tspan><tspan font-family="cmbx" font-size="10">-form</tspan> <tspan font-family="cmmi" font-size="10">α </tspan>on <tspan font-family="cmmi" font-size="10">U </tspan>to be a smooth (infinitely
+differentiable) map <tspan font-family="cmmi" font-size="10">α </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan>Λ<sup><tspan font-family="cmmi" font-size="8">k</tspan></sup>(<tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>). (Here Λ<sup><tspan font-family="cmmi" font-size="8">k</tspan></sup>(<tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>) is the wedge product.)
+</p>
+  </div>
+<!--l. 235--><p class="indent" >
+</p><!--l. 237--><p class="indent" >  Like with <tspan font-family="cmmi" font-size="10">Df</tspan>, we’ll use <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> instead of <tspan font-family="cmmi" font-size="10">α</tspan>(<tspan font-family="cmmi" font-size="10">p</tspan>).</p>
+<div class="mdframed" id="mdframed-712">
+<a 
+ id="x394-374004r1110"></a>
+<div class="newtheorem">
+<!--l. 240--><p class="noindent" ><span class="head">
+<a 
+ id="x394-374005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 43.3.2 </tspan>(<tspan font-family="cmmi" font-size="10">k</tspan>-forms for <tspan font-family="cmmi" font-size="10">k </tspan>= 0<tspan font-family="cmmi" font-size="10">,</tspan>1)<br 
+class="newline" /> </span><a 
+ id="x394-374006"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">A 0-form is just a function <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">A 1-form is a function <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>. For example, the total derivative <tspan font-family="cmmi" font-size="10">Df </tspan>of a function
+    <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>is a 1-form.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">Let <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> with standard basis <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>. Then a typical 2-form is given by
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na2024x.png" alt="αp = f(p) ⋅e∨1 ∧ e∨2 + g(p)⋅e∨1 ∧ e∨3 + h(p)⋅e∨2 ∧ e∨3 ∈ Λ2 (V)
+" class="math-display"  /></div>
+    <!--l. 257--><p class="noindent" >where <tspan font-family="cmmi" font-size="10">f,g,h </tspan>: <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>are smooth functions.</p></dd></dl>
+</p>
+  </div>
+<!--l. 259--><p class="indent" >  </p></div>
+<!--l. 261--><p class="indent" >  Now, by the projection principle (<tspan font-family="cmbx" font-size="10">??</tspan> ) we only have to specify a function on each of <img 
+src="Na2025x.png" alt="(n)
+ k"  />
+basis elements of Λ<sup><tspan font-family="cmmi" font-size="8">k</tspan></sup>(<tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>). So, take any basis <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmsy" font-size="10">} </tspan>of <tspan font-family="cmmi" font-size="10">V </tspan>, and take the usual basis for Λ<sup><tspan font-family="cmmi" font-size="8">k</tspan></sup>(<tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>) of
+elements
+</p>
+  <div class="math-display" >
+<img 
+src="Na2026x.png" alt=" ∨    ∨        ∨
+ei1 ∧ ei2 ∧⋅⋅⋅∧ eik.
+" class="math-display"  /></div>
+<!--l. 266--><p class="indent" >  Thus, a general <tspan font-family="cmmi" font-size="10">k</tspan>-form takes the shape
+</p>
+  <div class="math-display" >
+<img 
+src="Na2027x.png" alt="         ∑                 ∨    ∨         ∨
+αp =            fi1,...,ik(p)⋅ei1 ∧ ei2 ∧ ⋅⋅⋅∧ eik.
+     1≤i1&#x003C;⋅⋅⋅&#x003C;ik≤n
+" class="math-display"  /></div>
+<!--l. 270--><p class="indent" >  Since this is a huge nuisance to write, we will abbreviate this to just
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na2028x.png" alt="    ∑
+α =    fI ⋅deI
+     I
+" class="math-display"  /></div>
+<!--l. 272--><p class="indent" >  where we understand the sum runs over <tspan font-family="cmmi" font-size="10">I </tspan>= (<tspan font-family="cmmi" font-size="10">i</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,i</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>), and <tspan font-family="cmmi" font-size="10">de</tspan><sub><tspan font-family="cmmi" font-size="8">I</tspan></sub> represents <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan><sub><tspan font-family="cmr" font-size="6">1</tspan></sub></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmsy" font-size="10">∧</tspan><img 
+src="Na2029x.png" alt="⋅⋅⋅"  class="@cdots"  /><tspan font-family="cmsy" font-size="10">∧</tspan><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan><sub><tspan font-family="cmmi" font-size="6">k</tspan></sub></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>.
+</p><!--l. 275--><p class="indent" >  Now that we have an element Λ<sup><tspan font-family="cmmi" font-size="8">k</tspan></sup>(<tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>), what can it do? Well, first let me get the definition
+on the table, then tell you what it’s doing. <a 
+ id="x394-374010r1111"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 278--><p class="noindent" ><span class="head">
+<a 
+ id="x394-374011r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 43.3.3.</tspan>  </span><a 
+ id="x394-374012"></a>For linear functions <tspan font-family="cmmi" font-size="10">ξ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,ξ</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> and vectors <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,v</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>, set
+</p>
+  <div class="math-display" >
+<img 
+src="Na2030x.png" alt="                             ⌊                 ⌋
+                             |ξ1(.v1) ...  ξ1(.vk)|
+(ξ1 ∧⋅⋅⋅∧ ξk)(v1,...,vk) := det ⌈  ..     ...    ..  ⌉ .
+                              ξk(v1) ...  ξk(vk)
+" class="math-display"  /></div>
+<!--l. 290--><p class="indent" >  You can check that this is well-defined under e.g. <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">w </tspan>= <tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">w </tspan><tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">v </tspan>and so on.
+</p>
+  </div>
+<!--l. 292--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-713">
+<a 
+ id="x394-374013r1112"></a>
+<div class="newtheorem">
+<!--l. 295--><p class="noindent" ><span class="head">
+<a 
+ id="x394-374014r4"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Example 43.3.4 </tspan>(Evaluation of a differential form)<br 
+class="newline" /> </span><a 
+ id="x394-374015"></a>Set <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup>. Suppose that at some
+point <tspan font-family="cmmi" font-size="10">p</tspan>, the 2-form <tspan font-family="cmmi" font-size="10">α </tspan>returns
+</p>
+<div class="math-display" >
+<img 
+src="Na2031x.png" alt="αp = 2e∨1 ∧ e∨2 + e∨1 ∧ e∨3 .
+" class="math-display"  /></div>
+<!--l. 299--><p class="noindent" >Let <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> = 3<tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> + 4<tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> and <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> = 8<tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + 9<tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> + 5<tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>. Then
+</p>
+<div class="math-display" >
+<img 
+src="Na2032x.png" alt="                [    ]      [    ]
+                 3  8        3  8
+αp(v1,v2) = 2 det 1 9  + det 4  5  = 21.
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 311--><p class="indent" >  </p></div>
+<!--l. 313--><p class="indent" >  What does this definition mean? One way to say it is that</p>
+<div class="mdframed" id="mdframed-714">
+<!--l. 316--><p class="noindent" ><tspan font-family="cmbx" font-size="10">If I walk to a point </tspan><tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U</tspan><tspan font-family="cmbx" font-size="10">, a </tspan><tspan font-family="cmmi" font-size="10">k</tspan><tspan font-family="cmbx" font-size="10">-form </tspan><tspan font-family="cmmi" font-size="10">α </tspan><tspan font-family="cmbx" font-size="10">will take in </tspan><tspan font-family="cmmi" font-size="10">k </tspan><tspan font-family="cmbx" font-size="10">vectors </tspan><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,v</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> <tspan font-family="cmbx" font-size="10">and spit out a</tspan>
+<tspan font-family="cmbx" font-size="10">number, which is to be interpreted as a (signed) volume.</tspan></p><!--l. 319--><p class="noindent" ></p>
+  </div>
+<!--l. 321--><p class="indent" >  Picture: </p>
+<div class="center" 
+>
+<!--l. 322--><p class="noindent" >
+</p>
+</div>
+<!--l. 337--><p class="indent" >  In other words, at every point <tspan font-family="cmmi" font-size="10">p</tspan>, we get a function <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>. Then I can feed in <tspan font-family="cmmi" font-size="10">k </tspan>vectors to
+<tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> and get a number, which I interpret as a signed volume of the parallelpiped
+                                                                                
+                                                                                
+spanned by the <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmsy" font-size="10">}</tspan>’s in some way (e.g. the flux of a force field). That’s why <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> as a
+“function” is contrived to lie in the wedge product: this ensures that the notion of
+“volume” makes sense, so that for example, the equality <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,v</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) = <tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>)
+holds.
+</p><!--l. 345--><p class="indent" >  This is what makes differential forms so fit for integration.
+                                                                                
+                                                                                
+</p>
+  <!--l. 348--><div class="crosslinks"><p class="noindent">[<a 
+href="Napa13.htm" >next</a>] [<a 
+href="Nase273.htm" >prev</a>] [<a 
+href="Nase273.htm#tailNase273.htm" >prev-tail</a>] [<a 
+href="Nase274.htm" >front</a>] [<a 
+href="Nase288.htm#Nase291.htm" >up</a>] </p></div>
+<!--l. 348--><p class="indent" >  <a 
+ id="tailNase274.htm"></a> </p> 
+</body> 
+</html>

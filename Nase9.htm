@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Abstract algebra</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 67--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase10.htm" >next</a>] [<a 
+href="Nase8.htm" >prev</a>] [<a 
+href="Nase8.htm#tailNase8.htm" >prev-tail</a>] [<a 
+href="#tailNase9.htm">tail</a>] [<a 
+href="Nach3.htm#Nase9.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">0.2</span>  <a 
+ id="x26-260000.2"></a>Abstract algebra</h3>
+     <ul class="itemize1">
+     <li class="itemize"><a 
+href="Napa4.htm#x116-105000IV"><tspan font-family="cmssbx" font-size="10">Linear Algebra</tspan><!--tex4ht:ref: part:linalg --></a><tspan font-family="cmssbx" font-size="10">.</tspan><br 
+class="newline" /> In high school, linear algebra is often really unsatisfying. You are given these
+     arrays of numbers, and they’re manipulated in some ways that don’t really make
+     sense. For example, the determinant is defined as this funny-looking sum with a
+     bunch of products that seems to come out of thin air. Where does it come from?
+     Why does det(<tspan font-family="cmmi" font-size="10">AB</tspan>) = det<tspan font-family="cmmi" font-size="10">A</tspan>det<tspan font-family="cmmi" font-size="10">B </tspan>with such a bizarre formula?
+     <!--l. 78--><p class="noindent" >Well, it turns out that you <tspan font-family="cmti" font-size="10">can </tspan>explain all of these things! The trick is to not think
+     of linear algebra as the study of matrices, but instead as the study of <tspan font-family="cmti" font-size="10">linear maps</tspan>.
+     In earlier chapters we saw that we got great generalizations by speaking of “sets
+     with enriched structure” and “maps between them”. This time, our sets are <tspan font-family="cmbx" font-size="10">vector</tspan>
+     <tspan font-family="cmbx" font-size="10">spaces</tspan> and our maps are <tspan font-family="cmbx" font-size="10">linear maps</tspan>. We’ll find out that a matrix is actually
+     just a way of writing down a linear map as an array of numbers, but using the
+     “intrinsic” definitions we’ll de-mystify all the strange formulas from high school
+     and show you where they all come from.
+     </p><!--l. 92--><p class="noindent" >In particular, we’ll see <tspan font-family="cmti" font-size="10">easy </tspan>proofs that column rank equals row rank, determinant
+     is multiplicative, trace is the sum of the diagonal entries. We’ll see how the dot
+     product works, and learn all the words starting with “eigen-”. We’ll even have a
+     bonus chapter for Fourier analysis showing that you can also explain all the big
+     buzz-words by just being comfortable with vector spaces.
+     </p></li>
+     <li class="itemize"><a 
+href="Napa5.htm#x180-166000V"><tspan font-family="cmssbx" font-size="10">More on Groups</tspan><!--tex4ht:ref: part:groups --></a><tspan font-family="cmssbx" font-size="10">.</tspan><br 
+class="newline" /> Some of you might be interested in more about groups, and this chapter will give
+     you a way to play further. It starts with an exploration of <tspan font-family="cmbx" font-size="10">group actions</tspan>, then
+     goes into a bit on <tspan font-family="cmbx" font-size="10">Sylow theorems</tspan>, which are the tools that let us try to <tspan font-family="cmti" font-size="10">classify</tspan>
+     <tspan font-family="cmti" font-size="10">all groups</tspan>.
+     </li>
+     <li class="itemize"><a 
+href="Napa6.htm#x200-190000VI"><tspan font-family="cmssbx" font-size="10">Representation Theory</tspan><!--tex4ht:ref: part:repth --></a><tspan font-family="cmssbx" font-size="10">.</tspan><br 
+class="newline" /> If <tspan font-family="cmmi" font-size="10">G </tspan>is a group, we can try to understand it by implementing it as a <tspan font-family="cmti" font-size="10">matrix</tspan>,
+     i.e. considering embeddings <tspan font-family="cmmi" font-size="10">G</tspan><img 
+src="Na13x.png" alt="`→"  class="hookrightarrow"  />GL<sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>(<tspan font-family="msbm" font-size="10">ℂ</tspan>). These are called <tspan font-family="cmbx" font-size="10">representations</tspan> of
+     <tspan font-family="cmmi" font-size="10">G</tspan>; it turns out that they can be decomposed into <tspan font-family="cmbx" font-size="10">irreducible</tspan> ones. Astonishingly
+                                                                                
+                                                                                
+     we will find that we can <tspan font-family="cmti" font-size="10">basically characterize all of them</tspan>: the results turn out to
+     be short and completely unexpected.
+     <!--l. 118--><p class="noindent" >For  example,  we  will  find  out  that  there  are  finitely  many  irreducible
+     representations of a given finite group <tspan font-family="cmmi" font-size="10">G</tspan>; if we label them <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">r</tspan></sub>, then we
+     will find that <tspan font-family="cmmi" font-size="10">r </tspan>is the number of conjugacy classes of <tspan font-family="cmmi" font-size="10">G</tspan>, and moreover that
+     </p>
+<div class="math-display" >
+<img 
+src="Na14x.png" alt="|G | = (dim V1)2 + ⋅⋅⋅+ (dim Vr)2
+" class="math-display"  /></div>
+     <!--l. 124--><p class="noindent" >which comes out of nowhere!
+     </p><!--l. 126--><p class="noindent" >The last chapter of this part will show you some unexpected corollaries. Here is
+     one of them: let <tspan font-family="cmmi" font-size="10">G </tspan>be a finite group and create variables <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">g</tspan></sub> for each <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G</tspan>. A
+     <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">G</tspan><tspan font-family="cmsy" font-size="10">|×|</tspan><tspan font-family="cmmi" font-size="10">G</tspan><tspan font-family="cmsy" font-size="10">| </tspan>matrix <tspan font-family="cmmi" font-size="10">M </tspan>is defined by setting the (<tspan font-family="cmmi" font-size="10">g,h</tspan>)th entry to be the variable <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">g</tspan><tspan font-family="cmsy" font-size="8">⋅</tspan><tspan font-family="cmmi" font-size="8">h</tspan></sub>.
+     Then this determinant will turn out to <tspan font-family="cmti" font-size="10">factor</tspan>, and the factors will correspond to
+     the <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> we described above: there will be an irreducible factor of degree dim<tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>
+     appearing dim<tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> times. This result, called the <tspan font-family="cmbx" font-size="10">Frobenius determinant</tspan>, is said
+     to have given birth to representation theory.
+     </p></li>
+     <li class="itemize"><a 
+href="Napa7.htm#x227-216000VII"><tspan font-family="cmssbx" font-size="10">Quantum Algorithms</tspan><!--tex4ht:ref: part:quantum --></a><tspan font-family="cmssbx" font-size="10">.</tspan><br 
+class="newline" /> If you ever wondered what <tspan font-family="cmbx" font-size="10">Shor’s algorithm</tspan> is, this chapter will use the built-up
+     linear algebra to tell you!</li></ul>
+                                                                                
+                                                                                
+  <!--l. 145--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase10.htm" >next</a>] [<a 
+href="Nase8.htm" >prev</a>] [<a 
+href="Nase8.htm#tailNase8.htm" >prev-tail</a>] [<a 
+href="Nase9.htm" >front</a>] [<a 
+href="Nach3.htm#Nase9.htm" >up</a>] </p></div>
+<!--l. 145--><p class="indent" >  <a 
+ id="tailNase9.htm"></a> </p> 
+</body> 
+</html>

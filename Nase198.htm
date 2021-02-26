@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Dense sets and extension</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 90--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach34.htm" >next</a>] [<a 
+href="Nase197.htm" >prev</a>] [<a 
+href="Nase197.htm#tailNase197.htm" >prev-tail</a>] [<a 
+href="Nase195.htm#tailNase198.htm">tail</a>] [<a 
+href="Nase200.htm#Napa9.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">30.2</span>  <a 
+ id="x285-27400030.2"></a>Dense sets and extension</h3>
+<!--l. 93--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Functions from </tspan><tspan font-family="msbm" font-size="10">ℚ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N </tspan><tspan font-family="cmti" font-size="10">extend to </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N </tspan><tspan font-family="cmti" font-size="10">if they’re</tspan>
+<tspan font-family="cmti" font-size="10">uniformly continuous and </tspan><tspan font-family="cmmi" font-size="10">N </tspan><tspan font-family="cmti" font-size="10">is complete. See also counterexamples below.</tspan>
+<a 
+ id="x285-274001r901"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 96--><p class="noindent" ><span class="head">
+<a 
+ id="x285-274002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 30.2.1.</tspan>  </span><a 
+ id="x285-274003"></a>Let <tspan font-family="cmmi" font-size="10">S </tspan>be a subset (or subspace) of a topological space <tspan font-family="cmmi" font-size="10">X</tspan>. Then we
+say that <tspan font-family="cmmi" font-size="10">S </tspan>is <tspan font-family="cmbx" font-size="10">dense</tspan> if every open subset of <tspan font-family="cmmi" font-size="10">X </tspan>contains a point of <tspan font-family="cmmi" font-size="10">S</tspan>.
+</p>
+  </div>
+<!--l. 99--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-581">
+<a 
+ id="x285-274004r902"></a>
+<div class="newtheorem">
+<!--l. 102--><p class="noindent" ><span class="head">
+<a 
+ id="x285-274005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 30.2.2 </tspan>(Dense sets)<br 
+class="newline" /> </span><a 
+ id="x285-274006"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate"><tspan font-family="msbm" font-size="10">ℚ </tspan>is dense in <tspan font-family="msbm" font-size="10">ℝ</tspan>.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">In general, any metric space <tspan font-family="cmmi" font-size="10">M </tspan>is dense in its completion <span class="overline"><tspan font-family="cmmi" font-size="10">M</tspan></span>.</dd></dl>
+</p>
+  </div>
+<!--l. 109--><p class="indent" >  </p></div>
+<!--l. 111--><p class="indent" >  Dense sets lend themselves to having functions completed. The idea is that if I have a
+continuous function <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="msbm" font-size="10">ℚ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N</tspan>, for some metric space <tspan font-family="cmmi" font-size="10">N</tspan>, then there should be <tspan font-family="cmti" font-size="10">at most </tspan>one
+way to extend it to a function <span class='accentwidetilde'><tspan font-family="cmmi" font-size="10">f</tspan></span>: <tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N</tspan>. For we can approximate each rational number by
+real numbers: if I know <tspan font-family="cmmi" font-size="10">f</tspan>(1), <tspan font-family="cmmi" font-size="10">f</tspan>(1<tspan font-family="cmmi" font-size="10">.</tspan>4), <tspan font-family="cmmi" font-size="10">f</tspan>(1<tspan font-family="cmmi" font-size="10">.</tspan>41), … <span class='accentwidetilde'><tspan font-family="cmmi" font-size="10">f</tspan></span>(<img 
+src="Na1630x.png" alt="√ --
+  2"  class="sqrt"  />) had better be the limit of this sequence.
+So it is certainly unique.
+</p><!--l. 121--><p class="indent" >  However, there are two ways this could go wrong:
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-582">
+<a 
+ id="x285-274009r903"></a>
+<div class="newtheorem">
+<!--l. 123--><p class="noindent" ><span class="head">
+<a 
+ id="x285-274010r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 30.2.3 </tspan>(Non-existence of extension)<br 
+class="newline" /> </span><a 
+ id="x285-274011"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">It could be that <tspan font-family="cmmi" font-size="10">N  </tspan>is not complete, so the limit may not even exist in <tspan font-family="cmmi" font-size="10">N</tspan>. For
+    example if <tspan font-family="cmmi" font-size="10">N </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>, then certainly there is no way to extend even the identify function
+    <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="msbm" font-size="10">ℚ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N </tspan>to a function <span class='accentwidetilde'><tspan font-family="cmmi" font-size="10">f</tspan></span>: <tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N</tspan>.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">Even if <tspan font-family="cmmi" font-size="10">N </tspan>was complete, we might run into issues where <tspan font-family="cmmi" font-size="10">f </tspan>explodes. For example,
+    let <tspan font-family="cmmi" font-size="10">N </tspan>= <tspan font-family="msbm" font-size="10">ℝ </tspan>and define
+<div class="math-display" >
+<img 
+src="Na1631x.png" alt="          1
+f(x) = ----√--    f: ℚ → ℝ.
+       x −  2
+" class="math-display"  /></div>
+    <!--l. 137--><p class="noindent" >There is also no way to extend this due to the explosion of <tspan font-family="cmmi" font-size="10">f </tspan>near <img 
+src="Na1632x.png" alt="√ --
+  2"  class="sqrt"  /><img 
+src="Na1633x.png" alt=" ∕∈"  class="notin"  /><tspan font-family="msbm" font-size="10">ℚ</tspan>, which
+    would cause <span class='accentwidetilde'><tspan font-family="cmmi" font-size="10">f</tspan></span>(<img 
+src="Na1634x.png" alt="√--
+ 2"  class="sqrt"  />) to be undefined.</p></dd></dl>
+</p>
+  </div>
+<!--l. 141--><p class="indent" >  </p></div>
+<!--l. 142--><p class="indent" >  However, the way to fix this is to require <tspan font-family="cmmi" font-size="10">f </tspan>to be uniformly continuous, and in that case we
+do get a unique extension.</p>
+<div class="mdframed" id="mdframed-583">
+<a 
+ id="x285-274014r904"></a>
+<div class="newtheorem">
+<!--l. 146--><p class="noindent" ><span class="head">
+<a 
+ id="x285-274015r4"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 30.2.4 </tspan><tspan font-family="cmss" font-size="10">(Extending uniformly continuous functions)</tspan><br 
+class="newline" /> </span><a 
+ id="x285-274016"></a>Let <tspan font-family="cmmi" font-size="10">M </tspan>be a metric space, <tspan font-family="cmmi" font-size="10">N </tspan>a
+<tspan font-family="cmti" font-size="10">complete </tspan>metric space, and <tspan font-family="cmmi" font-size="10">S </tspan>a dense subspace of <tspan font-family="cmmi" font-size="10">M</tspan>. Suppose <tspan font-family="cmmi" font-size="10">ψ</tspan>: <tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N </tspan>is a <tspan font-family="cmti" font-size="10">uniformly</tspan>
+continuous function. Then there exists a unique continuous function <span class='accentwidetilde'><tspan font-family="cmmi" font-size="10">ψ</tspan></span>: <tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N </tspan>such that the
+diagram </p>
+                                                                                
+                                                                                
+<div class="center" 
+>
+<!--l. 152--><p class="noindent" >
+<!--l. 156--><p class="noindent" ><object data="Napkin-7.svg" width="90.26231 " height="72.99559 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+</p></div>
+<!--l. 158--><p class="noindent" >commutes.</p>
+  </div>
+<!--l. 159--><p class="indent" >  </p></div>
+<!--l. 160--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 161--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Outline of proof.</tspan> </span> As mentioned in the discussion, each <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">M </tspan>can be approximated by a
+sequence <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, … in <tspan font-family="cmmi" font-size="10">S </tspan>with <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">x</tspan>. The two main hypotheses, completeness and uniform
+continuity, are now used:</p>
+<div class="mdframed" id="mdframed-584">
+<a 
+ id="x285-274017r905"></a>
+<div class="newtheorem">
+<!--l. 168--><p class="noindent" ><span class="head">
+<a 
+ id="x285-274018r5"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 30.2.5.</tspan>  </span><a 
+ id="x285-274019"></a><tspan font-family="cmr" font-size="10">Prove that </tspan><tspan font-family="cmmi" font-size="10">ψ</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="7">1</tspan></sub><tspan font-family="cmr" font-size="10">), </tspan><tspan font-family="cmmi" font-size="10">ψ</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="7">2</tspan></sub><tspan font-family="cmr" font-size="10">), </tspan><tspan font-family="cmr" font-size="10">…</tspan><tspan font-family="cmr" font-size="10"> converges in </tspan><tspan font-family="cmmi" font-size="10">N </tspan><tspan font-family="cmr" font-size="10">by using uniform continuity to</tspan>
+<tspan font-family="cmr" font-size="10">show that it is Cauchy, and then appealing to completeness of </tspan><tspan font-family="cmmi" font-size="10">N</tspan><tspan font-family="cmr" font-size="10">.</tspan></p>
+  </div>
+<!--l. 171--><p class="indent" >  </p></div>
+<!--l. 172--><p class="indent" >  Hence we define <span class='accentwidetilde'><tspan font-family="cmmi" font-size="10">ψ</tspan></span>(<tspan font-family="cmmi" font-size="10">x</tspan>) to be the limit of that sequence; this doesn’t depend on the choice of
+sequence, and one can use sequential continuity to show <span class='accentwidetilde'><tspan font-family="cmmi" font-size="10">ψ</tspan></span> is continuous.                  □
+</p>
+  </div>
+                                                                                
+                                                                                
+  <!--l. 177--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach34.htm" >next</a>] [<a 
+href="Nase197.htm" >prev</a>] [<a 
+href="Nase197.htm#tailNase197.htm" >prev-tail</a>] [<a 
+href="Nase198.htm" >front</a>] [<a 
+href="Nase200.htm#Napa9.htm" >up</a>] </p></div>
+<!--l. 177--><p class="indent" >  <a 
+ id="tailNase198.htm"></a> </p> 
+</body> 
+</html>

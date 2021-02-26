@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The pointed homotopy category</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 601--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase396.htm" >next</a>] [<a 
+href="Nase370.htm" >prev</a>] [<a 
+href="Nase370.htm#tailNase370.htm" >prev-tail</a>] [<a 
+href="Nase348.htm#tailNase371.htm">tail</a>] [<a 
+href="Nase389.htm#Nach66.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">58.6</span>  <a 
+ id="x520-50000058.6"></a>The pointed homotopy category</h3>
+<!--l. 602--><p class="noindent" >This section is meant to be read by those who know some basic category theory. Those
+of you that don’t should come back after reading <tspan font-family="cmbx" font-size="10">??</tspan> . Those of you that do will
+enjoy how succinctly we can summarize the content of this chapter using categorical
+notions.
+<a 
+ id="x520-500001r1498"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 608--><p class="noindent" ><span class="head">
+<a 
+ id="x520-500002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 58.6.1.</tspan>  </span><a 
+ id="x520-500003"></a>The <tspan font-family="cmbx" font-size="10">pointed homotopy category</tspan> <tspan font-family="cmss" font-size="10">hTop</tspan><sub><tspan font-family="cmsy" font-size="8">∗</tspan></sub> is defined as follows.
+</p>
+     <ul class="itemize1">
+     <li class="itemize">Objects: pairs (<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) of spaces with a distinguished basepoint, and
+     </li>
+     <li class="itemize">Morphisms: <tspan font-family="cmti" font-size="10">homotopy classes </tspan>of continuous functions (<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) <tspan font-family="cmsy" font-size="10">→ </tspan>(<tspan font-family="cmmi" font-size="10">Y,y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>).</li></ul>
+  </div>
+<!--l. 613--><p class="indent" >
+In particular, two path-connected spaces are isomorphic in this category exactly when they are
+homotopy equivalent. Then we can summarize many of the preceding results as
+follows:</p>
+<div class="mdframed" id="mdframed-987">
+<a 
+ id="x520-500004r1499"></a>
+<div class="newtheorem">
+<!--l. 617--><p class="noindent" ><span class="head">
+<a 
+ id="x520-500005r2"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 58.6.2 </tspan><tspan font-family="cmss" font-size="10">(Functorial interpretation of fundamental groups)</tspan><br 
+class="newline" /> </span><a 
+ id="x520-500006"></a> There is a functor
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na2933x.png" alt="π1 : hTop∗ → Grp
+" class="math-display"  /></div>
+<!--l. 621--><p class="noindent" >sending <img 
+src="Na2934x.png" alt="(X,x0) ----π1 (X, x0)
+   |            |
+   |            |
+ f |          f♯ |
+   |            |
+       ----
+(Y,y0)      π1(Y,y0) "  />
+</p>
+  </div>
+<!--l. 627--><p class="indent" >  </p></div>
+<!--l. 628--><p class="indent" >  This implies several things, like </p>
+     <ul class="itemize1">
+     <li class="itemize">The functor bundles the information of <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">♯</tspan></sub>, including the fact that it respects
+     composition. In the categorical language, <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">♯</tspan></sub> is <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">f</tspan>).
+     </li>
+     <li class="itemize">Homotopic  spaces  have  isomorphic  fundamental  group  (since  the  spaces  are
+     isomorphic in <tspan font-family="cmss" font-size="10">hTop</tspan>, and functors preserve isomorphism by <tspan font-family="cmbx" font-size="10">??</tspan> ). In fact, you’ll
+     notice that the proofs of <tspan font-family="cmbx" font-size="10">??</tspan>  and <tspan font-family="cmbx" font-size="10">??</tspan>  are secretly identical to each other.
+     </li>
+     <li class="itemize">If maps <tspan font-family="cmmi" font-size="10">f,g </tspan>: (<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) <tspan font-family="cmsy" font-size="10">→ </tspan>(<tspan font-family="cmmi" font-size="10">Y,y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) are homotopic, then <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">♯</tspan></sub> = <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmmi" font-size="8">♯</tspan></sub>. This is basically <tspan font-family="cmbx" font-size="10">??</tspan> </li></ul>
+<div class="mdframed" id="mdframed-988">
+<a 
+ id="x520-500007r1500"></a>
+<div class="newtheorem">
+<!--l. 644--><p class="noindent" ><span class="head">
+<a 
+ id="x520-500008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 58.6.3 —  </tspan> </span><a 
+ id="x520-500009"></a>In fact, <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) is the set of arrows (<tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup><tspan font-family="cmmi" font-size="10">,</tspan>1) <tspan font-family="cmsy" font-size="10">→ </tspan>(<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) in <tspan font-family="cmss" font-size="10">hTop</tspan><sub><tspan font-family="cmsy" font-size="8">∗</tspan></sub>, so
+this is actually a covariant Yoneda functor (<tspan font-family="cmbx" font-size="10">??</tspan> ), except with target <tspan font-family="cmss" font-size="10">Grp</tspan> instead of <tspan font-family="cmss" font-size="10">Set</tspan>.
+</p>
+  </div>
+<!--l. 647--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 650--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase396.htm" >next</a>] [<a 
+href="Nase370.htm" >prev</a>] [<a 
+href="Nase370.htm#tailNase370.htm" >prev-tail</a>] [<a 
+href="Nase371.htm" >front</a>] [<a 
+href="Nase389.htm#Nach66.htm" >up</a>] </p></div>
+<!--l. 650--><p class="indent" >  <a 
+ id="tailNase371.htm"></a> </p> 
+</body> 
+</html>

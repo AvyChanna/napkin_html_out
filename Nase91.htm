@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Reducing to the nilpotent case</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 383--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase92.htm" >next</a>] [<a 
+href="Nase90.htm" >prev</a>] [<a 
+href="Nase90.htm#tailNase90.htm" >prev-tail</a>] [<a 
+href="#tailNase91.htm">tail</a>] [<a 
+href="Nach13.htm#Nase91.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">10.6</span>  <a 
+ id="x138-12400010.6"></a>Reducing to the nilpotent case</h3>
+<a 
+ id="x138-124001r422"></a>
+  <div class="newtheorem">
+<!--l. 385--><p class="noindent" ><span class="head">
+<a 
+ id="x138-124002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 10.6.1.</tspan>  </span><a 
+ id="x138-124003"></a>Let  <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>.  A  subspace  <tspan font-family="cmmi" font-size="10">W  </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">V  </tspan>is  called  <tspan font-family="cmmi" font-size="10">T</tspan>-<tspan font-family="cmbx" font-size="10">invariant</tspan> if
+<tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">w</tspan>) <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">W </tspan>for any <tspan font-family="cmmi" font-size="10">w </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>. In this way, <tspan font-family="cmmi" font-size="10">T </tspan>can be thought of as a map <tspan font-family="cmmi" font-size="10">W </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>.
+</p>
+  </div>
+<!--l. 389--><p class="indent" >
+In this way, the Jordan form is a decomposition of <tspan font-family="cmmi" font-size="10">V </tspan>into invariant subspaces.
+</p><!--l. 392--><p class="noindent" >Now I’m going to be cheap, and define: <a 
+ id="x138-124004r423"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 394--><p class="noindent" ><span class="head">
+<a 
+ id="x138-124005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 10.6.2.</tspan>  </span><a 
+ id="x138-124006"></a>A map <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>is called <tspan font-family="cmbx" font-size="10">indecomposable</tspan> if it’s impossible to
+write <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> where both <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> are nontrivial <tspan font-family="cmmi" font-size="10">T</tspan>-invariant spaces.
+</p>
+  </div>
+<!--l. 397--><p class="indent" >
+Picture of a <tspan font-family="cmti" font-size="10">decomposable </tspan>map:
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na420x.png" alt="⌊     |       ⌋
+      |0  0  0
+| W1  |0  0  0|
+||0--0-|-------||
+|⌈     |       |⌉
+ 0  0 |  W2
+ 0  0 |
+" class="math-display"  /></div>
+<!--l. 408--><p class="indent" >  As you might expect, we can break a space apart into “indecomposable” parts.</p>
+<div class="mdframed" id="mdframed-270">
+<a 
+ id="x138-124007r424"></a>
+<div class="newtheorem">
+<!--l. 410--><p class="noindent" ><span class="head">
+<a 
+ id="x138-124008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 10.6.3 </tspan><tspan font-family="cmss" font-size="10">(Invariant subspace decomposition)</tspan><br 
+class="newline" /> </span><a 
+ id="x138-124009"></a>Let  <tspan font-family="cmmi" font-size="10">V   </tspan>be  a  finite-dimensional
+vector space. Given any map <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>, we can write
+</p>
+<div class="math-display" >
+<img 
+src="Na421x.png" alt="V = V1 ⊕ V2 ⊕ ⋅⋅⋅⊕ Vm
+" class="math-display"  /></div>
+<!--l. 414--><p class="noindent" >where each <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> is <tspan font-family="cmmi" font-size="10">T</tspan>-invariant, and for any <tspan font-family="cmmi" font-size="10">i </tspan>the map <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> is indecomposable.
+</p>
+  </div>
+<!--l. 416--><p class="indent" >  </p></div>
+<!--l. 417--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 418--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Same  as  the  proof  that  every  integer  is  the  product  of  primes.  If  <tspan font-family="cmmi" font-size="10">V  </tspan>is  not
+decomposable, we are done. Otherwise, by definition write <tspan font-family="cmmi" font-size="10">V  </tspan>= <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊕ </tspan><tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>  and then
+repeat on each of <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">W</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>.                                                                         □
+</p>
+                                                                                
+                                                                                
+  </div>
+<!--l. 424--><p class="indent" >  Incredibly, with just that we’re almost done! Consider a decomposition as above, so that
+<tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub> is an indecomposable map. Then <tspan font-family="cmmi" font-size="10">T </tspan>has an eigenvalue <tspan font-family="cmmi" font-size="10">λ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, so let <tspan font-family="cmmi" font-size="10">S </tspan>= <tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">λ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>id;
+hence ker<tspan font-family="cmmi" font-size="10">S</tspan><tspan font-family="cmmi" font-size="10">≠</tspan><tspan font-family="cmsy" font-size="10">{</tspan>0<tspan font-family="cmsy" font-size="10">}</tspan>.</p>
+<div class="mdframed" id="mdframed-271">
+<a 
+ id="x138-124010r425"></a>
+<div class="newtheorem">
+<!--l. 429--><p class="noindent" ><span class="head">
+<a 
+ id="x138-124011r4"></a>
+<tspan font-family="cmbx" font-size="10">Question 10.6.4.</tspan>  </span><a 
+ id="x138-124012"></a><tspan font-family="cmr" font-size="10">Show that </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="7">1</tspan></sub> <tspan font-family="cmr" font-size="10">is also </tspan><tspan font-family="cmmi" font-size="10">S</tspan><tspan font-family="cmr" font-size="10">-invariant, so we can consider </tspan><tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmr" font-size="10">: </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="7">1</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="7">1</tspan></sub><tspan font-family="cmr" font-size="10">.</tspan></p>
+  </div>
+<!--l. 430--><p class="indent" >  </p></div>
+<!--l. 431--><p class="indent" >  By <tspan font-family="cmbx" font-size="10">??</tspan> , we have
+</p>
+  <div class="math-display" >
+<img 
+src="Na422x.png" alt="          N       N
+V1 = kerS   ⊕ im S
+" class="math-display"  /></div>
+<!--l. 433--><p class="indent" >  for some <tspan font-family="cmmi" font-size="10">N</tspan>. But we assumed <tspan font-family="cmmi" font-size="10">T </tspan>was indecomposable, so this can only happen if im<tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmmi" font-size="8">N</tspan></sup> = <tspan font-family="cmsy" font-size="10">{</tspan>0<tspan font-family="cmsy" font-size="10">}</tspan>
+and ker<tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmmi" font-size="8">N</tspan></sup> = <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub> (since ker<tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmmi" font-size="8">N</tspan></sup> contains our eigenvector). Hence <tspan font-family="cmmi" font-size="10">S </tspan>is nilpotent, so it’s a
+collection of staircases. In fact, since <tspan font-family="cmmi" font-size="10">T </tspan>is indecomposable, there is only one staircase. Hence
+<tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub> is a Jordan block, as desired.
+                                                                                
+                                                                                
+</p>
+  <!--l. 441--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase92.htm" >next</a>] [<a 
+href="Nase90.htm" >prev</a>] [<a 
+href="Nase90.htm#tailNase90.htm" >prev-tail</a>] [<a 
+href="Nase91.htm" >front</a>] [<a 
+href="Nach13.htm#Nase91.htm" >up</a>] </p></div>
+<!--l. 441--><p class="indent" >  <a 
+ id="tailNase91.htm"></a> </p> 
+</body> 
+</html>

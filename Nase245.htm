@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>LCA groups</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 9--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase259.htm" >next</a>] [<a 
+href="Nase233.htm#tailNase245.htm">tail</a>] [<a 
+href="Nase257.htm#Nase258.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">38.1</span>  <a 
+ id="x355-33200038.1"></a>LCA groups</h3>
+<!--l. 10--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="msbm" font-size="10">𝕋</tspan><tspan font-family="cmti" font-size="10">, </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 11--><p class="indent" >  Earlier we played with <tspan font-family="msbm" font-size="10">ℝ</tspan>, which is nice because in addition to being a topological space, it is
+also an abelian group under addition. These sorts of objects which are both groups and spaces
+have a name. <a 
+ id="x355-332001r1034"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 16--><p class="noindent" ><span class="head">
+<a 
+ id="x355-332002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 38.1.1.</tspan>  </span><a 
+ id="x355-332003"></a>A group <tspan font-family="cmmi" font-size="10">G </tspan>is a <tspan font-family="cmbx" font-size="10">topological group</tspan> is a
+Hausdorff<span class="footnote-mark"><a 
+href="Na356.htm#fn1x42"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x355-332004f1"></a> 
+topological space equipped also with a group operation (<tspan font-family="cmmi" font-size="10">G,</tspan><tspan font-family="cmsy" font-size="10">⋅</tspan>), such that both maps
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 23--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">G</tspan></td><td 
+class="align-even"> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">G</tspan>   by    (<tspan font-family="cmmi" font-size="10">x,y</tspan>)<img 
+src="Na1888x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">xy</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">G</tspan></td>    <td 
+class="align-even"> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">G</tspan>   by    <tspan font-family="cmmi" font-size="10">x</tspan><img 
+src="Na1889x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></td>   <td 
+class="align-label"></td><td 
+class="align-label">                                                   </td></tr></table>
+</p><!--l. 24--><p class="indent" >  are continuous.
+</p>
+  </div>
+<!--l. 25--><p class="indent" >
+</p><!--l. 27--><p class="indent" >  For our Fourier analysis, we need some additional conditions. <a 
+ id="x355-332005r1035"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 29--><p class="noindent" ><span class="head">
+<a 
+ id="x355-332006r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 38.1.2.</tspan>  </span><a 
+ id="x355-332007"></a>A <tspan font-family="cmbx" font-size="10">locally compact abelian (LCA) group</tspan> <tspan font-family="cmmi" font-size="10">G </tspan>is one for which
+the group operation is abelian, and moreover the topology is <tspan font-family="cmti" font-size="10">locally compact</tspan>: for every
+point <tspan font-family="cmmi" font-size="10">p </tspan>of <tspan font-family="cmmi" font-size="10">G</tspan>, there exists a compact subset <tspan font-family="cmmi" font-size="10">K </tspan>of <tspan font-family="cmmi" font-size="10">G </tspan>such that <tspan font-family="cmmi" font-size="10">K </tspan><tspan font-family="cmsy" font-size="10">∋ </tspan><tspan font-family="cmmi" font-size="10">p</tspan>, and <tspan font-family="cmmi" font-size="10">K </tspan>contains
+some open neighborhood of <tspan font-family="cmmi" font-size="10">p</tspan>.
+</p>
+  </div>
+<!--l. 35--><p class="indent" >
+</p><!--l. 37--><p class="indent" >  Our previous examples all fall into this category:</p>
+<div class="mdframed" id="mdframed-665">
+<a 
+ id="x355-332008r1036"></a>
+<div class="newtheorem">
+<!--l. 39--><p class="noindent" ><span class="head">
+<a 
+ id="x355-332009r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 38.1.3 </tspan>(Examples of locally compact abelian groups)<br 
+class="newline" /> </span><a 
+ id="x355-332010"></a></p><ul class="itemize1">
+     <li class="itemize">Any finite group <tspan font-family="cmmi" font-size="10">Z </tspan>with the discrete topology is LCA.
+     </li>
+     <li class="itemize">The circle group <tspan font-family="msbm" font-size="10">𝕋 </tspan>is LCA and also in fact compact.
+                                                                                
+                                                                                
+     </li>
+     <li class="itemize">The real numbers <tspan font-family="msbm" font-size="10">ℝ </tspan>are an example of an LCA group which is <tspan font-family="cmti" font-size="10">not </tspan>compact.</li></ul>
+</p>
+  </div>
+<!--l. 47--><p class="indent" >  </p></div>
+<!--l. 49--><p class="indent" >  These conditions turn out to be enough for us to define a measure on the space <tspan font-family="cmmi" font-size="10">G</tspan>. The
+relevant theorem, which we will just quote:</p>
+<div class="mdframed" id="mdframed-666">
+<a 
+ id="x355-332011r1037"></a>
+<div class="newtheorem">
+<!--l. 53--><p class="noindent" ><span class="head">
+<a 
+ id="x355-332012r4"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 38.1.4 </tspan><tspan font-family="cmss" font-size="10">(Haar measure)</tspan><br 
+class="newline" /> </span><a 
+ id="x355-332013"></a>Let <tspan font-family="cmmi" font-size="10">G </tspan>be a locally compact abelian group. We regard
+it as a measurable space using its Borel <tspan font-family="cmmi" font-size="10">σ</tspan>-algebra <tspan font-family="rsfs" font-size="10">ℬ</tspan>(<tspan font-family="cmmi" font-size="10">G</tspan>). There exists a measure
+<tspan font-family="cmmi" font-size="10">μ</tspan>: <tspan font-family="rsfs" font-size="10">ℬ</tspan>(<tspan font-family="cmmi" font-size="10">G</tspan>) <tspan font-family="cmsy" font-size="10">→ </tspan>[0<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">∞</tspan>], called the <tspan font-family="cmbx" font-size="10">Haar measure</tspan>, satisfying the following properties:
+</p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">μ</tspan>(<tspan font-family="cmmi" font-size="10">gS</tspan>)  =  <tspan font-family="cmmi" font-size="10">μ</tspan>(<tspan font-family="cmmi" font-size="10">S</tspan>)  for  every  <tspan font-family="cmmi" font-size="10">g  </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G  </tspan>and  measurable  <tspan font-family="cmmi" font-size="10">S</tspan>.  That  means  that  <tspan font-family="cmmi" font-size="10">μ  </tspan>is
+     “translation-invariant” under translation by <tspan font-family="cmmi" font-size="10">G</tspan>.
+     </li>
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">μ</tspan>(<tspan font-family="cmmi" font-size="10">K</tspan>) is finite for any compact set <tspan font-family="cmmi" font-size="10">K</tspan>.
+     </li>
+     <li class="itemize">if <tspan font-family="cmmi" font-size="10">S </tspan>is measurable, then <tspan font-family="cmmi" font-size="10">μ</tspan>(<tspan font-family="cmmi" font-size="10">S</tspan>) = inf <img 
+src="Na1890x.png" alt="{μ(U ): U ⊇ S open}"  class="left" align="middle" />.
+     </li>
+     <li class="itemize">if <tspan font-family="cmmi" font-size="10">U </tspan>is open, then <tspan font-family="cmmi" font-size="10">μ</tspan>(<tspan font-family="cmmi" font-size="10">U</tspan>) = sup<img 
+src="Na1891x.png" alt="{μ (S ): S ⊇ U measurable}"  class="left" align="middle" />.</li></ul>
+<!--l. 68--><p class="noindent" >Moreover, it is unique up to scaling by a positive constant.
+</p>
+  </div>
+<!--l. 69--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-667">
+<a 
+ id="x355-332014r1038"></a>
+<div class="newtheorem">
+<!--l. 72--><p class="noindent" ><span class="head">
+<a 
+ id="x355-332015r5"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 38.1.5 —  </tspan> </span><a 
+ id="x355-332016"></a>Note that if <tspan font-family="cmmi" font-size="10">G </tspan>is compact, then <tspan font-family="cmmi" font-size="10">μ</tspan>(<tspan font-family="cmmi" font-size="10">G</tspan>) is finite (and positive). For
+this reason the Haar measure on a LCA group <tspan font-family="cmmi" font-size="10">G </tspan>is usually normalized so <tspan font-family="cmmi" font-size="10">μ</tspan>(<tspan font-family="cmmi" font-size="10">G</tspan>) = 1.
+</p>
+  </div>
+<!--l. 75--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<!--l. 77--><p class="indent" >  For this chapter, we will only use the first two properties at all, and the other two are just
+mentioned for completeness. Note that this actually generalizes the chapter where we
+constructed a measure on <tspan font-family="rsfs" font-size="10">ℬ</tspan>(<tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>), since <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> is an LCA group!
+</p><!--l. 83--><p class="indent" >  So, in short: if we have an LCA group, we have a measure <tspan font-family="cmmi" font-size="10">μ </tspan>on it.
+                                                                                
+                                                                                
+</p>
+  <!--l. 86--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase259.htm" >next</a>] [<a 
+href="Nase245.htm" >front</a>] [<a 
+href="Nase257.htm#Nase258.htm" >up</a>] </p></div>
+<!--l. 86--><p class="indent" >  <a 
+ id="tailNase245.htm"></a> </p> 
+</body> 
+</html>

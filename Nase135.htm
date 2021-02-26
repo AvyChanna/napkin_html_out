@@ -1,0 +1,280 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Smith normal form</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 235--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase136.htm" >next</a>] [<a 
+href="Nase134.htm" >prev</a>] [<a 
+href="Nase134.htm#tailNase134.htm" >prev-tail</a>] [<a 
+href="#tailNase135.htm">tail</a>] [<a 
+href="Nach21.htm#Nase135.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">18.5</span>  <a 
+ id="x198-18800018.5"></a>Smith normal form</h3>
+<!--l. 236--><p class="noindent" >The idea is now that we have reduced our problem to studying linear maps <tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">R</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmmi" font-size="8">m</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">R</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmmi" font-size="8">n</tspan></sup>,
+which can be thought of as a generic matrix
+</p>
+  <div class="math-display" >
+<img 
+src="Na861x.png" alt="    ⌊             ⌋
+     a11  ...  a1m
+T = | ..   ..    .. |
+    ⌈ .     .   . ⌉
+     an1  ...  anm
+" class="math-display"  /></div>
+<!--l. 244--><p class="indent" >  for a basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">m</tspan></sub> of <tspan font-family="cmmi" font-size="10">R</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmmi" font-size="8">m</tspan></sup> and <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> of <tspan font-family="cmmi" font-size="10">N</tspan>.
+</p><!--l. 247--><p class="indent" >  Of course, as you might expect it ought to be possible to change the given basis of <tspan font-family="cmmi" font-size="10">T </tspan>such
+that <tspan font-family="cmmi" font-size="10">T </tspan>has a nicer matrix form. We already saw this in <tspan font-family="cmti" font-size="10">Jordan form</tspan>, where we had a map
+<tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>and changed the basis so that <tspan font-family="cmmi" font-size="10">T </tspan>was “almost diagonal”. This time, we have
+<tspan font-family="cmti" font-size="10">two </tspan>sets of bases we can change, so we would hope to get a diagonal basis, or even
+better.
+</p><!--l. 255--><p class="indent" >  Before proceeding let’s think about how we might edit the matrix: what operations are
+permitted? Here are some examples: </p>
+     <ul class="itemize1">
+     <li class="itemize">Swapping rows and columns, which just corresponds to re-ordering the basis.
+     </li>
+     <li class="itemize">Adding a multiple of a column to another column. For example, if we add 3 times
+     the first column to the second column, this is equivalent to replacing the basis
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na862x.png" alt="(e1,e2,e3,...,em) ↦→ (e1,e2 + 3e1,e3,...,em).
+" class="math-display"  /></div>
+     </li>
+     <li class="itemize">Adding a multiple of a row to another row. One can see that adding 3 times the
+     first row to the second row is equivalent to replacing the basis
+<div class="math-display" >
+<img 
+src="Na863x.png" alt="(f ,f ,f,...,f ) ↦→ (f −  3f,f ,f ,...,f ).
+  1  2  3     n      1     2 2  3      n
+" class="math-display"  /></div>
+     </li></ul>
+<!--l. 269--><p class="noindent" >More generally,</p>
+<div class="mdframed" id="mdframed-390">
+<!--l. 271--><p class="noindent" ><tspan font-family="cmbx" font-size="10">If </tspan><tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmbx" font-size="10">is an invertible </tspan><tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmbx" font-size="10">matrix we can replace </tspan><tspan font-family="cmmi" font-size="10">T </tspan><tspan font-family="cmbx" font-size="10">with </tspan><tspan font-family="cmmi" font-size="10">AT</tspan><tspan font-family="cmbx" font-size="10">.</tspan></p><!--l. 273--><p class="noindent" ></p>
+  </div>
+<!--l. 274--><p class="indent" >  This corresponds to replacing
+</p>
+  <div class="math-display" >
+<img 
+src="Na864x.png" alt="(f ,...,f ) ↦→ (A(f ),...,A(f ))
+ 1      n        1         n
+" class="math-display"  /></div>
+<!--l. 276--><p class="indent" >  (the “invertible” condition just guarantees the latter is a basis). Of course similarly we
+can replace <tspan font-family="cmmi" font-size="10">X </tspan>with <tspan font-family="cmmi" font-size="10">XB </tspan>where <tspan font-family="cmmi" font-size="10">B </tspan>is an invertible <tspan font-family="cmmi" font-size="10">m </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">m </tspan>matrix; this corresponds
+to
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na865x.png" alt="(e1,...,em ) ↦→ (B− 1(e1),...,B− 1(em ))
+" class="math-display"  /></div>
+<!--l. 281--><p class="indent" >  Armed with this knowledge, we can now approach:</p>
+<div class="mdframed" id="mdframed-391">
+<a 
+ id="x198-188001r616"></a>
+<div class="newtheorem">
+<!--l. 283--><p class="noindent" ><span class="head">
+<a 
+ id="x198-188002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 18.5.1 </tspan><tspan font-family="cmss" font-size="10">(Smith normal form)</tspan><br 
+class="newline" /> </span><a 
+ id="x198-188003"></a>Let <tspan font-family="cmmi" font-size="10">R </tspan>be a PID. Let <tspan font-family="cmmi" font-size="10">M </tspan>= <tspan font-family="cmmi" font-size="10">R</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmmi" font-size="8">m</tspan></sup> and <tspan font-family="cmmi" font-size="10">N </tspan>= <tspan font-family="cmmi" font-size="10">R</tspan><sup><tspan font-family="cmsy" font-size="8">⊕</tspan><tspan font-family="cmmi" font-size="8">n</tspan></sup> be
+free <tspan font-family="cmmi" font-size="10">R</tspan>-modules and let <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N </tspan>be a linear map. Set <tspan font-family="cmmi" font-size="10">k </tspan>= min<tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">m,n</tspan><tspan font-family="cmsy" font-size="10">}</tspan>.
+</p><!--l. 289--><p class="noindent" >Then we can select a pair of new bases for <tspan font-family="cmmi" font-size="10">M </tspan>and <tspan font-family="cmmi" font-size="10">N </tspan>such that <tspan font-family="cmmi" font-size="10">T </tspan>has only diagonal
+entries <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> and <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>.
+</p>
+  </div>
+<!--l. 292--><p class="indent" >  </p></div>
+<!--l. 293--><p class="indent" >  So if <tspan font-family="cmmi" font-size="10">m &#x003E; n</tspan>, the matrix should take the form
+</p>
+  <div class="math-display" >
+<img 
+src="Na866x.png" alt="⌊                      ⌋
+ s1   0   0   0  ...  0
+|| 0  s2   0   0  ...  0||
+| ..   ..  ..   ..       ..| .
+⌈ .   .    .  .  ...  .⌉
+  0   0   0  sn  ...  0
+" class="math-display"  /></div>
+<!--l. 302--><p class="indent" >  and similarly when <tspan font-family="cmmi" font-size="10">m </tspan><tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">n</tspan>.</p>
+<div class="mdframed" id="mdframed-392">
+<a 
+ id="x198-188004r617"></a>
+<div class="newtheorem">
+<!--l. 304--><p class="noindent" ><span class="head">
+                                                                                
+                                                                                
+<a 
+ id="x198-188005r2"></a>
+<tspan font-family="cmbx" font-size="10">Question 18.5.2.</tspan>  </span><a 
+ id="x198-188006"></a><tspan font-family="cmr" font-size="10">Show that Smith normal form implies the structure theorem.</tspan></p>
+  </div>
+<!--l. 305--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-393">
+<a 
+ id="x198-188007r618"></a>
+<div class="newtheorem">
+<!--l. 308--><p class="noindent" ><span class="head">
+<a 
+ id="x198-188008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 18.5.3 —  </tspan> </span><a 
+ id="x198-188009"></a>Note that this is not a generalization of Jordan form. </p>
+     <ul class="itemize1">
+     <li class="itemize">In Jordan form we consider maps <tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">V  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>; note that the source and target
+     space are the <tspan font-family="cmti" font-size="10">same</tspan>, and we are considering one basis for the space <tspan font-family="cmmi" font-size="10">V </tspan>.
+     </li>
+     <li class="itemize">In Smith form the maps <tspan font-family="cmmi" font-size="10">T </tspan>: <tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N </tspan>are between <tspan font-family="cmti" font-size="10">different </tspan>modules, and we pick
+     <tspan font-family="cmti" font-size="10">two </tspan>sets of bases (one for <tspan font-family="cmmi" font-size="10">M </tspan>and one for <tspan font-family="cmmi" font-size="10">N</tspan>).</li></ul>
+</p>
+  </div>
+<!--l. 317--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-394">
+<a 
+ id="x198-188010r619"></a>
+<div class="newtheorem">
+<!--l. 320--><p class="noindent" ><span class="head">
+<a 
+ id="x198-188011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 18.5.4 </tspan>(Example of Smith normal form)<br 
+class="newline" /> </span><a 
+ id="x198-188012"></a>To give a flavor of the idea of the
+proof, let’s work through a concrete example with the <tspan font-family="msbm" font-size="10">ℤ</tspan>-matrix
+</p>
+<div class="math-display" >
+<img 
+src="Na867x.png" alt="[          ]
+ 18  38  48
+ 14  30  32  .
+" class="math-display"  /></div>
+<!--l. 327--><p class="noindent" >The GCD of all the entries is 2, and so motivated by this, we perform the <tspan font-family="cmbx" font-size="10">Euclidean</tspan>
+<tspan font-family="cmbx" font-size="10">algorithm on the left column</tspan>: subtract the second row from the first row, then three
+times the first row from the second:
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na868x.png" alt="[18  38  48]   [ 4   8  10]    [4  8  10]
+            ↦→               ↦→            .
+ 14  30  32     14  30  32      2  6  2
+" class="math-display"  /></div>
+<!--l. 347--><p class="noindent" >Now that the GCD of 2 is present, we move it to the upper-left by switching the two
+rows, and then kill off all the entries in the same row/column; since 2 was the GCD all
+along, we isolate 2 completely:
+</p>
+<div class="math-display" >
+<img 
+src="Na869x.png" alt="[        ]    [        ]   [         ]   [         ]
+ 4  8  10  ↦→   2  6  2   ↦→  2   6   2  ↦→  2   0   0 .
+ 2  6   2      4  8  10     0  − 4  6     0  − 4  6
+" class="math-display"  /></div>
+<!--l. 372--><p class="noindent" >This reduces the problem to a 1 <tspan font-family="cmsy" font-size="10">× </tspan>2 matrix. So we just apply the Euclidean algorithm
+again there:
+</p>
+<div class="math-display" >
+<img 
+src="Na870x.png" alt="[         ]   [         ]   [       ]    [       ]
+  2  0   0  ↦→   2  0   0  ↦→   2 0  0  ↦→   2  0  0 .
+  0 − 4  6      0 − 4  2      0 0  2      0  2  0
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 395--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<!--l. 397--><p class="indent" >  Now all we have to do is generalize this proof to work with any PID. It’s intuitively
+clear how to do this: the PID condition more or less lets you perform a Euclidean
+algorithm.
+</p><!--l. 401--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 402--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof of Smith normal form.</tspan> </span> Begin with a generic matrix
+</p>
+  <div class="math-display" >
+<img 
+src="Na871x.png" alt="    ⌊             ⌋
+     a11  ...  a1m
+    | ..   ..    .. |
+T = ⌈ .     .   . ⌉
+     an1  ...  anm
+" class="math-display"  /></div>
+<!--l. 409--><p class="indent" >  We want to show, by a series of operations (gradually changing the given basis) that
+we can rearrange the matrix into Smith normal form.
+</p><!--l. 412--><p class="indent" >  Define gcd(<tspan font-family="cmmi" font-size="10">x,y</tspan>) to be any generator of the principal ideal (<tspan font-family="cmmi" font-size="10">x,y</tspan>). <a 
+ id="x198-188013r620"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 413--><p class="noindent" ><span class="head">
+<a 
+ id="x198-188014r5"></a>
+<tspan font-family="cmbx" font-size="10">Claim 18.5.5 </tspan>(“Euclidean algorithm”)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x198-188015"></a>If  <tspan font-family="cmmi" font-size="10">a </tspan>and  <tspan font-family="cmmi" font-size="10">b </tspan>are  entries  in  the  same  row  or
+column, we can change bases to replace <tspan font-family="cmmi" font-size="10">a </tspan>with gcd(<tspan font-family="cmmi" font-size="10">a,b</tspan>) and <tspan font-family="cmmi" font-size="10">b </tspan>with something else.
+</p>
+  </div>
+<!--l. 417--><p class="indent" >
+</p><!--l. 419--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 419--><p class="indent" >  <span class="head">
+                                                                                
+                                                                                
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span> We do just the case of columns. By hypothesis, gcd(<tspan font-family="cmmi" font-size="10">a,b</tspan>) = <tspan font-family="cmmi" font-size="10">xa </tspan>+ <tspan font-family="cmmi" font-size="10">yb </tspan>for some
+<tspan font-family="cmmi" font-size="10">x,y </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">R</tspan>. We must have (<tspan font-family="cmmi" font-size="10">x,y</tspan>) = (1) now (we’re in a UFD). So there are <tspan font-family="cmmi" font-size="10">u </tspan>and <tspan font-family="cmmi" font-size="10">v </tspan>such
+that <tspan font-family="cmmi" font-size="10">xu </tspan>+ <tspan font-family="cmmi" font-size="10">yv </tspan>= 1. Then
+</p>
+  <div class="math-display" >
+<img 
+src="Na872x.png" alt="[      ][ ]   [          ]
+  x  y   a      gcd(a,b)
+ − v u   b  =  something
+" class="math-display"  /></div>
+<!--l. 429--><p class="indent" >  and the first matrix is invertible (check this!), as desired.                                  <tspan font-family="msam" font-size="10">■</tspan>
+</p>
+  </div>
+<!--l. 431--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> = (<tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">ij</tspan></sub>)<sub><tspan font-family="cmmi" font-size="8">i,j</tspan></sub> be the GCD of all entries. Now by repeatedly applying this algorithm, we
+can cause <tspan font-family="cmmi" font-size="10">s </tspan>to appear in the upper left hand corner. Then, we use it to kill off all the entries in
+the first row and the first column, thus arriving at a matrix
+</p>
+  <div class="math-display" >
+<img 
+src="Na873x.png" alt="⌊ s    0    0   ...   0  ⌋
+|  1   ′    ′         ′  |
+|| 0   a2′2  a2′3  ...  a2′n ||
+| 0   a32  a33  ...  a3n |.
+|⌈ ...    ...    ...    ...   ...  |⌉
+  0   a′   a′   ...  a′
+       m2   m3        mn
+" class="math-display"  /></div>
+<!--l. 443--><p class="indent" >  Now we repeat the same procedure with this lower-right (<tspan font-family="cmmi" font-size="10">m </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1) <tspan font-family="cmsy" font-size="10">× </tspan>(<tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1) matrix, and so
+on. This gives the Smith normal form.                                                               □
+</p>
+  </div>
+<!--l. 448--><p class="indent" >  With the Smith normal form, we have in the original situation that
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na874x.png" alt="M  ∼=  R⊕d∕ im T
+" class="math-display"  /></div>
+<!--l. 450--><p class="indent" >  and applying the theorem to <tspan font-family="cmmi" font-size="10">T </tspan>completes the proof of the structure theorem.
+                                                                                
+                                                                                
+</p>
+  <!--l. 452--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase136.htm" >next</a>] [<a 
+href="Nase134.htm" >prev</a>] [<a 
+href="Nase134.htm#tailNase134.htm" >prev-tail</a>] [<a 
+href="Nase135.htm" >front</a>] [<a 
+href="Nach21.htm#Nase135.htm" >up</a>] </p></div>
+<!--l. 452--><p class="indent" >  <a 
+ id="tailNase135.htm"></a> </p> 
+</body> 
+</html>

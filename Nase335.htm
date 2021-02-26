@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The Galois theory of finite fields</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 171--><div class="crosslinks"><p class="noindent">[<a 
+href="Napa15.htm" >next</a>] [<a 
+href="Nase334.htm" >prev</a>] [<a 
+href="Nase334.htm#tailNase334.htm" >prev-tail</a>] [<a 
+href="Nase315.htm#tailNase335.htm">tail</a>] [<a 
+href="Nase354.htm#Nase358.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">53.4</span>  <a 
+ id="x474-45000053.4"></a>The Galois theory of finite fields</h3>
+<!--l. 172--><p class="noindent" >Retain the notation <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup></sub> now (instead of <tspan font-family="cmmi" font-size="10">F </tspan>like before). By the above theorem, it’s the
+splitting field of a separable polynomial, hence we know that <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup></sub><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> is a Galois extension. We
+would like to find the Galois group.
+</p><!--l. 177--><p class="indent" >  In fact, we are very lucky: it is cyclic. First, we exhibit one such element <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmsy" font-size="10">∈</tspan> Gal(<tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup></sub><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>):</p>
+<div class="mdframed" id="mdframed-889">
+<a 
+ id="x474-450001r1369"></a>
+<div class="newtheorem">
+<!--l. 180--><p class="noindent" ><span class="head">
+<a 
+ id="x474-450002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 53.4.1 </tspan><tspan font-family="cmss" font-size="10">(The </tspan><tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmss" font-size="10">th power automorphism)</tspan><br 
+class="newline" /> </span><a 
+ id="x474-450003"></a>The map <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> : <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup></sub> defined by
+</p>
+<div class="math-display" >
+<img 
+src="Na2686x.png" alt="σ (x) = xp
+ p
+" class="math-display"  /></div>
+<!--l. 183--><p class="noindent" >is an automorphism, and moreover fixes <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>.
+</p>
+  </div>
+<!--l. 184--><p class="indent" >  </p></div>
+<!--l. 185--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 186--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>It’s a homomorphism since it fixes 1, respects multiplication, and respects
+addition.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-890">
+<a 
+ id="x474-450004r1370"></a>
+<div class="newtheorem">
+<!--l. 190--><p class="noindent" ><span class="head">
+<a 
+ id="x474-450005r2"></a>
+<tspan font-family="cmbx" font-size="10">Question 53.4.2.</tspan>  </span><a 
+ id="x474-450006"></a><tspan font-family="cmr" font-size="10">Why does it respect addition?</tspan></p>
+  </div>
+<!--l. 191--><p class="indent" >  </p></div>
+<!--l. 192--><p class="indent" >  Next, we claim that it is injective. To see this, note that
+</p>
+  <div class="math-display" >
+<img 
+src="Na2687x.png" alt="  p   p        p   p                p
+x  = y  ⇐ ⇒  x  − y  = 0 ⇐ ⇒  (x−  y) = 0 ⇐ ⇒  x = y.
+" class="math-display"  /></div>
+<!--l. 198--><p class="indent" >  Here we have again used the Freshman’s Dream. Since <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup></sub> is finite, this injective map is
+automatically bijective. The fact that it fixes <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> is Fermat’s little theorem.               □
+</p>
+  </div>
+<!--l. 203--><p class="indent" >  Now we’re done:</p>
+<div class="mdframed" id="mdframed-891">
+<a 
+ id="x474-450007r1371"></a>
+<div class="newtheorem">
+<!--l. 205--><p class="noindent" ><span class="head">
+<a 
+ id="x474-450008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 53.4.3 </tspan><tspan font-family="cmss" font-size="10">(Galois group of the extension </tspan><tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup></sub><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub><tspan font-family="cmss" font-size="10">)</tspan><br 
+class="newline" /> </span><a 
+ id="x474-450009"></a>We   have   Gal(<tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup></sub><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>)<img 
+src="Na2688x.png" alt="∼="  class="cong"  /><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕n</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>
+with generator <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>.
+</p>
+  </div>
+<!--l. 207--><p class="indent" >  </p></div>
+<!--l. 208--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 209--><p class="indent" >  <span class="head">
+                                                                                
+                                                                                
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Since [<tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup></sub> : <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>] = <tspan font-family="cmmi" font-size="10">n</tspan>, the Galois group <tspan font-family="cmmi" font-size="10">G </tspan>has order <tspan font-family="cmmi" font-size="10">n</tspan>. So we just need to show
+<tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G </tspan>has order <tspan font-family="cmmi" font-size="10">n</tspan>.
+</p><!--l. 212--><p class="indent" >  Note that <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> applied <tspan font-family="cmmi" font-size="10">k </tspan>times gives <tspan font-family="cmmi" font-size="10">x</tspan><img 
+src="Na2689x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">k</tspan></sup>
+   </sup>. Hence, <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> applied <tspan font-family="cmmi" font-size="10">n </tspan>times is the identity,
+as all elements of <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup></sub> satisfy <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">n</tspan></sup>
+   </sup> = <tspan font-family="cmmi" font-size="10">x</tspan>. But if <tspan font-family="cmmi" font-size="10">k &#x003C; n</tspan>, then <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> applied <tspan font-family="cmmi" font-size="10">k </tspan>times cannot be
+the identity or <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">p</tspan><sup><tspan font-family="cmmi" font-size="6">k</tspan></sup>
+   </sup> <tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">x </tspan>would have too many roots.                                              □
+</p>
+  </div>
+<!--l. 219--><p class="indent" >  We can see an example of this again with the finite field of order 9.</p>
+<div class="mdframed" id="mdframed-892">
+<a 
+ id="x474-450010r1372"></a>
+<div class="newtheorem">
+<!--l. 221--><p class="noindent" ><span class="head">
+<a 
+ id="x474-450011r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 53.4.4 </tspan>(Galois group of finite field of order 9)<br 
+class="newline" /> </span><a 
+ id="x474-450012"></a>Let <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmr" font-size="8">9</tspan></sub> be the finite field of order 9,
+and represent it concretely by <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmr" font-size="8">9</tspan></sub> = <tspan font-family="msbm" font-size="10">ℤ</tspan>[<tspan font-family="cmmi" font-size="10">i</tspan>]<tspan font-family="cmmi" font-size="10">∕</tspan>(3). Let <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> : <tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmr" font-size="8">9</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">𝔽</tspan><sub><tspan font-family="cmr" font-size="8">9</tspan></sub> be <tspan font-family="cmmi" font-size="10">x</tspan><img 
+src="Na2690x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup>. We can witness the
+fate of all nine elements: </p>
+<div class="center" 
+>
+<!--l. 226--><p class="noindent" >
+<!--l. 233--><p class="noindent" ><object data="Napkin-43.svg" width="350.26572 " height="70.34401 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+</p></div>
+<!--l. 235--><p class="noindent" >(As claimed, 0, 1, 2 are the fixed points, so I haven’t drawn arrows for them.) As predicted,
+the Galois group has order two:
+</p>
+<div class="math-display" >
+<img 
+src="Na2691x.png" alt="Gal(𝔽9∕𝔽3) = {id,σ3} ∼= ℤ ∕2ℤ.
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 239--><p class="indent" >  </p></div>
+<!--l. 241--><p class="indent" >  This concludes the proof of all results stated at the beginning of this chapter.
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+</p>
+  <!--l. 243--><div class="crosslinks"><p class="noindent">[<a 
+href="Napa15.htm" >next</a>] [<a 
+href="Nase334.htm" >prev</a>] [<a 
+href="Nase334.htm#tailNase334.htm" >prev-tail</a>] [<a 
+href="Nase335.htm" >front</a>] [<a 
+href="Nase354.htm#Nase358.htm" >up</a>] </p></div>
+<!--l. 243--><p class="indent" >  <a 
+ id="tailNase335.htm"></a> </p> 
+</body> 
+</html>

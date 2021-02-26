@@ -1,0 +1,264 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Eliminating the homomorphism</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 421--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase36.htm" >next</a>] [<a 
+href="Nase34.htm" >prev</a>] [<a 
+href="Nase34.htm#tailNase34.htm" >prev-tail</a>] [<a 
+href="#tailNase35.htm">tail</a>] [<a 
+href="Nach6.htm#Nase35.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">3.5</span>  <a 
+ id="x59-560003.5"></a>Eliminating the homomorphism</h3>
+<!--l. 422--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Again </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕n</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><img 
+src="Na178x.png" alt="∼="  class="cong"  /><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕n</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 423--><p class="indent" >  Let’s look at the last definition of <tspan font-family="cmmi" font-size="10">G∕N </tspan>we provided. The short version is: </p>
+     <ul class="itemize1">
+     <li class="itemize">The elements of <tspan font-family="cmmi" font-size="10">G∕N </tspan>are cosets <tspan font-family="cmmi" font-size="10">gN</tspan>, which you can think of as equivalence classes
+     of a relation <tspan font-family="cmsy" font-size="10">∼</tspan><sub><tspan font-family="cmmi" font-size="8">N</tspan></sub> (where <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∼</tspan><sub><tspan font-family="cmmi" font-size="8">N</tspan></sub><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> if <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> = <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">n </tspan>for some <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">N</tspan>).
+     </li>
+     <li class="itemize">Given cosets <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">N </tspan>and <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">N </tspan>the group operation is
+<div class="math-display" >
+<img 
+src="Na179x.png" alt="g1N ⋅g2N := (g1g2)N.
+" class="math-display"  /></div>
+     </li></ul>
+<!--l. 432--><p class="noindent" >Question: where do we actually use the fact that <tspan font-family="cmmi" font-size="10">N </tspan>is normal? We don’t talk about <tspan font-family="cmmi" font-size="10">ϕ </tspan>or <tspan font-family="cmmi" font-size="10">Q</tspan>
+anywhere in this definition.
+</p><!--l. 435--><p class="indent" >  The answer is in <tspan font-family="cmbx" font-size="10">??</tspan> . The group operation takes in two cosets, so it doesn’t know what <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>
+and <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> are. But behind the scenes, <tspan font-family="cmbx" font-size="10">the normal condition guarantees that the group</tspan>
+<tspan font-family="cmbx" font-size="10">operation can pick any </tspan><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmbx" font-size="10">and </tspan><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmbx" font-size="10">it wants and still end up with the same coset. </tspan>If
+we didn’t have this property, then it would be hard to define the product of two
+cosets <tspan font-family="cmmi" font-size="10">C</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">C</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> because it might make a difference which <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">C</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">C</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>
+we picked. The fact that <tspan font-family="cmmi" font-size="10">N </tspan>came from a homomorphism meant we could pick any
+representatives <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> of the cosets we wanted, because they all had the same
+<tspan font-family="cmmi" font-size="10">ϕ</tspan>-value.
+</p><!--l. 447--><p class="indent" >  We want some conditions which force this to be true without referencing <tspan font-family="cmmi" font-size="10">ϕ </tspan>at all. Suppose
+<tspan font-family="cmmi" font-size="10">ϕ</tspan>: <tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">K </tspan>is a homomorphism of groups with <tspan font-family="cmmi" font-size="10">H </tspan>= ker<tspan font-family="cmmi" font-size="10">ϕ</tspan>. Aside from the fact <tspan font-family="cmmi" font-size="10">H </tspan>is a group, we
+can get an “obvious” property:
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-101">
+<a 
+ id="x59-56001r141"></a>
+<div class="newtheorem">
+<!--l. 451--><p class="noindent" ><span class="head">
+<a 
+ id="x59-56002r1"></a>
+<tspan font-family="cmbx" font-size="10">Question 3.5.1.</tspan>  </span><a 
+ id="x59-56003"></a><tspan font-family="cmr" font-size="10">Show that if </tspan><tspan font-family="cmmi" font-size="10">h </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">H</tspan><tspan font-family="cmr" font-size="10">, </tspan><tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G</tspan><tspan font-family="cmr" font-size="10">, then </tspan><tspan font-family="cmmi" font-size="10">ghg</tspan><tspan font-family="cmsy" font-size="7">−</tspan><tspan font-family="cmr" font-size="7">1</tspan> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">H</tspan><tspan font-family="cmr" font-size="10">. (Check </tspan><tspan font-family="cmmi" font-size="10">ϕ</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">ghg</tspan><tspan font-family="cmsy" font-size="7">−</tspan><tspan font-family="cmr" font-size="7">1</tspan><tspan font-family="cmr" font-size="10">) = 1</tspan><sub><tspan font-family="cmmi" font-size="7">K</tspan></sub><tspan font-family="cmr" font-size="10">.)</tspan></p>
+  </div>
+<!--l. 454--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-102">
+<a 
+ id="x59-56004r142"></a>
+<div class="newtheorem">
+<!--l. 455--><p class="noindent" ><span class="head">
+<a 
+ id="x59-56005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 3.5.2 </tspan>(Example of a non-normal subgroup)<br 
+class="newline" /> </span><a 
+ id="x59-56006"></a>                                       Let
+<tspan font-family="cmmi" font-size="10">D</tspan><sub><tspan font-family="cmr" font-size="8">12</tspan></sub>  = <img 
+src="Na180x.png" alt="⟨      6    2           −1⟩
+ r,s | r = s = 1,rs = sr"  class="left" align="middle" />. Consider the subgroup of order two <tspan font-family="cmmi" font-size="10">H </tspan>= <tspan font-family="cmsy" font-size="10">{</tspan>1<tspan font-family="cmmi" font-size="10">,s</tspan><tspan font-family="cmsy" font-size="10">}</tspan>
+and notice that
+</p>
+<div class="math-display" >
+<img 
+src="Na181x.png" alt="rsr− 1 = r(sr−1) = r(rs) = r2s ∕∈ H.
+" class="math-display"  /></div>
+<!--l. 460--><p class="noindent" >Hence <tspan font-family="cmmi" font-size="10">H </tspan>is not normal, and cannot be the kernel of any homomorphism.
+</p>
+  </div>
+<!--l. 461--><p class="indent" >  </p></div>
+<!--l. 462--><p class="indent" >  Well, duh – so what? Amazingly it turns out that that this is the <tspan font-family="cmti" font-size="10">sufficient </tspan>condition we
+want. Specifically, it makes the nice “coset multiplication” we wanted work out.</p>
+<div class="mdframed" id="mdframed-103">
+<a 
+ id="x59-56007r143"></a>
+<div class="newtheorem">
+<!--l. 466--><p class="noindent" ><span class="head">
+<a 
+ id="x59-56008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 3.5.3 </tspan><tspan font-family="cmss" font-size="10">(For math contest enthusiasts) </tspan><tspan font-family="cmssbx" font-size="10">—  </tspan> </span><a 
+ id="x59-56009"></a>This  coincidence  is  really  a  lot  like
+functional  equations  at  the  IMO.  We  all  know  that  normal  subgroups  <tspan font-family="cmmi" font-size="10">H  </tspan>satisfy
+                                                                                
+                                                                                
+<tspan font-family="cmmi" font-size="10">ghg</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan>  <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">H</tspan>; the surprise is that from the latter seemingly weaker condition, we can
+deduce <tspan font-family="cmmi" font-size="10">H </tspan>is normal.</p>
+  </div>
+<!--l. 471--><p class="indent" >  </p></div>
+<!--l. 473--><p class="indent" >  Thus we have a new criterion for “normal” subgroups which does not make any external
+references to <tspan font-family="cmmi" font-size="10">ϕ</tspan>.</p>
+<div class="mdframed" id="mdframed-104">
+<a 
+ id="x59-56010r144"></a>
+<div class="newtheorem">
+<!--l. 475--><p class="noindent" ><span class="head">
+<a 
+ id="x59-56011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 3.5.4 </tspan><tspan font-family="cmss" font-size="10">(Algebraic condition for normal subgroups)</tspan><br 
+class="newline" /> </span><a 
+ id="x59-56012"></a>Let <tspan font-family="cmmi" font-size="10">H </tspan>be a subgroup of <tspan font-family="cmmi" font-size="10">G</tspan>. Then the
+following are equivalent: </p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">H </tspan><tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="cmmi" font-size="10">G</tspan>.
+     </li>
+     <li class="itemize">For every <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G </tspan>and <tspan font-family="cmmi" font-size="10">h </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">H</tspan>, <tspan font-family="cmmi" font-size="10">ghg</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">H</tspan>.</li></ul>
+</p>
+  </div>
+<!--l. 482--><p class="indent" >  </p></div>
+<!--l. 483--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 484--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>We already showed one direction.
+</p><!--l. 486--><p class="indent" >  For the other direction, we need to build a homomorphism with kernel <tspan font-family="cmmi" font-size="10">H</tspan>. So we simply
+<tspan font-family="cmti" font-size="10">define </tspan>the group <tspan font-family="cmmi" font-size="10">G∕H </tspan>as the cosets. To put a group operation, we need to verify:
+<a 
+ id="x59-56013r145"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 490--><p class="noindent" ><span class="head">
+<a 
+ id="x59-56014r5"></a>
+<tspan font-family="cmbx" font-size="10">Claim 3.5.5.</tspan>  </span><a 
+ id="x59-56015"></a>If <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmsy" font-size="10">′∼</tspan><sub><tspan font-family="cmmi" font-size="8">H</tspan></sub><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmsy" font-size="10">′∼</tspan><sub><tspan font-family="cmmi" font-size="8">H</tspan></sub><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> then <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmsy" font-size="10">′</tspan><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmsy" font-size="10">′∼</tspan><sub><tspan font-family="cmmi" font-size="8">H</tspan></sub><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>.
+</p>
+  </div>
+<!--l. 491--><p class="indent" >
+                                                                                
+                                                                                
+</p><!--l. 493--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 493--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span> Boring algebraic manipulation (again functional equation style). Let <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmsy" font-size="10">′ </tspan>= <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">h</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>
+and <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmsy" font-size="10">′ </tspan>= <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">h</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, so we want to show that <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">h</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">h</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∼</tspan><sub><tspan font-family="cmmi" font-size="8">H</tspan></sub><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. Since <tspan font-family="cmmi" font-size="10">H </tspan>has the property,
+<tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan><tspan font-family="cmmi" font-size="10">h</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> is some element of <tspan font-family="cmmi" font-size="10">H</tspan>, say <tspan font-family="cmmi" font-size="10">h</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>. Thus <tspan font-family="cmmi" font-size="10">h</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> = <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">h</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>, and the left-hand side becomes
+<tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>(<tspan font-family="cmmi" font-size="10">h</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub><tspan font-family="cmmi" font-size="10">h</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>), which is fine since <tspan font-family="cmmi" font-size="10">h</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub><tspan font-family="cmmi" font-size="10">h</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">H</tspan>.                                                          <tspan font-family="msam" font-size="10">■</tspan>
+</p>
+  </div>
+<!--l. 500--><p class="indent" >  With that settled we can just <tspan font-family="cmti" font-size="10">define </tspan>the product of two cosets (of normal subgroups)
+by
+</p>
+  <div class="math-display" >
+<img 
+src="Na182x.png" alt="(g1H )⋅(g2H ) = (g1g2)H.
+" class="math-display"  /></div>
+<!--l. 503--><p class="indent" >  Thus the claim above shows that this multiplication is well-defined (this verification is the
+“content” of the theorem). So <tspan font-family="cmmi" font-size="10">G∕H </tspan>is indeed a group! Moreover there is an obvious
+“projection” homomorphism <tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">G∕H </tspan>(with kernel <tspan font-family="cmmi" font-size="10">H</tspan>), by <tspan font-family="cmmi" font-size="10">g</tspan><img 
+src="Na183x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">gH</tspan>.                       □
+</p>
+  </div><div class="mdframed" id="mdframed-105">
+<a 
+ id="x59-56016r146"></a>
+<div class="newtheorem">
+<!--l. 513--><p class="noindent" ><span class="head">
+<a 
+ id="x59-56017r6"></a>
+<tspan font-family="cmbx" font-size="10">Example 3.5.6 </tspan>(Modding out in the product group)<br 
+class="newline" /> </span><a 
+ id="x59-56018"></a>Consider again the product group
+<tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">H</tspan>. Earlier we identified a subgroup
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na184x.png" alt="G ′ = {(g,1H) | g ∈ G} ∼= G.
+" class="math-display"  /></div>
+<!--l. 517--><p class="noindent" >You can easily see that <tspan font-family="cmmi" font-size="10">G</tspan><tspan font-family="cmsy" font-size="10">′</tspan><tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">H</tspan>. (Easy calculation.)
+</p><!--l. 520--><p class="noindent" >Moreover, just as the notation would imply, you can check that
+</p>
+<div class="math-display" >
+<img 
+src="Na185x.png" alt="(G × H )∕(G ′) ∼= H.
+" class="math-display"  /></div>
+<!--l. 522--><p class="noindent" >Indeed, we have (<tspan font-family="cmmi" font-size="10">g,h</tspan>) <tspan font-family="cmsy" font-size="10">∼</tspan><sub><tspan font-family="cmmi" font-size="8">G</tspan><tspan font-family="cmsy" font-size="8">′</tspan></sub>(1<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub><tspan font-family="cmmi" font-size="10">,h</tspan>) for all <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G </tspan>and <tspan font-family="cmmi" font-size="10">h </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">H</tspan>.
+</p>
+  </div>
+<!--l. 523--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-106">
+<a 
+ id="x59-56019r147"></a>
+<div class="newtheorem">
+<!--l. 524--><p class="noindent" ><span class="head">
+<a 
+ id="x59-56020r7"></a>
+<tspan font-family="cmbx" font-size="10">Example 3.5.7 </tspan>(Another explicit computation)<br 
+class="newline" /> </span><a 
+ id="x59-56021"></a>Let <tspan font-family="cmmi" font-size="10">ϕ </tspan>: <tspan font-family="cmmi" font-size="10">D</tspan><sub><tspan font-family="cmr" font-size="8">8</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>4<tspan font-family="msbm" font-size="10">ℤ </tspan>be defined by
+</p>
+<div class="math-display" >
+<img 
+src="Na186x.png" alt="    --      --
+r ↦→ 2,  s ↦→ 2.
+" class="math-display"  /></div>
+<!--l. 526--><p class="noindent" >The kernel of this map is <tspan font-family="cmmi" font-size="10">N </tspan>= <tspan font-family="cmsy" font-size="10">{</tspan>1<tspan font-family="cmmi" font-size="10">,r</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">,sr,sr</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup><tspan font-family="cmsy" font-size="10">}</tspan>.
+                                                                                
+                                                                                
+</p><!--l. 528--><p class="noindent" >We can do a quick computation of all the elements of <tspan font-family="cmmi" font-size="10">D</tspan><sub><tspan font-family="cmr" font-size="8">8</tspan></sub> to get
+</p>
+<div class="math-display" >
+<img 
+src="Na187x.png" alt="          2               3   --              3              2    --
+ϕ(1) = ϕ(r ) = ϕ (sr) = ϕ(sr ) = 0 and ϕ (r) = ϕ(r ) = ϕ (s) = ϕ(sr ) = 2.
+" class="math-display"  /></div>
+<!--l. 532--><p class="noindent" >The two relevant fibers are
+</p>
+<div class="math-display" >
+<img 
+src="Na188x.png" alt=" pre --         2              3        2      3
+ϕ  (0) = 1N = r N  = srN =  srN  = {1,r ,sr,sr }
+" class="math-display"  /></div>
+<!--l. 532--><p class="noindent" >and
+</p>
+<div class="math-display" >
+<img 
+src="Na189x.png" alt="ϕpre(2) = rN = r3N =  sN = sr2N  = {r,r3,s,sr2}.
+" class="math-display"  /></div>
+<!--l. 534--><p class="noindent" >So we see that <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">D</tspan><sub><tspan font-family="cmr" font-size="8">8</tspan></sub><tspan font-family="cmmi" font-size="10">∕N</tspan><tspan font-family="cmsy" font-size="10">| </tspan>= 2 is a group of order two, or <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ</tspan>. Indeed, the image of <tspan font-family="cmmi" font-size="10">ϕ </tspan>is
+</p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na190x.png" alt="{0,2} ∼= ℤ∕2 ℤ.
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 536--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-107">
+<a 
+ id="x59-56022r148"></a>
+<div class="newtheorem">
+<!--l. 539--><p class="noindent" ><span class="head">
+<a 
+ id="x59-56023r8"></a>
+<tspan font-family="cmbx" font-size="10">Question 3.5.8.</tspan>  </span><a 
+ id="x59-56024"></a><tspan font-family="cmr" font-size="10">Suppose </tspan><tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmr" font-size="10">is abelian. Why does it follow that any subgroup of </tspan><tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmr" font-size="10">is normal?</tspan></p>
+  </div>
+<!--l. 541--><p class="indent" >  </p></div>
+<!--l. 544--><p class="indent" >  Finally here’s some food for thought: suppose one has a group presentation for a group <tspan font-family="cmmi" font-size="10">G</tspan>
+that uses <tspan font-family="cmmi" font-size="10">n </tspan>generators. Can you write it as a quotient of the form <tspan font-family="cmmi" font-size="10">F</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">∕N</tspan>, where <tspan font-family="cmmi" font-size="10">N </tspan>is a normal
+subgroup of <tspan font-family="cmmi" font-size="10">F</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>?
+                                                                                
+                                                                                
+</p>
+  <!--l. 550--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase36.htm" >next</a>] [<a 
+href="Nase34.htm" >prev</a>] [<a 
+href="Nase34.htm#tailNase34.htm" >prev-tail</a>] [<a 
+href="Nase35.htm" >front</a>] [<a 
+href="Nach6.htm#Nase35.htm" >up</a>] </p></div>
+<!--l. 550--><p class="indent" >  <a 
+ id="tailNase35.htm"></a> </p> 
+</body> 
+</html>

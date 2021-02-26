@@ -1,0 +1,425 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Analytic perspective</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 323--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase182.htm" >next</a>] [<a 
+href="Nase180.htm" >prev</a>] [<a 
+href="Nase180.htm#tailNase180.htm" >prev-tail</a>] [<a 
+href="#tailNase181.htm">tail</a>] [<a 
+href="Nach30.htm#Nase181.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">27.3</span>  <a 
+ id="x261-24900027.3"></a>Analytic perspective</h3>
+<!--l. 324--><p class="noindent" >
+</p>
+  <h4 class="subsectionHead"><span class="titlemark">27.3.i</span>  <a 
+ id="x261-25000027.3.i"></a>Definition</h4>
+<!--l. 325--><p class="noindent" >Up until now we’ve been thinking about things mostly algebraically, but moving forward it
+will be helpful to start using the language of analysis. Usually, two real numbers are
+considered “close” if they are close on the number of line, but for <tspan font-family="cmmi" font-size="10">p</tspan>-adic purposes we only care
+about modulo <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">e</tspan></sup> information. So, we’ll instead think of two elements of <tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> or <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> as “close” if
+they differ by a large multiple of <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">e</tspan></sup>.
+</p><!--l. 333--><p class="indent" >  For this we’ll borrow the familiar <tspan font-family="cmmi" font-size="10">ν</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> from elementary number theory. <a 
+ id="x261-250001r822"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 335--><p class="noindent" ><span class="head">
+<a 
+ id="x261-250002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 27.3.1 </tspan>(<tspan font-family="cmmi" font-size="10">p</tspan>-adic valuation and absolute value)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x261-250003"></a>We define the <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmbx" font-size="10">-adic valuation</tspan>
+<tspan font-family="cmmi" font-size="10">ν</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> : <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub><sup><tspan font-family="cmsy" font-size="8">×</tspan></sup><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℤ </tspan>in the following two equivalent ways: </p>
+     <ul class="itemize1">
+     <li class="itemize">For <tspan font-family="cmmi" font-size="10">x </tspan>= (<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan>) <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> we let <tspan font-family="cmmi" font-size="10">ν</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">x</tspan>) be the largest <tspan font-family="cmmi" font-size="10">e </tspan>such that <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">e</tspan></sub> <tspan font-family="cmsy" font-size="10">≡ </tspan>0 (mod <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">e</tspan></sup>)
+     (or <tspan font-family="cmmi" font-size="10">e </tspan>= 0 if <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub><sup><tspan font-family="cmsy" font-size="8">×</tspan></sup>). Then extend to all of <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub><sup><tspan font-family="cmsy" font-size="8">×</tspan></sup> by <tspan font-family="cmmi" font-size="10">ν</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">xy</tspan>) = <tspan font-family="cmmi" font-size="10">ν</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">x</tspan>) + <tspan font-family="cmmi" font-size="10">ν</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">y</tspan>).
+     </li>
+     <li class="itemize">Each <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub><sup><tspan font-family="cmsy" font-size="8">×</tspan></sup> can be written uniquely as <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">k</tspan></sup><tspan font-family="cmmi" font-size="10">u </tspan>for <tspan font-family="cmmi" font-size="10">u </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub><sup><tspan font-family="cmsy" font-size="8">×</tspan></sup>, <tspan font-family="cmmi" font-size="10">k </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>. We let <tspan font-family="cmmi" font-size="10">ν</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmmi" font-size="10">k</tspan>.</li></ul>
+<!--l. 348--><p class="noindent" >By convention we set <tspan font-family="cmmi" font-size="10">ν</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(0) = +<tspan font-family="cmsy" font-size="10">∞</tspan>. Finally, define the <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmbx" font-size="10">-adic absolute value</tspan> <img 
+src="Na1472x.png" alt="|∙|"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>
+by
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na1473x.png" alt="|x| = p− νp(x).
+   p
+" class="math-display"  /></div>
+<!--l. 352--><p class="indent" >  In particular <img 
+src="Na1474x.png" alt="|0 |"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> = 0.
+</p>
+  </div>
+<!--l. 353--><p class="indent" >
+This fulfills the promise that <tspan font-family="cmmi" font-size="10">x </tspan>and <tspan font-family="cmmi" font-size="10">y </tspan>are close if they look the same modulo <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">e</tspan></sup> for large <tspan font-family="cmmi" font-size="10">e</tspan>; in
+that case <tspan font-family="cmmi" font-size="10">ν</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">y</tspan>) is large and accordingly <img 
+src="Na1475x.png" alt="|x− y |"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> is small.
+</p><!--l. 359--><p class="noindent" >
+</p>
+  <h4 class="subsectionHead"><span class="titlemark">27.3.ii</span>  <a 
+ id="x261-25100027.3.ii"></a>Ultrametric space</h4>
+<!--l. 360--><p class="noindent" >In this way, <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> and <tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> becomes a metric space with metric given by <img 
+src="Na1476x.png" alt="|x − y|"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>.</p>
+<div class="mdframed" id="mdframed-530">
+<a 
+ id="x261-251001r823"></a>
+<div class="newtheorem">
+<!--l. 364--><p class="noindent" ><span class="head">
+<a 
+ id="x261-251002r2"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 27.3.2.</tspan>  </span><a 
+ id="x261-251003"></a> <tspan font-family="cmr" font-size="10">Suppose </tspan><tspan font-family="cmmi" font-size="10">f</tspan> <tspan font-family="cmr" font-size="10">:</tspan> <tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="7">p</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="7">p</tspan></sub> <tspan font-family="cmr" font-size="10">is continuous and </tspan><tspan font-family="cmmi" font-size="10">f</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">n</tspan><tspan font-family="cmr" font-size="10">) = (</tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmr" font-size="10">1)</tspan><sup><tspan font-family="cmmi" font-size="7">n</tspan></sup> <tspan font-family="cmr" font-size="10">for every </tspan><tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmsy" font-size="7">≥</tspan><tspan font-family="cmr" font-size="7">0</tspan></sub><tspan font-family="cmr" font-size="10">.</tspan>
+<tspan font-family="cmr" font-size="10">Prove that </tspan><tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmr" font-size="10">= 2.</tspan></p>
+  </div>
+<!--l. 368--><p class="indent" >  </p></div>
+<!--l. 370--><p class="indent" >  In fact, these spaces satisfy a stronger form of the triangle inequality than you are used to
+from <tspan font-family="msbm" font-size="10">ℝ</tspan>.</p>
+<div class="mdframed" id="mdframed-531">
+<a 
+ id="x261-251004r824"></a>
+<div class="newtheorem">
+<!--l. 373--><p class="noindent" ><span class="head">
+<a 
+ id="x261-251005r3"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 27.3.3 </tspan><tspan font-family="cmss" font-size="10">(</tspan><img 
+src="Na1477x.png" alt="|∙|"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmss" font-size="10">is an ultrametric)</tspan><br 
+class="newline" /> </span><a 
+ id="x261-251006"></a>For  any  <tspan font-family="cmmi" font-size="10">x,y  </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>,  we  have  the  <tspan font-family="cmbx" font-size="10">strong</tspan>
+<tspan font-family="cmbx" font-size="10">triangle inequality</tspan>
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na1478x.png" alt="              {        }
+|x+ y| ≤  max  |x| ,|y |  .
+      p           p   p
+" class="math-display"  /></div>
+<!--l. 379--><p class="noindent" >Equality holds if (but not only if) <img 
+src="Na1479x.png" alt="|x|"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub><tspan font-family="cmmi" font-size="10">≠</tspan><img 
+src="Na1480x.png" alt="|y|"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>.
+</p>
+  </div>
+<!--l. 381--><p class="indent" >  </p></div>
+<!--l. 383--><p class="indent" >  However, <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> is more than just a metric space: it is a field, with its own addition and
+multiplication. This means we can do analysis just like in <tspan font-family="msbm" font-size="10">ℝ </tspan>or <tspan font-family="msbm" font-size="10">ℂ</tspan>: basically, any
+notion such as “continuous function”, “convergent series”, et cetera has a <tspan font-family="cmmi" font-size="10">p</tspan>-adic
+analog. In particular, we can define what it means for an infinite sum to converge:
+<a 
+ id="x261-251007r825"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 390--><p class="noindent" ><span class="head">
+<a 
+ id="x261-251008r4"></a>
+<tspan font-family="cmbx" font-size="10">Definition 27.3.4 </tspan>(Convergence notions)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x261-251009"></a>Here are some examples of <tspan font-family="cmmi" font-size="10">p</tspan>-adic analogs of
+“real-world” notions. </p>
+     <ul class="itemize1">
+     <li class="itemize">A sequence <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …converges to a limit <tspan font-family="cmmi" font-size="10">L </tspan>if lim<sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">→∞</tspan></sub><img 
+src="Na1481x.png" alt="|sn − L |"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> = 0.
+     </li>
+     <li class="itemize">The  infinite  series  <tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>  converges  if  the  sequence  of  partial  sums  <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>  =  <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>,
+     <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> = <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, …, converges to some limit.
+     </li>
+     <li class="itemize">…et cetera …</li></ul>
+  </div>
+<!--l. 400--><p class="indent" >
+With this definition in place, the “base <tspan font-family="cmmi" font-size="10">p</tspan>” discussion we had earlier is now true in the analytic
+sense: if <tspan font-family="cmmi" font-size="10">x </tspan>=<span class="overline"> <tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub></span><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> then
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na1482x.png" alt="∑∞     k
+   akp    converges to x.
+k=0
+" class="math-display"  /></div>
+<!--l. 405--><p class="indent" >  Indeed, the difference between <tspan font-family="cmmi" font-size="10">x </tspan>and the <tspan font-family="cmmi" font-size="10">n</tspan>th partial sum is divisible by <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>, hence the partial
+sums approach <tspan font-family="cmmi" font-size="10">x </tspan>as <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">→∞</tspan>.
+</p><!--l. 408--><p class="indent" >  While the definitions are all the same, there are some changes in properties that should be
+true. For example, in <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> convergence of partial sums is simpler:</p>
+<div class="mdframed" id="mdframed-532">
+<a 
+ id="x261-251010r826"></a>
+<div class="newtheorem">
+<!--l. 412--><p class="noindent" ><span class="head">
+<a 
+ id="x261-251011r5"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 27.3.5 </tspan><tspan font-family="cmss" font-size="10">(</tspan><tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmsy" font-size="10">|</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan>0 <tspan font-family="cmss" font-size="10">iff convergence of series)</tspan><br 
+class="newline" /> </span><a 
+ id="x261-251012"></a>A   series   <tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">=1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∞</tspan></sup><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>    in   <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>
+converges to some limit if and only if lim<sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmsy" font-size="8">→∞</tspan></sub><tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmsy" font-size="10">|</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> = 0.
+</p>
+  </div>
+<!--l. 417--><p class="indent" >  </p></div>
+<!--l. 418--><p class="indent" >  Contrast this with <tspan font-family="cmex" font-size="10">∑</tspan>
+  <img 
+src="Na1483x.png" alt="n1"  class="frac" align="middle" /> = <tspan font-family="cmsy" font-size="10">∞ </tspan>in <tspan font-family="msbm" font-size="10">ℝ</tspan>. You can think of this as a consequence of strong triangle
+inequality.
+</p><!--l. 420--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 421--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>By multiplying by a large enough power of <tspan font-family="cmmi" font-size="10">p</tspan>, we may assume <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>. (This isn’t
+actually necessary, but makes the notation nicer.)
+</p><!--l. 425--><p class="indent" >  Observe that <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> (mod <tspan font-family="cmmi" font-size="10">p</tspan>) must eventually stabilize, since for large enough <tspan font-family="cmmi" font-size="10">n </tspan>we have
+<img 
+src="Na1484x.png" alt="|xn|"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmmi" font-size="10">&#x003C; </tspan>1  <tspan font-family="cmmi" font-size="10">⇔</tspan> <tspan font-family="cmmi" font-size="10">ν</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>)  <tspan font-family="cmsy" font-size="10">≥ </tspan>1. So let <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>  be the eventual residue modulo <tspan font-family="cmmi" font-size="10">p </tspan>of <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">=0</tspan></sub><sup><tspan font-family="cmmi" font-size="8">N</tspan></sup><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>
+(mod <tspan font-family="cmmi" font-size="10">p</tspan>) for large <tspan font-family="cmmi" font-size="10">N</tspan>. In the same way let <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> be the eventual residue modulo <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, and so
+on. Then one can check we approach the limit <tspan font-family="cmmi" font-size="10">a </tspan>= (<tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,a</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan>).                                □
+</p>
+  </div>
+  <h4 class="subsectionHead"><span class="titlemark">27.3.iii</span>  <a 
+ id="x261-25200027.3.iii"></a>More fun with geometric series</h4>
+<!--l. 435--><p class="noindent" >Let’s finally state the <tspan font-family="cmmi" font-size="10">p</tspan>-adic analog of the geometric series formula.</p>
+<div class="mdframed" id="mdframed-533">
+<a 
+ id="x261-252001r827"></a>
+                                                                                
+                                                                                
+<div class="newtheorem">
+<!--l. 438--><p class="noindent" ><span class="head">
+<a 
+ id="x261-252002r6"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 27.3.6 </tspan><tspan font-family="cmss" font-size="10">(Geometric series)</tspan><br 
+class="newline" /> </span><a 
+ id="x261-252003"></a>Let <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> with <img 
+src="Na1485x.png" alt="|x |"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmmi" font-size="10">&#x003C; </tspan>1. Then
+</p>
+<div class="math-display" >
+<img 
+src="Na1486x.png" alt="  1
+-----=  1+ x + x2 + x3 + ....
+1− x
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 441--><p class="indent" >  </p></div>
+<!--l. 442--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 443--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Note that the partial sums satisfy 1 + <tspan font-family="cmmi" font-size="10">x </tspan>+ <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <img 
+src="Na1487x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> = <img 
+src="Na1488x.png" alt="1−1−xnx"  class="frac" align="middle" />, and <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan>0 as
+<tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">→∞ </tspan>since <img 
+src="Na1489x.png" alt="|x|"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmmi" font-size="10">&#x003C; </tspan>1.                                                                                   □
+</p>
+  </div>
+<!--l. 449--><p class="indent" >  So, 1 + 3 + 3<sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <img 
+src="Na1490x.png" alt="⋅⋅⋅"  class="@cdots"  /> = <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1491x.png" alt="1
+2"  class="frac" align="middle" /> is really a correct convergence in <tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>. And so on.
+</p><!--l. 453--><p class="indent" >  If you buy the analogy that <tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> is generating functions with base <tspan font-family="cmmi" font-size="10">p</tspan>, then all the olympiad
+generating functions you might be used to have <tspan font-family="cmmi" font-size="10">p</tspan>-adic analogs. For example, you can prove
+more generally that:</p>
+<div class="mdframed" id="mdframed-534">
+<a 
+ id="x261-252004r828"></a>
+<div class="newtheorem">
+<!--l. 458--><p class="noindent" ><span class="head">
+<a 
+ id="x261-252005r7"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 27.3.7 </tspan><tspan font-family="cmss" font-size="10">(Generalized binomial theorem)</tspan><br 
+class="newline" /> </span><a 
+ id="x261-252006"></a>If <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>  and <img 
+src="Na1492x.png" alt="|x|"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>  <tspan font-family="cmmi" font-size="10">&#x003C; </tspan>1, then for any
+<tspan font-family="cmmi" font-size="10">r </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℚ </tspan>we have the series convergence
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na1493x.png" alt="∑   (r )
+        xn = (1+  x)r.
+n≥0  n
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 462--><p class="indent" >  </p></div>
+<!--l. 463--><p class="indent" >  (I haven’t defined (1 + <tspan font-family="cmmi" font-size="10">x</tspan>)<sup><tspan font-family="cmmi" font-size="8">r</tspan></sup>, but it has the properties you expect.)
+</p>
+  <h4 class="subsectionHead"><span class="titlemark">27.3.iv</span>  <a 
+ id="x261-25300027.3.iv"></a>Completeness</h4>
+<!--l. 466--><p class="noindent" >Note that the definition of <img 
+src="Na1494x.png" alt="|∙|"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> could have been given for <tspan font-family="msbm" font-size="10">ℚ </tspan>as well; we didn’t need <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> to
+introduce it (after all, we have <tspan font-family="cmmi" font-size="10">ν</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> in olympiads already). The big important theorem I must
+state now is:</p>
+<div class="mdframed" id="mdframed-535">
+<a 
+ id="x261-253001r829"></a>
+<div class="newtheorem">
+<!--l. 472--><p class="noindent" ><span class="head">
+<a 
+ id="x261-253002r8"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 27.3.8 </tspan><tspan font-family="cmss" font-size="10">(</tspan><tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmss" font-size="10">is complete)</tspan><br 
+class="newline" /> </span><a 
+ id="x261-253003"></a>The space <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> is the completion of <tspan font-family="msbm" font-size="10">ℚ </tspan>with respect to
+<img 
+src="Na1495x.png" alt="|∙|"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>.
+</p>
+  </div>
+<!--l. 475--><p class="indent" >  </p></div>
+<!--l. 476--><p class="indent" >  This is the definition of <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> you’ll see more frequently; one then defines <tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> in terms of <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>
+(rather than vice-versa) according to
+</p>
+  <div class="math-display" >
+<img 
+src="Na1496x.png" alt="     {               }
+ℤp =  x ∈ ℚp : |x|p ≤ 1 .
+" class="math-display"  /></div>
+  <h4 class="subsectionHead"><span class="titlemark">27.3.v</span>  <a 
+ id="x261-25400027.3.v"></a>Philosophical notes</h4>
+<!--l. 483--><p class="noindent" >Let me justify why this definition is philosophically nice. Suppose you are an ancient Greek
+mathematician who is given:
+     </p><blockquote class="quote">
+     <!--l. 486--><p class="noindent" ><tspan font-family="cmbx" font-size="10">Problem for Ancient Greeks. </tspan>Estimate the value of the sum
+     </p>
+<div class="math-display" >
+<img 
+src="Na1497x.png" alt="    -1   -1        ---1---
+S = 12 + 22 + ⋅⋅⋅+ 100002
+" class="math-display"  /></div>
+     <!--l. 489--><p class="noindent" >to within 0<tspan font-family="cmmi" font-size="10">.</tspan>001.</p></blockquote>
+<!--l. 491--><p class="noindent" >The sum <tspan font-family="cmmi" font-size="10">S </tspan>consists entirely of rational numbers, so the problem statement would be fair game
+for ancient Greece. But it turns out that in order to get a good estimate, it <tspan font-family="cmti" font-size="10">really helps </tspan>if you
+know about the real numbers: because then you can construct the infinite series
+<tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">≥</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">n</tspan><sup><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup> = <img 
+src="Na1498x.png" alt="1
+6"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">π</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, and deduce that <tspan font-family="cmmi" font-size="10">S </tspan><tspan font-family="cmsy" font-size="10">≈</tspan><img 
+src="Na1499x.png" alt="π2
+6"  class="frac" align="middle" />, up to some small error term from the terms past
+<img 
+src="Na1500x.png" alt="--1--
+100012"  class="frac" align="middle" />, which can be bounded.
+</p><!--l. 501--><p class="indent" >  Of course, in order to have access to enough theory to prove that <tspan font-family="cmmi" font-size="10">S </tspan>= <tspan font-family="cmmi" font-size="10">π</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">∕</tspan>6, you need to
+have the real numbers; it’s impossible to do calculus in <tspan font-family="msbm" font-size="10">ℚ </tspan>(the sequence 1, 1<tspan font-family="cmmi" font-size="10">.</tspan>4, 1<tspan font-family="cmmi" font-size="10">.</tspan>41, 1<tspan font-family="cmmi" font-size="10">.</tspan>414, is
+considered “not convergent”!)
+</p><!--l. 507--><p class="indent" >  Now fast-forward to 2002, and suppose you are given
+     </p><blockquote class="quote">
+     <!--l. 509--><p class="noindent" ><tspan font-family="cmbx" font-size="10">Problem from USA TST 2002. </tspan>Estimate the sum
+                                                                                
+                                                                                
+     </p>
+<div class="math-display" >
+<img 
+src="Na1501x.png" alt="       p∑−1     1
+fp(x ) =    -------2-
+       k=1 (px+ k )
+" class="math-display"  /></div>
+     <!--l. 512--><p class="noindent" >to within mod <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup>.</p></blockquote>
+<!--l. 515--><p class="noindent" >Even though <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">x</tspan>) is a rational number, it still helps to be able to do analysis with infinite sums,
+and then bound the error term (i.e. take mod <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup>). But the space <tspan font-family="msbm" font-size="10">ℚ </tspan>is not complete with
+respect to <img 
+src="Na1502x.png" alt="|∙|"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> either, and thus it makes sense to work in the completion of <tspan font-family="msbm" font-size="10">ℚ </tspan>with respect to
+<img 
+src="Na1503x.png" alt="|∙|"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>. This is exactly <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>.
+</p><!--l. 524--><p class="indent" >  In any case, let’s finally solve <tspan font-family="cmbx" font-size="10">??</tspan> .</p>
+<div class="mdframed" id="mdframed-536">
+<a 
+ id="x261-254001r830"></a>
+<div class="newtheorem">
+<!--l. 526--><p class="noindent" ><span class="head">
+<a 
+ id="x261-254002r9"></a>
+<tspan font-family="cmbx" font-size="10">Example 27.3.9 </tspan>(USA TST 2002)<br 
+class="newline" /> </span><a 
+ id="x261-254003"></a>We will now compute
+</p>
+<div class="math-display" >
+<img 
+src="Na1504x.png" alt="        p−1
+        ∑  ----1----         3
+fp(x) =    (px + k)2  (mod  p ).
+        k=1
+" class="math-display"  /></div>
+<!--l. 529--><p class="noindent" >Armed with the generalized binomial theorem, this becomes straightforward.
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 542--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">x</tspan>)</td><td 
+class="align-even"> = <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">=1</tspan></sub><sup><tspan font-family="cmmi" font-size="8">p</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup><img 
+src="Na1506x.png" alt="---1-----
+(px + k)2"  class="frac" align="middle" /> = <tspan font-family="cmex" font-size="10">∑</tspan>
+<sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">=1</tspan></sub><sup><tspan font-family="cmmi" font-size="8">p</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup><img 
+src="Na1507x.png" alt="1--
+k2"  class="frac" align="middle" /><img 
+src="Na1508x.png" alt="(    px-)
+  1+  k"  class="left" align="middle" /><sup><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup></td>           <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>     <td 
+class="align-even"> = <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">=1</tspan></sub><sup><tspan font-family="cmmi" font-size="8">p</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup><img 
+src="Na1509x.png" alt="1--
+k2"  class="frac" align="middle" /> <tspan font-family="cmex" font-size="10">∑</tspan>
+    <sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">≥</tspan><tspan font-family="cmr" font-size="8">0</tspan></sub><img 
+src="Na1510x.png" alt="(   )
+ − 2
+  n"  /><img 
+src="Na1511x.png" alt="(   )
+ px-
+  k"  class="left" align="middle" /><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup></td>                         <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>     <td 
+class="align-even"> = <tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">≥</tspan><tspan font-family="cmr" font-size="8">0</tspan></sub><img 
+src="Na1512x.png" alt="(   )
+ − 2
+  n"  /><tspan font-family="cmex" font-size="10">∑</tspan>
+           <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">=1</tspan></sub><sup><tspan font-family="cmmi" font-size="8">p</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup><img 
+src="Na1513x.png" alt=" 1
+k2-"  class="frac" align="middle" /><img 
+src="Na1514x.png" alt="(x )
+ k-"  class="left" align="middle" /><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup><tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup></td>                        <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>     <td 
+class="align-even"> <tspan font-family="cmsy" font-size="10">≡</tspan><tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">=1</tspan></sub><sup><tspan font-family="cmmi" font-size="8">p</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup><img 
+src="Na1515x.png" alt="1--
+k2"  class="frac" align="middle" /> <tspan font-family="cmsy" font-size="10">− </tspan>2<tspan font-family="cmmi" font-size="10">x</tspan><img 
+src="Na1516x.png" alt="(p −1   )
+  ∑  -1-
+     k3
+  k=1"  class="left" align="middle" /><tspan font-family="cmmi" font-size="10">p </tspan>+ 3<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><img 
+src="Na1517x.png" alt="(p−1   )
+ ∑   1--
+     k4
+ k=1"  class="left" align="middle" /><tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>    (mod <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup>)<tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                </td></tr></table>
+</p><!--l. 543--><p class="noindent" >Using the elementary facts that <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmex" font-size="10">∑</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">k</tspan><sup><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">3</tspan></sup> and <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmsy" font-size="10">∣</tspan><tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmmi" font-size="10">k</tspan><sup><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">4</tspan></sup>, this solves the problem.
+</p>
+  </div>
+<!--l. 546--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 565--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase182.htm" >next</a>] [<a 
+href="Nase180.htm" >prev</a>] [<a 
+href="Nase180.htm#tailNase180.htm" >prev-tail</a>] [<a 
+href="Nase181.htm" >front</a>] [<a 
+href="Nach30.htm#Nase181.htm" >up</a>] </p></div>
+<!--l. 565--><p class="indent" >  <a 
+ id="tailNase181.htm"></a>  </p> 
+</body> 
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Cauchy’s integral theorem</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 377--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase213.htm" >next</a>] [<a 
+href="Nase205.htm" >prev</a>] [<a 
+href="Nase205.htm#tailNase205.htm" >prev-tail</a>] [<a 
+href="Nach34.htm#tailNase206.htm">tail</a>] [<a 
+href="Nase206.htm#Nase212.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">31.5</span>  <a 
+ id="x298-28400031.5"></a>Cauchy’s integral theorem</h3>
+<!--l. 378--><p class="noindent" >We now present a stunning application of Cauchy-Goursat, a “representation theorem”:
+essentially, it says that values of <tspan font-family="cmmi" font-size="10">f </tspan>inside a disk are determined by just the values on the
+boundary! In fact, we even write down the exact formula. As <span class="cite">[<tspan font-family="cmbx" font-size="10">?</tspan>]</span> says, “any time a certain type
+of function satisfies some sort of representation theorem, it is likely that many more deep
+theorems will follow.” Let’s pull back the curtain:</p>
+<div class="mdframed" id="mdframed-596">
+<a 
+ id="x298-284001r926"></a>
+<div class="newtheorem">
+<!--l. 387--><p class="noindent" ><span class="head">
+<a 
+ id="x298-284002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 31.5.1 </tspan><tspan font-family="cmss" font-size="10">(Cauchy’s integral formula)</tspan><br 
+class="newline" /> </span><a 
+ id="x298-284003"></a>Let <tspan font-family="cmmi" font-size="10">γ </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>2<tspan font-family="cmmi" font-size="10">π</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>be a circle in the plane
+given by <tspan font-family="cmmi" font-size="10">t</tspan><img 
+src="Na1678x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">Re</tspan><sup><tspan font-family="cmmi" font-size="8">it</tspan></sup>, which bounds a disk <tspan font-family="cmmi" font-size="10">D</tspan>. Suppose <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>is holomorphic such that
+<tspan font-family="cmmi" font-size="10">U </tspan>contains the circle and its interior. Then for any point <tspan font-family="cmmi" font-size="10">a </tspan>in the interior of <tspan font-family="cmmi" font-size="10">D</tspan>, we have
+</p>
+<div class="math-display" >
+<img 
+src="Na1679x.png" alt="          ∮
+       -1--  -f(z)
+f(a) = 2πi   z − a dz.
+            γ
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 397--><p class="indent" >  </p></div>
+<!--l. 398--><p class="indent" >  Note that we don’t require <tspan font-family="cmmi" font-size="10">U </tspan>to be simply connected, but the reason is pretty silly: we’re
+only going to ever integrate <tspan font-family="cmmi" font-size="10">f </tspan>over <tspan font-family="cmmi" font-size="10">D</tspan>, which is an open disk, and hence the disk is simply
+connected anyways.
+</p><!--l. 402--><p class="indent" >  The presence of 2<tspan font-family="cmmi" font-size="10">πi</tspan>, which you saw earlier in the form <tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub>circle</sub><tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup> <tspan font-family="cmmi" font-size="10">dz</tspan>, is no accident. In fact,
+that’s the central result we’re going to use to prove the result.
+</p><!--l. 406--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+  <div class="proof">
+<!--l. 407--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>There are several proofs out there, but I want to give the one that really
+draws out the power of Cauchy’s theorem. Here’s the picture we have: there’s a
+point <tspan font-family="cmmi" font-size="10">a </tspan>sitting inside a circle <tspan font-family="cmmi" font-size="10">γ</tspan>, and we want to get our hands on the value <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">a</tspan>).
+</p>
+<div class="center" 
+>
+<!--l. 411--><p class="noindent" >
+</p>
+</div>
+<!--l. 420--><p class="noindent" >We’re going to do a trick: construct a <tspan font-family="cmbx" font-size="10">keyhole contour</tspan> Γ<sub><tspan font-family="cmmi" font-size="8">δ,𝜀</tspan></sub> which has an outer circle <tspan font-family="cmmi" font-size="10">γ</tspan>, plus
+an inner circle <span class="overline"><tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmmi" font-size="8">𝜀</tspan></sub></span>, which is a circle centered at <tspan font-family="cmmi" font-size="10">a </tspan>with radius <tspan font-family="cmmi" font-size="10">𝜀</tspan>, running clockwise
+(so that <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmmi" font-size="8">𝜀</tspan></sub> runs counterclockwise). The “width” of the corridor is <tspan font-family="cmmi" font-size="10">δ</tspan>. See picture:
+</p>
+<div class="center" 
+>
+<!--l. 424--><p class="noindent" >
+</p>
+</div>
+<!--l. 441--><p class="noindent" >Hence Γ<sub><tspan font-family="cmmi" font-size="8">δ,𝜀</tspan></sub> consists of four smooth curves.
+</p>
+<div class="mdframed" id="mdframed-597">
+<a 
+ id="x298-284004r927"></a>
+<div class="newtheorem">
+<!--l. 443--><p class="noindent" ><span class="head">
+<a 
+ id="x298-284005r2"></a>
+<tspan font-family="cmbx" font-size="10">Question 31.5.2.</tspan>  </span><a 
+ id="x298-284006"></a><tspan font-family="cmr" font-size="10">Draw a </tspan><tspan font-family="cmti" font-size="10">simply connected </tspan><tspan font-family="cmr" font-size="10">open set Ω which contains the entire Γ</tspan><sub><tspan font-family="cmmi" font-size="7">δ,𝜀</tspan></sub> <tspan font-family="cmr" font-size="10">but does</tspan>
+<tspan font-family="cmr" font-size="10">not contain the point </tspan><tspan font-family="cmmi" font-size="10">a</tspan><tspan font-family="cmr" font-size="10">.</tspan></p>
+  </div>
+<!--l. 445--><p class="indent" >  </p></div>
+<!--l. 446--><p class="indent" >  Hence, the function <img 
+src="Na1680x.png" alt="fz(−z)a-"  class="frac" align="middle" /> manages to be holomorphic on all of Ω. Thus Cauchy’s theorem
+applies and tells us that
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na1681x.png" alt="    ∮
+         f(z)-
+0 =  Γ   z − a dz.
+      δ,𝜀
+" class="math-display"  /></div>
+<!--l. 451--><p class="indent" >  As we let <tspan font-family="cmmi" font-size="10">δ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan>0, the two walls of the keyhole will cancel each other (because
+<tspan font-family="cmmi" font-size="10">f </tspan>is continuous, and the walls run in opposite directions). So taking the limit as
+<tspan font-family="cmmi" font-size="10">δ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan>0, we are left with just <tspan font-family="cmmi" font-size="10">γ </tspan>and <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmmi" font-size="8">𝜀</tspan></sub>, which (taking again orientation into account)
+gives
+</p>
+  <div class="math-display" >
+<img 
+src="Na1682x.png" alt="∮  f (z)       ∮   f (z)      ∮   f(z)
+   ----- dz = −  -------dz =     -----dz.
+ γ z − a         γ𝜀 z − a       γ𝜀 z − a
+" class="math-display"  /></div>
+<!--l. 460--><p class="indent" >  Thus <tspan font-family="cmbx" font-size="10">we’ve managed to replace </tspan><tspan font-family="cmmi" font-size="10">γ </tspan><tspan font-family="cmbx" font-size="10">with a much smaller circle </tspan><tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmmi" font-size="8">𝜀</tspan></sub> <tspan font-family="cmbx" font-size="10">centered around</tspan>
+<tspan font-family="cmmi" font-size="10">a</tspan>, and the rest is algebra.
+</p><!--l. 463--><p class="indent" >  To compute the last quantity, write
+</p><table 
+class="align-star"><!--l. 474--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmex" font-size="10">∮</tspan>
+   <sub><tspan font-family="cmmi" font-size="8">γ</tspan><sub><tspan font-family="cmmi" font-size="6">𝜀</tspan></sub></sub><img 
+src="Na1684x.png" alt="f-(z-)
+z − a"  class="frac" align="middle" /> <tspan font-family="cmmi" font-size="10">dz</tspan></td><td 
+class="align-even"> = <tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">γ</tspan><sub><tspan font-family="cmmi" font-size="6">𝜀</tspan></sub></sub><img 
+src="Na1685x.png" alt="f(z)−-f-(a-)
+   z − a"  class="frac" align="middle" /> <tspan font-family="cmmi" font-size="10">dz </tspan>+ <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">a</tspan>) <tspan font-family="cmsy" font-size="10">⋅</tspan><tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">γ</tspan><sub><tspan font-family="cmmi" font-size="6">𝜀</tspan></sub></sub><img 
+src="Na1686x.png" alt="--1--
+z − a"  class="frac" align="middle" /> <tspan font-family="cmmi" font-size="10">dz</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>            <td 
+class="align-even"> = <tspan font-family="cmex" font-size="10">∮</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">γ</tspan><sub><tspan font-family="cmmi" font-size="6">𝜀</tspan></sub></sub><img 
+src="Na1687x.png" alt="f(z)− f (a )
+---z −-a---"  class="frac" align="middle" /> <tspan font-family="cmmi" font-size="10">dz </tspan>+ 2<tspan font-family="cmmi" font-size="10">πif</tspan>(<tspan font-family="cmmi" font-size="10">a</tspan>)<tspan font-family="cmmi" font-size="10">.</tspan></td>          <td 
+class="align-label"></td><td 
+class="align-label">                          </td></tr></table>
+                                                                                
+                                                                                
+</p><!--l. 475--><p class="indent" >  where we’ve used <tspan font-family="cmbx" font-size="10">??</tspan>  Thus, all we have to do is show that
+</p>
+  <div class="math-display" >
+<img 
+src="Na1688x.png" alt="∮
+   f-(z)−-f(a) dz = 0.
+ γ𝜀   z − a
+" class="math-display"  /></div>
+<!--l. 478--><p class="indent" >  For this we can basically use the weakest bound possible, the so-called <tspan font-family="cmmi" font-size="10">ML </tspan>lemma which I’ll
+cite without proof: it says “bound the function everywhere by its maximum”.</p>
+<div class="mdframed" id="mdframed-598">
+<a 
+ id="x298-284007r928"></a>
+<div class="newtheorem">
+<!--l. 482--><p class="noindent" ><span class="head">
+<a 
+ id="x298-284008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Lemma 31.5.3 </tspan><tspan font-family="cmss" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">ML </tspan><tspan font-family="cmss" font-size="10">estimation lemma)</tspan><br 
+class="newline" /> </span><a 
+ id="x298-284009"></a>Let <tspan font-family="cmmi" font-size="10">f </tspan>be a holomorphic function and <tspan font-family="cmmi" font-size="10">α </tspan>a path.
+Suppose <tspan font-family="cmmi" font-size="10">M </tspan>= max<sub><tspan font-family="cmmi" font-size="8">z</tspan> on <tspan font-family="cmmi" font-size="8">α</tspan></sub><img 
+src="Na1689x.png" alt="|f(z)|"  class="left" align="middle" />, and let <tspan font-family="cmmi" font-size="10">L </tspan>be the length of <tspan font-family="cmmi" font-size="10">α</tspan>. Then
+</p>
+<div class="math-display" >
+<img 
+src="Na1690x.png" alt="||∮         ||
+|  f(z) dz|≤ M  L.
+| α       |
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 488--><p class="indent" >  </p></div>
+<!--l. 489--><p class="indent" >  (This is straightforward to prove if you know the definition of length: <tspan font-family="cmmi" font-size="10">L </tspan>= <tspan font-family="cmex" font-size="10">∫</tspan>
+ <sub><tspan font-family="cmmi" font-size="8">a</tspan></sub><sup><tspan font-family="cmmi" font-size="8">b</tspan></sup><tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">α</tspan><tspan font-family="cmsy" font-size="10">′</tspan>(<tspan font-family="cmmi" font-size="10">t</tspan>)<tspan font-family="cmsy" font-size="10">| </tspan><tspan font-family="cmmi" font-size="10">dt</tspan>,
+where <tspan font-family="cmmi" font-size="10">α </tspan>: [<tspan font-family="cmmi" font-size="10">a,b</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>.)
+                                                                                
+                                                                                
+</p><!--l. 492--><p class="indent" >  Anyways, as <tspan font-family="cmmi" font-size="10">𝜀 </tspan><tspan font-family="cmsy" font-size="10">→ </tspan>0, the quantity <img 
+src="Na1691x.png" alt="f(z)z−−fa(a)"  class="frac" align="middle" /> approaches <tspan font-family="cmmi" font-size="10">f</tspan><tspan font-family="cmsy" font-size="10">′</tspan>(<tspan font-family="cmmi" font-size="10">a</tspan>), and so for small enough <tspan font-family="cmmi" font-size="10">𝜀</tspan>
+(i.e. <tspan font-family="cmmi" font-size="10">z </tspan>close to <tspan font-family="cmmi" font-size="10">a</tspan>) there’s some upper bound <tspan font-family="cmmi" font-size="10">M</tspan>. Yet the length of <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmmi" font-size="8">𝜀</tspan></sub> is the circumference 2<tspan font-family="cmmi" font-size="10">π𝜀</tspan>.
+So the <tspan font-family="cmmi" font-size="10">ML </tspan>lemma says that
+</p>
+  <div class="math-display" >
+<img 
+src="Na1692x.png" alt="|∮             |
+||   f(z)−-f-(a)||≤ 2π𝜀 ⋅M  → 0
+| γ𝜀   z − a   |
+" class="math-display"  /></div>
+<!--l. 499--><p class="indent" >  as desired.                                                                                                □
+</p>
+  </div>
+                                                                                
+                                                                                
+  <!--l. 502--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase213.htm" >next</a>] [<a 
+href="Nase205.htm" >prev</a>] [<a 
+href="Nase205.htm#tailNase205.htm" >prev-tail</a>] [<a 
+href="Nase206.htm" >front</a>] [<a 
+href="Nase206.htm#Nase212.htm" >up</a>] </p></div>
+<!--l. 502--><p class="indent" >  <a 
+ id="tailNase206.htm"></a> </p> 
+</body> 
+</html>

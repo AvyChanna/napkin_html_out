@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Fusing paths together</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 23--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach65.htm" >next</a>] [<a 
+href="Nach58.htm#tailNase366.htm">tail</a>] [<a 
+href="Nase389.htm#Nase390.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">58.1</span>  <a 
+ id="x513-49500058.1"></a>Fusing paths together</h3>
+<!--l. 24--><p class="noindent" >Recall that a <tspan font-family="cmti" font-size="10">path </tspan>in a space <tspan font-family="cmmi" font-size="10">X </tspan>is a function [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X</tspan>. Suppose
+we have paths <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>  and <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>  such that <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(1) = <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>(0). We’d like to
+fuse<span class="footnote-mark"><a 
+href="Na514.htm#fn1x67"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x513-495001f1"></a> 
+them together to get a path <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∗ </tspan><tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. Easy, right?
+</p>
+                                                                                
+                                                                                
+<div class="center" 
+>
+<!--l. 37--><p class="noindent" >
+</p>
+</div>
+<!--l. 53--><p class="indent" >  We unfortunately do have to hack the definition a tiny bit. In an ideal world,
+we’d have a path <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> : [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> : [1<tspan font-family="cmmi" font-size="10">,</tspan>2] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>and we could just merge them
+together to get <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∗ </tspan><tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> : [0<tspan font-family="cmmi" font-size="10">,</tspan>2] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X</tspan>. But the “2” is wrong here. The solution is that we
+allocate [0<tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na2892x.png" alt="12"  class="frac" align="middle" />] for the first path and [<img 
+src="Na2893x.png" alt="12"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">,</tspan>1] for the second path; we run “twice as
+fast”.
+<a 
+ id="x513-495002r1468"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 59--><p class="noindent" ><span class="head">
+<a 
+ id="x513-495003r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 58.1.1.</tspan>  </span><a 
+ id="x513-495004"></a>Given two paths <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,γ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>  : [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>such that <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(1) = <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>(0), we
+define a path <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∗ </tspan><tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> : [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>by
+</p>
+  <div class="math-display" >
+<img 
+src="Na2894x.png" alt="             {
+               γ1(2t)      0 ≤ t ≤ 12
+(γ1 ∗ γ2)(t) =  γ (2t − 1)  1 ≤ t ≤ 1.
+                2         2
+" class="math-display"  /></div>
+  </div>
+<!--l. 70--><p class="indent" >
+</p><!--l. 72--><p class="indent" >  This hack unfortunately reveals a second shortcoming: this “product” is not associative. If
+we take (<tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∗ </tspan><tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) <tspan font-family="cmsy" font-size="10">∗ </tspan><tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> for some suitable paths, then [0<tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na2895x.png" alt="1
+4"  class="frac" align="middle" />], [<img 
+src="Na2896x.png" alt="1
+4"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na2897x.png" alt="1
+2"  class="frac" align="middle" />] and [<img 
+src="Na2898x.png" alt="1
+2"  class="frac" align="middle" /><tspan font-family="cmmi" font-size="10">,</tspan>1] are the times
+allocated for <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>.</p>
+<div class="mdframed" id="mdframed-965">
+<a 
+ id="x513-495005r1469"></a>
+<div class="newtheorem">
+<!--l. 77--><p class="noindent" ><span class="head">
+<a 
+ id="x513-495006r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Question 58.1.2.</tspan>  </span><a 
+ id="x513-495007"></a><tspan font-family="cmr" font-size="10">What are the times allocated for </tspan><tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="7">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∗ </tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="7">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∗ </tspan><tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="7">3</tspan></sub><tspan font-family="cmr" font-size="10">)?</tspan></p>
+  </div>
+<!--l. 79--><p class="indent" >  </p></div>
+<!--l. 80--><p class="indent" >  But I hope you’ll agree that even though this operation isn’t associative, the reason it fails
+to be associative is kind of stupid. It’s just a matter of how fast we run in certain
+parts.
+</p>
+<div class="center" 
+>
+<!--l. 84--><p class="noindent" >
+</p>
+</div>
+<!--l. 112--><p class="indent" >  So as long as we’re fusing paths together, we probably don’t want to think of [0<tspan font-family="cmmi" font-size="10">,</tspan>1] itself too
+seriously. And so we only consider everything up to (path) homotopy equivalence. (Recall
+that two paths <tspan font-family="cmmi" font-size="10">α </tspan>and <tspan font-family="cmmi" font-size="10">β </tspan>are homotopic if there’s a path homotopy <tspan font-family="cmmi" font-size="10">F </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1]<sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X</tspan>
+between them, which is a continuous deformation from <tspan font-family="cmmi" font-size="10">α </tspan>to <tspan font-family="cmmi" font-size="10">β</tspan>.) It is definitely true
+that
+</p>
+  <div class="math-display" >
+<img 
+src="Na2899x.png" alt="(γ1 ∗γ2)∗ γ3 ≃ γ1 ∗ (γ2 ∗γ3).
+" class="math-display"  /></div>
+<!--l. 123--><p class="indent" >  It is also true that if <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">≃ </tspan><tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> and <tspan font-family="cmmi" font-size="10">β</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">≃ </tspan><tspan font-family="cmmi" font-size="10">β</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> then <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">∗ </tspan><tspan font-family="cmmi" font-size="10">β</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">≃ </tspan><tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">∗ </tspan><tspan font-family="cmmi" font-size="10">β</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>.
+</p><!--l. 126--><p class="indent" >  Naturally, homotopy is an equivalence relation, so paths <tspan font-family="cmmi" font-size="10">γ </tspan>lives in some “homotopy
+type”, the equivalence classes under <tspan font-family="cmsy" font-size="10">≃</tspan>. We’ll denote this [<tspan font-family="cmmi" font-size="10">γ</tspan>]. Then it makes sense to
+talk about [<tspan font-family="cmmi" font-size="10">α</tspan>] <tspan font-family="cmsy" font-size="10">∗ </tspan>[<tspan font-family="cmmi" font-size="10">β</tspan>]. Thus, <tspan font-family="cmbx" font-size="10">we can think of </tspan><tspan font-family="cmsy" font-size="10">∗ </tspan><tspan font-family="cmbx" font-size="10">as an operation on homotopy</tspan>
+<tspan font-family="cmbx" font-size="10">classes</tspan>.
+                                                                                
+                                                                                
+</p>
+  <!--l. 133--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach65.htm" >next</a>] [<a 
+href="Nase366.htm" >front</a>] [<a 
+href="Nase389.htm#Nase390.htm" >up</a>] </p></div>
+<!--l. 133--><p class="indent" >  <a 
+ id="tailNase366.htm"></a> </p> 
+</body> 
+</html>

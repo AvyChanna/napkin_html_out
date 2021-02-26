@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="Napkin.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78.15512pt" height="59.15678pt" viewBox="-39.07756 -30.1655 78.15512 59.15678 "> 
+<g transform="translate(0, 28.99129 ) scale(1,-1) translate(0,30.1655 )"> 
+           </p><g stroke="#000" fill="#000">
+ <g stroke-width="0.4">
+ <g transform="translate(-39.07756,-21.81274)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(39.07756,0)" text-anchor="middle"  font-size="10.95"> 
+    <g transform="translate(-5.93126,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(5.93126,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmmi" font-size="10">W</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+          <g transform="translate(-4.41042,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.41042,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmmi" font-size="10">V</tspan> </g> </g>
+ </text> 
+</g>
+ </g>
+ 
+   <g transform="translate(-9.01463,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(9.01463,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmmi" font-size="10">W</tspan><tspan baseline-shift="sub"><tspan font-family="cmsy" font-size="8">∨</tspan></tspan></g> </g>
+ </text> 
+</g>
+ </g>
+      <g transform="translate(-7.49379,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(7.49379,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmmi" font-size="10">V</tspan> <tspan baseline-shift="sub"><tspan font-family="cmsy" font-size="8">∨</tspan></tspan></g> </g>
+ </text> 
+</g>
+ </g>
+ </text> 
+</g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -14.50253 17.06773 L 17.10623 17.06773  " fill="none"/>
+ <g transform="translate(17.32523,17.06773)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ <g transform="translate(-3.51599,19.64401)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(5.03683,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmmi" font-size="8">T</tspan><tspan baseline-shift="sub"><tspan font-family="cmsy" font-size="6">†</tspan> </tspan> </g> </g>
+ </text> 
+</g>
+ </g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -25.34836 10.12285 L -25.34836 -8.74924  " fill="none"/>
+ <g transform="matrix(0.0,-1.0,1.0,0.0,-25.34836,-8.96823)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ <g transform="translate(-34.53584,-1.80608)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(3.3056,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <img 
+src="Na787x.png" alt="∼="  class="cong"  /> </g> </g>
+ </text> 
+</g>
+ </g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M 26.8692 10.12285 L 26.8692 -8.74924  " fill="none"/>
+ <g transform="matrix(0.0,-1.0,1.0,0.0,26.8692,-8.96823)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ <g transform="translate(29.44548,-1.80608)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(3.3056,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <img 
+src="Na788x.png" alt="∼="  class="cong"  /> </g> </g>
+ </text> 
+</g>
+ </g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -11.41916 -19.07526 L 14.02286 -19.07526  " fill="none"/>
+ <g transform="translate(14.24185,-19.07526)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ <g transform="translate(-4.29376,-27.80821)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(5.8146,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmmi" font-size="8">T</tspan><tspan baseline-shift="sub"><tspan font-family="cmsy" font-size="6">∨</tspan> </tspan> </g> </g>
+ </text> 
+</g>
+ </g>
+ </g>
+ </g>
+ </g>
+  </g> 
+</svg> 

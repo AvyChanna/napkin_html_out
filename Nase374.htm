@@ -1,0 +1,215 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Lifting theorem</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 126--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase400.htm" >next</a>] [<a 
+href="Nase373.htm" >prev</a>] [<a 
+href="Nase373.htm#tailNase373.htm" >prev-tail</a>] [<a 
+href="Nase352.htm#tailNase374.htm">tail</a>] [<a 
+href="Nase397.htm#Nase399.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">59.2</span>  <a 
+ id="x524-50400059.2"></a>Lifting theorem</h3>
+<!--l. 127--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmti" font-size="10">covers </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 128--><p class="indent" >  Now here’s the key idea: we are going to try to interpret loops in <tspan font-family="cmmi" font-size="10">B </tspan>as paths in <tspan font-family="msbm" font-size="10">ℝ</tspan>. This is
+often much simpler. For example, we had no idea how to compute the fundamental group of
+<tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>, but the fundamental group of <tspan font-family="msbm" font-size="10">ℝ </tspan>is just the trivial group. So if we can interpret
+loops in <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> as paths in <tspan font-family="msbm" font-size="10">ℝ</tspan>, that might (and indeed it does!) make computing <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>)
+tractable.
+<a 
+ id="x524-504001r1512"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 137--><p class="noindent" ><span class="head">
+<a 
+ id="x524-504002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 59.2.1.</tspan>  </span><a 
+ id="x524-504003"></a>Let <tspan font-family="cmmi" font-size="10">γ </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B </tspan>be a path and <tspan font-family="cmmi" font-size="10">p </tspan>: <tspan font-family="cmmi" font-size="10">E </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B </tspan>a covering projection.
+A <tspan font-family="cmbx" font-size="10">lifting</tspan> of <tspan font-family="cmmi" font-size="10">γ </tspan>is a path <span class='accenttilde'><tspan font-family="cmmi" font-size="10">γ</tspan></span> : [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">E </tspan>such that <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∘</tspan><span class='accenttilde'><tspan font-family="cmmi" font-size="10">γ</tspan></span> = <tspan font-family="cmmi" font-size="10">γ</tspan>.
+</p>
+  </div>
+<!--l. 140--><p class="indent" >
+Picture: <img 
+src="Na2938x.png" alt="                    E|
+                     |
+                     |
+                     p
+                     |
+[0,1 ]---γ----˜γ------B-- "  />
+</p>
+<div class="mdframed" id="mdframed-995">
+<a 
+ id="x524-504004r1513"></a>
+<div class="newtheorem">
+<!--l. 148--><p class="noindent" ><span class="head">
+<a 
+ id="x524-504005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 59.2.2 </tspan>(Typical example of lifting)<br 
+class="newline" /> </span><a 
+ id="x524-504006"></a>Take <tspan font-family="cmmi" font-size="10">p </tspan>: <tspan font-family="msbm" font-size="10">ℝ  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>  <tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="msbm" font-size="10">ℂ  </tspan>by <tspan font-family="cmmi" font-size="10">𝜃</tspan><img 
+src="Na2939x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">e</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan><tspan font-family="cmmi" font-size="8">πi𝜃</tspan></sup>  (so
+<tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>  is considered again as the unit circle). Consider the path <tspan font-family="cmmi" font-size="10">γ </tspan>in <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>  which starts at
+1  <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℂ  </tspan>and wraps around <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>  once, counterclockwise, ending at 1 again. In symbols,
+                                                                                
+                                                                                
+<tspan font-family="cmmi" font-size="10">γ </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> by <tspan font-family="cmmi" font-size="10">t</tspan><img 
+src="Na2940x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">e</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan><tspan font-family="cmmi" font-size="8">πit</tspan></sup>.
+</p><!--l. 155--><p class="noindent" >Then one lifting <span class='accenttilde'><tspan font-family="cmmi" font-size="10">γ</tspan></span> is the path which walks from 0 to 1. In fact, <tspan font-family="cmti" font-size="10">for any integer </tspan><tspan font-family="cmmi" font-size="10">n</tspan>, walking
+from <tspan font-family="cmmi" font-size="10">n </tspan>to <tspan font-family="cmmi" font-size="10">n </tspan>+ 1 works.
+</p>
+<div class="center" 
+>
+<!--l. 158--><p class="noindent" >
+</p>
+</div>
+<!--l. 187--><p class="noindent" >Similarly, the counterclockwise path from 1 <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> to <tspan font-family="cmsy" font-size="10">−</tspan>1 <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> has a lifting: for some integer <tspan font-family="cmmi" font-size="10">n</tspan>,
+the path from <tspan font-family="cmmi" font-size="10">n </tspan>to <tspan font-family="cmmi" font-size="10">n </tspan>+ <img 
+src="Na2941x.png" alt="12"  class="frac" align="middle" />.</p>
+  </div>
+<!--l. 190--><p class="indent" >  </p></div>
+<!--l. 192--><p class="indent" >  The above is the primary example of a lifting. It seems like we have the following structure:
+given a path <tspan font-family="cmmi" font-size="10">γ </tspan>in <tspan font-family="cmmi" font-size="10">B </tspan>starting at <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>, we start at any point in the fiber <tspan font-family="cmmi" font-size="10">p</tspan>pre(<tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>). (In our
+prototypical example, <tspan font-family="cmmi" font-size="10">B </tspan>= <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>, <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> = 1 <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>and that’s why we start at any integer <tspan font-family="cmmi" font-size="10">n</tspan>.)
+After that we just trace along the path in <tspan font-family="cmmi" font-size="10">B</tspan>, and we get a corresponding path in
+<tspan font-family="cmmi" font-size="10">E</tspan>.</p>
+<div class="mdframed" id="mdframed-996">
+<a 
+ id="x524-504007r1514"></a>
+<div class="newtheorem">
+<!--l. 200--><p class="noindent" ><span class="head">
+<a 
+ id="x524-504008r3"></a>
+<tspan font-family="cmbx" font-size="10">Question 59.2.3.</tspan>  </span><a 
+ id="x524-504009"></a><tspan font-family="cmr" font-size="10">Take a path </tspan><tspan font-family="cmmi" font-size="10">γ </tspan><tspan font-family="cmr" font-size="10">in </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="7">1</tspan></sup> <tspan font-family="cmr" font-size="10">with </tspan><tspan font-family="cmmi" font-size="10">γ</tspan><tspan font-family="cmr" font-size="10">(0) = 1 </tspan><tspan font-family="cmsy" font-size="10">∈</tspan><tspan font-family="msbm" font-size="10">ℂ</tspan><tspan font-family="cmr" font-size="10">. Convince yourself that once we select</tspan>
+<tspan font-family="cmr" font-size="10">an integer </tspan><tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">∈</tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><tspan font-family="cmr" font-size="10">, then there is exactly one lifting starting at </tspan><tspan font-family="cmmi" font-size="10">n</tspan><tspan font-family="cmr" font-size="10">.</tspan></p>
+  </div>
+<!--l. 203--><p class="indent" >  </p></div>
+<!--l. 205--><p class="indent" >  It turns out this is true more generally.</p>
+<div class="mdframed" id="mdframed-997">
+<a 
+ id="x524-504010r1515"></a>
+<div class="newtheorem">
+<!--l. 206--><p class="noindent" ><span class="head">
+<a 
+ id="x524-504011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 59.2.4 </tspan><tspan font-family="cmss" font-size="10">(Lifting paths)</tspan><br 
+class="newline" /> </span><a 
+ id="x524-504012"></a>Suppose <tspan font-family="cmmi" font-size="10">γ </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">B </tspan>is a path with <tspan font-family="cmmi" font-size="10">γ</tspan>(0) = <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>, and
+<tspan font-family="cmmi" font-size="10">p  </tspan>:  (<tspan font-family="cmmi" font-size="10">E,e</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>)  <tspan font-family="cmsy" font-size="10">→ </tspan>(<tspan font-family="cmmi" font-size="10">B,b</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>)  is  a  covering  projection.  Then  there  exists  a  <tspan font-family="cmti" font-size="10">unique  </tspan>lifting
+<span class='accenttilde'><tspan font-family="cmmi" font-size="10">γ</tspan></span> : [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">E </tspan>such that <span class='accenttilde'><tspan font-family="cmmi" font-size="10">γ</tspan></span>(0) = <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>.
+</p>
+  </div>
+<!--l. 212--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<!--l. 213--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 214--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>For every point <tspan font-family="cmmi" font-size="10">b </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">B</tspan>, consider an evenly covered open neighborhood <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">b</tspan></sub> in <tspan font-family="cmmi" font-size="10">B</tspan>.
+Then the family of open sets
+</p>
+  <div class="math-display" >
+<img 
+src="Na2942x.png" alt="   pre
+{ γ  (Ub) | b ∈ B }
+" class="math-display"  /></div>
+<!--l. 218--><p class="indent" >  is an open cover of [0<tspan font-family="cmmi" font-size="10">,</tspan>1]. As [0<tspan font-family="cmmi" font-size="10">,</tspan>1] is compact we can take a finite subcover. Thus we
+can chop [0<tspan font-family="cmmi" font-size="10">,</tspan>1] into finitely many disjoint closed intervals [0<tspan font-family="cmmi" font-size="10">,</tspan>1] = <tspan font-family="cmmi" font-size="10">I</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⊔ </tspan><tspan font-family="cmmi" font-size="10">I</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmsy" font-size="10">⊔</tspan><img 
+src="Na2943x.png" alt="⋅⋅⋅"  class="@cdots"  /><tspan font-family="cmsy" font-size="10">⊔ </tspan><tspan font-family="cmmi" font-size="10">I</tspan><sub><tspan font-family="cmmi" font-size="8">N</tspan></sub> in
+that order, such that for every <tspan font-family="cmmi" font-size="10">I</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>, <tspan font-family="cmmi" font-size="10">γ</tspan>img(<tspan font-family="cmmi" font-size="10">I</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>) is contained in some <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">b</tspan></sub>.
+</p><!--l. 225--><p class="indent" >  We’ll construct <span class='accenttilde'><tspan font-family="cmmi" font-size="10">γ</tspan></span> interval by interval now, starting at <tspan font-family="cmmi" font-size="10">I</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>. Initially, place a robot at
+<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">E </tspan>and a mouse at <tspan font-family="cmmi" font-size="10">b</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">B</tspan>. For each interval <tspan font-family="cmmi" font-size="10">I</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>, the mouse moves around according
+to however <tspan font-family="cmmi" font-size="10">γ </tspan>behaves on <tspan font-family="cmmi" font-size="10">I</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>. But the whole time it’s in some evenly covered <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>; the fact
+that <tspan font-family="cmmi" font-size="10">p </tspan>is a covering projection tells us that there are several copies of <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> living in <tspan font-family="cmmi" font-size="10">E</tspan>.
+Exactly one of them, say <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>, contains our robot. So the robot just mimics the mouse
+until it gets to the end of <tspan font-family="cmmi" font-size="10">I</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>. Then the mouse is in some new evenly covered <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmr" font-size="8">+1</tspan></sub>, and
+we can repeat.                                                                                              □
+</p>
+  </div>
+<!--l. 239--><p class="indent" >  The theorem can be generalized to a diagram <img 
+src="Na2944x.png" alt="            (E, e0)
+               |
+               |
+               |p
+               |
+     ----f-f˜-----
+(Y,y0)      (B, b0)
+"  />
+where <tspan font-family="cmmi" font-size="10">Y </tspan>is some general path-connected space, as follows.</p>
+<div class="mdframed" id="mdframed-998">
+<a 
+ id="x524-504013r1516"></a>
+<div class="newtheorem">
+<!--l. 246--><p class="noindent" ><span class="head">
+                                                                                
+                                                                                
+<a 
+ id="x524-504014r5"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 59.2.5 </tspan><tspan font-family="cmss" font-size="10">(General lifting criterion)</tspan><br 
+class="newline" /> </span><a 
+ id="x524-504015"></a>  Let  <tspan font-family="cmmi" font-size="10">f  </tspan>:  (<tspan font-family="cmmi" font-size="10">Y,y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>)  <tspan font-family="cmsy" font-size="10">→ </tspan>(<tspan font-family="cmmi" font-size="10">B,b</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>)  be  continuous
+and  consider  a  covering  projection  <tspan font-family="cmmi" font-size="10">p  </tspan>:  (<tspan font-family="cmmi" font-size="10">E,e</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>)  <tspan font-family="cmsy" font-size="10">→ </tspan>(<tspan font-family="cmmi" font-size="10">B,b</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>).  (As  usual,  <tspan font-family="cmmi" font-size="10">Y </tspan>,  <tspan font-family="cmmi" font-size="10">B</tspan>,  <tspan font-family="cmmi" font-size="10">E </tspan>are
+path-connected.) Then a lifting <span class='accenttilde'><tspan font-family="cmmi" font-size="10">f</tspan></span> with <span class='accenttilde'><tspan font-family="cmmi" font-size="10">f</tspan></span>(<tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) = <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> exists if and only if
+</p>
+<div class="math-display" >
+<img 
+src="Na2945x.png" alt="  img              img
+f∗  (π1(Y,y0)) ⊆ p∗ (π1(E, e0)),
+" class="math-display"  /></div>
+<!--l. 252--><p class="noindent" >i.e. the image of <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">Y,y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) under <tspan font-family="cmmi" font-size="10">f </tspan>is contained in the image of <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">E,e</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) under <tspan font-family="cmmi" font-size="10">p </tspan>(both
+viewed as subgroups of <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">B,b</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>)). If this lifting exists, it is unique.
+</p>
+  </div>
+<!--l. 255--><p class="indent" >  </p></div>
+<!--l. 256--><p class="indent" >  As <tspan font-family="cmmi" font-size="10">p </tspan>is injective, we actually have <tspan font-family="cmmi" font-size="10">p</tspan><sub><tspan font-family="cmsy" font-size="8">∗</tspan></sub>img(<tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">E,e</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>))<img 
+src="Na2946x.png" alt="∼="  class="cong"  /><tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">E,e</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>). But in this case
+we are interested in the actual elements, not just the isomorphism classes of the
+groups.</p>
+<div class="mdframed" id="mdframed-999">
+<a 
+ id="x524-504016r1517"></a>
+<div class="newtheorem">
+<!--l. 259--><p class="noindent" ><span class="head">
+<a 
+ id="x524-504017r6"></a>
+<tspan font-family="cmbx" font-size="10">Question 59.2.6.</tspan>  </span><a 
+ id="x524-504018"></a><tspan font-family="cmr" font-size="10">What happens if we put </tspan><tspan font-family="cmmi" font-size="10">Y </tspan><tspan font-family="cmr" font-size="10">= [0</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmr" font-size="10">1]?</tspan></p>
+  </div>
+<!--l. 260--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-1000">
+<a 
+ id="x524-504019r1518"></a>
+<div class="newtheorem">
+<!--l. 262--><p class="noindent" ><span class="head">
+<a 
+ id="x524-504020r7"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 59.2.7 </tspan><tspan font-family="cmss" font-size="10">(Lifting homotopies) </tspan><tspan font-family="cmssbx" font-size="10">—  </tspan> </span><a 
+ id="x524-504021"></a>Here’s another cool special case: Recall that a
+homotopy can be encoded as a continuous function [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">× </tspan>[0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X</tspan>. But [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">× </tspan>[0<tspan font-family="cmmi" font-size="10">,</tspan>1]
+is also simply connected. Hence given a homotopy <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">≃ </tspan><tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> in the base space <tspan font-family="cmmi" font-size="10">B</tspan>, we can
+lift it to get a homotopy <span class='accenttilde'><tspan font-family="cmmi" font-size="10">γ</tspan></span><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">≃</tspan><span class='accenttilde'><tspan font-family="cmmi" font-size="10">γ</tspan></span><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> in <tspan font-family="cmmi" font-size="10">E</tspan>.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 268--><p class="indent" >  </p></div>
+<!--l. 269--><p class="indent" >  Another nice application of this result is <tspan font-family="cmbx" font-size="10">??</tspan> .
+                                                                                
+                                                                                
+</p>
+  <!--l. 271--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase400.htm" >next</a>] [<a 
+href="Nase373.htm" >prev</a>] [<a 
+href="Nase373.htm#tailNase373.htm" >prev-tail</a>] [<a 
+href="Nase374.htm" >front</a>] [<a 
+href="Nase397.htm#Nase399.htm" >up</a>] </p></div>
+<!--l. 271--><p class="indent" >  <a 
+ id="tailNase374.htm"></a> </p> 
+</body> 
+</html>

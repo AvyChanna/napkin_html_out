@@ -1,0 +1,225 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Exterior derivatives</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 348--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase292.htm" >next</a>] [<a 
+href="Nase274.htm" >prev</a>] [<a 
+href="Nase274.htm#tailNase274.htm" >prev-tail</a>] [<a 
+href="Nase260.htm#tailNase275.htm">tail</a>] [<a 
+href="Nase288.htm#Napa13.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">43.4</span>  <a 
+ id="x395-37500043.4"></a>Exterior derivatives</h3>
+<!--l. 349--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Possibly </tspan><tspan font-family="cmmi" font-size="10">dx</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> = <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 350--><p class="indent" >  We now define the exterior derivative <tspan font-family="cmmi" font-size="10">df </tspan>that we gave pictures of at the beginning of the
+section. It turns out that the exterior derivative is easy to compute given explicit coordinates
+to work with.
+</p><!--l. 355--><p class="indent" >  First, given a function <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>, we define
+</p>
+  <div class="math-display" >
+<img 
+src="Na2033x.png" alt="           ∑  ∂fi ∨
+df := Df  =    ∂eiei
+            i
+" class="math-display"  /></div>
+<!--l. 358--><p class="indent" >  In particular, suppose <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> and <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>) = <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> (i.e. <tspan font-family="cmmi" font-size="10">f </tspan>= <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>). Then:</p>
+<div class="mdframed" id="mdframed-715">
+<a 
+ id="x395-375001r1113"></a>
+<div class="newtheorem">
+<!--l. 361--><p class="noindent" ><span class="head">
+<a 
+ id="x395-375002r1"></a>
+<tspan font-family="cmbx" font-size="10">Question 43.4.1.</tspan>  </span><a 
+ id="x395-375003"></a><tspan font-family="cmr" font-size="10">Show that for any </tspan><tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U</tspan><tspan font-family="cmr" font-size="10">,</tspan>
+</p>
+<div class="math-display" >
+<img 
+src="Na2034x.png" alt="   ∨      ∨
+(d(e1))p = e1.
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 362--><p class="indent" >  </p></div>
+<a 
+ id="x395-375004r1114"></a>
+  <div class="newtheorem">
+<!--l. 365--><p class="noindent" ><span class="head">
+<a 
+ id="x395-375005r2"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 43.4.2.</tspan>  </span><a 
+ id="x395-375006"></a>Unfortunately, someone somewhere decided it would be a
+good idea to use “<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>” to denote <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> (because <tspan font-family="cmti" font-size="10">obviously</tspan><span class="footnote-mark"><a 
+href="Na396.htm#fn1x47"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x395-375007f1"></a> 
+<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> means “the function that takes (<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>) <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> to <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>”) and then decided that
+</p>
+  <div class="math-display" >
+<img 
+src="Na2035x.png" alt="dx1 := e ∨.
+        1
+" class="math-display"  /></div>
+<!--l. 370--><p class="indent" >  This notation is so entrenched that I have no choice but to grudgingly accept it. Note
+that it’s not even right, since technically it’s (<tspan font-family="cmmi" font-size="10">dx</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>)<sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> = <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>; <tspan font-family="cmmi" font-size="10">dx</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> is a 1-form.
+</p>
+  </div>
+<!--l. 375--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-716">
+<a 
+ id="x395-375008r1115"></a>
+<div class="newtheorem">
+<!--l. 377--><p class="noindent" ><span class="head">
+<a 
+ id="x395-375009r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 43.4.3 —  </tspan> </span><a 
+ id="x395-375010"></a>This is the reason why we use the notation <img 
+src="Na2036x.png" alt="df
+dx"  class="frac" align="middle" /> in calculus now: given,
+say, <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>by <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, it is indeed true that
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na2037x.png" alt="df = 2x⋅e∨ = 2x ⋅dx
+         1
+" class="math-display"  /></div>
+<!--l. 380--><p class="noindent" >and so by (more) abuse of notation we write <tspan font-family="cmmi" font-size="10">df∕dx </tspan>= 2<tspan font-family="cmmi" font-size="10">x</tspan>.
+</p>
+  </div>
+<!--l. 381--><p class="indent" >  </p></div>
+<!--l. 383--><p class="indent" >  More generally, we can define the <tspan font-family="cmbx" font-size="10">exterior derivative</tspan> in terms of our basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> as
+follows: if <tspan font-family="cmmi" font-size="10">α </tspan>= <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">I</tspan></sub><tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">I</tspan></sub><tspan font-family="cmmi" font-size="10">de</tspan><sub><tspan font-family="cmmi" font-size="8">I</tspan></sub> then we set
+</p>
+  <div class="math-display" >
+<img 
+src="Na2038x.png" alt="      ∑             ∑  ∑   ∂f
+dα :=    dfI ∧ deI =       --Idej ∧ deI.
+       I             I  j  ∂ej
+" class="math-display"  /></div>
+<!--l. 388--><p class="indent" >  This doesn’t depend on the choice of basis.</p>
+<div class="mdframed" id="mdframed-717">
+<a 
+ id="x395-375011r1116"></a>
+<div class="newtheorem">
+<!--l. 390--><p class="noindent" ><span class="head">
+<a 
+ id="x395-375012r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 43.4.4 </tspan>(Computing some exterior derivatives)<br 
+class="newline" /> </span><a 
+ id="x395-375013"></a>Let  <tspan font-family="cmmi" font-size="10">V  </tspan>=  <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup>  with  standard
+basis <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, <tspan font-family="cmbx" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>. Let <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x,y,z</tspan>) = <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">4</tspan></sup> + <tspan font-family="cmmi" font-size="10">y</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> + 2<tspan font-family="cmmi" font-size="10">xz</tspan>. Then we compute
+</p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na2039x.png" alt="df = Df =  (4x3 + 2z) dx+ 3y2 dy + 2x dz.
+" class="math-display"  /></div>
+<!--l. 395--><p class="noindent" >Next, we can evaluate <tspan font-family="cmmi" font-size="10">d</tspan>(<tspan font-family="cmmi" font-size="10">df</tspan>) as prescribed: it is
+</p><table 
+class="align-star"><!--l. 402--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">d</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">f</tspan></td><td 
+class="align-even"> = (12<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmmi" font-size="10">dx </tspan>+ 2<tspan font-family="cmmi" font-size="10">dz</tspan>) <tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">dx </tspan>+ (6<tspan font-family="cmmi" font-size="10">y dy</tspan>) <tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">dy </tspan>+ 2(<tspan font-family="cmmi" font-size="10">dx </tspan><tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">dz</tspan>)</td>     <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>   <td 
+class="align-even"> = 12<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>(<tspan font-family="cmmi" font-size="10">dx </tspan><tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">dx</tspan>) + 2(<tspan font-family="cmmi" font-size="10">dz </tspan><tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">dx</tspan>) + 6<tspan font-family="cmmi" font-size="10">y</tspan>(<tspan font-family="cmmi" font-size="10">dy </tspan><tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">dy</tspan>) + 2(<tspan font-family="cmmi" font-size="10">dx </tspan><tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">dz</tspan>)</td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>   <td 
+class="align-even"> = 2(<tspan font-family="cmmi" font-size="10">dz </tspan><tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">dx</tspan>) + 2(<tspan font-family="cmmi" font-size="10">dx </tspan><tspan font-family="cmsy" font-size="10">∧ </tspan><tspan font-family="cmmi" font-size="10">dz</tspan>)</td>                            <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>   <td 
+class="align-even"> = 0<tspan font-family="cmmi" font-size="10">.</tspan></td>                                                <td 
+class="align-label"></td><td 
+class="align-label">                        </td></tr></table>
+</p><!--l. 403--><p class="noindent" >So surprisingly, <tspan font-family="cmmi" font-size="10">d</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">f </tspan>is the zero map. Here, we have exploited <tspan font-family="cmbx" font-size="10">??</tspan>  for the first time, in writing
+<tspan font-family="cmmi" font-size="10">dx</tspan>, <tspan font-family="cmmi" font-size="10">dy</tspan>, <tspan font-family="cmmi" font-size="10">dz</tspan>.
+</p>
+  </div>
+<!--l. 406--><p class="indent" >  </p></div>
+<!--l. 407--><p class="indent" >  And in fact, this is always true in general:</p>
+<div class="mdframed" id="mdframed-718">
+<a 
+ id="x395-375014r1117"></a>
+<div class="newtheorem">
+<!--l. 408--><p class="noindent" ><span class="head">
+<a 
+ id="x395-375015r5"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 43.4.5 </tspan><tspan font-family="cmss" font-size="10">(Exterior derivative vanishes)</tspan><br 
+class="newline" /> </span><a 
+ id="x395-375016"></a> Let <tspan font-family="cmmi" font-size="10">α </tspan>be any <tspan font-family="cmmi" font-size="10">k</tspan>-form. Then <tspan font-family="cmmi" font-size="10">d</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>(<tspan font-family="cmmi" font-size="10">α</tspan>)  =  0.
+Even more succinctly,
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na2041x.png" alt="d2 = 0.
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 413--><p class="indent" >  </p></div>
+<!--l. 414--><p class="indent" >  The proof is left as <tspan font-family="cmbx" font-size="10">??</tspan> .</p>
+<div class="mdframed" id="mdframed-719">
+<a 
+ id="x395-375017r1118"></a>
+<div class="newtheorem">
+<!--l. 416--><p class="noindent" ><span class="head">
+<a 
+ id="x395-375018r6"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 43.4.6.</tspan>  </span><a 
+ id="x395-375019"></a><tspan font-family="cmr" font-size="10">Compare the statement </tspan><tspan font-family="cmmi" font-size="10">d</tspan><sup><tspan font-family="cmr" font-size="7">2</tspan></sup> <tspan font-family="cmr" font-size="10">= 0 to the geometric picture of a 2-form given at</tspan>
+<tspan font-family="cmr" font-size="10">the beginning of this chapter. Why does this intuitively make sense?</tspan></p>
+  </div>
+<!--l. 419--><p class="indent" >  </p></div>
+<!--l. 421--><p class="indent" >  Here are some other properties of <tspan font-family="cmmi" font-size="10">d</tspan>: </p>
+     <ul class="itemize1">
+     <li class="itemize">As we just saw, <tspan font-family="cmmi" font-size="10">d</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> = 0.
+     </li>
+     <li class="itemize">For a <tspan font-family="cmmi" font-size="10">k</tspan>-form <tspan font-family="cmmi" font-size="10">α </tspan>and <tspan font-family="cmmi" font-size="10">ℓ</tspan>-form <tspan font-family="cmmi" font-size="10">β</tspan>, one can show that
+<div class="math-display" >
+<img 
+src="Na2042x.png" alt="                        k
+d(α ∧ β) = dα ∧ β + (− 1) (α∧ dβ ).
+" class="math-display"  /></div>
+     </li>
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>is smooth, then <tspan font-family="cmmi" font-size="10">df </tspan>= <tspan font-family="cmmi" font-size="10">Df</tspan>.</li></ul>
+<!--l. 428--><p class="noindent" >In fact, one can show that <tspan font-family="cmmi" font-size="10">df </tspan>as defined above is the <tspan font-family="cmti" font-size="10">unique </tspan>map sending <tspan font-family="cmmi" font-size="10">k</tspan>-forms to
+(<tspan font-family="cmmi" font-size="10">k </tspan>+ 1)-forms with these properties. So, one way to define <tspan font-family="cmmi" font-size="10">df </tspan>is to take as axioms the bulleted
+                                                                                
+                                                                                
+properties above and then declare <tspan font-family="cmmi" font-size="10">d </tspan>to be the unique solution to this functional
+equation. In any case, this tells us that our definition of <tspan font-family="cmmi" font-size="10">d </tspan>does not depend on the basis
+chosen.
+</p><!--l. 437--><p class="indent" >  Recall that <tspan font-family="cmmi" font-size="10">df </tspan>measures the change in boundary. In that sense, <tspan font-family="cmmi" font-size="10">d</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> = 0 is saying something
+like “the boundary of the boundary is empty”. We’ll make this precise when we see Stokes’
+theorem in the next chapter.
+                                                                                
+                                                                                
+</p>
+  <!--l. 442--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase292.htm" >next</a>] [<a 
+href="Nase274.htm" >prev</a>] [<a 
+href="Nase274.htm#tailNase274.htm" >prev-tail</a>] [<a 
+href="Nase275.htm" >front</a>] [<a 
+href="Nase288.htm#Napa13.htm" >up</a>] </p></div>
+<!--l. 442--><p class="indent" >  <a 
+ id="tailNase275.htm"></a> </p> 
+</body> 
+</html>

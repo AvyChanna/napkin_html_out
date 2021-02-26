@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="Napkin.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128.34982pt" height="67.49092pt" viewBox="-64.17491 -28.81981 128.34982 67.49092 "> 
+<g transform="translate(0, 38.67111 ) scale(1,-1) translate(0,28.81981 )"> 
+                  </p><g stroke="#000" fill="#000">
+ <g stroke-width="0.4">
+ <g transform="translate(-64.17491,-22.07494)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(64.17491,0)" text-anchor="middle"  font-size="10.95"> 
+      <g transform="translate(-15.40941,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(15.40941,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmmi" font-size="10">I</tspan><tspan baseline-shift="sub"><tspan font-family="cmmi" font-size="8">K</tspan></tspan>(<tspan font-family="eufm" font-size="10">𝔪</tspan>)</g> </g>
+ </text> 
+</g>
+ </g>
+              <g transform="translate(-26.19637,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(26.19637,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> Gal(<tspan font-family="cmmi" font-size="10">M∕K</tspan>)</g> </g>
+ </text> 
+</g>
+ </g>
+ 
+                           <g transform="translate(-24.31815,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(24.31815,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> Gal(<tspan font-family="cmmi" font-size="10">L∕K</tspan>)</g> </g>
+ </text> 
+</g>
+ </g>
+ </text> 
+</g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -23.72696 19.3374 L 1.71506 19.3374  " fill="none"/>
+ <g transform="translate(1.93405,19.3374)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ <g transform="translate(-25.87865,27.11375)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(15.09169,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <img 
+src="Na2871x.png" alt="(    )
+ M-∕K∙-"  class="left" align="middle" /></g> </g>
+ </text> 
+</g>
+ </g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -24.69684 9.65503 L 13.5224 -9.45915  " fill="none"/>
+ <g transform="matrix(0.89433,-0.44727,0.44727,0.89433,13.71823,-9.5571)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ <g transform="translate(-36.00104,-11.77635)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(14.0167,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <img 
+src="Na2872x.png" alt="(    )
+ L∕∙K"  class="left" align="middle" /></g> </g>
+ </text> 
+</g>
+ </g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M 33.26398 9.65503 L 33.26398 -9.21706  " fill="none"/>
+ <g transform="matrix(0.0,-1.0,1.0,0.0,33.26398,-7.8593)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ <g transform="matrix(0.0,-1.0,1.0,0.0,33.26398,-9.43605)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ </g>
+       </g> 
+</svg> 

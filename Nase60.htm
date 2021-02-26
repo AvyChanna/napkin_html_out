@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Forgetting the metric</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 39--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase61.htm" >next</a>] [<a 
+href="#tailNase60.htm">tail</a>] [<a 
+href="Nach10.htm#Nase60.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">7.1</span>  <a 
+ id="x97-860007.1"></a>Forgetting the metric</h3>
+<!--l. 40--><p class="noindent" >Recall <tspan font-family="cmbx" font-size="10">??</tspan> :
+     </p><blockquote class="quote">
+     <!--l. 42--><p class="noindent" >A function <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="cmmi" font-size="10">M  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N </tspan>of metric spaces is continuous if and only if the
+     pre-image of every open set in <tspan font-family="cmmi" font-size="10">N </tspan>is open in <tspan font-family="cmmi" font-size="10">M</tspan>.</p></blockquote>
+<!--l. 45--><p class="noindent" >Despite us having defined this in the context of metric spaces, this nicely doesn’t refer to the
+metric at all, only the open sets. As alluded to at the start of this chapter, this is a great
+motivation for how we can forget about the fact that we had a metric to begin with, and
+rather <tspan font-family="cmti" font-size="10">start </tspan>with the open sets instead.
+                                                                                
+                                                                                
+<a 
+ id="x97-86001r269"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 54--><p class="noindent" ><span class="head">
+<a 
+ id="x97-86002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 7.1.1.</tspan>  </span><a 
+ id="x97-86003"></a>A <tspan font-family="cmbx" font-size="10">topological space</tspan> is a pair (<tspan font-family="cmmi" font-size="10">X,</tspan><tspan font-family="cmsy" font-size="10">𝒯 </tspan>), where <tspan font-family="cmmi" font-size="10">X </tspan>is a set of points, and <tspan font-family="cmsy" font-size="10">𝒯 </tspan>is
+the <tspan font-family="cmbx" font-size="10">topology</tspan>, which consists of several subsets of <tspan font-family="cmmi" font-size="10">X</tspan>, called the <tspan font-family="cmbx" font-size="10">open sets</tspan> of <tspan font-family="cmmi" font-size="10">X</tspan>. The
+topology must obey the following axioms. </p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="msbm" font-size="10">∅ </tspan>and <tspan font-family="cmmi" font-size="10">X </tspan>are both in <tspan font-family="cmsy" font-size="10">𝒯 </tspan>.
+     </li>
+     <li class="itemize">Finite intersections of open sets are also in <tspan font-family="cmsy" font-size="10">𝒯 </tspan>.
+     </li>
+     <li class="itemize">Arbitrary unions (possibly infinite) of open sets are also in <tspan font-family="cmsy" font-size="10">𝒯 </tspan>.</li></ul>
+  </div>
+<!--l. 64--><p class="indent" >
+So this time, the open sets are <tspan font-family="cmti" font-size="10">given</tspan>. Rather than defining a metric and getting open sets from
+the metric, we instead start from just the open sets. <a 
+ id="x97-86004r270"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 69--><p class="noindent" ><span class="head">
+<a 
+ id="x97-86005r2"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 7.1.2.</tspan>  </span><a 
+ id="x97-86006"></a>We abbreviate (<tspan font-family="cmmi" font-size="10">X,</tspan><tspan font-family="cmsy" font-size="10">𝒯 </tspan>) by just <tspan font-family="cmmi" font-size="10">X</tspan>, leaving the topology <tspan font-family="cmsy" font-size="10">𝒯</tspan>
+implicit. (Do you see a pattern here?)
+</p>
+  </div>
+<!--l. 72--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-177">
+<a 
+ id="x97-86007r271"></a>
+<div class="newtheorem">
+<!--l. 74--><p class="noindent" ><span class="head">
+<a 
+ id="x97-86008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 7.1.3 </tspan>(Examples of topologies)<br 
+class="newline" /> </span><a 
+ id="x97-86009"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">Given a metric space <tspan font-family="cmmi" font-size="10">M</tspan>, we can let <tspan font-family="cmsy" font-size="10">𝒯 </tspan>be the open sets in the metric sense. The
+    point is that the axioms are satisfied.
+                                                                                
+                                                                                
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">In particular, <tspan font-family="cmbx" font-size="10">discrete space</tspan> is a topological space in which every set is open.
+    (Why?)
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">Given <tspan font-family="cmmi" font-size="10">X</tspan>, we can let <tspan font-family="cmsy" font-size="10">𝒯 </tspan>= <img 
+src="Na261x.png" alt="{∅,X }"  class="left" align="middle" />, the opposite extreme of the discrete space.</dd></dl>
+</p>
+  </div>
+<!--l. 85--><p class="indent" >  </p></div>
+<!--l. 87--><p class="indent" >  Now we can port over our metric definitions. <a 
+ id="x97-86013r272"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 89--><p class="noindent" ><span class="head">
+<a 
+ id="x97-86014r4"></a>
+<tspan font-family="cmbx" font-size="10">Definition 7.1.4.</tspan>  </span><a 
+ id="x97-86015"></a>An <tspan font-family="cmbx" font-size="10">open neighborhood</tspan><span class="footnote-mark"><a 
+href="Na98.htm#fn2x11"><sup class="textsuperscript">2</sup></a></span><a 
+ id="x97-86016f2"></a> 
+of a point <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>is an open set <tspan font-family="cmmi" font-size="10">U </tspan>which contains <tspan font-family="cmmi" font-size="10">x </tspan>(see figure).
+</p>
+  </div>
+<!--l. 96--><p class="indent" >
+</p>
+<div class="center" 
+>
+<!--l. 97--><p class="noindent" >
+</p>
+</div>
+<a 
+ id="x97-86017r273"></a>
+  <div class="newtheorem">
+<!--l. 109--><p class="noindent" ><span class="head">
+<a 
+ id="x97-86018r5"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 7.1.5.</tspan>  </span><a 
+ id="x97-86019"></a>Just to be perfectly clear: by an “open neighborhood” I
+mean <tspan font-family="cmti" font-size="10">any </tspan>open set containing <tspan font-family="cmmi" font-size="10">x</tspan>. But by an “<tspan font-family="cmmi" font-size="10">r</tspan>-neighborhood” I always mean the points
+with distance less than <tspan font-family="cmmi" font-size="10">r </tspan>from <tspan font-family="cmmi" font-size="10">x</tspan>, and so I can only use this term if my space is a metric
+space.
+</p>
+  </div>
+<!--l. 114--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+  <!--l. 116--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase61.htm" >next</a>] [<a 
+href="Nase60.htm" >front</a>] [<a 
+href="Nach10.htm#Nase60.htm" >up</a>] </p></div>
+<!--l. 116--><p class="indent" >  <a 
+ id="tailNase60.htm"></a> </p> 
+</body> 
+</html>

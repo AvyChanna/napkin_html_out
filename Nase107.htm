@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Hilbert spaces</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 352--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase108.htm" >next</a>] [<a 
+href="Nase106.htm" >prev</a>] [<a 
+href="Nase106.htm#tailNase106.htm" >prev-tail</a>] [<a 
+href="#tailNase107.htm">tail</a>] [<a 
+href="Nach16.htm#Nase107.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">13.4</span>  <a 
+ id="x161-14600013.4"></a>Hilbert spaces</h3>
+<!--l. 353--><p class="noindent" >In algebra we are usually scared of infinity, and so when we defined a basis of a vanilla vector
+space many chapters ago, we only allowed finite linear combinations. However, if we have an
+inner product space, then it is a metric space and we <tspan font-family="cmti" font-size="10">can </tspan>sometimes actually talk about
+convergence.
+</p><!--l. 360--><p class="indent" >  Here is how it goes: <a 
+ id="x161-146001r502"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 362--><p class="noindent" ><span class="head">
+<a 
+ id="x161-146002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 13.4.1.</tspan>  </span><a 
+ id="x161-146003"></a>A  <tspan font-family="cmbx" font-size="10">Hilbert  space</tspan>  is  a  inner  product  space  <tspan font-family="cmmi" font-size="10">V </tspan>,  such  that  the
+corresponding metric space is complete.
+</p>
+  </div>
+<!--l. 364--><p class="indent" >
+</p><!--l. 366--><p class="indent" >  In that case, it will now often make sense to take infinite linear combinations, because we
+can look at the sequence of partial sums and let it converge. Here is how we might do it. Let’s
+suppose we have <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, …an infinite sequence of vectors with norm 1 and which are pairwise
+orthogonal. Suppose <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, …, is a sequence of real or complex numbers. Then consider the
+sequence
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 378--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub></td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub></td>            <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub></td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub></td>      <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub></td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> + <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub><tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>  <td 
+class="align-even"><img 
+src="Na626x.png" alt=".
+.."  class="mathpalette"  /></td>                <td 
+class="align-label"></td><td 
+class="align-label">                                                           </td></tr></table>
+</p>
+<div class="mdframed" id="mdframed-319">
+<a 
+ id="x161-146004r503"></a>
+<div class="newtheorem">
+<!--l. 381--><p class="noindent" ><span class="head">
+<a 
+ id="x161-146005r2"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 13.4.2 </tspan><tspan font-family="cmss" font-size="10">(Convergence criteria in a Hilbert space)</tspan><br 
+class="newline" /> </span><a 
+ id="x161-146006"></a>The  sequence  (<tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>)  defined
+above converges if and only if <tspan font-family="cmex" font-size="10">∑</tspan>
+  <img 
+src="Na627x.png" alt="|ci|"  class="left" align="middle" /><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmmi" font-size="10">&#x003C; </tspan><tspan font-family="cmsy" font-size="10">∞</tspan>.
+</p>
+  </div>
+<!--l. 384--><p class="indent" >  </p></div>
+<!--l. 385--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 386--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>This will make more sense if you read <tspan font-family="cmbx" font-size="10">??</tspan> , so you could skip this proof if you
+haven’t read the chapter. The sequence <tspan font-family="cmmi" font-size="10">v</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> converges if and only if it is Cauchy, meaning
+that when <tspan font-family="cmmi" font-size="10">i &#x003C; j</tspan>,
+</p>
+  <div class="math-display" >
+<img 
+src="Na628x.png" alt="∥vj − vi∥2 = |ci+1|2 + ⋅⋅⋅+ |cj|2
+" class="math-display"  /></div>
+<!--l. 391--><p class="indent" >  tends to zero as <tspan font-family="cmmi" font-size="10">i </tspan>and <tspan font-family="cmmi" font-size="10">j </tspan>get large. This is equivalent to the sequence <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> = <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmsy" font-size="10">|</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> +<img 
+src="Na629x.png" alt="⋅⋅⋅"  class="@cdots"  />+
+<tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmsy" font-size="10">|</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> being Cauchy.
+</p><!--l. 395--><p class="indent" >  Since <tspan font-family="msbm" font-size="10">ℝ  </tspan>is complete, <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> is Cauchy if and only if it converges. Since <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> consists of
+nonnegative real numbers, converges holds if and only if <tspan font-family="cmmi" font-size="10">s</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> is bounded, or equivalently
+if <tspan font-family="cmex" font-size="10">∑</tspan>
+  <img 
+src="Na630x.png" alt="|ci|"  class="left" align="middle" /><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmmi" font-size="10">&#x003C; </tspan><tspan font-family="cmsy" font-size="10">∞</tspan>.                                                                                             □
+</p>
+  </div>
+<!--l. 402--><p class="indent" >  Thus, when we have a Hilbert space, we change our definition slightly: <a 
+ id="x161-146007r504"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 404--><p class="noindent" ><span class="head">
+<a 
+ id="x161-146008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 13.4.3.</tspan>  </span><a 
+ id="x161-146009"></a>An <tspan font-family="cmbx" font-size="10">orthonormal basis</tspan> for a Hilbert space <tspan font-family="cmmi" font-size="10">V </tspan>is a (possibly infinite)
+sequence <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, …, of vectors such that </p>
+     <ul class="itemize1">
+     <li class="itemize"><img 
+src="Na631x.png" alt="⟨ei,ei⟩"  class="left" align="middle" /> = 1 for all <tspan font-family="cmmi" font-size="10">i</tspan>,
+     </li>
+     <li class="itemize"><img 
+src="Na632x.png" alt="⟨ei,ej⟩"  class="left" align="middle" /> = 0 for <tspan font-family="cmmi" font-size="10">i</tspan><tspan font-family="cmmi" font-size="10">≠</tspan><tspan font-family="cmmi" font-size="10">j</tspan>, i.e. the vectors are pairwise orthogonal
+     </li>
+     <li class="itemize">every element of <tspan font-family="cmmi" font-size="10">V </tspan>can be expressed uniquely as an infinite linear combination
+<div class="math-display" >
+<img 
+src="Na633x.png" alt="∑
+    ciei
+  i
+" class="math-display"  /></div>
+     <!--l. 414--><p class="noindent" >where <tspan font-family="cmex" font-size="10">∑</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><img 
+src="Na634x.png" alt="|ci|"  class="left" align="middle" /><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmmi" font-size="10">&#x003C; </tspan><tspan font-family="cmsy" font-size="10">∞</tspan>, as described above.</p></li></ul>
+  </div>
+                                                                                
+                                                                                
+<!--l. 417--><p class="indent" >
+That’s the official definition, anyways. (Note that if dim<tspan font-family="cmmi" font-size="10">V &#x003C; </tspan><tspan font-family="cmsy" font-size="10">∞</tspan>, this agrees with our usual
+definition, since then there are only finitely many <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>.) But for our purposes you can mostly not
+worry about it and instead think:</p>
+<div class="mdframed" id="mdframed-320">
+<!--l. 423--><p class="noindent" ><tspan font-family="cmbx" font-size="10">A Hilbert space is an inner product space whose basis requires infinite linear</tspan>
+<tspan font-family="cmbx" font-size="10">combinations, not just finite ones.</tspan></p><!--l. 426--><p class="noindent" ></p>
+  </div>
+<!--l. 427--><p class="indent" >  The technical condition <tspan font-family="cmex" font-size="10">∑</tspan>
+  <img 
+src="Na635x.png" alt="|ci|"  class="left" align="middle" /><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmmi" font-size="10">&#x003C; </tspan><tspan font-family="cmsy" font-size="10">∞ </tspan>is exactly the one which ensures the infinite sum
+makes sense.
+                                                                                
+                                                                                
+</p>
+  <!--l. 430--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase108.htm" >next</a>] [<a 
+href="Nase106.htm" >prev</a>] [<a 
+href="Nase106.htm#tailNase106.htm" >prev-tail</a>] [<a 
+href="Nase107.htm" >front</a>] [<a 
+href="Nach16.htm#Nase107.htm" >up</a>] </p></div>
+<!--l. 430--><p class="indent" >  <a 
+ id="tailNase107.htm"></a> </p> 
+</body> 
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Completeness and inf/sup</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 17--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase172.htm" >next</a>] [<a 
+href="#tailNase171.htm">tail</a>] [<a 
+href="Nach29.htm#Nase171.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">26.1</span>  <a 
+ id="x247-23500026.1"></a>Completeness and inf/sup</h3>
+                                                                                
+                                                                                
+<!--l. 18--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> sup[0<tspan font-family="cmmi" font-size="10">,</tspan>1] = sup(0<tspan font-family="cmmi" font-size="10">,</tspan>1) = 1<tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 19--><p class="indent" >  As <tspan font-family="msbm" font-size="10">ℝ </tspan>is a metric space, we may discuss continuity and convergence. There are two important
+facts about <tspan font-family="msbm" font-size="10">ℝ </tspan>which will make most of the following sections tick.
+</p><!--l. 24--><p class="indent" >  The first fact you have already seen before:</p>
+<div class="mdframed" id="mdframed-489">
+<a 
+ id="x247-235001r765"></a>
+<div class="newtheorem">
+<!--l. 26--><p class="noindent" ><span class="head">
+<a 
+ id="x247-235002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 26.1.1 </tspan><tspan font-family="cmss" font-size="10">(</tspan><tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmss" font-size="10">is complete)</tspan><br 
+class="newline" /> </span><a 
+ id="x247-235003"></a> As a metric space, <tspan font-family="msbm" font-size="10">ℝ </tspan>is complete: sequences converge
+if and only if they are Cauchy.
+</p>
+  </div>
+<!--l. 30--><p class="indent" >  </p></div>
+<!--l. 32--><p class="indent" >  The second one we have not seen before — it is the existence of inf and sup. Your intuition
+should be:</p>
+<div class="mdframed" id="mdframed-490">
+<!--l. 36--><p class="noindent" >sup <tspan font-family="cmbx" font-size="10">is</tspan> max <tspan font-family="cmbx" font-size="10">adjusted slightly for infinite sets. (And</tspan> inf <tspan font-family="cmbx" font-size="10">is adjusted</tspan> min<tspan font-family="cmbx" font-size="10">.)</tspan></p><!--l. 38--><p class="noindent" ></p>
+  </div>
+<!--l. 39--><p class="indent" >  Why the “adjustment”?</p>
+<div class="mdframed" id="mdframed-491">
+<a 
+ id="x247-235004r766"></a>
+<div class="newtheorem">
+<!--l. 41--><p class="noindent" ><span class="head">
+<a 
+ id="x247-235005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 26.1.2 </tspan>(Why is max not good enough?)<br 
+class="newline" /> </span><a 
+ id="x247-235006"></a>Let’s say we have the open interval
+<tspan font-family="cmmi" font-size="10">S </tspan>= (0<tspan font-family="cmmi" font-size="10">,</tspan>1). The elements can get arbitrarily close to 1, so we would like to think “1 is
+the max of <tspan font-family="cmmi" font-size="10">S</tspan>”; except the issue is that 1<img 
+src="Na1343x.png" alt="∕∈"  class="notin"  /><tspan font-family="cmmi" font-size="10">S</tspan>. In general, infinite sets don’t necessarily
+<tspan font-family="cmti" font-size="10">have </tspan>a maximum, and we have to talk about bounds instead.
+</p><!--l. 49--><p class="noindent" >So we will define sup<tspan font-family="cmmi" font-size="10">S </tspan>in such a way that sup<tspan font-family="cmmi" font-size="10">S </tspan>= 1. The definition is that “1 is the
+smallest number which is at least every element of <tspan font-family="cmmi" font-size="10">S</tspan>”.
+</p>
+  </div>
+<!--l. 52--><p class="indent" >  </p></div>
+<!--l. 53--><p class="indent" >  To write it out: <a 
+ id="x247-235007r767"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 55--><p class="noindent" ><span class="head">
+<a 
+ id="x247-235008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 26.1.3.</tspan>  </span><a 
+ id="x247-235009"></a>If <tspan font-family="cmmi" font-size="10">S </tspan>is a set of real numbers: </p>
+                                                                                
+                                                                                
+     <ul class="itemize1">
+     <li class="itemize">An <tspan font-family="cmti" font-size="10">upper bound </tspan>for <tspan font-family="cmmi" font-size="10">S </tspan>is a real number <tspan font-family="cmmi" font-size="10">M </tspan>such that <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">M </tspan>for all <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">S</tspan>. If one
+     exists, we say <tspan font-family="cmmi" font-size="10">S </tspan>is <tspan font-family="cmbx" font-size="10">bounded above</tspan>;
+     </li>
+     <li class="itemize">A <tspan font-family="cmti" font-size="10">lower bound </tspan>for <tspan font-family="cmmi" font-size="10">S </tspan>is a real number <tspan font-family="cmmi" font-size="10">m </tspan>such that <tspan font-family="cmmi" font-size="10">m </tspan><tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">x </tspan>for all <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">S</tspan>. If one
+     exists, we say <tspan font-family="cmmi" font-size="10">S </tspan>is <tspan font-family="cmbx" font-size="10">bounded below</tspan>.
+     </li>
+     <li class="itemize">If both upper and lower bounds exist, we say <tspan font-family="cmmi" font-size="10">S </tspan>is <tspan font-family="cmbx" font-size="10">bounded</tspan>.</li></ul>
+  </div>
+<!--l. 66--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-492">
+<a 
+ id="x247-235010r768"></a>
+<div class="newtheorem">
+<!--l. 68--><p class="noindent" ><span class="head">
+<a 
+ id="x247-235011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 26.1.4 </tspan><tspan font-family="cmss" font-size="10">(</tspan><tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmss" font-size="10">has inf’s and sup’s)</tspan><br 
+class="newline" /> </span><a 
+ id="x247-235012"></a> Let <tspan font-family="cmmi" font-size="10">S </tspan>be a nonempty set of real numbers.
+</p>
+     <ul class="itemize1">
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">S </tspan>is bounded above then it has a <tspan font-family="cmti" font-size="10">least </tspan>upper bound, which we denote by sup<tspan font-family="cmmi" font-size="10">S</tspan>
+     and refer to as the <tspan font-family="cmbx" font-size="10">supremum</tspan> of <tspan font-family="cmmi" font-size="10">S</tspan>.
+     </li>
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">S </tspan>is bounded below then it has a <tspan font-family="cmti" font-size="10">greatest </tspan>lower bound, which we denote by inf <tspan font-family="cmmi" font-size="10">S</tspan>
+     and refer to as the <tspan font-family="cmbx" font-size="10">infimum</tspan> of <tspan font-family="cmmi" font-size="10">S</tspan>.</li></ul>
+</p>
+  </div>
+<!--l. 81--><p class="indent" >  </p></div>
+<a 
+ id="x247-235013r769"></a>
+  <div class="newtheorem">
+<!--l. 84--><p class="noindent" ><span class="head">
+<a 
+ id="x247-235014r5"></a>
+<tspan font-family="cmbx" font-size="10">Definition 26.1.5.</tspan>  </span><a 
+ id="x247-235015"></a>For convenience, if <tspan font-family="cmmi" font-size="10">S </tspan>has not bounded above, we write sup<tspan font-family="cmmi" font-size="10">S </tspan>= +<tspan font-family="cmsy" font-size="10">∞</tspan>.
+Similarly, if <tspan font-family="cmmi" font-size="10">S </tspan>has not bounded below, we write inf <tspan font-family="cmmi" font-size="10">S </tspan>= <tspan font-family="cmsy" font-size="10">−∞</tspan>.
+</p>
+  </div>
+<!--l. 86--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-493">
+<a 
+ id="x247-235016r770"></a>
+<div class="newtheorem">
+<!--l. 89--><p class="noindent" ><span class="head">
+<a 
+ id="x247-235017r6"></a>
+<tspan font-family="cmbx" font-size="10">Example 26.1.6 </tspan>(Supremums)<br 
+class="newline" /> </span><a 
+ id="x247-235018"></a>Since the examples for infimums are basically the same, we
+stick with supremums for now.
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">If <tspan font-family="cmmi" font-size="10">S </tspan>= <img 
+src="Na1344x.png" alt="{1,2,3,...}"  class="left" align="middle" /> then <tspan font-family="cmmi" font-size="10">S </tspan>is not bounded above, so we have sup<tspan font-family="cmmi" font-size="10">S </tspan>= +<tspan font-family="cmsy" font-size="10">∞</tspan>.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">If <tspan font-family="cmmi" font-size="10">S </tspan>= <img 
+src="Na1345x.png" alt="{...,− 2,− 1}"  class="left" align="middle" /> denotes the set of negative integers, then sup<tspan font-family="cmmi" font-size="10">S </tspan>= <tspan font-family="cmsy" font-size="10">−</tspan>1.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">Let <tspan font-family="cmmi" font-size="10">S </tspan>= [0<tspan font-family="cmmi" font-size="10">,</tspan>1] be a closed interval. Then sup<tspan font-family="cmmi" font-size="10">S </tspan>= 1.
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate">Let <tspan font-family="cmmi" font-size="10">S </tspan>= (0<tspan font-family="cmmi" font-size="10">,</tspan>1) be an open interval. Then sup<tspan font-family="cmmi" font-size="10">S </tspan>= 1 as well, even though 1 itself is
+    not an element of <tspan font-family="cmmi" font-size="10">S</tspan>.
+    </dd><dt class="enumerate">
+(e) </dt><dd 
+class="enumerate">Let <tspan font-family="cmmi" font-size="10">S </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan><tspan font-family="cmsy" font-size="10">∩</tspan>(0<tspan font-family="cmmi" font-size="10">,</tspan>1) denote the set of rational numbers between 0 and 1. Then sup<tspan font-family="cmmi" font-size="10">S </tspan>= 1
+    still.
+    </dd><dt class="enumerate">
+(f) </dt><dd 
+class="enumerate">If <tspan font-family="cmmi" font-size="10">S </tspan>is a finite nonempty set, then sup<tspan font-family="cmmi" font-size="10">S </tspan>= max<tspan font-family="cmmi" font-size="10">S</tspan>.</dd></dl>
+</p>
+  </div>
+<!--l. 108--><p class="indent" >  </p></div>
+<a 
+ id="x247-235025r771"></a>
+  <div class="newtheorem">
+<!--l. 111--><p class="noindent" ><span class="head">
+<a 
+ id="x247-235026r7"></a>
+<tspan font-family="cmbx" font-size="10">Definition 26.1.7 </tspan>(Porting definitions to sequences)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x247-235027"></a>If <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …is a sequence we will often
+write
+                                                                                
+                                                                                
+</p><table 
+class="align-star"><!--l. 116--><p class="indent" >
+<tr><td 
+class="align-odd">sup<sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub></td><td 
+class="align-even"> := sup<img 
+src="Na1347x.png" alt="{an | n ∈ ℕ }"  class="left" align="middle" /></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd">inf <sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub></td> <td 
+class="align-even"> : = inf <img 
+src="Na1348x.png" alt="{an | n ∈ ℕ}"  class="left" align="middle" /></td> <td 
+class="align-label"></td><td 
+class="align-label">                                                      </td></tr></table>
+</p><!--l. 117--><p class="indent" >  for the supremum and infimum of the set of elements of the sequence. We also use the words
+“bounded above/below” for sequences in the same way.
+</p>
+  </div>
+<!--l. 120--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-494">
+<a 
+ id="x247-235028r772"></a>
+<div class="newtheorem">
+<!--l. 122--><p class="noindent" ><span class="head">
+<a 
+ id="x247-235029r8"></a>
+<tspan font-family="cmbx" font-size="10">Example 26.1.8 </tspan>(Infimum of a sequence)<br 
+class="newline" /> </span><a 
+ id="x247-235030"></a>The sequence <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> = <img 
+src="Na1349x.png" alt="1
+n"  class="frac" align="middle" /> has infimum inf <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> = 0.</p>
+  </div>
+<!--l. 124--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 126--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase172.htm" >next</a>] [<a 
+href="Nase171.htm" >front</a>] [<a 
+href="Nach29.htm#Nase171.htm" >up</a>] </p></div>
+<!--l. 126--><p class="indent" >  <a 
+ id="tailNase171.htm"></a> </p> 
+</body> 
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Quotient topology</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 39--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach64.htm" >next</a>] [<a 
+href="Nase359.htm" >prev</a>] [<a 
+href="Nase359.htm#tailNase359.htm" >prev-tail</a>] [<a 
+href="#tailNase360.htm">tail</a>] [<a 
+href="Nase382.htm#Nase384.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">57.2</span>  <a 
+ id="x506-48400057.2"></a>Quotient topology</h3>
+<!--l. 40--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmmi" font-size="10">D</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup><tspan font-family="cmmi" font-size="10">∕S</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup> = <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup><tspan font-family="cmti" font-size="10">, or the torus.</tspan>
+</p><!--l. 42--><p class="indent" >  Given a space <tspan font-family="cmmi" font-size="10">X</tspan>, we can <tspan font-family="cmti" font-size="10">identify </tspan>some of the points together by any equivalence relation <tspan font-family="cmsy" font-size="10">∼</tspan>;
+for an <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>we denote its equivalence class by [<tspan font-family="cmmi" font-size="10">x</tspan>]. Geometrically, this is the space achieved
+by welding together points equivalent under <tspan font-family="cmsy" font-size="10">∼</tspan>.
+</p><!--l. 48--><p class="indent" >  Formally, <a 
+ id="x506-484001r1440"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 50--><p class="noindent" ><span class="head">
+<a 
+ id="x506-484002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 57.2.1.</tspan>  </span><a 
+ id="x506-484003"></a>Let <tspan font-family="cmmi" font-size="10">X </tspan>be a topological space, and <tspan font-family="cmsy" font-size="10">∼ </tspan>an equivalence relation on the points
+of <tspan font-family="cmmi" font-size="10">X</tspan>. Then <tspan font-family="cmmi" font-size="10">X∕</tspan><tspan font-family="cmsy" font-size="10">∼</tspan> is the space whose </p>
+     <ul class="itemize1">
+     <li class="itemize">Points are equivalence classes of <tspan font-family="cmmi" font-size="10">X</tspan>, and
+     </li>
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">X∕</tspan><tspan font-family="cmsy" font-size="10">∼</tspan> is open if and only if <img 
+src="Na2875x.png" alt="{x ∈ X such that [x] ∈ U }"  class="left" align="middle" /> is open in <tspan font-family="cmmi" font-size="10">X</tspan>.</li></ul>
+  </div>
+<!--l. 59--><p class="indent" >
+As far as I can tell, this definition is mostly useless for intuition, so here are some
+examples.</p>
+<div class="mdframed" id="mdframed-948">
+<a 
+ id="x506-484004r1441"></a>
+<div class="newtheorem">
+<!--l. 63--><p class="noindent" ><span class="head">
+<a 
+ id="x506-484005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 57.2.2 </tspan>(Interval modulo endpoints)<br 
+class="newline" /> </span><a 
+ id="x506-484006"></a>Suppose we take <tspan font-family="cmmi" font-size="10">D</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> = [<tspan font-family="cmsy" font-size="10">−</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan>1] and
+quotient by the equivalence relation which identifies the endpoints <tspan font-family="cmsy" font-size="10">−</tspan>1 and 1. (Formally,
+<tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∼ </tspan><tspan font-family="cmmi" font-size="10">y</tspan> <tspan font-family="cmmi" font-size="10">⇔</tspan> (<tspan font-family="cmmi" font-size="10">x </tspan>= <tspan font-family="cmmi" font-size="10">y</tspan>) or <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">x,y</tspan><tspan font-family="cmsy" font-size="10">} </tspan>= <tspan font-family="cmsy" font-size="10">{−</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan>.) In that case, we simply recover <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>: </p>
+<div class="center" 
+>
+                                                                                
+                                                                                
+<!--l. 69--><p class="noindent" >
+</p>
+</div>
+<!--l. 83--><p class="noindent" >Observe that a small open neighborhood around <tspan font-family="cmsy" font-size="10">−</tspan>1 <tspan font-family="cmsy" font-size="10">∼ </tspan>1 in the quotient space corresponds to
+two half-intervals at <tspan font-family="cmsy" font-size="10">−</tspan>1 and 1 in the original space <tspan font-family="cmmi" font-size="10">D</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>. This should convince you the
+definition we gave is the right one.
+</p>
+  </div>
+<!--l. 86--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-949">
+<a 
+ id="x506-484007r1442"></a>
+<div class="newtheorem">
+<!--l. 88--><p class="noindent" ><span class="head">
+<a 
+ id="x506-484008r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 57.2.3 </tspan>(More quotient spaces)<br 
+class="newline" /> </span><a 
+ id="x506-484009"></a>Convince yourself that: </p>
+     <ul class="itemize1">
+     <li class="itemize">Generalizing the previous example, <tspan font-family="cmmi" font-size="10">D</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> modulo its boundary <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup> is <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>.
+     </li>
+     <li class="itemize">Given a square <tspan font-family="cmmi" font-size="10">ABCD</tspan>, suppose we identify segments <tspan font-family="cmmi" font-size="10">AB </tspan>and <tspan font-family="cmmi" font-size="10">DC </tspan>together. Then
+     we get a cylinder. (Think elementary school, when you would tape up pieces of
+     paper together to get cylinders.)
+     </li>
+     <li class="itemize">In the previous example, if we also identify <tspan font-family="cmmi" font-size="10">BC </tspan>and <tspan font-family="cmmi" font-size="10">DA </tspan>together, then we get a
+     torus. (Imagine taking our cylinder and putting the two circles at the end together.)
+     </li>
+     <li class="itemize">Let <tspan font-family="cmmi" font-size="10">X </tspan>= <tspan font-family="msbm" font-size="10">ℝ</tspan>, and let <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∼ </tspan><tspan font-family="cmmi" font-size="10">y </tspan>if <tspan font-family="cmmi" font-size="10">y </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>. Then <tspan font-family="cmmi" font-size="10">X∕</tspan><tspan font-family="cmsy" font-size="10">∼</tspan> is <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> as well.</li></ul>
+</p>
+  </div>
+<!--l. 101--><p class="indent" >  </p></div>
+<!--l. 103--><p class="indent" >  One special case that we did above: <a 
+ id="x506-484010r1443"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 105--><p class="noindent" ><span class="head">
+<a 
+ id="x506-484011r4"></a>
+<tspan font-family="cmbx" font-size="10">Definition 57.2.4.</tspan>  </span><a 
+ id="x506-484012"></a>Let <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">X</tspan>. Consider the equivalence relation which identifies all
+the points of <tspan font-family="cmmi" font-size="10">A </tspan>with each other while leaving all remaining points inequivalent. (In other
+words, <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∼ </tspan><tspan font-family="cmmi" font-size="10">y </tspan>if <tspan font-family="cmmi" font-size="10">x </tspan>= <tspan font-family="cmmi" font-size="10">y </tspan>or <tspan font-family="cmmi" font-size="10">x,y </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">A</tspan>.) Then the resulting quotient space is denoted <tspan font-family="cmmi" font-size="10">X∕A</tspan>.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 111--><p class="indent" >
+</p><!--l. 113--><p class="indent" >  So in this notation,
+</p>
+  <div class="math-display" >
+<img 
+src="Na2876x.png" alt="Dn∕Sn −1 = Sn.
+" class="math-display"  /></div>
+<a 
+ id="x506-484013r1444"></a>
+  <div class="newtheorem">
+<!--l. 116--><p class="noindent" ><span class="head">
+<a 
+ id="x506-484014r5"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 57.2.5.</tspan>  </span><a 
+ id="x506-484015"></a>Note  that  I’m  deliberately  being  sloppy,  and  saying
+“<tspan font-family="cmmi" font-size="10">D</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup><tspan font-family="cmmi" font-size="10">∕S</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup>  =  <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>”  or  “<tspan font-family="cmmi" font-size="10">D</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup><tspan font-family="cmmi" font-size="10">∕S</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup>  <tspan font-family="cmti" font-size="10">is  </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>”,  when  I  really  ought  to  say  “<tspan font-family="cmmi" font-size="10">D</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup><tspan font-family="cmmi" font-size="10">∕S</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup>  is
+homeomorphic  to  <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>”.  This  is  a  general  theme  in  mathematics:  objects  which  are
+homoeomorphic/isomorphic/etc. are  generally  not  carefully  distinguished  from  each
+other.
+</p>
+  </div>
+<!--l. 122--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+  <!--l. 124--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach64.htm" >next</a>] [<a 
+href="Nase359.htm" >prev</a>] [<a 
+href="Nase359.htm#tailNase359.htm" >prev-tail</a>] [<a 
+href="Nase360.htm" >front</a>] [<a 
+href="Nase382.htm#Nase384.htm" >up</a>] </p></div>
+<!--l. 124--><p class="indent" >  <a 
+ id="tailNase360.htm"></a> </p> 
+</body> 
+</html>

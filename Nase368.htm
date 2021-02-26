@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Fundamental groups are functorial</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 356--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase394.htm" >next</a>] [<a 
+href="Nase367.htm" >prev</a>] [<a 
+href="Nase367.htm#tailNase367.htm" >prev-tail</a>] [<a 
+href="Nase345.htm#tailNase368.htm">tail</a>] [<a 
+href="Nase389.htm#Nase393.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">58.3</span>  <a 
+ id="x517-49700058.3"></a>Fundamental groups are functorial</h3>
+<!--l. 357--><p class="noindent" >One quick shorthand I will introduce to clean up the discussion: <a 
+ id="x517-497001r1482"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 359--><p class="noindent" ><span class="head">
+<a 
+ id="x517-497002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 58.3.1.</tspan>  </span><a 
+ id="x517-497003"></a>By <tspan font-family="cmmi" font-size="10">f  </tspan>:  (<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>)  <tspan font-family="cmsy" font-size="10">→ </tspan>(<tspan font-family="cmmi" font-size="10">Y,y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>), we will mean that <tspan font-family="cmmi" font-size="10">f  </tspan>:  <tspan font-family="cmmi" font-size="10">X  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">Y  </tspan>is a
+continuous function of spaces which also sends the point <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> to <tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>.
+</p>
+  </div>
+<!--l. 362--><p class="indent" >
+</p><!--l. 364--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>be topological spaces and <tspan font-family="cmmi" font-size="10">f </tspan>: (<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) <tspan font-family="cmsy" font-size="10">→ </tspan>(<tspan font-family="cmmi" font-size="10">Y,y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>). We now want to relate the
+fundamental groups of <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>.
+</p><!--l. 367--><p class="indent" >  Recall that a loop <tspan font-family="cmmi" font-size="10">γ </tspan>in (<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) is a map <tspan font-family="cmmi" font-size="10">γ </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>with <tspan font-family="cmmi" font-size="10">γ</tspan>(0) = <tspan font-family="cmmi" font-size="10">γ</tspan>(1) = <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>. Then if we
+consider the composition
+</p>
+  <div class="math-display" >
+<img 
+src="Na2910x.png" alt="[0,1] γ−→ (X, x ) f−→ (Y,y )
+            0        0
+" class="math-display"  /></div>
+<!--l. 371--><p class="indent" >  then we get straight-away a loop in <tspan font-family="cmmi" font-size="10">Y </tspan>at <tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>! Let’s call this loop <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">♯</tspan></sub><tspan font-family="cmmi" font-size="10">γ</tspan>.
+</p>
+<div class="mdframed" id="mdframed-973">
+<a 
+ id="x517-497004r1483"></a>
+<div class="newtheorem">
+<!--l. 373--><p class="noindent" ><span class="head">
+<a 
+ id="x517-497005r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmssbx" font-size="10">Lemma 58.3.2 </tspan><tspan font-family="cmss" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">♯</tspan></sub> <tspan font-family="cmss" font-size="10">is homotopy invariant)</tspan><br 
+class="newline" /> </span><a 
+ id="x517-497006"></a> If <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">≃ </tspan><tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> are path-homotopic, then in fact
+</p>
+<div class="math-display" >
+<img 
+src="Na2911x.png" alt="f♯γ1 ≃ f♯γ2.
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 378--><p class="indent" >  </p></div>
+<!--l. 379--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 380--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Just take the homotopy <tspan font-family="cmmi" font-size="10">h </tspan>taking <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> to <tspan font-family="cmmi" font-size="10">γ</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> and consider <tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmsy" font-size="10">∘ </tspan><tspan font-family="cmmi" font-size="10">h</tspan>.                       □
+</p>
+  </div>
+<!--l. 384--><p class="indent" >  It’s worth noting at this point that if <tspan font-family="cmmi" font-size="10">X </tspan>and <tspan font-family="cmmi" font-size="10">Y </tspan>are homeomorphic, then their
+fundamental groups are all isomorphic. Indeed, let <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">Y </tspan>and <tspan font-family="cmmi" font-size="10">g </tspan>: <tspan font-family="cmmi" font-size="10">Y </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>be mutually
+inverse continuous maps. Then one can check that <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmmi" font-size="8">♯</tspan></sub> : <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">Y,y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) and
+<tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmmi" font-size="8">♯</tspan></sub> : <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">Y,y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">X,x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) are inverse maps between the groups (assuming <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) = <tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> and
+<tspan font-family="cmmi" font-size="10">g</tspan>(<tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>) = <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>).
+                                                                                
+                                                                                
+</p>
+  <!--l. 415--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase394.htm" >next</a>] [<a 
+href="Nase367.htm" >prev</a>] [<a 
+href="Nase367.htm#tailNase367.htm" >prev-tail</a>] [<a 
+href="Nase368.htm" >front</a>] [<a 
+href="Nase389.htm#Nase393.htm" >up</a>] </p></div>
+<!--l. 415--><p class="indent" >  <a 
+ id="tailNase368.htm"></a> </p> 
+</body> 
+</html>

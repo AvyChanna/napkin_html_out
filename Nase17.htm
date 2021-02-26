@@ -1,0 +1,199 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Isomorphisms</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 370--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase18.htm" >next</a>] [<a 
+href="Nase16.htm" >prev</a>] [<a 
+href="Nase16.htm#tailNase16.htm" >prev-tail</a>] [<a 
+href="#tailNase17.htm">tail</a>] [<a 
+href="Nach4.htm#Nase17.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">1.3</span>  <a 
+ id="x35-350001.3"></a>Isomorphisms</h3>
+<!--l. 371--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="msbm" font-size="10">ℤ</tspan><img 
+src="Na51x.png" alt="∼="  class="cong"  />10<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 372--><p class="indent" >  First, let me talk about what it means for groups to be isomorphic. Consider the two groups
+</p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="msbm" font-size="10">ℤ </tspan>= (<img 
+src="Na52x.png" alt="{...,− 2,− 1,0,1,2,...}"  class="left" align="middle" /><tspan font-family="cmmi" font-size="10">,</tspan>+).
+     </li>
+     <li class="itemize">10<tspan font-family="msbm" font-size="10">ℤ </tspan>= (<img 
+src="Na53x.png" alt="{...,− 20,− 10,0,10,20,...}"  class="left" align="middle" /><tspan font-family="cmmi" font-size="10">,</tspan>+).</li></ul>
+<!--l. 378--><p class="noindent" >These groups are “different”, but only superficially so – you might even say they only differ
+in the names of the elements. Think about what this might mean formally for a
+moment.
+</p><!--l. 381--><p class="indent" >  Specifically the map
+</p>
+  <div class="math-display" >
+<img 
+src="Na54x.png" alt="ϕ : ℤ → 10ℤ by x ↦→  10x
+" class="math-display"  /></div>
+<!--l. 383--><p class="indent" >  is a bijection of the underlying sets which respects the group action. In symbols,
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na55x.png" alt="ϕ(x + y) = ϕ (x )+ ϕ(y).
+" class="math-display"  /></div>
+<!--l. 386--><p class="indent" >  In other words, <tspan font-family="cmmi" font-size="10">ϕ </tspan>is a way of re-assigning names of the elements without changing the
+structure of the group. That’s all just formalism for capturing the obvious fact that (<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">,</tspan>+) and
+(10<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">,</tspan>+) are the same thing.
+</p><!--l. 392--><p class="indent" >  Now, let’s do the general definition. <a 
+ id="x35-35001r27"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 394--><p class="noindent" ><span class="head">
+<a 
+ id="x35-35002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 1.3.1.</tspan>  </span><a 
+ id="x35-35003"></a>Let <tspan font-family="cmmi" font-size="10">G </tspan>= (<tspan font-family="cmmi" font-size="10">G,⋆</tspan>) and <tspan font-family="cmmi" font-size="10">H </tspan>= (<tspan font-family="cmmi" font-size="10">H,</tspan><tspan font-family="cmsy" font-size="10">∗</tspan>) be groups. A bijection <tspan font-family="cmmi" font-size="10">ϕ </tspan>: <tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">H </tspan>is
+called an <tspan font-family="cmbx" font-size="10">isomorphism</tspan> if
+</p>
+  <div class="math-display" >
+<img 
+src="Na56x.png" alt="ϕ (g  ⋆g ) = ϕ(g )∗ ϕ(g)  for all g ,g ∈ G.
+   1   2       1      2         1  2
+" class="math-display"  /></div>
+<!--l. 398--><p class="indent" >  If there exists an isomorphism from <tspan font-family="cmmi" font-size="10">G </tspan>to <tspan font-family="cmmi" font-size="10">H</tspan>, then we say <tspan font-family="cmmi" font-size="10">G </tspan>and <tspan font-family="cmmi" font-size="10">H </tspan>are <tspan font-family="cmbx" font-size="10">isomorphic</tspan>
+and write <tspan font-family="cmmi" font-size="10">G</tspan><img 
+src="Na57x.png" alt="∼
+="  class="cong"  /><tspan font-family="cmmi" font-size="10">H</tspan>.
+</p>
+  </div>
+<!--l. 400--><p class="indent" >
+Note that in this definition, the left-hand side <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmmi" font-size="10">⋆ g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) uses the operation of <tspan font-family="cmmi" font-size="10">G </tspan>while the
+right-hand side <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>) <tspan font-family="cmsy" font-size="10">∗ </tspan><tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) uses the operation of <tspan font-family="cmmi" font-size="10">H</tspan>.</p>
+<div class="mdframed" id="mdframed-24">
+<a 
+ id="x35-35004r28"></a>
+<div class="newtheorem">
+<!--l. 407--><p class="noindent" ><span class="head">
+<a 
+ id="x35-35005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.3.2 </tspan>(Examples of isomorphisms)<br 
+class="newline" /> </span><a 
+ id="x35-35006"></a>Let <tspan font-family="cmmi" font-size="10">G </tspan>and <tspan font-family="cmmi" font-size="10">H </tspan>be groups. We have the following
+isomorphisms.
+                                                                                
+                                                                                
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate"><tspan font-family="msbm" font-size="10">ℤ</tspan><img 
+src="Na58x.png" alt="∼="  class="cong"  />10<tspan font-family="msbm" font-size="10">ℤ</tspan>, as above.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">There is an isomorphism
+<div class="math-display" >
+<img 
+src="Na59x.png" alt="G × H  ∼= H ×  G
+" class="math-display"  /></div>
+    <!--l. 413--><p class="noindent" >by the map (<tspan font-family="cmmi" font-size="10">g,h</tspan>)<img 
+src="Na60x.png" alt="↦→"  class="mapsto"  />(<tspan font-family="cmmi" font-size="10">h,g</tspan>).
+    </p></dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The identity map id : <tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">G </tspan>is an isomorphism, hence <tspan font-family="cmmi" font-size="10">G</tspan><img 
+src="Na61x.png" alt="∼="  class="cong"  /><tspan font-family="cmmi" font-size="10">G</tspan>.
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate">There is another isomorphism of <tspan font-family="msbm" font-size="10">ℤ </tspan>to itself: send every <tspan font-family="cmmi" font-size="10">x </tspan>to <tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">x</tspan>.</dd></dl>
+</p>
+  </div>
+<!--l. 418--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-25">
+<a 
+ id="x35-35011r29"></a>
+<div class="newtheorem">
+<!--l. 420--><p class="noindent" ><span class="head">
+<a 
+ id="x35-35012r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.3.3 </tspan>(Primitive roots modulo 7)<br 
+class="newline" /> </span><a 
+ id="x35-35013"></a>As  a  nontrivial  example,  we  claim  that
+<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>6<tspan font-family="msbm" font-size="10">ℤ</tspan><img 
+src="Na62x.png" alt="∼="  class="cong"  />(<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>7<tspan font-family="msbm" font-size="10">ℤ</tspan>)<tspan font-family="cmsy" font-size="8">×</tspan>. The bijection is
+</p>
+<div class="math-display" >
+<img 
+src="Na63x.png" alt="              a
+ϕ(a mod 6) = 3 mod  7.
+" class="math-display"  /></div>
+<!--l. 424--><p class="noindent" >To check that this is an isomorphism, we need to verify several things. </p>
+                                                                                
+                                                                                
+     <ul class="itemize1">
+     <li class="itemize">First, we need to check this map actually makes sense: why is it the case that if
+     <tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">≡ </tspan><tspan font-family="cmmi" font-size="10">b </tspan>(mod 6), then 3<sup><tspan font-family="cmmi" font-size="8">a</tspan></sup> <tspan font-family="cmsy" font-size="10">≡ </tspan>3<sup><tspan font-family="cmmi" font-size="8">b</tspan></sup> (mod 7)? The reason is that Fermat’s little theorem
+     guarantees that 3<sup><tspan font-family="cmr" font-size="8">6</tspan></sup> <tspan font-family="cmsy" font-size="10">≡ </tspan>1 (mod 7).
+     </li>
+     <li class="itemize">Next, we need to check that this map is a bijection. You can do this explicitly:
+<div class="math-display" >
+<img 
+src="Na64x.png" alt="(31,32,33,34,35,36) ≡ (3,2,6,4,5,1)  (mod  7).
+" class="math-display"  /></div>
+     </li>
+     <li class="itemize">Finally, we need to verify that this map respects the group action. In other words,
+     we want to see that <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">a</tspan>+<tspan font-family="cmmi" font-size="10">b</tspan>) = <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">a</tspan>)<tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">b</tspan>) since the operation of <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>6<tspan font-family="msbm" font-size="10">ℤ </tspan>is addition while
+     the operation of (<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>7<tspan font-family="msbm" font-size="10">ℤ</tspan>)<tspan font-family="cmsy" font-size="8">×</tspan> is multiplication. That’s just saying that 3<sup><tspan font-family="cmmi" font-size="8">a</tspan><tspan font-family="cmr" font-size="8">+</tspan><tspan font-family="cmmi" font-size="8">b</tspan></sup> <tspan font-family="cmsy" font-size="10">≡ </tspan>3<sup><tspan font-family="cmmi" font-size="8">a</tspan></sup>3<sup><tspan font-family="cmmi" font-size="8">b</tspan></sup>
+     (mod 7), which is true.</li></ul>
+</p>
+  </div>
+<!--l. 441--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-26">
+<a 
+ id="x35-35014r30"></a>
+<div class="newtheorem">
+<!--l. 443--><p class="noindent" ><span class="head">
+<a 
+ id="x35-35015r4"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.3.4 </tspan>(Primitive roots)<br 
+class="newline" /> </span><a 
+ id="x35-35016"></a>More  generally,  for  any  prime  <tspan font-family="cmmi" font-size="10">p</tspan>,  there  exists  an
+element <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan>(<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕p</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>)<tspan font-family="cmsy" font-size="8">×</tspan> called a <tspan font-family="cmbx" font-size="10">primitive root</tspan> modulo <tspan font-family="cmmi" font-size="10">p </tspan>such that 1<tspan font-family="cmmi" font-size="10">,g,g</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,g</tspan><sup><tspan font-family="cmmi" font-size="8">p</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup>  are
+all different modulo <tspan font-family="cmmi" font-size="10">p</tspan>. One can show by copying the above proof that
+</p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na65x.png" alt="ℤ∕(p−  1)ℤ ∼=  (ℤ ∕pℤ)× for all primes p.
+" class="math-display"  /></div>
+<!--l. 449--><p class="noindent" >The example above was the special case <tspan font-family="cmmi" font-size="10">p </tspan>= 7 and <tspan font-family="cmmi" font-size="10">g </tspan>= 3.
+</p>
+  </div>
+<!--l. 450--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-27">
+<a 
+ id="x35-35017r31"></a>
+<div class="newtheorem">
+<!--l. 452--><p class="noindent" ><span class="head">
+<a 
+ id="x35-35018r5"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 1.3.5.</tspan>  </span><a 
+ id="x35-35019"></a><tspan font-family="cmr" font-size="10">Assuming the existence of primitive roots, establish the isomorphism </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">−</tspan>
+<tspan font-family="cmr" font-size="10">1)</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><img 
+src="Na66x.png" alt="∼="  class="cong"  /><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕p</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmr" font-size="10">)</tspan><tspan font-family="cmsy" font-size="7">×</tspan> <tspan font-family="cmr" font-size="10">as above.</tspan></p>
+  </div>
+<!--l. 454--><p class="indent" >  </p></div>
+<!--l. 456--><p class="indent" >  It’s not hard to see that <img 
+src="Na67x.png" alt="∼="  class="cong"  /> is an equivalence relation (why?). Moreover, because we really
+only care about the structure of groups, we’ll usually consider two groups to be the same when
+they are isomorphic. So phrases such as “find all groups” really mean “find all groups up to
+isomorphism”.
+                                                                                
+                                                                                
+</p>
+  <!--l. 462--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase18.htm" >next</a>] [<a 
+href="Nase16.htm" >prev</a>] [<a 
+href="Nase16.htm#tailNase16.htm" >prev-tail</a>] [<a 
+href="Nase17.htm" >front</a>] [<a 
+href="Nach4.htm#Nase17.htm" >up</a>] </p></div>
+<!--l. 462--><p class="indent" >  <a 
+ id="tailNase17.htm"></a> </p> 
+</body> 
+</html>

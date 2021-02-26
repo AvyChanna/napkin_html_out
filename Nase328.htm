@@ -1,0 +1,361 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Automorphism groups and Galois extensions</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 312--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase352.htm" >next</a>] [<a 
+href="Nase327.htm" >prev</a>] [<a 
+href="Nase327.htm#tailNase327.htm" >prev-tail</a>] [<a 
+href="Nach52.htm#tailNase328.htm">tail</a>] [<a 
+href="Nase346.htm#Nase351.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">52.5</span>  <a 
+ id="x466-44200052.5"></a>Automorphism groups and Galois extensions</h3>
+<!--l. 313--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2599x.png" alt="√ --
+  2"  class="sqrt"  />) <tspan font-family="cmti" font-size="10">is Galois but </tspan><tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2600x.png" alt="√3--
+  2"  class="root" align="middle"  />) <tspan font-family="cmti" font-size="10">is not.</tspan>
+</p><!--l. 314--><p class="indent" >  We now want to get back at the idea we stated at the beginning of this section that <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2601x.png" alt="√--
+32"  class="root" align="middle"  />)
+is deficient in a way that <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2602x.png" alt="√2--"  class="sqrt"  />) is not.
+</p><!--l. 317--><p class="indent" >  First, we define the “internal” automorphisms. <a 
+ id="x466-442001r1333"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 319--><p class="noindent" ><span class="head">
+<a 
+ id="x466-442002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 52.5.1.</tspan>  </span><a 
+ id="x466-442003"></a>Suppose <tspan font-family="cmmi" font-size="10">K∕F </tspan>is a finite extension. Then Aut(<tspan font-family="cmmi" font-size="10">K∕F</tspan>) is the set of
+<tspan font-family="cmti" font-size="10">field isomorphisms </tspan><tspan font-family="cmmi" font-size="10">σ </tspan>: <tspan font-family="cmmi" font-size="10">K </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">K </tspan>which fix <tspan font-family="cmmi" font-size="10">F</tspan>. In symbols
+</p>
+  <div class="math-display" >
+<img 
+src="Na2603x.png" alt="Aut(K ∕F ) = {σ : K → K | σ is identity on F} .
+" class="math-display"  /></div>
+<!--l. 328--><p class="indent" >  This is a group under function composition!
+</p>
+  </div>
+<!--l. 329--><p class="indent" >
+Note that this time, we have a condition that <tspan font-family="cmmi" font-size="10">F </tspan>is fixed by <tspan font-family="cmmi" font-size="10">σ</tspan>. (This was not there before when
+we considered <tspan font-family="cmmi" font-size="10">F </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>, because we got it for free.)</p>
+<div class="mdframed" id="mdframed-861">
+<a 
+ id="x466-442004r1334"></a>
+<div class="newtheorem">
+<!--l. 333--><p class="noindent" ><span class="head">
+<a 
+ id="x466-442005r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Example 52.5.2 </tspan>(Old examples of automorphism groups)<br 
+class="newline" /> </span><a 
+ id="x466-442006"></a>Reprising the example at the
+beginning of the chapter in the new notation, we have:
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">Aut(<tspan font-family="msbm" font-size="10">ℚ</tspan>(<tspan font-family="cmmi" font-size="10">i</tspan>)<tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="msbm" font-size="10">ℚ</tspan>)<img 
+src="Na2604x.png" alt="∼="  class="cong"  /><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ</tspan>, with elements <tspan font-family="cmmi" font-size="10">z</tspan><img 
+src="Na2605x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">z </tspan>and <tspan font-family="cmmi" font-size="10">z</tspan><img 
+src="Na2606x.png" alt="↦→"  class="mapsto"  /><span class="overline"><tspan font-family="cmmi" font-size="10">z</tspan></span>.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">Aut(<tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2607x.png" alt="√--
+ 2"  class="sqrt"  />)<tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="msbm" font-size="10">ℚ</tspan>)<img 
+src="Na2608x.png" alt="∼="  class="cong"  /><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ </tspan>in the same way.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">Aut(<tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2609x.png" alt="√ --
+3 2"  class="root" align="middle"  />)<tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="msbm" font-size="10">ℚ</tspan>) is the trivial group, with only the identity embedding!</dd></dl>
+</p>
+  </div>
+<!--l. 340--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-862">
+<a 
+ id="x466-442010r1335"></a>
+<div class="newtheorem">
+<!--l. 342--><p class="noindent" ><span class="head">
+<a 
+ id="x466-442011r3"></a>
+<tspan font-family="cmbx" font-size="10">Example 52.5.3 </tspan>(Automorphism group of <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2610x.png" alt="√2--"  class="sqrt"  /><tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na2611x.png" alt="√3-"  class="sqrt"  />))<br 
+class="newline" /> </span><a 
+ id="x466-442012"></a>Here’s a new example: let <tspan font-family="cmmi" font-size="10">K </tspan>=
+<tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2612x.png" alt="√--
+ 2"  class="sqrt"  /><tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na2613x.png" alt="√ --
+  3"  class="sqrt"  />). It turns out that Aut(<tspan font-family="cmmi" font-size="10">K∕</tspan><tspan font-family="msbm" font-size="10">ℚ</tspan>) = <tspan font-family="cmsy" font-size="10">{</tspan>1<tspan font-family="cmmi" font-size="10">,σ,τ,στ</tspan><tspan font-family="cmsy" font-size="10">}</tspan>, where
+</p>
+<div class="math-display" >
+<img 
+src="Na2614x.png" alt="   {√ --     √ --          { √ --   √ --
+      2  ↦→  −  2               2  ↦→   2
+σ : √ --    √ --   and  τ :  √ --     √ --
+      3  ↦→    3                3  ↦→ −   3.
+" class="math-display"  /></div>
+<!--l. 358--><p class="noindent" >In other words, Aut(<tspan font-family="cmmi" font-size="10">K∕</tspan><tspan font-family="msbm" font-size="10">ℚ</tspan>) is the Klein Four Group.
+</p>
+  </div>
+<!--l. 359--><p class="indent" >  </p></div>
+<!--l. 361--><p class="indent" >  First, let’s repeat the proof of the observation that these embeddings shuffle around roots
+(akin to the first observation in the introduction):</p>
+<div class="mdframed" id="mdframed-863">
+<a 
+ id="x466-442013r1336"></a>
+<div class="newtheorem">
+<!--l. 364--><p class="noindent" ><span class="head">
+<a 
+ id="x466-442014r4"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmssbx" font-size="10">Lemma 52.5.4 </tspan><tspan font-family="cmss" font-size="10">(Root shuffling in</tspan> Aut(<tspan font-family="cmmi" font-size="10">K∕F</tspan>)<tspan font-family="cmss" font-size="10">)</tspan><br 
+class="newline" /> </span><a 
+ id="x466-442015"></a>Let  <tspan font-family="cmmi" font-size="10">f  </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">F</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>],  suppose  <tspan font-family="cmmi" font-size="10">K∕F  </tspan>is  a  finite
+extension, and assume <tspan font-family="cmmi" font-size="10">α </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">K </tspan>is a root of <tspan font-family="cmmi" font-size="10">f</tspan>. Then for any <tspan font-family="cmmi" font-size="10">σ </tspan><tspan font-family="cmsy" font-size="10">∈</tspan> Aut(<tspan font-family="cmmi" font-size="10">K∕F</tspan>), <tspan font-family="cmmi" font-size="10">σ</tspan>(<tspan font-family="cmmi" font-size="10">α</tspan>) is also
+a root of <tspan font-family="cmmi" font-size="10">f</tspan>.
+</p>
+  </div>
+<!--l. 369--><p class="indent" >  </p></div>
+<!--l. 370--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 371--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Let <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> + <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup> + <img 
+src="Na2615x.png" alt="⋅⋅⋅"  class="@cdots"  /> + <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>, where <tspan font-family="cmmi" font-size="10">c</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">F</tspan>. Thus,
+</p>
+  <div class="math-display" >
+<img 
+src="Na2616x.png" alt="                    n                   n                            -|
+0 = σ(f (α )) = σ (cnα + ⋅⋅⋅+ c0) = cnσ(α)  + ⋅⋅⋅+ c0 = f (σ (α )).       --
+" class="math-display"  /></div>
+  </div>
+<!--l. 376--><p class="indent" >  In particular, taking <tspan font-family="cmmi" font-size="10">f </tspan>to be the minimal polynomial of <tspan font-family="cmmi" font-size="10">α </tspan>we deduce</p>
+<div class="mdframed" id="mdframed-864">
+<!--l. 378--><p class="noindent" ><tspan font-family="cmbx" font-size="10">An embedding </tspan><tspan font-family="cmmi" font-size="10">σ </tspan><tspan font-family="cmsy" font-size="10">∈</tspan> Aut(<tspan font-family="cmmi" font-size="10">K∕F</tspan>) <tspan font-family="cmbx" font-size="10">sends an </tspan><tspan font-family="cmmi" font-size="10">α </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">K </tspan><tspan font-family="cmbx" font-size="10">to one of its various Galois conjugates</tspan>
+<tspan font-family="cmbx" font-size="10">(over </tspan><tspan font-family="cmmi" font-size="10">F</tspan><tspan font-family="cmbx" font-size="10">).</tspan></p><!--l. 380--><p class="noindent" ></p>
+  </div>
+<!--l. 382--><p class="indent" >  Next, let’s look again at the “deficiency” of certain fields. Look at <tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2617x.png" alt="√ --
+ 32"  class="root" align="middle"  />). So, again
+<tspan font-family="cmmi" font-size="10">K∕</tspan><tspan font-family="msbm" font-size="10">ℚ </tspan>is deficient for two reasons. First, while there are three maps <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2618x.png" alt="3√2--"  class="root" align="middle"  />)<img 
+src="Na2619x.png" alt="`→"  class="hookrightarrow"  /><tspan font-family="msbm" font-size="10">ℂ</tspan>, only one of
+them lives in Aut(<tspan font-family="cmmi" font-size="10">K∕</tspan><tspan font-family="msbm" font-size="10">ℚ</tspan>), namely the identity. In other words, <img 
+src="Na2620x.png" alt="|Aut (K ∕ℚ )|"  class="left" align="middle" /> is <tspan font-family="cmti" font-size="10">too small</tspan>.
+Secondly, <tspan font-family="cmmi" font-size="10">K </tspan>is missing some Galois conjugates (<tspan font-family="cmmi" font-size="10">ω</tspan><img 
+src="Na2621x.png" alt="3√--
+ 2"  class="root" align="middle"  /> and <tspan font-family="cmmi" font-size="10">ω</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><img 
+src="Na2622x.png" alt="3√--
+ 2"  class="root" align="middle"  />).
+</p><!--l. 390--><p class="indent" >  The way to capture the fact that there are missing Galois conjugates is the notion of a
+splitting field. <a 
+ id="x466-442016r1337"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 393--><p class="noindent" ><span class="head">
+<a 
+ id="x466-442017r5"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Definition 52.5.5.</tspan>  </span><a 
+ id="x466-442018"></a>Let <tspan font-family="cmmi" font-size="10">F </tspan>be a field and <tspan font-family="cmmi" font-size="10">p</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">F</tspan>[<tspan font-family="cmmi" font-size="10">x</tspan>] a polynomial of degree <tspan font-family="cmmi" font-size="10">n</tspan>. Then
+<tspan font-family="cmmi" font-size="10">p</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) has roots <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,α</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> in an algebraic closure of <tspan font-family="cmmi" font-size="10">F</tspan>. The <tspan font-family="cmbx" font-size="10">splitting field</tspan> of <tspan font-family="cmmi" font-size="10">F </tspan>is defined
+as <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,α</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>).
+</p>
+  </div>
+<!--l. 396--><p class="indent" >
+In other words, the splitting field is the smallest field in which <tspan font-family="cmmi" font-size="10">p</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) splits.</p>
+<div class="mdframed" id="mdframed-865">
+<a 
+ id="x466-442019r1338"></a>
+<div class="newtheorem">
+<!--l. 398--><p class="noindent" ><span class="head">
+<a 
+ id="x466-442020r6"></a>
+<tspan font-family="cmbx" font-size="10">Example 52.5.6 </tspan>(Examples of splitting fields)<br 
+class="newline" /> </span><a 
+ id="x466-442021"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The splitting field of <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>5 over <tspan font-family="msbm" font-size="10">ℚ </tspan>is <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2623x.png" alt="√ --
+  5"  class="sqrt"  />). This is a degree 2 extension.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The splitting field of <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> +<tspan font-family="cmmi" font-size="10">x</tspan>+1 over <tspan font-family="msbm" font-size="10">ℚ </tspan>is <tspan font-family="msbm" font-size="10">ℚ</tspan>(<tspan font-family="cmmi" font-size="10">ω</tspan>), where <tspan font-family="cmmi" font-size="10">ω </tspan>is a cube root of unity. This
+    is a degree 3 extension.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The splitting field of <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + 3<tspan font-family="cmmi" font-size="10">x </tspan>+ 2 = (<tspan font-family="cmmi" font-size="10">x </tspan>+ 1)(<tspan font-family="cmmi" font-size="10">x </tspan>+ 2) is just <tspan font-family="msbm" font-size="10">ℚ</tspan>! There’s nothing to do.</dd></dl>
+</p>
+  </div>
+<!--l. 410--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-866">
+<a 
+ id="x466-442025r1339"></a>
+<div class="newtheorem">
+<!--l. 412--><p class="noindent" ><span class="head">
+<a 
+ id="x466-442026r7"></a>
+<tspan font-family="cmbx" font-size="10">Example 52.5.7 </tspan>(Splitting fields: a cautionary tale)<br 
+class="newline" /> </span><a 
+ id="x466-442027"></a>The splitting field of <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> <tspan font-family="cmsy" font-size="10">−</tspan>2 over <tspan font-family="msbm" font-size="10">ℚ</tspan>
+is in fact
+</p>
+<div class="math-display" >
+<img 
+src="Na2624x.png" alt="   √ --
+ℚ ( 3 2,ω)
+" class="math-display"  /></div>
+<!--l. 415--><p class="noindent" >and not just <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2625x.png" alt="√ --
+3 2"  class="root" align="middle"  />)! One must really adjoin <tspan font-family="cmti" font-size="10">all </tspan>the roots, and it’s not necessarily the
+case that these roots will generate each other.
+</p><!--l. 419--><p class="noindent" >To be clear: </p>
+     <ul class="itemize1">
+     <li class="itemize">For <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>5, we adjoin <img 
+src="Na2626x.png" alt="√--
+ 5"  class="sqrt"  /> and this will automatically include <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na2627x.png" alt="√ --
+  5"  class="sqrt"  />.
+     </li>
+     <li class="itemize">For <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">x </tspan>+ 1, we adjoin <tspan font-family="cmmi" font-size="10">ω </tspan>and get the other root <tspan font-family="cmmi" font-size="10">ω</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> for free.
+     </li>
+     <li class="itemize">But for <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>2, if we adjoin <img 
+src="Na2628x.png" alt="√3--
+  2"  class="root" align="middle"  />, we do NOT get <tspan font-family="cmmi" font-size="10">ω</tspan><img 
+src="Na2629x.png" alt="3√ --
+  2"  class="root" align="middle"  /> and <tspan font-family="cmmi" font-size="10">ω</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><img 
+src="Na2630x.png" alt="3√ --
+  2"  class="root" align="middle"  /> for free. Indeed,
+     <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2631x.png" alt="√ --
+3 2"  class="root" align="middle"  />) <tspan font-family="cmsy" font-size="10">⊂ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>!</li></ul>
+<!--l. 427--><p class="noindent" >Note that in particular, the splitting field of <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>2 over <tspan font-family="msbm" font-size="10">ℚ </tspan>is <tspan font-family="cmti" font-size="10">degree six</tspan>, not just degree
+three.</p>
+  </div>
+<!--l. 429--><p class="indent" >  </p></div>
+<!--l. 431--><p class="indent" >  In general, <tspan font-family="cmbx" font-size="10">the splitting field of a polynomial can be an extension of degree up to</tspan>
+<tspan font-family="cmmi" font-size="10">n</tspan>!. The reason is that if <tspan font-family="cmmi" font-size="10">p</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) has <tspan font-family="cmmi" font-size="10">n </tspan>roots and none of them are “related” to each other, then
+any permutation of the roots will work.
+</p><!--l. 436--><p class="indent" >  Now, we obtain:</p>
+<div class="mdframed" id="mdframed-867">
+<a 
+ id="x466-442028r1340"></a>
+<div class="newtheorem">
+<!--l. 437--><p class="noindent" ><span class="head">
+<a 
+ id="x466-442029r8"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 52.5.8 </tspan><tspan font-family="cmss" font-size="10">(Galois extensions are splitting)</tspan><br 
+class="newline" /> </span><a 
+ id="x466-442030"></a>For finite extensions <tspan font-family="cmmi" font-size="10">K∕F</tspan>, <img 
+src="Na2632x.png" alt="|Aut(K ∕F )|"  class="left" align="middle" />
+divides [<tspan font-family="cmmi" font-size="10">K </tspan>: <tspan font-family="cmmi" font-size="10">F</tspan>], with equality if and only if <tspan font-family="cmmi" font-size="10">K </tspan>is the <tspan font-family="cmti" font-size="10">splitting field </tspan>of some separable
+polynomial with coefficients in <tspan font-family="cmmi" font-size="10">F</tspan>.
+</p>
+  </div>
+<!--l. 443--><p class="indent" >  </p></div>
+<!--l. 444--><p class="indent" >  The proof of this is deferred to an optional section at the end of the chapter. If <tspan font-family="cmmi" font-size="10">K∕F </tspan>is a
+finite extension and <img 
+src="Na2633x.png" alt="|Aut(K ∕F )|"  class="left" align="middle" /> = [<tspan font-family="cmmi" font-size="10">K </tspan>: <tspan font-family="cmmi" font-size="10">F</tspan>], we say the extension <tspan font-family="cmmi" font-size="10">K∕F </tspan>is <tspan font-family="cmbx" font-size="10">Galois</tspan>. In that
+case, we denote Aut(<tspan font-family="cmmi" font-size="10">K∕F</tspan>) by Gal(<tspan font-family="cmmi" font-size="10">K∕F</tspan>) instead and call this the <tspan font-family="cmbx" font-size="10">Galois group</tspan> of
+<tspan font-family="cmmi" font-size="10">K∕F</tspan>.</p>
+<div class="mdframed" id="mdframed-868">
+<a 
+ id="x466-442031r1341"></a>
+<div class="newtheorem">
+<!--l. 451--><p class="noindent" ><span class="head">
+<a 
+ id="x466-442032r9"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Example 52.5.9 </tspan>(Examples and non-examples of Galois extensions)<br 
+class="newline" /> </span><a 
+ id="x466-442033"></a>
+    </p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The extension <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2634x.png" alt="√ --
+  2"  class="sqrt"  />)<tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="msbm" font-size="10">ℚ </tspan>is Galois, since it’s the splitting field of <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>2 over <tspan font-family="msbm" font-size="10">ℚ</tspan>. The
+    Galois group has order two, <img 
+src="Na2635x.png" alt="√ --
+  2"  class="sqrt"  /><img 
+src="Na2636x.png" alt=" ↦→"  class="mapsto"  /><tspan font-family="cmsy" font-size="10">±</tspan><img 
+src="Na2637x.png" alt="√ --
+  2"  class="sqrt"  />.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The extension <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2638x.png" alt="√2--"  class="sqrt"  /><tspan font-family="cmmi" font-size="10">,</tspan><img 
+src="Na2639x.png" alt="√3--"  class="sqrt"  />)<tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="msbm" font-size="10">ℚ </tspan>is Galois, since it’s the splitting field of (<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>5)<sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>6
+    over <tspan font-family="msbm" font-size="10">ℚ</tspan>. As discussed before, the Galois group is <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ</tspan>.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The extension <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2640x.png" alt="√ --
+3 2"  class="root" align="middle"  />)<tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="msbm" font-size="10">ℚ </tspan>is <tspan font-family="cmti" font-size="10">not </tspan>Galois.</dd></dl>
+</p>
+  </div>
+<!--l. 462--><p class="indent" >  </p></div>
+<!--l. 474--><p class="indent" >  To explore <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2641x.png" alt="√32--"  class="root" align="middle"  />) one last time:</p>
+<div class="mdframed" id="mdframed-869">
+<a 
+ id="x466-442037r1342"></a>
+<div class="newtheorem">
+<!--l. 476--><p class="noindent" ><span class="head">
+<a 
+ id="x466-442038r10"></a>
+<tspan font-family="cmbx" font-size="10">Example 52.5.10 </tspan>(Galois closures, and the automorphism group of <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2642x.png" alt="√ --
+ 32"  class="root" align="middle"  /><tspan font-family="cmmi" font-size="10">,ω</tspan>))<br 
+class="newline" />
+</span><a 
+ id="x466-442039"></a>Let’s return to the field <tspan font-family="cmmi" font-size="10">K </tspan>= <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2643x.png" alt="3√2--"  class="root" align="middle"  /><tspan font-family="cmmi" font-size="10">,ω</tspan>), which is a field with [<tspan font-family="cmmi" font-size="10">K </tspan>: <tspan font-family="msbm" font-size="10">ℚ</tspan>] = 6. Consider the
+two automorphisms:
+</p>
+<div class="math-display" >
+<img 
+src="Na2644x.png" alt="   {√3--     √3--          { 3√ --    3√--
+      2  ↦→  ω  2               2  ↦→   2
+σ : ω    ↦→  ω      and  τ :  ω    ↦→  ω2.
+" class="math-display"  /></div>
+<!--l. 493--><p class="noindent" >Notice that <tspan font-family="cmmi" font-size="10">σ</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup>  = <tspan font-family="cmmi" font-size="10">τ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>  = id. From this one can see that the automorphism group of <tspan font-family="cmmi" font-size="10">K</tspan>
+must have order 6 (it certainly has order <tspan font-family="cmsy" font-size="10">≤ </tspan>6; now use Lagrange’s theorem). So, <tspan font-family="cmmi" font-size="10">K∕</tspan><tspan font-family="msbm" font-size="10">ℚ </tspan>is
+Galois! Actually one can check explicitly that
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na2645x.png" alt="Gal(K∕ℚ ) ∼= S3
+" class="math-display"  /></div>
+<!--l. 498--><p class="noindent" >is the symmetric group on 3 elements, with order 3! = 6.
+</p>
+  </div>
+<!--l. 499--><p class="indent" >  </p></div>
+<!--l. 500--><p class="indent" >  This example illustrates the fact that given a non-Galois field extension, one can “add in”
+missing conjugates to make it Galois. This is called taking a <tspan font-family="cmbx" font-size="10">Galois closure</tspan>.
+                                                                                
+                                                                                
+</p>
+  <!--l. 505--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase352.htm" >next</a>] [<a 
+href="Nase327.htm" >prev</a>] [<a 
+href="Nase327.htm#tailNase327.htm" >prev-tail</a>] [<a 
+href="Nase328.htm" >front</a>] [<a 
+href="Nase346.htm#Nase351.htm" >up</a>] </p></div>
+<!--l. 505--><p class="indent" >  <a 
+ id="tailNase328.htm"></a> </p> 
+</body> 
+</html>

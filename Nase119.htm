@@ -1,0 +1,184 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The adjoint (conjugate transpose)</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 180--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase120.htm" >next</a>] [<a 
+href="Nase118.htm" >prev</a>] [<a 
+href="Nase118.htm#tailNase118.htm" >prev-tail</a>] [<a 
+href="#tailNase119.htm">tail</a>] [<a 
+href="Nach18.htm#Nase119.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">15.3</span>  <a 
+ id="x176-16300015.3"></a>The adjoint (conjugate transpose)</h3>
+<!--l. 181--><p class="noindent" >We will see that, as a result of the flipping above, the <tspan font-family="cmti" font-size="10">conjugate transpose </tspan>is actually the
+better concept for inner product spaces: since it can be defined using only the inner product
+without making mention to dual spaces at all. <a 
+ id="x176-163001r541"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 186--><p class="noindent" ><span class="head">
+<a 
+ id="x176-163002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 15.3.1.</tspan>  </span><a 
+ id="x176-163003"></a>Let <tspan font-family="cmmi" font-size="10">V  </tspan>and <tspan font-family="cmmi" font-size="10">W </tspan>be finite-dimensional inner product spaces, and let
+<tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>. The <tspan font-family="cmbx" font-size="10">adjoint</tspan> (or <tspan font-family="cmbx" font-size="10">conjugate transpose</tspan>) of <tspan font-family="cmmi" font-size="10">T</tspan>, denoted <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmsy" font-size="8">†</tspan></sup>: <tspan font-family="cmmi" font-size="10">W </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>, is
+defined as follows: for every vector <tspan font-family="cmmi" font-size="10">w </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">W</tspan>, we let <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmsy" font-size="8">†</tspan></sup>(<tspan font-family="cmmi" font-size="10">w</tspan>) <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>be the unique vector with
+</p>
+  <div class="math-display" >
+<img 
+src="Na751x.png" alt="⟨        ⟩
+  v,T†(w)   =  ⟨T(v),w⟩
+           V           W
+" class="math-display"  /></div>
+<!--l. 193--><p class="indent" >  for every <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>.
+</p>
+  </div>
+<!--l. 194--><p class="indent" >
+</p><!--l. 196--><p class="indent" >  Some immediate remarks about this definition: </p>
+     <ul class="itemize1">
+     <li class="itemize">Our <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmsy" font-size="8">†</tspan></sup> is well-defined, because <img 
+src="Na752x.png" alt="⟨T (− ),w ⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">W</tspan> </sub> is some function in <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>, and hence by
+     the bijection earlier it should be uniquely of the form <img 
+src="Na753x.png" alt="⟨− ,v⟩"  class="left" align="middle" /> for some <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>.
+                                                                                
+                                                                                
+     </li>
+     <li class="itemize">This map <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmsy" font-size="8">†</tspan></sup> is indeed a linear map (why?).
+     </li>
+     <li class="itemize">The niceness of this definition is that it doesn’t make reference to any basis or even
+     <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>, so it is the “right” definition for a inner product space.
+     </li>
+     <li class="itemize">By symmetry, of course, we also have <img 
+src="Na754x.png" alt="⟨       ⟩
+ T†(v),w"  class="left" align="middle" /> = <img 
+src="Na755x.png" alt="⟨v,T (w )⟩"  class="left" align="middle" />.</li></ul>
+<div class="mdframed" id="mdframed-346">
+<a 
+ id="x176-163004r542"></a>
+<div class="newtheorem">
+<!--l. 211--><p class="noindent" ><span class="head">
+<a 
+ id="x176-163005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 15.3.2 </tspan>(Example of an adjoint map)<br 
+class="newline" /> </span><a 
+ id="x176-163006"></a>We’ll work over <tspan font-family="msbm" font-size="10">ℂ</tspan>, so the conjugates are more
+visible. Let’s consider <tspan font-family="cmmi" font-size="10">V </tspan>with orthonormal basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> and <tspan font-family="cmmi" font-size="10">W </tspan>with orthonormal basis <tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>,
+<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. We put
+</p><table 
+class="align-star"><!--l. 220--><p class="noindent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>)</td><td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">if</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + 2<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub></td>  <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>)</td><td 
+class="align-even"> = 3<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + 4<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub></td> <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">T</tspan>(<tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>)</td><td 
+class="align-even"> = 5<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + 6<tspan font-family="cmmi" font-size="10">if</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                                              </td></tr></table>
+</p><!--l. 221--><p class="noindent" >We compute <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmsy" font-size="8">†</tspan></sup>(<tspan font-family="cmmi" font-size="10">f</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>). It is the unique vector <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>such that
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na757x.png" alt="⟨v,x⟩  = ⟨T(v),f ⟩
+     V          1 W
+" class="math-display"  /></div>
+<!--l. 224--><p class="noindent" >for any <tspan font-family="cmmi" font-size="10">v </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">V </tspan>. If we expand <tspan font-family="cmmi" font-size="10">v </tspan>= <tspan font-family="cmmi" font-size="10">ae</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> + <tspan font-family="cmmi" font-size="10">be</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> + <tspan font-family="cmmi" font-size="10">ce</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> the above equality becomes
+</p><table 
+class="align-star"><!--l. 230--><p class="noindent" >
+<tr><td 
+class="align-odd"><img 
+src="Na759x.png" alt="⟨ae1 + be2 + ce3,x⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">V</tspan> </sub></td><td 
+class="align-even"> = <img 
+src="Na760x.png" alt="⟨T(ae1 + be2 + ce3),f1⟩"  class="left" align="middle" /><sub><tspan font-family="cmmi" font-size="8">W</tspan> </sub></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                   <td 
+class="align-even"> = <tspan font-family="cmmi" font-size="10">ia </tspan>+ 3<tspan font-family="cmmi" font-size="10">b </tspan>+ 5<tspan font-family="cmmi" font-size="10">c.</tspan></td>            <td 
+class="align-label"></td><td 
+class="align-label">                                  </td></tr></table>
+</p><!--l. 231--><p class="noindent" >However, since <tspan font-family="cmmi" font-size="10">x </tspan>is in the second argument, this means we actually want to take
+</p>
+<div class="math-display" >
+<img 
+src="Na761x.png" alt=" †
+T (f1) = − ie1 + 3e2 + 5e3
+" class="math-display"  /></div>
+<!--l. 234--><p class="noindent" >so that the sesquilinearity will conjugate the <tspan font-family="cmmi" font-size="10">i</tspan>.
+                                                                                
+                                                                                
+</p>
+  </div>
+<!--l. 235--><p class="indent" >  </p></div>
+<!--l. 238--><p class="indent" >  The pattern continues, though we remind the reader that we need the basis to be
+orthonormal to proceed.</p>
+<div class="mdframed" id="mdframed-347">
+<a 
+ id="x176-163007r543"></a>
+<div class="newtheorem">
+<!--l. 241--><p class="noindent" ><span class="head">
+<a 
+ id="x176-163008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 15.3.3 </tspan><tspan font-family="cmss" font-size="10">(Adjoints are conjugate transposes)</tspan><br 
+class="newline" /> </span><a 
+ id="x176-163009"></a>Fix   an   <tspan font-family="cmti" font-size="10">orthonormal   </tspan>basis   of   a
+finite-dimensional inner product space <tspan font-family="cmmi" font-size="10">V </tspan>. Let <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V  </tspan>be a linear map. If we write
+<tspan font-family="cmmi" font-size="10">T </tspan>as a matrix in this basis, then the matrix <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmsy" font-size="8">†</tspan></sup> (in the same basis) is the <tspan font-family="cmti" font-size="10">conjugate</tspan>
+<tspan font-family="cmti" font-size="10">transpose </tspan>of the matrix of <tspan font-family="cmmi" font-size="10">T</tspan>; that is, the (<tspan font-family="cmmi" font-size="10">i,j</tspan>)th entry of <tspan font-family="cmmi" font-size="10">T</tspan><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> is the complex conjugate
+of the (<tspan font-family="cmmi" font-size="10">j,i</tspan>)th entry of <tspan font-family="cmmi" font-size="10">T</tspan>.
+</p>
+  </div>
+<!--l. 249--><p class="indent" >  </p></div>
+<!--l. 250--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 251--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>One-line version: take <tspan font-family="cmmi" font-size="10">v </tspan>and <tspan font-family="cmmi" font-size="10">w </tspan>to be basis elements, and this falls right out.
+</p><!--l. 254--><p class="indent" >  Full proof: let
+</p>
+  <div class="math-display" >
+<img 
+src="Na762x.png" alt="    ⌊             ⌋
+      a11  ...  a1n
+T = |⌈  ...   ...   ... |⌉
+     a    ...  a
+       n1       nn
+" class="math-display"  /></div>
+<!--l. 260--><p class="indent" >  in this basis <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>. Then, letting <tspan font-family="cmmi" font-size="10">w </tspan>= <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> and <tspan font-family="cmmi" font-size="10">v </tspan>= <tspan font-family="cmmi" font-size="10">e</tspan><sub><tspan font-family="cmmi" font-size="8">j</tspan></sub> we deduce that
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na763x.png" alt="⟨        ⟩                       ⟨         ⟩
+ ei,T†(ej) = ⟨T (ei),ej⟩ = aji =⇒   T†(ej),ei  = aji
+" class="math-display"  /></div>
+<!--l. 265--><p class="indent" >  for any <tspan font-family="cmmi" font-size="10">i</tspan>, which is enough to deduce the result.                                                □
+</p>
+  </div>
+                                                                                
+                                                                                
+  <!--l. 268--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase120.htm" >next</a>] [<a 
+href="Nase118.htm" >prev</a>] [<a 
+href="Nase118.htm#tailNase118.htm" >prev-tail</a>] [<a 
+href="Nase119.htm" >front</a>] [<a 
+href="Nach18.htm#Nase119.htm" >up</a>] </p></div>
+<!--l. 268--><p class="indent" >  <a 
+ id="tailNase119.htm"></a> </p> 
+</body> 
+</html>

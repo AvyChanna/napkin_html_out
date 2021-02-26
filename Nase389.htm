@@ -1,0 +1,183 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>(Optional) Natural transformations</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 319--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach70.htm" >next</a>] [<a 
+href="Nase388.htm" >prev</a>] [<a 
+href="Nase388.htm#tailNase388.htm" >prev-tail</a>] [<a 
+href="Nach61.htm#tailNase389.htm">tail</a>] [<a 
+href="Nach69.htm#Nase416.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">61.5</span>  <a 
+ id="x545-52200061.5"></a>(Optional) Natural transformations</h3>
+<!--l. 320--><p class="noindent" >We made categories to keep track of objects and maps, then went a little crazy and asked
+“what are the maps between categories?” to get functors. Now we’ll ask “what are the maps
+between functors?” to get natural transformations.
+</p><!--l. 324--><p class="indent" >  It might sound terrifying that we’re drawing arrows between functors, but this is actually an
+old idea. Recall that given two paths <tspan font-family="cmmi" font-size="10">α,β </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X</tspan>, we built a path-homotopy
+by “continuously deforming” the path <tspan font-family="cmmi" font-size="10">α </tspan>to <tspan font-family="cmmi" font-size="10">β</tspan>; this could be viewed as a function
+[0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">× </tspan>[0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">X</tspan>. The definition of a natural transformation is similar: we want to pull <tspan font-family="cmmi" font-size="10">F </tspan>to
+<tspan font-family="cmmi" font-size="10">G </tspan>along a series of arrows in the target space <tspan font-family="cmsy" font-size="10">ℬ</tspan>.
+<a 
+ id="x545-522001r1588"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 332--><p class="noindent" ><span class="head">
+<a 
+ id="x545-522002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 61.5.1.</tspan>  </span><a 
+ id="x545-522003"></a>Let <tspan font-family="cmmi" font-size="10">F,G </tspan>: <tspan font-family="cmsy" font-size="10">𝒜→ℬ </tspan>be two functors. A <tspan font-family="cmbx" font-size="10">natural transformation</tspan> <tspan font-family="cmmi" font-size="10">α</tspan>
+from <tspan font-family="cmmi" font-size="10">F </tspan>to <tspan font-family="cmmi" font-size="10">G</tspan>, denoted
+</p>
+  <div class="math-display" >
+<img 
+src="Na3027x.png" alt="      F
+𝒜       α   ℬ
+      G
+" class="math-display"  /></div>
+<!--l. 335--><p class="indent" >  consists of, for each <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">∈𝒜 </tspan>an arrow <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> <tspan font-family="cmsy" font-size="10">∈</tspan> Hom<sub><tspan font-family="cmsy" font-size="8">ℬ</tspan></sub>(<tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan>)<tspan font-family="cmmi" font-size="10">,G</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan>)), which is called the
+<tspan font-family="cmbx" font-size="10">component</tspan> of <tspan font-family="cmmi" font-size="10">α </tspan>at <tspan font-family="cmmi" font-size="10">A</tspan>. Pictorially, it looks like this: <img 
+src="Na3028x.png" alt="                F (A) ∈ ℬ
+                    |
+𝒜 ∋    A  ......................F..G................ |α
+                    | A
+
+                G (A) ∈ ℬ
+"  />
+These <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> are subject to the “naturality” requirement that for any <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><img 
+src="Na3029x.png" alt="f
+−→"  class=""  /><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, the diagram
+<img 
+src="Na3030x.png" alt="F (A1 )-F-(f) F (A2)
+   |           |
+   |           |
+   αA1         |αA2
+   |           |
+      -----
+G (A1 ) G (f) G (A2)
+"  />
+commutes.
+</p>
+  </div>
+<!--l. 351--><p class="indent" >
+The arrow <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> represents the path that <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan>) takes to get to <tspan font-family="cmmi" font-size="10">G</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan>) (just as in a path-homotopy
+from <tspan font-family="cmmi" font-size="10">α </tspan>to <tspan font-family="cmmi" font-size="10">β </tspan>each <tspan font-family="cmti" font-size="10">point </tspan><tspan font-family="cmmi" font-size="10">α</tspan>(<tspan font-family="cmmi" font-size="10">t</tspan>) gets deformed to the <tspan font-family="cmti" font-size="10">point </tspan><tspan font-family="cmmi" font-size="10">β</tspan>(<tspan font-family="cmmi" font-size="10">t</tspan>) continuously). A picture might
+help: consider </p>
+<div class="center" 
+>
+<!--l. 356--><p class="noindent" >
+</p>
+</div>
+<!--l. 425--><p class="noindent" >Here <tspan font-family="cmsy" font-size="10">𝒜 </tspan>is the small category with three elements and two non-identity arrows <tspan font-family="cmmi" font-size="10">f</tspan>, <tspan font-family="cmmi" font-size="10">g </tspan>(I’ve omitted
+the identity arrows for simplicity). The images of <tspan font-family="cmsy" font-size="10">𝒜 </tspan>under <tspan font-family="cmmi" font-size="10">F </tspan>and <tspan font-family="cmmi" font-size="10">G </tspan>are the blue and
+green “subcategories” of <tspan font-family="cmsy" font-size="10">ℬ</tspan>. Note that <tspan font-family="cmsy" font-size="10">ℬ </tspan>could potentially have many more objects
+and arrows in it (grey). The natural transformation <tspan font-family="cmmi" font-size="10">α </tspan>(red) selects an arrow of
+<tspan font-family="cmsy" font-size="10">ℬ </tspan>from each <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan>) to the corresponding <tspan font-family="cmmi" font-size="10">G</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan>), dragging the entire image of <tspan font-family="cmmi" font-size="10">F </tspan>to
+the image of <tspan font-family="cmmi" font-size="10">G</tspan>. Finally, we require that any diagram formed by the blue, red, and
+green arrows is commutative (naturality), so the natural transformation is really
+“natural”.
+</p><!--l. 434--><p class="indent" >  There is a second equivalent definition that looks much more like the homotopy.
+<a 
+ id="x545-522004r1589"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 436--><p class="noindent" ><span class="head">
+<a 
+ id="x545-522005r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Definition 61.5.2.</tspan>  </span><a 
+ id="x545-522006"></a>Let <tspan font-family="cmbx" font-size="10">2 </tspan>denote the category generated by a poset with two elements 0 <tspan font-family="cmsy" font-size="10">≤ </tspan>1,
+that is, </p>
+<div class="center" 
+>
+<!--l. 437--><p class="noindent" >
+<!--l. 444--><p class="noindent" ><object data="Napkin-71.svg" width="216.03922 " height="62.71672 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+</p></div>
+<!--l. 446--><p class="noindent" >Then a <tspan font-family="cmti" font-size="10">natural transformation </tspan><img 
+src="Na3031x.png" alt="       F
+𝒜       α   ℬ
+
+       G"  /> is just a functor <tspan font-family="cmmi" font-size="10">α </tspan>: <tspan font-family="cmsy" font-size="10">𝒜×</tspan><tspan font-family="cmbx" font-size="10">2 </tspan><tspan font-family="cmsy" font-size="10">→ℬ </tspan>satisfying
+</p>
+  <div class="math-display" >
+<img 
+src="Na3032x.png" alt="α(A, 0) = F (A), α (f,0 ) = F (f) and α(A, 1) = G (A), α (f, 1) = G (f).
+" class="math-display"  /></div>
+<!--l. 452--><p class="indent" >  More succinctly, <tspan font-family="cmmi" font-size="10">α</tspan>(<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">,</tspan>0) = <tspan font-family="cmmi" font-size="10">F</tspan>, <tspan font-family="cmmi" font-size="10">α</tspan>(<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">,</tspan>1) = <tspan font-family="cmmi" font-size="10">G</tspan>.
+</p>
+  </div>
+<!--l. 453--><p class="indent" >
+The proof that these are equivalent is left as a practice problem.
+</p><!--l. 456--><p class="indent" >  Naturally, two natural transformations <tspan font-family="cmmi" font-size="10">α </tspan>: <tspan font-family="cmmi" font-size="10">F </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">G </tspan>and <tspan font-family="cmmi" font-size="10">β </tspan>: <tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">H </tspan>can get composed.
+<img 
+src="Na3033x.png" alt="             F (A )
+               |
+               |α
+               | A
+        G  F
+𝒜 ∋ A.....................................................G.........(A.........)..
+           H   |
+               |
+               |βA
+               |
+
+             H (A ) "  />
+</p><!--l. 465--><p class="indent" >  Now suppose <tspan font-family="cmmi" font-size="10">α </tspan>is a natural transformation such that <tspan font-family="cmmi" font-size="10">α</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> is an isomorphism for each <tspan font-family="cmmi" font-size="10">A</tspan>. In
+this way, we can construct an inverse arrow <tspan font-family="cmmi" font-size="10">β</tspan><sub><tspan font-family="cmmi" font-size="8">A</tspan></sub> to it. <img 
+src="Na3034x.png" alt="           F (A ) ∈ ℬ
+              | |
+         FG    | |
+𝒜 ∋ A.................................α...A.| |βA
+              | |
+
+           G (A ) ∈ ℬ
+"  />
+In this case, we say <tspan font-family="cmmi" font-size="10">α </tspan>is a <tspan font-family="cmbx" font-size="10">natural isomorphism</tspan>. We can then say that <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan>)<img 
+src="Na3035x.png" alt="∼="  class="cong"  /><tspan font-family="cmmi" font-size="10">G</tspan>(<tspan font-family="cmmi" font-size="10">A</tspan>)
+<tspan font-family="cmbx" font-size="10">naturally</tspan> in <tspan font-family="cmmi" font-size="10">A</tspan>. (And <tspan font-family="cmmi" font-size="10">β </tspan>is an isomorphism too!) This means that the functors <tspan font-family="cmmi" font-size="10">F </tspan>and <tspan font-family="cmmi" font-size="10">G </tspan>are
+“really the same”: not only are they isomorphic on the level of objects, but these isomorphisms
+are “natural”. As a result of this, we also write <tspan font-family="cmmi" font-size="10">F</tspan><img 
+src="Na3036x.png" alt="∼
+="  class="cong"  /><tspan font-family="cmmi" font-size="10">G </tspan>to mean that the functors are naturally
+isomorphic.
+</p><!--l. 481--><p class="indent" >  This is what it really means when we say that “there is a natural / canonical isomorphism”.
+For example, I claimed earlier (in <tspan font-family="cmbx" font-size="10">??</tspan> ) that there was a canonical isomorphism (<tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>)<sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><img 
+src="Na3037x.png" alt="∼="  class="cong"  /><tspan font-family="cmmi" font-size="10">V </tspan>,
+and mumbled something about “not having to pick a basis” and “God-given”. Category
+theory, amazingly, lets us formalize this: it just says that (<tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>)<sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><img 
+src="Na3038x.png" alt="∼="  class="cong"  />id(<tspan font-family="cmmi" font-size="10">V </tspan>) naturally in
+<tspan font-family="cmmi" font-size="10">V </tspan><tspan font-family="cmsy" font-size="10">∈</tspan><tspan font-family="cmss" font-size="10">FDVect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>. Really, we have a natural transformation
+</p>
+  <div class="math-display" >
+<img 
+src="Na3039x.png" alt="            id
+FDVect       𝜀    FDVect  .
+      k     ∨ ∨         k
+          (− )
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 490--><p class="indent" >  where the component <tspan font-family="cmmi" font-size="10">𝜀</tspan><sub><tspan font-family="cmmi" font-size="8">V</tspan> </sub> is given by <tspan font-family="cmmi" font-size="10">v</tspan><img 
+src="Na3040x.png" alt="↦→"  class="mapsto"  />ev <sub><tspan font-family="cmmi" font-size="8">v</tspan></sub> (as discussed earlier, the fact that it is an
+isomorphism follows from the fact that <tspan font-family="cmmi" font-size="10">V </tspan>and (<tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>)<sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup> have equal dimensions and <tspan font-family="cmmi" font-size="10">𝜀</tspan><sub><tspan font-family="cmmi" font-size="8">V</tspan> </sub> is
+injective).
+                                                                                
+                                                                                
+</p>
+  <!--l. 495--><div class="crosslinks"><p class="noindent">[<a 
+href="Nach70.htm" >next</a>] [<a 
+href="Nase388.htm" >prev</a>] [<a 
+href="Nase388.htm#tailNase388.htm" >prev-tail</a>] [<a 
+href="Nase389.htm" >front</a>] [<a 
+href="Nach69.htm#Nase416.htm" >up</a>] </p></div>
+<!--l. 495--><p class="indent" >  <a 
+ id="tailNase389.htm"></a> </p> 
+</body> 
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Orientations</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 298--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase306.htm" >next</a>] [<a 
+href="Nase287.htm" >prev</a>] [<a 
+href="Nase287.htm#tailNase287.htm" >prev-tail</a>] [<a 
+href="Nach46.htm#tailNase288.htm">tail</a>] [<a 
+href="Nach51.htm#Nase305.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">45.5</span>  <a 
+ id="x412-39000045.5"></a>Orientations</h3>
+<!--l. 299--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Left versus right, clockwise vs.</tspan><tspan font-family="cmti" font-size="10"> counterclockwise.</tspan>
+</p><!--l. 301--><p class="indent" >  This still isn’t enough to integrate on manifolds. We need one more definition: that of an
+orientation.
+</p><!--l. 304--><p class="indent" >  The main issue is the observation from standard calculus that
+</p>
+  <div class="math-display" >
+<img 
+src="Na2099x.png" alt="∫ b            ∫ a
+   f(x) dx = −    f(x) dx.
+ a              b
+" class="math-display"  /></div>
+<!--l. 306--><p class="indent" >  Consider then a space <tspan font-family="cmmi" font-size="10">M </tspan>which is homeomorphic to an interval. If we have a 1-form <tspan font-family="cmmi" font-size="10">α</tspan>, how
+do we integrate it over <tspan font-family="cmmi" font-size="10">M</tspan>? Since <tspan font-family="cmmi" font-size="10">M </tspan>is just a topological space (rather than a subset of <tspan font-family="msbm" font-size="10">ℝ</tspan>),
+there is no default “left” or “right” that we can pick. As another example, if <tspan font-family="cmmi" font-size="10">M </tspan>= <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> is a
+circle, there is no default “clockwise” or “counterclockwise” unless we decide to embed <tspan font-family="cmmi" font-size="10">M </tspan>into
+<tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>.
+</p><!--l. 314--><p class="indent" >  To work around this we have to actually have to make additional assumptions about our
+manifold. <a 
+ id="x412-390001r1159"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 317--><p class="noindent" ><span class="head">
+<a 
+ id="x412-390002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 45.5.1.</tspan>  </span><a 
+ id="x412-390003"></a>A smooth <tspan font-family="cmmi" font-size="10">n</tspan>-manifold is <tspan font-family="cmbx" font-size="10">orientable</tspan> if there exists a differential
+<tspan font-family="cmmi" font-size="10">n</tspan>-form <tspan font-family="cmmi" font-size="10">ω </tspan>on <tspan font-family="cmmi" font-size="10">M </tspan>such that for every <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">M</tspan>,
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na2100x.png" alt="ωp ⁄= 0.
+" class="math-display"  /></div>
+  </div>
+<!--l. 321--><p class="indent" >
+Recall here that <tspan font-family="cmmi" font-size="10">ω</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> is an element of Λ<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>(<tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>). In that case we say <tspan font-family="cmmi" font-size="10">ω </tspan>is a <tspan font-family="cmbx" font-size="10">volume form</tspan> of
+<tspan font-family="cmmi" font-size="10">M</tspan>.
+</p><!--l. 325--><p class="indent" >  How do we picture this definition? If we recall that an differential form is supposed to take
+tangent vectors of <tspan font-family="cmmi" font-size="10">M </tspan>and return real numbers. To this end, we can think of each point <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">M</tspan>
+as having a <tspan font-family="cmbx" font-size="10">tangent plane</tspan> <tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">M</tspan>) which is <tspan font-family="cmmi" font-size="10">n</tspan>-dimensional. Now since the volume form <tspan font-family="cmmi" font-size="10">ω </tspan>is
+<tspan font-family="cmmi" font-size="10">n</tspan>-dimensional, it takes an entire basis of the <tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">M</tspan>) and gives a real number. So a manifold is
+orientable if there exists a consistent choice of sign for the basis of tangent vectors at every
+point of the manifold.
+</p><!--l. 335--><p class="indent" >  For “embedded manifolds”, this just amounts to being able to pick a nonzero field
+of normal vectors to each point <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">M</tspan>. For example, <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> is orientable in this way.
+</p>
+<div class="center" 
+>
+<!--l. 338--><p class="noindent" >
+</p>
+</div>
+<!--l. 356--><p class="noindent" >Similarly, one can orient a sphere <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> by having a field of vectors pointing away (or towards) the
+center. This is all non-rigorous, because I haven’t defined the tangent plane <tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">M</tspan>); since <tspan font-family="cmmi" font-size="10">M </tspan>is
+in general an intrinsic object one has to be quite roundabout to define <tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>(<tspan font-family="cmmi" font-size="10">M</tspan>) (although I do
+so in an optional section later). In any event, the point is that guesses about the orientability
+of spaces are likely to be correct.</p>
+<div class="mdframed" id="mdframed-744">
+<a 
+ id="x412-390004r1160"></a>
+<div class="newtheorem">
+<!--l. 366--><p class="noindent" ><span class="head">
+<a 
+ id="x412-390005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 45.5.2 </tspan>(Orientable surfaces)<br 
+class="newline" /> </span><a 
+ id="x412-390006"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">Spheres <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>, planes, and the torus <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> <tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> are orientable.
+                                                                                
+                                                                                
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The Möbius strip and Klein bottle are <tspan font-family="cmti" font-size="10">not </tspan>orientable: they are “one-sided”.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate"><tspan font-family="msbm" font-size="10">ℂℙ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> is orientable for any <tspan font-family="cmmi" font-size="10">n</tspan>.
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate"><tspan font-family="msbm" font-size="10">ℝℙ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> is orientable only for odd <tspan font-family="cmmi" font-size="10">n</tspan>.</dd></dl>
+</p>
+  </div>
+<!--l. 375--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 378--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase306.htm" >next</a>] [<a 
+href="Nase287.htm" >prev</a>] [<a 
+href="Nase287.htm#tailNase287.htm" >prev-tail</a>] [<a 
+href="Nase288.htm" >front</a>] [<a 
+href="Nach51.htm#Nase305.htm" >up</a>] </p></div>
+<!--l. 378--><p class="indent" >  <a 
+ id="tailNase288.htm"></a> </p> 
+</body> 
+</html>

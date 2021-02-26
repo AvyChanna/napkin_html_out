@@ -1,0 +1,194 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Deutsch-Jozsa algorithm</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 433--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase167.htm" >next</a>] [<a 
+href="Nase165.htm" >prev</a>] [<a 
+href="Nase165.htm#tailNase165.htm" >prev-tail</a>] [<a 
+href="#tailNase166.htm">tail</a>] [<a 
+href="Nach27.htm#Nase166.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">24.4</span>  <a 
+ id="x239-22700024.4"></a>Deutsch-Jozsa algorithm</h3>
+<!--l. 434--><p class="noindent" >The Deutsch-Jozsa algorithm is the first example of a nontrivial quantum algorithm which
+cannot be performed classically: it is a “proof of concept” that would later inspire Grover’s
+search algorithm and Shor’s factoring algorithm.
+</p><!--l. 439--><p class="indent" >  The problem is as follows: we’re given a function <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmsy" font-size="10">{</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> <tspan font-family="cmsy" font-size="10">→{</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan>, and promised that the
+function <tspan font-family="cmmi" font-size="10">f </tspan>is either </p>
+     <ul class="itemize1">
+     <li class="itemize">A constant function, or
+     </li>
+     <li class="itemize">A balanced function, meaning that exactly half the inputs map to 0 and half the
+     inputs map to 1.</li></ul>
+<!--l. 446--><p class="noindent" >The function <tspan font-family="cmmi" font-size="10">f </tspan>is given in the form of a reversible black box <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">f</tspan></sub> which is the control of a NOT
+gate, so it can be represented as the circuit diagram
+</p>
+  <div class="math-display" >
+<img 
+src="Na1206x.png" alt="|x x ...x ⟩  ∕n         |x x ...x  ⟩
+  1 2    n       Uf       1 2    n
+         |y⟩             |y + f(x)  mod 2⟩
+" class="math-display"  /></div>
+<!--l. 455--><p class="indent" >  i.e. if <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,x</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>) = 0 then the gate does nothing, otherwise the gate flips the <tspan font-family="cmmi" font-size="10">y </tspan>bit at the
+bottom. The slash with the <tspan font-family="cmmi" font-size="10">n </tspan>indicates that the top of the input really consists of <tspan font-family="cmmi" font-size="10">n</tspan>
+qubits, not just the one qubit drawn, and so the black box <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">f</tspan></sub> is a map on <tspan font-family="cmmi" font-size="10">n </tspan>+ 1
+qubits.
+</p><!--l. 461--><p class="indent" >  The problem is to determine, with as few calls to the black box <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">f</tspan></sub> as possible, whether <tspan font-family="cmmi" font-size="10">f </tspan>is
+balanced or constant.
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-478">
+<a 
+ id="x239-227001r748"></a>
+<div class="newtheorem">
+<!--l. 466--><p class="noindent" ><span class="head">
+<a 
+ id="x239-227002r1"></a>
+<tspan font-family="cmbx" font-size="10">Question 24.4.1.</tspan>  </span><a 
+ id="x239-227003"></a><tspan font-family="cmr" font-size="10">Classically, show that in the worst case we may need up to 2</tspan><sup><tspan font-family="cmmi" font-size="7">n</tspan><tspan font-family="cmsy" font-size="7">−</tspan><tspan font-family="cmr" font-size="7">1</tspan></sup> <tspan font-family="cmr" font-size="10">+ 1 calls to</tspan>
+<tspan font-family="cmr" font-size="10">the function </tspan><tspan font-family="cmmi" font-size="10">f </tspan><tspan font-family="cmr" font-size="10">to answer the question.</tspan></p>
+  </div>
+<!--l. 468--><p class="indent" >  </p></div>
+<!--l. 470--><p class="indent" >  So with only classical tools, it would take <tspan font-family="cmmi" font-size="10">O</tspan>(2<sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>) queries to determine whether <tspan font-family="cmmi" font-size="10">f </tspan>is balanced
+or constant. However,</p>
+<div class="mdframed" id="mdframed-479">
+<a 
+ id="x239-227004r749"></a>
+<div class="newtheorem">
+<!--l. 474--><p class="noindent" ><span class="head">
+<a 
+ id="x239-227005r2"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 24.4.2 </tspan><tspan font-family="cmss" font-size="10">(Deutsch-Jozsa)</tspan><br 
+class="newline" /> </span><a 
+ id="x239-227006"></a>The  Deutsch-Jozsa  problem  can  be  determined  in  a
+quantum circuit with only a single call to the black box.
+</p>
+  </div>
+<!--l. 477--><p class="indent" >  </p></div>
+<!--l. 478--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 479--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>For concreteness, we do the case <tspan font-family="cmmi" font-size="10">n </tspan>= 1 explicitly; the general case is contained
+in <tspan font-family="cmbx" font-size="10">??</tspan> . We claim that the necessary circuit is
+</p>
+  <div class="math-display" >
+<img 
+src="Na1207x.png" alt="|0⟩    H           H
+            Uf
+|1⟩    H
+" class="math-display"  /></div>
+<!--l. 488--><p class="indent" >  Here the <tspan font-family="cmmi" font-size="10">H</tspan>’s are Hadamard gates, and the meter at the end of the rightmost wire
+indicates that we make a measurement along the usual <img 
+src="Na1208x.png" alt="|0⟩"  class="left" align="middle" />, <img 
+src="Na1209x.png" alt="|1⟩"  class="left" align="middle" /> basis. This is not a typo!
+Even though classically the top wire is just a repeat of the input information, we are
+about to see that it’s the top we want to measure.
+</p><!--l. 495--><p class="indent" >  Note that after the two Hadamard operations, the state we get is
+</p><table 
+class="align-star"><!--l. 504--><p class="indent" >
+<tr><td 
+class="align-odd"><img 
+src="Na1211x.png" alt="|01⟩"  class="left" align="middle" /></td><td 
+class="align-even"> <tspan font-family="cmmi" font-size="8">H</tspan><sup><tspan font-family="cmsy" font-size="6">⊗</tspan><tspan font-family="cmr" font-size="6">2</tspan></sup>
+ <tspan font-family="cmsy" font-size="10">↦−</tspan><tspan font-family="cmsy" font-size="10">−</tspan> <tspan font-family="cmsy" font-size="10">−</tspan> <tspan font-family="cmsy" font-size="10">→</tspan> <img 
+src="Na1212x.png" alt="(              )
+  √1-(|0⟩+ |1⟩)
+    2"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1213x.png" alt="(             )
+  √1-(|0⟩− |1⟩)
+    2"  class="left" align="middle" /></td>     <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>    <td 
+class="align-even"> = <img 
+src="Na1214x.png" alt="1-
+2"  class="frac" align="middle" /><span class="bbig"><img 
+src="Na1215x.png" alt="("  class="left" align="middle" /></span><img 
+src="Na1216x.png" alt="|0⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">⊗</tspan><span class="big"><img 
+src="Na1217x.png" alt="("  class="left" align="middle" /></span><img 
+src="Na1218x.png" alt=" |0⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1219x.png" alt="|1⟩"  class="left" align="middle" /><span class="big"><img 
+src="Na1220x.png" alt=" )"  class="left" align="middle" /></span> + <img 
+src="Na1221x.png" alt="|1⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">⊗</tspan><span class="big"><img 
+src="Na1222x.png" alt="("  class="left" align="middle" /></span><img 
+src="Na1223x.png" alt=" |0⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1224x.png" alt="|1⟩"  class="left" align="middle" /><span class="big"><img 
+src="Na1225x.png" alt=")"  class="left" align="middle" /></span><span class="bbig"><img 
+src="Na1226x.png" alt=")"  class="left" align="middle" /></span><tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                              </td></tr></table>
+</p><!--l. 505--><p class="indent" >  So after applying <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">f</tspan></sub>, we obtain
+</p>
+  <div class="math-display" >
+<img 
+src="Na1227x.png" alt="  (                                                             )
+1- |0⟩⊗ ( |0 + f(0)⟩−  |1 + f(0)⟩) +  |1⟩ ⊗ (|0+ f (1)⟩ − |1 + f(1)⟩)
+2
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 512--><p class="indent" >  where the modulo 2 has been left implicit. Now, observe that the effect of going
+from <img 
+src="Na1228x.png" alt="|0⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1229x.png" alt="|1⟩"  class="left" align="middle" /> to <img 
+src="Na1230x.png" alt="|0 + f(x)⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1231x.png" alt="|1+ f(x)⟩"  class="left" align="middle" /> is merely to either keep the state the
+same (if <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = 0) or to negate it (if <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = 1). So we can simplify and factor to
+get
+</p>
+  <div class="math-display" >
+<img 
+src="Na1232x.png" alt=" (                        )
+1-(− 1)f(0) |0⟩+ (− 1)f(1) |1⟩ ⊗ (|0⟩ − |1⟩).
+2
+" class="math-display"  /></div>
+<!--l. 524--><p class="indent" >  Thus, the picture so far is:
+</p>
+  <div class="math-display" >
+<img 
+src="Na1233x.png" alt="                     (                        )
+|0⟩                √1- (− 1)f(0) |0⟩+  (− 1)f(1) |1⟩
+      H     Uf      2
+|1⟩   H            √1(|0⟩−  |1⟩)
+                    2
+" class="math-display"  /></div>
+<!--l. 534--><p class="indent" >  In particular, the resulting state is not entangled, and we can simply discard the last qubit
+(!). Now observe: </p>
+     <ul class="itemize1">
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">f </tspan>is constant, then the upper-most state is <tspan font-family="cmsy" font-size="10">±</tspan><img 
+src="Na1234x.png" alt="|→ ⟩"  class="left" align="middle" />.
+     </li>
+     <li class="itemize">If <tspan font-family="cmmi" font-size="10">f </tspan>is balanced, then the upper-most state is <tspan font-family="cmsy" font-size="10">±</tspan><img 
+src="Na1235x.png" alt="|← ⟩"  class="left" align="middle" />.</li></ul>
+<!--l. 541--><p class="noindent" >So simply doing a measurement along <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">x</tspan></sub> will give us the answer. Equivalently, perform another
+<tspan font-family="cmmi" font-size="10">H </tspan>gate (so that <tspan font-family="cmmi" font-size="10">H</tspan><img 
+src="Na1236x.png" alt="|→ ⟩"  class="left" align="middle" /> = <img 
+src="Na1237x.png" alt="|0⟩"  class="left" align="middle" />, <tspan font-family="cmmi" font-size="10">H</tspan><img 
+src="Na1238x.png" alt="|← ⟩"  class="left" align="middle" /> = <img 
+src="Na1239x.png" alt="|1⟩"  class="left" align="middle" />) and measuring along <tspan font-family="cmmi" font-size="10">σ</tspan><sub><tspan font-family="cmmi" font-size="8">z</tspan></sub> in the usual <img 
+src="Na1240x.png" alt="|0⟩"  class="left" align="middle" />, <img 
+src="Na1241x.png" alt="|1⟩"  class="left" align="middle" />
+basis. Thus for <tspan font-family="cmmi" font-size="10">n </tspan>= 1 we only need a single call to the oracle.                                 □
+</p>
+  </div>
+                                                                                
+                                                                                
+  <!--l. 549--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase167.htm" >next</a>] [<a 
+href="Nase165.htm" >prev</a>] [<a 
+href="Nase165.htm#tailNase165.htm" >prev-tail</a>] [<a 
+href="Nase166.htm" >front</a>] [<a 
+href="Nach27.htm#Nase166.htm" >up</a>] </p></div>
+<!--l. 549--><p class="indent" >  <a 
+ id="tailNase166.htm"></a> </p> 
+</body> 
+</html>

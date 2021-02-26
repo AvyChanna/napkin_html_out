@@ -1,0 +1,183 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Motivation from high school algebra</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 13--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase313.htm" >next</a>] [<a 
+href="Nase276.htm#tailNase292.htm">tail</a>] [<a 
+href="Nase310.htm#Nase311.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">46.1</span>  <a 
+ id="x419-39900046.1"></a>Motivation from high school algebra</h3>
+<!--l. 14--><p class="noindent" >This  is  adapted  from  my  blog,  <tspan font-family="cmti" font-size="10">Power</tspan>
+<tspan font-family="cmti" font-size="10">Overwhelming</tspan><span class="footnote-mark"><a 
+href="Na420.htm#fn1x51"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x419-399001f1"></a> .
+</p><!--l. 16--><p class="indent" >  In high school precalculus, you’ll often be asked to find the roots of some polynomial with
+integer coefficients. For instance,
+</p>
+  <div class="math-display" >
+<img 
+src="Na2111x.png" alt="x3 − x2 − x− 15 = (x − 3)(x2 + 2x + 5)
+" class="math-display"  /></div>
+<!--l. 19--><p class="indent" >  has roots 3, <tspan font-family="cmsy" font-size="10">−</tspan>1 + 2<tspan font-family="cmmi" font-size="10">i</tspan>, <tspan font-family="cmsy" font-size="10">−</tspan>1 <tspan font-family="cmsy" font-size="10">− </tspan>2<tspan font-family="cmmi" font-size="10">i</tspan>. Or as another example,
+</p>
+  <div class="math-display" >
+<img 
+src="Na2112x.png" alt=" 3     2                   2
+x  − 3x − 2x + 2 = (x+ 1)(x  − 4x+  2)
+" class="math-display"  /></div>
+<!--l. 22--><p class="indent" >  has roots <tspan font-family="cmsy" font-size="10">−</tspan>1, 2 + <img 
+src="Na2113x.png" alt="√ --
+  2"  class="sqrt"  />, 2 <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na2114x.png" alt="√ --
+  2"  class="sqrt"  />. You’ll notice that the irrational roots, like <tspan font-family="cmsy" font-size="10">−</tspan>1 <tspan font-family="cmsy" font-size="10">± </tspan>2<tspan font-family="cmmi" font-size="10">i </tspan>and
+2 <tspan font-family="cmsy" font-size="10">±</tspan><img 
+src="Na2115x.png" alt="√ --
+  2"  class="sqrt"  />, are coming up in pairs. In fact, I think precalculus explicitly tells you that the
+imaginary roots come in conjugate pairs. More generally, it seems like all the roots of the form
+<tspan font-family="cmmi" font-size="10">a </tspan>+ <tspan font-family="cmmi" font-size="10">b</tspan><img 
+src="Na2116x.png" alt="√c-"  class="sqrt"  /> come in “conjugate pairs”. And you can see why.
+</p><!--l. 25--><p class="indent" >  But a polynomial like
+</p>
+  <div class="math-display" >
+<img 
+src="Na2117x.png" alt="x3 − 8x + 4
+" class="math-display"  /></div>
+<!--l. 27--><p class="indent" >  has no rational roots. (The roots of this are approximately <tspan font-family="cmsy" font-size="10">−</tspan>3<tspan font-family="cmmi" font-size="10">.</tspan>0514, 0<tspan font-family="cmmi" font-size="10">.</tspan>51730, 2<tspan font-family="cmmi" font-size="10">.</tspan>5341.) Or
+even simpler,
+</p>
+  <div class="math-display" >
+<img 
+src="Na2118x.png" alt="x3 − 2
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 31--><p class="indent" >  has only one real root, <img 
+src="Na2119x.png" alt="√ --
+3 2"  class="root" align="middle"  />. These roots, even though they are irrational, have no
+“conjugate” pairs. Or do they?
+</p><!--l. 35--><p class="indent" >  Let’s try and figure out exactly what’s happening. Let <tspan font-family="cmmi" font-size="10">α </tspan>be any complex number. We define
+a <tspan font-family="cmbx" font-size="10">minimal polynomial</tspan> of <tspan font-family="cmmi" font-size="10">α </tspan>over <tspan font-family="msbm" font-size="10">ℚ </tspan>to be a polynomial such that </p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">P</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) has rational coefficients, and leading coefficient 1,
+     </li>
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">P</tspan>(<tspan font-family="cmmi" font-size="10">α</tspan>) = 0.
+     </li>
+     <li class="itemize">The degree of <tspan font-family="cmmi" font-size="10">P </tspan>is as small as possible. We call deg <tspan font-family="cmmi" font-size="10">P </tspan>the <tspan font-family="cmbx" font-size="10">degree</tspan> of <tspan font-family="cmmi" font-size="10">α</tspan>.</li></ul>
+<div class="mdframed" id="mdframed-749">
+<a 
+ id="x419-399002r1168"></a>
+<div class="newtheorem">
+<!--l. 44--><p class="noindent" ><span class="head">
+<a 
+ id="x419-399003r1"></a>
+<tspan font-family="cmbx" font-size="10">Example 46.1.1 </tspan>(Examples of minimal polynomials)<br 
+class="newline" /> </span><a 
+ id="x419-399004"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate"><img 
+src="Na2120x.png" alt="√ --
+  2"  class="sqrt"  /> has minimal polynomial <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>2.
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The imaginary unit <tspan font-family="cmmi" font-size="10">i </tspan>= <img 
+src="Na2121x.png" alt="√ ---
+  − 1"  class="sqrt"  /> has minimal polynomial <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + 1.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">A primitive <tspan font-family="cmmi" font-size="10">p</tspan>th root of unity, <tspan font-family="cmmi" font-size="10">ζ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> = <tspan font-family="cmmi" font-size="10">e</tspan><sup><img 
+src="Na2122x.png" alt="2πi
+ p"  class="frac" align="middle" />
+    </sup>, has minimal polynomial <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">p</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sup>+<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmmi" font-size="8">p</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">2</tspan></sup>+<img 
+src="Na2123x.png" alt="⋅⋅⋅"  class="@cdots"  />+1,
+    where <tspan font-family="cmmi" font-size="10">p </tspan>is a prime.</dd></dl>
+</p>
+</div>
+<!--l. 51--><p class="indent" >  </p></div>
+<!--l. 52--><p class="noindent" >Note that 100<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>200 is also a polynomial of the same degree which has <img 
+src="Na2124x.png" alt="√2--"  class="sqrt"  /> as a root; that’s
+why we want to require the polynomial to be monic. That’s also why we choose to work in the
+rational numbers; that way, we can divide by leading coefficients without worrying if we get
+non-integers.
+</p><!--l. 54--><p class="indent" >  Why do we care? The point is as follows: suppose we have another polynomial <tspan font-family="cmmi" font-size="10">A</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) such
+that <tspan font-family="cmmi" font-size="10">A</tspan>(<tspan font-family="cmmi" font-size="10">α</tspan>) = 0. Then we claim that <tspan font-family="cmmi" font-size="10">P</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) actually divides <tspan font-family="cmmi" font-size="10">A</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>)! That means that all the other
+roots of <tspan font-family="cmmi" font-size="10">P </tspan>will also be roots of <tspan font-family="cmmi" font-size="10">A</tspan>.
+</p><!--l. 58--><p class="indent" >  The proof is by contradiction: if not, by polynomial long division we can find a quotient and
+remainder <tspan font-family="cmmi" font-size="10">Q</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>), <tspan font-family="cmmi" font-size="10">R</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) such that
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na2125x.png" alt="A (x) = Q (x)P(x) + R(x)
+" class="math-display"  /></div>
+<!--l. 60--><p class="indent" >  and <tspan font-family="cmmi" font-size="10">R</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>)≢0. Notice that by plugging in <tspan font-family="cmmi" font-size="10">x </tspan>= <tspan font-family="cmmi" font-size="10">α</tspan>, we find that <tspan font-family="cmmi" font-size="10">R</tspan>(<tspan font-family="cmmi" font-size="10">α</tspan>) = 0. But deg <tspan font-family="cmmi" font-size="10">R &#x003C;</tspan> deg <tspan font-family="cmmi" font-size="10">P</tspan>,
+and <tspan font-family="cmmi" font-size="10">P</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) was supposed to be the minimal polynomial. That’s impossible!
+</p><!--l. 65--><p class="indent" >  It follows from this and the monotonicity of the minimal polynomial that it is unique (when
+it exists), so actually it is better to refer to <tspan font-family="cmti" font-size="10">the </tspan>minimal polynomial.</p>
+<div class="mdframed" id="mdframed-750">
+<a 
+ id="x419-399008r1169"></a>
+<div class="newtheorem">
+<!--l. 69--><p class="noindent" ><span class="head">
+<a 
+ id="x419-399009r2"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 46.1.2.</tspan>  </span><a 
+ id="x419-399010"></a><tspan font-family="cmr" font-size="10">Can you find an element in </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmr" font-size="10">that has no minimal polynomial?</tspan></p>
+  </div>
+<!--l. 71--><p class="indent" >  </p></div>
+<!--l. 73--><p class="indent" >  Let’s look at a more concrete example. Consider <tspan font-family="cmmi" font-size="10">A</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>3<tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>2<tspan font-family="cmmi" font-size="10">x </tspan>+ 2 from the
+beginning. The minimal polynomial of 2 + <img 
+src="Na2126x.png" alt="√ --
+  2"  class="sqrt"  /> is <tspan font-family="cmmi" font-size="10">P</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>4<tspan font-family="cmmi" font-size="10">x </tspan>+ 2 (why?). Now we know
+that if 2 + <img 
+src="Na2127x.png" alt="√ --
+  2"  class="sqrt"  /> is a root, then <tspan font-family="cmmi" font-size="10">A</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) is divisible by <tspan font-family="cmmi" font-size="10">P</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>). And that’s how we know that if 2 + <img 
+src="Na2128x.png" alt="√--
+ 2"  class="sqrt"  />
+is a root of <tspan font-family="cmmi" font-size="10">A</tspan>, then 2 <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na2129x.png" alt="√ --
+  2"  class="sqrt"  /> must be a root too.
+</p><!--l. 79--><p class="indent" >  As another example, the minimal polynomial of <img 
+src="Na2130x.png" alt="√--
+32"  class="root" align="middle"  /> is <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan>2. So <img 
+src="Na2131x.png" alt="√ --
+ 32"  class="root" align="middle"  /> actually has <tspan font-family="cmbx" font-size="10">two</tspan>
+conjugates, namely, <tspan font-family="cmmi" font-size="10">α </tspan>= <img 
+src="Na2132x.png" alt="√ --
+3 2"  class="root" align="middle"  /><img 
+src="Na2133x.png" alt="(cos120∘ + isin 120∘)"  class="left" align="middle" /> and <tspan font-family="cmmi" font-size="10">β </tspan>= <img 
+src="Na2134x.png" alt="√ --
+ 32"  class="root" align="middle"  /><img 
+src="Na2135x.png" alt="(cos240∘ + isin 240∘)"  class="left" align="middle" />. Thus any
+polynomial which vanishes at <img 
+src="Na2136x.png" alt="√ --
+3 2"  class="root" align="middle"  /> also has <tspan font-family="cmmi" font-size="10">α </tspan>and <tspan font-family="cmmi" font-size="10">β </tspan>as roots!</p>
+<div class="mdframed" id="mdframed-751">
+<a 
+ id="x419-399011r1170"></a>
+<div class="newtheorem">
+<!--l. 83--><p class="noindent" ><span class="head">
+<a 
+ id="x419-399012r3"></a>
+<tspan font-family="cmbx" font-size="10">Question 46.1.3 </tspan><tspan font-family="cmr" font-size="10">(Important but tautological: irreducible</tspan>  <tspan font-family="cmmi" font-size="10">⇔</tspan>  <tspan font-family="cmr" font-size="10">minimal)</tspan><tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x419-399013"></a><tspan font-family="cmr" font-size="10">Let </tspan><tspan font-family="cmmi" font-size="10">α </tspan><tspan font-family="cmr" font-size="10">be a root of the</tspan>
+<tspan font-family="cmr" font-size="10">polynomial </tspan><tspan font-family="cmmi" font-size="10">P</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmr" font-size="10">). Show that </tspan><tspan font-family="cmmi" font-size="10">P</tspan><tspan font-family="cmr" font-size="10">(</tspan><tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmr" font-size="10">) is the minimal polynomial if and only if it is irreducible.</tspan></p>
+  </div>
+<!--l. 88--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 90--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase313.htm" >next</a>] [<a 
+href="Nase292.htm" >front</a>] [<a 
+href="Nase310.htm#Nase311.htm" >up</a>] </p></div>
+<!--l. 90--><p class="indent" >  <a 
+ id="tailNase292.htm"></a> </p> 
+</body> 
+</html>

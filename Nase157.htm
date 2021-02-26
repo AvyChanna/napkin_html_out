@@ -1,0 +1,164 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Frobenius determinant</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 147--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase156.htm" >prev</a>] [<a 
+href="Nase156.htm#tailNase156.htm" >prev-tail</a>] [<a 
+href="#tailNase157.htm">tail</a>] [<a 
+href="Nach25.htm#Nase157.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">22.3</span>  <a 
+ id="x226-21500022.3"></a>Frobenius determinant</h3>
+<!--l. 148--><p class="noindent" >We finish with the following result, the problem that started the branch of representation
+theory. Given a finite group <tspan font-family="cmmi" font-size="10">G</tspan>, we create <tspan font-family="cmmi" font-size="10">n </tspan>variables <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">g</tspan></sub><tspan font-family="cmsy" font-size="10">}</tspan><sub><tspan font-family="cmmi" font-size="8">g</tspan><tspan font-family="cmsy" font-size="8">∈</tspan><tspan font-family="cmmi" font-size="8">G</tspan></sub>, and an <tspan font-family="cmmi" font-size="10">n</tspan><tspan font-family="cmsy" font-size="10">×</tspan><tspan font-family="cmmi" font-size="10">n </tspan>matrix <tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="8">G</tspan></sub> whose
+(<tspan font-family="cmmi" font-size="10">g,h</tspan>)th entry is <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">gh</tspan></sub>.
+</p>
+<div class="mdframed" id="mdframed-454">
+<a 
+ id="x226-215001r721"></a>
+<div class="newtheorem">
+<!--l. 153--><p class="noindent" ><span class="head">
+<a 
+ id="x226-215002r1"></a>
+<tspan font-family="cmbx" font-size="10">Example 22.3.1 </tspan>(Frobenius determinants)<br 
+class="newline" /> </span><a 
+ id="x226-215003"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">If <tspan font-family="cmmi" font-size="10">G </tspan>= <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ </tspan>= <img 
+src="Na1006x.png" alt="⟨          ⟩
+ T  | T2 = 1"  class="left" align="middle" /> then the matrix would be
+<div class="math-display" >
+<img 
+src="Na1007x.png" alt="       [       ]
+        xid  xT
+MG  =   xT  xid .
+" class="math-display"  /></div>
+    <!--l. 159--><p class="noindent" >Then det<tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="8">G</tspan></sub> = (<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">id</tspan></sub> <tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>)(<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">id</tspan></sub> + <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">T</tspan> </sub>).
+    </p></dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">If <tspan font-family="cmmi" font-size="10">G </tspan>= <tspan font-family="cmmi" font-size="10">S</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>, a long computation gives the irreducible factorization of det<tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="8">G</tspan></sub> is
+<div class="math-display" >
+<img 
+src="Na1008x.png" alt="(       ) (              )
+  ∑         ∑              (  (               )    (              ) )2
+(     xσ) (     sign (σ )x σ)  F  xid,x(123),x(321) − F  x(12),x(23),x(31)
+ σ∈S3       σ∈S3
+" class="math-display"  /></div>
+    <!--l. 167--><p class="noindent" >where <tspan font-family="cmmi" font-size="10">F</tspan>(<tspan font-family="cmmi" font-size="10">a,b,c</tspan>) = <tspan font-family="cmmi" font-size="10">a</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">b</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">c</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> <tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">ab </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">bc </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">ca</tspan>; the latter factor is irreducible.</p></dd></dl>
+</p>
+  </div>
+<!--l. 170--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-455">
+<a 
+ id="x226-215006r722"></a>
+<div class="newtheorem">
+<!--l. 172--><p class="noindent" ><span class="head">
+<a 
+ id="x226-215007r2"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 22.3.2 </tspan><tspan font-family="cmss" font-size="10">(Frobenius determinant)</tspan><br 
+class="newline" /> </span><a 
+ id="x226-215008"></a>The polynomial det<tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="8">G</tspan></sub> (in <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">G</tspan><tspan font-family="cmsy" font-size="10">| </tspan>variables) factors into
+a product of irreducible polynomials such that
+     </p><dl class="enumerate"><dt class="enumerate">
+  (i) </dt><dd 
+class="enumerate">The number of polynomials equals the number of conjugacy classes of <tspan font-family="cmmi" font-size="10">G</tspan>, and
+     </dd><dt class="enumerate">
+ (ii) </dt><dd 
+class="enumerate">The multiplicity of each polynomial equals its degree.</dd></dl>
+</p>
+  </div>
+<!--l. 181--><p class="indent" >  </p></div>
+<!--l. 182--><p class="indent" >  You may already be able to guess how the “sum of squares” result is related! (Indeed, look
+at deg det<tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="8">G</tspan></sub>.)
+</p><!--l. 185--><p class="indent" >  Legend has it that Dedekind observed this behavior first in 1896. He didn’t know how to
+prove it in general, so he sent it in a letter to Frobenius, who created representation theory to
+solve the problem.
+</p><!--l. 190--><p class="indent" >  With all the tools we’ve built, it is now fairly straightforward to prove the result.
+</p><!--l. 193--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 194--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Let <tspan font-family="cmmi" font-size="10">V </tspan>= (<tspan font-family="cmmi" font-size="10">V,ρ</tspan>) = Reg(<tspan font-family="msbm" font-size="10">ℂ</tspan>[<tspan font-family="cmmi" font-size="10">G</tspan>]) and let <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, …, <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">r</tspan></sub> be the irreps of <tspan font-family="cmmi" font-size="10">G</tspan>. Let’s consider
+the map <tspan font-family="cmmi" font-size="10">T</tspan> : <tspan font-family="msbm" font-size="10">ℂ</tspan>[<tspan font-family="cmmi" font-size="10">G</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ</tspan>[<tspan font-family="cmmi" font-size="10">G</tspan>] which has matrix <tspan font-family="cmmi" font-size="10">M</tspan><sub><tspan font-family="cmmi" font-size="8">G</tspan></sub> in the usual basis of <tspan font-family="msbm" font-size="10">ℂ</tspan>[<tspan font-family="cmmi" font-size="10">G</tspan>], namely
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na1009x.png" alt="                ∑
+T : T({xg}g∈G ) =   xgρ(g) ∈ Mat (V).
+                g∈G
+" class="math-display"  /></div>
+<!--l. 199--><p class="indent" >  Thus we want to examine det<tspan font-family="cmmi" font-size="10">T</tspan>.
+</p><!--l. 201--><p class="indent" >  But we know that <tspan font-family="cmmi" font-size="10">V </tspan>= <tspan font-family="cmex" font-size="10">⊕</tspan>
+  <sub><tspan font-family="cmmi" font-size="8">i</tspan><tspan font-family="cmr" font-size="8">=1</tspan></sub><sup><tspan font-family="cmmi" font-size="8">r</tspan></sup><tspan font-family="cmmi" font-size="10">V </tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><sup><tspan font-family="cmsy" font-size="8">⊕</tspan> <tspan font-family="cmr" font-size="8">dim</tspan> <tspan font-family="cmmi" font-size="8">V</tspan> <sub><tspan font-family="cmmi" font-size="6">i</tspan></sub></sup> as before, and so breaking down <tspan font-family="cmmi" font-size="10">T </tspan>over its
+subspaces we know
+</p>
+  <div class="math-display" >
+<img 
+src="Na1010x.png" alt="        r
+       ∏            dimVi
+detT =    (det(T↾Vi))     .
+       i=1
+" class="math-display"  /></div>
+<!--l. 207--><p class="indent" >  So we only have to show two things: the polynomials det<tspan font-family="cmmi" font-size="10">T</tspan><sub><tspan font-family="cmmi" font-size="8">V</tspan> <sub><tspan font-family="cmmi" font-size="6">i</tspan></sub></sub> are irreducible, and they
+are pairwise different for different <tspan font-family="cmmi" font-size="10">i</tspan>.
+</p><!--l. 211--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> = (<tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmmi" font-size="10">,ρ</tspan>), and pick <tspan font-family="cmmi" font-size="10">k </tspan>= dim<tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>. </p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmti" font-size="10">Irreducible</tspan>: By the density theorem, for any <tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmsy" font-size="10">∈</tspan> Mat(<tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>) there exists a <tspan font-family="cmti" font-size="10">particular</tspan>
+     choice of complex numbers <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">g</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G </tspan>such that
+<div class="math-display" >
+<img 
+src="Na1011x.png" alt="     ∑
+M  =     xg ⋅ρi(g) = (T ↾Vi)({xg}).
+     g∈G
+" class="math-display"  /></div>
+     <!--l. 221--><p class="noindent" >View  <tspan font-family="cmmi" font-size="10">ρ</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>(<tspan font-family="cmmi" font-size="10">g</tspan>)  as  a  <tspan font-family="cmmi" font-size="10">k </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">k  </tspan>matrix  with  complex  coefficients.  Thus  the  “generic”
+     (<tspan font-family="cmmi" font-size="10">T</tspan><tspan font-family="msam" font-size="10">↾</tspan><tspan font-family="cmmi" font-size="8">V</tspan> <sub><tspan font-family="cmmi" font-size="6">i</tspan></sub>)(<tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">g</tspan></sub><tspan font-family="cmsy" font-size="10">}</tspan>),  viewed  as  a  matrix  with  polynomial  entries,  must  have  linearly
+     independent entries (or there would be some matrix in Mat(<tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>) that we can’t
+     achieve).
+                                                                                
+                                                                                
+     </p><!--l. 226--><p class="noindent" >Then, the assertion follows (by a linear variable change) from the simple fact that
+     the polynomial det(<tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmmi" font-size="8">ij</tspan></sub>)<sub><tspan font-family="cmr" font-size="8">1</tspan><tspan font-family="cmsy" font-size="8">≤</tspan><tspan font-family="cmmi" font-size="8">i,j</tspan><tspan font-family="cmsy" font-size="8">≤</tspan><tspan font-family="cmmi" font-size="8">m</tspan></sub> in <tspan font-family="cmmi" font-size="10">m</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> variables is always irreducible.
+     </p></li>
+     <li class="itemize"><tspan font-family="cmti" font-size="10">Pairwise distinct</tspan>: We show that from det<tspan font-family="cmmi" font-size="10">T</tspan><tspan font-family="cmsy" font-size="10">|</tspan><sub><tspan font-family="cmmi" font-size="8">V</tspan> <sub><tspan font-family="cmmi" font-size="6">i</tspan></sub></sub>(<tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">g</tspan></sub><tspan font-family="cmsy" font-size="10">}</tspan>) we can read off the character <tspan font-family="cmmi" font-size="10">χ</tspan><sub><tspan font-family="cmmi" font-size="8">V</tspan> <sub><tspan font-family="cmmi" font-size="6">i</tspan></sub></sub>,
+     which proves the claim. In fact<div class="mdframed" id="mdframed-456">
+<a 
+ id="x226-215011r723"></a>
+     <div class="newtheorem">
+     <!--l. 236--><p class="noindent" ><span class="head">
+<a 
+ id="x226-215012r3"></a>
+    <tspan font-family="cmbx" font-size="10">Exercise 22.3.3.</tspan>  </span><a 
+ id="x226-215013"></a><tspan font-family="cmr" font-size="10">Pick </tspan><tspan font-family="cmti" font-size="10">any </tspan><tspan font-family="cmr" font-size="10">basis for </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="7">i</tspan></sub><tspan font-family="cmr" font-size="10">. If</tspan> <tspan font-family="cmr" font-size="10">dim</tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="7">i</tspan></sub> <tspan font-family="cmr" font-size="10">= </tspan><tspan font-family="cmmi" font-size="10">k</tspan><tspan font-family="cmr" font-size="10">, and 1</tspan><sub><tspan font-family="cmmi" font-size="7">G</tspan></sub><tspan font-family="cmmi" font-size="10">≠</tspan><tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G</tspan><tspan font-family="cmr" font-size="10">, then</tspan>
+     </p>
+<div class="math-display" >
+<img 
+src="Na1012x.png" alt="                          k− 1
+χVi(g) is the coefficient of xgx 1G .
+" class="math-display"  /></div>     </p>
+     </div>
+     <!--l. 242--><p class="noindent" ></p></div>
+     <!--l. 243--><p class="noindent" >Thus, we are done.                                                                                 □</p></li></ul>
+</div>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+  <!--l. 85--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase156.htm" >prev</a>] [<a 
+href="Nase156.htm#tailNase156.htm" >prev-tail</a>] [<a 
+href="Nase157.htm" >front</a>] [<a 
+href="Nach25.htm#Nase157.htm" >up</a>] </p></div>
+<!--l. 85--><p class="indent" >  <a 
+ id="tailNase157.htm"></a> </p> 
+</body> 
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Cosets and modding out</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 226--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase34.htm" >next</a>] [<a 
+href="Nase32.htm" >prev</a>] [<a 
+href="Nase32.htm#tailNase32.htm" >prev-tail</a>] [<a 
+href="#tailNase33.htm">tail</a>] [<a 
+href="Nach6.htm#Nase33.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">3.3</span>  <a 
+ id="x57-540003.3"></a>Cosets and modding out</h3>
+<!--l. 227--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Modding out by </tspan><tspan font-family="cmmi" font-size="10">n</tspan><tspan font-family="cmti" font-size="10">: </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>(<tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>)<img 
+src="Na156x.png" alt="∼="  class="cong"  /><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕n</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 229--><p class="indent" >  <tspan font-family="cmti" font-size="10">The next few sections are a bit dense. If this exposition doesn’t work for you, try</tspan>
+<span class="cite"><tspan font-family="cmti" font-size="10">[</tspan><tspan font-family="cmbx" font-size="10">?</tspan><tspan font-family="cmti" font-size="10">]</tspan></span><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 231--><p class="indent" >  Let <tspan font-family="cmmi" font-size="10">G </tspan>and <tspan font-family="cmmi" font-size="10">Q </tspan>be groups, and suppose there exists a <tspan font-family="cmti" font-size="10">surjective </tspan>homomorphism
+</p>
+  <div class="math-display" >
+<img 
+src="Na157x.png" alt="ϕ : G ↠ Q.
+" class="math-display"  /></div>
+<!--l. 233--><p class="indent" >  In other words, if <tspan font-family="cmmi" font-size="10">ϕ </tspan>is injective then <tspan font-family="cmmi" font-size="10">ϕ </tspan>: <tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">Q </tspan>is a bijection, and hence an isomorphism.
+But suppose we’re not so lucky and ker<tspan font-family="cmmi" font-size="10">ϕ </tspan>is bigger than just <tspan font-family="cmsy" font-size="10">{</tspan>1<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub><tspan font-family="cmsy" font-size="10">}</tspan>. What is the correct
+interpretation of a more general homomorphism?
+</p><!--l. 238--><p class="indent" >  Let’s look at the special case where <tspan font-family="cmmi" font-size="10">ϕ </tspan>: <tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>100<tspan font-family="msbm" font-size="10">ℤ </tspan>is “modding out by 100”. We already
+saw that the kernel of this map is
+</p>
+  <div class="math-display" >
+<img 
+src="Na158x.png" alt="kerϕ = 100ℤ = {...,− 200,− 100, 0,100, 200,...} .
+" class="math-display"  /></div>
+<!--l. 243--><p class="indent" >  Recall now that ker<tspan font-family="cmmi" font-size="10">ϕ </tspan>is a subgroup of <tspan font-family="cmmi" font-size="10">G</tspan>. What this means is that <tspan font-family="cmmi" font-size="10">ϕ </tspan><tspan font-family="cmbx" font-size="10">is indifferent to the</tspan>
+<tspan font-family="cmbx" font-size="10">subgroup </tspan>100<tspan font-family="msbm" font-size="10">ℤ </tspan><tspan font-family="cmbx" font-size="10">of </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>:
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na159x.png" alt="ϕ(15) = ϕ (2000 + 15) = ϕ(− 300+ 15) = ϕ(700 + 15) = ....
+" class="math-display"  /></div>
+<!--l. 246--><p class="indent" >  So <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>100<tspan font-family="msbm" font-size="10">ℤ </tspan>is what we get when we “mod out by 100”. Cool.
+</p><!--l. 248--><p class="indent" >  In other words, let <tspan font-family="cmmi" font-size="10">G </tspan>be a group and <tspan font-family="cmmi" font-size="10">ϕ </tspan>: <tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="msam" font-size="10">↠ </tspan><tspan font-family="cmmi" font-size="10">Q </tspan>be a surjective homomorphism with kernel
+<tspan font-family="cmmi" font-size="10">N </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">G</tspan>.</p>
+<div class="mdframed" id="mdframed-91">
+<!--l. 251--><p class="noindent" ><tspan font-family="cmbx" font-size="10">We claim that </tspan><tspan font-family="cmmi" font-size="10">Q </tspan><tspan font-family="cmbx" font-size="10">should be thought of as the quotient of </tspan><tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmbx" font-size="10">by </tspan><tspan font-family="cmmi" font-size="10">N</tspan><tspan font-family="cmbx" font-size="10">.</tspan></p><!--l. 252--><p class="noindent" ></p>
+  </div>
+<!--l. 253--><p class="indent" >  To formalize this, we will define a so-called <tspan font-family="cmbx" font-size="10">quotient group</tspan> <tspan font-family="cmmi" font-size="10">G∕N </tspan>in terms of <tspan font-family="cmmi" font-size="10">G </tspan>and <tspan font-family="cmmi" font-size="10">N </tspan>only
+(without referencing <tspan font-family="cmmi" font-size="10">Q</tspan>) which will be naturally isomorphic to <tspan font-family="cmmi" font-size="10">Q</tspan>.
+</p><!--l. 258--><p class="indent" >  For motivation, let’s give a concrete description of <tspan font-family="cmmi" font-size="10">Q </tspan>using just <tspan font-family="cmmi" font-size="10">ϕ </tspan>and <tspan font-family="cmmi" font-size="10">G</tspan>. Continuing our
+previous example, let <tspan font-family="cmmi" font-size="10">N </tspan>= 100<tspan font-family="msbm" font-size="10">ℤ </tspan>be our subgroup of <tspan font-family="cmmi" font-size="10">G</tspan>. Consider the sets
+</p><table 
+class="align-star"><!--l. 267--><p class="indent" >
+<tr><td 
+class="align-odd"><tspan font-family="cmmi" font-size="10">N</tspan></td>     <td 
+class="align-even"> = <img 
+src="Na161x.png" alt="{...,− 200,− 100,0,100,200,...}"  class="left" align="middle" /></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd">1 + <tspan font-family="cmmi" font-size="10">N</tspan></td> <td 
+class="align-even"> = <img 
+src="Na162x.png" alt="{...,− 199,− 99,1,101,201,...}"  class="left" align="middle" /></td> <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd">2 + <tspan font-family="cmmi" font-size="10">N</tspan></td> <td 
+class="align-even"> = <img 
+src="Na163x.png" alt="{...,− 198,− 98,2,102,202,...}"  class="left" align="middle" /></td> <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>       <td 
+class="align-even"><img 
+src="Na164x.png" alt="..."  class="vdots"  /></td>                                 <td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd">99 + <tspan font-family="cmmi" font-size="10">N</tspan></td><td 
+class="align-even"> = <img 
+src="Na165x.png" alt="{...,− 101,− 1,99,199,299,...}"  class="left" align="middle" /><tspan font-family="cmmi" font-size="10">.</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">                                        </td></tr></table>
+                                                                                
+                                                                                
+</p><!--l. 268--><p class="indent" >  The elements of each set all have the same image when we apply <tspan font-family="cmmi" font-size="10">ϕ</tspan>, and moreover any two
+elements in different sets have different images. Then the main idea is to notice
+that</p>
+<div class="mdframed" id="mdframed-92">
+<!--l. 272--><p class="noindent" ><tspan font-family="cmbx" font-size="10">We can think of </tspan><tspan font-family="cmmi" font-size="10">Q </tspan><tspan font-family="cmbx" font-size="10">as the group whose </tspan><tspan font-family="cmbxti" font-size="10">elements </tspan><tspan font-family="cmbx" font-size="10">are the </tspan><tspan font-family="cmbxti" font-size="10">sets </tspan><tspan font-family="cmbx" font-size="10">above.</tspan></p><!--l. 274--><p class="noindent" ></p>
+  </div>
+<!--l. 276--><p class="indent" >  Thus, given <tspan font-family="cmmi" font-size="10">ϕ </tspan>we define an equivalence relation <tspan font-family="cmsy" font-size="10">∼</tspan><sub><tspan font-family="cmmi" font-size="8">N</tspan></sub> on <tspan font-family="cmmi" font-size="10">G </tspan>by saying <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∼</tspan><sub><tspan font-family="cmmi" font-size="8">N</tspan></sub><tspan font-family="cmmi" font-size="10">y </tspan>for <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) = <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">y</tspan>).
+This <tspan font-family="cmsy" font-size="10">∼</tspan><sub><tspan font-family="cmmi" font-size="8">N</tspan></sub> divides <tspan font-family="cmmi" font-size="10">G </tspan>into several equivalence classes in <tspan font-family="cmmi" font-size="10">G </tspan>which are in obvious bijection
+with <tspan font-family="cmmi" font-size="10">Q</tspan>, as above. Now we claim that we can write these equivalence classes very
+explicitly.</p>
+<div class="mdframed" id="mdframed-93">
+<a 
+ id="x57-54001r131"></a>
+<div class="newtheorem">
+<!--l. 284--><p class="noindent" ><span class="head">
+<a 
+ id="x57-54002r1"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 3.3.1.</tspan>  </span><a 
+ id="x57-54003"></a><tspan font-family="cmr" font-size="10">Show that </tspan><tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∼</tspan> <sub><tspan font-family="cmmi" font-size="7">N</tspan></sub><tspan font-family="cmmi" font-size="10">y </tspan><tspan font-family="cmr" font-size="10">if and only if </tspan><tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmr" font-size="10">= </tspan><tspan font-family="cmmi" font-size="10">yn </tspan><tspan font-family="cmr" font-size="10">for some </tspan><tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">N </tspan><tspan font-family="cmr" font-size="10">(in the mod 100</tspan>
+<tspan font-family="cmr" font-size="10">example, this means they “differ by some multiple of 100”). Thus for any </tspan><tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G</tspan><tspan font-family="cmr" font-size="10">, the equivalence</tspan>
+<tspan font-family="cmr" font-size="10">class of </tspan><tspan font-family="cmsy" font-size="10">∼</tspan><sub><tspan font-family="cmmi" font-size="7">N</tspan></sub> <tspan font-family="cmr" font-size="10">which contains </tspan><tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmr" font-size="10">is given explicitly by</tspan>
+</p>
+<div class="math-display" >
+<img 
+src="Na166x.png" alt="gN := {gn | n ∈ N} .
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 288--><p class="indent" >  </p></div>
+<!--l. 296--><p class="indent" >  Here’s the word that describes the types of sets we’re running into now. <a 
+ id="x57-54004r132"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 298--><p class="noindent" ><span class="head">
+<a 
+ id="x57-54005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 3.3.2.</tspan>  </span><a 
+ id="x57-54006"></a>Let <tspan font-family="cmmi" font-size="10">H </tspan>be any subgroup of <tspan font-family="cmmi" font-size="10">G </tspan>(not necessarily the kernel of some
+homomorphism). A set of the form <tspan font-family="cmmi" font-size="10">gH </tspan>is called a <tspan font-family="cmbx" font-size="10">left coset</tspan> of <tspan font-family="cmmi" font-size="10">H</tspan>.
+</p>
+  </div>
+<!--l. 300--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-94">
+<a 
+ id="x57-54007r133"></a>
+                                                                                
+                                                                                
+<div class="newtheorem">
+<!--l. 302--><p class="noindent" ><span class="head">
+<a 
+ id="x57-54008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 3.3.3 —  </tspan> </span><a 
+ id="x57-54009"></a>Although the notation might not suggest it, keep in mind that <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">N</tspan>
+is often equal to <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">N </tspan>even if <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">≠</tspan><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. In the “mod 100” example, 3 + <tspan font-family="cmmi" font-size="10">N </tspan>= 103 + <tspan font-family="cmmi" font-size="10">N</tspan>. In
+other words, these cosets are <tspan font-family="cmti" font-size="10">sets</tspan>.
+</p><!--l. 307--><p class="noindent" >This means that if I write “let <tspan font-family="cmmi" font-size="10">gH </tspan>be a coset” without telling you what <tspan font-family="cmmi" font-size="10">g </tspan>is, you can’t
+figure out which <tspan font-family="cmmi" font-size="10">g </tspan>I chose from just the coset itself. If you don’t believe me, here’s an
+example of what I mean:
+</p>
+<div class="math-display" >
+<img 
+src="Na167x.png" alt="x + 100ℤ = {...,− 97,3,103,203,...} = ⇒ x = ?.
+" class="math-display"  /></div>
+<!--l. 311--><p class="noindent" >There’s no reason to think I picked <tspan font-family="cmmi" font-size="10">x </tspan>= 3. (I actually picked <tspan font-family="cmmi" font-size="10">x </tspan>= <tspan font-family="cmsy" font-size="10">−</tspan>13597.)
+</p>
+  </div>
+<!--l. 313--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-95">
+<a 
+ id="x57-54010r134"></a>
+<div class="newtheorem">
+<!--l. 315--><p class="noindent" ><span class="head">
+<a 
+ id="x57-54011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 3.3.4 —  </tspan> </span><a 
+ id="x57-54012"></a>Given cosets <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">H </tspan>and <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">H</tspan>, you can check that the map <tspan font-family="cmmi" font-size="10">x</tspan><img 
+src="Na168x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan><tspan font-family="cmmi" font-size="10">x</tspan>
+is a bijection between them. So actually, all cosets have the same cardinality.</p>
+  </div>
+<!--l. 318--><p class="indent" >  </p></div>
+<!--l. 320--><p class="indent" >  So, long story short,</p>
+<div class="mdframed" id="mdframed-96">
+<!--l. 322--><p class="noindent" ><tspan font-family="cmbx" font-size="10">Elements of the group </tspan><tspan font-family="cmmi" font-size="10">Q </tspan><tspan font-family="cmbx" font-size="10">are naturally identified with left cosets of </tspan><tspan font-family="cmmi" font-size="10">N</tspan><tspan font-family="cmbx" font-size="10">.</tspan></p><!--l. 323--><p class="noindent" ></p>
+  </div>
+<!--l. 324--><p class="indent" >  In practice, people often still prefer to picture elements of <tspan font-family="cmmi" font-size="10">Q </tspan>as single points (for example
+it’s easier to think of <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>2<tspan font-family="msbm" font-size="10">ℤ </tspan>as <tspan font-family="cmsy" font-size="10">{</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmsy" font-size="10">} </tspan>rather than <span class="big"><img 
+src="Na169x.png" alt="{"  class="left" align="middle" /></span><tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">−</tspan>2<tspan font-family="cmmi" font-size="10">,</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>2<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmsy" font-size="10">}</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">−</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmmi" font-size="10">,</tspan>3<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmsy" font-size="10">}</tspan><span class="big"><img 
+src="Na170x.png" alt="}"  class="left" align="middle" /></span>). If you like
+this picture, then you might then draw <tspan font-family="cmmi" font-size="10">G </tspan>as a bunch of equally tall fibers (the cosets), which
+are then “collapsed” onto <tspan font-family="cmmi" font-size="10">Q</tspan>.
+</p>
+                                                                                
+                                                                                
+<div class="center" 
+>
+<!--l. 331--><p class="noindent" >
+</p>
+</div>
+<!--l. 350--><p class="indent" >  Now that we’ve done this, we can give an <tspan font-family="cmti" font-size="10">intrinsic </tspan>definition for the quotient group we
+alluded to earlier. <a 
+ id="x57-54013r135"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 353--><p class="noindent" ><span class="head">
+<a 
+ id="x57-54014r5"></a>
+<tspan font-family="cmbx" font-size="10">Definition 3.3.5.</tspan>  </span><a 
+ id="x57-54015"></a>A subgroup <tspan font-family="cmmi" font-size="10">N  </tspan>of <tspan font-family="cmmi" font-size="10">G </tspan>is called <tspan font-family="cmbx" font-size="10">normal</tspan> if it is the kernel of some
+homomorphism. We write this as <tspan font-family="cmmi" font-size="10">N </tspan><tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="cmmi" font-size="10">G</tspan>.
+</p>
+  </div>
+<!--l. 356--><p class="indent" >
+<a 
+ id="x57-54016r136"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 358--><p class="noindent" ><span class="head">
+<a 
+ id="x57-54017r6"></a>
+<tspan font-family="cmbx" font-size="10">Definition 3.3.6.</tspan>  </span><a 
+ id="x57-54018"></a>Let <tspan font-family="cmmi" font-size="10">N </tspan><tspan font-family="msam" font-size="10">⊴ </tspan><tspan font-family="cmmi" font-size="10">G</tspan>. Then the <tspan font-family="cmbx" font-size="10">quotient group</tspan>, denoted <tspan font-family="cmmi" font-size="10">G∕N </tspan>(and read “<tspan font-family="cmmi" font-size="10">G </tspan>mod
+<tspan font-family="cmmi" font-size="10">N</tspan>”), is the group defined as follows. </p>
+     <ul class="itemize1">
+     <li class="itemize">The elements of <tspan font-family="cmmi" font-size="10">G∕N </tspan>will be the left cosets of <tspan font-family="cmmi" font-size="10">N</tspan>.
+     </li>
+     <li class="itemize">We want to define the product of two cosets <tspan font-family="cmmi" font-size="10">C</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">C</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> in <tspan font-family="cmmi" font-size="10">G∕N</tspan>. Recall that the
+     cosets are in bijection with elements of <tspan font-family="cmmi" font-size="10">Q</tspan>. So let <tspan font-family="cmmi" font-size="10">q</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> be the value associated to the
+     coset <tspan font-family="cmmi" font-size="10">C</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>, and <tspan font-family="cmmi" font-size="10">q</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>  the one for <tspan font-family="cmmi" font-size="10">C</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. Then we can take the product to be the coset
+     corresponding to <tspan font-family="cmmi" font-size="10">q</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">q</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>.
+     <!--l. 370--><p class="noindent" >Quite importantly, <tspan font-family="cmbx" font-size="10">we can also do this in terms of representatives of the</tspan>
+     <tspan font-family="cmbx" font-size="10">cosets</tspan>. Let <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>  <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">C</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>  and <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>  <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">C</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>, so <tspan font-family="cmmi" font-size="10">C</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>  = <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">N </tspan>and <tspan font-family="cmmi" font-size="10">C</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>  = <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">N</tspan>. Then <tspan font-family="cmmi" font-size="10">C</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">C</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>
+     should be the coset which contains <tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. This is the same as the above definition
+     since <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) = <tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>)<tspan font-family="cmmi" font-size="10">ϕ</tspan>(<tspan font-family="cmmi" font-size="10">g</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) = <tspan font-family="cmmi" font-size="10">q</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">q</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>; all we’ve done is define the product in terms
+     of elements of <tspan font-family="cmmi" font-size="10">G</tspan>, rather than values in <tspan font-family="cmmi" font-size="10">H</tspan>.
+     </p><!--l. 380--><p class="noindent" >Using  the  <tspan font-family="cmmi" font-size="10">gN  </tspan>notation,  and  with  <tspan font-family="cmbx" font-size="10">??</tspan>   in  mind,  we  can  write  this  even  more
+     succinctly:
+                                                                                
+                                                                                
+     </p>
+<div class="math-display" >
+<img 
+src="Na171x.png" alt="(g N )⋅(g N ) := (g g )N.
+  1      2       1 2
+" class="math-display"  /></div>
+     </li></ul>
+  </div>
+<!--l. 385--><p class="indent" >
+And now you know why the integers modulo <tspan font-family="cmmi" font-size="10">n </tspan>are often written <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕n</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>!</p>
+<div class="mdframed" id="mdframed-97">
+<a 
+ id="x57-54019r137"></a>
+<div class="newtheorem">
+<!--l. 388--><p class="noindent" ><span class="head">
+<a 
+ id="x57-54020r7"></a>
+<tspan font-family="cmbx" font-size="10">Question 3.3.7.</tspan>  </span><a 
+ id="x57-54021"></a><tspan font-family="cmr" font-size="10">Take a moment to digest the above definition.</tspan></p>
+  </div>
+<!--l. 389--><p class="indent" >  </p></div>
+<!--l. 390--><p class="indent" >  By the way we’ve built it, the resulting group <tspan font-family="cmmi" font-size="10">G∕N </tspan>is isomorphic to <tspan font-family="cmmi" font-size="10">Q</tspan>. In a sense we think
+of <tspan font-family="cmmi" font-size="10">G∕N </tspan>as “<tspan font-family="cmmi" font-size="10">G </tspan>modulo the condition that <tspan font-family="cmmi" font-size="10">n </tspan>= 1 for all <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">N</tspan>”.
+                                                                                
+                                                                                
+</p>
+  <!--l. 394--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase34.htm" >next</a>] [<a 
+href="Nase32.htm" >prev</a>] [<a 
+href="Nase32.htm#tailNase32.htm" >prev-tail</a>] [<a 
+href="Nase33.htm" >front</a>] [<a 
+href="Nach6.htm#Nase33.htm" >up</a>] </p></div>
+<!--l. 394--><p class="indent" >  <a 
+ id="tailNase33.htm"></a> </p> 
+</body> 
+</html>

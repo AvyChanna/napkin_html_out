@@ -1,0 +1,257 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Applications of compactness</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 280--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase73.htm" >next</a>] [<a 
+href="Nase71.htm" >prev</a>] [<a 
+href="Nase71.htm#tailNase71.htm" >prev-tail</a>] [<a 
+href="#tailNase72.htm">tail</a>] [<a 
+href="Nach11.htm#Nase72.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">8.4</span>  <a 
+ id="x113-1020008.4"></a>Applications of compactness</h3>
+<!--l. 281--><p class="noindent" >Compactness lets us reduce <tspan font-family="cmti" font-size="10">infinite </tspan>open covers to finite ones. Actually, it lets us do
+this even if the open covers are <tspan font-family="cmti" font-size="10">blithely stupid</tspan>. Very often one takes an open cover
+consisting of an open neighborhood of <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>for every single point <tspan font-family="cmmi" font-size="10">x </tspan>in the space;
+this is a huge number of open sets, and yet compactness lets us reduce to a finite
+set.
+</p><!--l. 288--><p class="indent" >  To give an example of a typical usage:</p>
+<div class="mdframed" id="mdframed-209">
+<a 
+ id="x113-102001r329"></a>
+<div class="newtheorem">
+<!--l. 289--><p class="noindent" ><span class="head">
+<a 
+ id="x113-102002r1"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 8.4.1 </tspan><tspan font-family="cmss" font-size="10">(Compact</tspan>  <img 
+src="Na289x.png" alt="=⇒"  class="Longrightarrow"  /> <tspan font-family="cmss" font-size="10">totally bounded)</tspan><br 
+class="newline" /> </span><a 
+ id="x113-102003"></a>Let  <tspan font-family="cmmi" font-size="10">M  </tspan>be  compact.  Then  <tspan font-family="cmmi" font-size="10">M  </tspan>is
+totally bounded.
+</p>
+  </div>
+<!--l. 291--><p class="indent" >  </p></div>
+<!--l. 292--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 292--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof using covers.</tspan> </span> For every point <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">M</tspan>, take an <tspan font-family="cmmi" font-size="10">𝜀</tspan>-neighborhood of <tspan font-family="cmmi" font-size="10">p</tspan>, say <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>. These
+cover <tspan font-family="cmmi" font-size="10">M </tspan>for the horrendously stupid reason that each point <tspan font-family="cmmi" font-size="10">p </tspan>is at the very least covered
+by its open neighborhood <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>. Compactness then lets us take a finite subcover.          □
+</p>
+  </div>
+<!--l. 299--><p class="indent" >  Next, an important result about maps between compact spaces.</p>
+<div class="mdframed" id="mdframed-210">
+<a 
+ id="x113-102004r330"></a>
+<div class="newtheorem">
+<!--l. 300--><p class="noindent" ><span class="head">
+<a 
+ id="x113-102005r2"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmssbx" font-size="10">Theorem 8.4.2 </tspan><tspan font-family="cmss" font-size="10">(Images of compacts are compact)</tspan><br 
+class="newline" /> </span><a 
+ id="x113-102006"></a>Let  <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="cmmi" font-size="10">X   </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">Y  </tspan>be  a  continuous
+function, where <tspan font-family="cmmi" font-size="10">X </tspan>is compact. Then the image
+</p>
+<div class="math-display" >
+<img 
+src="Na290x.png" alt=" img
+f   (X ) ⊆ Y
+" class="math-display"  /></div>
+<!--l. 302--><p class="noindent" >is compact.
+</p>
+  </div>
+<!--l. 303--><p class="indent" >  </p></div>
+<!--l. 304--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 304--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof using covers.</tspan> </span> Take any open cover <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmmi" font-size="8">α</tspan></sub><tspan font-family="cmsy" font-size="10">} </tspan>in <tspan font-family="cmmi" font-size="10">Y </tspan>of <tspan font-family="cmmi" font-size="10">f</tspan>img(<tspan font-family="cmmi" font-size="10">X</tspan>). By continuity of <tspan font-family="cmmi" font-size="10">f</tspan>, it
+pulls back to an open cover <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">α</tspan></sub><tspan font-family="cmsy" font-size="10">} </tspan>of <tspan font-family="cmmi" font-size="10">X</tspan>. Thus some finite subcover of this covers <tspan font-family="cmmi" font-size="10">X</tspan>. The
+corresponding <tspan font-family="cmmi" font-size="10">V </tspan>’s cover <tspan font-family="cmmi" font-size="10">f</tspan>img(<tspan font-family="cmmi" font-size="10">X</tspan>).                                                                    □
+</p>
+  </div><div class="mdframed" id="mdframed-211">
+<a 
+ id="x113-102007r331"></a>
+<div class="newtheorem">
+<!--l. 312--><p class="noindent" ><span class="head">
+<a 
+ id="x113-102008r3"></a>
+<tspan font-family="cmbx" font-size="10">Question 8.4.3.</tspan>  </span><a 
+ id="x113-102009"></a><tspan font-family="cmr" font-size="10">Give  another  proof  using  the  sequential  definitions  of  continuity  and</tspan>
+<tspan font-family="cmr" font-size="10">compactness. (This is even easier.)</tspan></p>
+  </div>
+<!--l. 315--><p class="indent" >  </p></div>
+<!--l. 317--><p class="indent" >  Some nice corollaries of this:</p>
+<div class="mdframed" id="mdframed-212">
+<a 
+ id="x113-102010r332"></a>
+<div class="newtheorem">
+<!--l. 319--><p class="noindent" ><span class="head">
+                                                                                
+                                                                                
+<a 
+ id="x113-102011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Corollary 8.4.4 </tspan><tspan font-family="cmss" font-size="10">(Extreme value theorem)</tspan><br 
+class="newline" /> </span><a 
+ id="x113-102012"></a>Let <tspan font-family="cmmi" font-size="10">X </tspan>be compact and consider a continuous
+function <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">X </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>. Then <tspan font-family="cmmi" font-size="10">f </tspan>achieves a <tspan font-family="cmti" font-size="10">maximum value </tspan>at some point, i.e. there is a
+point <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">X </tspan>such that <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">p</tspan>) <tspan font-family="cmsy" font-size="10">≥ </tspan><tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">q</tspan>) for any other <tspan font-family="cmmi" font-size="10">q </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">X</tspan>.
+</p>
+  </div>
+<!--l. 324--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-213">
+<a 
+ id="x113-102013r333"></a>
+<div class="newtheorem">
+<!--l. 326--><p class="noindent" ><span class="head">
+<a 
+ id="x113-102014r5"></a>
+<tspan font-family="cmssbx" font-size="10">Corollary 8.4.5 </tspan><tspan font-family="cmss" font-size="10">(Intermediate value theorem)</tspan><br 
+class="newline" /> </span><a 
+ id="x113-102015"></a>Consider a continuous function <tspan font-family="cmmi" font-size="10">f </tspan>: [0<tspan font-family="cmmi" font-size="10">,</tspan>1] <tspan font-family="cmsy" font-size="10">→</tspan>
+<tspan font-family="msbm" font-size="10">ℝ</tspan>. Then the image of <tspan font-family="cmmi" font-size="10">f </tspan>is of the form [<tspan font-family="cmmi" font-size="10">a,b</tspan>] for some real numbers <tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">≤ </tspan><tspan font-family="cmmi" font-size="10">b</tspan>.
+</p>
+  </div>
+<!--l. 329--><p class="indent" >  </p></div>
+<!--l. 331--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 331--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Sketch of Proof.</tspan> </span> The point is that the image of <tspan font-family="cmmi" font-size="10">f </tspan>is compact in <tspan font-family="msbm" font-size="10">ℝ</tspan>, and hence closed
+and bounded. You can convince yourself that the closed sets are just unions of closed
+intervals. That implies the extreme value theorem.
+</p><!--l. 337--><p class="indent" >  When <tspan font-family="cmmi" font-size="10">X </tspan>= [0<tspan font-family="cmmi" font-size="10">,</tspan>1], the image is also connected, so there should only be one closed
+interval in <tspan font-family="cmmi" font-size="10">f</tspan>img([0<tspan font-family="cmmi" font-size="10">,</tspan>1]). Since the image is bounded, we then know it’s of the form [<tspan font-family="cmmi" font-size="10">a,b</tspan>].
+(To give a full proof, you would use the so-called <tspan font-family="cmti" font-size="10">least upper bound </tspan>property, but that’s
+a little involved for a bedtime story; also, I think <tspan font-family="msbm" font-size="10">ℝ </tspan>is boring.)                               □
+</p>
+  </div><div class="mdframed" id="mdframed-214">
+<a 
+ id="x113-102016r334"></a>
+<div class="newtheorem">
+<!--l. 346--><p class="noindent" ><span class="head">
+<a 
+ id="x113-102017r6"></a>
+<tspan font-family="cmbx" font-size="10">Example 8.4.6 </tspan>(1<tspan font-family="cmmi" font-size="10">∕x</tspan>)<br 
+class="newline" /> </span><a 
+ id="x113-102018"></a>The compactness hypothesis is really important here. Otherwise,
+consider the function
+                                                                                
+                                                                                
+</p>
+<div class="math-display" >
+<img 
+src="Na291x.png" alt="(0,1) → ℝ   by   x ↦→  1.
+                      x
+" class="math-display"  /></div>
+<!--l. 351--><p class="noindent" >This function (which you plot as a hyperbola) is not bounded; essentially, you can see
+graphically that the issue is we can’t extend it to a function on [0<tspan font-family="cmmi" font-size="10">,</tspan>1] because it explodes
+near <tspan font-family="cmmi" font-size="10">x </tspan>= 0.</p>
+  </div>
+<!--l. 354--><p class="indent" >  </p></div>
+<!--l. 356--><p class="indent" >  One last application: if <tspan font-family="cmmi" font-size="10">M </tspan>is a compact metric space, then continuous functions <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N</tspan>
+are continuous in an especially “nice” way: <a 
+ id="x113-102019r335"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 360--><p class="noindent" ><span class="head">
+<a 
+ id="x113-102020r7"></a>
+<tspan font-family="cmbx" font-size="10">Definition 8.4.7.</tspan>  </span><a 
+ id="x113-102021"></a>A  function  <tspan font-family="cmmi" font-size="10">f  </tspan>:  <tspan font-family="cmmi" font-size="10">M  </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N  </tspan>of  metric  spaces  is  called  <tspan font-family="cmbx" font-size="10">uniformly</tspan>
+<tspan font-family="cmbx" font-size="10">continuous</tspan> if for any <tspan font-family="cmmi" font-size="10">𝜀 &#x003E; </tspan>0, there exists a <tspan font-family="cmmi" font-size="10">δ &#x003E; </tspan>0 (depending only on <tspan font-family="cmmi" font-size="10">𝜀</tspan>) such that
+whenever <tspan font-family="cmmi" font-size="10">d</tspan><sub><tspan font-family="cmmi" font-size="8">M</tspan></sub>(<tspan font-family="cmmi" font-size="10">x,y</tspan>) <tspan font-family="cmmi" font-size="10">&#x003C; δ </tspan>we also have <tspan font-family="cmmi" font-size="10">d</tspan><sub><tspan font-family="cmmi" font-size="8">N</tspan></sub>(<tspan font-family="cmmi" font-size="10">fx,fy</tspan>) <tspan font-family="cmmi" font-size="10">&#x003C; 𝜀</tspan>.
+</p>
+  </div>
+<!--l. 365--><p class="indent" >
+The name means that for <tspan font-family="cmmi" font-size="10">𝜀 &#x003E; </tspan>0, we need a <tspan font-family="cmmi" font-size="10">δ </tspan>that works for <tspan font-family="cmti" font-size="10">every point </tspan>of <tspan font-family="cmmi" font-size="10">M</tspan>.</p>
+<div class="mdframed" id="mdframed-215">
+<a 
+ id="x113-102022r336"></a>
+<div class="newtheorem">
+<!--l. 368--><p class="noindent" ><span class="head">
+<a 
+ id="x113-102023r8"></a>
+<tspan font-family="cmbx" font-size="10">Example 8.4.8 </tspan>(Uniform continuity)<br 
+class="newline" /> </span><a 
+ id="x113-102024"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">The functions <tspan font-family="msbm" font-size="10">ℝ </tspan>to <tspan font-family="msbm" font-size="10">ℝ </tspan>of the form <tspan font-family="cmmi" font-size="10">x</tspan><img 
+src="Na292x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">ax </tspan>+ <tspan font-family="cmmi" font-size="10">b </tspan>are all uniformly continuous, since one
+    can always take <tspan font-family="cmmi" font-size="10">δ </tspan>= <tspan font-family="cmmi" font-size="10">𝜀∕</tspan><tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">a</tspan><tspan font-family="cmsy" font-size="10">| </tspan>(or <tspan font-family="cmmi" font-size="10">δ </tspan>= 1 if <tspan font-family="cmmi" font-size="10">a </tspan>= 0).
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">Actually, it is true that a differentiable function <tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>with a bounded derivative is
+    uniformly continuous. (The converse is false for the reason that uniformly continuous
+    doesn’t imply differentiable at all.)
+                                                                                
+                                                                                
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The function <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="msbm" font-size="10">ℝ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>by <tspan font-family="cmmi" font-size="10">x</tspan><img 
+src="Na293x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>  is <tspan font-family="cmti" font-size="10">not </tspan>uniformly continuous, since for large <tspan font-family="cmmi" font-size="10">x</tspan>,
+    tiny <tspan font-family="cmmi" font-size="10">δ </tspan>changes to <tspan font-family="cmmi" font-size="10">x </tspan>lead to fairly large changes in <tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>. (If you like, you can try to
+    prove this formally now.)
+    <!--l. 383--><p class="noindent" >Think <tspan font-family="cmmi" font-size="10">f</tspan>(2017<tspan font-family="cmmi" font-size="10">.</tspan>01) <tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">f</tspan>(2017) <tspan font-family="cmmi" font-size="10">&#x003E; </tspan>40; even when <tspan font-family="cmmi" font-size="10">δ </tspan>= 0<tspan font-family="cmmi" font-size="10">.</tspan>01, one can still cause large
+    changes in <tspan font-family="cmmi" font-size="10">f</tspan>.
+    </p></dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate">However, when restricted to (0<tspan font-family="cmmi" font-size="10">,</tspan>1) or [0<tspan font-family="cmmi" font-size="10">,</tspan>1] the function <tspan font-family="cmmi" font-size="10">x</tspan><img 
+src="Na294x.png" alt="↦→"  class="mapsto"  /><tspan font-family="cmmi" font-size="10">x</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>  becomes uniformly
+    continuous. (For <tspan font-family="cmmi" font-size="10">𝜀 &#x003E; </tspan>0 one can now pick for example <tspan font-family="cmmi" font-size="10">δ </tspan>= min<tspan font-family="cmsy" font-size="10">{</tspan>1<tspan font-family="cmmi" font-size="10">,𝜀</tspan><tspan font-family="cmsy" font-size="10">}</tspan><tspan font-family="cmmi" font-size="10">∕</tspan>3.)
+    </dd><dt class="enumerate">
+(e) </dt><dd 
+class="enumerate">The function (0<tspan font-family="cmmi" font-size="10">,</tspan>1) <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>by <tspan font-family="cmmi" font-size="10">x</tspan><img 
+src="Na295x.png" alt="↦→"  class="mapsto"  />1<tspan font-family="cmmi" font-size="10">∕x </tspan>is <tspan font-family="cmti" font-size="10">not </tspan>uniformly continuous (same reason as
+    before).</dd></dl>
+</p>
+  </div>
+<!--l. 393--><p class="indent" >  </p></div>
+<!--l. 395--><p class="indent" >  Now, as promised:</p>
+<div class="mdframed" id="mdframed-216">
+<a 
+ id="x113-102030r337"></a>
+<div class="newtheorem">
+<!--l. 396--><p class="noindent" ><span class="head">
+<a 
+ id="x113-102031r9"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 8.4.9 </tspan><tspan font-family="cmss" font-size="10">(Continuous on compact</tspan>  <img 
+src="Na296x.png" alt="=⇒"  class="Longrightarrow"  /> <tspan font-family="cmss" font-size="10">uniformly continuous)</tspan><br 
+class="newline" /> </span><a 
+ id="x113-102032"></a>If <tspan font-family="cmmi" font-size="10">M </tspan>is compact
+and <tspan font-family="cmmi" font-size="10">f</tspan> : <tspan font-family="cmmi" font-size="10">M </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">N </tspan>is continuous, then <tspan font-family="cmmi" font-size="10">f </tspan>is uniformly continuous.
+</p>
+  </div>
+<!--l. 399--><p class="indent" >  </p></div>
+<!--l. 400--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 400--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof using sequences.</tspan> </span> Fix <tspan font-family="cmmi" font-size="10">𝜀 &#x003E; </tspan>0, and assume for contradiction that for every <tspan font-family="cmmi" font-size="10">δ </tspan>= 1<tspan font-family="cmmi" font-size="10">∕k</tspan>
+there exists points <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> and <tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> within <tspan font-family="cmmi" font-size="10">δ </tspan>of each other but with images <tspan font-family="cmmi" font-size="10">𝜀 &#x003E; </tspan>0 apart. By
+compactness, take a convergent subsequence <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan><sub><tspan font-family="cmmi" font-size="6">k</tspan></sub></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">p</tspan>. Then <tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan><sub><tspan font-family="cmmi" font-size="6">k</tspan></sub></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">p </tspan>as well, since the
+<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>’s and <tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>’s are close to each other. So both sequences <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan><sub><tspan font-family="cmmi" font-size="6">k</tspan></sub></sub>) and <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan><sub><tspan font-family="cmmi" font-size="6">k</tspan></sub></sub>) should converge
+to <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">p</tspan>) by sequential continuity, but this can’t be true since the two sequences are always
+<tspan font-family="cmmi" font-size="10">𝜀 </tspan>apart.                                                                                                       □
+</p>
+  </div>
+                                                                                
+                                                                                
+  <!--l. 410--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase73.htm" >next</a>] [<a 
+href="Nase71.htm" >prev</a>] [<a 
+href="Nase71.htm#tailNase71.htm" >prev-tail</a>] [<a 
+href="Nase72.htm" >front</a>] [<a 
+href="Nach11.htm#Nase72.htm" >up</a>] </p></div>
+<!--l. 410--><p class="indent" >  <a 
+ id="tailNase72.htm"></a> </p> 
+</body> 
+</html>

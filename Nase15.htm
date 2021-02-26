@@ -1,0 +1,413 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Definition and examples of groups</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 6--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase16.htm" >next</a>] [<a 
+href="#tailNase15.htm">tail</a>] [<a 
+href="Nach4.htm#Nase15.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">1.1</span>  <a 
+ id="x33-330001.1"></a>Definition and examples of groups</h3>
+<!--l. 8--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">The additive group of integers </tspan>(<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">,</tspan>+) <tspan font-family="cmti" font-size="10">and the cyclic</tspan>
+<tspan font-family="cmti" font-size="10">group </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕m</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmti" font-size="10">. Just don’t let yourself forget that most groups are non-commutative.</tspan>
+</p><!--l. 10--><p class="indent" >  A group consists of two pieces of data: a set <tspan font-family="cmmi" font-size="10">G</tspan>, and an associative binary operation <tspan font-family="cmmi" font-size="10">⋆</tspan>
+with some properties. Before I write down the definition of a group, let me give two
+examples.</p>
+<div class="mdframed" id="mdframed-3">
+<a 
+ id="x33-33001r1"></a>
+<div class="newtheorem">
+<!--l. 14--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33002r1"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.1.1 </tspan>(Additive integers)<br 
+class="newline" /> </span><a 
+ id="x33-33003"></a>The pair (<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">,</tspan>+) is a group: <tspan font-family="msbm" font-size="10">ℤ </tspan>= <img 
+src="Na21x.png" alt="{...,− 2,− 1,0,1,2,...}"  class="left" align="middle" /> is
+the set and the associative operation is <tspan font-family="cmti" font-size="10">addition</tspan>. Note that </p>
+     <ul class="itemize1">
+     <li class="itemize">The element 0 <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ </tspan>is an <tspan font-family="cmti" font-size="10">identity</tspan>: <tspan font-family="cmmi" font-size="10">a </tspan>+ 0 = 0 + <tspan font-family="cmmi" font-size="10">a </tspan>= <tspan font-family="cmmi" font-size="10">a </tspan>for any <tspan font-family="cmmi" font-size="10">a</tspan>.
+     </li>
+     <li class="itemize">Every element <tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ </tspan>has an additive <tspan font-family="cmti" font-size="10">inverse</tspan>: <tspan font-family="cmmi" font-size="10">a </tspan>+ (<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">a</tspan>) = (<tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">a</tspan>) + <tspan font-family="cmmi" font-size="10">a </tspan>= 0.</li></ul>
+<!--l. 24--><p class="noindent" >We call this group <tspan font-family="msbm" font-size="10">ℤ</tspan>.
+</p>
+  </div>
+<!--l. 25--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-4">
+<a 
+ id="x33-33004r2"></a>
+<div class="newtheorem">
+<!--l. 26--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.1.2 </tspan>(Nonzero rationals)<br 
+class="newline" /> </span><a 
+ id="x33-33006"></a>Let <tspan font-family="msbm" font-size="10">ℚ</tspan><sup><tspan font-family="cmsy" font-size="8">×</tspan></sup> be the set of <tspan font-family="cmti" font-size="10">nonzero rational numbers</tspan>. The
+                                                                                
+                                                                                
+pair (<tspan font-family="msbm" font-size="10">ℚ</tspan><sup><tspan font-family="cmsy" font-size="8">×</tspan></sup><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">⋅</tspan>) is a group: the set is <tspan font-family="msbm" font-size="10">ℚ</tspan><sup><tspan font-family="cmsy" font-size="8">×</tspan></sup> and the associative operation is <tspan font-family="cmti" font-size="10">multiplication</tspan>.
+</p><!--l. 32--><p class="noindent" >Again we see the same two nice properties. </p>
+     <ul class="itemize1">
+     <li class="itemize">The element 1 <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℚ</tspan><sup><tspan font-family="cmsy" font-size="8">×</tspan></sup> is an <tspan font-family="cmti" font-size="10">identity</tspan>: for any rational number, <tspan font-family="cmmi" font-size="10">a </tspan><tspan font-family="cmsy" font-size="10">⋅ </tspan>1 = 1 <tspan font-family="cmsy" font-size="10">⋅ </tspan><tspan font-family="cmmi" font-size="10">a </tspan>= <tspan font-family="cmmi" font-size="10">a</tspan>.
+     </li>
+     <li class="itemize">For any rational number <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℚ</tspan><sup><tspan font-family="cmsy" font-size="8">×</tspan></sup>, we have an inverse <tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan>, such that
+<div class="math-display" >
+<img 
+src="Na22x.png" alt="x ⋅x−1 = x−1 ⋅x = 1.
+" class="math-display"  /></div>
+     </li></ul>
+</p>
+  </div>
+<!--l. 40--><p class="indent" >  </p></div>
+<!--l. 42--><p class="indent" >  From this you might already have a guess what the definition of a group is. <a 
+ id="x33-33007r3"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 44--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33008r3"></a>
+<tspan font-family="cmbx" font-size="10">Definition 1.1.3.</tspan>  </span><a 
+ id="x33-33009"></a>A <tspan font-family="cmbx" font-size="10">group</tspan> is a pair <tspan font-family="cmmi" font-size="10">G </tspan>= (<tspan font-family="cmmi" font-size="10">G,⋆</tspan>) consisting of a set of elements <tspan font-family="cmmi" font-size="10">G</tspan>, and a
+binary operation <tspan font-family="cmmi" font-size="10">⋆ </tspan>on <tspan font-family="cmmi" font-size="10">G</tspan>, such that: </p>
+     <ul class="itemize1">
+     <li class="itemize"><tspan font-family="cmmi" font-size="10">G </tspan>has an <tspan font-family="cmbx" font-size="10">identity element</tspan>, usually denoted 1<sub><tspan font-family="cmmi" font-size="8">G</tspan></sub> or just 1, with the property that
+<div class="math-display" >
+<img 
+src="Na23x.png" alt="1G ⋆ g = g ⋆ 1G = g for all g ∈ G.
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+     </li>
+     <li class="itemize">The operation is <tspan font-family="cmbx" font-size="10">associative</tspan>, meaning (<tspan font-family="cmmi" font-size="10">a ⋆ b</tspan>) <tspan font-family="cmmi" font-size="10">⋆ c </tspan>= <tspan font-family="cmmi" font-size="10">a ⋆ </tspan>(<tspan font-family="cmmi" font-size="10">b ⋆ c</tspan>) for any <tspan font-family="cmmi" font-size="10">a,b,c </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G</tspan>.
+     Consequently we generally don’t write the parentheses.
+     </li>
+     <li class="itemize">Each element <tspan font-family="cmmi" font-size="10">g </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G </tspan>has an <tspan font-family="cmbx" font-size="10">inverse</tspan>, that is, an element <tspan font-family="cmmi" font-size="10">h </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G </tspan>such that
+<div class="math-display" >
+<img 
+src="Na24x.png" alt="g ⋆h = h ⋆g = 1G.
+" class="math-display"  /></div>
+     </li></ul>
+  </div>
+<!--l. 57--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-5">
+<a 
+ id="x33-33010r4"></a>
+<div class="newtheorem">
+<!--l. 59--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 1.1.4 </tspan><tspan font-family="cmss" font-size="10">(Unimportant pedantic point) </tspan><tspan font-family="cmssbx" font-size="10">—  </tspan> </span><a 
+ id="x33-33012"></a>Some authors like to add a “closure”
+axiom, i.e. to say explicitly that <tspan font-family="cmmi" font-size="10">g ⋆ h </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G</tspan>. This is implied already by the fact that <tspan font-family="cmmi" font-size="10">⋆ </tspan>is
+a binary operation on <tspan font-family="cmmi" font-size="10">G</tspan>, but is worth keeping in mind for the examples below.</p>
+  </div>
+<!--l. 65--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-6">
+<a 
+ id="x33-33013r5"></a>
+<div class="newtheorem">
+<!--l. 68--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33014r5"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 1.1.5 —  </tspan> </span><a 
+ id="x33-33015"></a>It is not required that <tspan font-family="cmmi" font-size="10">⋆ </tspan>is commutative (<tspan font-family="cmmi" font-size="10">a⋆b </tspan>= <tspan font-family="cmmi" font-size="10">b⋆a</tspan>). So we say that
+a group is <tspan font-family="cmbx" font-size="10">abelian</tspan> if the operation is commutative and <tspan font-family="cmbx" font-size="10">non-abelian</tspan> otherwise.</p>
+  </div>
+<!--l. 71--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<div class="mdframed" id="mdframed-7">
+<a 
+ id="x33-33016r6"></a>
+<div class="newtheorem">
+<!--l. 76--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33017r6"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.1.6 </tspan>(Non-Examples of groups)<br 
+class="newline" /> </span><a 
+ id="x33-33018"></a></p><ul class="itemize1">
+     <li class="itemize">The pair (<tspan font-family="msbm" font-size="10">ℚ</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">⋅</tspan>) is NOT a group. (Here <tspan font-family="msbm" font-size="10">ℚ </tspan>is rational numbers.) While there is an
+     identity element, the element 0 <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℚ </tspan>does not have an inverse.
+     </li>
+     <li class="itemize">The pair (<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">⋅</tspan>) is also NOT a group. (Why?)
+     </li>
+     <li class="itemize">Let Mat<sub><tspan font-family="cmr" font-size="8">2</tspan><tspan font-family="cmsy" font-size="8">×</tspan><tspan font-family="cmr" font-size="8">2</tspan></sub>(<tspan font-family="msbm" font-size="10">ℝ</tspan>) be the set of 2 <tspan font-family="cmsy" font-size="10">× </tspan>2 real matrices. Then (Mat<sub><tspan font-family="cmr" font-size="8">2</tspan><tspan font-family="cmsy" font-size="8">×</tspan><tspan font-family="cmr" font-size="8">2</tspan></sub>(<tspan font-family="msbm" font-size="10">ℝ</tspan>)<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">⋅</tspan>) (where <tspan font-family="cmsy" font-size="10">⋅ </tspan>is
+     matrix multiplication) is NOT a group. Indeed, even though we have an identity
+     matrix
+<div class="math-display" >
+<img 
+src="Na25x.png" alt="[    ]
+ 1  0
+ 0  1
+" class="math-display"  /></div>
+     <!--l. 93--><p class="noindent" >we  still  run  into  the  same  issue  as  before:  the  zero  matrix  does  not  have  a
+     multiplicative inverse.
+     </p><!--l. 96--><p class="noindent" >(Even if we delete the zero matrix from the set, the resulting structure is still not
+     a group: those of you that know some linear algebra might recall that any matrix
+     with determinant zero cannot have an inverse.)</p></li></ul>
+</p>
+  </div>
+<!--l. 102--><p class="indent" >  </p></div>
+<!--l. 104--><p class="indent" >  Let’s resume writing down examples. Here are some more <tspan font-family="cmbx" font-size="10">abelian examples </tspan>of
+groups:</p>
+<div class="mdframed" id="mdframed-8">
+<a 
+ id="x33-33019r7"></a>
+<div class="newtheorem">
+<!--l. 107--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33020r7"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Example 1.1.7 </tspan>(Complex unit circle)<br 
+class="newline" /> </span><a 
+ id="x33-33021"></a>Let <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> denote the set of complex numbers <tspan font-family="cmmi" font-size="10">z </tspan>with
+absolute value one; that is
+</p>
+<div class="math-display" >
+<img 
+src="Na26x.png" alt="S1 := {z ∈ ℂ | |z| = 1} .
+" class="math-display"  /></div>
+<!--l. 110--><p class="noindent" >Then (<tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">×</tspan>) is a group because </p>
+     <ul class="itemize1">
+     <li class="itemize">The complex number 1 <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> serves as the identity, and
+     </li>
+     <li class="itemize">Each  complex  number  <tspan font-family="cmmi" font-size="10">z  </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>  has  an  inverse  <img 
+src="Na27x.png" alt="1
+z"  class="frac" align="middle" />  which  is  also  in  <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>,  since
+     <img 
+src="Na28x.png" alt="|| −1||
+ z"  class="left" align="middle" /> = <img 
+src="Na29x.png" alt="|z|"  class="left" align="middle" /><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan> = 1.</li></ul>
+<!--l. 115--><p class="noindent" >There is one thing I ought to also check: that <tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> is actually still in <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>. But this follows
+from the fact that <img 
+src="Na30x.png" alt="|z1z2|"  class="left" align="middle" /> = <img 
+src="Na31x.png" alt="|z1|"  class="left" align="middle" /><img 
+src="Na32x.png" alt="|z2|"  class="left" align="middle" /> = 1.
+</p>
+  </div>
+<!--l. 117--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-9">
+<a 
+ id="x33-33022r8"></a>
+<div class="newtheorem">
+<!--l. 120--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33023r8"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.1.8 </tspan>(Addition mod <tspan font-family="cmmi" font-size="10">n</tspan>)<br 
+class="newline" /> </span><a 
+ id="x33-33024"></a>Here is an example from number theory: Let <tspan font-family="cmmi" font-size="10">n &#x003E; </tspan>1
+be an integer, and consider the residues (remainders) modulo <tspan font-family="cmmi" font-size="10">n</tspan>. These form a group
+under addition. We call this the <tspan font-family="cmbx" font-size="10">cyclic group of order </tspan><tspan font-family="cmmi" font-size="10">n</tspan>, and denote it as <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕n</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>, with
+elements <span class="overline">0</span><tspan font-family="cmmi" font-size="10">,</tspan><span class="overline">1</span><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan>. The identity is <span class="overline">0</span>.
+</p>
+  </div>
+<!--l. 129--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-10">
+<a 
+ id="x33-33025r9"></a>
+<div class="newtheorem">
+<!--l. 131--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33026r9"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Example 1.1.9 </tspan>(Multiplication mod <tspan font-family="cmmi" font-size="10">p</tspan>)<br 
+class="newline" /> </span><a 
+ id="x33-33027"></a>Let <tspan font-family="cmmi" font-size="10">p </tspan>be a prime. Consider the <tspan font-family="cmti" font-size="10">nonzero residues</tspan>
+<tspan font-family="cmti" font-size="10">modulo </tspan><tspan font-family="cmmi" font-size="10">p</tspan>, which we denote by (<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕p</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>)<tspan font-family="cmsy" font-size="8">×</tspan>. Then <img 
+src="Na33x.png" alt="((ℤ∕pℤ )×,× )"  class="left" align="middle" /> is a group.
+</p>
+  </div>
+<!--l. 137--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-11">
+<a 
+ id="x33-33028r10"></a>
+<div class="newtheorem">
+<!--l. 139--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33029r10"></a>
+<tspan font-family="cmbx" font-size="10">Question 1.1.10.</tspan>  </span><a 
+ id="x33-33030"></a><tspan font-family="cmr" font-size="10">Why do we need the fact that </tspan><tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmr" font-size="10">is prime?</tspan></p>
+  </div>
+<!--l. 140--><p class="indent" >  </p></div>
+<!--l. 141--><p class="indent" >  (Digression: the notation <tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕n</tspan><tspan font-family="msbm" font-size="10">ℤ </tspan>and (<tspan font-family="msbm" font-size="10">ℤ</tspan><tspan font-family="cmmi" font-size="10">∕p</tspan><tspan font-family="msbm" font-size="10">ℤ</tspan>)<tspan font-family="cmsy" font-size="8">×</tspan> may seem strange but will make sense when
+we talk about rings and ideals. Set aside your worry for now.)
+</p><!--l. 146--><p class="indent" >  Here are some <tspan font-family="cmbx" font-size="10">non-abelian examples</tspan>:</p>
+<div class="mdframed" id="mdframed-12">
+<a 
+ id="x33-33031r11"></a>
+<div class="newtheorem">
+<!--l. 148--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33032r11"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.1.11 </tspan>(General linear group)<br 
+class="newline" /> </span><a 
+ id="x33-33033"></a>Let <tspan font-family="cmmi" font-size="10">n </tspan>be a positive integer. Then GL<sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>(<tspan font-family="msbm" font-size="10">ℝ</tspan>) is
+defined as the set of <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">n </tspan>real matrices which have nonzero determinant. It turns out
+that with this condition, every matrix does indeed have an inverse, so (GL<sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>(<tspan font-family="msbm" font-size="10">ℝ</tspan>)<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">×</tspan>) is a
+group, called the <tspan font-family="cmbx" font-size="10">general linear group</tspan>.
+</p><!--l. 157--><p class="noindent" >(The fact that GL<sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>(<tspan font-family="msbm" font-size="10">ℝ</tspan>) is closed under <tspan font-family="cmsy" font-size="10">× </tspan>follows from the linear algebra fact that
+det(<tspan font-family="cmmi" font-size="10">AB</tspan>) = det<tspan font-family="cmmi" font-size="10">A</tspan>det<tspan font-family="cmmi" font-size="10">B</tspan>, proved in later chapters.)
+</p>
+  </div>
+<!--l. 160--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-13">
+<a 
+ id="x33-33034r12"></a>
+<div class="newtheorem">
+<!--l. 162--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33035r12"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.1.12 </tspan>(Special linear group)<br 
+class="newline" /> </span><a 
+ id="x33-33036"></a>Following the example above, let SL<sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>(<tspan font-family="msbm" font-size="10">ℝ</tspan>) denote
+the set of <tspan font-family="cmmi" font-size="10">n </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">n </tspan>matrices whose determinant is actually 1. Again, for linear algebra
+reasons it turns out that (SL<sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>(<tspan font-family="msbm" font-size="10">ℝ</tspan>)<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">×</tspan>) is also a group, called the <tspan font-family="cmbx" font-size="10">special linear group</tspan>.
+</p>
+  </div>
+<!--l. 168--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-14">
+<a 
+ id="x33-33037r13"></a>
+                                                                                
+                                                                                
+<div class="newtheorem">
+<!--l. 171--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33038r13"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.1.13 </tspan>(Symmetric groups)<br 
+class="newline" /> </span><a 
+ id="x33-33039"></a>Let <tspan font-family="cmmi" font-size="10">S</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> be the set of permutations of <img 
+src="Na34x.png" alt="{1,...,n }"  class="left" align="middle" />. By
+viewing these permutations as functions from <img 
+src="Na35x.png" alt="{1,...,n}"  class="left" align="middle" /> to itself, we can consider
+<tspan font-family="cmti" font-size="10">compositions </tspan>of permutations. Then the pair (<tspan font-family="cmmi" font-size="10">S</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmsy" font-size="10">∘</tspan>) (here <tspan font-family="cmsy" font-size="10">∘ </tspan>is function composition) is also a
+group, because </p>
+     <ul class="itemize1">
+     <li class="itemize">There is an identity permutation, and
+     </li>
+     <li class="itemize">Each permutation has an inverse.</li></ul>
+<!--l. 180--><p class="noindent" >The group <tspan font-family="cmmi" font-size="10">S</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> is called the <tspan font-family="cmbx" font-size="10">symmetric group</tspan> on <tspan font-family="cmmi" font-size="10">n </tspan>elements.
+</p>
+  </div>
+<!--l. 181--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-15">
+<a 
+ id="x33-33040r14"></a>
+<div class="newtheorem">
+<!--l. 183--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33041r14"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.1.14 </tspan>(Dihedral group)<br 
+class="newline" /> </span><a 
+ id="x33-33042"></a>The <tspan font-family="cmbx" font-size="10">dihedral group of order </tspan>2<tspan font-family="cmmi" font-size="10">n</tspan>, denoted <tspan font-family="cmmi" font-size="10">D</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan><tspan font-family="cmmi" font-size="8">n</tspan></sub>,
+is the group of symmetries of a regular <tspan font-family="cmmi" font-size="10">n</tspan>-gon <tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>, which includes rotations and
+reflections. It consists of the 2<tspan font-family="cmmi" font-size="10">n </tspan>elements
+</p>
+<div class="math-display" >
+<img 
+src="Na36x.png" alt="{1,r,r2,...,rn−1,s,sr,sr2,...,srn− 1}.
+" class="math-display"  /></div>
+<!--l. 189--><p class="noindent" >The element <tspan font-family="cmmi" font-size="10">r </tspan>corresponds to rotating the <tspan font-family="cmmi" font-size="10">n</tspan>-gon by <img 
+src="Na37x.png" alt="2π-
+n"  class="frac" align="middle" />, while <tspan font-family="cmmi" font-size="10">s </tspan>corresponds to reflecting
+it across the line <tspan font-family="cmmi" font-size="10">OA</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> (here <tspan font-family="cmmi" font-size="10">O </tspan>is the center of the polygon). So <tspan font-family="cmmi" font-size="10">rs </tspan>mean “reflect then
+rotate” (like with function composition, we read from right to left).
+</p><!--l. 195--><p class="noindent" >In particular, <tspan font-family="cmmi" font-size="10">r</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> = <tspan font-family="cmmi" font-size="10">s</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> = 1. You can also see that <tspan font-family="cmmi" font-size="10">r</tspan><sup><tspan font-family="cmmi" font-size="8">k</tspan></sup><tspan font-family="cmmi" font-size="10">s </tspan>= <tspan font-family="cmmi" font-size="10">sr</tspan><sup><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmmi" font-size="8">k</tspan></sup>.
+</p>
+  </div>
+<!--l. 196--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<!--l. 198--><p class="indent" >  Here is a picture of some elements of <tspan font-family="cmmi" font-size="10">D</tspan><sub><tspan font-family="cmr" font-size="8">10</tspan></sub>. </p>
+<div class="center" 
+>
+<!--l. 199--><p class="noindent" >
+</p>
+</div>
+<!--l. 225--><p class="noindent" >Trivia: the dihedral group <tspan font-family="cmmi" font-size="10">D</tspan><sub><tspan font-family="cmr" font-size="8">12</tspan></sub> is my favorite example of a non-abelian group, and is the first
+group I try for any exam question of the form “find an example…”.
+</p><!--l. 228--><p class="indent" >  More examples:</p>
+<div class="mdframed" id="mdframed-16">
+<a 
+ id="x33-33043r15"></a>
+<div class="newtheorem">
+<!--l. 230--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33044r15"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.1.15 </tspan>(Products of groups)<br 
+class="newline" /> </span><a 
+ id="x33-33045"></a>Let (<tspan font-family="cmmi" font-size="10">G,⋆</tspan>) and (<tspan font-family="cmmi" font-size="10">H,</tspan><tspan font-family="cmsy" font-size="10">∗</tspan>) be groups. We can define a
+<tspan font-family="cmbx" font-size="10">product group</tspan> (<tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">H,</tspan><tspan font-family="cmsy" font-size="10">⋅</tspan>), as follows. The elements of the group will be ordered pairs
+(<tspan font-family="cmmi" font-size="10">g,h</tspan>) <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">G </tspan><tspan font-family="cmsy" font-size="10">× </tspan><tspan font-family="cmmi" font-size="10">H</tspan>. Then
+</p>
+<div class="math-display" >
+<img 
+src="Na38x.png" alt="(g ,h )⋅(g ,h ) = (g ⋆g ,h  ∗h ) ∈ G × H
+  1  1    2  2      1  2   1   2
+" class="math-display"  /></div>
+<!--l. 237--><p class="noindent" >is the group operation.
+</p>
+  </div>
+<!--l. 239--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-17">
+<a 
+ id="x33-33046r16"></a>
+<div class="newtheorem">
+<!--l. 241--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33047r16"></a>
+<tspan font-family="cmbx" font-size="10">Question 1.1.16.</tspan>  </span><a 
+ id="x33-33048"></a><tspan font-family="cmr" font-size="10">What are the identity and inverses of the product group?</tspan></p>
+  </div>
+<!--l. 242--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<div class="mdframed" id="mdframed-18">
+<a 
+ id="x33-33049r17"></a>
+<div class="newtheorem">
+<!--l. 245--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33050r17"></a>
+<tspan font-family="cmbx" font-size="10">Example 1.1.17 </tspan>(Trivial group)<br 
+class="newline" /> </span><a 
+ id="x33-33051"></a>The <tspan font-family="cmbx" font-size="10">trivial group</tspan>, often denoted 0 or 1, is the group
+with only an identity element. I will use the notation <tspan font-family="cmsy" font-size="10">{</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan>.
+</p>
+  </div>
+<!--l. 249--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-19">
+<a 
+ id="x33-33052r18"></a>
+<div class="newtheorem">
+<!--l. 252--><p class="noindent" ><span class="head">
+<a 
+ id="x33-33053r18"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 1.1.18.</tspan>  </span><a 
+ id="x33-33054"></a><tspan font-family="cmr" font-size="10">Which of these are groups?</tspan>
+   </p><dl class="enumerate"><dt class="enumerate">
+<tspan font-family="cmr" font-size="10">(a)</tspan> </dt><dd 
+class="enumerate"><tspan font-family="cmr" font-size="10">Rational numbers with odd denominators (in simplest form), where the operation is addition.</tspan>
+   <tspan font-family="cmr" font-size="10">(This includes integers, written as </tspan><tspan font-family="cmmi" font-size="10">n∕</tspan><tspan font-family="cmr" font-size="10">1, and 0 = 0</tspan><tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="cmr" font-size="10">1).</tspan>
+   </dd><dt class="enumerate">
+<tspan font-family="cmr" font-size="10">(b)</tspan> </dt><dd 
+class="enumerate"><tspan font-family="cmr" font-size="10">The set of rational numbers with denominator at most 2, where the operation is addition.</tspan>
+   </dd><dt class="enumerate">
+<tspan font-family="cmr" font-size="10">(c)</tspan> </dt><dd 
+class="enumerate"><tspan font-family="cmr" font-size="10">The  set  of  rational  numbers  with  denominator  at  most  2,  where  the  operation  is</tspan>
+   <tspan font-family="cmr" font-size="10">multiplication.</tspan>
+   </dd><dt class="enumerate">
+<tspan font-family="cmr" font-size="10">(d)</tspan> </dt><dd 
+class="enumerate"><tspan font-family="cmr" font-size="10">The set of nonnegative integers, where the operation is addition.</tspan></dd></dl>
+</p>
+  </div>
+<!--l. 260--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 263--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase16.htm" >next</a>] [<a 
+href="Nase15.htm" >front</a>] [<a 
+href="Nach4.htm#Nase15.htm" >up</a>] </p></div>
+<!--l. 263--><p class="indent" >  <a 
+ id="tailNase15.htm"></a> </p> 
+</body> 
+</html>

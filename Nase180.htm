@@ -1,0 +1,388 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Algebraic perspective</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 116--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase181.htm" >next</a>] [<a 
+href="Nase179.htm" >prev</a>] [<a 
+href="Nase179.htm#tailNase179.htm" >prev-tail</a>] [<a 
+href="#tailNase180.htm">tail</a>] [<a 
+href="Nach30.htm#Nase180.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">27.2</span>  <a 
+ id="x260-24500027.2"></a>Algebraic perspective</h3>
+<!--l. 117--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmsy" font-size="10">−</tspan>1<tspan font-family="cmmi" font-size="10">∕</tspan>2 = 1 + 3 + 3<sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + 3<sup><tspan font-family="cmr" font-size="8">3</tspan></sup> + <img 
+src="Na1446x.png" alt="⋅⋅⋅"  class="@cdots"  /><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 118--><p class="indent" >  We now construct <tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> and <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>. I promised earlier that a <tspan font-family="cmmi" font-size="10">p</tspan>-adic integer will let you look at
+“all residues modulo <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">e</tspan></sup>” at once. This definition will formalize this.
+</p><!--l. 123--><p class="noindent" >
+</p>
+  <h4 class="subsectionHead"><span class="titlemark">27.2.i</span>  <a 
+ id="x260-24600027.2.i"></a>Definition of <tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub></h4>
+<a 
+ id="x260-246001r810"></a>
+  <div class="newtheorem">
+<!--l. 125--><p class="noindent" ><span class="head">
+<a 
+ id="x260-246002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 27.2.1 </tspan>(Introducing <tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x260-246003"></a>A <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmbx" font-size="10">-adic integer</tspan> is a sequence
+</p>
+  <div class="math-display" >
+<img 
+src="Na1447x.png" alt="x = (x mod  p, x mod  p2, x mod p3, ...)
+      1         2         3
+" class="math-display"  /></div>
+<!--l. 128--><p class="indent" >  of residues <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">e</tspan></sub>  modulo <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">e</tspan></sup>  for each integer <tspan font-family="cmmi" font-size="10">e</tspan>, satisfying the compatibility relations
+<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">≡ </tspan><tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">j</tspan></sub> (mod <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">i</tspan></sup>) for <tspan font-family="cmmi" font-size="10">i &#x003C; j</tspan>.
+</p><!--l. 132--><p class="indent" >  The  set  <tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>  of  <tspan font-family="cmmi" font-size="10">p</tspan>-adic  integers  forms  a  ring  under  component-wise  addition  and
+multiplication.
+</p>
+  </div>
+<!--l. 134--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+<div class="mdframed" id="mdframed-518">
+<a 
+ id="x260-246004r811"></a>
+<div class="newtheorem">
+<!--l. 137--><p class="noindent" ><span class="head">
+<a 
+ id="x260-246005r2"></a>
+<tspan font-family="cmbx" font-size="10">Example 27.2.2 </tspan>(Some 3-adic integers)<br 
+class="newline" /> </span><a 
+ id="x260-246006"></a>Let <tspan font-family="cmmi" font-size="10">p </tspan>= 3. Every usual integer <tspan font-family="cmmi" font-size="10">n </tspan>generates a
+(compatible) sequence of residues modulo <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">e</tspan></sup> for each <tspan font-family="cmmi" font-size="10">e</tspan>, so we can view each ordinary
+integer as <tspan font-family="cmmi" font-size="10">p</tspan>-adic one:
+</p>
+<div class="math-display" >
+<img 
+src="Na1448x.png" alt="50 = (2 mod 3, 5 mod 9, 23 mod 27, 50 mod 81, 50 mod 243, ...).
+" class="math-display"  /></div>
+<!--l. 144--><p class="noindent" >On the other hand, there are sequences of residues which do not correspond to any usual
+integer despite satisfying compatibility relations, such as
+</p>
+<div class="math-display" >
+<img 
+src="Na1449x.png" alt="(1 mod 3, 4 mod 9, 13 mod 27, 40 mod 81, ...)
+" class="math-display"  /></div>
+<!--l. 149--><p class="noindent" >which can be thought of as <tspan font-family="cmmi" font-size="10">x </tspan>= 1 + <tspan font-family="cmmi" font-size="10">p </tspan>+ <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">…</tspan>.
+</p>
+  </div>
+<!--l. 150--><p class="indent" >  </p></div>
+<!--l. 151--><p class="noindent" >In this way we get an injective map
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1450x.png" alt="                (                2        3   )
+ℤ `→  ℤp    n ↦→   n mod p,n mod  p,n mod  p ,...
+" class="math-display"  /></div>
+<!--l. 154--><p class="indent" >  which is not surjective. So there are more <tspan font-family="cmmi" font-size="10">p</tspan>-adic integers than usual integers.
+</p><!--l. 157--><p class="indent" >  (Remark for experts: those of you familiar with category theory might recognize that this
+definition can be written concisely as
+</p>
+  <div class="math-display" >
+<img 
+src="Na1451x.png" alt="             e
+ℤp := l←im− ℤ ∕p ℤ
+" class="math-display"  /></div>
+<!--l. 161--><p class="indent" >  where the inverse limit is taken across <tspan font-family="cmmi" font-size="10">e </tspan><tspan font-family="cmsy" font-size="10">≥ </tspan>1.)</p>
+<div class="mdframed" id="mdframed-519">
+<a 
+ id="x260-246007r812"></a>
+<div class="newtheorem">
+<!--l. 164--><p class="noindent" ><span class="head">
+<a 
+ id="x260-246008r3"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 27.2.3.</tspan>  </span><a 
+ id="x260-246009"></a><tspan font-family="cmr" font-size="10">Check that </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="7">p</tspan></sub> <tspan font-family="cmr" font-size="10">is an integral domain.</tspan></p>
+  </div>
+<!--l. 165--><p class="indent" >  </p></div>
+  <h4 class="subsectionHead"><span class="titlemark">27.2.ii</span>  <a 
+ id="x260-24700027.2.ii"></a>Base <tspan font-family="cmmi" font-size="10">p </tspan>expansion</h4>
+<!--l. 168--><p class="noindent" >Here is another way to think about <tspan font-family="cmmi" font-size="10">p</tspan>-adic integers using “base <tspan font-family="cmmi" font-size="10">p</tspan>”. As in the example earlier,
+every usual integer can be written in base <tspan font-family="cmmi" font-size="10">p</tspan>, for example
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1452x.png" alt="     -----
+50 = 12123 = 2⋅30 + 1⋅ 31 + 2 ⋅32 + 1 ⋅33.
+" class="math-display"  /></div>
+<!--l. 172--><p class="indent" >  More generally, given any <tspan font-family="cmmi" font-size="10">x </tspan>= (<tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan>) <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>, we can write down a “base <tspan font-family="cmmi" font-size="10">p</tspan>” expansion in the
+sense that there are exactly <tspan font-family="cmmi" font-size="10">p </tspan>choices of <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> given <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub>. Continuing the example earlier, we
+would write
+</p><table 
+class="align-star"><!--l. 181--><p class="indent" >
+<tr><td 
+class="align-odd"><img 
+src="Na1454x.png" alt="(1 mod  3, 4 mod 9, 13 mod 27, 40 mod 81, ...)"  class="left" align="middle" /></td><td 
+class="align-even"> = 1 + 3 + 3<sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">…</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                                            <td 
+class="align-even"> =<span class="overline"> <tspan font-family="cmmi" font-size="10">…</tspan>1111</span><sub><tspan font-family="cmr" font-size="8">3</tspan></sub></td>       <td 
+class="align-label"></td><td 
+class="align-label">                    </td></tr></table>
+</p><!--l. 182--><p class="indent" >  and in general we can write
+</p>
+  <div class="math-display" >
+<img 
+src="Na1455x.png" alt="    ∑     k   ---------
+x =    akp  = ...a2a1a0p
+    k≥0
+" class="math-display"  /></div>
+                                                                                
+                                                                                
+<!--l. 184--><p class="indent" >  where <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> <tspan font-family="cmsy" font-size="10">∈{</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan><tspan font-family="cmmi" font-size="10">,p </tspan><tspan font-family="cmsy" font-size="10">− </tspan>1<tspan font-family="cmsy" font-size="10">}</tspan>, such that the equation holds modulo <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">e</tspan></sup> for each <tspan font-family="cmmi" font-size="10">e</tspan>. Note the
+expansion is infinite to the <tspan font-family="cmti" font-size="10">left</tspan>, which is different from what you’re used to.
+</p><!--l. 189--><p class="indent" >  (Amusingly, negative integers also have infinite base <tspan font-family="cmmi" font-size="10">p </tspan>expansions: <tspan font-family="cmsy" font-size="10">−</tspan>4 =<span class="overline"> <tspan font-family="cmmi" font-size="10">…</tspan>222212</span><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>,
+corresponding to (2 mod 3<tspan font-family="cmmi" font-size="10">, </tspan>5 mod 9<tspan font-family="cmmi" font-size="10">, </tspan>23 mod 27<tspan font-family="cmmi" font-size="10">, </tspan>77 mod 81<tspan font-family="cmmi" font-size="10">…</tspan>).)
+</p><!--l. 193--><p class="indent" >  Thus you may often hear the advertisement that a <tspan font-family="cmmi" font-size="10">p</tspan>-adic integer is an “possibly infinite
+base <tspan font-family="cmmi" font-size="10">p </tspan>expansion”. This is correct, but later on we’ll be thinking of <tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> in a more and more
+“analytic” way, and so I prefer to think of this as</p>
+<div class="mdframed" id="mdframed-520">
+<!--l. 199--><p class="noindent" ><tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmbx" font-size="10">-adic integers are Taylor series with base </tspan><tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmbx" font-size="10">.</tspan></p><!--l. 200--><p class="noindent" ></p>
+  </div>
+<!--l. 201--><p class="indent" >  Indeed, much of your intuition from generating functions <tspan font-family="cmmi" font-size="10">K</tspan>[[<tspan font-family="cmmi" font-size="10">X</tspan>]] (where <tspan font-family="cmmi" font-size="10">K </tspan>is a field) will
+carry over to <tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>.
+</p>
+  <h4 class="subsectionHead"><span class="titlemark">27.2.iii</span>  <a 
+ id="x260-24800027.2.iii"></a>Constructing <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub></h4>
+<!--l. 205--><p class="noindent" >Here is one way in which your intuition from generating functions carries over:</p>
+<div class="mdframed" id="mdframed-521">
+<a 
+ id="x260-248001r813"></a>
+<div class="newtheorem">
+<!--l. 207--><p class="noindent" ><span class="head">
+<a 
+ id="x260-248002r4"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 27.2.4 </tspan><tspan font-family="cmss" font-size="10">(Non-multiples of </tspan><tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmss" font-size="10">are all invertible)</tspan><br 
+class="newline" /> </span><a 
+ id="x260-248003"></a>The number <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> is invertible
+if and only if <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">≠</tspan>0. In symbols,
+</p>
+<div class="math-display" >
+<img 
+src="Na1456x.png" alt="     ×
+x ∈ ℤp ⇐ ⇒  x ⁄≡ 0   (mod  p).
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 211--><p class="indent" >  </p></div>
+<!--l. 212--><p class="indent" >  Contrast this with the corresponding statement for <tspan font-family="cmmi" font-size="10">K</tspan>[[<tspan font-family="cmmi" font-size="10">X</tspan>]]: a generating function
+<tspan font-family="cmmi" font-size="10">F </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">K</tspan>[[<tspan font-family="cmmi" font-size="10">X</tspan>]] is invertible iff <tspan font-family="cmmi" font-size="10">F</tspan>(0)<tspan font-family="cmmi" font-size="10">≠</tspan>0.
+</p><!--l. 215--><p class="indent" >
+</p>
+                                                                                
+                                                                                
+  <div class="proof">
+<!--l. 216--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>If <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">≡ </tspan>0 (mod <tspan font-family="cmmi" font-size="10">p</tspan>) then <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> = 0, so clearly not invertible. Otherwise, <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">e</tspan></sub>≢0 (mod <tspan font-family="cmmi" font-size="10">p</tspan>)
+for all <tspan font-family="cmmi" font-size="10">e</tspan>, so we can take an inverse <tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmmi" font-size="8">e</tspan></sub> modulo <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">e</tspan></sup>, with <tspan font-family="cmmi" font-size="10">x</tspan><sub><tspan font-family="cmmi" font-size="8">e</tspan></sub><tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmmi" font-size="8">e</tspan></sub> <tspan font-family="cmsy" font-size="10">≡ </tspan>1 (mod <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">e</tspan></sup>). As the <tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmmi" font-size="8">e</tspan></sub> are
+themselves compatible, the element (<tspan font-family="cmmi" font-size="10">y</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,y</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmmi" font-size="10">…</tspan>) is an inverse.                                   □
+</p>
+  </div><div class="mdframed" id="mdframed-522">
+<a 
+ id="x260-248004r814"></a>
+<div class="newtheorem">
+<!--l. 225--><p class="noindent" ><span class="head">
+<a 
+ id="x260-248005r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 27.2.5 </tspan>(We have <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1457x.png" alt="12"  class="frac" align="middle" /> =<span class="overline"> <tspan font-family="cmmi" font-size="10">…</tspan>1111</span><sub><tspan font-family="cmr" font-size="8">3</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>)<br 
+class="newline" /> </span><a 
+ id="x260-248006"></a>We claim the earlier example is actually
+</p><table 
+class="align-star"><!--l. 232--><p class="noindent" >
+<tr><td 
+class="align-odd"> <tspan font-family="cmsy" font-size="10">−</tspan><img 
+src="Na1459x.png" alt="1-
+2"  class="frac" align="middle" /> = <img 
+src="Na1460x.png" alt="(1 mod 3, 4 mod 9, 13 mod 27, 40 mod 81, ...)"  class="left" align="middle" /></td><td 
+class="align-even"> = 1 + 3 + 3<sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <tspan font-family="cmmi" font-size="10">…</tspan></td><td 
+class="align-label"></td><td 
+class="align-label">
+</td></tr><tr><td 
+class="align-odd"></td>                                                   <td 
+class="align-even"> =<span class="overline"> <tspan font-family="cmmi" font-size="10">…</tspan>1111</span><sub><tspan font-family="cmr" font-size="8">3</tspan></sub><tspan font-family="cmmi" font-size="10">.</tspan></td>      <td 
+class="align-label"></td><td 
+class="align-label">             </td></tr></table>
+</p><!--l. 233--><p class="noindent" >Indeed, multiplying it by <tspan font-family="cmsy" font-size="10">−</tspan>2 gives
+</p>
+                                                                                
+                                                                                
+<div class="math-display" >
+<img 
+src="Na1461x.png" alt="(− 2 mod 3, − 8 mod 9, − 26 mod 27, − 80 mod 81, ...) = 1.
+" class="math-display"  /></div>
+<!--l. 237--><p class="noindent" >(Compare this with the “geometric series” 1 + 3 + 3<sup><tspan font-family="cmr" font-size="8">2</tspan></sup> + <img 
+src="Na1462x.png" alt="⋅⋅⋅"  class="@cdots"  /> = <img 
+src="Na1463x.png" alt="-1-
+1−3"  class="frac" align="middle" />. We’ll actually be able to
+formalize this later, but not yet.)
+</p>
+  </div>
+<!--l. 240--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-523">
+<a 
+ id="x260-248007r815"></a>
+<div class="newtheorem">
+<!--l. 242--><p class="noindent" ><span class="head">
+<a 
+ id="x260-248008r6"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 27.2.6 </tspan><tspan font-family="cmss" font-size="10">(</tspan><img 
+src="Na1464x.png" alt="1
+2"  class="frac" align="middle" /> <tspan font-family="cmss" font-size="10">is an integer for </tspan><tspan font-family="cmmi" font-size="10">p &#x003E; </tspan>2<tspan font-family="cmss" font-size="10">) </tspan><tspan font-family="cmssbx" font-size="10">—  </tspan> </span><a 
+ id="x260-248009"></a>The earlier proposition implies that <img 
+src="Na1465x.png" alt="1
+2"  class="frac" align="middle" />  <tspan font-family="cmsy" font-size="10">∈</tspan>
+<tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>  (among other things); your intuition about what is an “integer” is different here!
+In olympiad terms, we already knew <img 
+src="Na1466x.png" alt="1
+2"  class="frac" align="middle" />  (mod 3) made sense, which is why calling <img 
+src="Na1467x.png" alt="1
+2"  class="frac" align="middle" /> an
+“integer” in the 3-adics is correct, even though it doesn’t correspond to any element of
+<tspan font-family="msbm" font-size="10">ℤ</tspan>.</p>
+  </div>
+<!--l. 250--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-524">
+<a 
+ id="x260-248010r816"></a>
+<div class="newtheorem">
+<!--l. 252--><p class="noindent" ><span class="head">
+<a 
+ id="x260-248011r7"></a>
+<tspan font-family="cmbx" font-size="10">Exercise 27.2.7 </tspan><tspan font-family="cmr" font-size="10">(Unimportant but tricky)</tspan><tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x260-248012"></a><tspan font-family="cmr" font-size="10">Rational numbers correspond exactly to eventually</tspan>
+<tspan font-family="cmr" font-size="10">periodic base </tspan><tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmr" font-size="10">expansions.</tspan></p>
+  </div>
+<!--l. 255--><p class="indent" >  </p></div>
+<!--l. 257--><p class="indent" >  With this observation, here is now the definition of <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>. <a 
+ id="x260-248013r817"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 259--><p class="noindent" ><span class="head">
+<a 
+ id="x260-248014r8"></a>
+<tspan font-family="cmbx" font-size="10">Definition 27.2.8 </tspan>(Introducing <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x260-248015"></a>Since <tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> is an integral domain, we let <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> denote
+its field of fractions. These are the <tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmbx" font-size="10">-adic numbers</tspan>.
+</p>
+  </div>
+<!--l. 263--><p class="indent" >
+Continuing our generating functions analogy:
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1468x.png" alt="ℤp is to ℚp as  K [[X ]] is to K ((X )).
+" class="math-display"  /></div>
+<!--l. 268--><p class="indent" >  This means</p>
+<div class="mdframed" id="mdframed-525">
+<!--l. 270--><p class="noindent" ><tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmbx" font-size="10">can be thought of as Laurent series with base </tspan><tspan font-family="cmmi" font-size="10">p</tspan><tspan font-family="cmbx" font-size="10">.</tspan></p><!--l. 271--><p class="noindent" ></p>
+  </div>
+<!--l. 272--><p class="indent" >  and in particular according to the earlier proposition we deduce:</p>
+<div class="mdframed" id="mdframed-526">
+<a 
+ id="x260-248016r818"></a>
+<div class="newtheorem">
+<!--l. 274--><p class="noindent" ><span class="head">
+<a 
+ id="x260-248017r9"></a>
+<tspan font-family="cmssbx" font-size="10">Proposition 27.2.9 </tspan><tspan font-family="cmss" font-size="10">(</tspan><tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> <tspan font-family="cmss" font-size="10">looks like formal Laurent series)</tspan><br 
+class="newline" /> </span><a 
+ id="x260-248018"></a>Every nonzero element of <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> is
+uniquely of the form
+</p>
+<div class="math-display" >
+<img 
+src="Na1469x.png" alt="pku     where k ∈ ℤ, u ∈ ℤ ×.
+                          p
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 277--><p class="indent" >  </p></div>
+<!--l. 278--><p class="indent" >  Thus, continuing our base <tspan font-family="cmmi" font-size="10">p </tspan>analogy, elements of <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> are in bijection with “Laurent
+series”
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1470x.png" alt=" ∑
+     akpk = ...a2a1a0.a−-1a-−2...a−n-
+k≥− n                             p
+" class="math-display"  /></div>
+<!--l. 282--><p class="indent" >  for <tspan font-family="cmmi" font-size="10">a</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> <tspan font-family="cmsy" font-size="10">∈</tspan><img 
+src="Na1471x.png" alt="{0,...,p − 1}"  class="left" align="middle" />. So the base <tspan font-family="cmmi" font-size="10">p </tspan>representations of elements of <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> can be thought of
+as the same as usual, but extending infinitely far to the left (rather than to the
+right).</p>
+<div class="mdframed" id="mdframed-527">
+<a 
+ id="x260-248019r819"></a>
+<div class="newtheorem">
+<!--l. 289--><p class="noindent" ><span class="head">
+<a 
+ id="x260-248020r10"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 27.2.10 </tspan><tspan font-family="cmss" font-size="10">(Warning) </tspan><tspan font-family="cmssbx" font-size="10">—  </tspan> </span><a 
+ id="x260-248021"></a>The field <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> has characteristic <tspan font-family="cmti" font-size="10">zero</tspan>, not <tspan font-family="cmmi" font-size="10">p</tspan>.
+</p>
+  </div>
+<!--l. 291--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-528">
+<a 
+ id="x260-248022r820"></a>
+<div class="newtheorem">
+<!--l. 293--><p class="noindent" ><span class="head">
+<a 
+ id="x260-248023r11"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 27.2.11 </tspan><tspan font-family="cmss" font-size="10">(Warning on fraction field) </tspan><tspan font-family="cmssbx" font-size="10">—  </tspan> </span><a 
+ id="x260-248024"></a>This result implies that you shouldn’t
+think about elements of <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> as <tspan font-family="cmmi" font-size="10">x∕y </tspan>(for <tspan font-family="cmmi" font-size="10">x,y </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>) in practice, even though this is the
+official definition (and what you’d expect from the name <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>). The only denominators
+you need are powers of <tspan font-family="cmmi" font-size="10">p</tspan>.
+</p><!--l. 300--><p class="noindent" >To keep pushing the formal Laurent series analogy, <tspan font-family="cmmi" font-size="10">K</tspan>((<tspan font-family="cmmi" font-size="10">X</tspan>)) is usually not thought of
+as quotient of generating functions but rather as “formal series with some negative
+exponents”. You should apply the same intuition on <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>.
+</p>
+  </div>
+<!--l. 304--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-529">
+<a 
+ id="x260-248025r821"></a>
+<div class="newtheorem">
+<!--l. 307--><p class="noindent" ><span class="head">
+<a 
+ id="x260-248026r12"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 27.2.12 —  </tspan> </span><a 
+ id="x260-248027"></a>At this point I want to make a remark about the fact 1<tspan font-family="cmmi" font-size="10">∕p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub>,
+                                                                                
+                                                                                
+connecting it to the wish-list of properties I had before. In elementary number theory
+you can take equations modulo <tspan font-family="cmmi" font-size="10">p</tspan>, but if you do the quantity <tspan font-family="cmmi" font-size="10">n∕p</tspan> mod <tspan font-family="cmmi" font-size="10">p </tspan>doesn’t make
+sense unless you know <tspan font-family="cmmi" font-size="10">n</tspan> mod <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>. You can’t fix this by just taking modulo <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> since then
+you need <tspan font-family="cmmi" font-size="10">n</tspan> mod <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmr" font-size="8">3</tspan></sup> to get <tspan font-family="cmmi" font-size="10">n∕p</tspan> mod <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, ad infinitum. You can work around issues like this,
+but the nice feature of <tspan font-family="msbm" font-size="10">ℤ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> and <tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> is that you have modulo <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">e</tspan></sup> information for “all <tspan font-family="cmmi" font-size="10">e </tspan>at
+once”: the information of <tspan font-family="cmmi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="msbm" font-size="10">ℚ</tspan><sub><tspan font-family="cmmi" font-size="8">p</tspan></sub> packages all the modulo <tspan font-family="cmmi" font-size="10">p</tspan><sup><tspan font-family="cmmi" font-size="8">e</tspan></sup> information simultaneously.
+So you can divide by <tspan font-family="cmmi" font-size="10">p </tspan>with no repercussions.</p>
+  </div>
+<!--l. 320--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 323--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase181.htm" >next</a>] [<a 
+href="Nase179.htm" >prev</a>] [<a 
+href="Nase179.htm#tailNase179.htm" >prev-tail</a>] [<a 
+href="Nase180.htm" >front</a>] [<a 
+href="Nach30.htm#Nase180.htm" >up</a>] </p></div>
+<!--l. 323--><p class="indent" >  <a 
+ id="tailNase180.htm"></a>  </p> 
+</body> 
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Topological manifolds</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 11--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase302.htm" >next</a>] [<a 
+href="Nase268.htm#tailNase284.htm">tail</a>] [<a 
+href="Nach51.htm#Nase301.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">45.1</span>  <a 
+ id="x408-38600045.1"></a>Topological manifolds</h3>
+<!--l. 12--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup><tspan font-family="cmti" font-size="10">: “the Earth looks flat”.</tspan>
+</p><!--l. 14--><p class="indent" >  Long ago, people thought the Earth was flat, i.e. homeomorphic to a plane, and in
+particular they thought that <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>(Earth) = 0. But in fact, as most of us know, the Earth is
+actually a sphere, which is not contractible and in particular <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>(Earth)<img 
+src="Na2085x.png" alt="∼="  class="cong"  /><tspan font-family="msbm" font-size="10">ℤ</tspan>. This observation
+underlies the definition of a manifold:</p>
+<div class="mdframed" id="mdframed-734">
+<!--l. 21--><p class="noindent" ><tspan font-family="cmbx" font-size="10">An </tspan><tspan font-family="cmmi" font-size="10">n</tspan><tspan font-family="cmbx" font-size="10">-manifold is a space which locally looks like </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup><tspan font-family="cmbx" font-size="10">.</tspan></p><!--l. 22--><p class="noindent" ></p>
+  </div>
+<!--l. 23--><p class="indent" >  Actually there are two ways to think about a topological manifold <tspan font-family="cmmi" font-size="10">M</tspan>: </p>
+     <ul class="itemize1">
+     <li class="itemize">“Locally”: at every point <tspan font-family="cmmi" font-size="10">p </tspan><tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">M</tspan>, some open neighborhood of <tspan font-family="cmmi" font-size="10">p </tspan>looks like an open
+     set of <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>. For example, to someone standing on the surface of the Earth, the Earth
+     looks much like <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>.
+     </li>
+     <li class="itemize">“Globally”: there exists an open cover of <tspan font-family="cmmi" font-size="10">M </tspan>by open sets <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmsy" font-size="10">}</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> (possibly infinite)
+     such that each <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> is homeomorphic to some open subset of <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>. For example, from
+     outer space, the Earth can be covered by two hemispherical pancakes.</li></ul>
+<div class="mdframed" id="mdframed-735">
+<a 
+ id="x408-386001r1145"></a>
+<div class="newtheorem">
+<!--l. 37--><p class="noindent" ><span class="head">
+<a 
+ id="x408-386002r1"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmbx" font-size="10">Question 45.1.1.</tspan>  </span><a 
+ id="x408-386003"></a><tspan font-family="cmr" font-size="10">Check that these are equivalent.</tspan></p>
+</div>
+<!--l. 38--><p class="indent" >  </p></div>
+<!--l. 39--><p class="noindent" >While the first one is the best motivation for examples, the second one is easier to use
+formally.
+<a 
+ id="x408-386004r1146"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 43--><p class="noindent" ><span class="head">
+<a 
+ id="x408-386005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 45.1.2.</tspan>  </span><a 
+ id="x408-386006"></a>A <tspan font-family="cmbx" font-size="10">topological </tspan><tspan font-family="cmmi" font-size="10">n</tspan><tspan font-family="cmbx" font-size="10">-manifold</tspan> <tspan font-family="cmmi" font-size="10">M </tspan>is a Hausdorff space with an open
+cover <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub><tspan font-family="cmsy" font-size="10">} </tspan>of sets homeomorphic to subsets of <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>, say by homeomorphisms
+</p>
+  <div class="math-display" >
+<img 
+src="Na2086x.png" alt="       ∼=        n
+ϕi : Ui−→ Ei ⊆ ℝ
+" class="math-display"  /></div>
+<!--l. 48--><p class="indent" >  where each <tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> is an open subset of <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>. Each <tspan font-family="cmmi" font-size="10">ϕ</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> : <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">E</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub> is called a <tspan font-family="cmbx" font-size="10">chart</tspan>, and
+together they form a so-called <tspan font-family="cmbx" font-size="10">atlas</tspan>.
+</p>
+  </div>
+<!--l. 51--><p class="indent" >
+</p>
+<div class="mdframed" id="mdframed-736">
+<a 
+ id="x408-386007r1147"></a>
+<div class="newtheorem">
+<!--l. 53--><p class="noindent" ><span class="head">
+<a 
+ id="x408-386008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 45.1.3 —  </tspan> </span><a 
+ id="x408-386009"></a>Here  “<tspan font-family="cmmi" font-size="10">E</tspan>”  stands  for  “Euclidean”.  I  think  this  notation  is  not
+standard; usually people just write <tspan font-family="cmmi" font-size="10">ϕ</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>(<tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>) instead.
+</p>
+  </div>
+<!--l. 56--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+<div class="mdframed" id="mdframed-737">
+<a 
+ id="x408-386010r1148"></a>
+<div class="newtheorem">
+<!--l. 58--><p class="noindent" ><span class="head">
+<a 
+ id="x408-386011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Remark 45.1.4 —  </tspan> </span><a 
+ id="x408-386012"></a>This definition is nice because it doesn’t depend on embeddings: a
+manifold is an <tspan font-family="cmti" font-size="10">intrinsic </tspan>space <tspan font-family="cmmi" font-size="10">M</tspan>, rather than a subset of <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">N</tspan></sup> for some <tspan font-family="cmmi" font-size="10">N</tspan>. Analogy: an
+abstract group <tspan font-family="cmmi" font-size="10">G </tspan>is an intrinsic object rather than a subgroup of <tspan font-family="cmmi" font-size="10">S</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>.</p>
+  </div>
+<!--l. 63--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-738">
+<a 
+ id="x408-386013r1149"></a>
+<div class="newtheorem">
+<!--l. 65--><p class="noindent" ><span class="head">
+<a 
+ id="x408-386014r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 45.1.5 </tspan>(An atlas on <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>)<br 
+class="newline" /> </span><a 
+ id="x408-386015"></a>Here is a picture of an atlas for <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup>, with two open sets.
+</p>
+<div class="center" 
+>
+<!--l. 67--><p class="noindent" >
+</p>
+</div>
+</p>
+  </div>
+<!--l. 93--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-739">
+<a 
+ id="x408-386016r1150"></a>
+<div class="newtheorem">
+<!--l. 96--><p class="noindent" ><span class="head">
+<a 
+ id="x408-386017r6"></a>
+<tspan font-family="cmbx" font-size="10">Question 45.1.6.</tspan>  </span><a 
+ id="x408-386018"></a><tspan font-family="cmr" font-size="10">Where do you think the words “chart” and “atlas” come from?</tspan></p>
+  </div>
+<!--l. 97--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-740">
+<a 
+ id="x408-386019r1151"></a>
+<div class="newtheorem">
+<!--l. 100--><p class="noindent" ><span class="head">
+<a 
+ id="x408-386020r7"></a>
+<tspan font-family="cmbx" font-size="10">Example 45.1.7 </tspan>(Some examples of topological manifolds)<br 
+class="newline" /> </span><a 
+ id="x408-386021"></a></p><dl class="enumerate"><dt class="enumerate">
+(a) </dt><dd 
+class="enumerate">As discussed at length, the sphere <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> is a 2-manifold: every point in the sphere has
+    a small open neighborhood that looks like <tspan font-family="cmmi" font-size="10">D</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>. One can cover the Earth with just
+    two hemispheres, and each hemisphere is homeomorphic to a disk.
+                                                                                
+                                                                                
+    </dd><dt class="enumerate">
+(b) </dt><dd 
+class="enumerate">The circle <tspan font-family="cmmi" font-size="10">S</tspan><sup><tspan font-family="cmr" font-size="8">1</tspan></sup> is a 1-manifold; every point has an open neighborhood that looks like
+    an open interval.
+    </dd><dt class="enumerate">
+(c) </dt><dd 
+class="enumerate">The torus, Klein bottle, <tspan font-family="msbm" font-size="10">ℝℙ</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> are all 2-manifolds.
+    </dd><dt class="enumerate">
+(d) </dt><dd 
+class="enumerate"><tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup> is trivially a manifold, as are its open sets.</dd></dl>
+<!--l. 116--><p class="noindent" >All these spaces are compact except <tspan font-family="msbm" font-size="10">ℝ</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>.
+</p><!--l. 118--><p class="noindent" >A non-example of a manifold is <tspan font-family="cmmi" font-size="10">D</tspan><sup><tspan font-family="cmmi" font-size="8">n</tspan></sup>, because it has a <tspan font-family="cmti" font-size="10">boundary</tspan>; points on the boundary do not
+have open neighborhoods that look Euclidean.
+</p>
+  </div>
+<!--l. 121--><p class="indent" >  </p></div>
+                                                                                
+                                                                                
+  <!--l. 123--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase302.htm" >next</a>] [<a 
+href="Nase284.htm" >front</a>] [<a 
+href="Nach51.htm#Nase301.htm" >up</a>] </p></div>
+<!--l. 123--><p class="indent" >  <a 
+ id="tailNase284.htm"></a> </p> 
+</body> 
+</html>

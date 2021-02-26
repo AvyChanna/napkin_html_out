@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="Napkin.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="238.8381pt" height="97.26648pt" viewBox="-119.41905 -48.63324 238.8381 97.26648 "> 
+<g transform="translate(0, 48.63324 ) scale(1,-1) translate(0,48.63324 )"> 
+                                 </p><g stroke="#000" fill="#000">
+ <g stroke-width="0.4">
+ <g transform="translate(-119.41905,-41.88835)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(119.41905,0)" text-anchor="middle"  font-size="10.95"> 
+   <g transform="translate(-3.72604,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(3.72604,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmmi" font-size="10">L</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+          <g transform="translate(-4.25835,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.25835,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmsy" font-size="10">⊃</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+      <g transform="translate(-4.5307,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.5307,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="eufm" font-size="10">𝔓</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+                       <g transform="translate(-44.82793,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(44.82793,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> Frob<tspan baseline-shift="sub"><tspan font-family="eufm" font-size="10">𝔓</tspan></tspan> <tspan font-family="cmsy" font-size="10">∈</tspan> Gal(<tspan font-family="cmmi" font-size="10">L∕</tspan><tspan font-family="msbm" font-size="10">ℚ</tspan>)</g> </g>
+ </text> 
+</g>
+ </g>
+ 
+   <g transform="translate(-5.04155,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(5.04155,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmmi" font-size="10">K</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+         <g transform="translate(-4.25835,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.25835,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmsy" font-size="10">⊃</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+      <g transform="translate(-2.74,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.74,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="eufm" font-size="10">𝔭</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+                       <g transform="translate(-44.531,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(44.531,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> Frob<tspan baseline-shift="sub"><tspan font-family="eufm" font-size="10">𝔭</tspan></tspan> <tspan font-family="cmsy" font-size="10">∈</tspan> Gal(<tspan font-family="cmmi" font-size="10">K∕</tspan><tspan font-family="msbm" font-size="10">ℚ</tspan>)</g> </g>
+ </text> 
+</g>
+ </g>
+ 
+   <g transform="translate(-4.25835,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.25835,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="msbm" font-size="10">ℚ</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+            <g transform="translate(-4.25835,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.25835,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> <tspan font-family="cmsy" font-size="10">⊃</tspan></g> </g>
+ </text> 
+</g>
+ </g>
+      <g transform="translate(-7.01295,0.0)">
+ <g fill="#000">
+ <text style="stroke:none" transform="scale(1,-1) translate(7.01295,0)" text-anchor="middle"  font-size="10.95"> 
+<g fill="#000">
+ <g stroke="none"> (<tspan font-family="cmmi" font-size="10">p</tspan>)</g> </g>
+ </text> 
+</g>
+ </g>
+                     </text> 
+</g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -109.66293 32.20595 L -109.66293 8.89383  " fill="none"/>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -17.67346 30.13579 L -17.67346 7.14865  " fill="none"/>
+ </g>
+ <g stroke-width="0.43799">
+ <g stroke-dasharray="0.43799,2.0" stroke-dashoffset="0.0">
+ <path d=" M -8.2282 39.15083 L 19.69608 39.15083  " fill="none"/>
+ <g transform="translate(19.91507,39.15083)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -109.66293 -7.00345 L -109.66293 -30.13763  " fill="none"/>
+ </g>
+ <g stroke-width="0.43799">
+ <path d=" M -17.67346 -9.07361 L -17.67346 -29.46846  " fill="none"/>
+ </g>
+ <g stroke-width="0.43799">
+ <g stroke-dasharray="0.43799,2.0" stroke-dashoffset="0.0">
+ <path d=" M -10.01889 -0.05856 L 19.993 -0.05856  " fill="none"/>
+ <g transform="translate(20.21199,-0.05856)">
+ <g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d=" M -2.27753 2.6279 C -1.86143 1.05113 -0.9342 0.30658 0.0 0.0 C -0.9342 -0.30658 -1.86143 -1.05113 -2.27753 -2.6279  " fill="none"/>
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ </g>
+ </g>
+  </g> 
+</svg> 

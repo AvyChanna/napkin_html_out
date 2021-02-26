@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>A few harder problems to think about</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 549--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase166.htm" >prev</a>] [<a 
+href="Nase166.htm#tailNase166.htm" >prev-tail</a>] [<a 
+href="#tailNase167.htm">tail</a>] [<a 
+href="Nach27.htm#Nase167.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">24.5</span>  <a 
+ id="x240-22800024.5"></a>A few harder problems to think about</h3>
+<a 
+ id="x240-228001r750"></a>
+  <div class="newtheorem">
+<!--l. 550--><p class="noindent" ><span class="head">
+<a 
+ id="x240-228002r1"></a>
+<tspan font-family="cmbx" font-size="10">Problem 24A </tspan>(Fredkin gate)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x240-228003"></a>The <tspan font-family="cmbx" font-size="10">Fredkin gate</tspan> (also called the controlled swap, or
+CSWAP gate) is the three-bit gate with the following truth table:
+</p>
+  <div class="math-display" >
+<img 
+src="Na1242x.png" alt="|--------|-------|
+|--In----|-Out---|
+|0  0  0 |0  0  0|
+|0  0  1 |0  0  1|
+|0  1  0 |0  1  0|
+|0  1  1 |0  1  1|
+|1  0  0 |1  0  0|
+|1  0  1 |1  1  0|
+|        |       |
+|1  1  0 |1  0  1|
+-1--1--1--1--1--1-
+" class="math-display"  /></div>
+<!--l. 568--><p class="indent" >  Thus the gate swaps the last two input bits whenever the first bit is 1. Show that this gate
+is also reversible and universal.
+</p>
+  </div>
+<!--l. 586--><p class="indent" >
+                                                                                
+                                                                                
+<a 
+ id="x240-228004r751"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 589--><p class="noindent" ><span class="head">
+<a 
+ id="x240-228005r2"></a>
+<tspan font-family="cmbx" font-size="10">Problem 24B </tspan>(Baby no-cloning theorem)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x240-228006"></a> Show that there is no unitary map <tspan font-family="cmmi" font-size="10">U </tspan>on
+two qubits which sends <tspan font-family="cmmi" font-size="10">U</tspan>(<img 
+src="Na1243x.png" alt="|ψ⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1244x.png" alt="|0⟩"  class="left" align="middle" />) = <img 
+src="Na1245x.png" alt="|ψ ⟩"  class="left" align="middle" /><tspan font-family="cmsy" font-size="10">⊗</tspan><img 
+src="Na1246x.png" alt="|ψ ⟩"  class="left" align="middle" /> for any qubit <img 
+src="Na1247x.png" alt="|ψ⟩"  class="left" align="middle" />, i.e. the following
+circuit diagram is impossible.
+</p>
+  <div class="math-display" >
+<img 
+src="Na1248x.png" alt="|ψ⟩         |ψ⟩
+       U
+ |0⟩         |ψ⟩
+" class="math-display"  /></div>
+  </div>
+<!--l. 605--><p class="indent" >
+<a 
+ id="x240-228007r752"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 607--><p class="noindent" ><span class="head">
+<a 
+ id="x240-228008r3"></a>
+<tspan font-family="cmbx" font-size="10">Problem 24C </tspan>(Deutsch-Jozsa)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x240-228009"></a>   Given   the   black   box   <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">f</tspan></sub>   described   in   the
+Deutsch-Jozsa algorithm, consider the following circuit.
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na1249x.png" alt="|0...0⟩  ∕n  H ⊗n          H ⊗n
+                     Uf
+    |1⟩       H
+" class="math-display"  /></div>
+<!--l. 618--><p class="indent" >  That is, take <tspan font-family="cmmi" font-size="10">n </tspan>copies of <img 
+src="Na1250x.png" alt="|0⟩"  class="left" align="middle" />, apply the Hadamard rotation to all of them, apply <tspan font-family="cmmi" font-size="10">U</tspan><sub><tspan font-family="cmmi" font-size="8">f</tspan></sub>,
+reverse the Hadamard to all <tspan font-family="cmmi" font-size="10">n </tspan>input bits (again discarding the last bit), then measure
+all <tspan font-family="cmmi" font-size="10">n </tspan>bits in the <img 
+src="Na1251x.png" alt="|0⟩"  class="left" align="middle" />/<img 
+src="Na1252x.png" alt="|1⟩"  class="left" align="middle" /> basis (as in <tspan font-family="cmbx" font-size="10">??</tspan> ).
+</p><!--l. 623--><p class="indent" >  Show that the probability of measuring <img 
+src="Na1253x.png" alt="|0...0⟩"  class="left" align="middle" /> is 1 if <tspan font-family="cmmi" font-size="10">f </tspan>is constant and 0 if <tspan font-family="cmmi" font-size="10">f </tspan>is balanced.
+</p>
+  </div>
+<!--l. 694--><p class="indent" >
+<a 
+ id="x240-228010r753"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 696--><p class="noindent" ><span class="head">
+<a 
+ id="x240-228011r4"></a>
+<tspan font-family="cmbx" font-size="10">Problem 24D</tspan><tspan font-family="cmsy" font-size="8">†</tspan> (Barenco et al, 1995; arXiv:quant-ph/9503016v1)<tspan font-family="cmbx" font-size="10">.</tspan>  </span><a 
+ id="x240-228012"></a>Let
+</p>
+  <div class="math-display" >
+<img 
+src="Na1254x.png" alt="    [    ]             [       ]
+     1  0           1    1  − i
+P =  0  i      Q = √2-- − i  1
+" class="math-display"  /></div>
+<!--l. 703--><p class="indent" >  Verify  that  the  quantum  Toffoli  gate  can  be  implemented  using  just  controlled
+rotations via the circuit
+                                                                                
+                                                                                
+</p>
+  <div class="math-display" >
+<img 
+src="Na1255x.png" alt="|x1⟩       ∙    ∙  ∙        ∙
+
+|x2⟩   ∙       P        ∙
+
+|x3⟩   Q   Q           Q †
+" class="math-display"  /></div>
+<!--l. 712--><p class="indent" >  This was a big surprise to researchers when discovered, because classical reversible logic
+requires three-bit gates (e.g. Toffoli, Fredkind).
+</p>
+  </div>
+<!--l. 717--><p class="indent" >
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+</p>
+  <!--l. 1--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase166.htm" >prev</a>] [<a 
+href="Nase166.htm#tailNase166.htm" >prev-tail</a>] [<a 
+href="Nase167.htm" >front</a>] [<a 
+href="Nach27.htm#Nase167.htm" >up</a>] </p></div>
+<!--l. 1--><p class="indent" >  <a 
+ id="tailNase167.htm"></a> </p> 
+</body> 
+</html>

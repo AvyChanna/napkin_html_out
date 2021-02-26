@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Field extensions, algebraic closures, and splitting fields</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 90--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase349.htm" >next</a>] [<a 
+href="Nase324.htm" >prev</a>] [<a 
+href="Nase324.htm#tailNase324.htm" >prev-tail</a>] [<a 
+href="Nase306.htm#tailNase325.htm">tail</a>] [<a 
+href="Nase346.htm#Nase348.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">52.2</span>  <a 
+ id="x463-43900052.2"></a>Field extensions, algebraic closures, and splitting fields</h3>
+<!--l. 91--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2585x.png" alt="√3--
+  2"  class="root" align="middle"  />)<tspan font-family="cmmi" font-size="10">∕</tspan><tspan font-family="msbm" font-size="10">ℚ </tspan><tspan font-family="cmti" font-size="10">is an extension, </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmti" font-size="10">is an algebraic closure of</tspan>
+<tspan font-family="cmti" font-size="10">any number field.</tspan>
+</p><!--l. 93--><p class="indent" >  First, we define a notion of one field sitting inside another, in order to generalize the notion
+of a number field. <a 
+ id="x463-439001r1314"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 96--><p class="noindent" ><span class="head">
+<a 
+ id="x463-439002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 52.2.1.</tspan>  </span><a 
+ id="x463-439003"></a>Let <tspan font-family="cmmi" font-size="10">K </tspan>and <tspan font-family="cmmi" font-size="10">F </tspan>be fields. If <tspan font-family="cmmi" font-size="10">F </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">K</tspan>, we write <tspan font-family="cmmi" font-size="10">K∕F </tspan>and say <tspan font-family="cmmi" font-size="10">K </tspan>is a
+<tspan font-family="cmbx" font-size="10">field extension</tspan> of <tspan font-family="cmmi" font-size="10">F</tspan>.
+</p><!--l. 100--><p class="indent" >  Thus <tspan font-family="cmmi" font-size="10">K </tspan>is automatically an <tspan font-family="cmmi" font-size="10">F</tspan>-vector space (just like <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2586x.png" alt="√--
+ 2"  class="sqrt"  />) is automatically a <tspan font-family="msbm" font-size="10">ℚ</tspan>-vector
+space). The <tspan font-family="cmbx" font-size="10">degree</tspan> is the dimension of this space, denoted [<tspan font-family="cmmi" font-size="10">K </tspan>: <tspan font-family="cmmi" font-size="10">F</tspan>]. If [<tspan font-family="cmmi" font-size="10">K </tspan>: <tspan font-family="cmmi" font-size="10">F</tspan>] is finite,
+we say <tspan font-family="cmmi" font-size="10">K∕F </tspan>is a <tspan font-family="cmbx" font-size="10">finite (field) extension</tspan>.
+</p>
+  </div>
+<!--l. 104--><p class="indent" >
+That’s really all. There’s nothing tricky at all.</p>
+<div class="mdframed" id="mdframed-847">
+<a 
+ id="x463-439004r1315"></a>
+<div class="newtheorem">
+<!--l. 108--><p class="noindent" ><span class="head">
+<a 
+ id="x463-439005r2"></a>
+<tspan font-family="cmbx" font-size="10">Question 52.2.2.</tspan>  </span><a 
+ id="x463-439006"></a><tspan font-family="cmr" font-size="10">What do you call a finite extension of </tspan><tspan font-family="msbm" font-size="10">ℚ</tspan><tspan font-family="cmr" font-size="10">?</tspan></p>
+  </div>
+<!--l. 109--><p class="indent" >  </p></div>
+<!--l. 111--><p class="indent" >  Degrees of finite extensions are multiplicative.</p>
+<div class="mdframed" id="mdframed-848">
+<a 
+ id="x463-439007r1316"></a>
+<div class="newtheorem">
+<!--l. 112--><p class="noindent" ><span class="head">
+<a 
+ id="x463-439008r3"></a>
+                                                                                
+                                                                                
+<tspan font-family="cmssbx" font-size="10">Theorem 52.2.3 </tspan><tspan font-family="cmss" font-size="10">(Field extensions have multiplicative degree)</tspan><br 
+class="newline" /> </span><a 
+ id="x463-439009"></a>Let <tspan font-family="cmmi" font-size="10">F  </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">K </tspan><tspan font-family="cmsy" font-size="10">⊆ </tspan><tspan font-family="cmmi" font-size="10">L </tspan>be fields
+with <tspan font-family="cmmi" font-size="10">L∕K</tspan>, <tspan font-family="cmmi" font-size="10">K∕F </tspan>finite. Then
+</p>
+<div class="math-display" >
+<img 
+src="Na2587x.png" alt="[L : K ][K : F ] = [L : F ].
+" class="math-display"  /></div></p>
+  </div>
+<!--l. 115--><p class="indent" >  </p></div>
+<!--l. 116--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 117--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>Basis bash: you can find a basis of <tspan font-family="cmmi" font-size="10">L </tspan>over <tspan font-family="cmmi" font-size="10">K</tspan>, and then expand that into a basis
+<tspan font-family="cmmi" font-size="10">L </tspan>over <tspan font-family="cmmi" font-size="10">F</tspan>. (Diligent readers can fill in details.)                                                     □
+</p>
+  </div>
+<!--l. 122--><p class="indent" >  Next, given a field (like <tspan font-family="msbm" font-size="10">ℚ</tspan>(<img 
+src="Na2588x.png" alt="3√--
+ 2"  class="root" align="middle"  />)) we want something to embed it into (in our case <tspan font-family="msbm" font-size="10">ℂ</tspan>). So we
+just want a field that contains all the roots of all the polynomials:</p>
+<div class="mdframed" id="mdframed-849">
+<a 
+ id="x463-439010r1317"></a>
+<div class="newtheorem">
+<!--l. 125--><p class="noindent" ><span class="head">
+<a 
+ id="x463-439011r4"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 52.2.4 </tspan><tspan font-family="cmss" font-size="10">(Algebraic closures)</tspan><br 
+class="newline" /> </span><a 
+ id="x463-439012"></a>Let <tspan font-family="cmmi" font-size="10">F </tspan>be a field. Then there exists a field extension
+<span class="overline"><tspan font-family="cmmi" font-size="10">F</tspan></span> containing <tspan font-family="cmmi" font-size="10">F</tspan>, called an <tspan font-family="cmbx" font-size="10">algebraic closure</tspan>, such that all polynomials in <span class="overline"><tspan font-family="cmmi" font-size="10">F</tspan></span>[<tspan font-family="cmmi" font-size="10">x</tspan>] factor
+completely.
+</p>
+  </div>
+<!--l. 129--><p class="indent" >  </p></div><div class="mdframed" id="mdframed-850">
+<a 
+ id="x463-439013r1318"></a>
+<div class="newtheorem">
+<!--l. 131--><p class="noindent" ><span class="head">
+                                                                                
+                                                                                
+<a 
+ id="x463-439014r5"></a>
+<tspan font-family="cmbx" font-size="10">Example 52.2.5 </tspan>(<tspan font-family="msbm" font-size="10">ℂ</tspan>)<br 
+class="newline" /> </span><a 
+ id="x463-439015"></a><tspan font-family="msbm" font-size="10">ℂ </tspan>is an algebraic closure of <tspan font-family="msbm" font-size="10">ℚ</tspan>, <tspan font-family="msbm" font-size="10">ℝ </tspan>and even itself.
+</p>
+  </div>
+<!--l. 133--><p class="indent" >  </p></div>
+<a 
+ id="x463-439016r1319"></a>
+  <div class="newtheorem">
+<!--l. 135--><p class="noindent" ><span class="head">
+<a 
+ id="x463-439017r6"></a>
+<tspan font-family="cmbx" font-size="10">Abuse of Notation 52.2.6.</tspan>  </span><a 
+ id="x463-439018"></a>Some  authors  also  require  the  algebraic  closure  to  be
+<tspan font-family="cmti" font-size="10">minimal by inclusion</tspan>: for example, given <tspan font-family="msbm" font-size="10">ℚ  </tspan>they would want only <span class="overline"><tspan font-family="msbm" font-size="10">ℚ</tspan></span>  (the algebraic
+numbers). It’s a theorem that such a minimal algebraic closure is unique, and so these
+authors will refer to <tspan font-family="cmti" font-size="10">the </tspan>algebraic closure of <tspan font-family="cmmi" font-size="10">K</tspan>.
+</p><!--l. 140--><p class="indent" >  I like <tspan font-family="msbm" font-size="10">ℂ</tspan>, so I’ll use the looser definition.
+</p>
+  </div>
+<!--l. 141--><p class="indent" >
+                                                                                
+                                                                                
+</p>
+  <!--l. 143--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase349.htm" >next</a>] [<a 
+href="Nase324.htm" >prev</a>] [<a 
+href="Nase324.htm#tailNase324.htm" >prev-tail</a>] [<a 
+href="Nase325.htm" >front</a>] [<a 
+href="Nase346.htm#Nase348.htm" >up</a>] </p></div>
+<!--l. 143--><p class="indent" >  <a 
+ id="tailNase325.htm"></a> </p> 
+</body> 
+</html>

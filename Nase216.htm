@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Square roots of holomorphic functions</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 156--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase225.htm" >next</a>] [<a 
+href="Nase215.htm" >prev</a>] [<a 
+href="Nase215.htm#tailNase215.htm" >prev-tail</a>] [<a 
+href="Nase209.htm#tailNase216.htm">tail</a>] [<a 
+href="Nase222.htm#Nase224.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">33.2</span>  <a 
+ id="x314-29600033.2"></a>Square roots of holomorphic functions</h3>
+<!--l. 157--><p class="noindent" >To get a picture of what’s happening, we would like to consider a more general problem: let
+<tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>be holomorphic. Then we want to decide whether there is a <tspan font-family="cmmi" font-size="10">g </tspan>: <tspan font-family="cmmi" font-size="10">U </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>such
+that
+</p>
+  <div class="math-display" >
+<img 
+src="Na1803x.png" alt="f(z) = g(z)2.
+" class="math-display"  /></div>
+<!--l. 161--><p class="indent" >  Our previous discussion with <tspan font-family="cmmi" font-size="10">f </tspan>= id tells us we cannot hope to achieve this for <tspan font-family="cmmi" font-size="10">U </tspan>= <tspan font-family="msbm" font-size="10">ℂ</tspan>; there
+is a “half-ray” which causes problems. However, there are certainly functions <tspan font-family="cmmi" font-size="10">f </tspan>: <tspan font-family="msbm" font-size="10">ℂ </tspan><tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℂ </tspan>such
+that a <tspan font-family="cmmi" font-size="10">g </tspan>exists. As a simplest example, <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>) = <tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup> should definitely have a square
+root!
+</p><!--l. 167--><p class="indent" >  Now let’s see if we can fudge together a square root. Earlier, what we did was try to specify
+a rule to force one of the two choices at each point. This is unnecessarily strict. Perhaps we
+can do something like: start at a point in <tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> <tspan font-family="cmsy" font-size="10">∈ </tspan><tspan font-family="cmmi" font-size="10">U</tspan>, pick a square root <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> of <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>),
+and then try to “fudge” from there the square roots of the other points. What do I
+mean by fudge? Well, suppose <tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> is a point very close to <tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>, and we want to pick a
+square root <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> of <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>). While there are two choices, we also would expect <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> to be
+close to <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>. Unless we are highly unlucky, this should tell us which choice of <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> to
+pick. (Stupid concrete example: if I have taken the square root <tspan font-family="cmsy" font-size="10">−</tspan>4<tspan font-family="cmmi" font-size="10">.</tspan>12<tspan font-family="cmmi" font-size="10">i </tspan>of <tspan font-family="cmsy" font-size="10">−</tspan>17 and
+then ask you to continue this square root to <tspan font-family="cmsy" font-size="10">−</tspan>16, which sign should you pick for
+<tspan font-family="cmsy" font-size="10">±</tspan>4<tspan font-family="cmmi" font-size="10">i</tspan>?)
+</p><!--l. 182--><p class="indent" >  There are two possible ways we could get unlucky in the scheme above: first, if
+<tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> = 0, then we’re sunk. But even if we avoid that, we have to worry that if we
+run a full loop in the complex plane, we might end up in a different place from
+where we started. For concreteness, consider the following situation, again with
+<tspan font-family="cmmi" font-size="10">f </tspan>= id:
+</p>
+                                                                                
+                                                                                
+<div class="center" 
+>
+<!--l. 189--><p class="noindent" >
+</p>
+</div>
+<!--l. 214--><p class="indent" >  We started at the point <tspan font-family="cmmi" font-size="10">z</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>, with one of its square roots as <tspan font-family="cmmi" font-size="10">w</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub>. We then wound a full red
+circle around the origin, only to find that at the end of it, the blue arc is at a different place
+where it started!
+</p><!--l. 218--><p class="indent" >  The interval construction from earlier doesn’t work either: no matter how we pick the
+interval for <tspan font-family="cmmi" font-size="10">α</tspan>, any ray of death must hit our red circle. The problem somehow lies with the
+fact that we have enclosed the very special point 0.
+</p><!--l. 224--><p class="indent" >  Nevertheless, we know that if we take <tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">z</tspan>) = <tspan font-family="cmmi" font-size="10">z</tspan><sup><tspan font-family="cmr" font-size="8">2</tspan></sup>, then we don’t run into any problems with
+our “make it up as you go” procedure. So, what exactly is going on?
+                                                                                
+                                                                                
+</p>
+  <!--l. 228--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase225.htm" >next</a>] [<a 
+href="Nase215.htm" >prev</a>] [<a 
+href="Nase215.htm#tailNase215.htm" >prev-tail</a>] [<a 
+href="Nase216.htm" >front</a>] [<a 
+href="Nase222.htm#Nase224.htm" >up</a>] </p></div>
+<!--l. 228--><p class="indent" >  <a 
+ id="tailNase216.htm"></a> </p> 
+</body> 
+</html>

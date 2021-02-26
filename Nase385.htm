@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Many examples of functors</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 5--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase412.htm" >next</a>] [<a 
+href="Nase362.htm#tailNase385.htm">tail</a>] [<a 
+href="Nach69.htm#Nase411.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">61.1</span>  <a 
+ id="x540-51800061.1"></a>Many examples of functors</h3>
+<!--l. 6--><p class="noindent" ><tspan font-family="cmti" font-size="10">Prototypical example for this section:</tspan> <tspan font-family="cmti" font-size="10">Forgetful functors; fundamental groups; </tspan><tspan font-family="cmsy" font-size="10">−</tspan><sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup><tspan font-family="cmti" font-size="10">.</tspan>
+</p><!--l. 7--><p class="indent" >  Here’s the point of a functor:</p>
+<div class="mdframed" id="mdframed-1041">
+<!--l. 9--><p class="noindent" ><tspan font-family="cmbx" font-size="10">Pretty much any time you make an object out of another object, you get a</tspan>
+<tspan font-family="cmbx" font-size="10">functor.</tspan></p><!--l. 11--><p class="noindent" ></p>
+  </div>
+<!--l. 12--><p class="indent" >  Before I give you a formal definition, let me list (informally) some examples. (You’ll notice
+some of them have opposite categories <tspan font-family="cmsy" font-size="10">𝒜</tspan><tspan font-family="cmr" font-size="8">op</tspan> appearing in places. Don’t worry about those for
+now; you’ll see why in a moment.) </p>
+     <ul class="itemize1">
+     <li class="itemize">Given a group <tspan font-family="cmmi" font-size="10">G </tspan>(or vector space, field, …), we can take its underlying set <tspan font-family="cmmi" font-size="10">S</tspan>; this
+     is a functor from <tspan font-family="cmss" font-size="10">Grp</tspan> <tspan font-family="cmsy" font-size="10">→</tspan><tspan font-family="cmss" font-size="10">Set</tspan>.
+     </li>
+     <li class="itemize">Given a set <tspan font-family="cmmi" font-size="10">S </tspan>we can consider a vector space with basis <tspan font-family="cmmi" font-size="10">S</tspan>; this is a functor from
+     <tspan font-family="cmss" font-size="10">Set</tspan> <tspan font-family="cmsy" font-size="10">→</tspan><tspan font-family="cmss" font-size="10">Vect</tspan>.
+     </li>
+     <li class="itemize">Given a vector space <tspan font-family="cmmi" font-size="10">V  </tspan>we can consider its dual space <tspan font-family="cmmi" font-size="10">V</tspan> <sup><tspan font-family="cmsy" font-size="8">∨</tspan></sup>. This is a functor
+     <tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmr" font-size="8">op</tspan> <tspan font-family="cmsy" font-size="10">→</tspan><tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>.
+     </li>
+     <li class="itemize">Tensor products give a functor from <tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> <tspan font-family="cmsy" font-size="10">×</tspan><tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> <tspan font-family="cmsy" font-size="10">→</tspan><tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub>.
+     </li>
+     <li class="itemize">Given a set <tspan font-family="cmmi" font-size="10">S</tspan>, we can build its power set, giving a functor <tspan font-family="cmss" font-size="10">Set</tspan> <tspan font-family="cmsy" font-size="10">→</tspan><tspan font-family="cmss" font-size="10">Set</tspan>.
+     </li>
+     <li class="itemize">In algebraic topology, we take a topological space <tspan font-family="cmmi" font-size="10">X </tspan>and build several groups
+     <tspan font-family="cmmi" font-size="10">H</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">X</tspan>), <tspan font-family="cmmi" font-size="10">π</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>(<tspan font-family="cmmi" font-size="10">X</tspan>), etc. associated to it. All these group constructions are functors
+     <tspan font-family="cmss" font-size="10">Top</tspan> <tspan font-family="cmsy" font-size="10">→</tspan><tspan font-family="cmss" font-size="10">Grp</tspan>.
+                                                                                
+                                                                                
+     </li>
+     <li class="itemize">Sets of homomorphisms: let <tspan font-family="cmsy" font-size="10">𝒜 </tspan>be a category.
+          <ul class="itemize2">
+          <li class="itemize">Given two vector spaces <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub> and <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">2</tspan></sub> over <tspan font-family="cmmi" font-size="10">k</tspan>, we construct the abelian group of
+          linear maps <tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="cmmi" font-size="10">V</tspan> <sub><tspan font-family="cmr" font-size="8">2</tspan></sub>. This is a functor from <tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub><tspan font-family="cmr" font-size="8">op</tspan> <tspan font-family="cmsy" font-size="10">×</tspan><tspan font-family="cmss" font-size="10">Vect</tspan><sub><tspan font-family="cmmi" font-size="8">k</tspan></sub> <tspan font-family="cmsy" font-size="10">→</tspan><tspan font-family="cmss" font-size="10">AbGrp</tspan>.
+          </li>
+          <li class="itemize">More generally for any category <tspan font-family="cmsy" font-size="10">𝒜 </tspan>we can take pairs (<tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>) of objects and
+          obtain a set Hom<sub><tspan font-family="cmsy" font-size="8">𝒜</tspan></sub>(<tspan font-family="cmmi" font-size="10">A</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,A</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>). This turns out to be a functor <tspan font-family="cmsy" font-size="10">𝒜</tspan><tspan font-family="cmr" font-size="8">op</tspan> <tspan font-family="cmsy" font-size="10">×𝒜→</tspan><tspan font-family="cmss" font-size="10">Set</tspan>.
+          </li>
+          <li class="itemize">The above operation has two “slots”. If we “pre-fill” the first slots, then we
+          get a functor <tspan font-family="cmsy" font-size="10">𝒜→</tspan><tspan font-family="cmss" font-size="10">Set</tspan>. That is, by fixing <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">∈𝒜</tspan>, we obtain a functor (called
+          <tspan font-family="cmmi" font-size="10">H</tspan><sup><tspan font-family="cmmi" font-size="8">A</tspan></sup>) from <tspan font-family="cmsy" font-size="10">𝒜 →</tspan> <tspan font-family="cmss" font-size="10">Set</tspan> by sending <tspan font-family="cmmi" font-size="10">A</tspan><tspan font-family="cmsy" font-size="10">′ ∈ 𝒜 </tspan>to Hom<sub><tspan font-family="cmsy" font-size="8">𝒜</tspan></sub>(<tspan font-family="cmmi" font-size="10">A,A</tspan><tspan font-family="cmsy" font-size="10">′</tspan>). This is called the
+          covariant Yoneda functor (explained later).
+          </li>
+          <li class="itemize">As we saw above, for every <tspan font-family="cmmi" font-size="10">A </tspan><tspan font-family="cmsy" font-size="10">∈ 𝒜 </tspan>we obtain a functor <tspan font-family="cmmi" font-size="10">H</tspan><sup><tspan font-family="cmmi" font-size="8">A</tspan></sup> : <tspan font-family="cmsy" font-size="10">𝒜 →</tspan> <tspan font-family="cmss" font-size="10">Set</tspan>. It
+          turns out we can construct a category [<tspan font-family="cmsy" font-size="10">𝒜</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmss" font-size="10">Set</tspan>] whose elements are functors
+          <tspan font-family="cmsy" font-size="10">𝒜→</tspan><tspan font-family="cmss" font-size="10">Set</tspan>; in that case, we now have a functor <tspan font-family="cmsy" font-size="10">𝒜</tspan><tspan font-family="cmr" font-size="8">op</tspan> <tspan font-family="cmsy" font-size="10">→ </tspan>[<tspan font-family="cmsy" font-size="10">𝒜</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="cmss" font-size="10">Set</tspan>].</li></ul>
+     </li></ul>
+                                                                                
+                                                                                
+  <!--l. 49--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase412.htm" >next</a>] [<a 
+href="Nase385.htm" >front</a>] [<a 
+href="Nach69.htm#Nase411.htm" >up</a>] </p></div>
+<!--l. 49--><p class="indent" >  <a 
+ id="tailNase385.htm"></a> </p> 
+</body> 
+</html>

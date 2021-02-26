@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Defining the Riemann integral</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Napkin.css" /> 
+<meta name="src" content="Napkin.tex" /> 
+</head><body 
+>
+  <!--l. 177--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase202.htm" >next</a>] [<a 
+href="Nase198.htm" >prev</a>] [<a 
+href="Nase198.htm#tailNase198.htm" >prev-tail</a>] [<a 
+href="Nase196.htm#tailNase199.htm">tail</a>] [<a 
+href="Nase200.htm#Nach34.htm" >up</a>] </p></div>
+  <h3 class="sectionHead"><span class="titlemark">30.3</span>  <a 
+ id="x286-27500030.3"></a>Defining the Riemann integral</h3>
+<!--l. 178--><p class="noindent" >Extensions will allow us to define the Riemann integral. I need to introduce a bit of notation
+so bear with me.
+<a 
+ id="x286-275001r906"></a>
+</p>
+  <div class="newtheorem">
+<!--l. 182--><p class="noindent" ><span class="head">
+<a 
+ id="x286-275002r1"></a>
+<tspan font-family="cmbx" font-size="10">Definition 30.3.1.</tspan>  </span><a 
+ id="x286-275003"></a>Let [<tspan font-family="cmmi" font-size="10">a,b</tspan>] be a closed interval. </p>
+     <ul class="itemize1">
+     <li class="itemize">We let <tspan font-family="cmmi" font-size="10">C</tspan><sup><tspan font-family="cmr" font-size="8">0</tspan></sup>([<tspan font-family="cmmi" font-size="10">a,b</tspan>]) denote the set of continuous functions on [<tspan font-family="cmmi" font-size="10">a,b</tspan>] <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>.
+     </li>
+     <li class="itemize">We let <tspan font-family="cmmi" font-size="10">R</tspan>([<tspan font-family="cmmi" font-size="10">a,b</tspan>]) denote the set of  <tspan font-family="cmbx" font-size="10">rectangle functions </tspan>on [<tspan font-family="cmmi" font-size="10">a,b</tspan>]  <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ</tspan>. These
+     functions which are constant on the intervals [<tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub><tspan font-family="cmmi" font-size="10">,t</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub>), [<tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,t</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub>), [<tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,t</tspan><sub><tspan font-family="cmr" font-size="8">3</tspan></sub>), …, [<tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,t</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub>),
+     and also [<tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan><tspan font-family="cmsy" font-size="8">−</tspan><tspan font-family="cmr" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,t</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub>], for some <tspan font-family="cmmi" font-size="10">a </tspan>= <tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmr" font-size="8">0</tspan></sub> <tspan font-family="cmmi" font-size="10">&#x003C; t</tspan><sub><tspan font-family="cmr" font-size="8">1</tspan></sub> <tspan font-family="cmmi" font-size="10">&#x003C; t</tspan><sub><tspan font-family="cmr" font-size="8">2</tspan></sub> <tspan font-family="cmmi" font-size="10">&#x003C;</tspan> <img 
+src="Na1635x.png" alt="⋅⋅⋅"  class="@cdots"  /> <tspan font-family="cmmi" font-size="10">&#x003C; t</tspan><sub><tspan font-family="cmmi" font-size="8">n</tspan></sub> = <tspan font-family="cmmi" font-size="10">b</tspan>.
+     </li>
+     <li class="itemize">We let <tspan font-family="cmmi" font-size="10">M</tspan>([<tspan font-family="cmmi" font-size="10">a,b</tspan>]) = <tspan font-family="cmmi" font-size="10">C</tspan><sup><tspan font-family="cmr" font-size="8">0</tspan></sup>([<tspan font-family="cmmi" font-size="10">a,b</tspan>]) <tspan font-family="cmsy" font-size="10">∪ </tspan><tspan font-family="cmmi" font-size="10">R</tspan>([<tspan font-family="cmmi" font-size="10">a,b</tspan>]).</li></ul>
+  </div>
+<!--l. 194--><p class="indent" >
+Warning: only <tspan font-family="cmmi" font-size="10">C</tspan><sup><tspan font-family="cmr" font-size="8">0</tspan></sup>([<tspan font-family="cmmi" font-size="10">a,b</tspan>]) is common notation, and the other two are made up.
+</p><!--l. 198--><p class="indent" >  See picture below for a typical a rectangle function. (It is irritating that we have to
+officially assign a single value to each <tspan font-family="cmmi" font-size="10">t</tspan><sub><tspan font-family="cmmi" font-size="8">i</tspan></sub>, even though there are naturally two values we
+want to use, and so we use the convention of letting the left endpoint be closed).
+</p>
+<div class="center" 
+>
+<!--l. 204--><p class="noindent" >
+</p>
+</div>
+                                                                                
+                                                                                
+<a 
+ id="x286-275004r907"></a>
+  <div class="newtheorem">
+<!--l. 239--><p class="noindent" ><span class="head">
+<a 
+ id="x286-275005r2"></a>
+<tspan font-family="cmbx" font-size="10">Definition 30.3.2.</tspan>  </span><a 
+ id="x286-275006"></a>We can impose a metric on <tspan font-family="cmmi" font-size="10">M</tspan>([<tspan font-family="cmmi" font-size="10">a,b</tspan>]) by defining
+</p>
+  <div class="math-display" >
+<img 
+src="Na1636x.png" alt="d (f,g) =  sup |f(x)− g (x )|.
+         x∈[a,b]
+" class="math-display"  /></div>
+  </div>
+<!--l. 242--><p class="indent" >
+</p><!--l. 244--><p class="indent" >  Now, there is a natural notion of integral for rectangle functions: just sum up the obvious
+rectangles! Officially, this is the expression
+</p>
+  <div class="math-display" >
+<img 
+src="Na1637x.png" alt="f (a)(t1 − a )+ f(t1)(t2 − t1)+ +f (t2)(t3 − t2)+ ⋅⋅⋅+ f(tn)(b− tn).
+" class="math-display"  /></div>
+<!--l. 250--><p class="indent" >  We denote this function by
+</p>
+                                                                                
+                                                                                
+  <div class="math-display" >
+<img 
+src="Na1638x.png" alt="Σ : R ([a,b]) → ℝ.
+" class="math-display"  /></div><div class="mdframed" id="mdframed-585">
+<a 
+ id="x286-275007r908"></a>
+<div class="newtheorem">
+<!--l. 254--><p class="noindent" ><span class="head">
+<a 
+ id="x286-275008r3"></a>
+<tspan font-family="cmssbx" font-size="10">Theorem 30.3.3 </tspan><tspan font-family="cmss" font-size="10">(The Riemann integral)</tspan><br 
+class="newline" /> </span><a 
+ id="x286-275009"></a> There exists a unique continuous map
+</p>
+<div class="math-display" >
+<img 
+src="Na1639x.png" alt="∫ b
+ a : M ([a,b]) → ℝ
+" class="math-display"  /></div>
+<!--l. 258--><p class="noindent" >such that the diagram </p>
+<div class="center" 
+>
+<!--l. 259--><p class="noindent" >
+<!--l. 263--><p class="noindent" ><object data="Napkin-8.svg" width="127.42293 " height="84.36668 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+</p></div>
+<!--l. 265--><p class="noindent" >commutes.</p>
+  </div>
+<!--l. 266--><p class="indent" >  </p></div>
+<!--l. 267--><p class="indent" >
+</p>
+  <div class="proof">
+<!--l. 268--><p class="indent" >  <span class="head">
+<tspan font-family="cmti" font-size="10">Proof.</tspan> </span>We want to apply the extension theorem, so we just have to check a few things:
+</p>
+                                                                                
+                                                                                
+     <ul class="itemize1">
+     <li class="itemize">We claim <tspan font-family="cmmi" font-size="10">R</tspan>([<tspan font-family="cmmi" font-size="10">a,b</tspan>]) is a dense subset of <tspan font-family="cmmi" font-size="10">M</tspan>([<tspan font-family="cmmi" font-size="10">a,b</tspan>]). In other words, for any continuous
+     <tspan font-family="cmmi" font-size="10">f</tspan> : [<tspan font-family="cmmi" font-size="10">a,b</tspan>]  <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ  </tspan>and  <tspan font-family="cmmi" font-size="10">𝜀  &#x003E;  </tspan>0,  we  want  there  to  exist  a  rectangle  function  that
+     approximates <tspan font-family="cmmi" font-size="10">f </tspan>within <tspan font-family="cmmi" font-size="10">𝜀</tspan>.
+     <!--l. 277--><p class="noindent" >This  follows  by  uniform  continuity.  We  know  there  exists  a  <tspan font-family="cmmi" font-size="10">δ  &#x003E; </tspan>0  such  that
+     whenever <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">x</tspan><tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">y</tspan><tspan font-family="cmsy" font-size="10">| </tspan><tspan font-family="cmmi" font-size="10">&#x003C; δ </tspan>we have <tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">x</tspan>) <tspan font-family="cmsy" font-size="10">−</tspan><tspan font-family="cmmi" font-size="10">f</tspan>(<tspan font-family="cmmi" font-size="10">y</tspan>)<tspan font-family="cmsy" font-size="10">| </tspan><tspan font-family="cmmi" font-size="10">&#x003C; 𝜀</tspan>. So as long as we select a rectangle
+     function whose rectangles have width less than <tspan font-family="cmmi" font-size="10">δ</tspan>, and such that the upper-left
+     corner of each rectangle lies on the graph of <tspan font-family="cmmi" font-size="10">f</tspan>, then we are all set.
+</p>
+     <div class="center" 
+>
+<!--l. 285--><p class="noindent" >
+</p>
+</div>
+     </li>
+     <li class="itemize">The “add-the-rectangles” map Σ: <tspan font-family="cmmi" font-size="10">R</tspan>([<tspan font-family="cmmi" font-size="10">a,b</tspan>]) <tspan font-family="cmsy" font-size="10">→ </tspan><tspan font-family="msbm" font-size="10">ℝ </tspan>is <tspan font-family="cmti" font-size="10">uniformly </tspan>continuous. Actually this
+     is pretty obvious: if two rectangle functions <tspan font-family="cmmi" font-size="10">f </tspan>and <tspan font-family="cmmi" font-size="10">g </tspan>have <tspan font-family="cmmi" font-size="10">d</tspan>(<tspan font-family="cmmi" font-size="10">f,g</tspan>) <tspan font-family="cmmi" font-size="10">&#x003C; 𝜀</tspan>, then
+     <tspan font-family="cmmi" font-size="10">d</tspan>(Σ<tspan font-family="cmmi" font-size="10">f,</tspan>Σ<tspan font-family="cmmi" font-size="10">g</tspan>) <tspan font-family="cmmi" font-size="10">&#x003C; 𝜀</tspan>(<tspan font-family="cmmi" font-size="10">b </tspan><tspan font-family="cmsy" font-size="10">− </tspan><tspan font-family="cmmi" font-size="10">a</tspan>).
+     </li>
+     <li class="itemize"><tspan font-family="msbm" font-size="10">ℝ </tspan>is complete.                                                                                       □</li></ul>
+</div>
+                                                                                
+                                                                                
+  <!--l. 315--><div class="crosslinks"><p class="noindent">[<a 
+href="Nase202.htm" >next</a>] [<a 
+href="Nase198.htm" >prev</a>] [<a 
+href="Nase198.htm#tailNase198.htm" >prev-tail</a>] [<a 
+href="Nase199.htm" >front</a>] [<a 
+href="Nase200.htm#Nach34.htm" >up</a>] </p></div>
+<!--l. 315--><p class="indent" >  <a 
+ id="tailNase199.htm"></a> </p> 
+</body> 
+</html>
